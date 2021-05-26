@@ -1,0 +1,283 @@
+---
+title: "WQP_datapull"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#colorado data pull
+setwd("C:/Users/Arnab/Documents/Lagos Limno")
+library(dataRetrieval)
+library(tidyverse)
+
+COdat<-whatWQPdata(statecode = "US:08", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01")
+
+COdatPull<-readWQPdata(statecode = "CO", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(COdatPull, file="CO_alldata_1975_to_2020.csv")
+
+
+```
+
+```{r}
+#wisconsin data pull ##this was part of NE -  pulled as a test
+
+WIdat<-whatWQPdata(statecode = "US:55", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01")
+
+WIdatPull<-readWQPdata(statecode = "WI", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20") #maybe have comma - row.names.. figure this out
+
+write.csv(WIdatPull, file="WI_alldata_1975_to_2020.csv")
+
+```
+
+```{r}
+#Arizona
+
+AZdatPull<-readWQPdata(statecode = "AZ", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(AZdatPull, file="AZ_alldata_1975_to_2020.csv", row.names = FALSE)
+```
+
+
+```{r}
+#Alabama
+
+ALdatPull<-readWQPdata(statecode = "AL", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(ALdatPull, file="AL_alldata_1975_to_2020.csv", row.names = FALSE)
+
+```
+
+
+```{r}
+#Arkansas
+
+ARdatPull<-readWQPdata(statecode = "AR", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(ARdatPull, file="AR_alldata_1975_to_2020.csv", row.names = FALSE)
+```
+
+```{r}
+#California
+
+CAdatPull<-readWQPdata(statecode = "CA", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(CAdatPull, file="CA_alldata_1975_to_2020.csv", row.names = FALSE)
+```
+
+
+```{r}
+#Delaware
+
+DEdatPull<-readWQPdata(statecode = "DE", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(DEdatPull, file="DE_alldata_1975_to_2020.csv", row.names = FALSE)
+```
+
+```{r}
+#Florida
+FLdatPull<-readWQPdata(statecode = "FL", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(FLdatPull, file="FL_alldata_1975_to_2020.csv", row.names = FALSE)
+```
+
+```{r}
+#Georgia
+GAdatPull<-readWQPdata(statecode = "GA", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(GAdatPull, file="GA_alldata_1975_to_2020.csv", row.names = FALSE)
+```
+
+```{r}
+```
+
+
+```{r}
+#Idaho
+IDdatPull<-readWQPdata(statecode = "ID", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(IDdatPull, file="ID_alldata_1975_to_2020.csv", row.names = FALSE)
+```
+
+```{r}
+#Kansas
+KSdatPull<-readWQPdata(statecode = "KS", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(KSdatPull, file="KS_alldata_1975_to_2020.csv", row.names = FALSE)
+```
+
+```{r}
+#Kentucky
+KYdatPull<-readWQPdata(statecode = "KY", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(KYdatPull, file="KY_alldata_1975_to_2020.csv", row.names = FALSE)
+```
+
+```{r}
+#Louisiana
+LAdatPull<-readWQPdata(statecode = "LA", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(LAdatPull, file="LA_alldata_1975_to_2020.csv", row.names = FALSE)
+
+
+```
+
+```{r}
+
+#Maryland
+MDdatPull<-readWQPdata(statecode = "MD", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(MDdatPull, file="MD_alldata_1975_to_2020.csv", row.names = FALSE)
+```
+
+```{r}
+#Mississippi
+MSdatPull<-readWQPdata(statecode = "MS", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(MSdatPull, file="MS_alldata_1975_to_2020.csv", row.names = FALSE)
+```
+
+```{r}
+#Montana
+MTdatPull<-readWQPdata(statecode = "MT", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(MTdatPull, file="MT_alldata_1975_to_2020.csv", row.names = FALSE)
+```
+
+```{r}
+#Nebraska
+NEdatPull<-readWQPdata(statecode = "NE", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(NEdatPull, file="NE_alldata_1975_to_2020.csv", row.names = FALSE)
+```
+
+```{r}
+#Nevada
+NVdatPull<-readWQPdata(statecode = "NV", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(NVdatPull, file="NV_alldata_1975_to_2020.csv", row.names = FALSE)
+
+```
+
+
+```{r}
+#New Mexico
+NMdatPull<-readWQPdata(statecode = "NM", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(NMdatPull, file="NM_alldata_1975_to_2020.csv", row.names = FALSE)
+
+#North Carolina
+NCdatPull<-readWQPdata(statecode = "NC", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(NCdatPull, file="NC_alldata_1975_to_2020.csv", row.names = FALSE)
+
+
+#North Dakota
+NDdatPull<-readWQPdata(statecode = "ND", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(NDdatPull, file="ND_alldata_1975_to_2020.csv", row.names = FALSE)
+
+
+#Oklahoma
+OKdatPull<-readWQPdata(statecode = "OK", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(OKdatPull, file="OK_alldata_1975_to_2020.csv", row.names = FALSE)
+
+
+#Oregon
+ORdatPull<-readWQPdata(statecode = "OR", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(ORdatPull, file="OR_alldata_1975_to_2020.csv", row.names = FALSE)
+
+
+#South Carolina
+SCdatPull<-readWQPdata(statecode = "SC", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(SCdatPull, file="SC_alldata_1975_to_2020.csv", row.names = FALSE)
+
+#South Dakota
+SDdatPull<-readWQPdata(statecode = "SD", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(SDdatPull, file="SD_alldata_1975_to_2020.csv", row.names = FALSE)
+
+#Tennessee
+TNdatPull<-readWQPdata(statecode = "TN", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(TNdatPull, file="TN_alldata_1975_to_2020.csv", row.names = FALSE)
+
+#Texas
+TXdatPull<-readWQPdata(statecode = "TX", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(TXdatPull, file="TX_alldata_1975_to_2020.csv", row.names = FALSE)
+
+#Utah
+UTdatPull<-readWQPdata(statecode = "UT", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(UTdatPull, file="UT_alldata_1975_to_2020.csv", row.names = FALSE)
+
+```
+
+```{r}
+#Virginia
+VAdatPull<-readWQPdata(statecode = "VA", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(VAdatPull, file="VA_alldata_1975_to_2020.csv", row.names = FALSE)
+
+#Washington
+WAdatPull<-readWQPdata(statecode = "WA", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(WAdatPull, file="WA_alldata_1975_to_2020.csv", row.names = FALSE)
+
+#Wyoming
+WYdatPull<-readWQPdata(statecode = "WY", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(WYdatPull, file="WY_alldata_1975_to_2020.csv", row.names = FALSE)
+```
+
+```{r}
+### does not work - cant find data from site
+#West Virginia
+WVdatPull<-readWQPdata(statecode = "WV", siteType= "Lake, Reservoir, Impoundment",
+                   sampleMedia="Water", startDate= "1975-01-01", endDate="2020-11-20")
+
+write.csv(WVdatPull, file="WV_alldata_1975_to_2020.csv", row.names = FALSE)
+
+
+```
+
