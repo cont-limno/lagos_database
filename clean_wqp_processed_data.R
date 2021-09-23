@@ -233,7 +233,7 @@ dat3 <- dat2 %>%
            lagos_min_depth,legacy_min_depth,sample_delta,epi_depth,lagos_epi_assignment,exported_epi_new,exported_eventid_epi)
          )
 
-
+#dat3 would be the processed file that gets loaded into postgres
 
 
 
