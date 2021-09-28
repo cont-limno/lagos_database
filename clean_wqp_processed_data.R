@@ -19,11 +19,10 @@ data_dir <- "~/Dropbox/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW"
 #list files
 files <- data_dir %>% dir_ls(regexp = "\\.csv$")
 files
-files[2]
-dat <- read_csv(files[2], col_types = cols(.default = "c"))
+state_abv = "DE"
 
-#reduce source column
-# dat$source <- sapply(strsplit(dat$source, split= "/", fixed = TRUE), tail, 1L)
+dat <- read_csv(paste0(data_dir,"/alldata_",state_abv,".csv"), col_types = cols(.default = "c"))
+
 
 #link to lagoslakeid
 {
@@ -254,17 +253,21 @@ dat2 <- dat2 %>%
            exported_eventid_epi = NA #set to null)
     )
 
+#state to obsID
+
+dat2 <- dat2 %>% mutate(obs_id = paste0(state_abv,"_",obs_id))
+
 dat3 <- dat2 %>% 
     select(sampledate,variableid_lagos,CharacteristicName,sampledepth_m_legacy,datavalue,programtableid_lagos,sampletype_legacy,sampledepth_m_lagos,
            samplelayer_lagos,sampletype_lagos,comments_legacy,comments_lagos,censorcode_flag_lagos,samplesiteid_legacy,lagoslakeid,
            samplesiteid_lagos_pre_cluster,labmethodname_legacy,lakeid_legacy,labmethodinfo_legacy,methodqualifier_legacy,
            version_comment_lagos,flag_lagos,varshortname_comment_lagos,lakeid_nhdid,depth_comment_lagos,primarysamplesite_flag_lagos,
-           valueid_lagos,sitecordid_lagos,samplesiteid_lagos,programid_lagos_us,source_value, source_unit, source_parameter, 
+           valueid_lagos,sitecordid_lagos,samplesiteid_lagos,programid_lagos_us,source_value, source_unit, source_parameter, obs_id,
            qualifier_legacy,qualifier_name_legacy,
            detectionlimit_legacy,detectionlimit_unit_legacy,qualifier_legacy_full,qualifier_legacy_full_cleaned,qualifier_detect_info,
            lagos_min_depth,legacy_min_depth,sample_delta,epi_depth,lagos_epi_assignment,exported_epi_new,exported_eventid_epi)
 
-write_csv(dat3,"processed_data/MD_processed.csv")
+write_csv(dat3,paste0("processed_data/",state_abv,"_processed.csv"))
 
 #dat3 would be the processed file that gets loaded into postgres
 #yet todo is add observation id to each based on values already loaded in postgres and push file to postgres
