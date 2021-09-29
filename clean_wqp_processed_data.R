@@ -15,11 +15,11 @@ con <- dbConnect(drv, dbname = "lagos_us_limno",
 
 #read in the datafiles
 
-data_dir <- "~/Dropbox/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW"
+data_dir <- "~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW"
 #list files
 files <- data_dir %>% dir_ls(regexp = "\\.csv$")
 files
-state_abv = "DE"
+state_abv = "ID"
 
 dat <- read_csv(paste0(data_dir,"/alldata_",state_abv,".csv"), col_types = cols(.default = "c"))
 
@@ -31,6 +31,10 @@ lagos_link <- read_csv("lagos_wqp_20210920.csv") %>%
 
 dat <- dat %>% left_join(lagos_link) %>% drop_na(lagoslakeid)
 }
+
+#filter out depth because we don't want it
+dat <- dat %>% filter(source_parameter!="Depth") %>% filter(CharacteristicName!="Depth")
+
 #rename columns to fit LAGOS Schema
 dat2 <- dat %>% 
     rename(sampledate = ActivityStartDate) %>% 
@@ -49,6 +53,8 @@ dat2 <- dat2 %>% unite('comments_legacy', MeasureQualifierCode,  ResultCommentTe
     mutate(comments_legacy = str_replace_all(comments_legacy,'NA','')) %>% 
     mutate(comments_legacy = str_replace_all(comments_legacy,'\\$',' '))
 
+#filter out depth because we don't want it
+dat2 <- dat2 %>% filter(source_parameter!="Depth") %>% filter(CharacteristicName!="Depth")
 
 
 #Assign Depths and make sure there are no non-numeric values
@@ -91,7 +97,7 @@ dat2$sampletype_legacy[which(dat2$SampleCollectionMethod.MethodIdentifierContext
 #filter out known approaches for depth distributed sampling
 depth_equip <- c("Van Dorn Bottle","Peristaltic pump","Pump/Submersible","Submersible gear pump",
                  "Probe/Sensor","Van Dorn sampler","Pump/Non-Submersible","Suction lift peristaltic pump",
-                 "Van Dorn bottle","multiprobesonde","Multi-Probe Sonde","Sonde","sonde01" )
+                 "Van Dorn bottle","multiprobesonde","Multi-Probe Sonde","Sonde","sonde01","Kemmerer Bottle")
 
 sample_equip <- sample_equip[! sample_equip %in% depth_equip] #remove depth specific samples from list
 
@@ -104,7 +110,7 @@ dat2$sampletype_legacy[which(dat2$sampletype_legacy=="" & dat2$SampleCollectionM
 dat2$sampletype_legacy[which(dat2$SampleCollectionMethod.MethodIdentifierContext %in% depth_equip)] <- "DEPTH"
 
 #filter out integrated sampling equipment
-int_equip <- c("2meterMPCA","Integrated water sampler")
+int_equip <- c("2meterMPCA","Integrated water sampler","COMPOSITE")
 sample_equip <- sample_equip[! sample_equip %in% int_equip] #remove integrated samples from list
 
 #make sure nothing is left and refilter as needed
@@ -133,7 +139,7 @@ temp <- dat2 %>% filter(sampletype_legacy=="UNKNOWN") %>% filter(is.na(sampledep
 table(temp$OrganizationFormalName)
 
 #look at approaches for programs with lots of samples
-temp2 <- temp %>% filter(OrganizationFormalName=="USGS Virginia Water Science Center")
+temp2 <- temp %>% filter(OrganizationFormalName=="EPA Region 10 Superfund Bunker Hill Mining and Metallurgical Complex")
 
 sample_equip_temp <- c(unique(temp2$SampleCollectionEquipmentName),
                   unique(temp2$SampleCollectionMethod.MethodIdentifier),
@@ -186,8 +192,7 @@ temp <- dat2 %>% filter(ResultSampleFractionText ==   "Non-Filterable (Particle)
 ################## End QAQC
 
 
-#filter out depth because we don't want it
-dat2 <- dat2 %>% filter(source_parameter!="Depth")
+
 
 #merge in variable id values
 lagos_variables <- dbGetQuery(con,'select * from limno.lagosvariables_us', stringsAsFactors = FALSE) %>% 
