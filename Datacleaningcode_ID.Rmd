@@ -859,6 +859,7 @@ unique(data_oxygen$DetectionQuantitationLimitMeasure.MeasureUnitCode)
 temp<-filter(data_oxygen, ResultMeasure.MeasureUnitCode == "% saturatn")
 #1ppm = 1mg/l, and 1 DO% saturation = 0.08 mg/l
 
+#Cannot convert % sat into mg/l unless you know temp, alt or pressure
 data_oxygen<-resultconvert(dat = data_oxygen, variable = "Oxygen", unit = "% saturatn", out_unit = "mg/l", conv_factor = 0.08)
 data_oxygen<-resultconvert(dat = data_oxygen, variable = "Oxygen", unit = "ppm", out_unit = "mg/l", conv_factor = 1)
 
