@@ -1,0 +1,13 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode
+"Depth, Secchi disk depth",m,1119USBR_WQX 10,"Depth, Secchi disk depth",m,NA
+"Depth, Secchi disk depth",m,NA NA,NA,NA,78
+"Depth, Secchi disk depth",m,NA NA,NA,NA,NA
+"Depth, Secchi disk depth",m,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,NA,NA
+"Depth, Secchi disk depth",m,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,NA,NA
+"Depth, Secchi disk depth",m,1119USBR_WQX 20,Zebra/Quagga Mussel APHA 10200G Modified,m,NA
+"Depth, Secchi disk depth",m,R10BUNKER LIM-USGS,LIM-USGS,NA,NA
+"Depth, Secchi disk depth",m,21DELAWQ_WQX EPA/620/R-01/003-SD,EPA/620/R-01/003 Secchi Depth,NA,NA
+"Depth, Secchi disk depth",in,21DELAWQ_WQX EPA/620/R-01/003-SD,EPA/620/R-01/003 Secchi Depth,NA,NA
+"Depth, Secchi disk depth",m,MDDNR obs24,eventSecchi,NA,NA
+"Depth, Secchi disk depth",NA,NA NA,NA,m,78
+"Depth, Secchi disk depth (choice list)",NA,NA NA,NA,m,NA

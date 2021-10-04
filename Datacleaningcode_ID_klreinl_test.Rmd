@@ -207,7 +207,7 @@ data$detectionlimit_legacy<- data$DetectionQuantitationLimitMeasure.MeasureValue
 data$detectionlimit_unit_legacy<- data$DetectionQuantitationLimitMeasure.MeasureUnitCode
 
 ```
-```{r}
+```{r depth}
 #Depth
 vars2process <- unique(data$CharacteristicName) #only once for first occurrence
 
@@ -220,6 +220,9 @@ data_depth<-data[data$CharacteristicName%in%Depth_params,] #want to match all re
 ###create dataset to check for non numeric objects in dataset
 temp<-data_depth %>% filter(is.na(as.numeric(ResultMeasureValue)))  #checks for non numeric values in result measure value - if NA's not losing any other data - can change
 data_depth<-data_depth %>% mutate(ResultMeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
+#Check non-numerics in detectionlimitvalue (if non numeric exist, code out)
+unique(data_depth$DetectionQuantitationLimitMeasure.MeasureValue[is.na(as.numeric(data_depth$DetectionQuantitationLimitMeasure.MeasureValue))])
+
 
 methods_table<-data_depth %>% 
   select(CharacteristicName,
@@ -299,7 +302,130 @@ data_depth$CharacteristicName<-"Depth"  #set all depth params as depth
 
 #done
 ```
+```{r secchi}
+#secchi
+Secchi_params<-c("Depth, Secchi disk depth","Depth, Secchi disk depth (choice list)") #values for secchi
+vars2process <- vars2process[!vars2process %in%Secchi_params]
+vars2process
 
+data_secchi<-data[data$CharacteristicName%in%Secchi_params,]
+
+###create dataset to check for non numeric objects in dataset
+temp<-data_secchi %>% filter(is.na(as.numeric(ResultMeasureValue))) %>% 
+  select(ResultMeasureValue,
+         DetectionQuantitationLimitMeasure.MeasureValue,
+         ResultMeasure.MeasureUnitCode,
+         DetectionQuantitationLimitMeasure.MeasureUnitCode,
+         ResultDetectionConditionText,
+         ActivityBottomDepthHeightMeasure.MeasureValue,
+         ActivityBottomDepthHeightMeasure.MeasureUnitCode)
+
+#notes for processing non-numerics
+#have to be able to assign a value and units to either result measure value and/or detection limit value to process
+
+#deal with > obs
+data_secchi$DetectionQuantitationLimitMeasure.MeasureValue[which(grepl(">",data_secchi$ResultMeasureValue,fixed=TRUE))] <- 
+  gsub("[^0-9.-]", "", data_secchi$ResultMeasureValue[which(grepl(">",data_secchi$ResultMeasureValue,fixed=TRUE))])
+data_secchi$ResultDetectionConditionText[which(grepl(">",data_secchi$ResultMeasureValue,fixed=TRUE))] <- "Greater Than"
+data_secchi$DetectionQuantitationLimitMeasure.MeasureUnitCode[which(grepl(">",data_secchi$ResultMeasureValue,fixed=TRUE))] <- 
+  data_secchi$ResultMeasure.MeasureUnitCode[which(grepl(">",data_secchi$ResultMeasureValue,fixed=TRUE))]
+data_secchi$ResultMeasureValue[which(grepl(">",data_secchi$ResultMeasureValue,fixed=TRUE))] <- NA
+#deal with on bottom
+data_secchi <- data_secchi %>% 
+  mutate(DetectionQuantitationLimitMeasure.MeasureValue = ifelse(ResultMeasureValue == "On Bottom" & is.na(DetectionQuantitationLimitMeasure.MeasureValue),
+                                                                 ActivityBottomDepthHeightMeasure.MeasureValue,
+                                                                 DetectionQuantitationLimitMeasure.MeasureValue))
+data_secchi <- data_secchi %>% 
+  mutate(DetectionQuantitationLimitMeasure.MeasureUnitCode = ifelse(ResultMeasureValue == "On Bottom" & is.na(DetectionQuantitationLimitMeasure.MeasureUnitCode),
+                                                                 ActivityBottomDepthHeightMeasure.MeasureUnitCode,
+                                                                 DetectionQuantitationLimitMeasure.MeasureUnitCode))
+data_secchi <- data_secchi %>% 
+  mutate(ResultDetectionConditionText = ifelse(ResultMeasureValue == "On Bottom" & !is.na(DetectionQuantitationLimitMeasure.MeasureValue),
+                                                                 "Greater Than",
+                                                                 ResultDetectionConditionText))
+data_secchi <- data_secchi %>% 
+  mutate(ResultMeasureValue = ifelse(ResultMeasureValue == "On Bottom" & !is.na(DetectionQuantitationLimitMeasure.MeasureValue),
+                                                                 NA,
+                                                                 ResultMeasureValue))
+
+#remaining values don't contain enough info to proceed so convert to numeric
+data_secchi<-data_secchi %>% mutate(ResultMeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
+temp1 <- data_secchi %>% filter(!is.na(ResultMeasureValue))
+temp2 <- data_secchi %>% filter(is.na(ResultMeasureValue)) %>% 
+  filter(!is.na(DetectionQuantitationLimitMeasure.MeasureValue))
+data_secchi <- rbind(temp1,temp2)
+rm(temp1,temp2)
+
+#Check non-numerics in detectionlimitvalue (if non numeric exist, code out)
+unique(data_secchi$DetectionQuantitationLimitMeasure.MeasureValue[is.na(as.numeric(data_secchi$DetectionQuantitationLimitMeasure.MeasureValue))])
+
+data_secchi <- data_secchi %>% mutate(DetectionQuantitationLimitMeasure.MeasureValue = as.numeric(DetectionQuantitationLimitMeasure.MeasureValue))
+
+#generate Conversions
+methods_table<-data_secchi %>% 
+  select(CharacteristicName,
+         ResultMeasure.MeasureUnitCode,
+         Method_Id,
+         ResultAnalyticalMethod.MethodName,
+         DetectionQuantitationLimitMeasure.MeasureUnitCode,
+         USGSPCode) %>% 
+  distinct()
+
+if(file.exists("conversion_files/secchi_Methods_Conversion.csv")==FALSE) {
+  write_csv(methods_table,"conversion_files/secchi_Methods.csv")
+  print("Conversion File needs to be created")
+}
+
+conversions <- read.csv(file = "conversion_files/secchi_Methods_Conversion.csv") # read in list of conversion factors
+conversions[conversions == ""] <- NA #assign NA to blank values
+check_methods<-merge(conversions,methods_table, by=c("CharacteristicName",
+                                                     "ResultMeasure.MeasureUnitCode",
+                                                     "Method_Id",
+                                                     "ResultAnalyticalMethod.MethodName",
+                                                     "DetectionQuantitationLimitMeasure.MeasureUnitCode", 
+                                                     "USGSPCode"),all = T) #merge methods with conversion table to identify methods without a conversion factor
+#write file if conversion factors need to be added
+if(nrow(conversions)!=nrow(check_methods)) {
+  write.csv(check_methods, file = "conversion_files/depth_Methods_Conversion.csv", row.names=FALSE, na="")
+}
+
+if(is.na(min(check_methods$Conversion))) {print("FIX Conversions and reload files")}
+
+data_secchi<-merge(data_secchi,conversions,by=c("CharacteristicName",
+                                              "ResultMeasure.MeasureUnitCode",
+                                              "Method_Id","ResultAnalyticalMethod.MethodName",
+                                              "DetectionQuantitationLimitMeasure.MeasureUnitCode", 
+                                              "USGSPCode"),all = T) #Assign conversion factors using unique characteristic and method identifiers 
+
+data_secchi <- data_secchi %>% 
+  mutate(Converted = ResultMeasureValue*Conversion) %>% 
+  mutate(Converted_dl = DetectionQuantitationLimitMeasure.MeasureValue*Conversion_dl)
+
+data_secchi_temp <- data_secchi %>% 
+  filter(!is.na(ResultMeasureValue)) %>% 
+  filter(is.na(Converted))
+#should be zero rows if everything converted right
+
+data_secchi_temp <- data_secchi %>% 
+  filter(!is.na(DetectionQuantitationLimitMeasure.MeasureValue)) %>% 
+  filter(is.na(Converted_dl))
+#should be zero rows if everything converted right
+
+rm(data_secchi_temp)
+rm(conversions)
+rm(check_methods)
+rm(methods_table)
+rm(temp)
+
+#assing LAGOS Units
+data_secchi$ResultMeasure.MeasureUnitCode[!is.na(data_secchi$ResultMeasure.MeasureUnitCode)] <- "m"
+data_secchi$DetectionQuantitationLimitMeasure.MeasureUnitCode[!is.na(data_secchi$DetectionQuantitationLimitMeasure.MeasureUnitCode)] <- "m"
+
+#Assing Lagos Characteristic Name
+data_secchi$CharacteristicName<-"Secchi"  #set all secchi params as secchi
+
+#done
+```
 
 
 
