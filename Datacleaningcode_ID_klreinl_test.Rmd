@@ -189,6 +189,7 @@ unique(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode) #all in m - no con
 #add
 
 
+
 #check
 unique(data$ActivityDepthHeightMeasure.MeasureUnitCode)
 unique(data$ResultDepthHeightMeasure.MeasureUnitCode)
