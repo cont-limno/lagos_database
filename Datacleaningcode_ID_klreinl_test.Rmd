@@ -266,9 +266,9 @@ data_depth_temp <- data_depth %>%
   filter(is.na(Converted)) %>% 
   select(CharacteristicName,
          ResultMeasure.MeasureUnitCode,
+         DetectionQuantitationLimitMeasure.MeasureUnitCode,
          Method_Id,
          ResultAnalyticalMethod.MethodName,
-         DetectionQuantitationLimitMeasure.MeasureUnitCode,
          USGSPCode) %>% 
   distinct() 
 
@@ -277,9 +277,9 @@ data_depth_temp <- data_depth %>%
   filter(is.na(Converted_dl)) %>% 
   select(CharacteristicName,
          ResultMeasure.MeasureUnitCode,
+         DetectionQuantitationLimitMeasure.MeasureUnitCode,
          Method_Id,
          ResultAnalyticalMethod.MethodName,
-         DetectionQuantitationLimitMeasure.MeasureUnitCode,
          USGSPCode) %>% 
   distinct() 
 
@@ -362,9 +362,9 @@ data_NO3_temp <- data_NO3 %>%
   filter(is.na(Converted)) %>% 
   select(CharacteristicName,
          ResultMeasure.MeasureUnitCode,
+         DetectionQuantitationLimitMeasure.MeasureUnitCode,
          Method_Id,
          ResultAnalyticalMethod.MethodName,
-         DetectionQuantitationLimitMeasure.MeasureUnitCode,
          USGSPCode) %>% 
   distinct() 
 
@@ -373,9 +373,9 @@ data_NO3_dl_temp <- data_NO3 %>%
   filter(is.na(Converted_dl)) %>% 
   select(CharacteristicName,
          ResultMeasure.MeasureUnitCode,
+         DetectionQuantitationLimitMeasure.MeasureUnitCode,
          Method_Id,
          ResultAnalyticalMethod.MethodName,
-         DetectionQuantitationLimitMeasure.MeasureUnitCode,
          USGSPCode) %>% 
   distinct() 
 
