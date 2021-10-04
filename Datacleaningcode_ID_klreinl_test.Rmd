@@ -239,9 +239,9 @@ conversions <- read.csv(file = "conversion_files/depth_Methods_Conversion.csv") 
 conversions[conversions == ""] <- NA #assign NA to blank values
 check_methods<-merge(conversions,methods_table, by=c("CharacteristicName",
                                                      "ResultMeasure.MeasureUnitCode",
+                                                     "DetectionQuantitationLimitMeasure.MeasureUnitCode",
                                                      "Method_Id",
-                                                     "ResultAnalyticalMethod.MethodName",
-                                                     "DetectionQuantitationLimitMeasure.MeasureUnitCode", 
+                                                     "ResultAnalyticalMethod.MethodName", 
                                                      "USGSPCode"),all = T) #merge methods with conversion table to identify methods without a conversion factor
 #write file if conversion factors need to be added
 if(nrow(conversions)!=nrow(check_methods)) {
@@ -251,10 +251,11 @@ if(nrow(conversions)!=nrow(check_methods)) {
 if(is.na(min(check_methods$Conversion))) {print("FIX Conversions and reload files")}
 
 data_depth<-merge(data_depth,conversions,by=c("CharacteristicName",
-                                              "ResultMeasure.MeasureUnitCode",
-                                              "Method_Id","ResultAnalyticalMethod.MethodName",
-                                              "DetectionQuantitationLimitMeasure.MeasureUnitCode", 
-                                              "USGSPCode"),all = T) #Assign conversion factors using unique characteristic and method identifiers 
+                                                     "ResultMeasure.MeasureUnitCode",
+                                                     "DetectionQuantitationLimitMeasure.MeasureUnitCode",
+                                                     "Method_Id",
+                                                     "ResultAnalyticalMethod.MethodName", 
+                                                     "USGSPCode"),all = T) #Assign conversion factors using unique characteristic and method identifiers 
 
 data_depth <- data_depth %>% 
   mutate(Converted = ResultMeasureValue*Conversion) %>% 
@@ -319,9 +320,9 @@ conversions <- read.csv(file = "conversion_files/NO3_Methods_Conversion.csv") # 
 conversions[conversions == ""] <- NA #assign NA to blank values
 check_methods<-merge(conversions,methods_table, by=c("CharacteristicName",
                                                      "ResultMeasure.MeasureUnitCode",
+                                                     "DetectionQuantitationLimitMeasure.MeasureUnitCode",
                                                      "Method_Id",
-                                                     "ResultAnalyticalMethod.MethodName",
-                                                     "DetectionQuantitationLimitMeasure.MeasureUnitCode", 
+                                                     "ResultAnalyticalMethod.MethodName", 
                                                      "USGSPCode"),all = T) #merge methods with conversion table to identify methods without a conversion factor
 #write file if conversion factors need to be added
 if(nrow(conversions)!=nrow(check_methods)) {
@@ -331,10 +332,11 @@ if(nrow(conversions)!=nrow(check_methods)) {
 if(is.na(min(check_methods$Conversion))) {print("FIX Conversions and reload files")}
 
 data_NO3<-merge(data_NO3,conversions,by=c("CharacteristicName",
-                                              "ResultMeasure.MeasureUnitCode",
-                                              "Method_Id","ResultAnalyticalMethod.MethodName",
-                                              "DetectionQuantitationLimitMeasure.MeasureUnitCode", 
-                                              "USGSPCode"),all = T) #Assign conversion factors using unique characteristic and method identifiers 
+                                                     "ResultMeasure.MeasureUnitCode",
+                                                     "DetectionQuantitationLimitMeasure.MeasureUnitCode",
+                                                     "Method_Id",
+                                                     "ResultAnalyticalMethod.MethodName", 
+                                                     "USGSPCode"),all = T) #Assign conversion factors using unique characteristic and method identifiers 
 
 data_NO3 <- data_NO3 %>% 
   mutate(Converted = ResultMeasureValue*Conversion) %>% 
