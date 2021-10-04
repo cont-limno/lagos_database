@@ -57,18 +57,25 @@ return(dat)
 
 `%notin%` <- Negate(`%in%`)
 
-IDdatPull<-read.csv("~/Lagos Limno/ID_alldata_1975_to_2020.csv")
-
+IDdatPull<-read.csv("ID_alldata_1975_to_2020.csv")
+IDdatPull$State<-c("ID")
 names(IDdatPull)
-
 summary(IDdatPull)
+
+DEdatPull<-read.csv("DE_alldata_1975_to_2020.csv")
+DEdatPull$State<-c("DE")
+names(DEdatPull)
+summary(DEdatPull)
+
+allstates<-rbind(IDdatPull,DEdatPull)
+
 
 #removing data that have Y's instead of keeping data that have N's
 
-read.csv("~/Lagos Limno/list of unique parameters to remove.csv") -> remove_params #update this
+read.csv("list of unique parameters to remove.csv") -> remove_params #update this
 
 
-data<- IDdatPull[IDdatPull$CharacteristicName %notin% remove_params$Unique.parameters,]
+data<- allstates[allstates$CharacteristicName %notin% remove_params$Unique.parameters,]
 data<-data %>% mutate(obs_id = seq(1, nrow(data), 1))
 
 
@@ -239,9 +246,13 @@ data$detectionlimit_unit_legacy<- data$DetectionQuantitationLimitMeasure.Measure
 
 ```{r}
 #Depth
-unique(data$CharacteristicName)
+vars2process <- unique(data$CharacteristicName)
 Depth_params<-c("Depth, data-logger (non-ported)", "Depth", "Depth, data-logger (ported)", "Depth, bottom") #only values for depth
+vars2process<-vars2process[! vars2process %in% Depth_params] #remove grab samples from list
+vars2process
 data_depth<-data[data$CharacteristicName%in%Depth_params,] #want to match all records to the vector we created above 
+
+
 unique(data_depth$ResultSampleFractionText)
 temp<-data_depth %>% filter(is.na(ResultSampleFractionText)) #to check NA's or anything unclear - we check and decide what to keep
 #fractionkeep<-c("Total") #only want total aluminum
@@ -329,13 +340,17 @@ data_secchi$CharacteristicName<-"Secchi"  #set all secchi params as secchi
 #calcium
 
 Calcium_params<-c("Calcium") #only values for calcium
+vars2process<-vars2process[! vars2process %in% Calcium_params] #remove grab samples from list
+vars2process
+
+
+
 data_calcium<-data[data$CharacteristicName%in%Calcium_params,] #want to match all records to the vector we created above which have calcium
 unique(data_calcium$ResultSampleFractionText)
 fractionkeep<-c("Dissolved")
 data_calcium<-data_calcium[which(data_calcium$ResultSampleFractionText %in% fractionkeep | is.na(data_calcium$ResultSampleFractionText)),] #keeping if it's ones we chose or NA
 unique(data_calcium$ResultSampleFractionText)
 temp<-data_calcium %>% filter(is.na(ResultSampleFractionText)) #to check NA's or anything unclear - we check and decide what to keep
-
 
 
 ###create dataset to check for non numeric objects in dataset
@@ -1250,8 +1265,6 @@ data_tss<-data_tss[which(data_tss$ResultSampleFractionText %in% fractionkeep | i
 unique(data_tss$ResultSampleFractionText)
 
 
-
-
 ###create dataset to check for non numeric objects in dataset
 temp<-data_tss %>% filter(is.na(as.numeric(ResultMeasureValue)))  #checks for non numeric values in result measure value - if NA's not losing any other data - can change #3 NA's - can change
 data_tss<-data_tss %>% mutate(ResultMeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
@@ -1801,18 +1814,28 @@ data_ammonia$CharacteristicName<-"Nitrogen, NH4"
 
 ```{r}
 #no3 params
+NO3_params<-c("Inorganic nitrogen (nitrate and nitrite)", "Inorganic nitrogen (nitrate and nitrite) as N", "Nitrate", "Nitrate as N") 
+vars2process<-vars2process[! vars2process %in% NO3_params] #remove grab samples from list
+vars2process
+
 
 unique(data$CharacteristicName)
 
-NO3_params<-c("Inorganic nitrogen (nitrate and nitrite)", "Inorganic nitrogen (nitrate and nitrite) as N", "Nitrate", "Nitrate as N") 
+
 data_NO3<-data[data$CharacteristicName%in%NO3_params,] #want to match all records to the vector we created above 
 unique(data_NO3$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
 temp<-data_NO3 %>% filter(is.na(as.numeric(ResultMeasureValue)))  #checks for non numeric values in result measure value - if NA's not losing any other data - can change #391 NA's - can change
 data_NO3<-data_NO3 %>% mutate(ResultMeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
+temp<-data_NO3 %>% 
+  select(CharacteristicName,ResultMeasure.MeasureUnitCode,
+         ResultAnalyticalMethod.MethodIdentifierContext, ResultAnalyticalMethod.MethodIdentifier,
+         ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode, USGSPCode) %>% 
+  distinct()
 
 unique(data_NO3$ResultMeasure.MeasureUnitCode)
+
 unique(data_NO3$DetectionQuantitationLimitMeasure.MeasureUnitCode)
 
 
@@ -1898,6 +1921,8 @@ data_NO3$CharacteristicName<-"Nitrogen, nitrite (NO2) + nitrate (NO3)"
 ```{r}
 
 #nitrite
+
+
 
 NO2_params<-c("Nitrite", "Nitrite as N") #only values 
 data_NO2<-data[data$CharacteristicName%in%NO2_params,] #want to match all records to the vector we created above 
