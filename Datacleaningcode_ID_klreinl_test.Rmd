@@ -313,46 +313,6 @@ NO3_temp<-data_NO3_test[is.na(data_NO3_test$Converted),]
 
 #################################################################
 
-unique(data_NO3$ResultMeasure.MeasureUnitCode)
-
-unique(data_NO3$DetectionQuantitationLimitMeasure.MeasureUnitCode)
-
-
-#working with "Inorganic nitrogen (nitrate and nitrite)"
-
-temp<-data_NO3 %>% filter(CharacteristicName == "Inorganic nitrogen (nitrate and nitrite)")
-unique(temp$ResultMeasure.MeasureUnitCode) 
-unique(temp$DetectionQuantitationLimitMeasure.MeasureUnitCode)  
-
-  
-data_NO3<-resultconvert(dat = data_NO3, variable = "Inorganic nitrogen (nitrate and nitrite)", unit = "mg/l as N", out_unit = "ug/l", conv_factor = 1000)
-data_NO3<-detectconvert(dat = data_NO3, variable = "Inorganic nitrogen (nitrate and nitrite)", unit = "mg/l as N", out_unit = "ug/l", conv_factor = 1000)
-
-
-temp2<-temp %>% filter(CharacteristicName == "Inorganic nitrogen (nitrate and nitrite)") %>% filter(ResultMeasure.MeasureUnitCode == "mg/l")
-unique(temp2$ResultAnalyticalMethod.MethodName)
-unique(temp2$ResultAnalyticalMethod.MethodIdentifier)
-#shows method 353.2 - reported at N - can do direct mg/l to ug/l conversion
-
-data_NO3<-resultconvert(dat = data_NO3, variable = "Inorganic nitrogen (nitrate and nitrite)", unit = "mg/l", out_unit = "ug/l", conv_factor = 1000)
-data_NO3<-detectconvert(dat = data_NO3, variable = "Inorganic nitrogen (nitrate and nitrite)", unit = "mg/l", out_unit = "ug/l", conv_factor = 1000)
-
-
-#working with Inorganic nitrogen (nitrate and nitrite) as N
-
-temp<-data_NO3 %>% filter(CharacteristicName == "Inorganic nitrogen (nitrate and nitrite) as N")
-unique(temp$ResultMeasure.MeasureUnitCode) 
-unique(temp$DetectionQuantitationLimitMeasure.MeasureUnitCode)  
-
-temp2<-temp %>% filter(CharacteristicName == "Inorganic nitrogen (nitrate and nitrite) as N") %>% filter(ResultMeasure.MeasureUnitCode == "mg/l")
-unique(temp2$ResultAnalyticalMethod.MethodName)
-unique(temp2$ResultAnalyticalMethod.MethodIdentifier)
-#4500-NO3 - suggests its a UV light technique for meeasuing NO3 as Nitrogen - can do direct conversion 
-
-data_NO3<-resultconvert(dat = data_NO3, variable = "Inorganic nitrogen (nitrate and nitrite) as N", unit = "mg/l", out_unit = "ug/l", conv_factor = 1000)
-
-
-
 
 data_NO3$CharacteristicName<-"Nitrogen, nitrite (NO2) + nitrate (NO3)"
 
@@ -363,73 +323,6 @@ data_NO3$CharacteristicName<-"Nitrogen, nitrite (NO2) + nitrate (NO3)"
 
 ```
 
-
-
-
-```{r}
-
-#nitrite
-
-
-
-NO2_params<-c("Nitrite", "Nitrite as N") #only values 
-data_NO2<-data[data$CharacteristicName%in%NO2_params,] #want to match all records to the vector we created above 
-unique(data_NO2$ResultSampleFractionText)
-
-
-###create dataset to check for non numeric objects in dataset
-temp<-data_NO2 %>% filter(is.na(as.numeric(ResultMeasureValue)))  #checks for non numeric values in result measure value - if NA's not losing any other data - can change #391 NA's - can change
-data_NO2<-data_NO2 %>% mutate(ResultMeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
-
-unique(data_NO2$ResultMeasure.MeasureUnitCode)
-unique(data_NO2$DetectionQuantitationLimitMeasure.MeasureUnitCode)
-
-
-#working with "Nitrite"
-
-temp<-data_NO2 %>% filter(CharacteristicName == "Nitrite")
-unique(temp$ResultMeasure.MeasureUnitCode) 
-unique(temp$DetectionQuantitationLimitMeasure.MeasureUnitCode)  
-
-temp2<-temp %>% filter(CharacteristicName == "Nitrite") %>% filter(ResultMeasure.MeasureUnitCode == "mg/l")
-unique(temp2$ResultAnalyticalMethod.MethodName)
-unique(temp2$ResultAnalyticalMethod.MethodIdentifier)
-#353.2 - repported as N - direct mg/l to ug/l conversion
-
-
-data_NO2<-resultconvert(dat = data_NO2, variable = "Nitrite", unit = "mg/l as N", out_unit = "ug/l", conv_factor = 1000)
-data_NO2<-detectconvert(dat = data_NO2, variable = "Nitrite", unit = "mg/l as N", out_unit = "ug/l", conv_factor = 1000)
-
-data_NO2<-resultconvert(dat = data_NO2, variable = "Nitrite", unit = "mg/l", out_unit = "ug/l", conv_factor = 1000)
-data_NO2<-detectconvert(dat = data_NO2, variable = "Nitrite", unit = "mg/l", out_unit = "ug/l", conv_factor = 1000)
-
-
-data_NO2<-resultconvert(dat = data_NO2, variable = "Nitrite", unit = "mg/l asNO2", out_unit = "ug/l", conv_factor = 0.3044*1000)
-data_NO2<-detectconvert(dat = data_NO2, variable = "Nitrite", unit = "mg/l asNO2", out_unit = "ug/l", conv_factor = 0.3044*1000)
-
-
-#working with "Nitrite as N"
-
-temp<-data_NO2 %>% filter(CharacteristicName == "Nitrite as N")
-unique(temp$ResultMeasure.MeasureUnitCode) 
-unique(temp$DetectionQuantitationLimitMeasure.MeasureUnitCode)  
-
-temp2<-temp %>% filter(CharacteristicName == "Nitrite as N") %>% filter(ResultMeasure.MeasureUnitCode == "mg/l")
-unique(temp2$ResultAnalyticalMethod.MethodName)
-unique(temp2$ResultAnalyticalMethod.MethodIdentifier)
-#4500-no2 - uv method of measure of No2 nitrogen - reported as Nitrogen - can do mg/l to ug/l direct conversion 
-
-data_NO2<-resultconvert(dat = data_NO2, variable = "Nitrite as N", unit = "mg/l", out_unit = "ug/l", conv_factor = 1000)
-
-
-
-data_NO2$CharacteristicName<-"Nitrogen, nitrite (NO2)"
-
-#completed
-
-
-
-```
 
 
 
