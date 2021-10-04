@@ -305,6 +305,8 @@ conversions<-read.csv(file = "conversion_files/NO3_Methods_Conversion.csv") #rea
 
 conversion_temp<-conversions[is.na(conversions$Conversion),] #double check for missing conversion factors
 
+conversion_temp_notes<-conversions[!is.na(conversions$Notes),] #check for flags on methods
+
 data_NO3_test<-merge(data_NO3,conversions,by=c("CharacteristicName","ResultMeasure.MeasureUnitCode",
          "Method_Id",
          "ResultAnalyticalMethod.MethodName","DetectionQuantitationLimitMeasure.MeasureUnitCode", "USGSPCode"),all = T) #Assign conversion factors using unique characteristic and method identifiers 
@@ -316,7 +318,7 @@ NO3_temp<-data_NO3_test[is.na(data_NO3_test$Converted),] #check for missing conv
 #################################################################
 
 
-data_NO3$CharacteristicName<-"Nitrogen, nitrite (NO2) + nitrate (NO3)"
+NO3_temp$CharacteristicName<-"Nitrogen, nitrite (NO2) + nitrate (NO3)"
 
 
 #completed
