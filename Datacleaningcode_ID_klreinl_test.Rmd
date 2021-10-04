@@ -328,7 +328,9 @@ data_NO3_test<-merge(data_NO3,conversions,by=c("CharacteristicName","ResultMeasu
          "Method_Id",
          "ResultAnalyticalMethod.MethodName","DetectionQuantitationLimitMeasure.MeasureUnitCode", "USGSPCode"),all = T) #Assign conversion factors using unique characteristic and method identifiers 
 
-data_NO3_test$Converted<-c(data_NO3_test$ResultMeasureValue*data_NO3_test$Conversion) #convert data
+data_NO3_test$Converted<-c(data_NO3_test$ResultMeasureValue*data_NO3_test$Conversion) #convert measurement data
+
+data_NO3_test$Converted_dl<-c(data_NO3_test$ResultMeasureValue*data_NO3_test$Conversion_dl) #convert detection data
 
 NO3_temp<-data_NO3_test[is.na(data_NO3_test$Converted),] #check for missing converted data as a final check
 
