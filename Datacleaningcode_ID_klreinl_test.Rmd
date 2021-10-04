@@ -263,11 +263,25 @@ data_depth <- data_depth %>%
 
 data_depth_temp <- data_depth %>% 
   filter(!is.na(ResultMeasureValue)) %>% 
-  filter(is.na(Converted))
+  filter(is.na(Converted)) %>% 
+  select(CharacteristicName,
+         ResultMeasure.MeasureUnitCode,
+         Method_Id,
+         ResultAnalyticalMethod.MethodName,
+         DetectionQuantitationLimitMeasure.MeasureUnitCode,
+         USGSPCode) %>% 
+  distinct() 
 
 data_depth_temp <- data_depth %>% 
   filter(!is.na(DetectionQuantitationLimitMeasure.MeasureValue)) %>% 
-  filter(is.na(Converted_dl))
+  filter(is.na(Converted_dl)) %>% 
+  select(CharacteristicName,
+         ResultMeasure.MeasureUnitCode,
+         Method_Id,
+         ResultAnalyticalMethod.MethodName,
+         DetectionQuantitationLimitMeasure.MeasureUnitCode,
+         USGSPCode) %>% 
+  distinct() 
 
 rm(data_depth_temp)
 rm(conversions)
@@ -340,15 +354,30 @@ data_NO3<-merge(data_NO3,conversions,by=c("CharacteristicName",
 
 data_NO3 <- data_NO3 %>% 
   mutate(Converted = ResultMeasureValue*Conversion) %>% 
-  mutate(Converted_dl = DetectionQuantitationLimitMeasure.MeasureValue*Conversion_dl)
+  mutate(Converted_dl = DetectionQuantitationLimitMeasure.MeasureValue*Conversion_dl) 
+  
 
 data_NO3_temp <- data_NO3 %>% 
   filter(!is.na(ResultMeasureValue)) %>% 
-  filter(is.na(Converted))
+  filter(is.na(Converted)) %>% 
+  select(CharacteristicName,
+         ResultMeasure.MeasureUnitCode,
+         Method_Id,
+         ResultAnalyticalMethod.MethodName,
+         DetectionQuantitationLimitMeasure.MeasureUnitCode,
+         USGSPCode) %>% 
+  distinct() 
 
 data_NO3_dl_temp <- data_NO3 %>% 
   filter(!is.na(DetectionQuantitationLimitMeasure.MeasureValue)) %>% 
-  filter(is.na(Converted_dl))
+  filter(is.na(Converted_dl)) %>% 
+  select(CharacteristicName,
+         ResultMeasure.MeasureUnitCode,
+         Method_Id,
+         ResultAnalyticalMethod.MethodName,
+         DetectionQuantitationLimitMeasure.MeasureUnitCode,
+         USGSPCode) %>% 
+  distinct() 
 
 rm(data_NO3_temp)
 rm(conversions)
