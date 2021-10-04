@@ -1,10 +1,10 @@
-CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode
-"Depth, data-logger (non-ported)",ft,NA NA,NA,NA,NA
-Depth,ft,NA NA,NA,NA,81903
-Depth,ft,NA NA,NA,NA,64
-Depth,ft,1119USBR_WQX 20,Zebra/Quagga Mussel APHA 10200G Modified,ft,NA
-"Depth, data-logger (ported)",m,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,NA,NA
-Depth,m,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,NA,NA
-Depth,m,1119USBR_WQX 10,"Depth, Secchi disk depth",m,NA
-"Depth, bottom",ft,R10BUNKER FLOW-USGS,FLOW-USGS,NA,NA
-"Depth, bottom",m,MDDNR obs13,eventTOTAL_DEPTH,NA,NA
+CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode
+"Depth, data-logger (non-ported)",ft,NA,NA NA,NA,NA
+Depth,ft,NA,NA NA,NA,81903
+Depth,ft,NA,NA NA,NA,64
+Depth,ft,ft,1119USBR_WQX 20,Zebra/Quagga Mussel APHA 10200G Modified,NA
+"Depth, data-logger (ported)",m,NA,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,NA
+Depth,m,NA,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,NA
+Depth,m,m,1119USBR_WQX 10,"Depth, Secchi disk depth",NA
+"Depth, bottom",ft,NA,R10BUNKER FLOW-USGS,FLOW-USGS,NA
+"Depth, bottom",m,NA,MDDNR obs13,eventTOTAL_DEPTH,NA
