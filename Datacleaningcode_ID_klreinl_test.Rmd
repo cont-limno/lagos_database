@@ -58,6 +58,8 @@ return(dat)
 `%notin%` <- Negate(`%in%`)
 
 IDdatPull<-read.csv("ID_alldata_1975_to_2020.csv")
+IDdatPull <- read.csv("~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/raw_data/ID_alldata_1975_to_2020.csv")
+
 IDdatPull$State<-c("ID")
 IDdatPull$Id_num<-c(seq(1:nrow(IDdatPull)))
 IDdatPull <- IDdatPull %>% 
@@ -66,6 +68,8 @@ names(IDdatPull)
 summary(IDdatPull)
 
 DEdatPull<-read.csv("DE_alldata_1975_to_2020.csv")
+DEdatPull<-read.csv("~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/raw_data/DE_alldata_1975_to_2020.csv")
+
 DEdatPull$State<-c("DE")
 DEdatPull$Id_num<-c(seq(1:nrow(DEdatPull)))
 DEdatPull <- DEdatPull %>% 
@@ -74,6 +78,9 @@ names(DEdatPull)
 summary(DEdatPull)
 
 MDdatPull<-read.csv("MD_alldata_1975_to_2020.csv")
+MDdatPull<-read.csv("~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/raw_data/MD_alldata_1975_to_2020.csv")
+
+
 MDdatPull$State<-c("MD")
 MDdatPull$Id_num<-c(seq(1:nrow(MDdatPull)))
 MDdatPull <- MDdatPull %>% 
@@ -82,6 +89,9 @@ names(MDdatPull)
 summary(MDdatPull)
 
 VAdatPull<-read.csv("VA_alldata_1975_to_2020.csv")
+VAdatPull<-read.csv("~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/raw_data/VA_alldata_1975_to_2020.csv")
+
+
 VAdatPull$State<-c("VA")
 VAdatPull$Id_num<-c(seq(1:nrow(VAdatPull)))
 VAdatPull <- VAdatPull %>% 
@@ -91,80 +101,18 @@ summary(VAdatPull)
 
 allstates<-rbind(IDdatPull,DEdatPull,DEdatPull,MDdatPull)
 
-
 #removing data that have Y's instead of keeping data that have N's
-
 read.csv("list of unique parameters to remove.csv") -> remove_params #update this
-
-
 data<- allstates[allstates$CharacteristicName %notin% remove_params$Unique.parameters,]
 data<-data %>% mutate(obs_id = seq(1, nrow(data), 1))
 data <- data %>% 
   unite('Method_Id', c(ResultAnalyticalMethod.MethodIdentifierContext, ResultAnalyticalMethod.MethodIdentifier), sep = " ", remove = FALSE)
 
+#get only locations that have a lagoslakeid
+lagos_link <- read_csv("lagos_wqp_20210920.csv") %>% 
+    rename(MonitoringLocationIdentifier = wqp_monitoringlocationidentifier)
+data <- data %>% left_join(lagos_link) %>% drop_na(lagoslakeid)
 
-
-# tdata1<-data %>% filter(!is.na(ResultDepthHeightMeasure.MeasureValue)) #identified specified depth samples
-# 
-# 
-# tdata2<-data %>% filter(is.na(ResultDepthHeightMeasure.MeasureValue)) %>% filter(!is.na(ActivityTopDepthHeightMeasure.MeasureValue)) #these are potential integrated samples
-# 
-# unique(tdata2$SampleCollectionMethod.MethodName)
-# method_name<-c("")
-# 
-# unique(tdata2$SampleCollectionMethod.MethodIdentifier)
-# method_identifier<-c("")
-# 
-# unique(tdata2$SampleCollectionMethod.MethodIdentifierContext)
-# method_context<-c("")
-# 
-# unique(tdata2$SampleCollectionEquipmentName)
-# method_equipment<-c("")
-# 
-# tdata2<-tdata2 %>% filter(SampleCollectionMethod.MethodName %in% method_name | 
-#                             SampleCollectionMethod.MethodIdentifier %in% method_identifier|
-#                             SampleCollectionMethod.MethodIdentifierContext %in% method_context|
-#                             SampleCollectionEquipmentName %in% method_equipment)  #all grab samples
-# 
-# tdata3<-data %>% filter(is.na(ResultDepthHeightMeasure.MeasureValue)) #identifying grab samples
-# 
-# unique(tdata3$SampleCollectionMethod.MethodName)
-# method_name<-c("Grab sample  (dip)", "SRBC Standard Grab Sample Method", "Water Grab Sampling")
-# 
-# unique(tdata3$SampleCollectionMethod.MethodIdentifier)
-# method_identifier<-c("GRAB-001") #all others were unknown - MBL-001, SP-001
-# 
-# unique(tdata3$SampleCollectionMethod.MethodIdentifierContext)
-# method_context<-c("Grab sample","USGS parameter code 82398")
-# 
-# unique(tdata3$SampleCollectionEquipmentName)
-# method_equipment<-c("Water Bottle", "Open-Mouth Bottle", "Van Dorn Bottle")
-# 
-# tdata3<-tdata3 %>% filter(SampleCollectionMethod.MethodName %in% method_name | 
-#                             SampleCollectionMethod.MethodIdentifier %in% method_identifier|
-#                             SampleCollectionMethod.MethodIdentifierContext %in% method_context|
-#                             SampleCollectionEquipmentName %in% method_equipment)  #all grab samples
-# 
-# data2<-rbind(tdata1, tdata2, tdata3)
-# rm(tdata1)
-# rm(tdata2)
-# rm(tdata3)
-# 
-# tdata4<-data %>% filter(obs_id %notin% data2$obs_id)#created object to look at all data not in datata2
-# 
-# unique(tdata4$CharacteristicName)
-# secchiparams<-c("Depth, Secchi disk depth") #pulled out secchi data cuz it may not have depth data
-# 
-# tdata4<-tdata4 %>% filter(CharacteristicName %in% secchiparams) #filtered out only the secchi vars
-# data<-rbind(data2, tdata4) #combined everything back together
-
-#will need to check for each state (the depth data)
-
-#rm(tdata4)
-#rm(data2)
-#data<-data %>% select(-obs_id)
-#rm(MDdatPull)
-#unique(data$CharacteristicName)
 
 str(data$ResultMeasureValue)
 sum(is.na(data$ResultMeasureValue))
@@ -172,20 +120,19 @@ data1<-data %>% filter(!is.na(ResultMeasureValue))
 data2<-data %>% filter(!is.na(DetectionQuantitationLimitMeasure.MeasureValue)) %>% filter(is.na(ResultMeasureValue))
 data3<-rbind(data1, data2)
 data<-data3
-
 rm(data1, data2, data3)
-
 
 #unique organizations
 unique(data$OrganizationIdentifier) #19 organizations data
 table(data$OrganizationFormalName) #tells us number of obvs in each organization
 
-
-
-
 #looking at activity type codes #getting rid of quality control vars
-unique(data$ActivityTypeCode)
+
+remove_activity <- unique(data$ActivityTypeCode)
 activitytype_keep<-c("Quality Control Sample-Field Blank", "Quality Control Sample-Field Replicate", "Quality Control Field Replicate Msr/Obs")
+remove_activity <- remove_activity[!remove_activity %in% activitytype_keep]
+remove_activity
+
 data<-data[which(data$ActivityTypeCode %notin% activitytype_keep),]
 unique(data$ActivityTypeCode)
 
@@ -199,47 +146,47 @@ data<-data %>% filter(ActivityMediaSubdivisionName == "Surface Water" | is.na(Ac
 unique(data$ActivityMediaSubdivisionName)
 
 unique(data$ResultStatusIdentifier)
-unique(data$ResultValueTypeName)
+data <- data %>% filter(ResultStatusIdentifier != "Rejected")
 
+unique(data$ResultValueTypeName)
+data<-data %>% filter(ResultValueTypeName == "Actual" | is.na(ResultValueTypeName))
+unique(data$ResultValueTypeName)
 
 unique(data$ResultDetectionConditionText)
 #filtered out vars we don't need in resultsdetection condition text - did it in multistep because R doesn't handle multiple OR statements well
 
-
 data<-data %>% filter(ResultDetectionConditionText != "Systematic Contamination" | is.na(ResultDetectionConditionText))
-
 data<-data %>% filter(is.na(ResultDetectionConditionText) | ResultDetectionConditionText != "Not Reported")
 unique(data$ResultDetectionConditionText)
 
 
 
 unique(data$ResultSampleFractionText)
-
 data<-data %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText != "Bed Sediment")
+data<-data %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText != "Recoverable")
+data<-data %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText != "Acid Soluble")
+data<-data %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText != "Total Recoverable")
 unique(data$ResultSampleFractionText)
-
 
 data<-data %>% select(-ActivityMediaName, -ActivityMediaSubdivisionName, -ActivityStartTime.Time, -ActivityStartTime.TimeZoneCode, -ActivityEndTime.Time, -ActivityEndTime.TimeZoneCode, -SampleAquifer, -HydrologicCondition, -HydrologicEvent, -SubjectTaxonomicName, -SampleTissueAnatomyName, -LaboratoryName, -AnalysisStartDate, -PreparationStartDate)
 
-unique(data$ActivityDepthHeightMeasure.MeasureUnitCode) #has ft, feet, and m - need to convert the ones with ft and feet 
-unique(data$ActivityTopDepthHeightMeasure.MeasureUnitCode) #all in m - no conversion needed
-unique(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode) #all in m - no conversion needed
-unique(data$ResultDepthHeightMeasure.MeasureUnitCode) #all in m - no conversion needed
-
-
+#has ft, feet, and m - need to convert the ones with ft and feet 
+unique(data$ActivityDepthHeightMeasure.MeasureUnitCode) 
 data$ActivityDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityDepthHeightMeasure.MeasureUnitCode == "ft", data$ActivityDepthHeightMeasure.MeasureValue*0.3048, data$ActivityDepthHeightMeasure.MeasureValue)
-
 data$ActivityDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityDepthHeightMeasure.MeasureUnitCode == "feet", data$ActivityDepthHeightMeasure.MeasureValue*0.3048, data$ActivityDepthHeightMeasure.MeasureValue)
+data$ActivityDepthHeightMeasure.MeasureUnitCode[!is.na(data$ActivityDepthHeightMeasure.MeasureUnitCode)]<-"m"
 
-
-data$ActivityDepthHeightMeasure.MeasureUnitCode<-"m"
-
-
+unique(data$ResultDepthHeightMeasure.MeasureUnitCode) #all in m - no conversion needed
 data$ResultDepthHeightMeasure.MeasureValue<-ifelse(data$ResultDepthHeightMeasure.MeasureUnitCode == "ft", data$ResultDepthHeightMeasure.MeasureValue*0.3048, data$ResultDepthHeightMeasure.MeasureValue)
+data$ResultDepthHeightMeasure.MeasureValue<-ifelse(data$ResultDepthHeightMeasure.MeasureUnitCode == "feet", data$ResultDepthHeightMeasure.MeasureValue*0.3048, data$ResultDepthHeightMeasure.MeasureValue)
+data$ResultDepthHeightMeasure.MeasureUnitCode[!is.na(data$ResultDepthHeightMeasure.MeasureUnitCode)]<-"m"
+
+unique(data$ActivityTopDepthHeightMeasure.MeasureUnitCode) #all in m - no conversion needed
+#add
 
 
-data$ResultDepthHeightMeasure.MeasureUnitCode<-"m"
-
+unique(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode) #all in m - no conversion needed
+#add
 
 
 #check
