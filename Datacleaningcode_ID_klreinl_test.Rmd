@@ -266,7 +266,7 @@ NO3_temp<-data_NO3_test[is.na(data_NO3_test$Converted),] #check for missing conv
 #################################################################
 
 
-NO3_temp$CharacteristicName<-"Nitrogen, nitrite (NO2) + nitrate (NO3)"
+data_NO3_test$CharacteristicName<-"Nitrogen, nitrite (NO2) + nitrate (NO3)"
 
 
 #completed
