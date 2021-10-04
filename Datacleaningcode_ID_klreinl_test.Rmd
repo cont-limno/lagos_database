@@ -437,6 +437,9 @@ vars2process #check if there are any missed variable
 
 data_NO3<-data[data$CharacteristicName%in%NO3_params,] #want to match all records to the vector we created above 
 unique(data_NO3$ResultSampleFractionText)
+data_NO3 <- data_NO3 %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+unique(data_NO3$ResultSampleFractionText)
+
 
 ###create dataset to check for non numeric objects in dataset
 temp<-data_NO3 %>% filter(is.na(as.numeric(ResultMeasureValue)))  #checks for non numeric values in result measure value - if NA's not losing any other data - can change #391 NA's - can change
