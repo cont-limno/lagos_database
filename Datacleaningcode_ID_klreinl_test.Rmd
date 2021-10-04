@@ -99,6 +99,9 @@ read.csv("list of unique parameters to remove.csv") -> remove_params #update thi
 
 data<- allstates[allstates$CharacteristicName %notin% remove_params$Unique.parameters,]
 data<-data %>% mutate(obs_id = seq(1, nrow(data), 1))
+data <- data %>% 
+  unite('Method_Id', c(ResultAnalyticalMethod.MethodIdentifierContext, ResultAnalyticalMethod.MethodIdentifier), sep = " ", remove = FALSE)
+
 
 
 # tdata1<-data %>% filter(!is.na(ResultDepthHeightMeasure.MeasureValue)) #identified specified depth samples
@@ -284,32 +287,31 @@ data_NO3<-data_NO3 %>% mutate(ResultMeasureValue = as.numeric(ResultMeasureValue
 
 methods_table<-data_NO3 %>% 
   select(CharacteristicName,ResultMeasure.MeasureUnitCode,
-         ResultAnalyticalMethod.MethodIdentifierContext, ResultAnalyticalMethod.MethodIdentifier,
+         Method_Id,
          ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode, USGSPCode) %>% 
   distinct()
 
-write.csv(methods_table, file = "NO3_Methods.csv", row.names=FALSE, na="")
-conversions<-read.csv(file = "NO3_Methods_Conversion.csv")
-conversions[conversions == ""] <- NA 
+#write.csv(methods_table, file = "conversion_files/NO3_Methods.csv", row.names=FALSE, na="")
+conversions<-read.csv(file = "conversion_files/NO3_Methods_Conversion.csv") # read in list of conversion factors
+conversions[conversions == ""] <- NA #assign NA to blank values
 
 check_methods<-merge(conversions,methods_table, by=c("CharacteristicName","ResultMeasure.MeasureUnitCode",
-         "ResultAnalyticalMethod.MethodIdentifierContext", "ResultAnalyticalMethod.MethodIdentifier",
-         "ResultAnalyticalMethod.MethodName","DetectionQuantitationLimitMeasure.MeasureUnitCode", "USGSPCode"),all = T)
+         "Method_Id",
+         "ResultAnalyticalMethod.MethodName","DetectionQuantitationLimitMeasure.MeasureUnitCode", "USGSPCode"),all = T) #merge methods with conversion table to identify methods without a conversion factor
 
-write.csv(check_methods, file = "NO3_Methods_Conversion.csv", row.names=FALSE, na="")
+write.csv(check_methods, file = "conversion_files/NO3_Methods_Conversion.csv", row.names=FALSE, na="") #write new conversion file with new methods and assign values for conversion factors
 
-conversions<-read.csv(file = "NO3_Methods_Conversion.csv")
+conversions<-read.csv(file = "conversion_files/NO3_Methods_Conversion.csv") #read in new conversion file
 
-conversion_temp<-conversions[is.na(conversions$Conversion),]
+conversion_temp<-conversions[is.na(conversions$Conversion),] #double check for missing conversion factors
 
 data_NO3_test<-merge(data_NO3,conversions,by=c("CharacteristicName","ResultMeasure.MeasureUnitCode",
-         "ResultAnalyticalMethod.MethodIdentifierContext", "ResultAnalyticalMethod.MethodIdentifier",
-         "ResultAnalyticalMethod.MethodName","DetectionQuantitationLimitMeasure.MeasureUnitCode", "USGSPCode"),all = T)
+         "Method_Id",
+         "ResultAnalyticalMethod.MethodName","DetectionQuantitationLimitMeasure.MeasureUnitCode", "USGSPCode"),all = T) #Assign conversion factors using unique characteristic and method identifiers 
 
+data_NO3_test$Converted<-c(data_NO3_test$ResultMeasureValue*data_NO3_test$Conversion) #convert data
 
-data_NO3_test$Converted<-c(data_NO3_test$ResultMeasureValue*data_NO3_test$Conversion)
-
-NO3_temp<-data_NO3_test[is.na(data_NO3_test$Converted),]
+NO3_temp<-data_NO3_test[is.na(data_NO3_test$Converted),] #check for missing converted data as a final check
 
 #################################################################
 
@@ -319,6 +321,13 @@ data_NO3$CharacteristicName<-"Nitrogen, nitrite (NO2) + nitrate (NO3)"
 
 #completed
 
+#clean up
+rm(temp)
+rm(methods_table)
+rm(check_methods)
+rm(conversions)
+rm(conversion_temp)
+rm(NO3_temp)
 
 
 ```

@@ -1,0 +1,58 @@
+"CharacteristicName","ResultMeasure.MeasureUnitCode","Method_Id","ResultAnalyticalMethod.MethodName","DetectionQuantitationLimitMeasure.MeasureUnitCode","USGSPCode"
+"Inorganic nitrogen (nitrate and nitrite)","mg/l","USEPA 353.2","Nitrate-Nitrite Nitrogen by Colorimetry","mg/l",
+"Inorganic nitrogen (nitrate and nitrite)","mg/l as N","USGS CL050","Nutrients, LL, wf, Cd reduct","mg/l as N",631
+"Inorganic nitrogen (nitrate and nitrite) as N",,"NA NA",,,
+"Inorganic nitrogen (nitrate and nitrite)","mg/l as N","USGS CL050","Nutrients, LL, wf, Cd reduct",,631
+"Nitrate","mg/l","USEPA 353.2","Nitrate-Nitrite Nitrogen by Colorimetry","mg/l",
+"Inorganic nitrogen (nitrate and nitrite)","mg/l","11NPSWRD_WQX NPS_Unspecified","Unknown or Unspecified Procedure",,
+"Inorganic nitrogen (nitrate and nitrite)","mg/l as N","NA NA",,,630
+"Inorganic nitrogen (nitrate and nitrite)","mg/l as N","NA NA",,,631
+"Nitrate","mg/l as N","USGS ALGOR","Computation by NWIS algorithm",,618
+"Inorganic nitrogen (nitrate and nitrite)","mg/l as N","USGS CL048","Nutrients, wf, Cd reduct, color",,631
+"Nitrate","mg/l asNO3","USGS ALGOR","Computation by NWIS algorithm",,71851
+"Nitrate",,"NA NA",,,
+"Inorganic nitrogen (nitrate and nitrite)","mg/l as N","USGS CL045","NO2+NO3, wf, Cd reduction ASF",,631
+"Nitrate as N","mg/l","APHA 4500-NO3(G)",,,
+"Inorganic nitrogen (nitrate and nitrite) as N","mg/l","NA NA",,,
+"Inorganic nitrogen (nitrate and nitrite) as N","mg/l","APHA 4500-NO3(G)",,,
+"Nitrate as N","mg/l","USEPA 300(A)",,,
+"Inorganic nitrogen (nitrate and nitrite)","mg/l","USEPA 353.2","Nitrate-Nitrite Nitrogen by Colorimetry",,
+"Inorganic nitrogen (nitrate and nitrite)","mg/l","UTAHDWQ_WQX GENERIC METHOD2","Used for half of methods where historical methodology may not be available.",,
+"Inorganic nitrogen (nitrate and nitrite)","mg/l","R10BUNKER I2546","I2546",,
+"Nitrate","ug/l","USEPA 300.0","Determination of Inorganic Anions by Ion Chromatography",,
+"Inorganic nitrogen (nitrate and nitrite)","ug/l","USEPA 353.2","Nitrate-Nitrite Nitrogen by Colorimetry",,
+"Nitrate","mg/l as N","NA NA",,,618
+"Nitrate","ug/l","USEPA 300","Inorganic Anions by Ion Chromatography","ug/l",
+"Inorganic nitrogen (nitrate and nitrite)","mg/l","R10BUNKER I2546","I2546","mg/l",
+"Inorganic nitrogen (nitrate and nitrite)","mg/l as N","USGS CL049","NO2+NO3, LIS, Cd reduction ASF",,631
+"Nitrate","ug/l","USEPA 353.2","Nitrate-Nitrite Nitrogen by Colorimetry",,
+"Nitrate","ug/l","USEPA 353.2","Nitrate-Nitrite Nitrogen by Colorimetry","ug/l",
+"Nitrate","ug/l","APHA 4500-P-E","4500 P E ~ Phosphorus in Water by Colorimetry- Ascorbic Acid Method",,
+"Nitrate","ug/l","USEPA 300","Inorganic Anions by Ion Chromatography",,
+"Nitrate","mg/l asNO3","NA NA",,,71851
+"Inorganic nitrogen (nitrate and nitrite)","mg/l as N","USGS CL048","Nutrients, wf, Cd reduct, color","mg/l as N",631
+"Inorganic nitrogen (nitrate and nitrite)","mg/l","R10BUNKER USGS_HIST","USGS_HIST","mg/l",
+"Nitrate","mg/l","MDE_FIELDSERVICES_WQX MISC_CALC","Miscellaneous Calculations for Nutrients",,
+"Nitrate + Nitrite","mg/l","ASTM D7781","Nitrite-Nitrate in Water by Nitrate Reductase","mg/l",
+"Nitrate + Nitrite","mg/l","USEPA 353.2","Nitrate-Nitrite Nitrogen by Colorimetry","mg/l",
+"Inorganic nitrogen (nitrate and nitrite)","mg/l as N","USGS RED01","NO3+NO2, wf, FCC,NaR, DA",,631
+"Inorganic nitrogen (nitrate and nitrite)","mg/l as N","USGS CL081","NO2+NO3, wu, ASF Cd-reduct(NWQL)",,630
+"Nitrate","mg/l as N","USGS ALGOR","Computation by NWIS algorithm",,620
+"Nitrate","mg/l","USEPA 300.0","Determination of Inorganic Anions by Ion Chromatography",,
+"Inorganic nitrogen (nitrate and nitrite)","mg/l","MDEDAT03_WQX NITR-01","Nitrogen in Water",,
+"Nitrate","mg/l as N","NA NA",,,99121
+"Inorganic nitrogen (nitrate and nitrite)",,"USGS CL050","Nutrients, LL, wf, Cd reduct","mg/l as N",631
+"Nitrate",,"USGS ALGOR","Computation by NWIS algorithm","mg/l as N",620
+"Nitrate",,"USGS ALGOR","Computation by NWIS algorithm","mg/l as N",618
+"Nitrate",,"USGS ALGOR","Computation by NWIS algorithm","mg/l asNO3",71851
+"Inorganic nitrogen (nitrate and nitrite)",,"USGS CL081","NO2+NO3, wu, ASF Cd-reduct(NWQL)","mg/l as N",630
+"Inorganic nitrogen (nitrate and nitrite)",,"USGS CL045","NO2+NO3, wf, Cd reduction ASF","mg/l as N",631
+"Inorganic nitrogen (nitrate and nitrite)",,"NA NA",,"mg/l as N",630
+"Inorganic nitrogen (nitrate and nitrite)",,"USGS CL048","Nutrients, wf, Cd reduct, color","mg/l as N",631
+"Inorganic nitrogen (nitrate and nitrite)","mg/l","UTAHDWQ_WQX GENERIC METHOD2","Used for half of methods where historical methodology may not be available.","mg/l",
+"Nitrate","ug/l","USEPA 300.0","Determination of Inorganic Anions by Ion Chromatography","ug/l",
+"Inorganic nitrogen (nitrate and nitrite)",,"USGS CL049","NO2+NO3, LIS, Cd reduction ASF","mg/l as N",631
+"Inorganic nitrogen (nitrate and nitrite)",,"NA NA",,"mg/l as N",631
+"Inorganic nitrogen (nitrate and nitrite)",,"USEPA 353.2","Nitrate-Nitrite Nitrogen by Colorimetry","mg/l",
+"Inorganic nitrogen (nitrate and nitrite)","mg/l","11NPSWRD_WQX USGS_CL048","Nutrients, Cd reduct, color","mg/l",
+"Nitrate","mg/l","11NPSWRD_WQX USGS_UNSPEC","Unspecified USGS Lab Analytical Procedures at NWQL Following Standard Protocols","mg/l",
