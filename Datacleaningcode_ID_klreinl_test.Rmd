@@ -59,58 +59,24 @@ return(dat)
 ```
 
 
-```{r noahread}
+```{r noah read}
 file.path <- "~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/raw_data/" #Noah
-file.path <-"" #kait
-##Read in files for Noah
-
-# IDdatPull <- read.csv("~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/raw_data/ID_alldata_1975_to_2020.csv")
-# 
-# IDdatPull$State<-c("ID")
-# IDdatPull$Id_num<-c(seq(1:nrow(IDdatPull)))
-# IDdatPull <- IDdatPull %>%
-#   unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
-# names(IDdatPull)
-# summary(IDdatPull)
-
-DEdatPull<-read.csv("~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/raw_data/DE_alldata_1975_to_2020.csv")
-
-DEdatPull$State<-c("DE")
-DEdatPull$Id_num<-c(seq(1:nrow(DEdatPull)))
-DEdatPull <- DEdatPull %>% 
-  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
-names(DEdatPull)
-summary(DEdatPull)
-
-MDdatPull<-read.csv("~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/raw_data/MD_alldata_1975_to_2020.csv")
-
-
-MDdatPull$State<-c("MD")
-MDdatPull$Id_num<-c(seq(1:nrow(MDdatPull)))
-MDdatPull <- MDdatPull %>% 
-  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
-names(MDdatPull)
-summary(MDdatPull)
-
-VAdatPull<-read.csv("~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/raw_data/VA_alldata_1975_to_2020.csv")
-
-
-VAdatPull$State<-c("VA")
-VAdatPull$Id_num<-c(seq(1:nrow(VAdatPull)))
-VAdatPull <- VAdatPull %>% 
-  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
-names(VAdatPull)
-summary(VAdatPull)
 ```
 
 
-```{r}
-#Read in files for Kait
+```{r kait read}
+file.path <-"" #kait
+```
 
+
+```{r arnab read}
+file.path <-"" #arnab
+```
+
+
+```{r read files}
 
 IDdatPull<-read.csv(paste0(file.path,"ID_alldata_1975_to_2020.csv"))
-
-
 IDdatPull$State<-c("ID")
 IDdatPull$Id_num<-c(seq(1:nrow(IDdatPull)))
 IDdatPull <- IDdatPull %>% 
@@ -118,9 +84,7 @@ IDdatPull <- IDdatPull %>%
 names(IDdatPull)
 summary(IDdatPull)
 
-DEdatPull<-read.csv("DE_alldata_1975_to_2020.csv")
-
-
+DEdatPull<-read.csv(paste0(file.path,"DE_alldata_1975_to_2020.csv"))
 DEdatPull$State<-c("DE")
 DEdatPull$Id_num<-c(seq(1:nrow(DEdatPull)))
 DEdatPull <- DEdatPull %>% 
@@ -128,9 +92,7 @@ DEdatPull <- DEdatPull %>%
 names(DEdatPull)
 summary(DEdatPull)
 
-MDdatPull<-read.csv("MD_alldata_1975_to_2020.csv")
-
-
+MDdatPull<-read.csv(paste0(file.path,"MD_alldata_1975_to_2020.csv"))
 MDdatPull$State<-c("MD")
 MDdatPull$Id_num<-c(seq(1:nrow(MDdatPull)))
 MDdatPull <- MDdatPull %>% 
@@ -138,9 +100,7 @@ MDdatPull <- MDdatPull %>%
 names(MDdatPull)
 summary(MDdatPull)
 
-VAdatPull<-read.csv("VA_alldata_1975_to_2020.csv")
-
-
+VAdatPull<-read.csv(paste0(file.path,"VA_alldata_1975_to_2020.csv"))
 VAdatPull$State<-c("VA")
 VAdatPull$Id_num<-c(seq(1:nrow(VAdatPull)))
 VAdatPull <- VAdatPull %>% 
