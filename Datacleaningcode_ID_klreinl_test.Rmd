@@ -462,19 +462,32 @@ source("unit_conversions.R")
 ```
 
 ```{r NO2NO3-N}
+abbrev <- "NO3"
+lagos_name <- "Nitrogen, nitrite (NO2) + nitrate (NO3)"
+lagos_unit <- "ug/l"
+dataset_name <-"no3"
 
-NO3_params<-c("Inorganic nitrogen (nitrate and nitrite)", "Inorganic nitrogen (nitrate and nitrite) as N", "Nitrate", "Nitrate as N","Nitrate + Nitrite","Nitrogen") 
-vars2process<-vars2process[! vars2process %in% NO3_params] #remove grab samples from list
-vars2process #check if there are any missed variable
+params<-c("Inorganic nitrogen (nitrate and nitrite)", "Inorganic nitrogen (nitrate and nitrite) as N", "Nitrate", "Nitrate as N","Nitrate + Nitrite","Nitrogen")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #che
 
-data_NO3<-data[data$CharacteristicName%in%NO3_params,] #want to match all records to the vector we created above 
-unique(data_NO3$ResultSampleFractionText)
-data_NO3 <- data_NO3 %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
-unique(data_NO3$ResultSampleFractionText)
-
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
-temp<-data_NO3 %>% filter(is.na(as.numeric(ResultMeasureValue)))  #checks for non numeric values in result measure value - if NA's not losing any other data - can change #391 NA's - can change
+temp<-data_temp %>% filter(is.na(as.numeric(ResultMeasureValue))) %>% 
+  select(ResultMeasureValue,
+         DetectionQuantitationLimitMeasure.MeasureValue,
+         ResultMeasure.MeasureUnitCode,
+         DetectionQuantitationLimitMeasure.MeasureUnitCode,
+         ResultDetectionConditionText,
+         ActivityBottomDepthHeightMeasure.MeasureValue,
+         ActivityBottomDepthHeightMeasure.MeasureUnitCode,Obs_Id)
+
+###create dataset to check for non numeric objects in dataset
+temp<-data_temp %>% filter(is.na(as.numeric(ResultMeasureValue)))  #checks for non numeric values in result measure value - if NA's not losing any other data - can change #391 NA's - can change
 unique(temp$ResultMeasureValue)
 
 temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>% 
@@ -482,107 +495,10 @@ temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>
 #if there were na values in detection would need to transfer over obs values to detection limits
 
 #overwrite < with NA
-data_NO3 <- data_NO3 %>% 
+data_temp <- data_temp %>% 
   mutate(ResultMeasureValue = ifelse(grepl("<",ResultMeasureValue,fixed=TRUE),NA,ResultMeasureValue))
 
-#convert to numeric once done
-data_NO3<-data_NO3 %>% mutate(ResultMeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
-#check detection limits
-unique(data_NO3$DetectionQuantitationLimitMeasure.MeasureValue[is.na(as.numeric(data_NO3$DetectionQuantitationLimitMeasure.MeasureValue))])
-#no non NA values, convert to numeric
-data_NO3<-data_NO3 %>% mutate(DetectionQuantitationLimitMeasure.MeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
-
-methods_table<-data_NO3 %>% 
-  select(CharacteristicName,
-         ResultMeasure.MeasureUnitCode,
-         Method_Id,
-         ResultAnalyticalMethod.MethodName,
-         DetectionQuantitationLimitMeasure.MeasureUnitCode,
-         USGSPCode) %>% 
-  distinct()
-
-if(file.exists("conversion_files/NO3_Methods_Conversion.csv")==FALSE) {
-  write_csv(methods_table,"conversion_files/NO3_Methods.csv")
-  print("Conversion File needs to be created")
-}
-
-conversions <- read.csv(file = "conversion_files/NO3_Methods_Conversion.csv") # read in list of conversion factors
-conversions[conversions == ""] <- NA #assign NA to blank values
-check_methods<-merge(conversions,methods_table, by=c("CharacteristicName",
-                                                     "ResultMeasure.MeasureUnitCode",
-                                                     "DetectionQuantitationLimitMeasure.MeasureUnitCode",
-                                                     "Method_Id",
-                                                     "ResultAnalyticalMethod.MethodName", 
-                                                     "USGSPCode"),all = T) #merge methods with conversion table to identify methods without a conversion factor
-#write file if conversion factors need to be added
-if(nrow(conversions)!=nrow(check_methods)) {
-  write.csv(check_methods, file = "conversion_files/NO3_Methods_Conversion.csv", row.names=FALSE, na="")
-}
-
-if(is.na(min(check_methods$Conversion))) {print("FIX Conversions and reload files")}
-
-data.size <- nrow(data_NO3) #check to ensure data frame stays same size after merge
-data_NO3<-merge(data_NO3,conversions,by=c("CharacteristicName",
-                                                     "ResultMeasure.MeasureUnitCode",
-                                                     "DetectionQuantitationLimitMeasure.MeasureUnitCode",
-                                                     "Method_Id",
-                                                     "ResultAnalyticalMethod.MethodName", 
-                                                     "USGSPCode"),all.x = T) #Assign conversion factors using unique characteristic and method identifiers 
-nrow(data_NO3) - data.size #should be zero!
-
-data_NO3 <- data_NO3 %>% 
-  mutate(Converted = ResultMeasureValue*Conversion) %>% 
-  mutate(Converted_dl = DetectionQuantitationLimitMeasure.MeasureValue*Conversion_dl) 
-  
-
-data_NO3_temp <- data_NO3 %>% 
-  filter(!is.na(ResultMeasureValue)) %>% 
-  filter(is.na(Converted)) %>% 
-  select(CharacteristicName,
-         ResultMeasure.MeasureUnitCode,
-         DetectionQuantitationLimitMeasure.MeasureUnitCode,
-         Method_Id,
-         ResultAnalyticalMethod.MethodName,
-         USGSPCode) %>% 
-  distinct() 
-#should be zero rows if everything converted right
-
-data_NO3_dl_temp <- data_NO3 %>% 
-  filter(!is.na(DetectionQuantitationLimitMeasure.MeasureValue)) %>% 
-  filter(is.na(Converted_dl)) %>% 
-  select(CharacteristicName,
-         ResultMeasure.MeasureUnitCode,
-         DetectionQuantitationLimitMeasure.MeasureUnitCode,
-         Method_Id,
-         ResultAnalyticalMethod.MethodName,
-         USGSPCode) %>% 
-  distinct() 
-#should be zero rows if everything converted right
-
-
-#Check flagged methods
-
-data_NO3_temp_notes <- conversions %>% 
-  filter(!is.na(Notes))
-
-data_NO3<- data_NO3 %>% filter(Conversion!=-1e6) %>% 
-  filter(Conversion_dl != -1e6)
-
-rm(data_NO3_temp)
-rm(conversions)
-rm(check_methods)
-rm(methods_table)
-rm(temp)
-rm(data.size)
-rm(data_NO3_temp_notes)
-
-data_NO3$ResultMeasure.MeasureUnitCode[!is.na(data_NO3$ResultMeasure.MeasureUnitCode)] <- "ug/l"
-data_NO3$DetectionQuantitationLimitMeasure.MeasureUnitCode[!is.na(data_NO3$DetectionQuantitationLimitMeasure.MeasureUnitCode)] <- "ug/l"
-
-unique(data_NO3$ResultMeasure.MeasureUnitCode) #checked units #change to ug/l
-unique(data_NO3$DetectionQuantitationLimitMeasure.MeasureUnitCode) #checked units #all NA's no change needed
-
-data_NO3$CharacteristicName<-"Nitrogen, nitrite (NO2) + nitrate (NO3)"  #set param name
+source("unit_conversions.R")
 ```
 
 

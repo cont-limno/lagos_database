@@ -59,12 +59,15 @@ data_temp_temp <- data_temp %>%
     filter(!is.na(ResultMeasureValue)) %>% 
     filter(is.na(Converted)) %>% 
     select(CharacteristicName,
+           ResultMeasureValue,
            ResultMeasure.MeasureUnitCode,
+           Conversion,
            DetectionQuantitationLimitMeasure.MeasureUnitCode,
+           DetectionQuantitationLimitMeasure.MeasureValue,
+           Conversion_dl,
            Method_Id,
            ResultAnalyticalMethod.MethodName,
-           USGSPCode) %>% 
-    distinct() 
+           USGSPCode)
 if(nrow(data_temp_temp)>0) stop("not all results converted")
 #should be zero rows if everything converted right
 
@@ -112,4 +115,5 @@ unique(data_temp$DetectionQuantitationLimitMeasure.MeasureUnitCode) #checked uni
 data_temp$CharacteristicName<-lagos_name  #set param name
 
 assign(paste0("data_",dataset_name),data_temp)
+# data <- data %>% filter(Obs_Id %notin% data_temp$Obs_Id)
 rm(data_temp)
