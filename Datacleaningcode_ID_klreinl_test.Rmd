@@ -317,7 +317,7 @@ data_depth<-merge(data_depth,conversions,by=c("CharacteristicName",
                                                      "DetectionQuantitationLimitMeasure.MeasureUnitCode",
                                                      "Method_Id",
                                                      "ResultAnalyticalMethod.MethodName", 
-                                                     "USGSPCode"),all = T) #Assign conversion factors using unique characteristic and method identifiers 
+                                                     "USGSPCode"),all.x = T) #Assign conversion factors using unique characteristic and method identifiers 
 nrow(data_depth) - data.size #should be zero!
 
 data_depth <- data_depth %>% 
@@ -471,7 +471,7 @@ data_secchi<-merge(data_secchi,conversions,by=c("CharacteristicName",
                                                      "DetectionQuantitationLimitMeasure.MeasureUnitCode",
                                                      "Method_Id",
                                                      "ResultAnalyticalMethod.MethodName", 
-                                                     "USGSPCode"),all = T) #Assign conversion factors using unique characteristic and method identifiers 
+                                                     "USGSPCode"),all.x = T) #Assign conversion factors using unique characteristic and method identifiers 
 nrow(data_secchi) - data.size #should be zero!
 
 data_secchi <- data_secchi %>% 
