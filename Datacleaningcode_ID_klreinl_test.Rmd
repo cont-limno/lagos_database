@@ -56,8 +56,13 @@ return(dat)
 
 
 `%notin%` <- Negate(`%in%`)
+```
 
-IDdatPull<-read.csv("ID_alldata_1975_to_2020.csv")
+
+```{r}
+
+##Read in files for Noah
+
 IDdatPull <- read.csv("~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/raw_data/ID_alldata_1975_to_2020.csv")
 
 IDdatPull$State<-c("ID")
@@ -67,7 +72,6 @@ IDdatPull <- IDdatPull %>%
 names(IDdatPull)
 summary(IDdatPull)
 
-DEdatPull<-read.csv("DE_alldata_1975_to_2020.csv")
 DEdatPull<-read.csv("~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/raw_data/DE_alldata_1975_to_2020.csv")
 
 DEdatPull$State<-c("DE")
@@ -77,7 +81,6 @@ DEdatPull <- DEdatPull %>%
 names(DEdatPull)
 summary(DEdatPull)
 
-MDdatPull<-read.csv("MD_alldata_1975_to_2020.csv")
 MDdatPull<-read.csv("~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/raw_data/MD_alldata_1975_to_2020.csv")
 
 
@@ -88,7 +91,6 @@ MDdatPull <- MDdatPull %>%
 names(MDdatPull)
 summary(MDdatPull)
 
-VAdatPull<-read.csv("VA_alldata_1975_to_2020.csv")
 VAdatPull<-read.csv("~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/raw_data/VA_alldata_1975_to_2020.csv")
 
 
@@ -98,7 +100,57 @@ VAdatPull <- VAdatPull %>%
   unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
 names(VAdatPull)
 summary(VAdatPull)
+```
 
+
+```{r}
+#Read in files for Kait
+
+
+IDdatPull<-read.csv("ID_alldata_1975_to_2020.csv")
+
+
+IDdatPull$State<-c("ID")
+IDdatPull$Id_num<-c(seq(1:nrow(IDdatPull)))
+IDdatPull <- IDdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(IDdatPull)
+summary(IDdatPull)
+
+DEdatPull<-read.csv("DE_alldata_1975_to_2020.csv")
+
+
+DEdatPull$State<-c("DE")
+DEdatPull$Id_num<-c(seq(1:nrow(DEdatPull)))
+DEdatPull <- DEdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(DEdatPull)
+summary(DEdatPull)
+
+MDdatPull<-read.csv("MD_alldata_1975_to_2020.csv")
+
+
+MDdatPull$State<-c("MD")
+MDdatPull$Id_num<-c(seq(1:nrow(MDdatPull)))
+MDdatPull <- MDdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(MDdatPull)
+summary(MDdatPull)
+
+VAdatPull<-read.csv("VA_alldata_1975_to_2020.csv")
+
+
+VAdatPull$State<-c("VA")
+VAdatPull$Id_num<-c(seq(1:nrow(VAdatPull)))
+VAdatPull <- VAdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(VAdatPull)
+summary(VAdatPull)
+
+```
+
+
+```{r}
 allstates<-rbind(IDdatPull,DEdatPull,DEdatPull,MDdatPull)
 #figure out how to autodelete files that contain datpull
 rm(DEdatPull,IDdatPull,VAdatPull,MDdatPull)
@@ -197,6 +249,8 @@ unique(data$ActivityDepthHeightMeasure.MeasureUnitCode)
 unique(data$ResultDepthHeightMeasure.MeasureUnitCode)
 
 ```
+
+
 ```{r backupvalues}
 
 ###creating new columns to preserve original pulled data
@@ -208,6 +262,8 @@ data$detectionlimit_legacy<- data$DetectionQuantitationLimitMeasure.MeasureValue
 data$detectionlimit_unit_legacy<- data$DetectionQuantitationLimitMeasure.MeasureUnitCode
 
 ```
+
+
 ```{r depth}
 #Depth
 vars2process <- unique(data$CharacteristicName) #only once for first occurrence
@@ -278,6 +334,7 @@ data_depth_temp <- data_depth %>%
          ResultAnalyticalMethod.MethodName,
          USGSPCode) %>% 
   distinct() 
+#should be zero rows if everything converted right
 
 data_depth_temp <- data_depth %>% 
   filter(!is.na(DetectionQuantitationLimitMeasure.MeasureValue)) %>% 
@@ -289,6 +346,13 @@ data_depth_temp <- data_depth %>%
          ResultAnalyticalMethod.MethodName,
          USGSPCode) %>% 
   distinct() 
+#should be zero rows if everything converted right
+
+
+#Check flagged methods
+
+data_depth_temp_notes <- conversions %>% 
+  filter(!is.na(Notes))
 
 rm(data_depth_temp)
 rm(conversions)
@@ -296,6 +360,7 @@ rm(check_methods)
 rm(methods_table)
 rm(temp)
 rm(data.size)
+rm(data_depth_temp_notes)
 
 data_depth$ResultMeasure.MeasureUnitCode[!is.na(data_depth$ResultMeasure.MeasureUnitCode)] <- "m"
 data_depth$DetectionQuantitationLimitMeasure.MeasureUnitCode[!is.na(data_depth$DetectionQuantitationLimitMeasure.MeasureUnitCode)] <- "m"
@@ -307,6 +372,8 @@ data_depth$CharacteristicName<-"Depth"  #set all depth params as depth
 
 #done
 ```
+
+
 ```{r secchi}
 #secchi
 Secchi_params<-c("Depth, Secchi disk depth","Depth, Secchi disk depth (choice list)") #values for secchi
@@ -335,6 +402,7 @@ data_secchi$ResultDetectionConditionText[which(grepl(">",data_secchi$ResultMeasu
 data_secchi$DetectionQuantitationLimitMeasure.MeasureUnitCode[which(grepl(">",data_secchi$ResultMeasureValue,fixed=TRUE))] <- 
   data_secchi$ResultMeasure.MeasureUnitCode[which(grepl(">",data_secchi$ResultMeasureValue,fixed=TRUE))]
 data_secchi$ResultMeasureValue[which(grepl(">",data_secchi$ResultMeasureValue,fixed=TRUE))] <- NA
+
 #deal with on bottom
 data_secchi <- data_secchi %>% 
   mutate(DetectionQuantitationLimitMeasure.MeasureValue = ifelse(ResultMeasureValue == "On Bottom" & is.na(DetectionQuantitationLimitMeasure.MeasureValue),
@@ -385,9 +453,9 @@ conversions <- read.csv(file = "conversion_files/secchi_Methods_Conversion.csv")
 conversions[conversions == ""] <- NA #assign NA to blank values
 check_methods<-merge(conversions,methods_table, by=c("CharacteristicName",
                                                      "ResultMeasure.MeasureUnitCode",
+                                                     "DetectionQuantitationLimitMeasure.MeasureUnitCode",
                                                      "Method_Id",
-                                                     "ResultAnalyticalMethod.MethodName",
-                                                     "DetectionQuantitationLimitMeasure.MeasureUnitCode", 
+                                                     "ResultAnalyticalMethod.MethodName", 
                                                      "USGSPCode"),all = T) #merge methods with conversion table to identify methods without a conversion factor
 #write file if conversion factors need to be added
 if(nrow(conversions)!=nrow(check_methods)) {
@@ -399,10 +467,11 @@ if(is.na(min(check_methods$Conversion))) {print("FIX Conversions and reload file
 data.size <- nrow(data_secchi) #check to make sure data frame stays same size
 
 data_secchi<-merge(data_secchi,conversions,by=c("CharacteristicName",
-                                              "ResultMeasure.MeasureUnitCode",
-                                              "Method_Id","ResultAnalyticalMethod.MethodName",
-                                              "DetectionQuantitationLimitMeasure.MeasureUnitCode", 
-                                              "USGSPCode"),all = T) #Assign conversion factors using unique characteristic and method identifiers 
+                                                     "ResultMeasure.MeasureUnitCode",
+                                                     "DetectionQuantitationLimitMeasure.MeasureUnitCode",
+                                                     "Method_Id",
+                                                     "ResultAnalyticalMethod.MethodName", 
+                                                     "USGSPCode"),all = T) #Assign conversion factors using unique characteristic and method identifiers 
 nrow(data_secchi) - data.size #should be zero!
 
 data_secchi <- data_secchi %>% 
@@ -411,13 +480,33 @@ data_secchi <- data_secchi %>%
 
 data_secchi_temp <- data_secchi %>% 
   filter(!is.na(ResultMeasureValue)) %>% 
-  filter(is.na(Converted))
+  filter(is.na(Converted))%>% 
+  select(CharacteristicName,
+         ResultMeasure.MeasureUnitCode,
+         DetectionQuantitationLimitMeasure.MeasureUnitCode,
+         Method_Id,
+         ResultAnalyticalMethod.MethodName,
+         USGSPCode) %>% 
+  distinct()
 #should be zero rows if everything converted right
 
 data_secchi_temp <- data_secchi %>% 
   filter(!is.na(DetectionQuantitationLimitMeasure.MeasureValue)) %>% 
-  filter(is.na(Converted_dl))
+  filter(is.na(Converted_dl))%>% 
+  select(CharacteristicName,
+         ResultMeasure.MeasureUnitCode,
+         DetectionQuantitationLimitMeasure.MeasureUnitCode,
+         Method_Id,
+         ResultAnalyticalMethod.MethodName,
+         USGSPCode) %>% 
+  distinct()
 #should be zero rows if everything converted right
+
+#Check flagged methods
+
+data_secchi_temp_notes <- conversions %>% 
+  filter(!is.na(Notes))
+
 
 rm(data_secchi_temp)
 rm(conversions)
@@ -425,6 +514,7 @@ rm(check_methods)
 rm(methods_table)
 rm(temp)
 rm(data.size)
+rm(data_secchi_temp_notes)
 
 #assing LAGOS Units
 data_secchi$ResultMeasure.MeasureUnitCode[!is.na(data_secchi$ResultMeasure.MeasureUnitCode)] <- "m"
@@ -435,6 +525,8 @@ data_secchi$CharacteristicName<-"Secchi"  #set all secchi params as secchi
 
 #done
 ```
+
+
 ```{r NO2NO3-N}
 #no3 params
 NO3_params<-c("Inorganic nitrogen (nitrate and nitrite)", "Inorganic nitrogen (nitrate and nitrite) as N", "Nitrate", "Nitrate as N","Nitrate + Nitrite","Nitrogen") 
@@ -519,6 +611,7 @@ data_NO3_temp <- data_NO3 %>%
          ResultAnalyticalMethod.MethodName,
          USGSPCode) %>% 
   distinct() 
+#should be zero rows if everything converted right
 
 data_NO3_dl_temp <- data_NO3 %>% 
   filter(!is.na(DetectionQuantitationLimitMeasure.MeasureValue)) %>% 
@@ -530,6 +623,13 @@ data_NO3_dl_temp <- data_NO3 %>%
          ResultAnalyticalMethod.MethodName,
          USGSPCode) %>% 
   distinct() 
+#should be zero rows if everything converted right
+
+
+#Check flagged methods
+
+data_NO3_temp_notes <- conversions %>% 
+  filter(!is.na(Notes))
 
 data_NO3<- data_NO3 %>% filter(Conversion!=-1e6) %>% 
   filter(Conversion_dl != -1e6)
@@ -540,6 +640,7 @@ rm(check_methods)
 rm(methods_table)
 rm(temp)
 rm(data.size)
+rm(data_NO3_temp_notes)
 
 data_NO3$ResultMeasure.MeasureUnitCode[!is.na(data_NO3$ResultMeasure.MeasureUnitCode)] <- "ug/l"
 data_NO3$DetectionQuantitationLimitMeasure.MeasureUnitCode[!is.na(data_NO3$DetectionQuantitationLimitMeasure.MeasureUnitCode)] <- "ug/l"
