@@ -140,7 +140,10 @@ rm(data1, data2, data3)
 #unique organizations
 unique(data$OrganizationIdentifier) #19 organizations data
 table(data$OrganizationFormalName) #tells us number of obvs in each organization
+```
 
+
+```{r Check for Activity type}
 #looking at activity type codes #getting rid of quality control vars
 
 remove_activity <- unique(data$ActivityTypeCode)
@@ -150,7 +153,10 @@ remove_activity
 
 data<-data[which(data$ActivityTypeCode %notin% activitytype_keep),]
 unique(data$ActivityTypeCode)
+```
 
+
+```{r Check for Activity type}
 #manually checking these columns to see if these is data we keep or can drop
 
 unique(data$SubjectTaxonomicName) #expected it to be na - to make sure nothing we need is in there
