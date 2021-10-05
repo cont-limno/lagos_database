@@ -197,7 +197,7 @@ unique(data$ActivityDepthHeightMeasure.MeasureUnitCode)
 unique(data$ResultDepthHeightMeasure.MeasureUnitCode)
 
 ```
-```{r}
+```{r backupvalues}
 
 ###creating new columns to preserve original pulled data
 
@@ -254,12 +254,15 @@ if(nrow(conversions)!=nrow(check_methods)) {
 
 if(is.na(min(check_methods$Conversion))) {print("FIX Conversions and reload files")}
 
+data.size <- nrow(data_depth) #record dataframe size prior to merge to ensure its staying same size
+
 data_depth<-merge(data_depth,conversions,by=c("CharacteristicName",
                                                      "ResultMeasure.MeasureUnitCode",
                                                      "DetectionQuantitationLimitMeasure.MeasureUnitCode",
                                                      "Method_Id",
                                                      "ResultAnalyticalMethod.MethodName", 
                                                      "USGSPCode"),all = T) #Assign conversion factors using unique characteristic and method identifiers 
+nrow(data_depth) - data.size #should be zero!
 
 data_depth <- data_depth %>% 
   mutate(Converted = ResultMeasureValue*Conversion) %>% 
@@ -292,6 +295,7 @@ rm(conversions)
 rm(check_methods)
 rm(methods_table)
 rm(temp)
+rm(data.size)
 
 data_depth$ResultMeasure.MeasureUnitCode[!is.na(data_depth$ResultMeasure.MeasureUnitCode)] <- "m"
 data_depth$DetectionQuantitationLimitMeasure.MeasureUnitCode[!is.na(data_depth$DetectionQuantitationLimitMeasure.MeasureUnitCode)] <- "m"
@@ -392,11 +396,14 @@ if(nrow(conversions)!=nrow(check_methods)) {
 
 if(is.na(min(check_methods$Conversion))) {print("FIX Conversions and reload files")}
 
+data.size <- nrow(data_secchi) #check to make sure data frame stays same size
+
 data_secchi<-merge(data_secchi,conversions,by=c("CharacteristicName",
                                               "ResultMeasure.MeasureUnitCode",
                                               "Method_Id","ResultAnalyticalMethod.MethodName",
                                               "DetectionQuantitationLimitMeasure.MeasureUnitCode", 
                                               "USGSPCode"),all = T) #Assign conversion factors using unique characteristic and method identifiers 
+nrow(data_secchi) - data.size #should be zero!
 
 data_secchi <- data_secchi %>% 
   mutate(Converted = ResultMeasureValue*Conversion) %>% 
@@ -417,6 +424,7 @@ rm(conversions)
 rm(check_methods)
 rm(methods_table)
 rm(temp)
+rm(data.size)
 
 #assing LAGOS Units
 data_secchi$ResultMeasure.MeasureUnitCode[!is.na(data_secchi$ResultMeasure.MeasureUnitCode)] <- "m"
@@ -427,10 +435,7 @@ data_secchi$CharacteristicName<-"Secchi"  #set all secchi params as secchi
 
 #done
 ```
-
-
-
-```{r}
+```{r NO2NO3-N}
 #no3 params
 NO3_params<-c("Inorganic nitrogen (nitrate and nitrite)", "Inorganic nitrogen (nitrate and nitrite) as N", "Nitrate", "Nitrate as N","Nitrate + Nitrite") 
 vars2process<-vars2process[! vars2process %in% NO3_params] #remove grab samples from list
@@ -475,12 +480,14 @@ if(nrow(conversions)!=nrow(check_methods)) {
 
 if(is.na(min(check_methods$Conversion))) {print("FIX Conversions and reload files")}
 
+data.size <- nrow(data_NO3) #check to ensure data frame stays same size after merge
 data_NO3<-merge(data_NO3,conversions,by=c("CharacteristicName",
                                                      "ResultMeasure.MeasureUnitCode",
                                                      "DetectionQuantitationLimitMeasure.MeasureUnitCode",
                                                      "Method_Id",
                                                      "ResultAnalyticalMethod.MethodName", 
                                                      "USGSPCode"),all = T) #Assign conversion factors using unique characteristic and method identifiers 
+nrow(data_NO3) - data.size #should be zero!
 
 data_NO3 <- data_NO3 %>% 
   mutate(Converted = ResultMeasureValue*Conversion) %>% 
@@ -514,6 +521,7 @@ rm(conversions)
 rm(check_methods)
 rm(methods_table)
 rm(temp)
+rm(data.size)
 
 data_NO3$ResultMeasure.MeasureUnitCode[!is.na(data_NO3$ResultMeasure.MeasureUnitCode)] <- "ug/l"
 data_NO3$DetectionQuantitationLimitMeasure.MeasureUnitCode[!is.na(data_NO3$DetectionQuantitationLimitMeasure.MeasureUnitCode)] <- "ug/l"
