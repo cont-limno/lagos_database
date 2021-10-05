@@ -152,8 +152,7 @@ data <- data %>% filter(ResultStatusIdentifier != "Rejected")
 
 unique(data$ResultValueTypeName)
 data<-data %>% filter(ResultValueTypeName == "Actual" | is.na(ResultValueTypeName))
-data <- data %>% filter(USGSPCode != 600 | is.na(USGSPCode)) #Pcode 600 is a calculated value
-unique(data$ResultValueTypeName)
+data <- data %>% filter(ResultAnalyticalMethod.MethodName !="Computation by NWIS algorithm" | is.na(ResultAnalyticalMethod.MethodName))
 
 unique(data$ResultDetectionConditionText)
 #filtered out vars we don't need in resultsdetection condition text - did it in multistep because R doesn't handle multiple OR statements well
@@ -438,7 +437,7 @@ data_secchi$CharacteristicName<-"Secchi"  #set all secchi params as secchi
 ```
 ```{r NO2NO3-N}
 #no3 params
-NO3_params<-c("Inorganic nitrogen (nitrate and nitrite)", "Inorganic nitrogen (nitrate and nitrite) as N", "Nitrate", "Nitrate as N","Nitrate + Nitrite") 
+NO3_params<-c("Inorganic nitrogen (nitrate and nitrite)", "Inorganic nitrogen (nitrate and nitrite) as N", "Nitrate", "Nitrate as N","Nitrate + Nitrite","Nitrogen") 
 vars2process<-vars2process[! vars2process %in% NO3_params] #remove grab samples from list
 vars2process #check if there are any missed variable
 
