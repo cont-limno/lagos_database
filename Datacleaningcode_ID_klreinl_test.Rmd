@@ -449,7 +449,22 @@ unique(data_NO3$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
 temp<-data_NO3 %>% filter(is.na(as.numeric(ResultMeasureValue)))  #checks for non numeric values in result measure value - if NA's not losing any other data - can change #391 NA's - can change
+unique(temp$ResultMeasureValue)
+
+temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>% 
+  filter(is.na(DetectionQuantitationLimitMeasure.MeasureValue))
+#if there were na values in detection would need to transfer over obs values to detection limits
+
+#overwrite < with NA
+data_NO3 <- data_NO3 %>% 
+  mutate(ResultMeasureValue = ifelse(grepl("<",ResultMeasureValue,fixed=TRUE),NA,ResultMeasureValue))
+
+#convert to numeric once done
 data_NO3<-data_NO3 %>% mutate(ResultMeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
+#check detection limits
+unique(data_NO3$DetectionQuantitationLimitMeasure.MeasureValue[is.na(as.numeric(data_NO3$DetectionQuantitationLimitMeasure.MeasureValue))])
+#no non NA values, convert to numeric
+data_NO3<-data_NO3 %>% mutate(DetectionQuantitationLimitMeasure.MeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
 
 methods_table<-data_NO3 %>% 
   select(CharacteristicName,
@@ -486,7 +501,7 @@ data_NO3<-merge(data_NO3,conversions,by=c("CharacteristicName",
                                                      "DetectionQuantitationLimitMeasure.MeasureUnitCode",
                                                      "Method_Id",
                                                      "ResultAnalyticalMethod.MethodName", 
-                                                     "USGSPCode"),all = T) #Assign conversion factors using unique characteristic and method identifiers 
+                                                     "USGSPCode"),all.x = T) #Assign conversion factors using unique characteristic and method identifiers 
 nrow(data_NO3) - data.size #should be zero!
 
 data_NO3 <- data_NO3 %>% 
@@ -516,6 +531,9 @@ data_NO3_dl_temp <- data_NO3 %>%
          USGSPCode) %>% 
   distinct() 
 
+data_NO3<- data_NO3 %>% filter(Conversion!=-1e6) %>% 
+  filter(Conversion_dl != -1e6)
+
 rm(data_NO3_temp)
 rm(conversions)
 rm(check_methods)
@@ -530,8 +548,6 @@ unique(data_NO3$ResultMeasure.MeasureUnitCode) #checked units #change to ug/l
 unique(data_NO3$DetectionQuantitationLimitMeasure.MeasureUnitCode) #checked units #all NA's no change needed
 
 data_NO3$CharacteristicName<-"Nitrogen, nitrite (NO2) + nitrate (NO3)"  #set param name
-
-
 ```
 
 
