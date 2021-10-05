@@ -100,3 +100,7 @@
 "Nitrate as N","mg/l",,"USEPA 300(A)",,,1000,1000,
 "Nitrate as N","ug/l",,"APHA 4500-NO3(G)",,,,,
 "Nitrate as N","ug/l",,"USEPA 300(A)",,,,,
+"Nitrogen","mg/l","mg/l","APHA 4500-N-C","4500 N C ~ Persufate Method for Total Nitrogen",,,,
+"Nitrogen","mg/l","mg/l","USEPA 353.2","Nitrate-Nitrite Nitrogen by Colorimetry",,,,
+"Nitrogen","mg/l",,"APHA 4500-N-C","4500 N C ~ Persufate Method for Total Nitrogen",,,,
+"Nitrogen","ug/l","ug/l","USEPA 350.1","Ammonia Nitrogen by Colorimetry",,,,
