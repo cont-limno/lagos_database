@@ -504,7 +504,11 @@ source("unit_conversions.R")
 
 ```{r Silica}
 abbrev <- "Si"
-params<-c("Silica", "Silicate", "Silicon") 
+lagos_name <- "Silica, dissolved"
+lagos_unit <- "mg/l"
+dataset_name <-"silica"
+
+params <- c("Silica", "Silicate", "Silicon") 
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if there are any missed variable
 
@@ -525,115 +529,7 @@ temp<-data_temp %>% filter(is.na(as.numeric(ResultMeasureValue))) %>%
          ActivityBottomDepthHeightMeasure.MeasureUnitCode,Obs_Id)  #checks for non numeric values in result measure value - if NA's not losing any other data - can change #391 NA's - can change
 unique(temp$ResultMeasureValue)
 
-temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>% 
-  filter(is.na(DetectionQuantitationLimitMeasure.MeasureValue))
-#if there were na values in detection would need to transfer over obs values to detection limits
-
-#overwrite < with NA
-data_temp <- data_temp %>% 
-  mutate(ResultMeasureValue = ifelse(grepl("<",ResultMeasureValue,fixed=TRUE),NA,ResultMeasureValue))
-
-#convert to numeric once done
-data_temp<-data_temp %>% mutate(ResultMeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
-#check detection limits
-unique(data_temp$DetectionQuantitationLimitMeasure.MeasureValue[is.na(as.numeric(data_temp$DetectionQuantitationLimitMeasure.MeasureValue))])
-#no non NA values, convert to numeric
-data_temp<-data_temp %>% mutate(DetectionQuantitationLimitMeasure.MeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
-
-methods_table<-data_temp %>% 
-  select(CharacteristicName,
-         ResultMeasure.MeasureUnitCode,
-         Method_Id,
-         ResultAnalyticalMethod.MethodName,
-         DetectionQuantitationLimitMeasure.MeasureUnitCode,
-         USGSPCode) %>% 
-  distinct()
-
-if(file.exists(paste0("conversion_files/",abbrev,"_Methods_Conversion.csv"))==FALSE) {
-  write_csv(methods_table,paste0("conversion_files/",abbrev,"_Methods.csv"))
-  print("Conversion File needs to be created")
-}
-
-conversions <- read.csv(file = paste0("conversion_files/",abbrev,"_Methods_Conversion.csv")) # read in list of conversion factors
-conversions[conversions == ""] <- NA #assign NA to blank values
-check_methods<-merge(conversions,methods_table, by=c("CharacteristicName",
-                                                     "ResultMeasure.MeasureUnitCode",
-                                                     "DetectionQuantitationLimitMeasure.MeasureUnitCode",
-                                                     "Method_Id",
-                                                     "ResultAnalyticalMethod.MethodName", 
-                                                     "USGSPCode"),all = T) #merge methods with conversion table to identify methods without a conversion factor
-#write file if conversion factors need to be added
-if(nrow(conversions)!=nrow(check_methods)) {
-  write.csv(check_methods, file = paste0("conversion_files/",abbrev,"_Methods_Conversion.csv", row.names=FALSE, na=""))
-}
-
-if(is.na(min(check_methods$Conversion))) {print("FIX Conversions and reload files")}
-
-data.size <- nrow(data_temp) #check to ensure data frame stays same size after merge
-data_temp<-merge(data_temp,conversions,by=c("CharacteristicName",
-                                                     "ResultMeasure.MeasureUnitCode",
-                                                     "DetectionQuantitationLimitMeasure.MeasureUnitCode",
-                                                     "Method_Id",
-                                                     "ResultAnalyticalMethod.MethodName", 
-                                                     "USGSPCode"),all.x = T) #Assign conversion factors using unique characteristic and method identifiers 
-nrow(data_temp) - data.size #should be zero!
-
-data_temp <- data_temp %>% 
-  mutate(Converted = ResultMeasureValue*Conversion) %>% 
-  mutate(Converted_dl = DetectionQuantitationLimitMeasure.MeasureValue*Conversion_dl) 
-  
-
-data_temp_temp <- data_temp %>% 
-  filter(!is.na(ResultMeasureValue)) %>% 
-  filter(is.na(Converted)) %>% 
-  select(CharacteristicName,
-         ResultMeasure.MeasureUnitCode,
-         DetectionQuantitationLimitMeasure.MeasureUnitCode,
-         Method_Id,
-         ResultAnalyticalMethod.MethodName,
-         USGSPCode) %>% 
-  distinct() 
-#should be zero rows if everything converted right
-
-data_temp_dl_temp <- data_temp %>% 
-  filter(!is.na(DetectionQuantitationLimitMeasure.MeasureValue)) %>% 
-  filter(is.na(Converted_dl)) %>% 
-  select(CharacteristicName,
-         ResultMeasure.MeasureUnitCode,
-         DetectionQuantitationLimitMeasure.MeasureUnitCode,
-         Method_Id,
-         ResultAnalyticalMethod.MethodName,
-         USGSPCode) %>% 
-  distinct() 
-#should be zero rows if everything converted right
-
-
-#Check flagged methods
-
-data_temp_temp_notes <- conversions %>% 
-  filter(!is.na(Notes))
-
-data_temp<- data_temp %>% filter(Conversion!=-1e6) %>% 
-  filter(Conversion_dl != -1e6)
-
-rm(data_temp_temp)
-rm(conversions)
-rm(check_methods)
-rm(methods_table)
-rm(temp)
-rm(data.size)
-rm(data_temp_temp_notes)
-rm(data_temp_dl_temp)
-
-data_temp$ResultMeasure.MeasureUnitCode[!is.na(data_temp$ResultMeasure.MeasureUnitCode)] <- "mg/l"
-data_temp$DetectionQuantitationLimitMeasure.MeasureUnitCode[!is.na(data_temp$DetectionQuantitationLimitMeasure.MeasureUnitCode)] <- "mg/l"
-
-unique(data_temp$ResultMeasure.MeasureUnitCode) #checked units #change to ug/l
-unique(data_temp$DetectionQuantitationLimitMeasure.MeasureUnitCode) #checked units #all NA's no change needed
-
-data_temp$CharacteristicName<-"Silica, dissolved"  #set param name
-data_silica<-data_temp
-rm(data_temp)
+source("unit_conversions.R")
 ```
 
 
