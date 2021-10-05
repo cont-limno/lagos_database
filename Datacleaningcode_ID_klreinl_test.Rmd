@@ -352,6 +352,8 @@ params<-c("Depth, Secchi disk depth","Depth, Secchi disk depth (choice list)") #
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #che
 
+
+
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 
 ###create dataset to check for non numeric objects in dataset
@@ -385,7 +387,11 @@ data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)
 data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- NA
 
 #check temp again to make sure everything is fixed that can be fixed
-}
+  }
+```
+
+
+```{r processing, eval=FALSE}
 #convert to numeric once done
 data_temp<-data_temp %>% mutate(ResultMeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
 #check detection limits
@@ -496,6 +502,11 @@ assign(paste0("data_",dataset_name),data_temp)
 rm(data_temp)
 
 #done
+```
+
+
+```{r processing, eval=TRUE}
+
 ```
 
 ```{r calcium}
