@@ -114,6 +114,7 @@ lagos_link <- read_csv("lagos_wqp_20210920.csv") %>%
     rename(MonitoringLocationIdentifier = wqp_monitoringlocationidentifier)
 data <- data %>% left_join(lagos_link) %>% drop_na(lagoslakeid)
 
+rm(allstates)
 
 str(data$ResultMeasureValue)
 sum(is.na(data$ResultMeasureValue))
@@ -169,7 +170,7 @@ data<-data %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText
 data<-data %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText != "Total Recoverable")
 unique(data$ResultSampleFractionText)
 
-data<-data %>% select(-ActivityMediaName, -ActivityMediaSubdivisionName, -ActivityStartTime.Time, -ActivityStartTime.TimeZoneCode, -ActivityEndTime.Time, -ActivityEndTime.TimeZoneCode, -SampleAquifer, -HydrologicCondition, -HydrologicEvent, -SubjectTaxonomicName, -SampleTissueAnatomyName, -LaboratoryName, -AnalysisStartDate, -PreparationStartDate)
+data<-data %>% select(-ActivityMediaName, -ActivityMediaSubdivisionName, -ActivityStartTime.TimeZoneCode, -ActivityEndTime.Time, -ActivityEndTime.TimeZoneCode, -SampleAquifer, -HydrologicCondition, -HydrologicEvent, -SubjectTaxonomicName, -SampleTissueAnatomyName, -LaboratoryName, -AnalysisStartDate, -PreparationStartDate)
 
 #has ft, feet, and m - need to convert the ones with ft and feet 
 unique(data$ActivityDepthHeightMeasure.MeasureUnitCode) 
