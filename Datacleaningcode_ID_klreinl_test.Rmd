@@ -152,6 +152,7 @@ data <- data %>% filter(ResultStatusIdentifier != "Rejected")
 
 unique(data$ResultValueTypeName)
 data<-data %>% filter(ResultValueTypeName == "Actual" | is.na(ResultValueTypeName))
+data <- data %>% filter(USGSPCode != 600 | is.na(USGSPCode)) #Pcode 600 is a calculated value
 unique(data$ResultValueTypeName)
 
 unique(data$ResultDetectionConditionText)
