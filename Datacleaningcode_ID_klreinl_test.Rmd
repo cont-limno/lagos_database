@@ -59,22 +59,22 @@ return(dat)
 ```
 
 
-```{r noah read}
+```{r noah-read}
 file.path <- "~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/raw_data/" #Noah
 ```
 
 
-```{r kait read}
+```{r kait-read}
 file.path <-"" #kait
 ```
 
 
-```{r arnab read}
+```{r arnab-read}
 file.path <-"~/Lagos Limno/" #arnab
 ```
 
 
-```{r read files}
+```{r read-files}
 
 IDdatPull<-read.csv(paste0(file.path,"ID_alldata_1975_to_2020.csv"))
 IDdatPull$State<-c("ID")
@@ -143,7 +143,7 @@ table(data$OrganizationFormalName) #tells us number of obvs in each organization
 ```
 
 
-```{r Check for Activity type}
+```{r Check-for-Activity-type}
 #looking at activity type codes #getting rid of quality control vars
 
 remove_activity <- unique(data$ActivityTypeCode)
@@ -156,7 +156,7 @@ unique(data$ActivityTypeCode)
 ```
 
 
-```{r Check for Activity type}
+```{r }
 #manually checking these columns to see if these is data we keep or can drop
 
 unique(data$SubjectTaxonomicName) #expected it to be na - to make sure nothing we need is in there
@@ -502,27 +502,27 @@ rm(data_temp)
 
 ```
 
-```{r aluminum total}
+```{r aluminum-total}
 
 ```
 
-```{r aluminum dissolved}
+```{r aluminum-dissolved}
 
 ```
 
-```{r mercury total}
+```{r mercury-total}
 
 ```
 
-```{r mercury dissolved}
+```{r mercury-dissolved}
 
 ```
 
-```{r methylmercury total}
+```{r methylmercury-total}
 
 ```
 
-```{r methylmercury dissolved}
+```{r methylmercury-dissolved}
 
 ```
 
@@ -530,31 +530,27 @@ rm(data_temp)
 
 ```
 
-```{r selenium total}
+```{r selenium-total}
 
 ```
 
-```{r selenium dissolved}
+```{r selenium-dissolved}
 
 ```
 
-```{r arsenic total}
+```{r arsenic-total}
 
 ```
 
-```{r arsenic dissolved}
+```{r arsenic-dissolved}
 
 ```
 
-```{r atrazine dissolved}
+```{r atrazine-dissolved}
 
 ```
 
 ```{r ecoli}
-
-```
-
-```{r silica dissolved}
 
 ```
 
@@ -590,11 +586,11 @@ rm(data_temp)
 
 ```
 
-```{r total carbon (TC)}
+```{r total-carbon}
 
 ```
 
-```{r total dissolved carbon (TDC)}
+```{r total-dissolved-carbon}
 
 ```
 
@@ -610,43 +606,43 @@ rm(data_temp)
 
 ```
 
-```{r color true}
+```{r color-true}
 
 ```
 
-```{r color apparent}
+```{r color-apparent}
 
 ```
 
-```{r dissolved inorganic phosphorus (DIP))}
+```{r dissolved-inorganic-phosphorus}
 
 ```
 
-```{r phosphorus total (TP)}
+```{r phosphorus-total}
 
 ```
 
-```{r phosphorus total dissolved  (TDP)}
+```{r phosphorus-total-dissolved}
 
 ```
 
-```{r TKN kjeldahl total }
+```{r TKN-kjeldahl-total }
 
 ```
 
-```{r TDKN kjeldahl dissolved}
+```{r TDKN-kjeldahl-dissolved}
 
 ```
 
-```{r nitrogen total (TN)}
+```{r nitrogen-total}
 
 ```
 
-```{r otal dissolved nitrogen (TDN)}
+```{r total-dissolved-nitrogen}
 
 ```
 
-```{r Ammonia, ammonium}
+```{r Ammonia-ammonium}
 
 ```
 
@@ -655,7 +651,7 @@ rm(data_temp)
 ```
 
 ```{r NO2NO3-N}
-#no3 params
+
 NO3_params<-c("Inorganic nitrogen (nitrate and nitrite)", "Inorganic nitrogen (nitrate and nitrite) as N", "Nitrate", "Nitrate as N","Nitrate + Nitrite","Nitrogen") 
 vars2process<-vars2process[! vars2process %in% NO3_params] #remove grab samples from list
 vars2process #check if there are any missed variable
