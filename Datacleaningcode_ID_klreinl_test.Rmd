@@ -363,39 +363,29 @@ temp<-data_temp %>% filter(is.na(as.numeric(ResultMeasureValue))) %>%
          ResultDetectionConditionText,
          ActivityBottomDepthHeightMeasure.MeasureValue,
          ActivityBottomDepthHeightMeasure.MeasureUnitCode,Obs_Id)
-
-
+{
 #notes for processing non-numerics
 #have to be able to assign a value and units to either result measure value and/or detection limit value to process
+temp2 <- temp %>% 
+  filter(grepl(">",ResultMeasureValue,fixed=TRUE)) %>% 
+  filter(is.na(DetectionQuantitationLimitMeasure.MeasureValue))
+#extract Values
+vals <- gsub("[^0-9.-]", "", temp2$ResultMeasureValue)
+data_temp$DetectionQuantitationLimitMeasure.MeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Greater Than"
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- NA
 
-#deal with > obs
-data_secchi$DetectionQuantitationLimitMeasure.MeasureValue[which(grepl(">",data_secchi$ResultMeasureValue,fixed=TRUE))] <- 
-  gsub("[^0-9.-]", "", data_secchi$ResultMeasureValue[which(grepl(">",data_secchi$ResultMeasureValue,fixed=TRUE))])
-data_secchi$ResultDetectionConditionText[which(grepl(">",data_secchi$ResultMeasureValue,fixed=TRUE))] <- "Greater Than"
-data_secchi$DetectionQuantitationLimitMeasure.MeasureUnitCode[which(grepl(">",data_secchi$ResultMeasureValue,fixed=TRUE))] <- 
-  data_secchi$ResultMeasure.MeasureUnitCode[which(grepl(">",data_secchi$ResultMeasureValue,fixed=TRUE))]
-data_secchi$ResultMeasureValue[which(grepl(">",data_secchi$ResultMeasureValue,fixed=TRUE))] <- NA
+temp2 <- temp %>% 
+  filter(ResultMeasureValue=="On Bottom") %>% 
+  filter(is.na(DetectionQuantitationLimitMeasure.MeasureValue)) %>% 
+  filter(!is.na(ActivityBottomDepthHeightMeasure.MeasureValue))
+vals <- temp2$ActivityBottomDepthHeightMeasure.MeasureValue
+data_temp$DetectionQuantitationLimitMeasure.MeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Greater Than"
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- NA
 
-#deal with on bottom
-data_secchi <- data_secchi %>% 
-  mutate(DetectionQuantitationLimitMeasure.MeasureValue = ifelse(ResultMeasureValue == "On Bottom" & is.na(DetectionQuantitationLimitMeasure.MeasureValue),
-                                                                 ActivityBottomDepthHeightMeasure.MeasureValue,
-                                                                 DetectionQuantitationLimitMeasure.MeasureValue))
-data_secchi <- data_secchi %>% 
-  mutate(DetectionQuantitationLimitMeasure.MeasureUnitCode = ifelse(ResultMeasureValue == "On Bottom" & is.na(DetectionQuantitationLimitMeasure.MeasureUnitCode),
-                                                                 ActivityBottomDepthHeightMeasure.MeasureUnitCode,
-                                                                 DetectionQuantitationLimitMeasure.MeasureUnitCode))
-#FIX
-data_secchi <- data_secchi %>% 
-  mutate(ResultDetectionConditionText = ifelse(ResultMeasureValue == "On Bottom" & !is.na(DetectionQuantitationLimitMeasure.MeasureValue),
-                                                                 "Greater Than",
-                                                                 ResultDetectionConditionText))
-data_secchi <- data_secchi %>% 
-  mutate(ResultMeasureValue = ifelse(ResultMeasureValue == "On Bottom" & !is.na(DetectionQuantitationLimitMeasure.MeasureValue),
-                                                                 NA,
-                                                                 ResultMeasureValue))
-
-
+#check temp again to make sure everything is fixed that can be fixed
+}
 #convert to numeric once done
 data_temp<-data_temp %>% mutate(ResultMeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
 #check detection limits
