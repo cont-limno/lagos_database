@@ -616,18 +616,18 @@ data_NO3$CharacteristicName<-"Nitrogen, nitrite (NO2) + nitrate (NO3)"  #set par
 
 ```{r Silica}
 
-Silica_params<-c("Silica", "Silicate", "Silicon") 
-vars2process<-vars2process[! vars2process %in% Silica_params] #remove grab samples from list
+params<-c("Silica", "Silicate", "Silicon") 
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if there are any missed variable
 
-data_silica<-data[data$CharacteristicName%in%Silica_params,] #want to match all records to the vector we created above 
-unique(data_silica$ResultSampleFractionText)
-data_silica <- data_silica %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
-unique(data_silica$ResultSampleFractionText)
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+unique(data_temp$ResultSampleFractionText)
 
 
 ###create dataset to check for non numeric objects in dataset
-temp<-data_silica %>% filter(is.na(as.numeric(ResultMeasureValue)))  #checks for non numeric values in result measure value - if NA's not losing any other data - can change #391 NA's - can change
+temp<-data_temp %>% filter(is.na(as.numeric(ResultMeasureValue)))  #checks for non numeric values in result measure value - if NA's not losing any other data - can change #391 NA's - can change
 unique(temp$ResultMeasureValue)
 
 temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>% 
@@ -635,17 +635,17 @@ temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>
 #if there were na values in detection would need to transfer over obs values to detection limits
 
 #overwrite < with NA
-data_silica <- data_silica %>% 
+data_temp <- data_temp %>% 
   mutate(ResultMeasureValue = ifelse(grepl("<",ResultMeasureValue,fixed=TRUE),NA,ResultMeasureValue))
 
 #convert to numeric once done
-data_silica<-data_silica %>% mutate(ResultMeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
+data_temp<-data_temp %>% mutate(ResultMeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
 #check detection limits
-unique(data_silica$DetectionQuantitationLimitMeasure.MeasureValue[is.na(as.numeric(data_silica$DetectionQuantitationLimitMeasure.MeasureValue))])
+unique(data_temp$DetectionQuantitationLimitMeasure.MeasureValue[is.na(as.numeric(data_temp$DetectionQuantitationLimitMeasure.MeasureValue))])
 #no non NA values, convert to numeric
-data_silica<-data_silica %>% mutate(DetectionQuantitationLimitMeasure.MeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
+data_temp<-data_temp %>% mutate(DetectionQuantitationLimitMeasure.MeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
 
-methods_table<-data_silica %>% 
+methods_table<-data_temp %>% 
   select(CharacteristicName,
          ResultMeasure.MeasureUnitCode,
          Method_Id,
@@ -669,26 +669,26 @@ check_methods<-merge(conversions,methods_table, by=c("CharacteristicName",
                                                      "USGSPCode"),all = T) #merge methods with conversion table to identify methods without a conversion factor
 #write file if conversion factors need to be added
 if(nrow(conversions)!=nrow(check_methods)) {
-  write.csv(check_methods, file = "conversion_files/NO3_Methods_Conversion.csv", row.names=FALSE, na="")
+  write.csv(check_methods, file = "conversion_files/Si_Methods_Conversion.csv", row.names=FALSE, na="")
 }
 
 if(is.na(min(check_methods$Conversion))) {print("FIX Conversions and reload files")}
 
-data.size <- nrow(data_silica) #check to ensure data frame stays same size after merge
-data_silica<-merge(data_silica,conversions,by=c("CharacteristicName",
+data.size <- nrow(data_temp) #check to ensure data frame stays same size after merge
+data_temp<-merge(data_temp,conversions,by=c("CharacteristicName",
                                                      "ResultMeasure.MeasureUnitCode",
                                                      "DetectionQuantitationLimitMeasure.MeasureUnitCode",
                                                      "Method_Id",
                                                      "ResultAnalyticalMethod.MethodName", 
                                                      "USGSPCode"),all.x = T) #Assign conversion factors using unique characteristic and method identifiers 
-nrow(data_silica) - data.size #should be zero!
+nrow(data_temp) - data.size #should be zero!
 
-data_silica <- data_silica %>% 
+data_temp <- data_temp %>% 
   mutate(Converted = ResultMeasureValue*Conversion) %>% 
   mutate(Converted_dl = DetectionQuantitationLimitMeasure.MeasureValue*Conversion_dl) 
   
 
-data_silica_temp <- data_silica %>% 
+data_temp_temp <- data_temp %>% 
   filter(!is.na(ResultMeasureValue)) %>% 
   filter(is.na(Converted)) %>% 
   select(CharacteristicName,
@@ -700,7 +700,7 @@ data_silica_temp <- data_silica %>%
   distinct() 
 #should be zero rows if everything converted right
 
-data_silica_dl_temp <- data_silica %>% 
+data_temp_dl_temp <- data_temp %>% 
   filter(!is.na(DetectionQuantitationLimitMeasure.MeasureValue)) %>% 
   filter(is.na(Converted_dl)) %>% 
   select(CharacteristicName,
@@ -715,28 +715,30 @@ data_silica_dl_temp <- data_silica %>%
 
 #Check flagged methods
 
-data_silica_temp_notes <- conversions %>% 
+data_temp_temp_notes <- conversions %>% 
   filter(!is.na(Notes))
 
-data_silica<- data_silica %>% filter(Conversion!=-1e6) %>% 
+data_temp<- data_temp %>% filter(Conversion!=-1e6) %>% 
   filter(Conversion_dl != -1e6)
 
-rm(data_silica_temp)
+rm(data_temp_temp)
 rm(conversions)
 rm(check_methods)
 rm(methods_table)
 rm(temp)
 rm(data.size)
-rm(data_silica_temp_notes)
-rm(data_silica_dl_temp)
+rm(data_temp_temp_notes)
+rm(data_temp_dl_temp)
 
-data_silica$ResultMeasure.MeasureUnitCode[!is.na(data_silica$ResultMeasure.MeasureUnitCode)] <- "mg/l"
-data_silica$DetectionQuantitationLimitMeasure.MeasureUnitCode[!is.na(data_silica$DetectionQuantitationLimitMeasure.MeasureUnitCode)] <- "mg/l"
+data_temp$ResultMeasure.MeasureUnitCode[!is.na(data_temp$ResultMeasure.MeasureUnitCode)] <- "mg/l"
+data_temp$DetectionQuantitationLimitMeasure.MeasureUnitCode[!is.na(data_temp$DetectionQuantitationLimitMeasure.MeasureUnitCode)] <- "mg/l"
 
-unique(data_silica$ResultMeasure.MeasureUnitCode) #checked units #change to ug/l
-unique(data_silica$DetectionQuantitationLimitMeasure.MeasureUnitCode) #checked units #all NA's no change needed
+unique(data_temp$ResultMeasure.MeasureUnitCode) #checked units #change to ug/l
+unique(data_temp$DetectionQuantitationLimitMeasure.MeasureUnitCode) #checked units #all NA's no change needed
 
-data_silica$CharacteristicName<-"Silica, dissolved"  #set param name
+data_temp$CharacteristicName<-"Silica, dissolved"  #set param name
+data_silica<-data_temp
+rm(data_temp)
 ```
 
 
