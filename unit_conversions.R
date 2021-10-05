@@ -72,12 +72,15 @@ data_temp_dl_temp <- data_temp %>%
     filter(!is.na(DetectionQuantitationLimitMeasure.MeasureValue)) %>% 
     filter(is.na(Converted_dl)) %>% 
     select(CharacteristicName,
+           ResultMeasureValue,
            ResultMeasure.MeasureUnitCode,
+           Conversion,
            DetectionQuantitationLimitMeasure.MeasureUnitCode,
+           DetectionQuantitationLimitMeasure.MeasureValue,
+           Conversion_dl,
            Method_Id,
            ResultAnalyticalMethod.MethodName,
-           USGSPCode) %>% 
-    distinct() 
+           USGSPCode)
 if(nrow(data_temp_dl_temp)>0) stop("not all detection limits converted")
 
 #should be zero rows if everything converted right

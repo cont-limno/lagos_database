@@ -234,115 +234,33 @@ data$detectionlimit_unit_legacy<- data$DetectionQuantitationLimitMeasure.Measure
 ```{r depth}
 #Depth
 vars2process <- unique(data$CharacteristicName) #only once for first occurrence
+abbrev <- "depth"
+lagos_name <- "Depth"
+lagos_unit <- "m"
+dataset_name <-"depth"
 
-Depth_params<-c("Depth, data-logger (non-ported)", "Depth", "Depth, data-logger (ported)", "Depth, bottom") #only values for depth
-vars2process <- vars2process[!vars2process %in% Depth_params]
-vars2process
+params<-c("Depth, data-logger (non-ported)", "Depth", "Depth, data-logger (ported)", "Depth, bottom")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #che
 
-data_depth<-data[data$CharacteristicName%in%Depth_params,] #want to match all records to the vector we created above 
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 
 ###create dataset to check for non numeric objects in dataset
-temp<-data_depth %>% filter(is.na(as.numeric(ResultMeasureValue)))  #checks for non numeric values in result measure value - if NA's not losing any other data - can change
-data_depth<-data_depth %>% mutate(ResultMeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
-#Check non-numerics in detectionlimitvalue (if non numeric exist, code out)
-unique(data_depth$DetectionQuantitationLimitMeasure.MeasureValue[is.na(as.numeric(data_depth$DetectionQuantitationLimitMeasure.MeasureValue))])
-data_depth<-data_depth %>% mutate(DetectionQuantitationLimitMeasure.MeasureValue = as.numeric(DetectionQuantitationLimitMeasure.MeasureValue))
-
-methods_table<-data_depth %>% 
-  select(CharacteristicName,
-         ResultMeasure.MeasureUnitCode,
-         Method_Id,
-         ResultAnalyticalMethod.MethodName,
-         DetectionQuantitationLimitMeasure.MeasureUnitCode,
-         USGSPCode) %>% 
-  distinct()
-
-if(file.exists("conversion_files/depth_Methods_Conversion.csv")==FALSE) {
-  write_csv(methods_table,"conversion_files/depth_Methods.csv")
-  print("Conversion File needs to be created")
-}
-
-conversions <- read.csv(file = "conversion_files/depth_Methods_Conversion.csv") # read in list of conversion factors
-conversions[conversions == ""] <- NA #assign NA to blank values
-check_methods<-merge(conversions,methods_table, by=c("CharacteristicName",
-                                                     "ResultMeasure.MeasureUnitCode",
-                                                     "DetectionQuantitationLimitMeasure.MeasureUnitCode",
-                                                     "Method_Id",
-                                                     "ResultAnalyticalMethod.MethodName", 
-                                                     "USGSPCode"),all = T) #merge methods with conversion table to identify methods without a conversion factor
-#write file if conversion factors need to be added
-if(nrow(conversions)!=nrow(check_methods)) {
-  write.csv(check_methods, file = "conversion_files/depth_Methods_Conversion.csv", row.names=FALSE, na="")
-}
-
-if(is.na(min(check_methods$Conversion))) {print("FIX Conversions and reload files")}
-
-data.size <- nrow(data_depth) #record dataframe size prior to merge to ensure its staying same size
-
-data_depth<-merge(data_depth,conversions,by=c("CharacteristicName",
-                                                     "ResultMeasure.MeasureUnitCode",
-                                                     "DetectionQuantitationLimitMeasure.MeasureUnitCode",
-                                                     "Method_Id",
-                                                     "ResultAnalyticalMethod.MethodName", 
-                                                     "USGSPCode"),all.x = T) #Assign conversion factors using unique characteristic and method identifiers 
-nrow(data_depth) - data.size #should be zero!
-
-data_depth <- data_depth %>% 
-  mutate(Converted = ResultMeasureValue*Conversion) %>% 
-  mutate(Converted_dl = DetectionQuantitationLimitMeasure.MeasureValue*Conversion_dl)
-
-data_depth_temp <- data_depth %>% 
-  filter(!is.na(ResultMeasureValue)) %>% 
-  filter(is.na(Converted)) %>% 
-  select(CharacteristicName,
+temp<-data_temp %>% filter(is.na(as.numeric(ResultMeasureValue))) %>% 
+  select(ResultMeasureValue,
+         DetectionQuantitationLimitMeasure.MeasureValue,
          ResultMeasure.MeasureUnitCode,
          DetectionQuantitationLimitMeasure.MeasureUnitCode,
-         Method_Id,
-         ResultAnalyticalMethod.MethodName,
-         USGSPCode) %>% 
-  distinct() 
-#should be zero rows if everything converted right
+         ResultDetectionConditionText,
+         ActivityBottomDepthHeightMeasure.MeasureValue,
+         ActivityBottomDepthHeightMeasure.MeasureUnitCode,Obs_Id)
 
-data_depth_temp <- data_depth %>% 
-  filter(!is.na(DetectionQuantitationLimitMeasure.MeasureValue)) %>% 
-  filter(is.na(Converted_dl)) %>% 
-  select(CharacteristicName,
-         ResultMeasure.MeasureUnitCode,
-         DetectionQuantitationLimitMeasure.MeasureUnitCode,
-         Method_Id,
-         ResultAnalyticalMethod.MethodName,
-         USGSPCode) %>% 
-  distinct() 
-#should be zero rows if everything converted right
-
-
-#Check flagged methods
-
-data_depth_temp_notes <- conversions %>% 
-  filter(!is.na(Notes))
-
-rm(data_depth_temp)
-rm(conversions)
-rm(check_methods)
-rm(methods_table)
-rm(temp)
-rm(data.size)
-rm(data_depth_temp_notes)
-
-data_depth$ResultMeasure.MeasureUnitCode[!is.na(data_depth$ResultMeasure.MeasureUnitCode)] <- "m"
-data_depth$DetectionQuantitationLimitMeasure.MeasureUnitCode[!is.na(data_depth$DetectionQuantitationLimitMeasure.MeasureUnitCode)] <- "m"
-
-unique(data_depth$ResultMeasure.MeasureUnitCode) #checked units #change ft to m
-unique(data_depth$DetectionQuantitationLimitMeasure.MeasureUnitCode) #checked units #all NA's no change needed
-
-data_depth$CharacteristicName<-"Depth"  #set all depth params as depth
-
+source("unit_conversions.R")
 #done
 ```
 
 
 ```{r secchi}
-#secchi
 abbrev <- "secchi"
 lagos_name <- "Secchi"
 lagos_unit <- "m"
