@@ -494,6 +494,161 @@ data_secchi$CharacteristicName<-"Secchi"  #set all secchi params as secchi
 #done
 ```
 
+```{r calcium}
+
+```
+
+```{r aluminum total}
+
+```
+
+```{r aluminum dissolved}
+
+```
+
+```{r mercury total}
+
+```
+
+```{r mercury dissolved}
+
+```
+
+```{r methylmercury total}
+
+```
+
+```{r methylmercury dissolved}
+
+```
+
+```{r Magnesium}
+
+```
+
+```{r selenium total}
+
+```
+
+```{r selenium dissolved}
+
+```
+
+```{r arsenic total}
+
+```
+
+```{r arsenic dissolved}
+
+```
+
+```{r atrazine dissolved}
+
+```
+
+```{r ecoli}
+
+```
+
+```{r silica dissolved}
+
+```
+
+```{r chloride}
+
+```
+
+```{r oxygen}
+
+```
+
+```{r chlorophyll}
+
+```
+
+```{r pH}
+
+```
+
+```{r temperature}
+
+```
+
+```{r sulfate}
+
+```
+
+```{r turbidity}
+
+```
+
+```{r conductivity}
+
+```
+
+```{r total carbon (TC)}
+
+```
+
+```{r total dissolved carbon (TDC)}
+
+```
+
+```{r alkalinity}
+
+```
+
+```{r TSS}
+
+```
+
+```{r Salinity}
+
+```
+
+```{r color true}
+
+```
+
+```{r color apparent}
+
+```
+
+```{r dissolved inorganic phosphorus (DIP))}
+
+```
+
+```{r phosphorus total (TP)}
+
+```
+
+```{r phosphorus total dissolved  (TDP)}
+
+```
+
+```{r TKN kjeldahl total }
+
+```
+
+```{r TDKN kjeldahl dissolved}
+
+```
+
+```{r nitrogen total (TN)}
+
+```
+
+```{r otal dissolved nitrogen (TDN)}
+
+```
+
+```{r Ammonia, ammonium}
+
+```
+
+```{r NO2-N}
+
+```
 
 ```{r NO2NO3-N}
 #no3 params
