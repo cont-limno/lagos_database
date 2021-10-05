@@ -615,7 +615,7 @@ data_NO3$CharacteristicName<-"Nitrogen, nitrite (NO2) + nitrate (NO3)"  #set par
 
 
 ```{r Silica}
-
+abbrev <- "Si"
 params<-c("Silica", "Silicate", "Silicon") 
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if there are any missed variable
