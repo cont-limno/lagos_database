@@ -550,10 +550,6 @@ data_secchi$CharacteristicName<-"Secchi"  #set all secchi params as secchi
 
 ```
 
-```{r silica dissolved}
-
-```
-
 ```{r chloride}
 
 ```
@@ -651,7 +647,7 @@ data_secchi$CharacteristicName<-"Secchi"  #set all secchi params as secchi
 ```
 
 ```{r NO2NO3-N}
-#no3 params
+
 NO3_params<-c("Inorganic nitrogen (nitrate and nitrite)", "Inorganic nitrogen (nitrate and nitrite) as N", "Nitrate", "Nitrate as N","Nitrate + Nitrite","Nitrogen") 
 vars2process<-vars2process[! vars2process %in% NO3_params] #remove grab samples from list
 vars2process #check if there are any missed variable
