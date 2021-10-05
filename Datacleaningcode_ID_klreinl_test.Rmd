@@ -59,7 +59,7 @@ return(dat)
 ```
 
 
-```{r}
+```{r noahread}
 
 ##Read in files for Noah
 
@@ -279,7 +279,7 @@ temp<-data_depth %>% filter(is.na(as.numeric(ResultMeasureValue)))  #checks for 
 data_depth<-data_depth %>% mutate(ResultMeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
 #Check non-numerics in detectionlimitvalue (if non numeric exist, code out)
 unique(data_depth$DetectionQuantitationLimitMeasure.MeasureValue[is.na(as.numeric(data_depth$DetectionQuantitationLimitMeasure.MeasureValue))])
-
+data_depth<-data_depth %>% mutate(DetectionQuantitationLimitMeasure.MeasureValue = as.numeric(DetectionQuantitationLimitMeasure.MeasureValue))
 
 methods_table<-data_depth %>% 
   select(CharacteristicName,
@@ -390,7 +390,7 @@ temp<-data_secchi %>% filter(is.na(as.numeric(ResultMeasureValue))) %>%
          DetectionQuantitationLimitMeasure.MeasureUnitCode,
          ResultDetectionConditionText,
          ActivityBottomDepthHeightMeasure.MeasureValue,
-         ActivityBottomDepthHeightMeasure.MeasureUnitCode)
+         ActivityBottomDepthHeightMeasure.MeasureUnitCode,Obs_Id)
 
 #notes for processing non-numerics
 #have to be able to assign a value and units to either result measure value and/or detection limit value to process
@@ -412,6 +412,7 @@ data_secchi <- data_secchi %>%
   mutate(DetectionQuantitationLimitMeasure.MeasureUnitCode = ifelse(ResultMeasureValue == "On Bottom" & is.na(DetectionQuantitationLimitMeasure.MeasureUnitCode),
                                                                  ActivityBottomDepthHeightMeasure.MeasureUnitCode,
                                                                  DetectionQuantitationLimitMeasure.MeasureUnitCode))
+#FIX
 data_secchi <- data_secchi %>% 
   mutate(ResultDetectionConditionText = ifelse(ResultMeasureValue == "On Bottom" & !is.na(DetectionQuantitationLimitMeasure.MeasureValue),
                                                                  "Greater Than",
@@ -650,6 +651,9 @@ unique(data_NO3$DetectionQuantitationLimitMeasure.MeasureUnitCode) #checked unit
 
 data_NO3$CharacteristicName<-"Nitrogen, nitrite (NO2) + nitrate (NO3)"  #set param name
 ```
+
+
+
 
 
 
