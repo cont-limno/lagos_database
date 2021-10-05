@@ -815,12 +815,12 @@ methods_table<-data_temp %>%
          USGSPCode) %>% 
   distinct()
 
-if(file.exists("conversion_files/Si_Methods_Conversion.csv")==FALSE) {
-  write_csv(methods_table,"conversion_files/Si_Methods.csv")
+if(file.exists(paste0("conversion_files/",abbrev,"_Methods_Conversion.csv"))==FALSE) {
+  write_csv(methods_table,paste0("conversion_files/",abbrev,"_Methods.csv"))
   print("Conversion File needs to be created")
 }
 
-conversions <- read.csv(file = "conversion_files/Si_Methods_Conversion.csv") # read in list of conversion factors
+conversions <- read.csv(file = paste0("conversion_files/",abbrev,"_Methods_Conversion.csv")) # read in list of conversion factors
 conversions[conversions == ""] <- NA #assign NA to blank values
 check_methods<-merge(conversions,methods_table, by=c("CharacteristicName",
                                                      "ResultMeasure.MeasureUnitCode",
@@ -830,7 +830,7 @@ check_methods<-merge(conversions,methods_table, by=c("CharacteristicName",
                                                      "USGSPCode"),all = T) #merge methods with conversion table to identify methods without a conversion factor
 #write file if conversion factors need to be added
 if(nrow(conversions)!=nrow(check_methods)) {
-  write.csv(check_methods, file = "conversion_files/Si_Methods_Conversion.csv", row.names=FALSE, na="")
+  write.csv(check_methods, file = paste0("conversion_files/",abbrev,"_Methods_Conversion.csv", row.names=FALSE, na="")
 }
 
 if(is.na(min(check_methods$Conversion))) {print("FIX Conversions and reload files")}
@@ -900,7 +900,6 @@ unique(data_temp$DetectionQuantitationLimitMeasure.MeasureUnitCode) #checked uni
 data_temp$CharacteristicName<-"Silica, dissolved"  #set param name
 data_silica<-data_temp
 rm(data_temp)
-#test
 ```
 
 
