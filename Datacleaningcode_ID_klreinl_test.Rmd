@@ -9,8 +9,25 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
-```{r}
+```{r setup}
 library(tidyverse)
+
+non_numerics <- function(data=data_temp) {
+  return(data %>% filter(is.na(as.numeric(ResultMeasureValue))) %>% 
+      select(ResultMeasureValue,
+         DetectionQuantitationLimitMeasure.MeasureValue,
+         ResultMeasure.MeasureUnitCode,
+         DetectionQuantitationLimitMeasure.MeasureUnitCode,
+         ResultDetectionConditionText,
+         ActivityBottomDepthHeightMeasure.MeasureValue,
+         ActivityBottomDepthHeightMeasure.MeasureUnitCode,Obs_Id) %>% 
+        drop_na(ResultMeasureValue))
+
+}
+
+`%notin%` <- Negate(`%in%`)
+
+
 #here are functions
 #for temperature
 
@@ -55,7 +72,7 @@ library(tidyverse)
 # }
 
 
-`%notin%` <- Negate(`%in%`)
+
 ```
 
 
@@ -246,14 +263,7 @@ vars2process #check if any new varables to inlcude
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 
 ###create dataset to check for non numeric objects in dataset
-temp<-data_temp %>% filter(is.na(as.numeric(ResultMeasureValue))) %>% 
-  select(ResultMeasureValue,
-         DetectionQuantitationLimitMeasure.MeasureValue,
-         ResultMeasure.MeasureUnitCode,
-         DetectionQuantitationLimitMeasure.MeasureUnitCode,
-         ResultDetectionConditionText,
-         ActivityBottomDepthHeightMeasure.MeasureValue,
-         ActivityBottomDepthHeightMeasure.MeasureUnitCode,Obs_Id)
+temp <- non_numerics()
 
 source("unit_conversions.R")
 #done
@@ -273,14 +283,8 @@ vars2process #che
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 
 ###create dataset to check for non numeric objects in dataset
-temp<-data_temp %>% filter(is.na(as.numeric(ResultMeasureValue))) %>% 
-  select(ResultMeasureValue,
-         DetectionQuantitationLimitMeasure.MeasureValue,
-         ResultMeasure.MeasureUnitCode,
-         DetectionQuantitationLimitMeasure.MeasureUnitCode,
-         ResultDetectionConditionText,
-         ActivityBottomDepthHeightMeasure.MeasureValue,
-         ActivityBottomDepthHeightMeasure.MeasureUnitCode,Obs_Id)
+temp <- non_numerics()
+
 {
 #notes for processing non-numerics
 #have to be able to assign a value and units to either result measure value and/or detection limit value to process
@@ -477,14 +481,7 @@ data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSample
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
-temp<-data_temp %>% filter(is.na(as.numeric(ResultMeasureValue))) %>% 
-  select(ResultMeasureValue,
-         DetectionQuantitationLimitMeasure.MeasureValue,
-         ResultMeasure.MeasureUnitCode,
-         DetectionQuantitationLimitMeasure.MeasureUnitCode,
-         ResultDetectionConditionText,
-         ActivityBottomDepthHeightMeasure.MeasureValue,
-         ActivityBottomDepthHeightMeasure.MeasureUnitCode,Obs_Id)
+temp<-non_numerics()
 
 ###create dataset to check for non numeric objects in dataset
 temp<-data_temp %>% filter(is.na(as.numeric(ResultMeasureValue)))  #checks for non numeric values in result measure value - if NA's not losing any other data - can change #391 NA's - can change
@@ -519,14 +516,8 @@ unique(data_temp$ResultSampleFractionText)
 
 
 ###create dataset to check for non numeric objects in dataset
-temp<-data_temp %>% filter(is.na(as.numeric(ResultMeasureValue))) %>% 
-  select(ResultMeasureValue,
-         DetectionQuantitationLimitMeasure.MeasureValue,
-         ResultMeasure.MeasureUnitCode,
-         DetectionQuantitationLimitMeasure.MeasureUnitCode,
-         ResultDetectionConditionText,
-         ActivityBottomDepthHeightMeasure.MeasureValue,
-         ActivityBottomDepthHeightMeasure.MeasureUnitCode,Obs_Id)  #checks for non numeric values in result measure value - if NA's not losing any other data - can change #391 NA's - can change
+temp<- non_numerics() #checks for non numeric values in result measure value - if NA's not losing any other data - can change #391 NA's - can change
+
 unique(temp$ResultMeasureValue)
 
 source("unit_conversions.R")
