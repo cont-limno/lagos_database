@@ -241,7 +241,7 @@ dataset_name <-"depth"
 
 params<-c("Depth, data-logger (non-ported)", "Depth", "Depth, data-logger (ported)", "Depth, bottom")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
-vars2process #che
+vars2process #check if any new varables to inlcude
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 
