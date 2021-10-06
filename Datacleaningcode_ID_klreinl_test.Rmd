@@ -363,6 +363,7 @@ vars2process<-vars2process[! vars2process %in% params] #remove grab samples from
 vars2process #check if any new varables to inlcude
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+
 unique(data_temp$ResultSampleFractionText)
 data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Total")
 unique(data_temp$ResultSampleFractionText)
@@ -376,10 +377,10 @@ source("unit_conversions.R")
 ```
 
 ```{r selenium-dissolved}
-abbrev <- "Selenium, dissolved"
+abbrev <- "dSe"
 lagos_name <- "Selenium, dissolved"
 lagos_unit <- "ug/l"
-dataset_name <-"Selenium, dissolved"
+dataset_name <-"selenium_dissolved"
 
 vars2process
 params<-c("Selenium")
