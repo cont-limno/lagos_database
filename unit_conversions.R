@@ -109,8 +109,8 @@ rm(data_temp_dl_temp)
 data_temp$ResultMeasure.MeasureUnitCode[!is.na(data_temp$ResultMeasure.MeasureUnitCode)] <- lagos_unit
 data_temp$DetectionQuantitationLimitMeasure.MeasureUnitCode[!is.na(data_temp$DetectionQuantitationLimitMeasure.MeasureUnitCode)] <- lagos_unit
 
-unique(data_temp$ResultMeasure.MeasureUnitCode) #checked units #change to ug/l
-unique(data_temp$DetectionQuantitationLimitMeasure.MeasureUnitCode) #checked units #all NA's no change needed
+unique(data_temp$ResultMeasure.MeasureUnitCode) 
+unique(data_temp$DetectionQuantitationLimitMeasure.MeasureUnitCode) 
 
 data_temp$CharacteristicName<-lagos_name  #set param name
 
