@@ -208,23 +208,29 @@ unique(data$ResultSampleFractionText)
 
 data<-data %>% select(-ActivityMediaName, -ActivityMediaSubdivisionName, -ActivityStartTime.TimeZoneCode, -ActivityEndTime.Time, -ActivityEndTime.TimeZoneCode, -SampleAquifer, -HydrologicCondition, -HydrologicEvent, -SubjectTaxonomicName, -SampleTissueAnatomyName, -LaboratoryName, -AnalysisStartDate, -PreparationStartDate)
 
-#has ft, feet, and m - need to convert the ones with ft and feet 
+#depthheight conversions 
 unique(data$ActivityDepthHeightMeasure.MeasureUnitCode) 
 data$ActivityDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityDepthHeightMeasure.MeasureUnitCode == "ft", data$ActivityDepthHeightMeasure.MeasureValue*0.3048, data$ActivityDepthHeightMeasure.MeasureValue)
 data$ActivityDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityDepthHeightMeasure.MeasureUnitCode == "feet", data$ActivityDepthHeightMeasure.MeasureValue*0.3048, data$ActivityDepthHeightMeasure.MeasureValue)
 data$ActivityDepthHeightMeasure.MeasureUnitCode[!is.na(data$ActivityDepthHeightMeasure.MeasureUnitCode)]<-"m"
 
-unique(data$ResultDepthHeightMeasure.MeasureUnitCode) #all in m - no conversion needed
+unique(data$ResultDepthHeightMeasure.MeasureUnitCode) 
 data$ResultDepthHeightMeasure.MeasureValue<-ifelse(data$ResultDepthHeightMeasure.MeasureUnitCode == "ft", data$ResultDepthHeightMeasure.MeasureValue*0.3048, data$ResultDepthHeightMeasure.MeasureValue)
 data$ResultDepthHeightMeasure.MeasureValue<-ifelse(data$ResultDepthHeightMeasure.MeasureUnitCode == "feet", data$ResultDepthHeightMeasure.MeasureValue*0.3048, data$ResultDepthHeightMeasure.MeasureValue)
 data$ResultDepthHeightMeasure.MeasureUnitCode[!is.na(data$ResultDepthHeightMeasure.MeasureUnitCode)]<-"m"
 
-unique(data$ActivityTopDepthHeightMeasure.MeasureUnitCode) #all in m - no conversion needed
-#add
+unique(data$ActivityTopDepthHeightMeasure.MeasureUnitCode) 
+data$ActivityTopDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityTopDepthHeightMeasure.MeasureUnitCode == "ft", data$ActivityTopDepthHeightMeasure.MeasureValue*0.3048, data$ActivityTopDepthHeightMeasure.MeasureValue)
+data$ActivityTopDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityTopDepthHeightMeasure.MeasureUnitCode == "feet", data$ActivityTopDepthHeightMeasure.MeasureValue*0.3048, data$ActivityTopDepthHeightMeasure.MeasureValue)
+data$ActivityTopDepthHeightMeasure.MeasureUnitCode[!is.na(data$ActivityTopDepthHeightMeasure.MeasureUnitCode)]<-"m"
+
 
 
 unique(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode) #all in m - no conversion needed
-#add
+data$ActivityBottomDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode == "ft", data$ActivityBottomDepthHeightMeasure.MeasureValue*0.3048, data$ActivityBottomDepthHeightMeasure.MeasureValue)
+data$ActivityBottomDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode == "feet", data$ActivityBottomDepthHeightMeasure.MeasureValue*0.3048, data$ActivityBottomDepthHeightMeasure.MeasureValue)
+data$ActivityBottomDepthHeightMeasure.MeasureUnitCode[!is.na(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode)]<-"m"
+
 
 
 
