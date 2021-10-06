@@ -352,19 +352,20 @@ source("unit_conversions.R")
 ```
 
 ```{r selenium-total}
-
-vars2process <- unique(data$CharacteristicName) #only once for first occurrence
-vars2process
 abbrev <- "Selenium, total"
 lagos_name <- "Selenium, total"
 lagos_unit <- "ug/l"
 dataset_name <-"Selenium, total"
 
+vars2process
 params<-c("Selenium")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Total")
+unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
 temp <- non_numerics()
@@ -375,19 +376,20 @@ source("unit_conversions.R")
 ```
 
 ```{r selenium-dissolved}
-
-vars2process <- unique(data$CharacteristicName) #only once for first occurrence
-vars2process
 abbrev <- "Selenium, dissolved"
 lagos_name <- "Selenium, dissolved"
 lagos_unit <- "ug/l"
 dataset_name <-"Selenium, dissolved"
 
+vars2process
 params<-c("Selenium")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
 temp <- non_numerics()
