@@ -1,0 +1,44 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode
+Orthophosphate,mg/l,USEPA 365.2,Phosphorus by Single Reagent Colorimetry,mg/l,NA
+Phosphorus,mg/l,IDEQ_WQX 365.1,Phosphorus by Colorimetry,NA,NA
+Orthophosphate,mg/l,USEPA 365.1,Phosphorus by Colorimetry,mg/l,NA
+Orthophosphate as P,mg/l,NA NA,NA,NA,NA
+Orthophosphate,mg/l as P,USGS CL057,"Nutrients, LL, wf, phosphomolybd",NA,671
+Phosphorus,mg/l as P,NA NA,NA,NA,666
+Phosphorus,mg/l as P,USGS CL020,"P, wf, FCC, persulfate CF color",NA,666
+Phosphorus,mg/l as P,USGS CL019,"P, wf, FCA, persulfate CF color",mg/l as P,666
+Orthophosphate,mg/l as P,USGS PHM01,"Ortho-PO4, wf, DA phos/mol(NWQL)",NA,671
+Orthophosphate,mg/l as P,USGS CL053,"Nutrients, wf, phosphomolybdate",NA,671
+Orthophosphate,mg/l as P,USGS CL054,"Ortho-PO4, wf, ASF phosphomolybd",NA,671
+Phosphate-phosphorus as P,mg/l,APHA 4500-P-C,NA,NA,NA
+Phosphate-phosphorus,mg/l,USEPA 365.1,Phosphorus by Colorimetry,NA,NA
+Phosphate-phosphorus,mg/l,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,NA,NA
+Phosphate-phosphorus,mg/l,USEPA 365.1,Phosphorus by Colorimetry,mg/l,NA
+Orthophosphate,mg/l as P,NA NA,NA,NA,671
+Orthophosphate,mg/l,R10BUNKER I2606,I2606,mg/l,NA
+Orthophosphate,mg/l asPO4,NA NA,NA,NA,660
+Orthophosphate,ug/l,USEPA 365.1,Phosphorus by Colorimetry,NA,NA
+Phosphorus,ug/l,USEPA 365.4,Total Phosphorus After Block Digestion,NA,NA
+Orthophosphate,mg/l as P,USGS 00048,"Nutrients, wf, color, DA",mg/l as P,671
+Orthophosphate,mg/l,R10BUNKER I2606,I2606,NA,NA
+Phosphorus,ug/l,APHA 4500-P-E,4500 P E ~ Phosphorus in Water by Colorimetry- Ascorbic Acid Method,NA,NA
+Orthophosphate,ug/l,USEPA 200.7,Metals in Water by ICP-AES,NA,NA
+Orthophosphate,ug/l,APHA 4500-P-E,4500 P E ~ Phosphorus in Water by Colorimetry- Ascorbic Acid Method,NA,NA
+Orthophosphate,ug/l,USEPA 200.7,Metals in Water by ICP-AES,ug/l,NA
+Orthophosphate,ug/l,APHA 4500-P-E,4500 P E ~ Phosphorus in Water by Colorimetry- Ascorbic Acid Method,ug/l,NA
+Phosphorus,ug/l,APHA 4500-P-E,4500 P E ~ Phosphorus in Water by Colorimetry- Ascorbic Acid Method,ug/l,NA
+Phosphorus,ug/l,USEPA 200.8,Metals in Waters by ICP/MS,NA,NA
+Orthophosphate,mg/l as P,USGS CL058,"Ortho-PO4, LIS, ASF phosph",NA,671
+Phosphorus,mg/l,IDEQ_WQX 4500-P-E,Phosphorus in Water by Colorimetry- Ascorbic Acid Method,NA,NA
+Phosphorus,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,mg/l,NA
+Phosphorus,mg/l as P,USGS CL059,"Phosphorus, LIS, ASF phosphomol",NA,666
+Phosphorus,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,NA,NA
+Orthophosphate,mg/l as P,USGS CL057,"Nutrients, LL, wf, phosphomolybd",mg/l as P,671
+Orthophosphate,mg/l,R10BUNKER USGS_HIST,USGS_HIST,NA,NA
+Orthophosphate,mg/l,USEPA 365.1,Phosphorus by Colorimetry,NA,NA
+Phosphate-phosphorus,mg/l,USEPA 365.4,Total Phosphorus After Block Digestion,NA,NA
+Phosphate-phosphorus,mg/l,21DELAWQ_WQX 365.1_ELS_PP,Particulate Phosphorus by Colorimetry,NA,NA
+Phosphate-phosphorus,mg/l,APHA 4500-P-J,4500 P J ~ Persulfate Method for Simultaneous Determination of Total Nitrogen and Total Phosphorus,NA,NA
+Phosphate-phosphorus,mg/l,21DELAWQ_WQX 365.1_ELS,Persulfate Method for Total Phosphorus,NA,NA
+Phosphorus,mg/l,USEPA 365.1,Phosphorus by Colorimetry,mg/l,NA
+Orthophosphate,mg/l as P,USGS PHM01,"Ortho-PO4, wf, DA phos/mol(NWQL)",mg/l as P,671

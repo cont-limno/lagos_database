@@ -477,7 +477,39 @@ source("unit_conversions.R")
 ```
 
 ```{r dissolved-inorganic-phosphorus}
+abbrev <- "dip"
+lagos_name <- "Phosphorus, soluable reactive orthophosphate"
+lagos_unit <- "ug/l"
+dataset_name <-"dip"
 
+vars2process
+params<-c("Orthophosphate", "Orthophosphate as P", "Phosphate-phosphorus","Phosphate-phosphorus as P")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #che
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved" | ResultSampleFractionText=="Filterable" | ResultSampleFractionText=="Inorganic")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp<-non_numerics()
+unique(temp$ResultMeasureValue)
+
+temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>% 
+  filter(is.na(DetectionQuantitationLimitMeasure.MeasureValue))
+
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp$Obs_Id)] <- "Less Than"
+
+vals <- gsub("[^0-9.-]", "", temp2$ResultMeasureValue)
+data_temp$DetectionQuantitationLimitMeasure.MeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals
+
+#overwrite < with NA
+data_temp <- data_temp %>% 
+  mutate(ResultMeasureValue = ifelse(grepl("<",ResultMeasureValue,fixed=TRUE),NA,ResultMeasureValue))
+
+
+source("unit_conversions.R")
 ```
 
 ```{r phosphorus-total}
