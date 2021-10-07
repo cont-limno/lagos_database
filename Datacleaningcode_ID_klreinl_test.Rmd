@@ -237,6 +237,8 @@ data$ActivityBottomDepthHeightMeasure.MeasureUnitCode[!is.na(data$ActivityBottom
 #check
 unique(data$ActivityDepthHeightMeasure.MeasureUnitCode)
 unique(data$ResultDepthHeightMeasure.MeasureUnitCode)
+unique(data$ActivityTopDepthHeightMeasure.MeasureUnitCode)
+unique(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode)
 
 ```
 
@@ -352,10 +354,10 @@ source("unit_conversions.R")
 ```
 
 ```{r selenium-total}
-abbrev <- "Selenium, total"
+abbrev <- "tSe"
 lagos_name <- "Selenium, total"
 lagos_unit <- "ug/l"
-dataset_name <-"Selenium, total"
+dataset_name <-"Selenium_total"
 
 vars2process
 params<-c("Selenium")
