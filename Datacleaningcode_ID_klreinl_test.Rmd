@@ -326,18 +326,97 @@ source("unit_conversions.R")
 ```
 
 ```{r aluminum-total}
+abbrev <- "tAl"
+lagos_name <- "Aluminum, total"
+lagos_unit <- "ug/l"
+dataset_name <-"Aluminum_total"
 
+vars2process
+params<-c("Aluminum")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Total")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
 ```
 
 ```{r aluminum-dissolved}
+abbrev <- "dAl"
+lagos_name <- "Aluminum, dissolved"
+lagos_unit <- "ug/l"
+dataset_name <-"Aluminum_dissolved"
 
+vars2process
+params<-c("Aluminum")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
 ```
 
 ```{r mercury-total}
+abbrev <- "tMe"
+lagos_name <- "Mercury, total"
+lagos_unit <- "ng/l"
+dataset_name <-"Mercury_total"
 
+vars2process
+params<-c("Mercury")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Total")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
 ```
 
 ```{r mercury-dissolved}
+
+abbrev <- "dMe"
+lagos_name <- "Mercury, dissolved"
+lagos_unit <- "ng/l"
+dataset_name <-"Mercury_dissolved"
+
+vars2process
+params<-c("Mercury")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
+
 
 ```
 

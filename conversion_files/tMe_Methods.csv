@@ -1,0 +1,9 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode
+Mercury,ng/l,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,ng/l,NA
+Mercury,ug/l,USEPA 245.1,NA,NA,NA
+Mercury,NA,USEPA 245.1,NA,NA,NA
+Mercury,ug/l,USEPA 245.1,Mercury in Water by CVAA,ug/l,NA
+Mercury,ug/l,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,ng/l,NA
+Mercury,ug/l,USEPA 300.1,Determination of Inorganic Anions in Drinking Water by Ion Chromatography,ug/l,NA
+Mercury,ug/l,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,ug/l,NA
+Mercury,ug/l,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,NA,NA
