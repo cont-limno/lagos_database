@@ -1,0 +1,3 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
+Aluminum,ug/l,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,NA,NA,1,1,Reported as Aluminum
+Aluminum,ug/l,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,ug/l,NA,1,1,Reported as Aluminum

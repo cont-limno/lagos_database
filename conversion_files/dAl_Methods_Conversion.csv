@@ -1,0 +1,3 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
+Aluminum,ug/l,NA NA,NA,NA,1106,1,1,Reported as Aluminum 
+Aluminum,NA,NA NA,NA,ug/l,1106,1,1,Reported as Aluminum 
