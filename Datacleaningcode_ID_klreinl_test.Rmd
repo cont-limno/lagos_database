@@ -597,7 +597,31 @@ source("unit_conversions.R")
 ```
 
 ```{r temperature}
+abbrev <- "wtemp"
+lagos_name <- "Temperature"
+lagos_unit <- "deg C"
+dataset_name <-"wtemp"
 
+params<-c("Temperature, water")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #che
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+
+###create dataset to check for non numeric objects in dataset
+temp<-non_numerics()
+
+unique(data_temp$ResultMeasure.MeasureUnitCode)
+unique(data_temp$DetectionQuantitationLimitMeasure.MeasureUnitCode)
+
+data_temp$ResultMeasureValue <- as.numeric(data_temp$ResultMeasureValue)
+
+#convert result measure value
+data_temp$ResultMeasureValue[which(data_temp$ResultMeasure.MeasureUnitCode=="deg F")] <- 
+  (data_temp$ResultMeasureValue[which(data_temp$ResultMeasure.MeasureUnitCode=="deg F")]-32)*(5/9)
+data_temp$ResultMeasure.MeasureUnitCode[which(data_temp$ResultMeasure.MeasureUnitCode=="deg F")] <- "deg C"
+
+#convert detection limit
 ```
 
 ```{r sulfate}
