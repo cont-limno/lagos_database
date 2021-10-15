@@ -733,11 +733,41 @@ data_temp$ResultMeasure.MeasureUnitCode[which(data_temp$ResultMeasure.MeasureUni
 ```
 
 ```{r color-true}
+abbrev <- "TColor"
+lagos_name <- "Color, true"
+lagos_unit <- "PCU"
+dataset_name <-"Color_true"
 
+vars2process
+params<-c("True color")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
 ```
 
 ```{r color-apparent}
+abbrev <- "ApparColor"
+lagos_name <- "Color, apparent"
+lagos_unit <- "PCU"
+dataset_name <-"Color_apparent"
 
+vars2process
+params<-c("Color")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
 ```
 
 ```{r dissolved-inorganic-phosphorus}
