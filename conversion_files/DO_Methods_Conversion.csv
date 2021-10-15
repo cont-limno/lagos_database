@@ -1,0 +1,13 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
+Dissolved oxygen (DO),mg/l,USEPA 360.1,Dissolved Oxygen Using an ISE,mg/l,NA,1,1,Reported as dissolved oxygen by membrane electrode
+Oxygen,mg/l,NA NA,NA,NA,300,1,1,Reported as dissolved oxygen
+Oxygen,mg/l,USGS LUMIN,"Diss oxygen, luminescence sensor",NA,300,1,1,Reported as dissolved oxygen
+Oxygen,% saturatn,NA NA,NA,NA,301,1,1,We are dropping this value 
+Dissolved oxygen (DO),mg/l,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,NA,NA,1,1,unknown
+Dissolved oxygen (DO),mg/l,NA NA,NA,NA,NA,1,1,Uknown
+Dissolved oxygen (DO),mg/l,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,NA,NA,1,1,unknown
+Dissolved oxygen (DO),mg/l,USEPA 360.1,Dissolved Oxygen Using an ISE,NA,NA,1,1,Reported as dissolved oxygen by membrane electrode
+Dissolved oxygen (DO),ppm,NA NA,NA,NA,NA,1,1,unknown
+Dissolved oxygen (DO),mg/l,R10BUNKER DO-USGS,DO-USGS,NA,NA,1,1,Reported as dissolved oxygen
+Dissolved oxygen (DO),mg/l,21DELAWQ_WQX YSI 6-Series,YSI 6-Series Multi-Parameter Sonde,NA,NA,1,1,unknown
+Dissolved oxygen (DO),mg/l,USEPA 360.2,Dissolved Oxygen by Winkler Technique,NA,NA,1,1,Reported as dissolved oxygen by membrWinklere electrode

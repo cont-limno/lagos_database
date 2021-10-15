@@ -1,0 +1,6 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode
+Atrazine,ug/l,USGS GCM35,"Pest, high use, SPE, GCMS-SIM",NA,39632
+Atrazine,ug/l,"NA NA",NA,NA,99775
+Atrazine,ug/l,USGS GCM35,"Pest, high use, SPE, GCMS-SIM",ug/l,39632
+Atrazine,NA,USGS GCM35,"Pest, high use, SPE, GCMS-SIM",ug/l,39632
+Atrazine,NA,USGS LCM44,"Triazines & Phenylureas,SPE,LCMS",ug/l,39632

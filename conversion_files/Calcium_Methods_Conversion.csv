@@ -1,14 +1,14 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
-Calcium,mg/l,USEPA 215.1,Calcium by FLAA,mg/l,NA,1,1,
+Calcium,mg/l,USEPA 215.1,Calcium by FLAA,mg/l,NA,1,1,Reported as calcium
 Calcium,mg/l,NA NA,NA,NA,NA,1,1,NA
 Calcium,mg/l,USGS PLA11,"Metals, wf, ICP-AES (NWQL)",NA,915,1,1,Reported as calcium
 Calcium,mg/l,NA NA,NA,NA,915,1,1,Reported as calcium
 Calcium,mg/l,USGS PLA11,"Metals, wf, ICP-AES (NWQL)",mg/l,915,1,1,Reported as calcium
-Calcium,mg/l,USEPA 200.7,Metals in Water by ICP-AES,mg/l,NA,1,1,
-Calcium,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,NA,NA,1,1,
-Calcium,mg/l,USEPA 200.7,Metals in Water by ICP-AES,NA,NA,1,1,
-Calcium,mg/l,USDOI/USGS I1472,Metals in Water by ICP,NA,NA,1,1,
-Calcium,ug/l,USEPA 200.7,Metals in Water by ICP-AES,NA,NA,0.001,1,
-Calcium,ug/l,21DELAWQ_WQX 200.7_ELS,Inductively Coupled Plasma - Atomic Emission Spectrometry (ICP-AES),NA,NA,0.001,1,
-Calcium,mg/l,USEPA 200.8,Metals in Waters by ICP/MS,NA,NA,1,1,
+Calcium,mg/l,USEPA 200.7,Metals in Water by ICP-AES,mg/l,NA,1,1,Reported as calcium
+Calcium,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,NA,NA,1,1,Reported as calcium
+Calcium,mg/l,USEPA 200.7,Metals in Water by ICP-AES,NA,NA,1,1,Reported as calcium
+Calcium,mg/l,USDOI/USGS I1472,Metals in Water by ICP,NA,NA,1,1,Reported as calcium
+Calcium,ug/l,USEPA 200.7,Metals in Water by ICP-AES,NA,NA,0.001,1,Reported as calcium
+Calcium,ug/l,21DELAWQ_WQX 200.7_ELS,Inductively Coupled Plasma - Atomic Emission Spectrometry (ICP-AES),NA,NA,0.001,1,Reported as calcium
+Calcium,mg/l,USEPA 200.8,Metals in Waters by ICP/MS,NA,NA,1,1,Reported as calcium
 Calcium,NA,USGS PLA11,"Metals, wf, ICP-AES (NWQL)",mg/l,915,1,1,Reported as calcium

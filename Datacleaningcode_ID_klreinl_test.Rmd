@@ -574,6 +574,26 @@ source("unit_conversions.R")
 
 ```{r atrazine-dissolved}
 
+abbrev <- "Atrazine"
+lagos_name <- "Atrazine, dissolved"
+lagos_unit <- "ug/l"
+dataset_name <-"Atrazine_dissolved"
+
+vars2process
+params<-c("Atrazine")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
+
 ```
 
 ```{r ecoli}
@@ -581,10 +601,49 @@ source("unit_conversions.R")
 ```
 
 ```{r chloride}
+abbrev <- "Chloride"
+lagos_name <- "Chloride, dissolved"
+lagos_unit <- "mg/l"
+dataset_name <-"Chloride_dissolved"
 
+vars2process
+params<-c("Chloride")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
 ```
 
 ```{r oxygen}
+#talk to noah about - not complete
+abbrev <- "DO"
+lagos_name <- "Oxygen, dissolved"
+lagos_unit <- "mg/l"
+dataset_name <-"Oxygen_dissolved"
+
+vars2process
+params<-c("Dissolved oxygen (DO)", "Oxygen")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
+
 
 ```
 
@@ -593,7 +652,24 @@ source("unit_conversions.R")
 ```
 
 ```{r pH}
+#comeback to - ask how to convert
 
+abbrev <- "pH"
+lagos_name <- "pH, equilibrated"
+lagos_unit <- "pH"
+dataset_name <-"pH_equilibrated"
+
+vars2process
+params<-c("pH")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
 ```
 
 ```{r temperature}
