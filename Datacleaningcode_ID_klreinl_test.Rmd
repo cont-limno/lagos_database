@@ -635,8 +635,9 @@ vars2process<-vars2process[! vars2process %in% params] #remove grab samples from
 vars2process #check if any new varables to inlcude
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
-unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+#no need to filter DO based on fraction
+# unique(data_temp$ResultSampleFractionText)
+# data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
