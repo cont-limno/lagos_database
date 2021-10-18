@@ -1,0 +1,12 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,USGS AKP01,"Nutrients, wu, WCA,persulfate,CF",mg/l,62855
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l NO3,NA NA,NA,NA,71887
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,USGS AKP01,"Nutrients, wu, WCA,persulfate,CF",NA,62855
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,NA NA,NA,NA,600
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,NA,NA
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,mg/l,NA
+Nutrient-nitrogen,mg/l,APHA 4500-P-J,4500 P J ~ Persulfate Method for Simultaneous Determination of Total Nitrogen and Total Phosphorus,NA,NA
+Nutrient-nitrogen,mg/l,APHA_SM20ED 4500-N-C,4500 N C ~ Persulfate Method for Total Nitrogen,NA,NA
+"Total Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,mg/l,NA
+"Total Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,ASTM D7781,Nitrite-Nitrate in Water by Nitrate Reductase,mg/l,NA
+"Total Nitrogen, mixed forms",mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,mg/l,NA
