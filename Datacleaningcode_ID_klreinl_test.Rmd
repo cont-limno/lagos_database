@@ -336,7 +336,7 @@ vars2process #check if any new varables to inlcude
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -362,7 +362,7 @@ vars2process #check if any new varables to inlcude
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Total")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Total")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -386,7 +386,7 @@ vars2process #check if any new varables to inlcude
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -409,7 +409,7 @@ vars2process #check if any new varables to inlcude
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Total")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Total")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -433,7 +433,7 @@ vars2process #check if any new varables to inlcude
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -458,7 +458,7 @@ vars2process #check if any new varables to inlcude
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Total")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Total")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -482,7 +482,7 @@ vars2process #check if any new varables to inlcude
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -505,7 +505,7 @@ vars2process #check if any new varables to inlcude
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -531,7 +531,7 @@ vars2process #check if any new varables to inlcude
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Total")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Total")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -555,7 +555,7 @@ vars2process #check if any new varables to inlcude
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -586,7 +586,7 @@ vars2process #check if any new varables to inlcude
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -613,7 +613,8 @@ vars2process #check if any new varables to inlcude
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -642,7 +643,8 @@ temp <- non_numerics()
 data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp$Obs_Id)] <- "Less Than"
 
 source("unit_conversions.R")
-
+data_temp_temp_notes
+rm(data_temp_temp_notes)
 
 ```
 
@@ -776,13 +778,17 @@ lagos_unit <- "ug/l"
 dataset_name <-"dip"
 
 vars2process
-params<-c("Orthophosphate", "Orthophosphate as P", "Phosphate-phosphorus","Phosphate-phosphorus as P")
+params<-c("Orthophosphate", 
+          "Orthophosphate as P", 
+          "Phosphate-phosphorus",
+          "Phosphate-phosphorus as P",
+          "Phosphorus")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #che
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved" | ResultSampleFractionText=="Filterable" | ResultSampleFractionText=="Inorganic")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved" | ResultSampleFractionText=="Filterable" | ResultSampleFractionText=="Inorganic")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -803,7 +809,31 @@ source("unit_conversions.R")
 ```
 
 ```{r phosphorus-total}
+abbrev <- "tp"
+lagos_name <- "Phosphorus, total"
+lagos_unit <- "ug/l"
+dataset_name <-"tp"
 
+vars2process
+params<-c("Phosphorus",
+          "Phosphate-phosphorus",
+          "Total Phosphorus, mixed forms")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #che
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Total")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp<-non_numerics()
+
+unique(temp$ResultMeasureValue)
+temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE)
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Less Than"
+
+source("unit_conversions.R")
 ```
 
 ```{r phosphorus-total-dissolved}
@@ -835,7 +865,7 @@ vars2process #che
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Total")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Total")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -867,7 +897,7 @@ params<-c("Total Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved" | ResultSampleFractionText=="Filterable")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved" | ResultSampleFractionText=="Filterable")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -902,7 +932,7 @@ vars2process #che
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -923,7 +953,6 @@ data_temp <- data_temp %>%
 source("unit_conversions.R")
 ```
 
-
 ```{r Silica}
 abbrev <- "Si"
 lagos_name <- "Silica, dissolved"
@@ -936,7 +965,7 @@ vars2process #check if there are any missed variable
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved")
 unique(data_temp$ResultSampleFractionText)
 
 
@@ -947,9 +976,6 @@ unique(temp$ResultMeasureValue)
 
 source("unit_conversions.R")
 ```
-
-
-
 
 ```{r}
 
