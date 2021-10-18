@@ -800,11 +800,6 @@ temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>
 
 data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp$Obs_Id)] <- "Less Than"
 
-#overwrite < with NA
-data_temp <- data_temp %>% 
-  mutate(ResultMeasureValue = ifelse(grepl("<",ResultMeasureValue,fixed=TRUE),NA,ResultMeasureValue))
-
-
 source("unit_conversions.R")
 ```
 
@@ -828,8 +823,8 @@ unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
 temp<-non_numerics()
-
 unique(temp$ResultMeasureValue)
+
 temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE)
 data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Less Than"
 
@@ -837,7 +832,25 @@ source("unit_conversions.R")
 ```
 
 ```{r phosphorus-total-dissolved}
+abbrev <- "tp"
+lagos_name <- "Phosphorus, total dissolved"
+lagos_unit <- "ug/l"
+dataset_name <-"tdp"
 
+params<-c("Phosphorus",
+          "Phosphate-phosphorus",
+          "Total Phosphorus, mixed forms")
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved" | ResultSampleFractionText=="Filterable")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp<-non_numerics()
+unique(temp$ResultMeasureValue)
+
+source("unit_conversions.R")
 ```
 
 ```{r TKN-kjeldahl-total }
