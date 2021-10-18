@@ -20,5 +20,5 @@ Nutrient-nitrogen,mg/l,,APHA_SM20ED 4500-N-C,4500 N C ~ Persulfate Method for To
 Nutrient-nitrogen,mg/l,,USEPA 440(W),440 W  ~ Determination of Carbon and Nitrogen,,-1.00E+06,-1.00E+06,particulate
 "Total Nitrogen, mixed forms",mg/l,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,-1.00E+06,-1.00E+06,din
 "Total Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,ASTM D7781,Nitrite-Nitrate in Water by Nitrate Reductase,,-1.00E+06,-1.00E+06,din
-"Total Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,USEPA 352.1,Nitrate Nitrogen by Colorimetry,,-1.00E+06,-1.00E+06,
+"Total Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,USEPA 352.1,Nitrate Nitrogen by Colorimetry,,-1.00E+06,-1.00E+06,din
 "Total Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,-1.00E+06,-1.00E+06,din
