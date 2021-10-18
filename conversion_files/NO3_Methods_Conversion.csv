@@ -93,3 +93,4 @@ Nitrogen,mg/l,mg/l,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,
 Nitrogen,mg/l,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1000,1000,
 Nitrogen,mg/l,,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,-1.00E+06,-1.00E+06,discard
 Nitrogen,ug/l,ug/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,-1.00E+06,-1.00E+06,discard
+"Total Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,USEPA 352.1,Nitrate Nitrogen by Colorimetry,,1.00E+03,1.00E+03,

@@ -853,7 +853,27 @@ source("unit_conversions.R")
 ```
 
 ```{r total-dissolved-nitrogen}
+abbrev <- "tn" #this should stay the same as tn
+lagos_name <- "Nitrogen, total dissolved"
+lagos_unit <- "ug/l"
+dataset_name <-"tdn"
 
+#remember this should get pulled down from TN
+params<-c("Total Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",
+          "Nutrient-nitrogen",
+          "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",
+          "Total Nitrogen, mixed forms",
+          "Nitrogen")
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved" | ResultSampleFractionText=="Filterable")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp<-non_numerics()
+
+source("unit_conversions.R")
 ```
 
 ```{r Ammonia-ammonium}
