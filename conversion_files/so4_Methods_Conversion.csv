@@ -1,0 +1,11 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
+Sulfate,mg/l,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,mg/l,NA,1,1,as so4
+Sulfate as SO4,mg/l,NA NA,NA,NA,NA,1,1,
+Sulfate,mg/l,USGS IC022,"Anions, wf, IC",NA,945,1,1,as so4
+Sulfate,mg/l,NA NA,NA,NA,945,1,1,
+Sulfate,mg/l,USEPA 300,Inorganic Anions by Ion Chromatography,mg/l,NA,1,1,
+Sulfate,mg/l,USEPA 375.2,Sulfate in Water by Colorimetry,NA,NA,1,1,as so4
+Sulfate,mg/l,USDOI/USGS I2057,Anions in Water by Ion Chromatography,NA,NA,1,1,
+Sulfate,mg/l,USGS IC022,"Anions, wf, IC",mg/l,945,1,1,
+Sulfate,mg/l,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,NA,NA,1,1,
+Sulfate,mg/l,NA NA,NA,NA,99113,1,1,

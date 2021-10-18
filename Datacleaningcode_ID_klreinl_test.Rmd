@@ -702,7 +702,32 @@ data_temp$ResultMeasure.MeasureUnitCode[which(data_temp$ResultMeasure.MeasureUni
 ```
 
 ```{r sulfate}
+#sulfate is reported as SO4
+abbrev <- "so4"
+lagos_name <- "Sulfate, dissolved"
+lagos_unit <- "mg/l"
+dataset_name <-"so4"
 
+vars2process
+params<-c("Sulfate as SO4",
+          "Sulfate as S",
+          "Sulfate")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #che
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp<-non_numerics()
+unique(temp$ResultMeasureValue)
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp$Obs_Id)] <- "Less Than"
+
+source("unit_conversions.R")
+data_temp_temp_notes
+rm(data_temp_temp_notes)
 ```
 
 ```{r turbidity}
