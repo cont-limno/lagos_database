@@ -623,7 +623,6 @@ source("unit_conversions.R")
 ```
 
 ```{r oxygen}
-#talk to noah about - not complete
 abbrev <- "DO"
 lagos_name <- "Oxygen, dissolved"
 lagos_unit <- "mg/l"
@@ -636,12 +635,11 @@ vars2process #check if any new varables to inlcude
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 #no need to filter DO based on fraction
-# unique(data_temp$ResultSampleFractionText)
-# data_temp <- data_temp %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText=="Dissolved")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
 temp <- non_numerics()
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp$Obs_Id)] <- "Less Than"
 
 source("unit_conversions.R")
 

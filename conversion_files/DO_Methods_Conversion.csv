@@ -2,7 +2,7 @@ CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMetho
 Dissolved oxygen (DO),mg/l,USEPA 360.1,Dissolved Oxygen Using an ISE,mg/l,NA,1,1,Reported as dissolved oxygen by membrane electrode
 Oxygen,mg/l,NA NA,NA,NA,300,1,1,Reported as dissolved oxygen
 Oxygen,mg/l,USGS LUMIN,"Diss oxygen, luminescence sensor",NA,300,1,1,Reported as dissolved oxygen
-Oxygen,% saturatn,NA NA,NA,NA,301,1,1,We are dropping this value 
+Oxygen,% saturatn,NA NA,NA,NA,301,-1.00E+06,-1.00E+06,We are dropping this value 
 Dissolved oxygen (DO),mg/l,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,NA,NA,1,1,unknown
 Dissolved oxygen (DO),mg/l,NA NA,NA,NA,NA,1,1,Uknown
 Dissolved oxygen (DO),mg/l,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,NA,NA,1,1,unknown
