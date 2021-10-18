@@ -103,7 +103,6 @@ rm(check_methods)
 rm(methods_table)
 rm(temp)
 rm(data.size)
-rm(data_temp_temp_notes)
 rm(data_temp_dl_temp)
 
 data_temp$ResultMeasure.MeasureUnitCode[!is.na(data_temp$ResultMeasure.MeasureUnitCode)] <- lagos_unit
