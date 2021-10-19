@@ -1,0 +1,19 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode
+Kjeldahl nitrogen,mg/l,USEPA 351.1,Total Kjeldahl Nitrogen by Colorimetry,mg/l,NA
+Kjeldahl nitrogen,mg/l,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,NA,NA
+Kjeldahl nitrogen,NA,NA NA,NA,NA,NA
+Kjeldahl nitrogen,mg/l as N,USGS KJ008,"NH3+org-N, wu, WCA, Kjeldahl, CF",NA,625
+Kjeldahl nitrogen,mg/l as N,NA NA,NA,NA,625
+Kjeldahl nitrogen,mg/l as N,USGS KJ008,"NH3+org-N, wu, WCA, Kjeldahl, CF",mg/l as N,625
+Kjeldahl nitrogen,mg/l as N,USGS KJ006,"NH3+org-N, wu, microkjeldahl ASF",NA,625
+Kjeldahl nitrogen,mg/l,USEPA 351.2,Total Kjeldahl Nitrogen by Colorimetry,NA,NA
+Total Kjeldahl nitrogen,mg/l,USEPA 351.2,Total Kjeldahl Nitrogen by Colorimetry,mg/l,NA
+Kjeldahl nitrogen,mg/l,USEPA 351.2,Total Kjeldahl Nitrogen by Colorimetry,mg/l,NA
+Kjeldahl nitrogen,ug/l,USEPA 351.2,Total Kjeldahl Nitrogen by Colorimetry,NA,NA
+Kjeldahl nitrogen,mg/l,USDOI/USGS I4552,Ammonia Plus Organic Nitrogen in Water,mg/l,NA
+Kjeldahl nitrogen,mg/l as N,USGS CL083,"NH3+org-N, wu, ASF block digest",NA,625
+Kjeldahl nitrogen,mg/l,R10BUNKER I4515,I4515,mg/l,NA
+Kjeldahl nitrogen,mg/l,R10BUNKER I4515,I4515,NA,NA
+Kjeldahl nitrogen,mg/l,USDOI/USGS I4552,Ammonia Plus Organic Nitrogen in Water,NA,NA
+Kjeldahl nitrogen,mg/l,R10BUNKER USGS_HIST,USGS_HIST,mg/l,NA
+Kjeldahl nitrogen,mg/l,APHA 4500-NOR(B),NA,NA,NA
