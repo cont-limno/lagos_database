@@ -1,0 +1,9 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode
+Salinity,mg/mL @25C,"NA NA",NA,NA,96
+Salinity,ppth,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,NA,NA
+Salinity,ppt,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,NA,NA
+Salinity,ppt,21DELAWQ_WQX YSI 6-Series,YSI 6-Series Multi-Parameter Sonde,NA,NA
+Salinity,ppth,APHA 2520-B,2520 B ~ Salinity in Water- Electrical Conductivity Method,NA,NA
+Salinity,ppth,"NA NA",NA,NA,NA
+Salinity,ppt,"NA NA",NA,NA,NA
+Salinity,ppt,21DELAWQ_WQX YSI 6-Series,YSI 6-Series Multi-Parameter Sonde,ppt,NA

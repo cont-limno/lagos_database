@@ -1,0 +1,17 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode
+Organic carbon,mg/l,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,mg/l,NA
+Organic carbon,mg/l,1119USBR P680,NA,NA,NA
+Organic carbon,mg/l,USGS OX009,"TOC, wet oxidation",NA,680
+Organic carbon,mg/l,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,NA,NA
+Organic carbon,mg/l,"NA NA",NA,NA,680
+Organic carbon,mg/l,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,mg/l,NA
+Organic carbon,mg/l,APHA 5310-D,5310 D ~ Total Organic Carbon in Water- Wet-Oxidation Method,mg/l,NA
+Organic carbon,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,NA,NA
+Organic carbon,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,mg/l,NA
+Organic carbon,mg/l,APHA_SM20ED 5310-B,5310 B ~ Total Organic Carbon by High-Temperature Combustion Method,NA,NA
+Organic carbon,mg/l,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,NA,NA
+Organic carbon,mg/l,USEPA 415.1,Total Organic Carbon by Combustion,NA,NA
+Organic carbon,mg/l,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,NA,NA
+Organic carbon,mg/l,USGS COMB9,"TOC, high-temp combustion (NWQL)",mg/l,680
+Organic carbon,mg/l,USEPA 415.1,Total Organic Carbon by Combustion,mg/l,NA
+Organic carbon,mg/l,APHA_SM20ED 5310-B,5310 B ~ Total Organic Carbon by High-Temperature Combustion Method,mg/l,NA

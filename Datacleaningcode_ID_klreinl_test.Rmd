@@ -728,19 +728,88 @@ rm(data_temp_temp_notes)
 ```
 
 ```{r turbidity}
+abbrev <- "Turbidity"
+lagos_name <- "Turbidity"
+lagos_unit <- "NTU"
+dataset_name <-"Turbidity"
 
+vars2process
+params<-c("Turbidity")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
 ```
 
 ```{r conductivity}
+abbrev <- "Conductivity"
+lagos_name <- "Conductivity"
+lagos_unit <- "uS/cm"
+dataset_name <-"Conductivity"
+
+vars2process
+params<-c("Conductivity", "Specific conductance")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
 
 ```
 
 ```{r total-carbon}
+abbrev <- "tCarbon"
+lagos_name <- "Carbon, total organic"
+lagos_unit <- "mg/l"
+dataset_name <-"Carbon_total organic"
 
+vars2process
+params<-c("Carbon", "Organic carbon")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Total")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
 ```
 
 ```{r total-dissolved-carbon}
+abbrev <- "tdCarbon"
+lagos_name <- "Carbon, dissolved organic"
+lagos_unit <- "mg/l"
+dataset_name <-"Carbon_dissolved organic"
 
+vars2process
+params<-c("Carbon", "Organic carbon")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
 ```
 
 ```{r alkalinity}
@@ -748,11 +817,45 @@ rm(data_temp_temp_notes)
 ```
 
 ```{r TSS}
+abbrev <- "tss"
+lagos_name <- "Solids, total suspended"
+lagos_unit <- "mg/l"
+dataset_name <-"Solids_total suspended"
 
+vars2process
+params<-c("Total suspended solids", "Total dissolved solids")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Total", "Suspended")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
 ```
 
 ```{r Salinity}
+abbrev <- "Salinity"
+lagos_name <- "Salinity"
+lagos_unit <- "ppt"
+dataset_name <-"Salinity"
 
+vars2process
+params<-c("Salinity")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
 ```
 
 ```{r color-true}

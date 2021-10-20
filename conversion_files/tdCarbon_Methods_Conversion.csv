@@ -1,0 +1,13 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
+Organic carbon,mg/l,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,mg/l,NA,1,1,Organic carbon in unfiltered water (TOC) by high-temperature combustion (SM5310B; DODESP) 
+Organic carbon,mg/l,1119USBR P681,NA,NA,NA,1,1,Organic carbon in unfiltered water by combustion or oxidation to CO2 and detection by IR spectrometry or reduction to CH4 and GC-FID 
+Organic carbon,mg/l,NA NA,NA,NA,681,1,1,Organic carbon in unfiltered water by combustion or oxidation to CO2 and detection by IR spectrometry or reduction to CH4 and GC-FID 
+Organic carbon,mg/l,USGS OX008,"DOC, 0.7um GFF,acid,persulfateIR",mg/l,681,1,1,Organic carbon in unfiltered water by combustion or oxidation to CO2 and detection by IR spectrometry or reduction to CH4 and GC-FID 
+Organic carbon,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,NA,NA,1,1,unknown
+Organic carbon,mg/l,APHA_SM20ED 5310-B,5310 B ~ Total Organic Carbon by High-Temperature Combustion Method,NA,NA,1,1,Organic carbon in unfiltered water (TOC) by high-temperature combustion (SM5310B; DODESP) 
+Organic carbon,mg/l,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,NA,NA,1,1,Organic carbon in unfiltered water (TOC) by high-temperature combustion (SM5310B; DODESP) 
+Organic carbon,mg/l,USEPA 415.1,Total Organic Carbon by Combustion,NA,NA,1,1,Total Organic Carbon by Combustion
+Organic carbon,mg/l,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,NA,NA,1,1,Organic carbon in unfiltered water (TOC) by high-temperature combustion (SM5310B; DODESP) 
+Organic carbon,mg/l,USEPA 415.1,Total Organic Carbon by Combustion,mg/l,NA,1,1,Total Organic Carbon by Combustion
+Organic carbon,mg/l,USEPA 415.2,Low Level Total Organic Carbon in Water,mg/l,NA,1,1,Total Organic Carbon by Combustion
+Organic carbon,mg/l,APHA_SM20ED 5310-B,5310 B ~ Total Organic Carbon by High-Temperature Combustion Method,mg/l,NA,1,1,Organic carbon in unfiltered water (TOC) by high-temperature combustion (SM5310B; DODESP) 

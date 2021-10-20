@@ -1,0 +1,21 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
+"Alkalinity, total",mg/l,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,mg/l,NA,19.98*1000,19.98*1000,"Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
+"Alkalinity, Carbonate as CaCO3",mg/l,NA NA,NA,NA,NA,19.98*1001,19.98*1001,unknown
+"Alkalinity, total",mg/l CaCO3,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,NA,NA,19.98*1002,19.98*1002,unknown
+Alkalinity,mg/l CaCO3,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",NA,90410,19.98*1003,19.98*1003,"Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
+"Alkalinity, carbonate",mg/l CaCO3,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,NA,NA,19.98*1004,19.98*1004,unknown
+Alkalinity,mg/l CaCO3,NA NA,NA,NA,410,19.98*1005,19.98*1005,"Acid neutralizing capacity, fixed endpoint titration, Hach digital titrator "
+Alkalinity,mg/l CaCO3,USGS TT013,"Alkalinity, wf, field, increment",NA,39086,19.98*1006,19.98*1006,"Alkalinity, dissolved, field, incremental titration "
+Alkalinity,mg/l CaCO3,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",NA,29801,19.98*1007,19.98*1007,"Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
+"Alkalinity, total",mg/l,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,NA,NA,19.98*1008,19.98*1008,"Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
+"Alkalinity, Carbonate as CaCO3",mg/l,APHA 2320,NA,NA,NA,19.98*1009,19.98*1009,"Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
+"Alkalinity, total",mg/l,APHA 2340B,2340 B ~ Hardness by Calculation,NA,NA,19.98*1010,19.98*1010,"Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
+Alkalinity,mg/l CaCO3,NA NA,NA,NA,90410,19.98*1011,19.98*1011,"Alkalinity, low ionic-strength water, automated electrometric titration "
+Alkalinity,mg/l CaCO3,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",mg/l CaCO3,90410,19.98*1012,19.98*1012,"Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
+Alkalinity,mg/l CaCO3,NA NA,NA,NA,419,19.98*1013,19.98*1013,"Acid neutralizing capacity, inflection-point titration method (incremental titration method), Hach digital titrator "
+"Alkalinity, total",mg/l,APHA 2320,Alkalinity in Water by Titration,NA,NA,19.98*1014,19.98*1014,"Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
+"Alkalinity, total",mg/l,USEPA 310.1,Alkalinity by Titration,NA,NA,19.98*1015,19.98*1015,Reported as alkalinity
+Alkalinity,mg/l CaCO3,NA NA,NA,NA,39086,19.98*1016,19.98*1016,"Alkalinity, inflection-point titration method (incremental titration method), Hach digital titrator "
+Alkalinity,mg/l CaCO3,USGS TT065,"ANC, IPT, Hach",NA,419,19.98*1017,19.98*1017,"Acid neutralizing capacity, inflection-point titration method (incremental titration method), Hach digital titrator "
+Alkalinity,NA,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",mg/l CaCO3,29801,19.98*1018,19.98*1018,"Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
+"Alkalinity, total",mg/l,USEPA 310.1,Alkalinity by Titration,mg/l,NA,19.98*1019,19.98*1019,Reported as alkalinity

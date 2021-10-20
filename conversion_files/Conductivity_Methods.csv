@@ -1,0 +1,26 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
+Conductivity,uS/cm,APHA 2510,Conductivity in Water,uS/cm,NA,1,1,Reported as conductivity in water
+Conductivity,uS/cm,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,uS/cm,NA,1,1,Reported as conductivity in water
+Specific conductance,uS/cm @25C,NA NA,NA,NA,95,1,1,Specific electrical conductance 
+Specific conductance,uS/cm,1119USBR P94,NA,NA,NA,1,1,
+Specific conductance,uS/cm @25C,USGS SC001,Specific conductance sensor,NA,95,1,1,
+Specific conductance,uS/cm,NA NA,NA,NA,NA,1,1,
+Specific conductance,umho/cm,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,NA,NA,1,1,
+Specific conductance,uS/cm @25C,NA NA,NA,NA,90095,1,1,
+Specific conductance,uS/cm @25C,USGS WHT03,"Specific cond, lab, autom bridge",uS/cm @25C,90095,1,1,
+Specific conductance,uS/cm @25C,USGS WHT03,"Specific cond, lab, autom bridge",NA,90095,1,1,
+Specific conductance,mho/cm,NA NA,NA,NA,NA,1000000,1,
+Specific conductance,umho/cm,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,NA,NA,1,1,
+Specific conductance,mS/cm,NA NA,NA,NA,NA,1000,1,
+Conductivity,umho/cm,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,umho/cm,NA,1,1,
+Specific conductance,umho/cm,NA NA,NA,NA,NA,1,1,
+Specific conductance,umho/cm,USEPA 120.1,Conductance,NA,NA,1,1,
+Specific conductance,uS/cm,USEPA 120.1,Conductance,NA,NA,1,1,
+Specific conductance,uS/cm,USEPA 120.1,Conductance,uS/cm,NA,1,1,
+Specific conductance,uS/cm,R10BUNKER SC-USGS,SC-USGS,NA,NA,1,1,
+Specific conductance,uS/cm,R10BUNKER I2781,I2781,NA,NA,1,1,
+Specific conductance,mS/cm,R10BUNKER SC-001,SC-001,NA,NA,1000,1,
+Conductivity,uS/cm,NA NA,NA,NA,NA,-1.00E+06,-1.00E+06,
+Specific conductance,uS/cm,21DELAWQ_WQX YSI 6-Series,YSI 6-Series Multi-Parameter Sonde,NA,NA,1,1,
+Conductivity,umho/cm,USEPA 120.1,Conductance,NA,NA,1,1,
+Specific conductance,uS/cm,21DELAWQ_WQX YSI 6-Series,YSI 6-Series Multi-Parameter Sonde,uS/cm,NA,1,1,

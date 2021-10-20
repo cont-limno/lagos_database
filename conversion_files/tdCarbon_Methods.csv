@@ -1,0 +1,13 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode
+Organic carbon,mg/l,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,mg/l,NA
+Organic carbon,mg/l,1119USBR P681,NA,NA,NA
+Organic carbon,mg/l,"NA NA",NA,NA,681
+Organic carbon,mg/l,USGS OX008,"DOC, 0.7um GFF,acid,persulfateIR",mg/l,681
+Organic carbon,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,NA,NA
+Organic carbon,mg/l,APHA_SM20ED 5310-B,5310 B ~ Total Organic Carbon by High-Temperature Combustion Method,NA,NA
+Organic carbon,mg/l,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,NA,NA
+Organic carbon,mg/l,USEPA 415.1,Total Organic Carbon by Combustion,NA,NA
+Organic carbon,mg/l,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,NA,NA
+Organic carbon,mg/l,USEPA 415.1,Total Organic Carbon by Combustion,mg/l,NA
+Organic carbon,mg/l,USEPA 415.2,Low Level Total Organic Carbon in Water,mg/l,NA
+Organic carbon,mg/l,APHA_SM20ED 5310-B,5310 B ~ Total Organic Carbon by High-Temperature Combustion Method,mg/l,NA
