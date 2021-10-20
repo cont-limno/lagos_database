@@ -274,8 +274,6 @@ data_temp<-data[data$CharacteristicName%in%params,] #want to match all records t
 temp <- non_numerics()
 
 source("unit_conversions.R")
-data_temp_temp_notes
-rm(data_temp_temp_notes)
 #done
 ```
 
@@ -320,8 +318,6 @@ data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- NA
   }
 
 source("unit_conversions.R")
-data_temp_temp_notes
-rm(data_temp_temp_notes)
 ```
 
 
@@ -347,8 +343,9 @@ unique(data_temp$ResultSampleFractionText)
 temp <- non_numerics()
 
 source("unit_conversions.R")
-data_temp_temp_notes
-rm(data_temp_temp_notes)
+
+
+
 ```
 
 ```{r aluminum-total}
@@ -372,8 +369,6 @@ unique(data_temp$ResultSampleFractionText)
 temp <- non_numerics()
 
 source("unit_conversions.R")
-data_temp_temp_notes
-rm(data_temp_temp_notes)
 ```
 
 
@@ -398,8 +393,6 @@ unique(data_temp$ResultSampleFractionText)
 temp <- non_numerics()
 
 source("unit_conversions.R")
-data_temp_temp_notes
-rm(data_temp_temp_notes)
 ```
 
 ```{r mercury-total}
@@ -423,11 +416,10 @@ unique(data_temp$ResultSampleFractionText)
 temp <- non_numerics()
 
 source("unit_conversions.R")
-data_temp_temp_notes
-rm(data_temp_temp_notes)
 ```
 
 ```{r mercury-dissolved}
+
 abbrev <- "dMe"
 lagos_name <- "Mercury, dissolved"
 lagos_unit <- "ng/l"
@@ -448,8 +440,8 @@ unique(data_temp$ResultSampleFractionText)
 temp <- non_numerics()
 
 source("unit_conversions.R")
-data_temp_temp_notes
-rm(data_temp_temp_notes)
+
+
 ```
 
 ```{r methylmercury-total}
@@ -473,11 +465,10 @@ unique(data_temp$ResultSampleFractionText)
 temp <- non_numerics()
 #has no data so far
 source("unit_conversions.R")
-data_temp_temp_notes
-rm(data_temp_temp_notes)
 ```
 
 ```{r methylmercury-dissolved}
+
 abbrev <- "dmMe"
 lagos_name <- "Methylmercury, dissolved"
 lagos_unit <- "ng/l"
@@ -498,8 +489,6 @@ unique(data_temp$ResultSampleFractionText)
 temp <- non_numerics()
 
 source("unit_conversions.R")
-data_temp_temp_notes
-rm(data_temp_temp_notes)
 ```
 
 ```{r Magnesium}
@@ -523,8 +512,6 @@ unique(data_temp$ResultSampleFractionText)
 temp <- non_numerics()
 
 source("unit_conversions.R")
-data_temp_temp_notes
-rm(data_temp_temp_notes)
 ```
 
 ```{r selenium-total}
@@ -548,8 +535,8 @@ unique(data_temp$ResultSampleFractionText)
 temp <- non_numerics()
 
 source("unit_conversions.R")
-data_temp_temp_notes
-rm(data_temp_temp_notes)
+
+
 ```
 
 ```{r selenium-dissolved}
@@ -826,6 +813,25 @@ source("unit_conversions.R")
 ```
 
 ```{r alkalinity}
+
+abbrev <- "Alkalinity"
+lagos_name <- "Alkalinity"
+lagos_unit <- "ueq/l"
+dataset_name <-"Alkalinity"
+
+vars2process
+params<-c("Alkalinity, total", "Alkalinity, Carbonate as CaCO3", "Alkalinity", "Alkalinity, carbonate")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
+
 
 ```
 
@@ -1176,11 +1182,10 @@ source("unit_conversions.R")
 ```
 
 ```{r}
-data_all <- do.call("rbind", lapply(ls(pattern='^data_'),get))
 
-# alldata_ID<- rbind(data_depth, data_secchi, data_calcium, data_aluminum_total, data_aluminum_dissolved, data_mercury_total, data_mercury_dissolved, data_methylmercury_dissolved, data_magnesium, data_selenium_total, data_selenium_dissolved, data_arsenic_total, data_arsenic_dissovled, data_atrazine_dissolved, data_ecoli, data_silica, data_chloride, data_oxygen, data_chla, data_pH, data_temp, data_sulfate, data_turb, data_cond, data_tc, data_tdc, data_alk, data_tss, data_salinity, data_truecolor, data_apparentcolor, data_DIP, data_TP, data_TDP, data_TKN, data_TDKN, data_TN, data_TDN, data_ammonia, data_NO3, data_NO2) 
+alldata_ID<- rbind(data_depth, data_secchi, data_calcium, data_aluminum_total, data_aluminum_dissolved, data_mercury_total, data_mercury_dissolved, data_methylmercury_dissolved, data_magnesium, data_selenium_total, data_selenium_dissolved, data_arsenic_total, data_arsenic_dissovled, data_atrazine_dissolved, data_ecoli, data_silica, data_chloride, data_oxygen, data_chla, data_pH, data_temp, data_sulfate, data_turb, data_cond, data_tc, data_tdc, data_alk, data_tss, data_salinity, data_truecolor, data_apparentcolor, data_DIP, data_TP, data_TDP, data_TKN, data_TDKN, data_TN, data_TDN, data_ammonia, data_NO3, data_NO2) 
 
-write.csv(data_all, file = "alldata.csv", row.names = FALSE)
+write.csv(alldata_ID, file = "alldata_ID.csv", row.names = FALSE)
 
 ```
 
