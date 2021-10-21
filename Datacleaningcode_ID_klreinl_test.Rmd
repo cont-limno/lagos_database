@@ -445,26 +445,28 @@ source("unit_conversions.R")
 ```
 
 ```{r methylmercury-total}
-abbrev <- "mMe"
-lagos_name <- "Methylmercury"
-lagos_unit <- "ng/l"
-dataset_name <-"Methylmercury"
+#commented out because sample fraction does not have a total - only has suspended and dissolved
 
-vars2process
-params<-c("Methylmercury(1+)")
-vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
-vars2process #check if any new varables to inlcude
-
-data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
-
-unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(ResultSampleFractionText=="Total")
-unique(data_temp$ResultSampleFractionText)
-
-###create dataset to check for non numeric objects in dataset
-temp <- non_numerics()
-#has no data so far
-source("unit_conversions.R")
+# abbrev <- "mMe"
+# lagos_name <- "Methylmercury"
+# lagos_unit <- "ng/l"
+# dataset_name <-"Methylmercury"
+# 
+# vars2process
+# params<-c("Methylmercury(1+)")
+# vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+# vars2process #check if any new varables to inlcude
+# 
+# data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+# 
+# unique(data_temp$ResultSampleFractionText)
+# data_temp <- data_temp %>% filter(ResultSampleFractionText=="Total")
+# unique(data_temp$ResultSampleFractionText)
+# 
+# ###create dataset to check for non numeric objects in dataset
+# temp <- non_numerics()
+# #has no data so far
+# source("unit_conversions.R")
 ```
 
 ```{r methylmercury-dissolved}
@@ -595,6 +597,29 @@ source("unit_conversions.R")
 
 ```{r ecoli}
 
+abbrev <- "Ecoli"
+lagos_name <- "E. coli"
+lagos_unit <- "#/100ml"
+dataset_name <-"E.coli"
+
+vars2process
+params<-c("Escherichia coli")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+
+unique(data_temp$ResultMeasure.MeasureUnitCode)
+
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
+
 ```
 
 ```{r chloride}
@@ -646,6 +671,48 @@ rm(data_temp_temp_notes)
 ```
 
 ```{r chlorophyll}
+
+abbrev <- "Chla"
+lagos_name <- "Chlorophyll a"
+lagos_unit <- "ug/l"
+dataset_name <-"Chlorophyll_a"
+
+vars2process
+params<-c("Chlorophyll a, corrected for pheophytin", "Chlorophyll a", "Chlorophyll a, uncorrected for pheophytin")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+#no need to filter DO based on fraction
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+temp2 <- temp %>% 
+  filter(grepl("<",ResultMeasureValue,fixed=TRUE)) %>% 
+  filter(is.na(DetectionQuantitationLimitMeasure.MeasureValue))
+#extract Values
+vals <- gsub("[^0-9.-]", "", temp2$ResultMeasureValue)
+data_temp$DetectionQuantitationLimitMeasure.MeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Less Than"
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals
+
+temp <- non_numerics()
+unique(temp$ResultMeasureValue)
+
+temp2 <- temp %>% 
+  filter(grepl("<",ResultMeasureValue,fixed=TRUE))  
+vals <- gsub("[^0-9.-]", "", temp2$ResultMeasureValue)
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Less Than"
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals
+
+temp <- non_numerics()
+
+
+source("unit_conversions.R")
+data_temp_temp_notes
+rm(data_temp_temp_notes)
 
 ```
 
@@ -849,13 +916,22 @@ vars2process #check if any new varables to inlcude
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 unique(data_temp$ResultSampleFractionText)
 
-data_temp <- data_temp %>% filter(ResultSampleFractionText=="Total", "Suspended")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Total" | ResultSampleFractionText == "Suspended")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
 temp <- non_numerics()
 
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp$Obs_Id)] <- "Less Than"
+vals <- gsub("[^0-9.-]", "", temp$ResultMeasureValue)
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp$Obs_Id)] <- vals
+
+
+
 source("unit_conversions.R")
+data_temp_temp_notes
+rm(data_temp_temp_notes)
+
 ```
 
 ```{r Salinity}

@@ -1,0 +1,9 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode
+Total suspended solids,mg/l,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,mg/l,NA
+Total suspended solids,mg/l,"NA NA",NA,NA,70299
+Total suspended solids,mg/l,USDOI/USGS I-3765-85,"Solids, residue at 105°C",mg/l,NA
+Total dissolved solids,mg/l,APHA 2540-D,NA,NA,NA
+Total dissolved solids,mg/l,APHA 2540-C,2540 C ~ Total Dissolved Solids in Water,NA,NA
+Total suspended solids,mg/l,USEPA 160.2,Non-Filterable Residue - TSS,NA,NA
+Total dissolved solids,mg/l,USEPA 160.1,Filterable Residue - TDS,mg/l,NA
+Total suspended solids,mg/l,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,NA,NA
