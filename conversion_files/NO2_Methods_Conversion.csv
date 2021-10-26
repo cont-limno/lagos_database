@@ -1,0 +1,21 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
+Nitrite,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,mg/l,NA,1000,1000,Reported as Nitrogen 
+Nitrite,NA,NA NA,NA,NA,NA,1,1,unknown
+Nitrite,mg/l as N,USGS DZ001,"Nitrite, wf, DA, diazo",NA,613,1000,1000,"Nitrite, filtered water, discrete analyzer, diazotization and colorimetry (formerly Mcode 00049)"
+Nitrite,mg/l as N,USGS CL041,"Nutrients, wf, colorimetric",NA,613,1000,1000,"Nutrients, water filtered, colorimetric"
+Nitrite,mg/l as N,USGS CL040,"Nitrite, wf, ASF diazotization",NA,613,1000,1000,Nitrite in filtered water by automated segmented flow (ASF) diazotization colorimetry
+Nitrite,mg/l,R10BUNKER I2542,I2542,NA,NA,1000,1,unknown
+Nitrite,mg/l as N,USGS CL042,"Nitrite, LIS, ASF diazotization",NA,613,1000,1000,"Nitrite in low ionic strength (LIS) water, by automated segmented flow (ASF) diazotization colorimetry"
+Nitrite,mg/l,R10BUNKER I2542,I2542,mg/l,NA,1000,1000,unknown
+Nitrite,mg/l asNO2,NA NA,NA,NA,71856,1,1,unknown
+Nitrite,mg/l as N,NA NA,NA,NA,613,1000,1000,unknown
+Nitrite,ug/l,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,NA,NA,1,1,unknown
+Nitrite,mg/l,R10BUNKER USGS_HIST,USGS_HIST,NA,NA,1000,1,unknown
+Nitrite,mg/l as N,USGS DZ001,"Nitrite, wf, DA, diazo",mg/l as N,613,1000,1000,"Nitrite, filtered water, discrete analyzer, diazotization and colorimetry (formerly Mcode 00049)"
+Nitrite,mg/l as N,USGS CL041,"Nutrients, wf, colorimetric",mg/l as N,613,1000,1000,"Nutrients, water filtered, colorimetric"
+Nitrite,NA,USGS CL040,"Nitrite, wf, ASF diazotization",mg/l as N,613,1000,1000,Nitrite in filtered water by automated segmented flow (ASF) diazotization colorimetry
+Nitrite,NA,USGS CL041,"Nutrients, wf, colorimetric",mg/l as N,613,1000,1000,"Nutrients, water filtered, colorimetric"
+Nitrite,NA,NA NA,NA,mg/l as N,613,1000,1000,unknown
+Nitrite,ug/l,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,ug/l,NA,1,1,"Nitrite in low ionic strength (LIS) water, by automated segmented flow (ASF) diazotization colorimetry"
+Nitrite,NA,USGS CL042,"Nitrite, LIS, ASF diazotization",mg/l as N,613,1000,1000,"Nitrite in low ionic strength (LIS) water, by automated segmented flow (ASF) diazotization colorimetry"
+Nitrite,NA,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,mg/l,NA,1000,1000,Reported as Nitrogen 

@@ -1,0 +1,21 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode
+Nitrite,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,mg/l,NA
+Nitrite,NA,"NA NA",NA,NA,NA
+Nitrite,mg/l as N,USGS DZ001,"Nitrite, wf, DA, diazo",NA,613
+Nitrite,mg/l as N,USGS CL041,"Nutrients, wf, colorimetric",NA,613
+Nitrite,mg/l as N,USGS CL040,"Nitrite, wf, ASF diazotization",NA,613
+Nitrite,mg/l,R10BUNKER I2542,I2542,NA,NA
+Nitrite,mg/l as N,USGS CL042,"Nitrite, LIS, ASF diazotization",NA,613
+Nitrite,mg/l,R10BUNKER I2542,I2542,mg/l,NA
+Nitrite,mg/l asNO2,"NA NA",NA,NA,71856
+Nitrite,mg/l as N,"NA NA",NA,NA,613
+Nitrite,ug/l,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,NA,NA
+Nitrite,mg/l,R10BUNKER USGS_HIST,USGS_HIST,NA,NA
+Nitrite,mg/l as N,USGS DZ001,"Nitrite, wf, DA, diazo",mg/l as N,613
+Nitrite,mg/l as N,USGS CL041,"Nutrients, wf, colorimetric",mg/l as N,613
+Nitrite,NA,USGS CL040,"Nitrite, wf, ASF diazotization",mg/l as N,613
+Nitrite,NA,USGS CL041,"Nutrients, wf, colorimetric",mg/l as N,613
+Nitrite,NA,"NA NA",NA,mg/l as N,613
+Nitrite,ug/l,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,ug/l,NA
+Nitrite,NA,USGS CL042,"Nitrite, LIS, ASF diazotization",mg/l as N,613
+Nitrite,NA,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,mg/l,NA
