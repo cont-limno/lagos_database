@@ -774,7 +774,7 @@ dataset_name <-"so4"
 vars2process
 params<-c("Sulfate as SO4",
           "Sulfate as S",
-          "Sulfate")
+          "Sulfate", "Sulfur Sulfate")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #che
 
