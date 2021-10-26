@@ -1,0 +1,13 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode
+Arsenic,ug/l,APHA 3114-B,3114 B ~ Metals in Water by Manual HYDAA,ug/l,NA
+Arsenic,ug/l,"NA NA",NA,NA,1000
+Arsenic,ug/l,R10BUNKER I2063,I2063,ug/l,NA
+Arsenic,ug/l,USEPA 200.8,Metals in Waters by ICP/MS,NA,NA
+Arsenic,ug/l,USGS PLM10,"Elements, wf, cICP-MS",ug/l,1000
+Arsenic,ug/l,R10BUNKER I2063,I2063,NA,NA
+Arsenic,ug/l,USEPA 200.8,Metals in Waters by ICP/MS,ug/l,NA
+Arsenic,ug/l,USGS GF085,"Arsenic, wf, GFAAS",ug/l,1000
+Arsenic,ug/l,21DELAWQ_WQX 200.7_ELS,Inductively Coupled Plasma - Atomic Emission Spectrometry (ICP-AES),NA,NA
+Arsenic,NA,USGS GF085,"Arsenic, wf, GFAAS",ug/l,1000
+Arsenic,NA,"NA NA",NA,ug/l,1000
+Arsenic,ug/l,21DELAWQ_WQX 200.7_ELS,Inductively Coupled Plasma - Atomic Emission Spectrometry (ICP-AES),ug/l,NA

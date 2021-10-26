@@ -1,0 +1,13 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
+Arsenic,ug/l,APHA 3114-B,3114 B ~ Metals in Water by Manual HYDAA,ug/l,NA,1,1,Reported as Arsenic
+Arsenic,ug/l,NA NA,NA,NA,1000,1,1,ARSENIC DISSOLVED (GFAA)
+Arsenic,ug/l,R10BUNKER I2063,I2063,ug/l,NA,1,1,unknown
+Arsenic,ug/l,USEPA 200.8,Metals in Waters by ICP/MS,NA,NA,1,1,EPA Method 200.8: Determination of Trace Elements in Waters and Wastes by Inductively Coupled Plasma-Mass Spectrometry
+Arsenic,ug/l,USGS PLM10,"Elements, wf, cICP-MS",ug/l,1000,1,1,Elements in filtered water using collision/reaction cell inductively coupled plasma-mass spectrometry
+Arsenic,ug/l,R10BUNKER I2063,I2063,NA,NA,1,1,unknown
+Arsenic,ug/l,USEPA 200.8,Metals in Waters by ICP/MS,ug/l,NA,1,1,EPA Method 200.8: Determination of Trace Elements in Waters and Wastes by Inductively Coupled Plasma-Mass Spectrometry
+Arsenic,ug/l,USGS GF085,"Arsenic, wf, GFAAS",ug/l,1000,1,1,Arsenic in Filtered Water by GFAAS
+Arsenic,ug/l,21DELAWQ_WQX 200.7_ELS,Inductively Coupled Plasma - Atomic Emission Spectrometry (ICP-AES),NA,NA,1,1,Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
+Arsenic,NA,USGS GF085,"Arsenic, wf, GFAAS",ug/l,1000,1,1,Arsenic in Filtered Water by GFAAS
+Arsenic,NA,NA NA,NA,ug/l,1000,1,1,ARSENIC DISSOLVED (GFAA)
+Arsenic,ug/l,21DELAWQ_WQX 200.7_ELS,Inductively Coupled Plasma - Atomic Emission Spectrometry (ICP-AES),ug/l,NA,1,1,Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
