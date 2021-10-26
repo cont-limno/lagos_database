@@ -1,0 +1,10 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Total dissolved solids,mg/l,mg/l,USEPA 160.1,Filterable Residue - TDS,,1,1,"Residue, Filterable, 180 deg. C"
+Total dissolved solids,mg/l,,APHA 2540-C,2540 C ~ Total Dissolved Solids in Water,,1,1,Total Dissolved Solids in Water
+Total dissolved solids,mg/l,,APHA 2540-D,,,1,1,Solids in Water
+Total suspended solids,mg/l,mg/l,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,,1,1,Solids in Water
+Total suspended solids,mg/l,mg/l,USDOI/USGS I-3765-85,"Solids, residue at 105°C",,1,1,"Solids, residue at 105 degrees Celsius, suspended, gravimetric (USGS I-3765-85; PA WSC; PA-DEP)"
+Total suspended solids,mg/l,mg/l,USDOI/USGS I-3765-85,"Solids, residue at 105Â°C",,1,1,"Solids, residue at 105 degrees Celsius, suspended, gravimetric (USGS I-3765-85; PA WSC; PA-DEP)"
+Total suspended solids,mg/l,,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,,1,1,Solids in Water
+Total suspended solids,mg/l,,NA NA,,70299,1,1,Residue SUS 110 deg. C
+Total suspended solids,mg/l,,USEPA 160.2,Non-Filterable Residue - TSS,,1,1,RESIDUE TOT NON-FILT AT 105C

@@ -717,7 +717,6 @@ rm(data_temp_temp_notes)
 ```
 
 ```{r pH}
-#comeback to - ask how to convert
 
 abbrev <- "pH"
 lagos_name <- "pH, equilibrated"
