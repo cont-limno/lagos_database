@@ -1,0 +1,6 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
+Escherichia coli,#/100ml,APHA 9213D,9213 D ~ E. coli by Membrane filtration plating on mTEC agar,#/100ml,NA,1,1,Ecoli - #/100ml
+Escherichia coli,#/100ml,NA NA,NA,NA,NA,1,1,Ecoli - #/100ml
+Escherichia coli,#/100ml,APHA 9213-D,9213 D ~ E. coli method,#/100ml,NA,1,1,Ecoli - #/100ml
+Escherichia coli,cfu/100ml,APHA 9213-D,9213 D ~ E. coli method,cfu/100ml,NA,-1.00E+06,-1.00E+06,discard
+Escherichia coli,MPN/100ml,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,NA,NA,-1.00E+06,-1.00E+06,discard

@@ -1,0 +1,35 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
+Ammonia,mg/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,mg/l,NA,1000,1000,Ammonia as N
+Ammonia and ammonium,mg/l as N,USGS CL037,"Nutrients, wf, salicylate color",NA,608,1000,1000,"Nutrients, filtered water, salicylate-hypochlorite, colorimetric"
+Ammonia and ammonium,mg/l as N,USGS CL039,"Nutrients, LL, wf, color",NA,608,1000,1000,"Nutrients, low level, filtered water, salicylate-hypochlorite, colorimetric"
+Ammonia and ammonium,mg/l as N,USGS CL039,"Nutrients, LL, wf, color",mg/l as N,608,1000,1000,"Nutrients, low level, filtered water, salicylate-hypochlorite, colorimetric"
+Ammonia and ammonium,mg/l as N,NA NA,NA,NA,608,1000,1000,unknown
+Ammonia and ammonium,mg/l NH4,NA NA,NA,NA,71846,776.5,776.5,"Ammonia, water, filtered, calculated"
+Ammonia and ammonium,mg/l as N,USGS CL035,"Ammonia, wf, ASF salicylate",NA,608,1000,1000,Ammonia in filtered water by automated segmented flow (ASF) salicylate/hypochlorite colorimetry
+Ammonia and ammonium,mg/l as N,USGS 00048,"Nutrients, wf, color, DA",mg/l as N,608,1000,1000,Ammonia in filtered water by discrete analyzer salicylate-hypochlorite reaction and colorimetry (formerly Mcode 00048; NWQL)
+Ammonia and ammonium,mg/l as N,USGS SHC02,"Ammonia, wf, DA sal/hypo (NWQL)",NA,608,1000,1000,Ammonia in filtered water by discrete analyzer salicylate-hypochlorite reaction and colorimetry (formerly Mcode 00048; NWQL)
+Ammonia and ammonium,mg/l as N,USGS SHC02,"Ammonia, wf, DA sal/hypo (NWQL)",mg/l as N,608,1000,1000,Ammonia in filtered water by discrete analyzer salicylate-hypochlorite reaction and colorimetry (formerly Mcode 00048; NWQL)
+Ammonia,mg/l,APHA 4500-NH3(D),4500 NH3 D  ~ Ammonia in Water by Selective Electrode Method,mg/l,NA,1000,1000,Ammonia as N
+Ammonia-nitrogen,ug/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,NA,NA,1,1,Ammonia as N
+Ammonia-nitrogen,mg/l,R10BUNKER I2525,I2525,NA,NA,1000,1000,Ammonia as N
+Ammonia and ammonium,mg/l as N,USGS CL038,"Ammonia, LIS, ASF salicylate",NA,608,1000,1000,Ammonia in low ionic strength (LIS) water by automated segmented flow (ASF) salicylate/hypochlorite colorimetry
+Ammonia-nitrogen,ug/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,ug/l,NA,1,1,Ammonia as N
+Ammonia-nitrogen,mg/l,R10BUNKER I2525,I2525,mg/l,NA,1000,1000,Ammonia as N
+Ammonia-nitrogen,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,NA,NA,-1.00E+06,-1.00E+06,unknown
+Ammonia-nitrogen,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,mg/l,NA,-1.00E+06,-1.00E+06,unknown
+Ammonia-nitrogen,ug/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,ug/l,NA,1,1,Ammonia as N
+Ammonia-nitrogen,mg/l,R10BUNKER USGS_HIST,USGS_HIST,NA,NA,-1.00E+06,-1.00E+06,unknown
+Ammonia-nitrogen,mg/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,NA,NA,1000,1000,Ammonia as N
+Ammonium,mg/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,mg/l,NA,1000,1000,Ammonium as N
+Ammonium,mg/l,APHA 4500-NH3 G,4500 NH3 G ~ Ammonia by Automated Phenate,mg/l,NA,1000,1000,Ammonium as N
+Ammonia and ammonium,mg/l as N,USGS CL037,"Nutrients, wf, salicylate color",mg/l as N,608,1000,1000,"Nutrients, filtered water, salicylate-hypochlorite, colorimetric"
+Ammonia and ammonium,NA,USGS 00048,"Nutrients, wf, color, DA",mg/l as N,608,1000,1000,Ammonia in filtered water by discrete analyzer salicylate-hypochlorite reaction and colorimetry (formerly Mcode 00048; NWQL)
+Ammonia and ammonium,NA,USGS CL039,"Nutrients, LL, wf, color",mg/l as N,608,1000,1000,"Nutrients, low level, filtered water, salicylate-hypochlorite, colorimetric"
+Ammonia and ammonium,NA,USGS SHC02,"Ammonia, wf, DA sal/hypo (NWQL)",mg/l as N,608,1000,1000,Ammonia in filtered water by discrete analyzer salicylate-hypochlorite reaction and colorimetry (formerly Mcode 00048; NWQL)
+Ammonia and ammonium,NA,NA NA,NA,mg/l as N,608,1000,1000,unknown
+Ammonia and ammonium,NA,USGS CL037,"Nutrients, wf, salicylate color",mg/l as N,608,1000,1000,"Nutrients, filtered water, salicylate-hypochlorite, colorimetric"
+Ammonia and ammonium,NA,USGS CL035,"Ammonia, wf, ASF salicylate",mg/l as N,608,1000,1000,Ammonia in filtered water by automated segmented flow (ASF) salicylate/hypochlorite colorimetry
+Ammonia and ammonium,NA,USGS CL038,"Ammonia, LIS, ASF salicylate",mg/l as N,608,1000,1000,Ammonia in low ionic strength (LIS) water by automated segmented flow (ASF) salicylate/hypochlorite colorimetry
+Ammonia-nitrogen,mg/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,mg/l,NA,1000,1000,Ammonia as N
+Ammonia-nitrogen,NA,USEPA 350.1,Ammonia Nitrogen by Colorimetry,mg/l,NA,1000,1000,Ammonia as N
+Ammonium,NA,USEPA 350.1,Ammonia Nitrogen by Colorimetry,mg/l,NA,1000,1000,Ammonium as N

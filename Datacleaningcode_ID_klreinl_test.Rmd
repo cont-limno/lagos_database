@@ -634,12 +634,12 @@ source("unit_conversions.R")
 
 ```
 
-```{r ecoli}
+```{r ecoli #/100ml}
 
 abbrev <- "Ecoli"
 lagos_name <- "E. coli"
 lagos_unit <- "#/100ml"
-dataset_name <-"E.coli"
+dataset_name <-"E.coli_100ml"
 
 vars2process
 params<-c("Escherichia coli")
@@ -651,8 +651,53 @@ unique(data_temp$ResultSampleFractionText)
 
 unique(data_temp$ResultMeasure.MeasureUnitCode)
 
-data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved")
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
+
+```
+
+```{r ecoli MPN}
+
+abbrev <- "Ecoli_MPN"
+lagos_name <- "E. coli-MPN"
+lagos_unit <- "MPN"
+dataset_name <-"E.coli_MPN"
+
+vars2process
+params<-c("Escherichia coli")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 unique(data_temp$ResultSampleFractionText)
+
+unique(data_temp$ResultMeasure.MeasureUnitCode)
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
+
+```
+
+```{r ecoli CFU}
+
+abbrev <- "Ecoli_CFU"
+lagos_name <- "E. coli-CFU"
+lagos_unit <- "CFU"
+dataset_name <-"E.coli_CFU"
+
+vars2process
+params<-c("Escherichia coli")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+
+unique(data_temp$ResultMeasure.MeasureUnitCode)
 
 ###create dataset to check for non numeric objects in dataset
 temp <- non_numerics()
@@ -1226,21 +1271,19 @@ source("unit_conversions.R")
 
 ```{r Ammonia-ammonium}
 
-abbrev <- "tn" #this should stay the same as tn
-lagos_name <- "Nitrogen, total dissolved"
+abbrev <- "NH3NH4" 
+lagos_name <- "Nitrogen, NH4"
 lagos_unit <- "ug/l"
-dataset_name <-"tdn"
+dataset_name <-"NH3NH4"
 
-#remember this should get pulled down from TN
-params<-c("Total Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",
-          "Nutrient-nitrogen",
-          "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",
-          "Total Nitrogen, mixed forms",
-          "Nitrogen")
+vars2process
+params<-c("Ammonium", "Ammonia", "Ammonia-nitrogen as N", "Ammonia and ammonium", "Ammonia-nitrogen", "Ammonia as NH3")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 unique(data_temp$ResultSampleFractionText)
-data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved" | ResultSampleFractionText=="Filterable")
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved")
 unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
@@ -1259,6 +1302,9 @@ dataset_name <-"NO2"
 
 vars2process
 params<-c("Nitrite")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process
+
 
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
@@ -1337,7 +1383,7 @@ source("unit_conversions.R")
 ```
 
 ```{r}
-
+vars2process
 data_all <- do.call("rbind", lapply(ls(pattern='^data_'),get))
 data_all$ResultMeasureValue<-data_all$Converted
 data_all$DetectionQuantitationLimitMeasure.MeasureValue<-data_all$Converted_dl
