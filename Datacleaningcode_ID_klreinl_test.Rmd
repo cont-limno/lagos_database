@@ -1179,9 +1179,10 @@ unique(data_temp$ResultSampleFractionText)
 ###create dataset to check for non numeric objects in dataset
 temp<-non_numerics()
 unique(temp$ResultMeasureValue)
-vals <- gsub("[^0-9.-]", "", temp$ResultMeasureValue)
-data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp$Obs_Id)] <- "Less Than"
-data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp$Obs_Id)] <- vals
+temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE)
+vals <- gsub("[^0-9.-]", "", temp2$ResultMeasureValue)
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Less Than"
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals
 
 source("unit_conversions.R")
 data_temp_temp_notes
@@ -1243,7 +1244,7 @@ temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>
 vals <- gsub("[^0-9.-]", "", temp2$ResultMeasureValue)
 data_temp$DetectionQuantitationLimitMeasure.MeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals
 data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Less Than"
-data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- NA
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals
 
 source("unit_conversions.R")
 ```
@@ -1291,13 +1292,14 @@ unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
 temp<-non_numerics()
-
+vals <- gsub("[^0-9.-]", "", temp$ResultMeasureValue)
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp$Obs_Id)] <- "Less Than"
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp$Obs_Id)] <- vals
 source("unit_conversions.R")
 
 ```
 
 ```{r NO2-N}
-
 abbrev <- "NO2" 
 lagos_name <- "Nitrogen, nitrite (NO2)"
 lagos_unit <- "ug/l"
@@ -1317,7 +1319,9 @@ unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
 temp<-non_numerics()
-
+vals <- gsub("[^0-9.-]", "", temp$ResultMeasureValue)
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp$Obs_Id)] <- "Less Than"
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp$Obs_Id)] <- vals
 source("unit_conversions.R")
 
 ```
@@ -1345,18 +1349,15 @@ unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
 temp<-non_numerics()
-
-###create dataset to check for non numeric objects in dataset
-temp<-data_temp %>% filter(is.na(as.numeric(ResultMeasureValue)))  #checks for non numeric values in result measure value - if NA's not losing any other data - can change #391 NA's - can change
 unique(temp$ResultMeasureValue)
-
+#check to see if any values need to get moved to detection limits
 temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>% 
   filter(is.na(DetectionQuantitationLimitMeasure.MeasureValue))
-#if there were na values in detection would need to transfer over obs values to detection limits
-
-#overwrite < with NA
-data_temp <- data_temp %>% 
-  mutate(ResultMeasureValue = ifelse(grepl("<",ResultMeasureValue,fixed=TRUE),NA,ResultMeasureValue))
+#deal with non numerics
+temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE)
+vals <- gsub("[^0-9.-]", "", temp2$ResultMeasureValue)
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Less Than"
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals
 
 source("unit_conversions.R")
 ```
@@ -1383,6 +1384,8 @@ temp<- non_numerics() #checks for non numeric values in result measure value - i
 unique(temp$ResultMeasureValue)
 
 source("unit_conversions.R")
+data_temp_temp_notes
+rm(data_temp_temp_notes)
 ```
 
 ```{r}

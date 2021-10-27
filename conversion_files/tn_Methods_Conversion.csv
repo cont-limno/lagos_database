@@ -4,13 +4,17 @@ Nitrogen,mg/l,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,-1.00E+0
 Nitrogen,mg/l,,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,1000,1000,
 Nitrogen,mg/l,,APHA 4500-NH3(G),,,-1.00E+06,-1.00E+06,
 Nitrogen,mg/l,,ASTM D5176,Nitrogen in Water by Pyrolysis Detection,,-1.00E+06,-1.00E+06,
+Nitrogen,mg/l,,IDEQ_WQX 300.0,Determination of Inorganic Anions by Ion Chromatography,,-1.00E+06,-1.00E+06,
 Nitrogen,mg/l,,IDEQ_WQX 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,-1.00E+06,-1.00E+06,
+Nitrogen,mg/l,,USEPA 440(S),440 S  ~ Determination of Carbon and Nitrogen,,-1.00E+06,-1.00E+06,particulate
+Nitrogen,ug,,USEPA 440(S),440 S  ~ Determination of Carbon and Nitrogen,,-1.00E+06,-1.00E+06,particulate
 Nitrogen,ug/l,ug/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,-1.00E+06,-1.00E+06,
 Nitrogen,ug/l,,ASTM D5176,Nitrogen in Water by Pyrolysis Detection,,-1.00E+06,-1.00E+06,
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,,-1.00E+06,-1.00E+06,unkown method
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,USGS AKP01,"Nutrients, wu, WCA,persulfate,CF",62855,1000,1000,
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,USGS CL063,"Nutrients, wf, FCC,persulfate,CF",62854,1000,1000,
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,,NA NA,,600,1000,1000,
-"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,,NA NA,,602,1.00E+03,1.00E+03,
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,,NA NA,,602,1000,1000,
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,,R10BUNKER USGS_UNKN,USGS_UNKN,,-1.00E+06,-1.00E+06,unkown method
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,,USGS AKP01,"Nutrients, wu, WCA,persulfate,CF",62855,1000,1000,
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,,USGS CL063,"Nutrients, wf, FCC,persulfate,CF",62854,1000,1000,
