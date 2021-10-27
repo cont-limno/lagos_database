@@ -249,7 +249,7 @@ dat2 <- dat2 %>%
     )
 
 dat3 <- dat2 %>% 
-    select(sampledate,variableid_lagos,CharacteristicName,sampledepth_m_legacy,datavalue,programtableid_lagos,sampletype_legacy,sampledepth_m_lagos,
+    select(sampledate,variableid_lagos,State,CharacteristicName,sampledepth_m_legacy,datavalue,programtableid_lagos,sampletype_legacy,sampledepth_m_lagos,
            samplelayer_lagos,sampletype_lagos,comments_legacy,comments_lagos,censorcode_flag_lagos,samplesiteid_legacy,lagoslakeid,
            samplesiteid_lagos_pre_cluster,labmethodname_legacy,lakeid_legacy,labmethodinfo_legacy,methodqualifier_legacy,
            version_comment_lagos,flag_lagos,varshortname_comment_lagos,lakeid_nhdid,depth_comment_lagos,primarysamplesite_flag_lagos,
