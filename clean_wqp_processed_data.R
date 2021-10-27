@@ -15,22 +15,11 @@ con <- dbConnect(drv, dbname = "lagos_us_limno",
 
 #read in the datafiles
 
-data_dir <- "~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW"
+data_dir <- "~/Lottig Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/"
 #list files
-files <- data_dir %>% dir_ls(regexp = "\\.csv$")
-files
-state_abv = "ID"
-
-dat <- read_csv(paste0(data_dir,"/alldata_",state_abv,".csv"), col_types = cols(.default = "c"))
+dat <- read_csv(paste0(data_dir,"alldata.csv"), col_types = cols(.default = "c"))
 
 
-#link to lagoslakeid
-{
-lagos_link <- read_csv("lagos_wqp_20210920.csv") %>% 
-    rename(MonitoringLocationIdentifier = wqp_monitoringlocationidentifier)
-
-dat <- dat %>% left_join(lagos_link) %>% drop_na(lagoslakeid)
-}
 
 #filter out depth because we don't want it
 dat <- dat %>% filter(source_parameter!="Depth") %>% filter(CharacteristicName!="Depth")
@@ -81,7 +70,8 @@ grab_equip = c("Grab sample","Bucket","Open-Mouth Bottle","Sampler, frame-type, 
                "Grab","NPS_GRAB","SECCHI_DISK","HORIZONTAL_DISK","MIDN_UVA_SPGRAB","Grab Sample Collected With A Stainless Bucket",
                "SRBC Standard Grab Sample Method","Grab","Grab Sample Collected With A Water Bottle",
                "Grab sample  (dip)","Water Grab Sampling","Grab sample collection",
-               "Unspecified Standard Grab Sample Procedure","USGS parameter code 82398")
+               "Unspecified Standard Grab Sample Procedure","USGS parameter code 82398", "GRAB","US D-95 plastic bottle",
+               "US DH-95 plastic bottle","US DH-81" )
 sample_equip <- sample_equip[! sample_equip %in% grab_equip] #remove grab samples from list
 
 sample_equip #see the equipment
@@ -258,21 +248,17 @@ dat2 <- dat2 %>%
            exported_eventid_epi = NA #set to null)
     )
 
-#state to obsID
-
-dat2 <- dat2 %>% mutate(obs_id = paste0(state_abv,"_",obs_id))
-
 dat3 <- dat2 %>% 
     select(sampledate,variableid_lagos,CharacteristicName,sampledepth_m_legacy,datavalue,programtableid_lagos,sampletype_legacy,sampledepth_m_lagos,
            samplelayer_lagos,sampletype_lagos,comments_legacy,comments_lagos,censorcode_flag_lagos,samplesiteid_legacy,lagoslakeid,
            samplesiteid_lagos_pre_cluster,labmethodname_legacy,lakeid_legacy,labmethodinfo_legacy,methodqualifier_legacy,
            version_comment_lagos,flag_lagos,varshortname_comment_lagos,lakeid_nhdid,depth_comment_lagos,primarysamplesite_flag_lagos,
-           valueid_lagos,sitecordid_lagos,samplesiteid_lagos,programid_lagos_us,source_value, source_unit, source_parameter, obs_id,
+           valueid_lagos,sitecordid_lagos,samplesiteid_lagos,programid_lagos_us,source_value, source_unit, source_parameter, Obs_Id,
            qualifier_legacy,qualifier_name_legacy,
            detectionlimit_legacy,detectionlimit_unit_legacy,qualifier_legacy_full,qualifier_legacy_full_cleaned,qualifier_detect_info,
            lagos_min_depth,legacy_min_depth,sample_delta,epi_depth,lagos_epi_assignment,exported_epi_new,exported_eventid_epi)
 
-write_csv(dat3,paste0("processed_data/",state_abv,"_processed.csv"))
+write_csv(dat3,paste0(data_dir,"processed/alldata_processed.csv"))
 
 #dat3 would be the processed file that gets loaded into postgres
 #yet todo is add observation id to each based on values already loaded in postgres and push file to postgres
@@ -283,7 +269,7 @@ params <- unique(dat2$CharacteristicName)
 
 
 #create histograms
-pdf(file="graphics/MD_histograms.pdf",width=8.5,height=11)
+pdf(file="graphics/histograms.pdf",width=8.5,height=11)
 par(mfrow=c(3,2))
 
 for(i in 1:length(params)) {
@@ -295,7 +281,7 @@ for(i in 1:length(params)) {
 }
 dev.off()
 
-pdf(file="graphics/MD_distributions.pdf",width=8.5,height=11)
+pdf(file="graphics/distributions.pdf",width=8.5,height=11)
 par(mfrow=c(3,2))
 
 for(i in 1:length(params)) {
