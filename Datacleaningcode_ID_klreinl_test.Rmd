@@ -77,7 +77,7 @@ non_numerics <- function(data=data_temp) {
 
 
 ```{r noah-read}
-file.path <- "~/Trout Lake Station Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/raw_data/" #Noah
+file.path <- "~/Lottig Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/raw_data/" #Noah
 ```
 
 
@@ -129,7 +129,7 @@ summary(VAdatPull)
 
 
 ```{r}
-allstates<-rbind(IDdatPull,DEdatPull,DEdatPull,MDdatPull)
+allstates<-rbind(IDdatPull,VAdatPull,DEdatPull,MDdatPull)
 #figure out how to autodelete files that contain datpull
 rm(DEdatPull,IDdatPull,VAdatPull,MDdatPull)
 
