@@ -1,2 +1,3 @@
-CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
-Color,PCU,NA NA,NA,NA,80,1,1,True color of filtered water by visual comparison with standards (EPA method 110.2; DODEC program) 
+CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Color,PCU,,NA NA,,80,1,1,True color of filtered water by visual comparison with standards (EPA method 110.2; DODEC program) 
+Color,PCU,,USGS CC003,"Color, wf, visual comparison",80,1,1,True color of filtered water by visual comparison with standards (EPA method 110.2; DODEC program) 
