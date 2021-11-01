@@ -1,31 +1,41 @@
-CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
-Chlorophyll a,mg/m3,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,mg/m3,NA,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
-Chlorophyll a,ug/l,IDEQ_WQX 10200-H,Chlorophyll a-b-c Determination,NA,NA,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
-Chlorophyll a,mg/m3,NA NA,NA,NA,NA,1,1,unknown
-Chlorophyll a,mg/l,IDEQ_WQX 10200-H,Chlorophyll a-b-c Determination,NA,NA,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
-Chlorophyll a,ug/l,USGS LC025,"Chlorophyll, phytoplankton, HPLC",NA,70953,1,1,Chlorophyll in phytoplankton by HPLC
-Chlorophyll a,ug/l,USGS FL008,"Chlorophyll a,phyto,fluorometric",ug/l,70953,1,1,"Fluorometric, Chlorophyll A, Phytoplankton"
-Chlorophyll a,ug/l,USGS FL008,"Chlorophyll a,phyto,fluorometric",NA,70953,1,1,"Fluorometric, Chlorophyll A, Phytoplankton"
-Chlorophyll a,ug/l,NA NA,NA,NA,70953,1,1,Reported as chlorophyll - Uncorrected (Noah's notes)
-"Chlorophyll a, corrected for pheophytin",mg/m3,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,mg/m3,NA,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
-"Chlorophyll a, uncorrected for pheophytin",ug/l,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,NA,NA,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
-"Chlorophyll a, uncorrected for pheophytin",ug/l,UTAHDWQ_WQX GENERIC METHOD,Used for all methods where historical methodology may not be available.,NA,NA,1,1,unknown
-Chlorophyll a,ug/l,APHA 10200-H,NA,NA,NA,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
-"Chlorophyll a, corrected for pheophytin",ug/l,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,ug/l,NA,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
-"Chlorophyll a, uncorrected for pheophytin",ug/l,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,ug/l,NA,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
-"Chlorophyll a, corrected for pheophytin",ug/l,APHA 10200H(3),10200 H 3  ~ Chlorophyll a-b-c Determination by fluorometer,NA,NA,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
-"Chlorophyll a, uncorrected for pheophytin",ug/l,USDOI/USGS B6530,Chlorophyll a-b in Phytoplankton by HP Liquid Chromatography,NA,NA,1,1,unknown
-"Chlorophyll a, uncorrected for pheophytin",ug/l,R10BUNKER USGS_HIST,USGS_HIST,NA,NA,1,1,unknown
-Chlorophyll a,ug/l,NA NA,NA,NA,32230,1,1,Chlorophyll in phytoplankton by spectroscopy
-"Chlorophyll a, uncorrected for pheophytin",ug/l,R10BUNKER USGS_UNKN,USGS_UNKN,NA,NA,1,1,unknown
-"Chlorophyll a, corrected for pheophytin",ug/l,APHA 10200H(3),10200 H 3  ~ Chlorophyll a-b-c Determination by fluorometer,ug/l,NA,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
-Chlorophyll a,ug/l,USGS 00050,"Plant pigments, sonication & 445",ug/l,70953,1,1,Plant pigments in algae by EPA Method 445.0 (fluorescence) modified by use of sonication for sample extraction
-"Chlorophyll a, uncorrected for pheophytin",ug/l,USDOI/USGS B6530,Chlorophyll a-b in Phytoplankton by HP Liquid Chromatography,ug/l,NA,1,1,unknown
-Chlorophyll a,ug/l,USGS LC025,"Chlorophyll, phytoplankton, HPLC",ug/l,70953,1,1,Chlorophyll in phytoplankton by HPLC
-"Chlorophyll a, uncorrected for pheophytin",ug/l,R10BUNKER USGS_UNKN,USGS_UNKN,ug/l,NA,1,1,unknown
-Chlorophyll a,ug/l,NA NA,NA,NA,NA,1,1,unknown
-Chlorophyll a,ug/l,USEPA 445,In-Vitro Determination of Chlorophyll,NA,NA,1,1,In Vitro Determination of Chlorophyll a and Pheophytin ain Marine and Freshwater Algae by Fluorescence
-Chlorophyll a,ug/l,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,NA,NA,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
-Chlorophyll a,ug/l,MDDNR analytic03,analyticTRICHROMATIC CHLOROPHYLL A,NA,NA,1,1,unknown
-Chlorophyll a,ug/l,USEPA 446.0,Chlorophylls and Pheopigments in Phytoplankton by Spectrophotometry,mg/l,NA,1,1000,"In Vitro Determination of Chlorophylls a, b, c + c and Pheopigments in 1 2Marine And Freshwater Algae by Visible Spectrophotometry"
-Chlorophyll a,ug/l,USEPA 446.0,Chlorophylls and Pheopigments in Phytoplankton by Spectrophotometry,ug/l,NA,1,1,"In Vitro Determination of Chlorophylls a, b, c + c and Pheopigments in 1 2Marine And Freshwater Algae by Visible Spectrophotometry"
+CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Chlorophyll a,mg/l,NA,IDEQ_WQX 10200-H,Chlorophyll a-b-c Determination,,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
+Chlorophyll a,mg/m3,mg/m3,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
+Chlorophyll a,mg/m3,NA,NA NA,,,1,1,unknown
+Chlorophyll a,ug/l,mg/l,USEPA 446.0,Chlorophylls and Pheopigments in Phytoplankton by Spectrophotometry,,1,1000,"In Vitro Determination of Chlorophylls a, b, c + c and Pheopigments in 1 2Marine And Freshwater Algae by Visible Spectrophotometry"
+Chlorophyll a,ug/l,ug/l,21NC01WQ CHLA_FLUOR,,,1,1,unknown
+Chlorophyll a,ug/l,ug/l,21NC01WQ CHLA_SPEC,,,1,1,unknown
+Chlorophyll a,ug/l,ug/l,21NC01WQ CHLA_TRICH,,,1,1,unknown
+Chlorophyll a,ug/l,ug/l,USEPA 445,In-Vitro Determination of Chlorophyll,,1,1,In-Vitro Determination of Chlorophyll
+Chlorophyll a,ug/l,ug/l,USEPA 446.0,Chlorophylls and Pheopigments in Phytoplankton by Spectrophotometry,,1,1,"In Vitro Determination of Chlorophylls a, b, c + c and Pheopigments in 1 2Marine And Freshwater Algae by Visible Spectrophotometry"
+Chlorophyll a,ug/l,ug/l,USGS 00050,"Plant pigments, sonication & 445",70953,1,1,Plant pigments in algae by EPA Method 445.0 (fluorescence) modified by use of sonication for sample extraction
+Chlorophyll a,ug/l,ug/l,USGS FL008,"Chlorophyll a,phyto,fluorometric",70953,1,1,"Fluorometric, Chlorophyll A, Phytoplankton"
+Chlorophyll a,ug/l,ug/l,USGS LC025,"Chlorophyll, phytoplankton, HPLC",70953,1,1,Chlorophyll in phytoplankton by HPLC
+Chlorophyll a,ug/l,NA,21NC01WQ CHLA_FLUOR,,,1,1,unknown
+Chlorophyll a,ug/l,NA,21NC01WQ CHLA_SPEC,,,1,1,unknown
+Chlorophyll a,ug/l,NA,21NC01WQ CHLA_TRICH,,,1,1,unknown
+Chlorophyll a,ug/l,NA,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
+Chlorophyll a,ug/l,NA,APHA 10200-H,,,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
+Chlorophyll a,ug/l,NA,IDEQ_WQX 10200-H,Chlorophyll a-b-c Determination,,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
+Chlorophyll a,ug/l,NA,MDDNR analytic03,analyticTRICHROMATIC CHLOROPHYLL A,,1,1,unknown
+Chlorophyll a,ug/l,NA,NA NA,,32209,1,1,unknown
+Chlorophyll a,ug/l,NA,NA NA,,32230,1,1,Chlorophyll in phytoplankton by spectroscopy
+Chlorophyll a,ug/l,NA,NA NA,,70953,1,1,Reported as chlorophyll - Uncorrected (Noah's notes)
+Chlorophyll a,ug/l,NA,NA NA,,,1,1,unknown
+Chlorophyll a,ug/l,NA,USEPA 445,In-Vitro Determination of Chlorophyll,,1,1,In Vitro Determination of Chlorophyll a and Pheophytin ain Marine and Freshwater Algae by Fluorescence
+Chlorophyll a,ug/l,NA,USGS FL008,"Chlorophyll a,phyto,fluorometric",70953,1,1,"Fluorometric, Chlorophyll A, Phytoplankton"
+Chlorophyll a,ug/l,NA,USGS LC025,"Chlorophyll, phytoplankton, HPLC",70953,1,1,Chlorophyll in phytoplankton by HPLC
+"Chlorophyll a, corrected for pheophytin",mg/m3,mg/m3,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
+"Chlorophyll a, corrected for pheophytin",ug/l,ug/l,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
+"Chlorophyll a, corrected for pheophytin",ug/l,ug/l,APHA 10200H(3),10200 H 3  ~ Chlorophyll a-b-c Determination by fluorometer,,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
+"Chlorophyll a, corrected for pheophytin",ug/l,NA,APHA 10200H(3),10200 H 3  ~ Chlorophyll a-b-c Determination by fluorometer,,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
+"Chlorophyll a, corrected for pheophytin",ug/l,NA,USEPA 445,In-Vitro Determination of Chlorophyll,,1,1,In-Vitro Determination of Chlorophyll
+"Chlorophyll a, uncorrected for pheophytin",ug/l,ug/l,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
+"Chlorophyll a, uncorrected for pheophytin",ug/l,ug/l,R10BUNKER USGS_UNKN,USGS_UNKN,,1,1,unknown
+"Chlorophyll a, uncorrected for pheophytin",ug/l,ug/l,USDOI/USGS B6530,Chlorophyll a-b in Phytoplankton by HP Liquid Chromatography,,1,1,unknown
+"Chlorophyll a, uncorrected for pheophytin",ug/l,NA,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,1,1,Reported as chlorophyll - corrected/uncorrected is unknown
+"Chlorophyll a, uncorrected for pheophytin",ug/l,NA,R10BUNKER USGS_HIST,USGS_HIST,,1,1,unknown
+"Chlorophyll a, uncorrected for pheophytin",ug/l,NA,R10BUNKER USGS_UNKN,USGS_UNKN,,1,1,unknown
+"Chlorophyll a, uncorrected for pheophytin",ug/l,NA,USDOI/USGS B6530,Chlorophyll a-b in Phytoplankton by HP Liquid Chromatography,,1,1,unknown
+"Chlorophyll a, uncorrected for pheophytin",ug/l,NA,USEPA 445,In-Vitro Determination of Chlorophyll,,1,1,In-Vitro Determination of Chlorophyll
+"Chlorophyll a, uncorrected for pheophytin",ug/l,NA,UTAHDWQ_WQX GENERIC METHOD,Used for all methods where historical methodology may not be available.,,1,1,unknown
