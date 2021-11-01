@@ -1,3 +1,6 @@
-CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
-Aluminum,ug/l,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,NA,NA,1,1,Reported as Aluminum
-Aluminum,ug/l,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,ug/l,NA,1,1,Reported as Aluminum
+CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Aluminum,ug/l,ug/l,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,,1,1,Reported as Aluminum
+Aluminum,ug/l,NA,21NC01WQ UNKNOWN,,,1,1,Unknown
+Aluminum,ug/l,NA,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,,1,1,Reported as Aluminum
+Aluminum,ug/l,NA,USEPA 1638,Trace Elements in Water by ICP/MS,,1,1,Unknown - digestion in bottle
+Aluminum,ug/l,NA,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1,1,Reported as Aluminum

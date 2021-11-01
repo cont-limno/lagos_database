@@ -1,6 +1,7 @@
-CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
-Mercury,ng/l,NA NA,NA,ng/l,50287,1,1,Reported as mercury
-Mercury,ug/l,NA NA,NA,NA,71890,1000,1,Reported as mercury
-Mercury,NA,USEPA 245.1,NA,NA,NA,1,1,Reported as mercury
-Mercury,NA,NA NA,NA,ug/l,71890,1,1000,Reported as mercury
-Mercury,ug/l,USEPA 245.1,Mercury in Water by CVAA,ug/l,NA,1000,1000,Reported as mercury
+CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Mercury,ng/l,ng/l,NA NA,,50287,1,1,Reported as mercury
+Mercury,ng/l,NA,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,,1,1,Reported as mercury
+Mercury,ug/l,ug/l,USEPA 245.1,Mercury in Water by CVAA,,1000,1000,Reported as mercury
+Mercury,ug/l,NA,NA NA,,71890,1000,1,Reported as mercury
+Mercury,NA,ug/l,NA NA,,71890,1,1000,Reported as mercury
+Mercury,NA,NA,USEPA 245.1,,,1,1,Reported as mercury

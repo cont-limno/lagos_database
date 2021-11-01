@@ -1,9 +1,13 @@
-CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
-Mercury,ng/l,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,ng/l,NA,1,1,Reported as mercury
-Mercury,ug/l,USEPA 245.1,NA,NA,NA,1000,1,Reported as mercury - Mercury in Water by Cold Vapor Atomic Absorption Spectrometry
-Mercury,NA,USEPA 245.1,NA,NA,NA,1,1,Reported as mercury - Mercury in Water by Cold Vapor Atomic Absorption Spectrometry
-Mercury,ug/l,USEPA 245.1,Mercury in Water by CVAA,ug/l,NA,1000,1000,Reported as mercury - Mercury in Water by Cold Vapor Atomic Absorption Spectrometry
-Mercury,ug/l,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,ng/l,NA,1000,1,Reported as mercury
-Mercury,ug/l,USEPA 300.1,Determination of Inorganic Anions in Drinking Water by Ion Chromatography,ug/l,NA,1000,1000,unknown
-Mercury,ug/l,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,ug/l,NA,1000,1000,unknown
-Mercury,ug/l,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,NA,NA,1000,1,unknown
+CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Mercury,ng/l,ng/l,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,,1,1,Reported as mercury
+Mercury,ng/l,NA,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,,1,1,Reported as mercury
+Mercury,ug/l,ng/l,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,,1000,1,Reported as mercury
+Mercury,ug/l,ug/l,21NC01WQ UNKNOWN,,,1000,1000,unknown
+Mercury,ug/l,ug/l,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,,1000,1000,unknown
+Mercury,ug/l,ug/l,USEPA 245.1,Mercury in Water by CVAA,,1000,1000,Reported as mercury - Mercury in Water by Cold Vapor Atomic Absorption Spectrometry
+Mercury,ug/l,ug/l,USEPA 300.1,Determination of Inorganic Anions in Drinking Water by Ion Chromatography,,1000,1000,unknown
+Mercury,ug/l,NA,21NC01WQ UNKNOWN,,,1000,1,unknown
+Mercury,ug/l,NA,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,,1000,1,unknown
+Mercury,ug/l,NA,USEPA 245.1,Mercury in Water by CVAA,,1000,1,Reported as mercury - Mercury in Water by Cold Vapor Atomic Absorption Spectrometry
+Mercury,ug/l,NA,USEPA 245.1,,,1000,1,Reported as mercury - Mercury in Water by Cold Vapor Atomic Absorption Spectrometry
+Mercury,NA,NA,USEPA 245.1,,,1,1,Reported as mercury - Mercury in Water by Cold Vapor Atomic Absorption Spectrometry
