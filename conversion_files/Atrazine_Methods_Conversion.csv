@@ -1,6 +1,4 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
 Atrazine,ug/l,USGS GCM35,"Pest, high use, SPE, GCMS-SIM",NA,39632,1,1,Reported as pesticide
-Atrazine,ug/l,NA NA,NA,NA,99775,1,1,reported as atrazine 
+Atrazine,ug/l,NA NA,NA,NA,99775,1,1,Unpublished immunoassay method for atrazine in filtered water
 Atrazine,ug/l,USGS GCM35,"Pest, high use, SPE, GCMS-SIM",ug/l,39632,1,1,Reported as pesticide
-Atrazine,NA,USGS GCM35,"Pest, high use, SPE, GCMS-SIM",ug/l,39632,1,1,Reported as pesticide
-Atrazine,NA,USGS LCM44,"Triazines & Phenylureas,SPE,LCMS",ug/l,39632,1,1,Reported as triazine - atrazine is a herbicide of the triazine class

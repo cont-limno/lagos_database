@@ -1,7 +1,10 @@
-CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
-Selenium,ug/l,APHA 3114-B,NA,NA,NA,1,1,Reported as selenium
-Selenium,ug/l,APHA 3114-B,3114 B ~ Metals in Water by Manual HYDAA,ug/l,NA,1,1,Reported as selenium
-Selenium,ug/l,NA NA,NA,NA,1147,1,1,Reported as selenium
-Selenium,ug/l,USGS HY012,"Selenium, wu, auto hydride AAS",NA,1147,1,1,Reported as selenium
-Selenium,ug/l,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,ug/l,NA,-1.00E+06,-1.00E+06,unknown
-Selenium,ug/l,USGS PLM11,"Elements, wu, cICP-MS",ug/l,1147,1,1,Reported as selenium
+CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Selenium,ug/l,ug/l,21NC01WQ UNKNOWN,,,1,1,unknown
+Selenium,ug/l,ug/l,APHA 3114-B,3114 B ~ Metals in Water by Manual HYDAA,,1,1,Reported as selenium
+Selenium,ug/l,ug/l,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,,-1.00E+06,-1.00E+06,unknown
+Selenium,ug/l,ug/l,USGS PLM11,"Elements, wu, cICP-MS",1147,1,1,Reported as selenium
+Selenium,ug/l,NA,APHA 3114-B,,,1,1,Reported as selenium
+Selenium,ug/l,NA,NA NA,,1147,1,1,Reported as selenium
+Selenium,ug/l,NA,USEPA 1638,Trace Elements in Water by ICP/MS,,1,1,Reported as selenium
+Selenium,ug/l,NA,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,Reported as selenium
+Selenium,ug/l,NA,USGS HY012,"Selenium, wu, auto hydride AAS",1147,1,1,Reported as selenium
