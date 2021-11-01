@@ -1,20 +1,25 @@
-CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
-Turbidity,NTU,USEPA 180.1,Turbidity by Nephelometry,NTU,NA,1,1,Reported as turbidity
-Turbidity,FNU,USGS TS213,"YSI EXO turbidity sensor, FNU",NA,63680,-1.00E+06,-1.00E+06,discard
-Turbidity,NTU,NA NA,NA,NA,NA,1,1,unknown
-Turbidity,NTU,1119USBR P82078,NA,NA,NA,1,1,Reported as turbidity
-Turbidity,NTU,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,NA,NA,1,1,unknown
-Turbidity,NTU,NA NA,NA,NA,76,1,1,unknown
-Turbidity,FNU,USGS TS086,"YSI model 6026-4000, FNU",NA,63680,-1.00E+06,-1.00E+06,discard
-Turbidity,FNU,NA NA,NA,NA,63680,-1.00E+06,-1.00E+06,discard
-Turbidity,JTU,NA NA,NA,NA,70,-1.00E+06,-1.00E+06,discard
-Turbidity,FNU,USGS TS087,"YSI Environmental, sensor 6136",NA,63680,-1.00E+06,-1.00E+06,discard
-Turbidity,NTRU,USGS TS101,"HACH, sensor model 2100 P, NTRU",NA,63676,-1.00E+06,-1.00E+06,discard
-Turbidity,NTU,APHA 2130,NA,NA,NA,1,1,Reported as turbidity
-Turbidity,mg/l,APHA 2130,NA,NA,NA,-1.00E+06,-1.00E+06,discard
-Turbidity,NTU,USEPA 180.1,Turbidity by Nephelometry,NA,NA,1,1,Reported as turbidity
-Turbidity,NTU,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,NA,NA,1,1,unknown
-Turbidity,NTU,APHA 2130-B,2130 B ~ Nephelometric Method,NA,NA,1,1,Reported as turbidity
-Turbidity,%,APHA 2130,NA,NA,NA,-1.00E+06,-1.00E+06,discard
-Turbidity,NTRU,NA NA,NA,NA,63676,-1.00E+06,-1.00E+06,discard
-Turbidity,NA,USEPA 180.1,Turbidity by Nephelometry,NTU,NA,-1.00E+06,-1.00E+06,discard
+CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Turbidity,%,NA,APHA 2130,,,-1.00E+06,-1.00E+06,discard
+Turbidity,FNU,NA,NA NA,,63680,-1.00E+06,-1.00E+06,discard
+Turbidity,FNU,NA,USGS TS086,"YSI model 6026-4000, FNU",63680,-1.00E+06,-1.00E+06,discard
+Turbidity,FNU,NA,USGS TS087,"YSI Environmental, sensor 6136",63680,-1.00E+06,-1.00E+06,discard
+Turbidity,FNU,NA,USGS TS213,"YSI EXO turbidity sensor, FNU",63680,-1.00E+06,-1.00E+06,discard
+Turbidity,FTU,NA,21NC01WQ UNKNOWN,,,-1.00E+06,-1.00E+06,discard
+Turbidity,FTU,NA,APHA 2130-B,2130 B ~ Nephelometric Method,,-1.00E+06,-1.00E+06,discard
+Turbidity,JTU,NA,NA NA,,70,-1.00E+06,-1.00E+06,discard
+Turbidity,mg/l,NA,APHA 2130,,,-1.00E+06,-1.00E+06,discard
+Turbidity,NTRU,NA,NA NA,,63676,-1.00E+06,-1.00E+06,discard
+Turbidity,NTRU,NA,USGS TS101,"HACH, sensor model 2100 P, NTRU",63676,-1.00E+06,-1.00E+06,discard
+Turbidity,NTU,NTU,APHA 2130-B,2130 B ~ Nephelometric Method,,1,1,"Turbidity, water, unfiltered, laboratory, nephelometric method (Standard Methods 2130 B; USGSVAWC; VA-CLS)"
+Turbidity,NTU,NTU,USEPA 180.1,Turbidity by Nephelometry,,1,1,Reported as turbidity
+Turbidity,NTU,NA,1119USBR P82078,,,1,1,Reported as turbidity
+Turbidity,NTU,NA,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,unknown
+Turbidity,NTU,NA,APHA 2130,,,1,1,Reported as turbidity
+Turbidity,NTU,NA,APHA 2130-B,2130 B ~ Nephelometric Method,,1,1,Reported as turbidity
+Turbidity,NTU,NA,NA NA,,76,1,1,unknown
+Turbidity,NTU,NA,NA NA,,63675,1,1,Turbidity of unfiltered water measured in the field with Orbeco-Hellige model TB200 turbidimeter (USGSOHML)
+Turbidity,NTU,NA,NA NA,,,1,1,unknown
+Turbidity,NTU,NA,USEPA 180.1,Turbidity by Nephelometry,,1,1,Reported as turbidity
+Turbidity,NTU,NA,USGS TBD01,"Turbidity, by turbidimeter",76,1,1,Reported as turbidity
+Turbidity,NTU,NA,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,unknown
+Turbidity,NA,NTU,USEPA 180.1,Turbidity by Nephelometry,,-1.00E+06,-1.00E+06,discard
