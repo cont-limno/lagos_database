@@ -16,6 +16,12 @@ pH,None,APHA 2320,Alkalinity in Water by Titration,NA,NA
 pH,None,R10BUNKER PH-USGS,PH-USGS,NA,NA
 pH,None,R10BUNKER I2587,I2587,NA,NA
 pH,None,R10BUNKER PH-001,PH-001,NA,NA
+pH,None,APHA 4500-H+B,"4500 H+B ~ pH in Water by Potentiometry, pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode",NA,NA
+pH,None,21VASWCB USER DEFINED,CONTACT VADEQ FOR DETAILS,NA,NA
+pH,None,21NC03WQ WSSSOP,WSSSOP,NA,NA
+pH,None,21NC01WQ PH_FIELD,NA,NA,NA
+pH,None,21NC01WQ PH_LAB,NA,NA,NA
+pH,None,21NC03WQ WSSSOP,WSSSOP,None,NA
+pH,None,11NPSWRD_WQX NPS_FISHER_5PH,pH by Fisher Model 5 pH Meter,NA,NA
 pH,None,21DELAWQ_WQX YSI 6-Series,YSI 6-Series Multi-Parameter Sonde,NA,NA
 pH,None,USEPA 150.2,pH by Continuous Monitoring,NA,NA
-pH,None,21DELAWQ_WQX YSI 6-Series,YSI 6-Series Multi-Parameter Sonde,None,NA

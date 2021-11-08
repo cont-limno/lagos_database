@@ -1,73 +1,27 @@
-CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-pH,None,None,11NPSWRD_WQX NPS_FISHER_5PH,pH by Fisher Model 5 pH Meter,,1,1,unknown
-pH,None,None,11NPSWRD_WQX NPS_FISHER_5PH,pH by Fisher Model 5 pH Meter,,1,1,unknown
-pH,None,None,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,unknown
-pH,None,None,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,unknown
-pH,None,None,21DELAWQ_WQX YSI 6-Series,YSI 6-Series Multi-Parameter Sonde,,1,1,unknown
-pH,None,None,21DELAWQ_WQX YSI 6-Series,YSI 6-Series Multi-Parameter Sonde,,1,1,unknown
-pH,None,None,21DELAWQ_WQX YSI 6-Series,YSI 6-Series Multi-Parameter Sonde,,1,1,unknown
-pH,None,None,21NC01WQ PH_FIELD,,,1,1,unknown
-pH,None,None,21NC01WQ PH_FIELD,,,1,1,unknown
-pH,None,None,21NC01WQ PH_LAB,,,1,1,unknown
-pH,None,None,21NC01WQ PH_LAB,,,1,1,unknown
-pH,None,None,21NC03WQ WSSSOP,WSSSOP,,1,1,unknown
-pH,None,None,21NC03WQ WSSSOP,WSSSOP,,1,1,unknown
-pH,None,None,21NC03WQ WSSSOP,WSSSOP,,1,1,unknown
-pH,None,None,21VASWCB USER DEFINED,CONTACT VADEQ FOR DETAILS,,1,1,unknown
-pH,None,None,21VASWCB USER DEFINED,CONTACT VADEQ FOR DETAILS,,1,1,unknown
-pH,None,None,APHA 2320,Alkalinity in Water by Titration,,-1.00E+06,-1.00E+06,discarding - measured alkalinity - not pH
-pH,None,None,APHA 2320,Alkalinity in Water by Titration,,-1.00E+06,-1.00E+06,discarding - measured alkalinity - not pH
-pH,None,None,APHA 4500-H,,,1,1,pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode
-pH,None,None,APHA 4500-H,,,1,1,pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode
-pH,None,None,APHA 4500-H+B,"4500 H+B ~ pH in Water by Potentiometry, pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode",,1,1,pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode
-pH,None,None,APHA 4500-H+B,"4500 H+B ~ pH in Water by Potentiometry, pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode",,1,1,pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode
-pH,None,None,APHA 4500-H+B,"4500 H+B ~ pH in Water by Potentiometry, pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode",,1,1,pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode
-pH,None,None,NA NA,,,1,1,unknown
-pH,None,None,NA NA,,,1,1,unknown
-pH,None,None,R10BUNKER I2587,I2587,,1,1,"pH, lab, by automated glass electrode"
-pH,None,None,R10BUNKER I2587,I2587,,1,1,"pH, lab, by automated glass electrode"
-pH,None,None,R10BUNKER PH-001,PH-001,,1,1,unknown
-pH,None,None,R10BUNKER PH-001,PH-001,,1,1,unknown
-pH,None,None,R10BUNKER PH-USGS,PH-USGS,,1,1,unknown
-pH,None,None,R10BUNKER PH-USGS,PH-USGS,,1,1,unknown
-pH,None,None,USEPA 150.1,pH,,1,1,Reported as pH
-pH,None,None,USEPA 150.1,pH,,1,1,Reported as pH
-pH,None,None,USEPA 150.1,pH,,1,1,Reported as pH
-pH,None,None,USEPA 150.2,pH by Continuous Monitoring,,1,1,Reported as pH
-pH,None,None,USEPA 150.2,pH by Continuous Monitoring,,1,1,Reported as pH
-pH,None,None,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,unknown
-pH,None,None,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,unknown
-pH,None,,11NPSWRD_WQX NPS_FISHER_5PH,pH by Fisher Model 5 pH Meter,,1,1,unknown
-pH,None,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,unknown
-pH,None,,21DELAWQ_WQX YSI 6-Series,YSI 6-Series Multi-Parameter Sonde,,1,1,unknown
-pH,None,,21NC01WQ PH_FIELD,,,1,1,unknown
-pH,None,,21NC01WQ PH_LAB,,,1,1,unknown
-pH,None,,21NC03WQ WSSSOP,WSSSOP,,1,1,unknown
-pH,None,,21VASWCB USER DEFINED,CONTACT VADEQ FOR DETAILS,,1,1,unknown
-pH,None,,APHA 2320,Alkalinity in Water by Titration,,-1.00E+06,-1.00E+06,discarding - measured alkalinity - not pH
-pH,None,,APHA 4500-H,,,1,1,Reported as pH
-pH,None,,APHA 4500-H+B,"4500 H+B ~ pH in Water by Potentiometry, pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode",,1,1,Reported as pH
-pH,None,,NA NA,,,1,1,unknown
-pH,None,,R10BUNKER I2587,I2587,,1,1,unknown
-pH,None,,R10BUNKER PH-001,PH-001,,1,1,unknown
-pH,None,,R10BUNKER PH-USGS,PH-USGS,,1,1,unknown
-pH,None,,USEPA 150.1,pH,,1,1,unknown
-pH,None,,USEPA 150.2,pH by Continuous Monitoring,,1,1,unknown
-pH,None,,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,unknown
-pH,std units,None,NA NA,,400,1,1,Reported as pH
-pH,std units,None,NA NA,,400,1,1,"pH, field, electrometric"
-pH,std units,None,NA NA,,403,1,1,Reported as pH
-pH,std units,None,NA NA,,403,1,1,"pH, lab, by automated glass electrode"
-pH,std units,None,USGS EL003,"pH, wu, field, electrometry",400,1,1,"pH, field, electrometric"
-pH,std units,None,USGS EL003,"pH, wu, field, electrometry",400,1,1,"pH,WWR,FLD, ELEC"
-pH,std units,None,USGS EL006,"pH, lab, auto glass electrode",403,1,1,"pH, lab, by automated glass electrode"
-pH,std units,None,USGS EL006,"pH, lab, auto glass electrode",403,1,1,"pH, lab, by automated glass electrode"
-pH,std units,None,USGS PROBE,"pH, field, electrometric",400,1,1,"pH, field, electrometric"
-pH,std units,None,USGS PROBE,"pH, field, electrometric",400,1,1,"pH, field, electrometric"
-pH,std units,std units,USGS EL006,"pH, lab, auto glass electrode",403,1,1,"pH, lab, by automated glass electrode"
-pH,std units,,NA NA,,400,1,1,unknown
-pH,std units,,NA NA,,403,1,1,unknown
-pH,std units,,USGS EL003,"pH, wu, field, electrometry",400,1,1,Reported as pH
-pH,std units,,USGS EL006,"pH, lab, auto glass electrode",403,1,1,Reported as pH
-pH,std units,,USGS PROBE,"pH, field, electrometric",400,1,1,unknown
-pH,u,None,USEPA 150.1,pH,,1,1,Reported as pH
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
+pH,None,USEPA 150.1,pH,None,NA,1,1,
+pH,std units,NA NA,NA,NA,400,1,1,"pH,WWR,FLD, ELEC"
+pH,None,NA NA,NA,NA,NA,1,1,
+pH,None,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,NA,NA,1,1,
+pH,std units,USGS EL006,"pH, lab, auto glass electrode",NA,403,1,1,"pH of unfiltered water, laboratory, by electrometry (EPA method 150.1; DODEC program)"
+pH,std units,USGS PROBE,"pH, field, electrometric",NA,400,1,1,"pH,WWR,FLD, ELEC"
+pH,std units,USGS EL006,"pH, lab, auto glass electrode",std units,403,1,1,"pH of unfiltered water, laboratory, by electrometry (EPA method 150.1; DODEC program)"
+pH,std units,USGS EL003,"pH, wu, field, electrometry",NA,400,1,1,"pH,WWR,FLD, ELEC"
+pH,None,APHA 4500-H,NA,NA,NA,1,1,
+pH,None,APHA 4500-H+B,"4500 H+B ~ pH in Water by Potentiometry, pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode",None,NA,1,1,
+pH,None,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,NA,NA,1,1,
+pH,None,USEPA 150.1,pH,NA,NA,1,1,
+pH,std units,NA NA,NA,NA,403,1,1,"pH of unfiltered water, laboratory, by electrometry (EPA method 150.1; DODEC program)"
+pH,None,APHA 2320,Alkalinity in Water by Titration,NA,NA,1,1,
+pH,None,R10BUNKER PH-USGS,PH-USGS,NA,NA,1,1,
+pH,None,R10BUNKER I2587,I2587,NA,NA,1,1,
+pH,None,R10BUNKER PH-001,PH-001,NA,NA,1,1,
+pH,None,APHA 4500-H+B,"4500 H+B ~ pH in Water by Potentiometry, pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode",NA,NA,1,1,
+pH,None,21VASWCB USER DEFINED,CONTACT VADEQ FOR DETAILS,NA,NA,1,1,
+pH,None,21NC03WQ WSSSOP,WSSSOP,NA,NA,1,1,
+pH,None,21NC01WQ PH_FIELD,NA,NA,NA,1,1,
+pH,None,21NC01WQ PH_LAB,NA,NA,NA,1,1,
+pH,None,21NC03WQ WSSSOP,WSSSOP,None,NA,1,1,
+pH,None,11NPSWRD_WQX NPS_FISHER_5PH,pH by Fisher Model 5 pH Meter,NA,NA,1,1,
+pH,None,21DELAWQ_WQX YSI 6-Series,YSI 6-Series Multi-Parameter Sonde,NA,NA,1,1,
+pH,None,USEPA 150.2,pH by Continuous Monitoring,NA,NA,1,1,

@@ -129,9 +129,9 @@ summary(VAdatPull)
 
 
 ```{r}
-allstates<-rbind(IDdatPull,VAdatPull,DEdatPull,MDdatPull)
+allstates <- do.call("rbind", lapply(ls(pattern='datPull'),get))
 #figure out how to autodelete files that contain datpull
-rm(DEdatPull,IDdatPull,VAdatPull,MDdatPull)
+#do.call("rm", lapply(ls(pattern='datPull'),get)) - ask noah
 
 #removing data that have Y's instead of keeping data that have N's
 read.csv("list of unique parameters to remove.csv") -> remove_params #update this
@@ -762,7 +762,7 @@ lagos_unit <- "ug/l"
 dataset_name <-"Chlorophyll_a"
 
 vars2process
-params<-c("Chlorophyll a, corrected for pheophytin", "Chlorophyll a", "Chlorophyll a, uncorrected for pheophytin")
+params<-c("Chlorophyll a, corrected for pheophytin", "Chlorophyll a", "Chlorophyll a, uncorrected for pheophytin", "Chlorophyll")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -1085,7 +1085,8 @@ params<-c("Orthophosphate",
           "Orthophosphate as P", 
           "Phosphate-phosphorus",
           "Phosphate-phosphorus as P",
-          "Phosphorus")
+          "Phosphorus", 
+          "Orthophosphate as PO4")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #che
 
@@ -1380,6 +1381,9 @@ temp<- non_numerics() #checks for non numeric values in result measure value - i
 unique(temp$ResultMeasureValue)
 
 source("unit_conversions.R")
+data_temp_temp_notes
+rm(data_temp_temp_notes)
+
 ```
 
 ```{r}
