@@ -131,7 +131,7 @@ summary(VAdatPull)
 ```{r}
 allstates <- do.call("rbind", lapply(ls(pattern='datPull'),get))
 #figure out how to autodelete files that contain datpull
-#do.call("rm", lapply(ls(pattern='datPull'),get)) - ask noah
+rm(list=ls(pattern="datPull"))
 
 #removing data that have Y's instead of keeping data that have N's
 read.csv("list of unique parameters to remove.csv") -> remove_params #update this
