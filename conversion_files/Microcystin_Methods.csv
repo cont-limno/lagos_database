@@ -1,0 +1,4 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode
+Microcystin,ug/l,AZDEQ_SW Polyclonal ELISA - A,Polyclonal ELISA - ADDA Specific,NA,NA
+Microcystin,ug/l,AZDEQ_SW Polyclonal ELISA - A,Polyclonal ELISA - ADDA Specific,ug/l,NA
+Microcystin,ug/l,21ARIZ_WQX FIELD,FIELD PARAMETERS,NA,NA

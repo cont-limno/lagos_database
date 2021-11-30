@@ -1,3 +1,6 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Apparent color,PCU,PCU,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,1,
+Apparent color,PCU,PCU,APHA 2120-C,2120 C ~ Color in Water by Spectrophotometry,,1,1,
+Color,PCU,PCU,USGS CC003,"Color, wf, visual comparison",80,1,1,True color of filtered water by visual comparison with standards (EPA method 110.2; DODEC program) 
 Color,PCU,,NA NA,,80,1,1,True color of filtered water by visual comparison with standards (EPA method 110.2; DODEC program) 
 Color,PCU,,USGS CC003,"Color, wf, visual comparison",80,1,1,True color of filtered water by visual comparison with standards (EPA method 110.2; DODEC program) 

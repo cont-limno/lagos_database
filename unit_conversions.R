@@ -114,5 +114,5 @@ unique(data_temp$DetectionQuantitationLimitMeasure.MeasureUnitCode)
 data_temp$CharacteristicName<-lagos_name  #set param name
 
 assign(paste0("data_",dataset_name),data_temp)
-# data <- data %>% filter(Obs_Id %notin% data_temp$Obs_Id)
+data <- data %>% filter(Obs_Id %notin% data_temp$Obs_Id)
 rm(data_temp)

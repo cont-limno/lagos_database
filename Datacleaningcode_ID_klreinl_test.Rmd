@@ -125,17 +125,170 @@ VAdatPull <- VAdatPull %>%
 names(VAdatPull)
 summary(VAdatPull)
 
+COdatPull<-read.csv(paste0(file.path,"CO_alldata_1975_to_2020.csv"))
+COdatPull$State<-c("CO")
+COdatPull$Id_num<-c(seq(1:nrow(COdatPull)))
+COdatPull <- COdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(COdatPull)
+summary(COdatPull)
+
+AZdatPull<-read.csv(paste0(file.path,"AZ_alldata_1975_to_2020.csv"))
+AZdatPull$State<-c("AZ")
+AZdatPull$Id_num<-c(seq(1:nrow(AZdatPull)))
+AZdatPull <- AZdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(AZdatPull)
+summary(AZdatPull)
+
+ARdatPull<-read.csv(paste0(file.path,"AR_alldata_1975_to_2020.csv"))
+ARdatPull$State<-c("AR")
+ARdatPull$Id_num<-c(seq(1:nrow(ARdatPull)))
+ARdatPull <- ARdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(ARdatPull)
+summary(ARdatPull)
+
+ALdatPull<-read.csv(paste0(file.path,"AL_alldata_1975_to_2020.csv"))
+ALdatPull$State<-c("AL")
+ALdatPull$Id_num<-c(seq(1:nrow(ALdatPull)))
+ALdatPull <- ALdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(ALdatPull)
+summary(ALdatPull)
+
+WYdatPull<-read.csv(paste0(file.path,"WY_alldata_1975_to_2020.csv"))
+WYdatPull$State<-c("WY")
+WYdatPull$Id_num<-c(seq(1:nrow(WYdatPull)))
+WYdatPull <- WYdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(WYdatPull)
+summary(WYdatPull)
+
+KYdatPull<-read.csv(paste0(file.path,"KY_alldata_1975_to_2020.csv"))
+KYdatPull$State<-c("KY")
+KYdatPull$Id_num<-c(seq(1:nrow(KYdatPull)))
+KYdatPull <- KYdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(KYdatPull)
+summary(KYdatPull)
+
+NVdatPull<-read.csv(paste0(file.path,"NV_alldata_1975_to_2020.csv"))
+NVdatPull$State<-c("NV")
+NVdatPull$Id_num<-c(seq(1:nrow(NVdatPull)))
+NVdatPull <- NVdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(NVdatPull)
+summary(NVdatPull)
+
+OKdatPull<-read.csv(paste0(file.path,"OK_alldata_1975_to_2020.csv"))
+OKdatPull$State<-c("OK")
+OKdatPull$Id_num<-c(seq(1:nrow(OKdatPull)))
+OKdatPull <- OKdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(OKdatPull)
+summary(OKdatPull)
+
+WAdatPull<-read.csv(paste0(file.path,"WA_alldata_1975_to_2020.csv"))
+WAdatPull$State<-c("WA")
+WAdatPull$Id_num<-c(seq(1:nrow(WAdatPull)))
+WAdatPull <- WAdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(WAdatPull)
+summary(WAdatPull)
+
+KSdatPull<-read.csv(paste0(file.path,"KS_alldata_1975_to_2020.csv"))
+KSdatPull$State<-c("KS")
+KSdatPull$Id_num<-c(seq(1:nrow(KSdatPull)))
+KSdatPull <- KSdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(KSdatPull)
+summary(KSdatPull)
+
+TNdatPull<-read.csv(paste0(file.path,"TN_alldata_1975_to_2020.csv"))
+TNdatPull$State<-c("TN")
+TNdatPull$Id_num<-c(seq(1:nrow(TNdatPull)))
+TNdatPull <- TNdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(TNdatPull)
+summary(TNdatPull)
+
+WIdatPull<-read.csv(paste0(file.path,"WI_alldata_1975_to_2020.csv"))
+WIdatPull$State<-c("WI")
+WIdatPull$Id_num<-c(seq(1:nrow(WIdatPull)))
+WIdatPull <- WIdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(WIdatPull)
+summary(WIdatPull)
+
+CAdatPull<-read.csv(paste0(file.path,"CA_alldata_1975_to_2020.csv"))
+CAdatPull$State<-c("CA")
+CAdatPull$Id_num<-c(seq(1:nrow(CAdatPull)))
+CAdatPull <- CAdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(CAdatPull)
+summary(CAdatPull)
+
+FLdatPull<-read.csv(paste0(file.path,"FL_alldata_1975_to_2020.csv"))
+FLdatPull$State<-c("FL")
+FLdatPull$Id_num<-c(seq(1:nrow(FLdatPull)))
+FLdatPull <- FLdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(FLdatPull)
+summary(FLdatPull)
+
+GAdatPull<-read.csv(paste0(file.path,"GA_alldata_1975_to_2020.csv"))
+GAdatPull$State<-c("GA")
+GAdatPull$Id_num<-c(seq(1:nrow(GAdatPull)))
+GAdatPull <- GAdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(GAdatPull)
+summary(GAdatPull)
+
+LAdatPull<-read.csv(paste0(file.path,"LA_alldata_1975_to_2020.csv"))
+LAdatPull$State<-c("LA")
+LAdatPull$Id_num<-c(seq(1:nrow(LAdatPull)))
+LAdatPull <- LAdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(LAdatPull)
+summary(LAdatPull)
+
+MSdatPull<-read.csv(paste0(file.path,"MS_alldata_1975_to_2020.csv"))
+MSdatPull$State<-c("MS")
+MSdatPull$Id_num<-c(seq(1:nrow(MSdatPull)))
+MSdatPull <- MSdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(MSdatPull)
+summary(MSdatPull)
+
+
 ```
 
 
 ```{r}
+WIdatPull<-select(WIdatPull, -X)
 allstates <- do.call("rbind", lapply(ls(pattern='datPull'),get))
 #figure out how to autodelete files that contain datpull
 rm(list=ls(pattern="datPull"))
+```
+
+
+```{r}
+#removing data that have Y's instead of keeping data that have N's
+read.csv("list of unique parameters to remove.csv") -> remove_params #update this
+data<- allstates[allstates$CharacteristicName %notin% remove_params$Unique.parameters,]
+
+write.csv(unique(data$CharacteristicName), file = "unique_characteristicnames.csv")
+
+```
+
+```{r}
 
 #removing data that have Y's instead of keeping data that have N's
 read.csv("list of unique parameters to remove.csv") -> remove_params #update this
 data<- allstates[allstates$CharacteristicName %notin% remove_params$Unique.parameters,]
+
+write.csv(unique(data$CharacteristicName), file = "unique_characteristicnames.csv")
 data <- data %>% 
   unite('Method_Id', c(ResultAnalyticalMethod.MethodIdentifierContext, ResultAnalyticalMethod.MethodIdentifier), sep = " ", remove = FALSE)
 
@@ -219,11 +372,13 @@ data$ResultDepthHeightMeasure.MeasureValue<-ifelse(data$ResultDepthHeightMeasure
 data$ResultDepthHeightMeasure.MeasureValue<-ifelse(data$ResultDepthHeightMeasure.MeasureUnitCode == "feet", data$ResultDepthHeightMeasure.MeasureValue*0.3048, data$ResultDepthHeightMeasure.MeasureValue)
 data$ResultDepthHeightMeasure.MeasureUnitCode[!is.na(data$ResultDepthHeightMeasure.MeasureUnitCode)]<-"m"
 
+unique(data$ActivityTopDepthHeightMeasure.MeasureValue[is.na(as.numeric(data$ActivityTopDepthHeightMeasure.MeasureValue))])
+data$ActivityTopDepthHeightMeasure.MeasureValue<-as.numeric(as.character(data$ActivityTopDepthHeightMeasure.MeasureValue))
+
 unique(data$ActivityTopDepthHeightMeasure.MeasureUnitCode) 
 data$ActivityTopDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityTopDepthHeightMeasure.MeasureUnitCode == "ft", data$ActivityTopDepthHeightMeasure.MeasureValue*0.3048, data$ActivityTopDepthHeightMeasure.MeasureValue)
 data$ActivityTopDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityTopDepthHeightMeasure.MeasureUnitCode == "feet", data$ActivityTopDepthHeightMeasure.MeasureValue*0.3048, data$ActivityTopDepthHeightMeasure.MeasureValue)
 data$ActivityTopDepthHeightMeasure.MeasureUnitCode[!is.na(data$ActivityTopDepthHeightMeasure.MeasureUnitCode)]<-"m"
-
 
 
 unique(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode) #all in m - no conversion needed
@@ -329,7 +484,7 @@ lagos_unit <- "mg/l"
 dataset_name <-"Calcium_dissolved"
 
 vars2process
-params<-c("Calcium")
+params<-c("Calcium", "Calcium as CaCO3")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -713,7 +868,7 @@ lagos_unit <- "mg/l"
 dataset_name <-"Chloride_dissolved"
 
 vars2process
-params<-c("Chloride")
+params<-c("Chloride", "Chlorine")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -762,7 +917,7 @@ lagos_unit <- "ug/l"
 dataset_name <-"Chlorophyll_a"
 
 vars2process
-params<-c("Chlorophyll a, corrected for pheophytin", "Chlorophyll a", "Chlorophyll a, uncorrected for pheophytin", "Chlorophyll")
+params<-c("Chlorophyll a, corrected for pheophytin", "Chlorophyll a", "Chlorophyll a, uncorrected for pheophytin", "Chlorophyll", "Chlorophyll a - Phytoplankton (suspended)", "Chlorophyll a (probe)")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -923,7 +1078,7 @@ lagos_unit <- "mg/l"
 dataset_name <-"Carbon_total organic"
 
 vars2process
-params<-c("Carbon", "Organic carbon")
+params<-c("Carbon", "Organic carbon", "Total carbon")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -946,7 +1101,7 @@ lagos_unit <- "mg/l"
 dataset_name <-"Carbon_dissolved organic"
 
 vars2process
-params<-c("Carbon", "Organic carbon")
+params<-c("Carbon", "Organic carbon", "Total carbon")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -970,7 +1125,7 @@ lagos_unit <- "ueq/l"
 dataset_name <-"Alkalinity"
 
 vars2process
-params<-c("Alkalinity, total", "Alkalinity, Carbonate as CaCO3", "Alkalinity", "Alkalinity, carbonate")
+params<-c("Alkalinity, total", "Alkalinity, Carbonate as CaCO3", "Alkalinity", "Alkalinity, carbonate", "Alkalinity, Bicarbonate as CaCO3")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -992,7 +1147,7 @@ lagos_unit <- "mg/l"
 dataset_name <-"Solids_total suspended"
 
 vars2process
-params<-c("Total suspended solids", "Total dissolved solids")
+params<-c("Total suspended solids", "Total dissolved solids", "Total solids")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -1062,7 +1217,7 @@ lagos_unit <- "PCU"
 dataset_name <-"Color_apparent"
 
 vars2process
-params<-c("Color")
+params<-c("Color", "Apparent color")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -1116,7 +1271,8 @@ dataset_name <-"tp"
 vars2process
 params<-c("Phosphorus",
           "Phosphate-phosphorus",
-          "Total Phosphorus, mixed forms")
+          "Total Phosphorus, mixed forms",
+          "Phosphorus as P")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #che
 
@@ -1143,7 +1299,8 @@ dataset_name <-"tdp"
 
 params<-c("Phosphorus",
           "Phosphate-phosphorus",
-          "Total Phosphorus, mixed forms")
+          "Total Phosphorus, mixed forms",
+          "Phosphorus as P")
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 unique(data_temp$ResultSampleFractionText)
@@ -1165,7 +1322,8 @@ dataset_name <-"tkn"
 
 vars2process
 params<-c("Total Kjeldahl nitrogen",
-          "Kjeldahl nitrogen")
+          "Kjeldahl nitrogen",
+          "Total Kjeldahl nitrogen (Organic N & NH3)")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #che
 
@@ -1209,7 +1367,6 @@ source("unit_conversions.R")
 data_temp_temp_notes
 rm(data_temp_temp_notes)
 ```
-
 
 
 ```{r nitrogen-total}
@@ -1302,7 +1459,7 @@ lagos_unit <- "ug/l"
 dataset_name <-"NO2"
 
 vars2process
-params<-c("Nitrite")
+params<-c("Nitrite", "Nitrite as N")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process
 
@@ -1385,6 +1542,27 @@ data_temp_temp_notes
 rm(data_temp_temp_notes)
 
 ```
+```{r}
+abbrev <- "Microcystin"
+lagos_name <- "Microcystin"
+lagos_unit <- "ug/l"
+dataset_name <-"Microcystin"
+
+vars2process
+params<-c("Microcystin")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
+data_temp_temp_notes
+rm(data_temp_temp_notes)
+```
+
 
 ```{r}
 vars2process

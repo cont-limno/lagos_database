@@ -1,3 +1,4 @@
-CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
-Methylmercury(1+),ng/l,NA NA,NA,ng/l,50285,1,1,Reported as methylmercury
-Methylmercury(1+),NA,NA NA,NA,ng/l,50285,1,1,Reported as methylmercury
+CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Methylmercury(1+),ng/l,ng/l,CSU_FISHERIESECOLOGYLAB Quick,Quicksilver,,1,1,unknown
+Methylmercury(1+),ng/l,ng/l,NA NA,,50285,1,1,Reported as methylmercury
+Methylmercury(1+),,ng/l,NA NA,,50285,1,1,Reported as methylmercury

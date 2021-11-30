@@ -1,25 +1,71 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
 Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",29801,19980,19980,Alkalinity by automated electrometric titration to pH 4.5 (NWQL)
 Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",90410,19980,19980,"Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
+Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT060,"ANC or alkalinity, lab,Gran,auto",413,19980,19980,
+Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT060,"ANC or alkalinity, lab,Gran,auto",29803,19980,19980,
+Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT085,"Alkalinity, wf, lab (SM2320B,CO)",29801,19980,19980,
 Alkalinity,mg/l CaCO3,,NA NA,,410,19980,19980,"Acid neutralizing capacity, fixed endpoint titration, Hach digital titrator "
+Alkalinity,mg/l CaCO3,,NA NA,,418,19980,19980,
 Alkalinity,mg/l CaCO3,,NA NA,,419,19980,19980,"Acid neutralizing capacity, inflection-point titration method (incremental titration method), Hach digital titrator "
+Alkalinity,mg/l CaCO3,,NA NA,,29801,19980,19980,
 Alkalinity,mg/l CaCO3,,NA NA,,39086,19980,19980,"Alkalinity, inflection-point titration method (incremental titration method), Hach digital titrator "
+Alkalinity,mg/l CaCO3,,NA NA,,39087,19980,19980,
 Alkalinity,mg/l CaCO3,,NA NA,,90410,19980,19980,"Alkalinity, low ionic-strength water, automated electrometric titration "
+Alkalinity,mg/l CaCO3,,USGS C,,410,19980,19980,
+Alkalinity,mg/l CaCO3,,USGS TT008,"ANC, wu, field, fixed EP",410,19980,19980,
+Alkalinity,mg/l CaCO3,,USGS TT012,"Alkalinity, wf, field, fixed EP",39086,19980,19980,
 Alkalinity,mg/l CaCO3,,USGS TT013,"Alkalinity, wf, field, increment",39086,19980,19980,"Alkalinity, dissolved, field, incremental titration "
 Alkalinity,mg/l CaCO3,,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",29801,19980,19980,"Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
 Alkalinity,mg/l CaCO3,,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",90410,19980,19980,"Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
+Alkalinity,mg/l CaCO3,,USGS TT042,"Alkalinity, LIS, auto electmetr",90410,19980,19980,
+Alkalinity,mg/l CaCO3,,USGS TT060,"ANC or alkalinity, lab,Gran,auto",413,19980,19980,
+Alkalinity,mg/l CaCO3,,USGS TT061,"Alkalinity, IPT, Hach",39086,19980,19980,
 Alkalinity,mg/l CaCO3,,USGS TT065,"ANC, IPT, Hach",419,19980,19980,"Acid neutralizing capacity, inflection-point titration method (incremental titration method), Hach digital titrator "
+Alkalinity,ueq/L,,NA NA,,409,-1000000,-1000000,discard
 Alkalinity,,mg/l CaCO3,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",29801,19980,19980,"Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
+"Alkalinity, Bicarbonate as CaCO3",mg/l,,21COL001 HISTORIC,,,-1000000,-1000000,discard
+"Alkalinity, Bicarbonate as CaCO3",mg/l,,NA NA,,,-1000000,-1000000,discard
+"Alkalinity, carbonate",mg/l,mg/l,APHA 2320,Alkalinity in Water by Titration,,1,1,
+"Alkalinity, carbonate",mg/l,mg/l,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,1,1,
+"Alkalinity, carbonate",mg/l,mg/l,AZDEQ_SW SM 2320B,SM 2320B,,1,1,
+"Alkalinity, carbonate",mg/l,,21ARIZ_WQX SM 2320B,STANDARD METHOD 2320B,,1,1,
+"Alkalinity, carbonate",mg/l CaCO3,mg/l CaCO3,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,19980,19980,
 "Alkalinity, carbonate",mg/l CaCO3,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,19980,19980,unknown
-"Alkalinity, Carbonate as CaCO3",mg/l,,APHA 2320,,,19980,19980,"Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
-"Alkalinity, Carbonate as CaCO3",mg/l,,NA NA,,,19980,19980,unknown
-"Alkalinity, total",mg/l,mg/l,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,19980,19980,"Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
-"Alkalinity, total",mg/l,mg/l,USEPA 310.1,Alkalinity by Titration,,19980,19980,Reported as alkalinity
-"Alkalinity, total",mg/l,,21NC01WQ ACALK_LAB,,,19980,19980,unknown
-"Alkalinity, total",mg/l,,21VASWCB USER DEFINED,CONTACT VADEQ FOR DETAILS,,19980,19980,unknown
-"Alkalinity, total",mg/l,,APHA 2320,Alkalinity in Water by Titration,,19980,19980,"Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
-"Alkalinity, total",mg/l,,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,19980,19980,"Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
-"Alkalinity, total",mg/l,,APHA 2340B,2340 B ~ Hardness by Calculation,,19980,19980,"Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
-"Alkalinity, total",mg/l,,NA NA,,,19980,19980,unknown
-"Alkalinity, total",mg/l,,USEPA 310.1,Alkalinity by Titration,,19980,19980,Reported as alkalinity
+"Alkalinity, Carbonate as CaCO3",mg/l,,APHA 2320,,,1,1,"Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
+"Alkalinity, Carbonate as CaCO3",mg/l,,NA NA,,,1,1,unknown
+"Alkalinity, Carbonate as CaCO3",mg/l,,USEPA 310.1,,,1,1,
+"Alkalinity, total",mg/l,mg/l,21ARIZ SM 2320B,,,1,1,
+"Alkalinity, total",mg/l,mg/l,21ARIZ UNKNOWN,,,1,1,
+"Alkalinity, total",mg/l,mg/l,APHA 2320,Alkalinity in Water by Titration,,1,1,
+"Alkalinity, total",mg/l,mg/l,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,1,1,"Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
+"Alkalinity, total",mg/l,mg/l,AZDEQ_SW EPA 200.7,EPA 200.7,,1,1,
+"Alkalinity, total",mg/l,mg/l,AZDEQ_SW EPA 310.2,EPA 310.2,,1,1,
+"Alkalinity, total",mg/l,mg/l,AZDEQ_SW SM 2320B,SM 2320B,,1,1,
+"Alkalinity, total",mg/l,mg/l,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,
+"Alkalinity, total",mg/l,mg/l,USEPA 310.1,Alkalinity by Titration,,1,1,Reported as alkalinity
+"Alkalinity, total",mg/l,mg/l,USEPA 310.1,,,1,1,
+"Alkalinity, total",mg/l,mg/l,USEPA 310.2,,,1,1,
+"Alkalinity, total",mg/l,,11NPSWRD_WQX BLCA_TT061,"Alkalinity, inflection-point titration method (incremental titration method), Hach digital titrator",,1,1,
+"Alkalinity, total",mg/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,
+"Alkalinity, total",mg/l,,21ARIZ SM 2320B,,,1,1,
+"Alkalinity, total",mg/l,,21ARIZ UNKNOWN,,,1,1,
+"Alkalinity, total",mg/l,,21ARIZ_WQX SM 2320B,STANDARD METHOD 2320B,,1,1,
+"Alkalinity, total",mg/l,,21AWIC ADEM_HISTORICAL,Unkn Lab Proc,,1,1,
+"Alkalinity, total",mg/l,,21COL001 HISTORIC,,,1,1,
+"Alkalinity, total",mg/l,,21NC01WQ ACALK_LAB,,,1,1,unknown
+"Alkalinity, total",mg/l,,21VASWCB USER DEFINED,CONTACT VADEQ FOR DETAILS,,1,1,unknown
+"Alkalinity, total",mg/l,,APHA 2320,Alkalinity in Water by Titration,,1,1,"Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
+"Alkalinity, total",mg/l,,APHA 2320,,,1,1,
+"Alkalinity, total",mg/l,,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,1,1,"Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
+"Alkalinity, total",mg/l,,APHA 2340B,2340 B ~ Hardness by Calculation,,1,1,"Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
+"Alkalinity, total",mg/l,,APHA_SM20ED SM2310B4a,SM2310 B4a ~ Hot Peroxide Acidity,,1,1,
+"Alkalinity, total",mg/l,,AZDEQ_SW SM 2320B,SM 2320B,,1,1,
+"Alkalinity, total",mg/l,,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,
+"Alkalinity, total",mg/l,,NA NA,,,1,1,unknown
+"Alkalinity, total",mg/l,,USEPA 310.1,Alkalinity by Titration,,1,1,Reported as alkalinity
+"Alkalinity, total",mg/l,,USEPA 310.2,Alkalinity by Colorimetric Analysis,,1,1,
 "Alkalinity, total",mg/l CaCO3,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,19980,19980,unknown
+"Alkalinity, total",mg/l CaCO3,,USEPA 310.2,Alkalinity by Colorimetric Analysis,,19980,19980,
+"Alkalinity, total",ueq/L,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,-1000000,-1000000,
+"Alkalinity, total",ug/l,ug/l,USEPA 310.1,Alkalinity by Titration,,19980,19980,
+"Alkalinity, total",ug/l,ug/l,USEPA 310.1_M,310.1 M ~ Alkalinity in Water by Titration,,19980,19980,

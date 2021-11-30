@@ -1,13 +1,30 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Sulfate,mg/l,mg/l,APHA 4500-SO4(D),4500 SO4 D  ~ Sulfate in Water by Gravimetric Analysis,,1,1,
+Sulfate,mg/l,mg/l,USDOI/USGS I2057,Anions in Water by Ion Chromatography,,1,1,
 Sulfate,mg/l,mg/l,USEPA 300,Inorganic Anions by Ion Chromatography,,1,1,
+Sulfate,mg/l,mg/l,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,1,1,
 Sulfate,mg/l,mg/l,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,,1,1,as so4
+Sulfate,mg/l,mg/l,USGS CL065,"Sulfate,wf,ASF methylthymol blue",945,1,1,
 Sulfate,mg/l,mg/l,USGS IC022,"Anions, wf, IC",945,1,1,
 Sulfate,mg/l,mg/l,USGS IC024,"Anions, LIS wf, IC",945,1,1,
+Sulfate,mg/l,mg/l,USGS IC032,"Ions, wf, auto IC  (NRP & CO)",945,1,1,
+Sulfate,mg/l,mg/l,USGS IC037,"Anions, wf,IC (EPA 300.1;CO WSC)",945,1,1,
 Sulfate,mg/l,,NA NA,,945,1,1,
 Sulfate,mg/l,,NA NA,,99113,1,1,
+Sulfate,mg/l,,NA NA,,,1,1,
 Sulfate,mg/l,,USDOI/USGS I2057,Anions in Water by Ion Chromatography,,1,1,
+Sulfate,mg/l,,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,1,1,
 Sulfate,mg/l,,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,,1,1,
 Sulfate,mg/l,,USEPA 375.2,Sulfate in Water by Colorimetry,,1,1,as so4
 Sulfate,mg/l,,USGS 00073,"Sulfate, wf, turbidimetry (NWQL)",945,1,1,as so4
+Sulfate,mg/l,,USGS 00074,"Sulfate, wf,turb,bkg corr (NWQL)",945,1,1,
+Sulfate,mg/l,,USGS 73,"Sulfate, wf, turbidimetry (NWQL)",945,1,1,
+Sulfate,mg/l,,USGS 74,"Sulfate, wf,turb,bkg corr (NWQL)",945,1,1,
+Sulfate,mg/l,,USGS IC019,"Anions, wf, autom IC (NWQL)",945,1,1,
 Sulfate,mg/l,,USGS IC022,"Anions, wf, IC",945,1,1,as so4
+Sulfate,mg/l,,USGS IC024,"Anions, LIS wf, IC",945,1,1,
+Sulfate,mg/l,,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,1,1,
+Sulfate,ug/l,,NA NA,,91005,0.001,0.001,
 Sulfate as SO4,mg/l,,NA NA,,,1,1,
+Sulfur Sulfate,mg/l,mg/l,USDOI/USGS I2057,Anions in Water by Ion Chromatography,,1,1,
+Sulfur Sulfate,mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1,1,

@@ -1,7 +1,25 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Mercury,mg/l,mg/l,AZDEQ_SW EPA 245.1,EPA 245.1,,1000000,1000000,Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
+Mercury,mg/l,,USEPA 245.1,,,100000,1000000,Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
+Mercury,ng/l,ng/l,21ARIZ EPA 1631E,,,1,1,"Mercury in Water by Oxidation, Purge and Trap, and CVAFS"
+Mercury,ng/l,ng/l,AZDEQ_SW EPA 1631,EPA 1631,,1,1,"Mercury in Water by Oxidation, Purge and Trap, and CVAFS"
+Mercury,ng/l,ng/l,AZDEQ_SW EPA 1631E,EPA 1631E,,1,1,"Mercury in Water by Oxidation, Purge and Trap, and CVAFS"
 Mercury,ng/l,ng/l,NA NA,,50287,1,1,Reported as mercury
-Mercury,ng/l,NA,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,,1,1,Reported as mercury
+Mercury,ng/l,ug/l,AZDEQ_SW EPA 1631,EPA 1631,,1,1000,"Mercury in Water by Oxidation, Purge and Trap, and CVAFS"
+Mercury,ng/l,,21ARIZ_WQX EPA 1631,"MERCURY IN WATER BY OXIDATION, PURGE AND TRAP, AND CVAFS",,1,1,"Mercury in Water by Oxidation, Purge and Trap, and CVAFS"
+Mercury,ng/l,,21ARIZ_WQX EPA 1631E,MERCURY - TOTAL & DISSOLVED - CLEAN HANDS,,1,1,"Mercury in Water by Oxidation, Purge and Trap, and CVAFS"
+Mercury,ng/l,,AZDEQ_SW EPA 1631,EPA 1631,,1,1,"Mercury in Water by Oxidation, Purge and Trap, and CVAFS"
+Mercury,ng/l,,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,,1,1,Reported as mercury
+Mercury,ug/l,ug/l,APHA 3112-B,,,1000,1000,unknown
+Mercury,ug/l,ug/l,AZDEQ_SW EPA 245.7,EPA 245.7,,1000,1000,Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
+Mercury,ug/l,ug/l,AZDEQ_SW SM 3112 B,SM 3112 B,,1000,1000,unknown
 Mercury,ug/l,ug/l,USEPA 245.1,Mercury in Water by CVAA,,1000,1000,Reported as mercury
-Mercury,ug/l,NA,NA NA,,71890,1000,1,Reported as mercury
-Mercury,NA,ug/l,NA NA,,71890,1,1000,Reported as mercury
-Mercury,NA,NA,USEPA 245.1,,,1,1,Reported as mercury
+Mercury,ug/l,ug/l,USEPA 245.2,,,1000,1000,Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
+Mercury,ug/l,ug/l,USGS CV014,"Mercury, wf, CV-AFS",71890,1000,1000,Mercury in filtered water by CVAAS
+Mercury,ug/l,,21COL001 HISTORIC,,,1000,1000,unknown
+Mercury,ug/l,,NA NA,,71890,1000,1000,Mercury in filtered water by CVAAS
+Mercury,ug/l,,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,,1000,1000,Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
+Mercury,ug/l,,USGS CV013,"Mercury, wf, auto CVAAS",71890,1000,1000,Mercury in filtered water by CVAAS
+Mercury,ug/l,,USGS CV014,"Mercury, wf, CV-AFS",71890,1000,1000,Mercury in filtered water by CVAAS
+Mercury,,ug/l,NA NA,,71890,1000,1000,Reported as mercury
+Mercury,,,USEPA 245.1,,,-1.00E+06,-1.00E+06,unknown

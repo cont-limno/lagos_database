@@ -1,14 +1,31 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Chloride,mg/l,mg/l,APHA 4110-C,4110 C ~ Single Column Ion Chromatography,,1,1,uknown
+Chloride,mg/l,mg/l,APHA 4500-CL-(E),4500 CL- E  ~ Chloride in Water by Colorimetry- Automated Ferricyanide Method,,1,1,uknown
 Chloride,mg/l,mg/l,USDOI/USGS I2057,Anions in Water by Ion Chromatography,,1,1,Reported as chloride
 Chloride,mg/l,mg/l,USEPA 300,Inorganic Anions by Ion Chromatography,,1,1,Reported as chloride
+Chloride,mg/l,mg/l,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,1,1,Inorganic Anions by Ion Chromatography
 Chloride,mg/l,mg/l,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,,1,1,Reported as chloride
-Chloride,mg/l,mg/l,USGS IC022,"Anions, wf, IC",940,1,1,Reported as chloride
-Chloride,mg/l,mg/l,USGS IC024,"Anions, LIS wf, IC",940,1,1,"Anions, filtered water, ion chromatography"
-Chloride,mg/l,NA,APHA 4500-CL-(E),4500 CL- E  ~ Chloride in Water by Colorimetry- Automated Ferricyanide Method,,1,1,Reported as chloride
-Chloride,mg/l,NA,NA NA,,940,1,1,Reported as chloride
-Chloride,mg/l,NA,USDOI/USGS I2057,Anions in Water by Ion Chromatography,,1,1,Reported as chloride
-Chloride,mg/l,NA,USEPA 325.3,Chloride by Mercuric Nitrate Titration,,1,1,Reported as chloride
-Chloride,mg/l,NA,USGS ADF02,"Chloride, wf, AD thiocyanate",940,1,1,Chloride in filtered water by automated discrete formation of ferric thiocyanate and colorimetry
-Chloride,mg/l,NA,USGS CL031,"Chloride, wf, ASF thiocyanate",940,1,1,Reported as chloride
-Chloride,mg/l,NA,USGS IC022,"Anions, wf, IC",940,1,1,Reported as chloride
-Chloride,,mg/l,USGS IC022,"Anions, wf, IC",940,1,1,Reported as chloride
+Chloride,mg/l,mg/l,USGS CL028,"Chloride, wf, ferric thiocyanate",940,1,1,"CHLORIDE, FIL LOWLVL"
+Chloride,mg/l,mg/l,USGS IC022,"Anions, wf, IC",940,1,1,"CHLORIDE, FIL LOWLVL"
+Chloride,mg/l,mg/l,USGS IC024,"Anions, LIS wf, IC",940,1,1,"CHLORIDE, FIL LOWLVL"
+Chloride,mg/l,mg/l,USGS IC032,"Ions, wf, auto IC  (NRP & CO)",940,1,1,"CHLORIDE, FIL LOWLVL"
+Chloride,mg/l,mg/l,USGS IC037,"Anions, wf,IC (EPA 300.1;CO WSC)",940,1,1,"CHLORIDE, FIL LOWLVL"
+Chloride,mg/l,mg/l,USGS IC065,"Chloride, LL, wf, IC (CO WSC)",940,1,1,"CHLORIDE, FIL LOWLVL"
+Chloride,mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1,1,uknown
+Chloride,mg/l,,APHA 4500-CL-(E),4500 CL- E  ~ Chloride in Water by Colorimetry- Automated Ferricyanide Method,,1,1,Reported as chloride
+Chloride,mg/l,,NA NA,,940,1,1,"CHLORIDE, FIL LOWLVL"
+Chloride,mg/l,,NA NA,,,1,1,uknown
+Chloride,mg/l,,USDOI/USGS I2057,Anions in Water by Ion Chromatography,,1,1,Reported as chloride
+Chloride,mg/l,,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,1,1,Inorganic Anions by Ion Chromatography
+Chloride,mg/l,,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,,1,1,Inorganic Anions by Ion Chromatography
+Chloride,mg/l,,USEPA 325.3,Chloride by Mercuric Nitrate Titration,,1,1,Reported as chloride
+Chloride,mg/l,,USGS ADF02,"Chloride, wf, AD thiocyanate",940,1,1,"CHLORIDE, FIL LOWLVL"
+Chloride,mg/l,,USGS CL031,"Chloride, wf, ASF thiocyanate",940,1,1,"CHLORIDE, FIL LOWLVL"
+Chloride,mg/l,,USGS IC010,"Anions, LL, wf, IC, EPA 300.0",940,1,1,"CHLORIDE, FIL LOWLVL"
+Chloride,mg/l,,USGS IC019,"Anions, wf, autom IC (NWQL)",940,1,1,"CHLORIDE, FIL LOWLVL"
+Chloride,mg/l,,USGS IC022,"Anions, wf, IC",940,1,1,"CHLORIDE, FIL LOWLVL"
+Chloride,mg/l,,USGS IC024,"Anions, LIS wf, IC",940,1,1,"CHLORIDE, FIL LOWLVL"
+Chloride,mg/l,,USGS TT036,"Chloride, wf,silver nitrate titr",940,1,1,"CHLORIDE, FIL LOWLVL"
+Chloride,mg/l,,UTAHDWQ_WQX GENERIC METHOD,Used for all methods where historical methodology may not be available.,,1,1,uknown
+Chloride,ug/l,,NA NA,,91001,1,1,uknown
+Chloride,,mg/l,USGS IC022,"Anions, wf, IC",940,1,1,"CHLORIDE, FIL LOWLVL"

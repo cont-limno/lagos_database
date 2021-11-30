@@ -1,19 +1,50 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-"Depth, Secchi disk depth",ft,,NA NA,,49701,0.3048,0.3048,
+"Depth, Secchi disk depth",cm,,NA NA,,,0.01,0.01,
+"Depth, Secchi disk depth",ft,,NA NA,,49701,0.3048,0.3048,"Transparency, water, in situ, Secchi disc, feet"
+"Depth, Secchi disk depth",ft,,NA NA,,,0.3048,0.3048,
+"Depth, Secchi disk depth",ft,,USGS SECCH,Secchi disk method,49701,0.3048,0.3048,"Transparency, water, in situ, Secchi disc, feet"
+"Depth, Secchi disk depth",in,,21COL001 HISTORIC,,,-1.00E+06,-1.00E+06,
 "Depth, Secchi disk depth",in,,21DELAWQ_WQX EPA/620/R-01/003-SD,EPA/620/R-01/003 Secchi Depth,,0.0254,0.0254,
 "Depth, Secchi disk depth",in,,21NC01WQ UNKNOWN,,,0.0254,0.0254,
-"Depth, Secchi disk depth",in,,NA NA,,77,0.0254,0.0254,
+"Depth, Secchi disk depth",in,,NA NA,,77,0.0254,0.0254,"Transparency, water, in situ, Secchi disc, inches"
 "Depth, Secchi disk depth",in,,NA NA,,,0.0254,0.0254,
+"Depth, Secchi disk depth",in,,USGS 1,,77,0.0254,0.0254,"Transparency, water, in situ, Secchi disc, inches"
+"Depth, Secchi disk depth",in,,USGS G0013,No information exists for method,77,0.0254,0.0254,"Transparency, water, in situ, Secchi disc, inches"
+"Depth, Secchi disk depth",in,,USGS SECCH,Secchi disk method,77,0.0254,0.0254,"Transparency, water, in situ, Secchi disc, inches"
 "Depth, Secchi disk depth",m,m,1119USBR_WQX 10,"Depth, Secchi disk depth",,1,1,
 "Depth, Secchi disk depth",m,m,1119USBR_WQX 20,Zebra/Quagga Mussel APHA 10200G Modified,,1,1,
+"Depth, Secchi disk depth",m,m,AZDEQ_SW FIELD,FIELD,,1,1,
+"Depth, Secchi disk depth",m,m,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,
+"Depth, Secchi disk depth",m,m,NA NA,,,1,1,
 "Depth, Secchi disk depth",m,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1,1,
+"Depth, Secchi disk depth",m,,11NPSWRD_WQX USGS_NFM_7.4.1B,U.S. Geological Survey National Field Manual 7.4.1B Collecting Ancillary Data,,1,1,
+"Depth, Secchi disk depth",m,,21ARIZ FIELD,,,1,1,
+"Depth, Secchi disk depth",m,,21ARIZ UNKNOWN,,,1,1,
+"Depth, Secchi disk depth",m,,21ARIZ_WQX CALCULATION,LABORATORY CALCULATION,,1,1,
+"Depth, Secchi disk depth",m,,21ARIZ_WQX FIELD,FIELD PARAMETERS,,1,1,
+"Depth, Secchi disk depth",m,,21COL001 HISTORIC,,,1,1,
+"Depth, Secchi disk depth",m,,21COL001 SECCHI_DEPTH,,,1,1,
+"Depth, Secchi disk depth",m,,21COL001_WQX SECCHI_DEPTH_WQX,Secchi disk depth measurement,,1,1,
 "Depth, Secchi disk depth",m,,21DELAWQ_WQX EPA/620/R-01/003-SD,EPA/620/R-01/003 Secchi Depth,,1,1,
+"Depth, Secchi disk depth",m,,21KY SECCHI DISK,,,1,1,
 "Depth, Secchi disk depth",m,,21NC01WQ UNKNOWN,,,1,1,
 "Depth, Secchi disk depth",m,,21VASWCB SECCHI,"Tyler, John. 1968. The secchi disk, Limnology and Oceanograpy, 13(1):1-6.",,1,1,
+"Depth, Secchi disk depth",m,,AZDEQ_SW CALCULATION,CALCULATION,,1,1,
+"Depth, Secchi disk depth",m,,AZDEQ_SW FIELD,FIELD,,1,1,
+"Depth, Secchi disk depth",m,,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,
+"Depth, Secchi disk depth",m,,CSU_FISHERIESECOLOGYLAB FISH,CSU,,1,1,
 "Depth, Secchi disk depth",m,,MDDNR obs24,eventSecchi,,1,1,
-"Depth, Secchi disk depth",m,,NA NA,,78,1,1,
+"Depth, Secchi disk depth",m,,NA NA,,78,1,1,"Transparency, water, in situ, Secchi disc, meters"
 "Depth, Secchi disk depth",m,,NA NA,,,1,1,
 "Depth, Secchi disk depth",m,,R10BUNKER LIM-USGS,LIM-USGS,,1,1,
+"Depth, Secchi disk depth",m,,STANDLEY Secchi Disk,Secchi Depth,,1,1,
+"Depth, Secchi disk depth",m,,USEPA 180.1,Turbidity by Nephelometry,,1,1,
+"Depth, Secchi disk depth",m,,USGS 0,,78,1,1,"Transparency, water, in situ, Secchi disc, meters"
+"Depth, Secchi disk depth",m,,USGS 1,,78,1,1,"Transparency, water, in situ, Secchi disc, meters"
+"Depth, Secchi disk depth",m,,USGS D,,78,1,1,"Transparency, water, in situ, Secchi disc, meters"
+"Depth, Secchi disk depth",m,,USGS E,,78,1,1,"Transparency, water, in situ, Secchi disc, meters"
+"Depth, Secchi disk depth",m,,USGS G0014,No information exists for method,78,1,1,"Transparency, water, in situ, Secchi disc, meters"
+"Depth, Secchi disk depth",m,,USGS SECCH,Secchi disk method,78,1,1,"Transparency, water, in situ, Secchi disc, meters"
 "Depth, Secchi disk depth",m,,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,
-"Depth, Secchi disk depth",,m,NA NA,,78,1,1,
+"Depth, Secchi disk depth",,m,NA NA,,78,1,1,"Transparency, water, in situ, Secchi disc, meters"
 "Depth, Secchi disk depth (choice list)",,m,NA NA,,,1,1,

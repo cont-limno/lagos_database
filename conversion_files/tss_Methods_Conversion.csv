@@ -1,10 +1,69 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Total dissolved solids,mg/l,mg/l,APHA 2540-C,2540 C ~ Total Dissolved Solids in Water,,1,1,
+Total dissolved solids,mg/l,mg/l,AZDEQ_SW SM 2540C,SM 2540C,,1,1,
 Total dissolved solids,mg/l,mg/l,USEPA 160.1,Filterable Residue - TDS,,1,1,"Residue, Filterable, 180 deg. C"
+Total dissolved solids,mg/l,mg/l,USEPA 160.1_M,160.1 M ~ Total Dissolved Solids,,1,1,
 Total dissolved solids,mg/l,,APHA 2540-C,2540 C ~ Total Dissolved Solids in Water,,1,1,Total Dissolved Solids in Water
+Total dissolved solids,mg/l,,APHA 2540-C,,,1,1,
 Total dissolved solids,mg/l,,APHA 2540-D,,,1,1,Solids in Water
+Total dissolved solids,mg/l,,APHA_SM22ED 2540C,2540C ~ Solids in Water (Total Dissolved Solids Dried at 180oC),,1,1,
+Total dissolved solids,mg/l,,USEPA 160.1,Filterable Residue - TDS,,1,1,
+Total dissolved solids,ug/l,ug/l,USEPA 160.1,Filterable Residue - TDS,,0.001,0.001,
+Total solids,%,%,AZDEQ_SW EPA 160.3,EPA 160.3,,-1000000,-1000000,
+Total solids,%,%,AZDEQ_SW SM 2320B,SM 2320B,,-1000000,-1000000,
+Total solids,%,%,AZDEQ_SW SM 2540G,SM 2540G,,-1000000,-1000000,
+Total solids,%,,AZDEQ_SW SM 2540C,SM 2540C,,-1000000,-1000000,
+Total solids,%,,AZDEQ_SW SM 2540D,SM 2540D,,-1000000,-1000000,
+Total solids,%,,AZDEQ_SW SM 2540G,SM 2540G,,-1000000,-1000000,
+Total solids,%,,AZDEQ_SW UNKNOWN,UNKNOWN,,-1000000,-1000000,
+Total solids,mg/l,mg/l,21NC01WQ UNKNOWN,,,1,1,
+Total solids,mg/l,mg/l,APHA 2540-B,2540 B ~ Total Solids Dried 103-105C in Water,,1,1,
+Total solids,mg/l,mg/l,APHA 2540-G,"2540 G ~ Total, Fixed and Volatile Solids",,1,1,
+Total solids,mg/l,mg/l,USEPA 160.2,,,1,1,"Residue, Non-Filterable (Gravimetric, Dried at 103-105 oC)"
+Total solids,mg/l,mg/l,USEPA 160.3,,,1,1,
+Total solids,mg/l,mg/l,USGS ROE12,"ROE, wu, 105C, by weight (NWQL)",500,1,1,"Total solids, water, unfiltered, dried at 103-105 degrees Celsius, gravimetric (Standard Methods 2450 B; USGS-NYL)"
+Total solids,mg/l,,21NC01WQ UNKNOWN,,,-1000000,-1000000,
+Total solids,mg/l,,APHA 2540-B,2540 B ~ Total Solids Dried 103-105C in Water,,1,1,
+Total solids,mg/l,,APHA 2540-B,,,1,1,
+Total solids,mg/l,,NA NA,,500,1,1,"Total solids, water, unfiltered, dried at 103-105 degrees Celsius, gravimetric (Standard Methods 2450 B; USGS-NYL)"
+Total solids,mg/l,,USACOEND I-3750-85,"Solids, Total",,1,1,
+Total solids,mg/l,,USDOI/USGS I3750,Residue by Evaporation and Gravimetric,,1,1,
+Total solids,mg/l,,USEPA 160.2,Non-Filterable Residue - TSS,,1,1,
+Total solids,mg/l,,USEPA 160.3,Total Residue,,1,1,
+Total solids,mg/l,,USGS ROE12,"ROE, wu, 105C, by weight (NWQL)",500,1,1,"Total solids, water, unfiltered, dried at 103-105 degrees Celsius, gravimetric (Standard Methods 2450 B; USGS-NYL)"
+Total suspended solids,mg/l,mg/l,21ARIZ UNKNOWN,,,1,1,
 Total suspended solids,mg/l,mg/l,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,,1,1,Solids in Water
+Total suspended solids,mg/l,mg/l,APHA 2540-D,,,1,1,
+Total suspended solids,mg/l,mg/l,AZDEQ_SW ASTM D3977C,ASTM D3977C,,1,1,
+Total suspended solids,mg/l,mg/l,AZDEQ_SW EPA 160.1,EPA 160.1,,1,1,
+Total suspended solids,mg/l,mg/l,AZDEQ_SW EPA 160.2,EPA 160.2,,1,1,
+Total suspended solids,mg/l,mg/l,AZDEQ_SW EPA 160.4,EPA 160.4,,1,1,
+Total suspended solids,mg/l,mg/l,AZDEQ_SW EPA 180.1,EPA 180.1,,1,1,
+Total suspended solids,mg/l,mg/l,AZDEQ_SW SM 2340B,SM 2340B,,1,1,
+Total suspended solids,mg/l,mg/l,AZDEQ_SW SM 2540D,SM 2540D,,1,1,
+Total suspended solids,mg/l,mg/l,AZDEQ_SW SM 2550B-00,SM 2550B-00,,1,1,
+Total suspended solids,mg/l,mg/l,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,
 Total suspended solids,mg/l,mg/l,USDOI/USGS I-3765-85,"Solids, residue at 105°C",,1,1,"Solids, residue at 105 degrees Celsius, suspended, gravimetric (USGS I-3765-85; PA WSC; PA-DEP)"
 Total suspended solids,mg/l,mg/l,USDOI/USGS I-3765-85,"Solids, residue at 105Â°C",,1,1,"Solids, residue at 105 degrees Celsius, suspended, gravimetric (USGS I-3765-85; PA WSC; PA-DEP)"
+Total suspended solids,mg/l,mg/l,USEPA 160.1,,,1,1,
+Total suspended solids,mg/l,mg/l,USEPA 160.2,Non-Filterable Residue - TSS,,1,1,
+Total suspended solids,mg/l,mg/l,USEPA 160.2,,,1,1,
+Total suspended solids,mg/l,mg/l,USEPA 160.4,,,1,1,
+Total suspended solids,mg/l,mg/l,USEPA C-008-1,Total Suspended Solids in Water,,1,1,
+Total suspended solids,mg/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,
+Total suspended solids,mg/l,,21ARIZ UNKNOWN,,,1,1,
+Total suspended solids,mg/l,,21ARIZ_WQX ASTM D3977C,"ASTM 3977C, SEDIMENT CONCENTRATION",,1,1,
+Total suspended solids,mg/l,,21ARIZ_WQX EPA 160.1,TOTAL FILTRATABLE RESIDUE,,1,1,
+Total suspended solids,mg/l,,21ARIZ_WQX EPA 160.2,TOTAL NONFILTRATABLE RESIDUE,,1,1,
+Total suspended solids,mg/l,,21ARIZ_WQX SM 2340B,HARDNESS IN WATER BY EDTA TITRATION,,1,1,
+Total suspended solids,mg/l,,21ARIZ_WQX SM 2540D,"TOTAL SUSPENDED SOLIDS, DRIED AT 103-105C",,1,1,
+Total suspended solids,mg/l,,21ARIZ_WQX SM 2550B-00,PH TEMPERATURE BY SM 2550B-00,,1,1,
 Total suspended solids,mg/l,,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,,1,1,Solids in Water
+Total suspended solids,mg/l,,APHA 2540-D,,,1,1,
+Total suspended solids,mg/l,,AZDEQ_SW EPA 160.2,EPA 160.2,,1,1,
+Total suspended solids,mg/l,,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,
 Total suspended solids,mg/l,,NA NA,,70299,1,1,Residue SUS 110 deg. C
+Total suspended solids,mg/l,,USACOEND I-3765-85,"Solids, Suspended and Volatile Suspended",,1,1,
 Total suspended solids,mg/l,,USEPA 160.2,Non-Filterable Residue - TSS,,1,1,RESIDUE TOT NON-FILT AT 105C
+Total suspended solids,mg/l,,USEPA 160.2,,,1,1,
+Total suspended solids,mg/l,,USEPA C-008-1,Total Suspended Solids in Water,,1,1,

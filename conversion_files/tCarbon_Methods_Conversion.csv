@@ -1,21 +1,63 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Carbon,%,%,AZDEQ_SW WALKLEY BLACK,WALKLEY BLACK,,-1.00E+06,-1.00E+06,discard
+Carbon,%,,AZDEQ_SW WALKLEY BLACK,WALKLEY BLACK,,-1.00E+06,-1.00E+06,discard
 Carbon,mg/l,,USEPA 440(S),440 S  ~ Determination of Carbon and Nitrogen,,1,1,Reported as carbon
 Carbon,ug,,USEPA 440(S),440 S  ~ Determination of Carbon and Nitrogen,,-1.00E+06,-1.00E+06,discard
+Organic carbon,mg/l,mg/l,21ARIZ SW846,,,1,1,
 Organic carbon,mg/l,mg/l,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,1,1,Organic carbon in unfiltered water by combustion (DODEC program) 
 Organic carbon,mg/l,mg/l,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,1,1,Organic carbon in unfiltered water by combustion (DODEC program) 
 Organic carbon,mg/l,mg/l,APHA 5310-D,5310 D ~ Total Organic Carbon in Water- Wet-Oxidation Method,,1,1,Organic carbon in unfiltered water by combustion (DODEC program) 
 Organic carbon,mg/l,mg/l,APHA_SM20ED 5310-B,5310 B ~ Total Organic Carbon by High-Temperature Combustion Method,,1,1,Organic carbon in unfiltered water (TOC) by high-temperature combustion (SM5310B; DODESP) 
+Organic carbon,mg/l,mg/l,AZDEQ_SW EPA 3510C/8081A,EPA 3510C/8081A,,1,1,
+Organic carbon,mg/l,mg/l,AZDEQ_SW EPA 415.1,EPA 415.1,,1,1,
+Organic carbon,mg/l,mg/l,AZDEQ_SW EPA 415.2,EPA 415.2,,1,1,
+Organic carbon,mg/l,mg/l,AZDEQ_SW SM 5210B,SM 5210B,,1,1,
+Organic carbon,mg/l,mg/l,AZDEQ_SW SM 5220 C,SM 5220 C,,1,1,
+Organic carbon,mg/l,mg/l,AZDEQ_SW SM 5310 B,SM 5310 B,,1,1,
+Organic carbon,mg/l,mg/l,AZDEQ_SW SM 5310 C,SM 5310 C,,1,1,
+Organic carbon,mg/l,mg/l,AZDEQ_SW SW846,SW846,,1,1,
 Organic carbon,mg/l,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,,1,1,unknown
 Organic carbon,mg/l,mg/l,USEPA 415.1,Total Organic Carbon by Combustion,,1,1,Total Organic Carbon by Combustion
+Organic carbon,mg/l,mg/l,USEPA 415.1,,,1,1,
 Organic carbon,mg/l,mg/l,USGS COMB9,"TOC, high-temp combustion (NWQL)",680,1,1,Organic carbon in unfiltered water by combustion or oxidation to CO2 and detection by IR spectrometry or reduction to CH4 and GC-FID 
 Organic carbon,mg/l,mg/l,USGS OX009,"TOC, wet oxidation",680,1,1,Organic carbon in unfiltered water by combustion or oxidation to CO2 and detection by IR spectrometry or reduction to CH4 and GC-FID 
+Organic carbon,mg/l,mg/l,USGS OX025,"TOC, wu, persulfate (SM5310C;CO)",680,1,1,
+Organic carbon,mg/l,ug/l,AZDEQ_SW SM 5310 C,SM 5310 C,,1,1,
 Organic carbon,mg/l,,1119USBR P680,,,1,1,Organic carbon in unfiltered water by combustion or oxidation to CO2 and detection by IR spectrometry or reduction to CH4 and GC-FID 
 Organic carbon,mg/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,unknown
+Organic carbon,mg/l,,21ARIZ_WQX EPA 3510C/8081A,ORGANOCHLORINE PESTICIDES,,1,1,
+Organic carbon,mg/l,,21ARIZ_WQX EPA 415.1,TOTAL ORGANIC CARBON,,1,1,
+Organic carbon,mg/l,,21ARIZ_WQX EPA 415.2,TOTAL ORGANIC CARBON,,1,1,
+Organic carbon,mg/l,,21ARIZ_WQX SM 5210B,"BIOCHEMICAL OXYGEN DEMAND, 5-DAY",,1,1,
+Organic carbon,mg/l,,21ARIZ_WQX SM 5220 C,STANDARD METHOD 5220 C,,1,1,
+Organic carbon,mg/l,,21ARIZ_WQX SM 5310 B,DISSOLVED CARBON ANALYSIS,,1,1,
+Organic carbon,mg/l,,21ARIZ_WQX SM 5310 C,TOTAL CARBON ANALYSIS,,1,1,
+Organic carbon,mg/l,,21ARIZ_WQX SM 5310 D,WET OXIDATION METHOD,,1,1,
+Organic carbon,mg/l,,21AWIC ADEM_HISTORICAL,Unkn Lab Proc,,1,1,
+Organic carbon,mg/l,,21KY SM5310C,,,1,1,
 Organic carbon,mg/l,,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,1,1,Organic carbon in unfiltered water (TOC) by high-temperature combustion (SM5310B; DODESP) 
+Organic carbon,mg/l,,APHA 5310-B,,,1,1,
 Organic carbon,mg/l,,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,1,1,Organic carbon in unfiltered water (TOC) by high-temperature combustion (SM5310B; DODESP) 
 Organic carbon,mg/l,,APHA_SM20ED 5310-B,5310 B ~ Total Organic Carbon by High-Temperature Combustion Method,,1,1,Organic carbon in unfiltered water (TOC) by high-temperature combustion (SM5310B; DODESP) 
+Organic carbon,mg/l,,AZDEQ_SW EPA 415.1,EPA 415.1,,1,1,
+Organic carbon,mg/l,,AZDEQ_SW SM 5310 C,SM 5310 C,,1,1,
 Organic carbon,mg/l,,NA NA,,680,1,1,Organic carbon in unfiltered water by combustion or oxidation to CO2 and detection by IR spectrometry or reduction to CH4 and GC-FID 
+Organic carbon,mg/l,,NA NA,,,1,1,
 Organic carbon,mg/l,,R10BUNKER USGS_UNKN,USGS_UNKN,,1,1,unknown
 Organic carbon,mg/l,,USEPA 415.1,Total Organic Carbon by Combustion,,1,1,Total Organic Carbon by Combustion
+Organic carbon,mg/l,,USEPA 415.1,,,1,1,
 Organic carbon,mg/l,,USEPA 415.2,Low Level Total Organic Carbon in Water,,1,1,Total Organic Carbon by Combustion
+Organic carbon,mg/l,,USEPA 507,Nitrogen and Phosphorus Pesticides,,1,1,
+Organic carbon,mg/l,,USEPA 9060,Total Organic Carbon in Water and Waste,,1,1,
+Organic carbon,mg/l,,USGS COMB4,"Organic-C, combustion-IR method",680,1,1,
+Organic carbon,mg/l,,USGS COMB9,"TOC, high-temp combustion (NWQL)",680,1,1,
 Organic carbon,mg/l,,USGS OX009,"TOC, wet oxidation",680,1,1,Organic carbon in unfiltered water by combustion or oxidation to CO2 and detection by IR spectrometry or reduction to CH4 and GC-FID 
+Organic carbon,mg/l,,USGS OX025,"TOC, wu, persulfate (SM5310C;CO)",680,1,1,
+Organic carbon,mg/l,,UTAHDWQ_WQX GENERIC METHOD,Used for all methods where historical methodology may not be available.,,1,1,
+Total carbon,mg/l,mg/l,AZDEQ_SW EPA 415.1,EPA 415.1,,1,1,
+Total carbon,mg/l,mg/l,AZDEQ_SW SM 5310 B,SM 5310 B,,1,1,
+Total carbon,mg/l,mg/l,AZDEQ_SW SM 5310 C,SM 5310 C,,1,1,
+Total carbon,mg/l,mg/l,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,
+Total carbon,mg/l,mg/l,AZDEQ_SW WALKLEY BLACK,WALKLEY BLACK,,1,1,
+Total carbon,mg/l,,21ARIZ_WQX SM 5310 B,DISSOLVED CARBON ANALYSIS,,1,1,
+Total carbon,mg/l,,21ARIZ_WQX SM 5310 C,TOTAL CARBON ANALYSIS,,1,1,

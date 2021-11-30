@@ -1,39 +1,102 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Phosphate-phosphorus,mg/l,mg/l,APHA 4500-P-F,4500 P F ~ Phosphorus in Water by Colorimetry Automated Ascorbic Acid Method,,-1.00E+06,-1.00E+06,
-Phosphate-phosphorus,mg/l,mg/l,USEPA 365.1,Phosphorus by Colorimetry,,-1.00E+06,-1.00E+06,
+Phosphate-phosphorus,mg/l,mg/l,APHA 4500-P-F,4500 P F ~ Phosphorus in Water by Colorimetry Automated Ascorbic Acid Method,,-1.00E+06,-1.00E+06,discard
+Phosphate-phosphorus,mg/l,mg/l,USEPA 365.1,Phosphorus by Colorimetry,,-1.00E+06,-1.00E+06,discard
+Phosphate-phosphorus,mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,-1.00E+06,-1.00E+06,discard
 Phosphate-phosphorus,mg/l,,21DELAWQ_WQX 365.1_ELS,Persulfate Method for Total Phosphorus,,1000,1000,
-Phosphate-phosphorus,mg/l,,21DELAWQ_WQX 365.1_ELS_PP,Particulate Phosphorus by Colorimetry,,1.00E-06,1.00E-06,
-Phosphate-phosphorus,mg/l,,APHA 4500-P-F,4500 P F ~ Phosphorus in Water by Colorimetry Automated Ascorbic Acid Method,,-1.00E+06,-1.00E+06,
+Phosphate-phosphorus,mg/l,,21DELAWQ_WQX 365.1_ELS_PP,Particulate Phosphorus by Colorimetry,,1000,1000,
+Phosphate-phosphorus,mg/l,,APHA 4500-P-F,4500 P F ~ Phosphorus in Water by Colorimetry Automated Ascorbic Acid Method,,-1.00E+06,-1.00E+06,discard
 Phosphate-phosphorus,mg/l,,APHA 4500-P-J,4500 P J ~ Persulfate Method for Simultaneous Determination of Total Nitrogen and Total Phosphorus,,1000,1000,
+Phosphate-phosphorus,mg/l,,AZDEQ_SW UNKNOWN,UNKNOWN,,-1.00E+06,-1.00E+06,discard
 Phosphate-phosphorus,mg/l,,NA NA,,650,-1.00E+06,-1.00E+06,orthophosphate
+Phosphate-phosphorus,mg/l,,NA NA,,,-1.00E+06,-1.00E+06,unknown
 Phosphate-phosphorus,mg/l,,USEPA 365.1,Phosphorus by Colorimetry,,-1.00E+06,-1.00E+06,
 Phosphate-phosphorus,mg/l,,USEPA 365.4,Total Phosphorus After Block Digestion,,1000,1000,
 Phosphate-phosphorus,mg/l,,USEPA 365.5,Orthophosphate in Water by Colorimetry,,-1.00E+06,-1.00E+06,
 Phosphate-phosphorus,mg/l,,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/kg,mg/kg,AZDEQ_SW EPA 365.3,EPA 365.3,,1,1,phosphorus all forms 
+Phosphorus,mg/kg,mg/kg,AZDEQ_SW EPA 365.3 MOD,EPA 365.3 MOD,,1,1,
+Phosphorus,mg/kg,mg/kg,AZDEQ_SW EPA 365.4,EPA 365.4,,1,1,total phosphorus
+Phosphorus,mg/kg,mg/kg,AZDEQ_SW SM 4500-P BE,SM 4500-P BE,,-1.00E+06,-1.00E+06,discard
+Phosphorus,mg/kg,,AZDEQ_SW EPA 365.3,EPA 365.3,,1,1,
+Phosphorus,mg/kg,,AZDEQ_SW EPA 365.3 MOD,EPA 365.3 MOD,,1,1,
+Phosphorus,mg/l,mg/l,21ARIZ EPA 365.3 MOD,,,1000,1000,
+Phosphorus,mg/l,mg/l,APHA 4500-P-E,4500 P E ~ Phosphorus in Water by Colorimetry- Ascorbic Acid Method,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,mg/l,APHA 4500-P-H,4500 P H ~ Manual Digestion and Flow Injection Analysis for Total Phosphorus,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,mg/l,AZDEQ_SW EPA 200.7,EPA 200.7,,-1.00E+06,-1.00E+06,Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
+Phosphorus,mg/l,mg/l,AZDEQ_SW EPA 365.1,EPA 365.1,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,mg/l,AZDEQ_SW EPA 365.2,EPA 365.2,,1000,1000,"Phosphorus, All Forms (Colorimetric, Ascorbic Acid, Single Reagent)"
+Phosphorus,mg/l,mg/l,AZDEQ_SW EPA 365.3,EPA 365.3,,1000,1000,
+Phosphorus,mg/l,mg/l,AZDEQ_SW EPA 365.3 MOD,EPA 365.3 MOD,,1000,1000,
+Phosphorus,mg/l,mg/l,AZDEQ_SW EPA 365.4,EPA 365.4,,1000,1000,
+Phosphorus,mg/l,mg/l,AZDEQ_SW SM 4500-P BE,SM 4500-P BE,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,mg/l,AZDEQ_SW SM 4500 PE,SM 4500 PE,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,mg/l,AZDEQ_SW UNKNOWN,UNKNOWN,,-1.00E+06,-1.00E+06,
 Phosphorus,mg/l,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,,-1.00E+06,-1.00E+06,
 Phosphorus,mg/l,mg/l,USEPA 365.1,Phosphorus by Colorimetry,,1000,1000,365.1 reported as P is total
+Phosphorus,mg/l,mg/l,USEPA 365.1,,,-1.00E+06,-1.00E+06,
 Phosphorus,mg/l,mg/l,USEPA 365.2,Phosphorus by Single Reagent Colorimetry,,1000,1000,365.2 reported as P is total
+Phosphorus,mg/l,mg/l,USEPA 365.2,,,1000,1000,
+Phosphorus,mg/l,mg/l,USEPA 365.3,Phosphorus by Two Reagent Colorimetry,,1000,1000,
+Phosphorus,mg/l,mg/l,USEPA 365.3,,,1000,1000,
 Phosphorus,mg/l,mg/l,USEPA 365.4,Total Phosphorus After Block Digestion,,1000,1000,
 Phosphorus,mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,,11NPSWRD_WQX USGS_CL020,"Nutrients, wf, colorimetric",,1000,1000,"Phosphorus, filtered water, acid-persulfate digestion, continuous flow (CF) colorimetry"
+Phosphorus,mg/l,,11NPSWRD_WQX USGS_KJ009,"Phosphorus, wu, microKJ ASF, H+",,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,,21ARIZ EPA 351.3,,,-1.00E+06,-1.00E+06,"Nitrogen, Nitrate-Nitrite (Colorimetric, Automated Hydrazine Reduction)"
+Phosphorus,mg/l,,21ARIZ UNKNOWN,,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,,21ARIZ_WQX EPA 365.1,"ORTHOPHOSPHATE, AUTOMATED",,-1.00E+06,-1.00E+06,orthophosphate
+Phosphorus,mg/l,,21ARIZ_WQX EPA 365.3,TOTAL PHOSPHORUS,,1000,1000,
+Phosphorus,mg/l,,21ARIZ_WQX EPA 365.3 MOD,EPA 365.3 MOD,,1000,1000,
+Phosphorus,mg/l,,21ARIZ_WQX EPA 365.4,PHOSPHORUS BY AUTOMATED COLORIMETRY,,1000,1000,
+Phosphorus,mg/l,,21ARIZ_WQX FIELD,FIELD PARAMETERS,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,,21ARIZ_WQX SM 4500-P BE,STANDARD METHOD 4500-P BE,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,,21ARIZ_WQX SM 4500 PE,SM 4500 PE,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,,21AWIC ADEM_HISTORICAL,Unkn Lab Proc,,-1.00E+06,-1.00E+06,
 Phosphorus,mg/l,,21VASWCB USEPAPART.PHOS.,USEPA Chesapeake Bay Methods 1996 P IV - 30. Particulate Phosphorus,,-1.00E+06,-1.00E+06,
 Phosphorus,mg/l,,21VASWCB USER DEFINED,CONTACT VADEQ FOR DETAILS,,-1.00E+06,-1.00E+06,
-Phosphorus,mg/l,,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,1.00E+03,1.00E+03,
+Phosphorus,mg/l,,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,,APHA 4500-P-E,4500 P E ~ Phosphorus in Water by Colorimetry- Ascorbic Acid Method,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,,APHA 4500-P-F,,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,,APHA 4500-P-J,4500 P J ~ Persulfate Method for Simultaneous Determination of Total Nitrogen and Total Phosphorus,,1000,1000,
+Phosphorus,mg/l,,AZDEQ_SW EPA 351.3,EPA 351.3,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,,AZDEQ_SW EPA 365.3,EPA 365.3,,1000,1000,
+Phosphorus,mg/l,,AZDEQ_SW EPA 365.3 MOD,EPA 365.3 MOD,,1000,1000,
+Phosphorus,mg/l,,AZDEQ_SW SM 4500NO3,SM 4500NO3,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,,AZDEQ_SW UNKNOWN,UNKNOWN,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,,CHATFLD M365.1,,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,,NA NA,,,-1.00E+06,-1.00E+06,
 Phosphorus,mg/l,,R10BUNKER I4610,I4610,,1000,1000,
 Phosphorus,mg/l,,R10BUNKER USGS_UNKN,USGS_UNKN,,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l,,USACOEND 6010A,ICP Metals in Water,,-1.00E+06,-1.00E+06,
 Phosphorus,mg/l,,USEPA 365.1,Phosphorus by Colorimetry,,1000,1000,365.1 reported as P is total
+Phosphorus,mg/l,,USEPA 365.3,,,1000,1000,
 Phosphorus,mg/l,,USEPA 365.4,Total Phosphorus After Block Digestion,,1000,1000,365.2 reported as P is total
+Phosphorus,mg/l,,USEPA 365.4,,,1000,1000,
+Phosphorus,mg/l,,USEPA 365_M,365 M ~ Phosphorus in Water by Colorimetry,,1000,1000,
+Phosphorus,mg/l,,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1000,1000,Trace elements in unfiltered water by ICP-AES (EPA method 6010B; DODEC program)
+Phosphorus,mg/l,,USEPA 6020,Inductively Coupled Plasma - Mass Spec.,,1000,1000,
+Phosphorus,mg/l as P,mg/l as P,NA NA,,666,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l as P,mg/l as P,USGS 118,"Phosphorus, LL, wu, EPA method",665,1000,1000,
 Phosphorus,mg/l as P,mg/l as P,USGS AKP01,"Nutrients, wu, WCA,persulfate,CF",665,1000,1000,
 Phosphorus,mg/l as P,mg/l as P,USGS CL019,"P, wf, FCA, persulfate CF color",666,-1.00E+06,-1.00E+06,
 Phosphorus,mg/l as P,mg/l as P,USGS CL020,"P, wf, FCC, persulfate CF color",666,1000,1000,"Phosphorus, filtered water, acid-persulfate digestion, continuous flow (CF) colorimetry"
 Phosphorus,mg/l as P,mg/l as P,USGS CL021,"P, wu, WCA, persulfate CF color",665,1000,1000,
+Phosphorus,mg/l as P,mg/l as P,USGS CL024,"Phosphorus, total, colorimetric",665,1000,1000,
+Phosphorus,mg/l as P,mg/l as P,USGS CL060,"Phosphorus, LIS, ASF phosphomol",666,1000,1000,Phosphorus in low ionic-strength (LIS) water by automated segmented flow (ASF) phosphomolybdate colorimetry
+Phosphorus,mg/l as P,mg/l as P,USGS CL084,"Phosphorus, wu, ASF phosphomolyb",665,1000,1000,
+Phosphorus,mg/l as P,mg/l as P,USGS CL090,"Phosphorus, LIS wu, ASF molybate",665,1000,1000,
+Phosphorus,mg/l as P,mg/l as P,USGS CL146,"Phosphorus, LL,wu,persulfate(CO)",665,1000,1000,
+Phosphorus,mg/l as P,mg/l as P,USGS KJ005,"P, wf, FCC, Kjeldahl, CF",666,1000,1000,"Phosphorus, filtered water, Kjeldahl digestion, continuous flow (CF) colorimetry"
 Phosphorus,mg/l as P,mg/l as P,USGS KJ009,"Phosphorus, wu, microKJ ASF, H+",665,1000,1000,
 Phosphorus,mg/l as P,,NA NA,,665,-1.00E+06,-1.00E+06,unclear
 Phosphorus,mg/l as P,,NA NA,,666,-1.00E+06,-1.00E+06,
 Phosphorus,mg/l as P,,USGS CL001,"ASF, colorimetric",665,-1.00E+06,-1.00E+06,CLO1 uknown
 Phosphorus,mg/l as P,,USGS CL020,"P, wf, FCC, persulfate CF color",666,1000,1000,
 Phosphorus,mg/l as P,,USGS CL021,"P, wu, WCA, persulfate CF color",665,1000,1000,CL021 is total
-Phosphorus,mg/l as P,,USGS CL052,"Phosphorus, wf, auto phosphomoly",666,1.00E+03,1.00E+03,"Phosphorus, dissolved, colorimetric, phosphomolybdate, automated"
+Phosphorus,mg/l as P,,USGS CL052,"Phosphorus, wf, auto phosphomoly",666,1000,1000,"Phosphorus, dissolved, colorimetric, phosphomolybdate, automated"
 Phosphorus,mg/l as P,,USGS CL059,"Phosphorus, LIS, ASF phosphomol",666,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l as P,,USGS CL060,"Phosphorus, LIS, ASF phosphomol",666,1000,1000,
+Phosphorus,mg/l as P,,USGS CL061,"Phosphorus, wf,microkjeldahl ASF",666,1000,1000,"Total phosphorus in filtered water by microkjeldahl digestion, and automated segmented flow (ASF) dialysis and colorimetry"
 Phosphorus,mg/l as P,,USGS CL084,"Phosphorus, wu, ASF phosphomolyb",665,1,1,Phosphorus in unfiltered water by ASF phosphomolybdate formation and colorimetry
 Phosphorus,mg/l as P,,USGS CL090,"Phosphorus, LIS wu, ASF molybate",665,1000,1000,CL090 is total
 Phosphorus,mg/l as P,,USGS KJ005,"P, wf, FCC, Kjeldahl, CF",666,1000,1000,"Phosphorus, filtered water, Kjeldahl digestion, continuous flow (CF) colorimetry"
@@ -41,9 +104,14 @@ Phosphorus,mg/l as P,,USGS KJ009,"Phosphorus, wu, microKJ ASF, H+",665,1,1,"Tota
 Phosphorus,mg/l as P,,USGS KJ010,"Phosphorus, wu, microKJ ASF, Hg",665,1000,1000,total phosphorus
 Phosphorus,mg/l as P,,USGS KJ011,"Phosphorus, wu, microKJ ASF,disc",665,1,1,"Total Phosphorus in Unfiltered Water by Microkjeldahl Digestion, and ASF Dialysis and Colorimetry (unfiltered sample preserved with sulfuric acid; this method code was discontinued because it duplicated KJ009 with preservation change)"
 Phosphorus,mg/l PO4,,NA NA,,71886,-1.00E+06,-1.00E+06,
+Phosphorus,mg/l PO4,,USGS G0082,"Phosphorus, wu, calculated",71886,-1.00E+06,-1.00E+06,
 Phosphorus,ug,,21VASWCB USEPAPART.PHOS.,USEPA Chesapeake Bay Methods 1996 P IV - 30. Particulate Phosphorus,,-1.00E+06,-1.00E+06,
 Phosphorus,ug/l,ug/l,APHA 4500-P-E,4500 P E ~ Phosphorus in Water by Colorimetry- Ascorbic Acid Method,,-1.00E+06,-1.00E+06,
+Phosphorus,ug/l,ug/l,AZDEQ_SW EPA 365.1,EPA 365.1,,-1.00E+06,-1.00E+06,
+Phosphorus,ug/l,,21ARIZ_WQX EPA 365.1,"ORTHOPHOSPHATE, AUTOMATED",,-1.00E+06,-1.00E+06,
 Phosphorus,ug/l,,APHA 4500-P-E,4500 P E ~ Phosphorus in Water by Colorimetry- Ascorbic Acid Method,,-1.00E+06,-1.00E+06,
 Phosphorus,ug/l,,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,
 Phosphorus,ug/l,,USEPA 365.4,Total Phosphorus After Block Digestion,,1,1,
-"Total Phosphorus, mixed forms",mg/l,mg/l,USEPA 365.1,Phosphorus by Colorimetry,,1000,1000,
+Phosphorus as P,mg/l,,USEPA 365.1,,,-1.00E+06,-1.00E+06,
+"Total Phosphorus, mixed forms",mg/l,mg/l,USEPA 365.1,Phosphorus by Colorimetry,,-1.00E+06,-1.00E+06,
+"Total Phosphorus, mixed forms",mg/l,,USEPA 365.1,Phosphorus by Colorimetry,,-1.00E+06,-1.00E+06,

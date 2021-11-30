@@ -1,8 +1,34 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Aluminum,ug/l,NA,NA NA,,1106,1,1,Reported as Aluminum 
-Aluminum,ug/l,NA,USEPA 1638,Trace Elements in Water by ICP/MS,,1,1,Unknown
-Aluminum,ug/l,NA,USEPA 200.7,Metals in Water by ICP-AES,,1,1,Reported as Aluminum 
-Aluminum,ug/l,NA,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1,1,Reported as Aluminum 
-Aluminum,ug/l,NA,USGS CX001,"Aluminum, wf, extract and AAS",1106,1,1,Reported as Aluminum 
-Aluminum,ug/l,NA,USGS DCP02,"Aluminum, wf, DCP-AES",1106,1,1,Reported as Aluminum 
-Aluminum,NA,ug/l,NA NA,,1106,1,1,Reported as Aluminum 
+Aluminum,mg/l,mg/l,AZDEQ_SW EPA 200.7,EPA 200.7,,1000,1000,
+Aluminum,mg/l,mg/l,AZDEQ_SW EPA 6010B,EPA 6010B,,1000,1000,
+Aluminum,mg/l,mg/l,AZDEQ_SW EPA 6010C,EPA 6010C,,1000,1000,
+Aluminum,mg/l,mg/l,USEPA 200.7,Metals in Water by ICP-AES,,1000,1000,
+Aluminum,mg/l,,21AWIC ADEM_HISTORICAL,Unkn Lab Proc,,1000,1000,
+Aluminum,mg/l,,USACOEND 6010A,ICP Metals in Water,,1000,1000,
+Aluminum,mg/l,,USEPA 200.7,Metals in Water by ICP-AES,,1000,1000,
+Aluminum,mg/l,,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1000,1000,
+Aluminum,mg/l,,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1000,1000,
+Aluminum,ppb,,11NPSWRD_WQX NPS_NURE_OR13,Oak Ridge Emission Spectrochemical Analysis of Waters for Selected Parameters,,1,1,
+Aluminum,ug/l,ug/l,11NPSWRD_WQX USGS_I247792,Inductively Coupled Plasma/Mass Spectrometry,,1,1,
+Aluminum,ug/l,ug/l,AZDEQ_SW EPA 6010B,EPA 6010B,,1,1,
+Aluminum,ug/l,ug/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1,1,
+Aluminum,ug/l,ug/l,USGS PLA13,"Metals, wf, suppliment, ICP-AES",1106,1,1,
+Aluminum,ug/l,ug/l,USGS PLM43,"Metals, wf, ICP-MS",1106,1,1,
+Aluminum,ug/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,
+Aluminum,ug/l,,NA NA,,1106,1,1,Reported as Aluminum 
+Aluminum,ug/l,,NA NA,,,1,1,
+Aluminum,ug/l,,USEPA 1638,Trace Elements in Water by ICP/MS,,1,1,Unknown
+Aluminum,ug/l,,USEPA 200.15,Metals in Water by Nebulization and ICP-AES,,1,1,
+Aluminum,ug/l,,USEPA 200.7,Metals in Water by ICP-AES,,1,1,Reported as Aluminum 
+Aluminum,ug/l,,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1,1,Reported as Aluminum 
+Aluminum,ug/l,,USEPA 200.7(W),,,1,1,
+Aluminum,ug/l,,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,
+Aluminum,ug/l,,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1,1,
+Aluminum,ug/l,,USGS CX001,"Aluminum, wf, extract and AAS",1106,1,1,Reported as Aluminum 
+Aluminum,ug/l,,USGS DCP01,"Aluminum, wf, DC plasma",1106,1,1,
+Aluminum,ug/l,,USGS DCP02,"Aluminum, wf, DCP-AES",1106,1,1,Reported as Aluminum 
+Aluminum,ug/l,,USGS PLA06,"Trace elements, wf, ICP/T (Ocala",1106,1,1,
+Aluminum,ug/l,,USGS PLA13,"Metals, wf, suppliment, ICP-AES",1106,1,1,
+Aluminum,ug/l,,USGS PLM43,"Metals, wf, ICP-MS",1106,1,1,
+Aluminum,ug/l,,UTAHDWQ_WQX GENERIC METHOD,Used for all methods where historical methodology may not be available.,,1,1,
+Aluminum,,ug/l,NA NA,,1106,1,1,Reported as Aluminum 

@@ -1,2 +1,5 @@
-CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
-True color,PCU,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,NA,NA,1,1,unknown
+CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+True color,PCU,PCU,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,1,
+True color,PCU,PCU,APHA 2120-C,2120 C ~ Color in Water by Spectrophotometry,,1,1,
+True color,PCU,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,unknown
+True color,PCU,,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,1,
