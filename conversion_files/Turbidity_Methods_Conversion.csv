@@ -1,37 +1,105 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
 Turbidity,%,,APHA 2130,,,-1.00E+06,-1.00E+06,discard
+Turbidity,deg C,,NA NA,,,-1.00E+06,-1.00E+06,discard
+Turbidity,FNMU,,USGS TS011,"Hydrolab, sensor model 4 Beam",63684,-1.00E+06,-1.00E+06,discard
 Turbidity,FNRU,,NA NA,,63681,-1.00E+06,-1.00E+06,discard
 Turbidity,FNU,,NA NA,,63680,-1.00E+06,-1.00E+06,discard
+Turbidity,FNU,,NA NA,,,-1.00E+06,-1.00E+06,discard
+Turbidity,FNU,,USGS TS031,Eureka Environmental Trimeter,63680,-1.00E+06,-1.00E+06,discard
+Turbidity,FNU,,USGS TS040,"HACH, sensor model 2100 N IS",63680,-1.00E+06,-1.00E+06,discard
+Turbidity,FNU,,USGS TS085,"YSI model 6026, FNU",63680,-1.00E+06,-1.00E+06,discard
 Turbidity,FNU,,USGS TS086,"YSI model 6026-4000, FNU",63680,-1.00E+06,-1.00E+06,discard
 Turbidity,FNU,,USGS TS087,"YSI Environmental, sensor 6136",63680,-1.00E+06,-1.00E+06,discard
 Turbidity,FNU,,USGS TS150,"Hydrolab, Series 5 Datasondes",63680,-1.00E+06,-1.00E+06,discard
+Turbidity,FNU,,USGS TS173,"Eureka Environmental 316 SS, FNU",63680,-1.00E+06,-1.00E+06,discard
 Turbidity,FNU,,USGS TS213,"YSI EXO turbidity sensor, FNU",63680,-1.00E+06,-1.00E+06,discard
+Turbidity,FTU,FTU,21NC01WQ UNKNOWN,,,-1.00E+06,-1.00E+06,discard
+Turbidity,FTU,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,-1.00E+06,-1.00E+06,discard
 Turbidity,FTU,,21COL001 HISTORIC,,,-1.00E+06,-1.00E+06,discard
 Turbidity,FTU,,21NC01WQ UNKNOWN,,,-1.00E+06,-1.00E+06,discard
 Turbidity,FTU,,APHA 2130-B,2130 B ~ Nephelometric Method,,-1.00E+06,-1.00E+06,discard
+Turbidity,FTU,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,-1.00E+06,-1.00E+06,discard
+Turbidity,FTU,,NA NA,,,-1.00E+06,-1.00E+06,discard
+Turbidity,FTU,,USEPA 180.1,Turbidity by Nephelometry,,-1.00E+06,-1.00E+06,discard
+Turbidity,JCU,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,-1.00E+06,-1.00E+06,discard
 Turbidity,JTU,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,-1.00E+06,-1.00E+06,discard
+Turbidity,JTU,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,-1.00E+06,-1.00E+06,discard
+Turbidity,JTU,,APHA 2130,Turbidity in Water,,-1.00E+06,-1.00E+06,discard
 Turbidity,JTU,,NA NA,,70,-1.00E+06,-1.00E+06,discard
+Turbidity,JTU,,NA NA,,,-1.00E+06,-1.00E+06,discard
+Turbidity,m,,NA NA,,,-1.00E+06,-1.00E+06,discard
+Turbidity,mg/l,mg/l,USEPA 180.1,,,-1.00E+06,-1.00E+06,discard
+Turbidity,mg/l,None,USEPA 180.1,,,-1.00E+06,-1.00E+06,discard
 Turbidity,mg/l,,APHA 2130,,,-1.00E+06,-1.00E+06,discard
+Turbidity,mg/l,,KAWNATON_WQX 2130-B,Nephelometric Method,,-1.00E+06,-1.00E+06,discard
+Turbidity,mg/l,,NA NA,,,-1.00E+06,-1.00E+06,discard
+Turbidity,mg/l,,USEPA 180.1,Turbidity by Nephelometry,,-1.00E+06,-1.00E+06,discard
 Turbidity,mg/l SiO2,,NA NA,,75,-1.00E+06,-1.00E+06,discard
+Turbidity,None,,EPA_R7_WQX Turb field,Turbidity Field Measure,,-1.00E+06,-1.00E+06,discard
+Turbidity,None,,MNPCA LEG_P00076,"TURBIDITY,HACH TURBIDIMETER (FORMAZIN TURB UNIT)",,-1.00E+06,-1.00E+06,discard
+Turbidity,None,,TCEQMAIN N/A Calculation,N/A Calculation,,-1.00E+06,-1.00E+06,discard
+Turbidity,NTMU,,APHA 2130,Turbidity in Water,,-1.00E+06,-1.00E+06,discard
+Turbidity,NTMU,,USEPA 180.1,Turbidity by Nephelometry,,-1.00E+06,-1.00E+06,discard
 Turbidity,NTRU,NTRU,USGS TS098,"HACH, sensor model 2100 AN, R-On",63676,-1.00E+06,-1.00E+06,discard
 Turbidity,NTRU,,NA NA,,63676,-1.00E+06,-1.00E+06,discard
+Turbidity,NTRU,,USGS TS098,"HACH, sensor model 2100 AN, R-On",63676,-1.00E+06,-1.00E+06,discard
 Turbidity,NTRU,,USGS TS101,"HACH, sensor model 2100 P, NTRU",63676,-1.00E+06,-1.00E+06,discard
+Turbidity,NTRU,,USGS TS196,"HACH 2100Q, NTRU",63676,-1.00E+06,-1.00E+06,discard
+Turbidity,NTU,cfu/100ml,USEPA 180.1,Turbidity by Nephelometry,,-1.00E+06,-1.00E+06,discard
 Turbidity,NTU,FTU,AZDEQ_SW EPA 180.1,EPA 180.1,,-1.00E+06,-1.00E+06,discard
 Turbidity,NTU,FTU,USEPA 180.1,,,-1.00E+06,-1.00E+06,discard
+Turbidity,NTU,mg/l,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,-1.00E+06,-1.00E+06,discard
+Turbidity,NTU,mg/l,APHA 2130,Turbidity in Water,,-1.00E+06,-1.00E+06,discard
+Turbidity,NTU,mg/l,SAMISHINDIAN_WQX HACH-2100P,ProjectSOP: Avg of three subsamples from grab sample,,-1.00E+06,-1.00E+06,discard
 Turbidity,NTU,ng/l,AZDEQ_SW EPA 180.1,EPA 180.1,,-1.00E+06,-1.00E+06,discard
 Turbidity,NTU,None,AZDEQ_SW FIELD,FIELD,,-1.00E+06,-1.00E+06,discard
 Turbidity,NTU,None,AZDEQ_SW UNKNOWN,UNKNOWN,,-1.00E+06,-1.00E+06,discard
 Turbidity,NTU,NTU,21ARIZ UNKNOWN,,,1,1,
+Turbidity,NTU,NTU,21FLACEP TURB,,,1,1,
+Turbidity,NTU,NTU,21FLACEP_WQX TURB,Tubidity,,1,1,
+Turbidity,NTU,NTU,21FLCOLL_WQX LKTRAFF,Lake Trafford,,1,1,
+Turbidity,NTU,NTU,21FLCOSP_WQX FDEP FT1600,FDEP FT1600,,1,1,
+Turbidity,NTU,NTU,21FLGW_WQX 900456,QA Plan #900456,,1,1,
+Turbidity,NTU,NTU,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,1,1,
+Turbidity,NTU,NTU,21FLLCPC_WQX SM2130B,TURBIDITY,,1,1,
+Turbidity,NTU,NTU,21FLMANA GENERIC,,,1,1,
+Turbidity,NTU,NTU,21FLMANA TURBIDITY,,,1,1,
+Turbidity,NTU,NTU,21FLMANA_WQX GENERIC,General Listing of Field and Lab Analytical Procedures for Manatee County,,1,1,
+Turbidity,NTU,NTU,21FLMANA_WQX TURBIDITY,Turbidity,,1,1,
+Turbidity,NTU,NTU,21FLMCGL SOP-1,,,1,1,
+Turbidity,NTU,NTU,21FLORL FT_1500,,,1,1,
+Turbidity,NTU,NTU,21FLPDEM SM2130 B,,,1,1,
+Turbidity,NTU,NTU,21FLPDEM_WQX SM2130 B,Turbidity,,1,1,
+Turbidity,NTU,NTU,21FLPOLK 2130 B,,,1,1,
+Turbidity,NTU,NTU,21FLPOLK_WQX 2130 B,Turbidity,,1,1,
+Turbidity,NTU,NTU,21FLSEM FT1600,,,1,1,
+Turbidity,NTU,NTU,21FLSEM_WQX FT1600,Turbidity by FDEP Standards,,1,1,
+Turbidity,NTU,NTU,21FLVEMD_WQX 2130-B,Turbidity,,1,1,
+Turbidity,NTU,NTU,21FLWPB_WQX 2130B,STANDARD METHODS 2130B TURBIDITY NTU,,1,1,
+Turbidity,NTU,NTU,21IOWA_WQX ISU 2130-B,ISU modification of APHA 2130-B,,1,1,
+Turbidity,NTU,NTU,APHA 2130,Turbidity in Water,,1,1,
+Turbidity,NTU,NTU,APHA 2130,,,1,1,
 Turbidity,NTU,NTU,APHA 2130-B,2130 B ~ Nephelometric Method,,1,1,"Turbidity, water, unfiltered, laboratory, nephelometric method (Standard Methods 2130 B; USGSVAWC; VA-CLS)"
+Turbidity,NTU,NTU,APHA 2310 B,2310 B ~ Acidity by Titration,,1,1,
 Turbidity,NTU,NTU,AZDEQ_SW EPA 180.1,EPA 180.1,,1,1,
 Turbidity,NTU,NTU,AZDEQ_SW FIELD,FIELD,,1,1,
 Turbidity,NTU,NTU,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,
+Turbidity,NTU,NTU,HACH 8195,Determination of Turbidity,,1,1,
+Turbidity,NTU,NTU,LADEQWPD_WQX 2130-B,Same as 2130B,,1,1,
+Turbidity,NTU,NTU,NA NA,,82079,1,1,
+Turbidity,NTU,NTU,NA NA,,,1,1,
+Turbidity,NTU,NTU,SDWRAP WRAPFLD,,,1,1,
 Turbidity,NTU,NTU,USEPA 180.1,Turbidity by Nephelometry,,1,1,Reported as turbidity
 Turbidity,NTU,NTU,USEPA 180.1,,,1,1,
+Turbidity,NTU,NTU,USGS 00103,"Turbidity, EPA method",76,1,1,
 Turbidity,NTU,NTU,USGS TBD01,"Turbidity, by turbidimeter",99872,1,1,
+Turbidity,NTU,NTU,USGS TS108,"HF Scientific, Micro100, white",63675,1,1,Reported as turbidity
+Turbidity,NTU,ug/l,SAMISHINDIAN_WQX HACH-2100P,ProjectSOP: Avg of three subsamples from grab sample,,-1.00E+06,-1.00E+06,discard
 Turbidity,NTU,,1119USBR P82078,,,1,1,Reported as turbidity
 Turbidity,NTU,,11NPSWRD_WQX CURE_HACH2100N,Hach 2100N Turbidimeter,,1,1,
 Turbidity,NTU,,11NPSWRD_WQX NPS_HACH2100P,Hach Model 2100P Portable Turbidimeter,,1,1,
+Turbidity,NTU,,11NPSWRD_WQX NPS_INSITU_AT600,Field Measurements by In-Situ Aqua TROLL 600,,1,1,
+Turbidity,NTU,,11NPSWRD_WQX NPS_LAM_SC26617,LaMotte Smart Colorimeter #26617,,1,1,
 Turbidity,NTU,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,unknown
 Turbidity,NTU,,11NPSWRD_WQX NPS_MISSING,Procedure not Required when Result Entered into National Database,,1,1,
 Turbidity,NTU,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1,1,
@@ -42,30 +110,88 @@ Turbidity,NTU,,21ARIZ UNKNOWN,,,1,1,
 Turbidity,NTU,,21ARIZ_WQX EPA 180.1,NTU TURBIDITY,,1,1,
 Turbidity,NTU,,21ARIZ_WQX FIELD,FIELD PARAMETERS,,1,1,
 Turbidity,NTU,,21COL001 HISTORIC,,,1,1,
+Turbidity,NTU,,21FLACEP TURB,,,1,1,
+Turbidity,NTU,,21FLACEP_WQX FDEP FT1600,FDEP FT1600,,1,1,
+Turbidity,NTU,,21FLACEP_WQX TURB,Tubidity,,1,1,
+Turbidity,NTU,,21FLALTA_WQX FT1600,Field Measurement of Turbidity,,1,1,
+Turbidity,NTU,,21FLCBA TURBIDITY,,,1,1,
+Turbidity,NTU,,21FLCBA_WQX FIELD,Field Measurments,,1,1,
+Turbidity,NTU,,21FLCEN_WQX HISTORICAL,Standard Operation Procedure,,1,1,
+Turbidity,NTU,,21FLCEN_WQX SOP-ANALY,Standard Analytical Procedure,,1,1,
+Turbidity,NTU,,21FLCOLL_WQX FIELD READINGS,Measurements/readings obtained in the field,,1,1,
+Turbidity,NTU,,21FLCOLL_WQX LKTRAFF,Lake Trafford,,1,1,
+Turbidity,NTU,,21FLCOSP_WQX FDEP FT1600,FDEP FT1600,,1,1,
+Turbidity,NTU,,21FLCOSP_WQX FT1600,Field Turbidity,,1,1,
+Turbidity,NTU,,21FLFTM_WQX FDEP FT1600,FDEP FT1600,,1,1,
+Turbidity,NTU,,21FLFTM_WQX FT_1600,Field measurement of Turbidity,,1,1,
+Turbidity,NTU,,21FLLCPC_WQX DEP-SOP-001/01,DEP STANDARD OPERATING PROCEDURES FOR FIELD ACTIVITIES,,1,1,
+Turbidity,NTU,,21FLLCPC_WQX FDEP FT1600,FDEP FT1600,,1,1,
+Turbidity,NTU,,21FLLCPC_WQX SM2130B,TURBIDITY,,1,1,
+Turbidity,NTU,,21FLMANA GENERIC,,,1,1,
+Turbidity,NTU,,21FLMANA_WQX GENERIC,General Listing of Field and Lab Analytical Procedures for Manatee County,,1,1,
+Turbidity,NTU,,21FLPDEM SM2130 B,,,1,1,
+Turbidity,NTU,,21FLPDEM_WQX SM2130 B,Turbidity,,1,1,
+Turbidity,NTU,,21FLSEM FT1600,,,1,1,
+Turbidity,NTU,,21FLSJWM OTHER/UNKNOWN,,,1,1,
+Turbidity,NTU,,21FLSUW_WQX OTHER/UNKNOWN,Other of Unknown Procedure,,1,1,
+Turbidity,NTU,,21FLSWFD_WQX FDEP FT1600,FDEP FT1600,,1,1,
+Turbidity,NTU,,21FLWET_WQX FT_1600,FIELD MEASUREMENT OF TURBIDITY,,1,1,
+Turbidity,NTU,,21FLWPB_WQX FT_1600,FIELD MEASUREMENT OF TURBIDITY,,1,1,
+Turbidity,NTU,,21FLWQA_WQX FT_1600,FIELD MEASUREMENT OF TURBIDITY,,1,1,
+Turbidity,NTU,,21GAEPD_WQX FIELD/NS,Field procedure or Not Specified,,1,1,
+Turbidity,NTU,,21IOWA_WQX ISU 2130-B,ISU modification of APHA 2130-B,,1,1,
+Turbidity,NTU,,APHA 2130,Turbidity in Water,,1,1,
 Turbidity,NTU,,APHA 2130,,,1,1,Reported as turbidity
 Turbidity,NTU,,APHA 2130-B,2130 B ~ Nephelometric Method,,1,1,Reported as turbidity
 Turbidity,NTU,,ASTM D1889,Turbidity of Water,,1,1,
+Turbidity,NTU,,ASTM D1889,,,1,1,
 Turbidity,NTU,,AZDEQ_SW EPA 180.1,EPA 180.1,,1,1,
 Turbidity,NTU,,AZDEQ_SW FIELD,FIELD,,1,1,
 Turbidity,NTU,,AZDEQ_SW SM 2130B,SM 2130B,,1,1,
 Turbidity,NTU,,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,
+Turbidity,NTU,,CEDEN 122,SM 2130 B,,1,1,
+Turbidity,NTU,,CEDEN 131,EPA 821/R-02-012M,,1,1,
+Turbidity,NTU,,CHEROKEE CN_QAPP,,,1,1,
+Turbidity,NTU,,CHEROKEE_WQX CN_QAPP,CN_QAPP,,1,1,
+Turbidity,NTU,,CSKTRIBE CSKT_QUAPP,Confederated Salish and Kootenai Tribes Quality Assurance Project Plan,,1,1,
+Turbidity,NTU,,EPA_R7_WQX 2334.04,Field sampling params.,,1,1,
+Turbidity,NTU,,EPA_R7_WQX field,Field Measure,,1,1,
+Turbidity,NTU,,EPA_R7_WQX Turb field,Turbidity Field Measure,,1,1,
+Turbidity,NTU,,KAWNATON KAW_SOP,,,1,1,
+Turbidity,NTU,,KAWNATON_WQX 2130-B,Nephelometric Method,,1,1,
+Turbidity,NTU,,KAWNATON_WQX 8195,Determination of Turbidity,,1,1,
+Turbidity,NTU,,LAKELAND TURB,,,1,1,
+Turbidity,NTU,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1,1,
 Turbidity,NTU,,NA NA,,76,1,1,unknown
 Turbidity,NTU,,NA NA,,61028,1,1,
 Turbidity,NTU,,NA NA,,63675,1,1,Turbidity of unfiltered water measured in the field with Orbeco-Hellige model TB200 turbidimeter (USGSOHML)
 Turbidity,NTU,,NA NA,,82079,1,1,
 Turbidity,NTU,,NA NA,,99872,1,1,
 Turbidity,NTU,,NA NA,,,1,1,unknown
+Turbidity,NTU,,OREGONDEQ Not Available,Not Available,,1,1,
+Turbidity,NTU,,SAMISHINDIAN_WQX HACH-2100P,ProjectSOP: Avg of three subsamples from grab sample,,1,1,
+Turbidity,NTU,,SDDENR_WQX UNKOWN,UNKOWN,,1,1,
+Turbidity,NTU,,TCEQMAIN N/A Calculation,N/A Calculation,,1,1,
+Turbidity,NTU,,TURTLEMT GS_UNKNOWN,GS_UNKNOWN,,1,1,
 Turbidity,NTU,,USEPA 180.1,Turbidity by Nephelometry,,1,1,Reported as turbidity
 Turbidity,NTU,,USEPA 180.1,,,1,1,
 Turbidity,NTU,,USGS 0,,61028,1,1,
 Turbidity,NTU,,USGS D,,61028,1,1,
 Turbidity,NTU,,USGS E,,61028,1,1,
 Turbidity,NTU,,USGS F,,61028,1,1,
+Turbidity,NTU,,USGS G,,76,1,1,
+Turbidity,NTU,,USGS H,,76,1,1,
 Turbidity,NTU,,USGS TBD01,"Turbidity, by turbidimeter",76,1,1,Reported as turbidity
 Turbidity,NTU,,USGS TBD01,"Turbidity, by turbidimeter",99872,1,1,
 Turbidity,NTU,,USGS TS028,Other NTU instrument,63675,1,1,
+Turbidity,NTU,,USGS TS097,"HACH, sensor model 2100 AN,R-Off",63675,1,1,
+Turbidity,NTU,,USGS TS099,"HACH, sensor model 2100 N  R-Off",63675,1,1,
 Turbidity,NTU,,USGS TS114,LaMotte Instruments model 2008,63675,1,1,
 Turbidity,NTU,,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,unknown
 Turbidity,NTU,,UTAHDWQ_WQX FIELD TURBIDITY,Turbidiy determined in the field,,1,1,
 Turbidity,NTU,,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,1,1,
-Turbidity,,NTU,USEPA 180.1,Turbidity by Nephelometry,,1,1,
+Turbidity,PCU,PCU,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,-1.00E+06,-1.00E+06,discard
+Turbidity,PCU,,USEPA 110.2,,,-1.00E+06,-1.00E+06,discard
+Turbidity,ppt,,NA NA,,,-1.00E+06,-1.00E+06,discard
+Turbidity,ug/l,,NA NA,,,-1.00E+06,-1.00E+06,discard
+Turbidity,,NTU,USEPA 180.1,Turbidity by Nephelometry,,-1.00E+06,-1.00E+06,discard

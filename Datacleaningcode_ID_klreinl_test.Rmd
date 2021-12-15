@@ -213,14 +213,6 @@ TNdatPull <- TNdatPull %>%
 names(TNdatPull)
 summary(TNdatPull)
 
-WIdatPull<-read.csv(paste0(file.path,"WI_alldata_1975_to_2020.csv"))
-WIdatPull$State<-c("WI")
-WIdatPull$Id_num<-c(seq(1:nrow(WIdatPull)))
-WIdatPull <- WIdatPull %>% 
-  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
-names(WIdatPull)
-summary(WIdatPull)
-
 CAdatPull<-read.csv(paste0(file.path,"CA_alldata_1975_to_2020.csv"))
 CAdatPull$State<-c("CA")
 CAdatPull$Id_num<-c(seq(1:nrow(CAdatPull)))
@@ -261,12 +253,91 @@ MSdatPull <- MSdatPull %>%
 names(MSdatPull)
 summary(MSdatPull)
 
+MTdatPull<-read.csv(paste0(file.path,"MT_alldata_1975_to_2020.csv"))
+MTdatPull$State<-c("MT")
+MTdatPull$Id_num<-c(seq(1:nrow(MTdatPull)))
+MTdatPull <- MTdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(MTdatPull)
+summary(MTdatPull)
+
+NEdatPull<-read.csv(paste0(file.path,"NE_alldata_1975_to_2020.csv"))
+NEdatPull$State<-c("NE")
+NEdatPull$Id_num<-c(seq(1:nrow(NEdatPull)))
+NEdatPull <- NEdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(NEdatPull)
+summary(NEdatPull)
+
+NMdatPull<-read.csv(paste0(file.path,"NM_alldata_1975_to_2020.csv"))
+NMdatPull$State<-c("NM")
+NMdatPull$Id_num<-c(seq(1:nrow(NMdatPull)))
+NMdatPull <- NMdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(NMdatPull)
+summary(NMdatPull)
+
+NCdatPull<-read.csv(paste0(file.path,"NC_alldata_1975_to_2020.csv"))
+NCdatPull$State<-c("NC")
+NCdatPull$Id_num<-c(seq(1:nrow(NCdatPull)))
+NCdatPull <- NCdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(NCdatPull)
+summary(NCdatPull)
+
+NDdatPull<-read.csv(paste0(file.path,"ND_alldata_1975_to_2020.csv"))
+NDdatPull$State<-c("ND")
+NDdatPull$Id_num<-c(seq(1:nrow(NDdatPull)))
+NDdatPull <- NDdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(NDdatPull)
+summary(NDdatPull)
+
+ORdatPull<-read.csv(paste0(file.path,"OR_alldata_1975_to_2020.csv"))
+ORdatPull$State<-c("OR")
+ORdatPull$Id_num<-c(seq(1:nrow(ORdatPull)))
+ORdatPull <- ORdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(ORdatPull)
+summary(ORdatPull)
+
+SCdatPull<-read.csv(paste0(file.path,"SC_alldata_1975_to_2020.csv"))
+SCdatPull$State<-c("SC")
+SCdatPull$Id_num<-c(seq(1:nrow(SCdatPull)))
+SCdatPull <- SCdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(SCdatPull)
+summary(SCdatPull)
+
+SDdatPull<-read.csv(paste0(file.path,"SD_alldata_1975_to_2020.csv"))
+SDdatPull$State<-c("SD")
+SDdatPull$Id_num<-c(seq(1:nrow(SDdatPull)))
+SDdatPull <- SDdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(SDdatPull)
+summary(SDdatPull)
+
+TXdatPull<-read.csv(paste0(file.path,"TX_alldata_1975_to_2020.csv"))
+TXdatPull$State<-c("TX")
+TXdatPull$Id_num<-c(seq(1:nrow(TXdatPull)))
+TXdatPull <- TXdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(TXdatPull)
+summary(TXdatPull)
+
+UTdatPull<-read.csv(paste0(file.path,"UT_alldata_1975_to_2020.csv"))
+UTdatPull$State<-c("UT")
+UTdatPull$Id_num<-c(seq(1:nrow(UTdatPull)))
+UTdatPull <- UTdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(UTdatPull)
+summary(UTdatPull)
+
 
 ```
 
 
 ```{r}
-WIdatPull<-select(WIdatPull, -X)
 allstates <- do.call("rbind", lapply(ls(pattern='datPull'),get))
 #figure out how to autodelete files that contain datpull
 rm(list=ls(pattern="datPull"))
@@ -1542,6 +1613,7 @@ data_temp_temp_notes
 rm(data_temp_temp_notes)
 
 ```
+
 ```{r}
 abbrev <- "Microcystin"
 lagos_name <- "Microcystin"
