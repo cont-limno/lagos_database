@@ -195,3 +195,10 @@ Turbidity,PCU,,USEPA 110.2,,,-1.00E+06,-1.00E+06,discard
 Turbidity,ppt,,NA NA,,,-1.00E+06,-1.00E+06,discard
 Turbidity,ug/l,,NA NA,,,-1.00E+06,-1.00E+06,discard
 Turbidity,,NTU,USEPA 180.1,Turbidity by Nephelometry,,-1.00E+06,-1.00E+06,discard
+Turbidity Field,NTU,NTU,APHA 2130-B,2130 B ~ Nephelometric Method,,1.00E+00,1.00E+00,
+Turbidity Field,NTU,NTU,OREGONDEQ MOM grab,Field methods for DEQ Water sampling,,1.00E+00,1.00E+00,
+Turbidity Field,NTU,NTU,USEPA 180.1,Turbidity by Nephelometry,,1.00E+00,1.00E+00,
+Turbidity Field,NTU,NTU,USEPA 310.1,Alkalinity by Titration,,1,1,
+Turbidity Field,NTU,,NA NA,,,-1.00E+06,-1.00E+06,discard
+Turbidity Field,NTU,,OREGONDEQ Not Available,Not Available,,-1.00E+06,-1.00E+06,discard
+Turbidity Field,NTU,,USEPA 180.1,Turbidity by Nephelometry,,1,1,

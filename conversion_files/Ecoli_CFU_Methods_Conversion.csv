@@ -1,4 +1,5 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Escherichia,CFU,,APHA 9223-B,,,1,1,
 Escherichia coli,#/100L,,APHA_SM22ED 9223-B,9223 B ~ Enzyme Substrate Test,,-1.00E+06,-1.00E+06,discard
 Escherichia coli,#/100ml,#/100ml,APHA 9213-D,9213 D ~ E. coli method,,-1.00E+06,-1.00E+06,discard
 Escherichia coli,#/100ml,#/100ml,APHA 9213D,9213 D ~ E. coli by Membrane filtration plating on mTEC agar,,-1.00E+06,-1.00E+06,discard

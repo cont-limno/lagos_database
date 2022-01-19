@@ -490,7 +490,7 @@ lagos_name <- "Depth"
 lagos_unit <- "m"
 dataset_name <-"depth"
 
-params<-c("Depth, data-logger (non-ported)", "Depth", "Depth, data-logger (ported)", "Depth, bottom")
+params<-c("Depth, data-logger (non-ported)", "Depth", "Depth, data-logger (ported)", "Depth, bottom", "Depth of water column")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -581,7 +581,7 @@ lagos_unit <- "ug/l"
 dataset_name <-"Aluminum_total"
 
 vars2process
-params<-c("Aluminum")
+params<-c("Aluminum", "Aluminum, Organic + Inorganic Monomeric (reactive aluminum)")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -605,7 +605,7 @@ lagos_unit <- "ug/l"
 dataset_name <-"Aluminum_dissolved"
 
 vars2process
-params<-c("Aluminum")
+params<-c("Aluminum", "Aluminum, Organic + Inorganic Monomeric (reactive aluminum)")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -796,7 +796,7 @@ lagos_unit <- "ug/l"
 dataset_name <-"Arsenic_total"
 
 vars2process
-params<-c("Arsenic")
+params<-c("Arsenic", "Arsenate", "Arsenite")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -810,6 +810,10 @@ unique(data_temp$ResultSampleFractionText)
 temp <- non_numerics()
 
 source("unit_conversions.R")
+data_temp_temp_notes
+rm(data_temp_temp_notes)
+
+
 
 ```
 
@@ -820,7 +824,7 @@ lagos_unit <- "ug/l"
 dataset_name <-"Arsenic_dissolved"
 
 vars2process
-params<-c("Arsenic")
+params<-c("Arsenic", "Arsenate", "Arsenite")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -868,7 +872,7 @@ lagos_unit <- "#/100ml"
 dataset_name <-"E.coli_100ml"
 
 vars2process
-params<-c("Escherichia coli")
+params<-c("Escherichia coli", "Escherichia")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -892,7 +896,7 @@ lagos_unit <- "MPN"
 dataset_name <-"E.coli_MPN"
 
 vars2process
-params<-c("Escherichia coli")
+params<-c("Escherichia coli", "Escherichia")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -916,7 +920,7 @@ lagos_unit <- "CFU"
 dataset_name <-"E.coli_CFU"
 
 vars2process
-params<-c("Escherichia coli")
+params<-c("Escherichia coli","Escherichia")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -988,7 +992,7 @@ lagos_unit <- "ug/l"
 dataset_name <-"Chlorophyll_a"
 
 vars2process
-params<-c("Chlorophyll a, corrected for pheophytin", "Chlorophyll a", "Chlorophyll a, uncorrected for pheophytin", "Chlorophyll", "Chlorophyll a - Phytoplankton (suspended)", "Chlorophyll a (probe)")
+params<-c("Chlorophyll a, corrected for pheophytin", "Chlorophyll a", "Chlorophyll a, uncorrected for pheophytin", "Chlorophyll", "Chlorophyll a - Phytoplankton (suspended)", "Chlorophyll a (probe)", "Chlorophyll a (probe relative fluorescence)", "Chlorophyll a, free of pheophytin")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -1084,7 +1088,7 @@ dataset_name <-"so4"
 vars2process
 params<-c("Sulfate as SO4",
           "Sulfate as S",
-          "Sulfate", "Sulfur Sulfate")
+          "Sulfate", "Sulfur Sulfate", "Sulfur", "Sulfur-34", "Sulfite")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #che
 
@@ -1110,7 +1114,7 @@ lagos_unit <- "NTU"
 dataset_name <-"Turbidity"
 
 vars2process
-params<-c("Turbidity")
+params<-c("Turbidity", "Turbidity Field")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -1312,7 +1316,8 @@ params<-c("Orthophosphate",
           "Phosphate-phosphorus",
           "Phosphate-phosphorus as P",
           "Phosphorus", 
-          "Orthophosphate as PO4")
+          "Orthophosphate as PO4", 
+          "Phosphate-phosphorus as PO4")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #che
 
@@ -1621,7 +1626,7 @@ lagos_unit <- "ug/l"
 dataset_name <-"Microcystin"
 
 vars2process
-params<-c("Microcystin")
+params<-c("Microcystin", "Microcystin RR", "Microcystin LF", "Microcystins and nodularins", "Microcystis", "Microcystin LR", "Microcystin LA", "Microcystins")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 

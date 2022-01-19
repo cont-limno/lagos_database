@@ -1,4 +1,9 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Escherichia,#/100ml,#/100ml,APHA 9223-B,,,1,1,
+Escherichia,CFU,,APHA 9223-B,,,-1.00E+06,-1.00E+06,discard
+Escherichia,MPN/100ml,MPN/100ml,21FLPDEM_WQX SM 9223 B,Total Coliforms,,-1.00E+06,-1.00E+06,discard
+Escherichia,MPN/100ml,,21FLPDEM_WQX SM 9223 B,Total Coliforms,,-1.00E+06,-1.00E+06,discard
+Escherichia,MPN/100ml,,KAWNATON_WQX 9223-B,Total Coliform- Chromogenic Substrate Test,,-1.00E+06,-1.00E+06,discard
 Escherichia coli,#/100L,,APHA_SM22ED 9223-B,9223 B ~ Enzyme Substrate Test,,1,1,Ecoli - #/100ml
 Escherichia coli,#/100ml,#/100ml,21FLGW_WQX 900456,QA Plan #900456,,1,1,
 Escherichia coli,#/100ml,#/100ml,21FLHILL_WQX E COLI,E Coli (m-ColiBlue 24),,1,1,

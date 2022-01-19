@@ -138,6 +138,11 @@ Chlorophyll a,,,21FLMANA GENERIC,,,-1000000,-1000000,
 Chlorophyll a - Phytoplankton (suspended),ug/l,,21ARIZ_WQX SM 10200 H,STANDARD METHOD FOR 10200 H,,1,1,unknown
 Chlorophyll a - Phytoplankton (suspended),ug/l,,SPIRITLK LC3152,LC3152,,1,1,
 Chlorophyll a - Phytoplankton (suspended),ug/l,,USEPA 445,In-Vitro Determination of Chlorophyll,,1,1,unknown
+Chlorophyll a (probe relative fluorescence),mg/m3,,11NPSWRD_WQX CRLA_WETLABS_CH,Wet Labs WETStar Fluorometer,,-1000000,-1000000,discard
+Chlorophyll a (probe relative fluorescence),RFU,RFU,YSI EXO WQ sonde,Multiparameter Water Quality Sonde,,-1000000,-1000000,discard
+Chlorophyll a (probe relative fluorescence),RFU,,NA NA,,,-1000000,-1000000,discard
+Chlorophyll a (probe relative fluorescence),RFU,,YSI EXO WQ sonde,Multiparameter Water Quality Sonde,,-1000000,-1000000,discard
+Chlorophyll a (probe relative fluorescence),ug/l,,NA NA,,,-1000000,-1000000,discard
 Chlorophyll a (probe),ug/l,,NA NA,,,1,1,unknown
 Chlorophyll a (probe),ug/l,,USDOI/USGS B6620,Chlorophyll a-b in Periphyton by Chromatography/Spectroscopy,,1,1,unknown
 "Chlorophyll a, corrected for pheophytin",mg,,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,-1000000,-1000000,discard
@@ -211,6 +216,22 @@ Chlorophyll a (probe),ug/l,,USDOI/USGS B6620,Chlorophyll a-b in Periphyton by Ch
 "Chlorophyll a, corrected for pheophytin",ug/l,,USEPA 445,In-Vitro Determination of Chlorophyll,,1,1,In-Vitro Determination of Chlorophyll
 "Chlorophyll a, corrected for pheophytin",ug/l,,USEPA 446.0,Chlorophylls and Pheopigments in Phytoplankton by Spectrophotometry,,1,1,
 "Chlorophyll a, corrected for pheophytin",ug/ml,,USEPA 445,In-Vitro Determination of Chlorophyll,,1,1,
+"Chlorophyll a, free of pheophytin",mg/m3,mg/m3,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,1,1,
+"Chlorophyll a, free of pheophytin",mg/m3,mg/m3,USEPA 445,In-Vitro Determination of Chlorophyll,,1,1,
+"Chlorophyll a, free of pheophytin",mg/m3,,USEPA 445,In-Vitro Determination of Chlorophyll,,1,1,
+"Chlorophyll a, free of pheophytin",mg/ml,,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,1,1,
+"Chlorophyll a, free of pheophytin",ppb,,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,1,1,
+"Chlorophyll a, free of pheophytin",ppb,,APHA 10200H(2),10200 H 2  ~ Chlorophyll a-b-c Determination by spectrophotometer,,1,1,
+"Chlorophyll a, free of pheophytin",ppb,,SDDENR_WQX 10200-H,UNKOWN,,-1000000,-1000000,discard
+"Chlorophyll a, free of pheophytin",ppb,,SDDENR_WQX UNKOWN,UNKOWN,,-1000000,-1000000,discard
+"Chlorophyll a, free of pheophytin",ug/l,ug/l,21FLSFWM_WQX EPA447.0,EPA447.0,,1,1,
+"Chlorophyll a, free of pheophytin",ug/l,ug/l,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,1,1,
+"Chlorophyll a, free of pheophytin",ug/l,ug/l,USEPA 445,In-Vitro Determination of Chlorophyll,,1,1,
+"Chlorophyll a, free of pheophytin",ug/l,ug/l,USEPA 445,,,1,1,
+"Chlorophyll a, free of pheophytin",ug/l,ug/l,USEPA 447.0,Chlorophyll a and b in phytoplankton by HPLC/UV,,1,1,
+"Chlorophyll a, free of pheophytin",ug/l,ug/l,UTAHDWQ_WQX HPLCMOD_CHL,Chlorophyll via HPLC / Spectrophotometer,,1,1,
+"Chlorophyll a, free of pheophytin",ug/l,,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,1,1,
+"Chlorophyll a, free of pheophytin",ug/l,,NA NA,,,-1000000,-1000000,discard
 "Chlorophyll a, uncorrected for pheophytin",mg/l,,21FLCEN_WQX SOP-ANALY,Standard Analytical Procedure,,1,1,
 "Chlorophyll a, uncorrected for pheophytin",mg/m2,,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,1,1,
 "Chlorophyll a, uncorrected for pheophytin",mg/m3,mg/m3,21FLSFWM_WQX SM10200H,SM10200H,,1,1,

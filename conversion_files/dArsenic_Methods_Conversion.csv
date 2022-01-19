@@ -1,4 +1,6 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Arsenate,ug/L as As,ug/L as As,USGS PLM16,"Arsenics, wf, PO4 phase, cICP-MS",62453,1,1,
+Arsenate,ug/L as As,ug/L as As,USGS PLM35,"Arsenics, lab SPE PO4, ICP-MS",62453,1,1,
 Arsenic,mg/l,mg/l,AZDEQ_SW EPA 200.8,EPA 200.8,,1000,1000,"Trace elements, unfiltered water, inductively coupled plasma-atomic emission spectrometry (ICP-AES) (EPA 200.7; DODESP)"
 Arsenic,mg/l,mg/l,AZDEQ_SW EPA 200.9,EPA 200.9,,1000,1000,"Trace elements, unfiltered water, inductively coupled plasma-atomic emission spectrometry (ICP-AES) (EPA 200.7; DODESP)"
 Arsenic,mg/l,mg/l,NA NA,,52774,1000,1000,Elements in filtered water by inductively coupled plasma-mass spectrometry (EPA 6020A; DODESP)
@@ -77,3 +79,4 @@ Arsenic,ug/l,,UTAHDWQ_WQX DRC,Metals by ICPMS w/ DRC,,1,1,
 Arsenic,ug/l,,UTAHDWQ_WQX GENERIC METHOD,Used for all methods where historical methodology may not be available.,,1,1,
 Arsenic,,ug/l,NA NA,,1000,1,1,ARSENIC DISSOLVED (GFAA)
 Arsenic,,ug/l,USGS GF085,"Arsenic, wf, GFAAS",1000,1,1,ARSENIC DISSOLVED (GFAA)
+Arsenite,ug/L as As,ug/L as As,USGS PLM16,"Arsenics, wf, PO4 phase, cICP-MS",62452,1,1,
