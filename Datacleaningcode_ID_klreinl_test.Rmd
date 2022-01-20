@@ -869,7 +869,7 @@ source("unit_conversions.R")
 abbrev <- "Ecoli"
 lagos_name <- "E. coli"
 lagos_unit <- "#/100ml"
-dataset_name <-"E.coli_100ml"
+dataset_name <-"E_coli_100ml"
 
 vars2process
 params<-c("Escherichia coli", "Escherichia")
@@ -893,7 +893,7 @@ source("unit_conversions.R")
 abbrev <- "Ecoli_MPN"
 lagos_name <- "E. coli-MPN"
 lagos_unit <- "MPN"
-dataset_name <-"E.coli_MPN"
+dataset_name <-"E_coli_MPN"
 
 vars2process
 params<-c("Escherichia coli", "Escherichia")
@@ -917,7 +917,7 @@ source("unit_conversions.R")
 abbrev <- "Ecoli_CFU"
 lagos_name <- "E. coli-CFU"
 lagos_unit <- "CFU"
-dataset_name <-"E.coli_CFU"
+dataset_name <-"E_coli_CFU"
 
 vars2process
 params<-c("Escherichia coli","Escherichia")
@@ -1150,7 +1150,7 @@ source("unit_conversions.R")
 abbrev <- "tCarbon"
 lagos_name <- "Carbon, total organic"
 lagos_unit <- "mg/l"
-dataset_name <-"Carbon_total organic"
+dataset_name <-"Carbon_total_organic"
 
 vars2process
 params<-c("Carbon", "Organic carbon", "Total carbon")
@@ -1173,7 +1173,7 @@ source("unit_conversions.R")
 abbrev <- "tdCarbon"
 lagos_name <- "Carbon, dissolved organic"
 lagos_unit <- "mg/l"
-dataset_name <-"Carbon_dissolved organic"
+dataset_name <-"Carbon_dissolved_organic"
 
 vars2process
 params<-c("Carbon", "Organic carbon", "Total carbon")
@@ -1219,7 +1219,7 @@ source("unit_conversions.R")
 abbrev <- "tss"
 lagos_name <- "Solids, total suspended"
 lagos_unit <- "mg/l"
-dataset_name <-"Solids_total suspended"
+dataset_name <-"Solids_total_suspended"
 
 vars2process
 params<-c("Total suspended solids", "Total dissolved solids", "Total solids")
