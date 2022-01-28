@@ -1,18 +1,18 @@
 variableid_lagos,variablename,limit_low,limit_high,variableunitsid,variableshortname,unitsname,unitstype,unitsabbreviation
 1,Alkalinity,-1000,100000000,13,NA,microequivalents per liter,Concentration,ueqL
 2,"Alkalinity, bicarbonate",0,100000000,13,NA,microequivalents per liter,Concentration,ueqL
-43,"Aluminum, dissolved",0,1000000,11,NA,micrograms per liter,Concentration,ugL
+43,"Aluminum, dissolved",0,6000000,11,NA,micrograms per liter,Concentration,ugL
 42,"Aluminum, total",0,1000000,11,NA,micrograms per liter,Concentration,ugL
-41,"Arsenic, dissolved",0,10000,11,NA,micrograms per liter,Concentration,ugL
-40,"Arsenic, total",0,10000,11,NA,micrograms per liter,Concentration,ugL
+41,"Arsenic, dissolved",0,25000,11,NA,micrograms per liter,Concentration,ugL
+40,"Arsenic, total",0,25000,11,NA,micrograms per liter,Concentration,ugL
 39,"Atrazine, dissolved",0,100000000,11,NA,micrograms per liter,Concentration,ugL
 38,"Atrazine, total",0,100000000,11,NA,micrograms per liter,Concentration,ugL
-3,"Calcium, dissolved",0,10000,10,NA,milligrams per liter,Concentration,mgL
+3,"Calcium, dissolved",0,4000,10,NA,milligrams per liter,Concentration,mgL
 4,"Carbon, dissolved inorganic",0,100000000,10,NA,milligrams per liter,Concentration,mgL
 6,"Carbon, dissolved organic",0,1000,10,DOC,milligrams per liter,Concentration,mgL
 5,"Carbon, total inorganic",0,1000,10,NA,milligrams per liter,Concentration,mgL
-7,"Carbon, total organic",0,100000000,10,TOC,milligrams per liter,Concentration,mgL
-8,"Chloride, dissolved",0,400000,10,NA,milligrams per liter,Concentration,mgL
+7,"Carbon, total organic",0,1000,10,TOC,milligrams per liter,Concentration,mgL
+8,"Chloride, dissolved",0,300000,10,NA,milligrams per liter,Concentration,mgL
 9,Chlorophyll a,0,200000,11,CHLA,micrograms per liter,Concentration,ugL
 11,"Color, apparent",0,10000,9,COLORA,platinum cobalt units,Color,PCU
 12,"Color, true",0,10000,9,COLORT,platinum cobalt units,Color,PCU
@@ -20,7 +20,7 @@ variableid_lagos,variablename,limit_low,limit_high,variableunitsid,variableshort
 49,E. coli,0,100000000,31,NA,colony-forming unit,Concentration,cfu
 52,E. coli-CFU,0,100000000,31,NA,colony-forming unit,Concentration,cfu
 51,E. coli-MPN,0,100000000,32,NA,Most Probable Number,Concentration,MPN
-14,"Magnesium, dissolved",0,100000000,10,NA,milligrams per liter,Concentration,mgL
+14,"Magnesium, dissolved",0,10000,10,NA,milligrams per liter,Concentration,mgL
 46,"Mercury, total",0,50000000,29,NA,nanograms per liter,Concentration,ngL
 47,"Mercury, total dissolved",0,100000000,29,NA,nanograms per liter,Concentration,ngL
 50,Methylmercury,0,100000000,29,NA,nanograms per liter,Concentration,ngL
@@ -40,14 +40,14 @@ variableid_lagos,variablename,limit_low,limit_high,variableunitsid,variableshort
 26,"Phosphorus, soluable reactive orthophosphate",0,100000,11,SRP,micrograms per liter,Concentration,ugL
 27,"Phosphorus, total",0,100000,11,TP,micrograms per liter,Concentration,ugL
 28,"Phosphorus, total dissolved",0,100000,11,TDP,micrograms per liter,Concentration,ugL
-29,Potassium,0,100000000,10,NA,milligrams per liter,Concentration,mgL
+29,Potassium,0,5000,10,NA,milligrams per liter,Concentration,mgL
 48,Salinity,0,20000,30,PSU,parts per thousand,Concentration,ppt
 30,Secchi,0,500,20,SECCHI,meter,Length,m
 45,"Selenium, dissolved",0,30000,11,NA,micrograms per liter,Concentration,ugL
 44,"Selenium, total",0,30000,11,NA,micrograms per liter,Concentration,ugL
 31,"Silica, dissolved",0,100000000,10,NA,milligrams per liter,Concentration,mgL
-32,Sodium,0,100000000,10,NA,milligrams per liter,Concentration,mgL
+32,Sodium,0,90000,10,NA,milligrams per liter,Concentration,mgL
 33,"Solids, total suspended",0,100000000,10,NA,milligrams per liter,Concentration,mgL
-34,"Sulfate, dissolved",0,60000,10,NA,milligrams per liter,Concentration,mgL
+34,"Sulfate, dissolved",0,20000,10,NA,milligrams per liter,Concentration,mgL
 35,Temperature,0,100000000,25,NA,degree celsius,Temperature,degC
 36,Turbidity,0,20000,27,NA,nephelometric turbidity units,Turbidity,NTU

@@ -77,10 +77,10 @@ nines_dat <- dat %>% filter(datavalue_int %in% nines) %>%
            Conversion,DetectionQuantitationLimitMeasure.MeasureValue,
            ResultAnalyticalMethod.MethodIdentifierContext,ResultAnalyticalMethod.MethodIdentifier,
            MethodDescriptionText,ActivityCommentText,wqp_monitoringlocationname,datavalue_int) %>% 
-    filter(ResultMeasureValue-datavalue_int==0)
+    filter(ResultMeasureValue-datavalue_int==0) %>% 
+    select(-datavalue_int)
 
 dat <- dat %>% filter(!Obs_Id %in% nines_dat$Obs_Id)
-
 
 #pre egreggious values plots
 options(scipen=999)
@@ -116,7 +116,7 @@ egreg_dat <- dat %>% filter(ResultMeasureValue < limit_low | ResultMeasureValue 
 
 dat <- dat %>% filter(!Obs_Id %in% egreg_dat$Obs_Id)
 
-egreg_dat <- rbind(egreg_dat,(nines_dat %>% select(-datavalue_int)))
+egreg_dat <- rbind(egreg_dat,nines_dat)
 write_csv(egreg_dat,"excluded_values.csv")
 rm(egreg_dat)
 rm(nines_dat)
