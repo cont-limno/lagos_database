@@ -12,7 +12,6 @@ options(stringsAsFactors=F)
 
 #chem data
 chem_data_raw<-read.csv("./NEON_chemandmethods_data.csv")
-unique(chem_data_raw$source_parameter)
 
 
 names(chem_data_raw)[names(chem_data_raw) == "uid"] <- "source_activityid"
@@ -183,11 +182,12 @@ unique(merge_data2$lagos_variablename)
 merge_data2$detectionlimit_value<-c(as.numeric(merge_data2$source_detectionlimit_value)*
                                         as.numeric(merge_data2$datavalue_conversion))
 merge_data2$valueid<-c('')
-merge_data2$source_labmethodid<-c('')
+merge_data2$source_labmethodid<-merge_data2$source_labmethodname
 merge_data2$source_labmethoddescription<-c('')
 merge_data2$source_labmethoddescription<-c('')
 merge_data2$lagos_comments<-c('')
 merge_data2$detectionlimitvalue_conversion<-merge_data2$datavalue_conversion
+merge_data2$source_labmethodname<-c('')
 
 
 final_check<- merge_data2[, c('valueid','obs_id','lagoslakeid', 'sampledate','lagos_variableid',

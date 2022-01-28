@@ -139,6 +139,9 @@ convert<-convert[complete.cases(convert$source_sampledepth)>-0.00001,]
 convert$source_methodqualifier<-ifelse(convert$lagos_variablename =="Chlorophyll a",
                                        "unknown", NA)
 
+
+
+
 final_check<- convert[, c('SITE_ID','NAMES','LAT_DD','LON_DD','STATE','CNTYNAME',
                                     'valueid','obs_id','lagoslakeid', 'sampledate','lagos_variableid',
                                     'lagos_variablename', 'datavalue', 'datavalue_unit', 'detectionlimit_value',
@@ -148,6 +151,8 @@ final_check<- convert[, c('SITE_ID','NAMES','LAT_DD','LON_DD','STATE','CNTYNAME'
                                     'source_labmethoddescription', 'source_labmethodid', 'source_labmethodname', 'source_parameter',
                                     'source_sampledepth', 'source_sampleposition', 'source_samplesiteid', 'source_sampletype',
                                     'source_unit','source_value',  'source_methodqualifier')]
+
+
 write.csv(final_check,"Final_NLA_data.csv")
 
 
