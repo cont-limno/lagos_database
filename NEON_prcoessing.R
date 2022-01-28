@@ -166,11 +166,15 @@ unique(merge_data$source_parameter)
 merge_data$lagos_variableid<-merge_data$variableid_lagos
 merge_data$datavalue_unit<-merge_data$unitsabbreviation
 
+merge_data$source_parameter<-as.character(merge_data$source_parameter)
+merge_data$source_unit<-as.character(merge_data$source_unit)
+merge_data$datavalue_unit<-as.character(merge_data$datavalue_unit)
+
 
 convert<-read.csv("./neon_conversion.csv")
 
 
-merge_data2<-merge(merge_data,convert,by=c("source_parameter","source_unit", "datavalue_unit"))
+merge_data2<-merge(merge_data,convert,by=c("source_parameter","source_unit","datavalue_unit"),all.x=T)
 merge_data2$datavalue<-c(merge_data2$source_value*merge_data2$datavalue_conversion)
 merge_data2$source_methodqualifier<-ifelse(merge_data2$lagos_variablename =="Chlorophyll a",
                                        "corrected", NA)
