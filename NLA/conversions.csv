@@ -1,0 +1,79 @@
+source_unit,lagos_variablename,datavalue_unit,Conversion_factor
+UEQ/L,Alkalinity,ueqL,1
+ueq/L,Alkalinity,ueqL,1
+,Alkalinity,ueqL,1
+mg/L,"Aluminum, dissolved",ugL,1000
+,"Aluminum, dissolved",ugL,1000
+MG/L,"Aluminum, dissolved",ugL,1000
+,"Atrazine, dissolved",ugL,1
+PPB,"Atrazine, dissolved",ugL,1
+MG/L,"Calcium, dissolved",mgL,1
+mg/L,"Calcium, dissolved",mgL,1
+,"Calcium, dissolved",mgL,1
+mg/L,"Carbon, dissolved organic",mgL,1
+MG/L,"Carbon, dissolved organic",mgL,1
+,"Carbon, dissolved organic",mgL,1
+,"Carbon, total organic",mgL,1
+mg/L,"Carbon, total organic",mgL,1
+mg/L,"Chloride, dissolved",mgL,1
+MG/L,"Chloride, dissolved",mgL,1
+,"Chloride, dissolved",mgL,1
+ug/L,Chlorophyll a,ugL,1
+UG/L,Chlorophyll a,ugL,1
+,Chlorophyll a,ugL,1
+APHA Pt-Co,"Color, true",PCU,1
+APHA PT-CO,"Color, true",PCU,1
+,"Color, true",PCU,1
+uS/cm,Conductivity,Umho_cm,1
+US/CM AT 25 C,Conductivity,Umho_cm,1
+uS/cm @ 25C,Conductivity,Umho_cm,1
+US/CM,Conductivity,Umho_cm,1
+,Conductivity,Umho_cm,1
+mg/L,"Magnesium, dissolved",mgL,1
+MG/L,"Magnesium, dissolved",mgL,1
+,"Magnesium, dissolved",mgL,1
+,Microcystin,ugL,1
+UG/L,Microcystin,ugL,1
+ppb,Microcystin,ugL,1
+mg N/L,"Nitrogen, NH4",ugL,1000
+MG N/L,"Nitrogen, NH4",ugL,1000
+,"Nitrogen, NH4",ugL,1000
+mg N/L,"Nitrogen, nitrite (NO2)",ugL,1000
+MG N/L,"Nitrogen, nitrite (NO2)",ugL,1000
+,"Nitrogen, nitrite (NO2)",ugL,1000
+MG N/L,"Nitrogen, nitrite (NO2) + nitrate (NO3)",ugL,1000
+mg N/L,"Nitrogen, nitrite (NO2) + nitrate (NO3)",ugL,1000
+,"Nitrogen, nitrite (NO2) + nitrate (NO3)",ugL,1000
+mg/L,"Nitrogen, nitrite (NO2) + nitrate (NO3)",ugL,1000
+MG/L,"Nitrogen, total",ugL,1000
+mg/L,"Nitrogen, total",ugL,1000
+MG N/L,"Nitrogen, total",ugL,1000
+MG/L,"Nitrogen, total Kjeldahl",ugL,1000
+,"Nitrogen, total Kjeldahl",ugL,1000
+mgL,"Oxygen, dissolved",mgL,1
+mg/L,"Oxygen, dissolved",mgL,1
+,"pH, field or closed",pH,1
+STD. UNITS,"pH, field or closed",pH,1
+Std. Units,"pH, field or closed",pH,1
+UG/L,"Phosphorus, total",ugL,1
+ug/L,"Phosphorus, total",ugL,1
+,"Phosphorus, total",ugL,1
+mg/L,Potassium,mgL,1
+MG/L,Potassium,mgL,1
+,Potassium,mgL,1
+m,Secchi,m,1
+ug/L,Secchi,m,1
+mg/L,"Silica, dissolved",mgL,1
+MG/L,"Silica, dissolved",mgL,1
+,"Silica, dissolved",mgL,1
+MG/L,Sodium,mgL,1
+mg/L,Sodium,mgL,1
+,Sodium,mgL,1
+,"Solids, total suspended",mgL,1
+mg/L,"Solids, total suspended",mgL,1
+mg/L,"Sulfate, dissolved",mgL,1
+MG/L,"Sulfate, dissolved",mgL,1
+,"Sulfate, dissolved",mgL,1
+C,Temperature,degC,1
+NTU,Turbidity,NTU,1
+,Turbidity,NTU,1

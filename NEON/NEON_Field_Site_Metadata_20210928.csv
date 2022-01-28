@@ -1,0 +1,7 @@
+﻿field_domain_id,field_site_id,field_site_name,field_site_type,field_site_subtype
+D03,BARC,Lake Barco NEON,Core Aquatic,Lake
+D05,CRAM,Crampton Lake NEON,Core Aquatic,Lake
+D05,LIRO,Little Rock Lake NEON,Gradient Aquatic,Lake
+D09,PRLA,Prairie Lake NEON,Gradient Aquatic,Lake
+D03,SUGG,Lake Suggs NEON,Core Aquatic,Lake
+D18,TOOK,Toolik Lake NEON,Gradient Aquatic,Lake
