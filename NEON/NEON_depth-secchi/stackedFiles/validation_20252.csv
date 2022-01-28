@@ -1,0 +1,27 @@
+table,fieldName,description,dataType,units,parserToCreate,entryValidationRulesParser,entryValidationRulesForm
+dep_secchi,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+dep_secchi,stationID,"Identifier for station where sample was collected",string,NA,,"[REQUIRE][NAMED_LOCATION_TYPE('AOS buoy named location type')]","[REQUIRE][FROM_AOS_SPATIAL(AOS buoy named location type)]"
+dep_secchi,additionalCoordUncertainty,"Additional uncertainty to be added to the coordinate uncertainty at all sites",real,meter,,,"[DEFAULT_TO (10)]"
+dep_secchi,altLocation,"Alternate Sampling Location description",string,NA,,"[ASCII]",
+dep_secchi,altLatitude,"Alternate Sampling Location coordinate - latitude",real,decimalDegree,,"[GREATER_THAN_OR_EQUAL_TO (15)][LESS_THAN_OR_EQUAL_TO (72)]","[GREATER_THAN_OR_EQUAL_TO (15)][LESS_THAN_OR_EQUAL_TO (72)]"
+dep_secchi,altLongitude,"Alternate Sampling Location coordinate - longitude",real,decimalDegree,,"[GREATER_THAN_OR_EQUAL_TO (180-)][LESS_THAN_OR_EQUAL_TO (60-)]","[GREATER_THAN_OR_EQUAL_TO (180-)][LESS_THAN_OR_EQUAL_TO (60-)]"
+dep_secchi,altCoordinateUncertainty,"The horizontal distance (in meters) from the given altLatitude and altLongitude describing the smallest circle containing the whole of the Location. Zero is not a valid value for this term",real,meter,,"[GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (500)]","[GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (500)]"
+dep_secchi,altGeodeticDatum,"Model used to measure horizontal position on the earth for alternate location coordinate",string,NA,,"[LOV]","[LOV]"
+dep_secchi,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)][date]","[REQUIRE]","[REQUIRE][HIDDEN][DEFAULT_TO (date)]"
+dep_secchi,date,"Date or date and time of measurement, observation, or collection event",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]","[REQUIRE]","[REQUIRE][DATE_FORMAT(YYYY-MM-DDTHH:MM)][SUGGESTED_ENTRY (systemDateTime)]"
+dep_secchi,eventID,"An identifier for the set of information associated with the event, which includes information about the place and time of the event",string,NA,,"[MATCH_REGULAR_EXPRESSION('[A-Z]{4}\\.(ss|in|ot|re|c[0-3])\\.20[0-9]{2}(0[1-9]|1[012])(0[1-9]|1[0-9]|2[0-9]|3[01])')]","[SITE & '.' & stationID & '.' & YYYYMMDD]"
+dep_secchi,samplingProtocolVersion,"The NEON document number and version where detailed information regarding the sampling method used is available; format NEON.DOC.######vX",string,NA,,"[LOV]","[SUGGESTED_ENTRY (NEON.DOC.002792vA)][LOV]"
+dep_secchi,samplingImpractical,"Samples and/or measurements were not collected due to the indicated circumstance",string,NA,,"[LOV]","[LOV]"
+dep_secchi,secchi1Depth,"First secchi disk depth at sampling location",real,meter,,"[GREATER_THAN (0)][LESS_THAN_OR_EQUAL_TO (maxDepth)]","[GREATER_THAN (0)][LESS_THAN_OR_EQUAL_TO (maxDepth)]"
+dep_secchi,secchi2Depth,"Second secchi disk depth at sampling location",real,meter,,"[GREATER_THAN (0)][LESS_THAN_OR_EQUAL_TO (maxDepth)]","[GREATER_THAN (0)][LESS_THAN_OR_EQUAL_TO (maxDepth)]"
+dep_secchi,clearToBottom,"Designation for when the secchi disk can be seen all the way to the bottom",string,NA,,"[LOV]","[LOV]"
+dep_secchi,maxDepth,"Maximum depth",real,meter,,"[IF IS_BLANK(samplingImpractical), REQUIRE][GREATER_THAN (0)][LESS_THAN_OR_EQUAL_TO (100)]","[IF IS_BLANK(samplingImpractical), REQUIRE][GREATER_THAN (0)][LESS_THAN_OR_EQUAL_TO (100)]"
+dep_secchi,icePresent,"Indication of the presence of ice",string,NA,,"[LOV]","[LOV]"
+dep_secchi,secchiMeanDepth,"Mean secchi depth at sampling location",real,meter,,,
+dep_secchi,euphoticDepth,"Depth of euphotic zone, 2.5 x secchiMeanDepth",real,meter,,,
+dep_secchi,remarks,"Technician notes; free text comments accompanying the record",string,NA,,"[ASCII]","[ASCII]"
+dep_secchi,fulcrumVersion,"Version of the Fulcrum application used during data entry",string,NA,,"[ASCII]",
+dep_secchi,platformInfo,"Operating System and browser information (where applicable) of computer used during data entry",string,NA,,"[ASCII]",
+dep_secchi,recordedBy,"An identifier for the technician who recorded the data",string,NA,,"[ASCII]","[FROM_PERSONNEL][SUGGESTED_ENTRY (previousValue)]"
+dep_secchi,measuredBy,"An identifier for the technician who measured or collected the data",string,NA,,"[ASCII]","[REQUIRE][FROM_PERSONNEL][SUGGESTED_ENTRY (previousValue)]"
+dep_secchi,dataQF,"Data quality flag",string,NA,,"[ASCII]",

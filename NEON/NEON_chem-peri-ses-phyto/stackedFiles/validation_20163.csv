@@ -1,0 +1,413 @@
+table,fieldName,description,dataType,units,parserToCreate,entryValidationRulesParser,entryValidationRulesForm
+alg_fieldData,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+alg_fieldData,locationID,"Identifier for location where sample was collected",string,NA,,"[NAMED_LOCATION_TYPE('AOS S2 named location type' OR 'AOS littoral named location type' OR 'AOS buoy named location type' OR 'AOS reach named location type' OR 'AOS riparian named location type')]","[REQUIRE][FROM_AOS_SPATIAL(IF(siteType='lake'),  AOS outlet named location type OR AOS inlet named location type OR AOS buoy named location type OR AOS riparian named location type)][FROM_AOS_SPATIAL(IF(siteType='stream'),  AOS S2 named location type OR AOS reach named location type)][FROM_AOS_SPATIAL(IF(siteType='river'),  AOS buoy named location type OR AOS riparian named location type OR AOS reach named location type)]"
+alg_fieldData,aquaticSiteType,"Type of aquatic site, includes lake, river or stream",string,NA,,"[LOV]","[REQUIRE][FROM_AOS_SITE_TYPE]"
+alg_fieldData,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[collectDate]","[REQUIRE]","[REQUIRE][HIDDEN][DEFAULT_TO (collectDate)]"
+alg_fieldData,collectDate,"Date of the collection event",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]","[REQUIRE]","[REQUIRE][DATE_FORMAT(YYYY-MM-DDTHH:MM)][SUGGESTED_ENTRY (previousValue)][LESS_THAN_OR_EQUAL_TO (NOW + 24hr)]"
+alg_fieldData,eventID,"An identifier for the set of information associated with the event, which includes information about the place and time of the event",string,NA,,"[ASCII]","[SITE & '.' & startDate(YYYYMMDD)]"
+alg_fieldData,fulcrumVersion,"Version of the Fulcrum application used during data entry",string,NA,,"[ASCII]",
+alg_fieldData,platformInfo,"Operating System and browser information (where applicable) of computer used during data entry",string,NA,,"[ASCII]",
+alg_fieldData,parentSampleID,"Parent sampleID of sample being processed",string,NA,,"[DOES_NOT_EXIST][ASCII][IF(sampleCollected = 'N'), REQUIRE_NULL][IF(sampleCollected = 'yes'), REQUIRE]","[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL][IF(IS_BLANK(samplingImpractical)), REQUIRE][SITE & '.' & startDate(YYYYMMDD) & '.' & algalSampleType & '.' & sampleNumber]"
+alg_fieldData,parentSampleFate,"Fate of a parent sample",string,NA,,"[IF (IS_NOT_BLANK(parentSampleID)), REQUIRE][IF (IS_BLANK(parentSampleID)), REQUIRE_NULL][ASCII]","[HIDDEN][IF(IS_NOT_BLANK(parentSampleID), DEFAULT_TO('active')]"
+alg_fieldData,parentSampleCode,"Barcode of a parent sample",string,NA,,"[ASCII]","[HIDDEN]"
+alg_fieldData,samplingProtocolVersion,"The NEON document number and version where detailed information regarding the sampling method used is available; format NEON.DOC.######vX",string,NA,,"[LOV]","[LOV][REQUIRE][SUGGESTED_VALUE(previousValue)]"
+alg_fieldData,samplingImpractical,"Samples and/or measurements were not collected due to the indicated circumstance",string,NA,,"[LOV]","[LOV][SUGGESTED_VALUE(NULL)]"
+alg_fieldData,biophysicalCriteria,"An indicator of whether sampling coincided with the intended biophysical conditions",string,NA,,"[LOV]","[LOV]"
+alg_fieldData,affectedByWind,"Indication of whether the wind speed was higher than the wind speed recommended in the sampling protocol during sample collection",string,NA,,"[IF(algalSampleType = 'phytoplankton'), REQUIRE][IF(algalSampleType != 'phytoplankton'), REQUIRE_NULL][LOV]","[IF(algalSampleType = 'phytoplankton', REQUIRE][IF(algalSampleType != 'phytoplankton', REQUIRE_NULL][LOV]"
+alg_fieldData,habitatType,"Habitat type sampled",string,NA,,"[IF(collectDate > 2020-01-01T00:00), REQUIRE][LOV]","[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL][IF(IS_BLANK(samplingImpractical)), REQUIRE][LOV]"
+alg_fieldData,sampleCollected,"Indicator of whether a sample was collected",string,NA,,"[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL][IF(IS_BLANK(samplingImpractical)), REQUIRE][LOV]","[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL][IF(IS_BLANK(samplingImpractical)), REQUIRE][LOV]"
+alg_fieldData,algalSampleType,"Type of algal sample collected",string,NA,,"[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL][IF(IS_BLANK(samplingImpractical)), REQUIRE][LOV]","[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL][IF(IS_BLANK(samplingImpractical)), REQUIRE][LOV]"
+alg_fieldData,samplerType,"Type of sampler used to collect the sample",string,NA,"[IF (algalSampleType = 'epilithon'), 'scrub'][IF (algalSampleType = 'epixylon'), 'scrub'][IF (algalSampleType = 'epipsammon'), 'grab'][IF (algalSampleType = 'epipelon'), 'grab'][IF (algalSampleType = 'epiphyton'), 'grab'][IF (algalSampleType = 'epixylon_largeSubstrate'), 'scrub'][IF (algalSampleType = 'epilithon_largeSubstrate'), 'scrub'][IF (algalSampleType = 'seston'), 'grab']","[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL][IF(IS_BLANK(samplingImpractical)), REQUIRE][LOV]","[IF(algalSampleType='phytoplankton'), REQUIRE][LOV]"
+alg_fieldData,benthicArea,"Area of the benthos sampled",real,squareMeter,"[IF (algalSampleType = 'epilithon'), 0.002406][IF (algalSampleType = 'epixylon'), 0.002406][IF (algalSampleType = 'epipsammon'), 0.005938][IF (algalSampleType = 'epipelon'), 0.005938][IF (algalSampleType = 'epiphyton'), 0.01][IF (algalSampleType = 'epixylon_largeSubstrate'), 0.006080][IF (algalSampleType = 'epilithon_largeSubstrate'), 0.006080]","[IF (IS_NOT_BLANK(algalSampleType) & algalSampleType != 'seston' & algalSampleType != 'phytoplankton'), REQUIRE]",
+alg_fieldData,sampleNumber,"Number of sample collected",unsigned integer,NA,,"[IF(collectDate > 2020-01-01T00:00), REQUIRE][GREATER_THAN_OR_EQUAL_TO (1)][LESS_THAN_OR_EQUAL_TO(12)]","[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL][IF(IS_BLANK(samplingImpractical)), REQUIRE][GREATER_THAN_OR_EQUAL_TO (1)][IF(siteID == 'PRLA'), LESS_THAN_OR_EQUAL_TO(12)][IF(siteID != 'PRLA'), LESS_THAN_OR_EQUAL_TO(10)]"
+alg_fieldData,phytoDepth1,"First phytoplankton sample depth at sampling location",real,meter,,"[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL]","[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL][IF(aquaticSiteType='lake' OR 'river' AND namedLocation = AOS outlet named location type OR AOS inlet named location type OR AOS buoy named location type OR AOS reach named location type), REQUIRE][GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO(20)]"
+alg_fieldData,phytoDepth2,"Second phytoplankton sample depth at sampling location",real,meter,,"[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL]","[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL][IF(aquaticSiteType='stream'), REQUIRE_NULL][IF(aquaticSiteType='lake' OR 'river' AND namedLocation = AOS outlet named location type OR AOS inlet named location type OR AOS buoy named location type OR AOS reach named location type), REQUIRE][GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO(20)]"
+alg_fieldData,phytoDepth3,"Third phytoplankton sample depth at sampling location",real,meter,,"[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL]","[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL][IF(aquaticSiteType='stream'), REQUIRE_NULL][IF(aquaticSiteType='lake' OR 'river' AND namedLocation = AOS outlet named location type OR AOS inlet named location type OR AOS buoy named location type OR AOS reach named location type), WARN][GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO(20)]"
+alg_fieldData,substratumSizeClass,"Size class of the substratum sampled",string,NA,,"[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL][LOV]","[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL][IF(aquaticSiteType!='stream'),REQUIRE_NULL][IF(aquaticSiteType='stream'),WARN][LOV]"
+alg_fieldData,fieldSampleVolume,"Sample volume collected in the field",real,milliliter,,"[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL][IF(sampleCollected = 'Y' & algalSampleType != 'epiphyton'), REQUIRE][GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO(10000)]","[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE_NULL][IF(IS_BLANK(samplingImpractical)), REQUIRE][GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO(10000)]"
+alg_fieldData,remarks,"Technician notes; free text comments accompanying the record",string,NA,,"[ASCII][IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE]","[IF(IS_NOT_BLANK(samplingImpractical)), REQUIRE]"
+alg_fieldData,recordedBy,"An identifier for the technician who recorded the data",string,NA,,"[ASCII]","[FROM_PERSONNEL][SUGGESTED_ENTRY (previousValue)]"
+alg_fieldData,collectedBy,"An identifier for the technician who collected the sample or specimen",string,NA,,"[ASCII]","[REQUIRE][FROM_PERSONNEL][SUGGESTED_ENTRY (previousValue)]"
+alg_fieldData,dataQF,"Data quality flag",string,NA,,"[ASCII]",
+alg_fieldData,fulcrumPrimaryKey,"Primary identifier for the record in Fulcrum at the same granularity for which the record occurs in the NEON database (i.e., one fulcrumPrimaryKey should map to a single record in the NEON database)",string,NA,,"[ASCII]",
+wpa_fieldSuperParent,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+wpa_fieldSuperParent,stationID,"Identifier for station where sample was collected",string,NA,,"[REQUIRE][NAMED_LOCATION_TYPE('AOS S2 named location type' OR 'AOS littoral named location type' OR 'AOS buoy named location type' OR 'AOS reach named location type' OR 'AOS groundwater well named location type')]","[REQUIRE][FROM_AOS_SPATIAL(IF(siteType='lake'),  AOS outlet named location type OR AOS inlet named location type OR AOS buoy named location type OR AOS groundwater well named location type)][FROM_AOS_SPATIAL(IF(siteType='stream'),  AOS S2 named location type OR AOS reach named location type OR AOS groundwater well named location type)][FROM_AOS_SPATIAL(IF(siteType='river'),  AOS buoy named location type OR AOS reach named location type OR AOS groundwater well named location type)]"
+wpa_fieldSuperParent,additionalCoordUncertainty,"Additional uncertainty to be added to the coordinate uncertainty at all sites",real,meter,,,"[IF (IS_BLANK(altLocation)), DEFAULT_TO (10)]"
+wpa_fieldSuperParent,altLocation,"Alternate Sampling Location description",string,NA,,"[ASCII]","[SURFACE ONLY]"
+wpa_fieldSuperParent,altLatitude,"Alternate Sampling Location coordinate - latitude",real,decimalDegree,,"[GREATER_THAN_OR_EQUAL_TO (15)][LESS_THAN_OR_EQUAL_TO (72)]","[SURFACE ONLY][GREATER_THAN_OR_EQUAL_TO (15)][LESS_THAN_OR_EQUAL_TO (72)]"
+wpa_fieldSuperParent,altLongitude,"Alternate Sampling Location coordinate - longitude",real,decimalDegree,,"[GREATER_THAN_OR_EQUAL_TO (180-)][LESS_THAN_OR_EQUAL_TO (60-)]","[SURFACE ONLY][GREATER_THAN_OR_EQUAL_TO (180-)][LESS_THAN_OR_EQUAL_TO (60-)]"
+wpa_fieldSuperParent,altCoordinateUncertainty,"The horizontal distance (in meters) from the given altLatitude and altLongitude describing the smallest circle containing the whole of the Location. Zero is not a valid value for this term",real,meter,,"[GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (500)]","[SURFACE ONLY][GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (500)]"
+wpa_fieldSuperParent,altGeodeticDatum,"Model used to measure horizontal position on the earth for alternate location coordinate",string,NA,,"[LOV]","[SURFACE ONLY][LOV]"
+wpa_fieldSuperParent,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)][collectDate]","[REQUIRE]","[REQUIRE][HIDDEN][DEFAULT_TO (collectDate)]"
+wpa_fieldSuperParent,collectDate,"Date of the collection event",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]","[REQUIRE]","[REQUIRE][DATE_FORMAT(YYYY-MM-DDTHH:MM)][SUGGESTED_ENTRY (systemDateTime)]"
+wpa_fieldSuperParent,aquaticSiteType,"Type of aquatic site, includes lake, river or stream",string,NA,,"[LOV]","[REQUIRE][FROM_AOS_SITE_TYPE]"
+wpa_fieldSuperParent,samplingImpractical,"Samples and/or measurements were not collected due to the indicated circumstance",string,NA,,"[LOV]","[LOV]"
+wpa_fieldSuperParent,waterChemSamplesCollected,"Indicator of whether any water chemistry samples were collected",string,NA,,"[LOV]","[LOV]"
+wpa_fieldSuperParent,isotopeSamplesCollected,"Indicator of whether any stable isotope samples were collected",string,NA,,"[LOV]","[LOV]"
+wpa_fieldSuperParent,sdgSampleCollected,"Indicator of whether dissolved gas samples were collected. These are expected for all surface water samples, but not groundwater samples",string,NA,,"[LOV]","[LOV]"
+wpa_fieldSuperParent,microbeSamplesCollected,"Indicator of whether any surface water microbe cell count samples were collected. These are expected for some surface water samples, but not groundwater samples",string,NA,,"[LOV]","[LOV]"
+wpa_fieldSuperParent,adequateSampleVol,"An indication of whether or not there was adequate sample volume available for collecting all samples. When no: samples are prioritized in this order: isotopes; filtered analytes; alkalinity titrations; unfiltered analytes; particulate analysis",string,NA,,"[LOV]","[LOV]"
+wpa_fieldSuperParent,parentSampleID,"Parent sampleID of sample being processed",string,NA,,"[DOES_NOT_EXIST][IF (IS_BLANK(samplingImpractical)), REQUIRE][MATCH_REGULAR_EXPRESSION('[A-Z]{4}.((?i)ss|in|ot|re|c[0-3]|w[1-8]).20[0-9]{2}(0[1-9]|1[012])(0[1-9]|1[0-9]|2[0-9]|3[01])')]","[IF (IS_BLANK(samplingImpractical)), REQUIRE][SITE & . & namedLocation(xx) & . & startDate(YYYYMMDD)]"
+wpa_fieldSuperParent,parentSampleFate,"Fate of a parent sample",string,NA,,"[ASCII]","[HIDDEN][DEFAULT_TO('active')]"
+wpa_fieldSuperParent,parentSampleCode,"Barcode of a parent sample",string,NA,,"[ASCII]","[HIDDEN]"
+wpa_fieldSuperParent,sampleClass,"Class of a sample",string,NA,,"[ASCII]","create sampleClass based on which protocols are sampled"
+wpa_fieldSuperParent,eventID,"An identifier for the set of information associated with the event, which includes information about the place and time of the event",string,NA,,"[ASCII]","[SITE & . & YYYYMMDD]"
+wpa_fieldSuperParent,samplerType,"Type of sampler used to collect the sample",string,NA,,"[LOV]","[LOV]"
+wpa_fieldSuperParent,swcSamplingProtocolVersion,"The NEON document number and version of the water chemistry protocol where detailed information regarding the sampling method used is available; format NEON.DOC.######vX",string,NA,,"[LOV]","[IF (sampleClass contains swc), REQUIRE][LOV][SUGGESTED_ENTRY(previousValue)]"
+wpa_fieldSuperParent,asiSamplingProtocolVersion,"The NEON document number and version of the aquatic stable isotopes protocol where detailed information regarding the sampling method used is available; format NEON.DOC.######vX",string,NA,,"[LOV]","[IF (sampleClass contains asi), REQUIRE][LOV][SUGGESTED_ENTRY(previousValue)]"
+wpa_fieldSuperParent,amcSamplingProtocolVersion,"The NEON document number and version of the aquatic microbes protocol where detailed information regarding the sampling method used is available; format NEON.DOC.######vX",string,NA,,"[LOV]","[SURFACE ONLY][IF (sampleClass contains amc), REQUIRE][LOV][SUGGESTED_VALUE(previousValue)]"
+wpa_fieldSuperParent,sdgSamplingProtocolVersion,"The NEON document number and version of the dissolved gas protocol where detailed information regarding the sampling method used is available; format NEON.DOC.######vX",string,NA,,"[LOV]","[SURFACE ONLY][IF (sampleClass contains sdg), REQUIRE][LOV][SUGGESTED_ENTRY(previousValue)]"
+wpa_fieldSuperParent,lowerSegmentDepth,"Depth at bottom of stratified lake segment",real,meter,,"[GREATER_THAN_OR_EQUAL_TO (upperSegmentDepth)]","[SURFACE ONLY][GREATER_THAN_OR_EQUAL_TO (upperSegmentDepth)][IF (aquaticSiteType != 'stream'), WARN]"
+wpa_fieldSuperParent,upperSegmentDepth,"Depth at top of stratified lake segment",real,meter,,,"[SURFACE ONLY][IF (aquaticSiteType != 'stream'), WARN]"
+wpa_fieldSuperParent,maxDepth,"Maximum depth",real,meter,,"[LESS_THAN (40)]","[SURFACE ONLY][LESS_THAN (40)][IF (siteType != 'stream'), WARN]"
+wpa_fieldSuperParent,lakeSampleDepth1,"Sample depth of a single lake sample collected below the surface; the sample depth of the upper sample for a composite lake sample collected below the surface",real,meter,,"[LESS_THAN (40)]","[SURFACE ONLY][IF (stationID = c1 or c2), WARN][LESS_THAN (40)]"
+wpa_fieldSuperParent,lakeSampleDepth2,"Sample depth of the lower sample for a composite lake sample collected below the surface",real,meter,,"[GREATER_THAN_OR_EQUAL_TO(lakeSampleDepth1)][LESS_THAN (40)]","[SURFACE ONLY][IF (stationID = c1 or c2), WARN][GREATER_THAN_OR_EQUAL_TO(lakeSampleDepth2)][LESS_THAN (40)]"
+wpa_fieldSuperParent,measurementDepth,"Depth at which a measurement was taken",real,meter,,"[LESS_THAN_OR_EQUAL_TO (40)]","[SURFACE ONLY][LESS_THAN_OR_EQUAL_TO (40)]"
+wpa_fieldSuperParent,probeIDUnavailable,"Identifier for handheld sensor(s) that are unavailable at time of sampling",string,NA,,"[ASCII]",
+wpa_fieldSuperParent,dissolvedOxygen,"Dissolved Oxygen Concentration",real,milligramsPerLiter,,"[LESS_THAN_OR_EQUAL_TO (50)]","[LESS_THAN_OR_EQUAL_TO (50)]"
+wpa_fieldSuperParent,dissolvedOxygenSaturation,"Dissolved Oxygen Percent Saturation",real,percent,,"[LESS_THAN_OR_EQUAL_TO (500)]","[LESS_THAN_OR_EQUAL_TO (500)]"
+wpa_fieldSuperParent,specificConductance,"Conductivity auto-corrected to 25 degrees C",real,microsiemensPerCentimeter,,"[LESS_THAN_OR_EQUAL_TO (50000)]","[LESS_THAN_OR_EQUAL_TO (9999)]"
+wpa_fieldSuperParent,waterTemp,"Temperature of water (C)",real,celsius,,"[GREATER_THAN_OR_EQUAL_TO (10-)][LESS_THAN_OR_EQUAL_TO (40)]","[GREATER_THAN_OR_EQUAL_TO (-10)][LESS_THAN_OR_EQUAL_TO (40)]"
+wpa_fieldSuperParent,pH,"Measurement of pH in sample",real,pH,,"[GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (14)]","[GROUNDWATER ONLY][GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (14)][IF (probeUnavailable !='pH'), REQUIRE]"
+wpa_fieldSuperParent,ptBarometricPressure,"Point (pt)-based barometric pressure, measured by a handheld device during sampling activity",real,kilopascal,,"[GREATER_THAN_OR_EQUAL_TO (35)][LESS_THAN_OR_EQUAL_TO (125)]","[GREATER_THAN_OR_EQUAL_TO (35)][LESS_THAN_OR_EQUAL_TO (125)][IF (probeUnavailable !='Barometric Pressure'), REQUIRE]"
+wpa_fieldSuperParent,waterClarityDescrip,"Qualitative description of water clarity",string,NA,,"[LOV]","[GROUNDWATER ONLY][LOV]"
+wpa_fieldSuperParent,waterColorDescrip,"Qualitative description of water color and clarity",string,NA,,"[LOV]","[GROUNDWATER ONLY][LOV]"
+wpa_fieldSuperParent,sampleExtractionMethod,"Method used to extract the sample",string,NA,,"[LOV]","[GROUNDWATER ONLY]"
+wpa_fieldSuperParent,wellVolumePurged,"Total volume removed from the well, prior to sampling",real,liter,,"[LESS_THAN (25)]","[GROUNDWATER ONLY][LESS_THAN (25)]"
+wpa_fieldSuperParent,totalWellDepth,"Total well depth; used to calculate water column height",real,meter,,"[LESS_THAN_OR_EQUAL_TO (25)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (25)]"
+wpa_fieldSuperParent,wellDepthChanged,"Indicates whether or not the total well depth has changed by > 10 cm",string,NA,,"[LOV]","[GROUNDWATER ONLY][LOV]"
+wpa_fieldSuperParent,measTotalWellDepth,"Total well depth measured by field technicians when well depth has changed by > 10 cm",real,meter,,"[LESS_THAN_OR_EQUAL_TO (25)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (25)]"
+wpa_fieldSuperParent,wellRedeveloped,"Indication of whether the well was redeveloped just prior to sampling",string,NA,,"[LOV]","[GROUNDWATER ONLY][LOV]"
+wpa_fieldSuperParent,wellRedevelopedDate,"Date of well redevelopment",dateTime,NA,,"[IF (IS_NOT_BLANK(wellRedeveloped) & wellRedeveloped = 'Y'), REQUIRE]","[GROUNDWATER ONLY][IF (wellRedeveloped = Y), REQUIRE]"
+wpa_fieldSuperParent,wellWaterDepth,"Depth of water in well from top of well casing",real,meter,,"[LESS_THAN_OR_EQUAL_TO (25)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (25)]"
+wpa_fieldSuperParent,waterColumnHeight,"Height of the water column in the well; calculated as: total well depth - depth to water table",real,meter,"[totalWellDepth - wellWaterDepth]","[GREATER_THAN_OR_EQUAL_TO(0)]","[GROUNDWATER ONLY][totalWellDepth - wellWaterDepth]"
+wpa_fieldSuperParent,volume3Wells,"Three times the volume of the well",real,liter,,"[GREATER_THAN_OR_EQUAL_TO(0)]","[GROUNDWATER ONLY]"
+wpa_fieldSuperParent,pumpStartTime,"Time the pump was first started at the well",dateTime,NA,,"[LESS_THAN(collectDate)]","[GROUNDWATER ONLY][LESS_THAN(collectDate)]"
+wpa_fieldSuperParent,sampleDepth,"Depth sample was collected",real,meter,,"[LESS_THAN_OR_EQUAL_TO (25)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (25)]"
+wpa_fieldSuperParent,purgeAverageDischargeRate,"Average discharge rate during well stabilization purge",real,millilitersPerMinute,,"[LESS_THAN_OR_EQUAL_TO (500)]","[GROUNDWATER ONLY][LESS_THAN (500)]"
+wpa_fieldSuperParent,purgeTime,"Total time well was purged, prior to sampling",real,minute,,"[GREATER_THAN_OR_EQUAL_TO(0)]","[GROUNDWATER ONLY][GREATER_THAN_OR_EQUAL_TO (0)]"
+wpa_fieldSuperParent,gwWellStabilized,"Indicates whether specific conductance and temperature have stabilized in the well",string,NA,,"[LOV]","[GROUNDWATER ONLY][LOV]"
+wpa_fieldSuperParent,purgeDryDateTime,"The well purge date-time for purge dry sampling method",dateTime,NA,,,"[GROUNDWATER ONLY]"
+wpa_fieldSuperParent,purgeDryPH,"Measurement of pH in sample at time of purge for purge dry method",real,pH,,"[GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (14)]","[GROUNDWATER ONLY][GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (14)]"
+wpa_fieldSuperParent,purgeDryWaterTemp,"Temperature of water at time of purge for purge dry method",real,celsius,,"[GREATER_THAN_OR_EQUAL_TO (10-)][LESS_THAN_OR_EQUAL_TO (40)]","[GROUNDWATER ONLY][GREATER_THAN_OR_EQUAL_TO (-10)][LESS_THAN_OR_EQUAL_TO (40)]"
+wpa_fieldSuperParent,purgeDrySpecificConductance,"Conductivity auto-corrected to 25 degrees celsius at time of purge for purge dry method",real,microsiemensPerCentimeter,,"[LESS_THAN_OR_EQUAL_TO (50000)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (9999)]"
+wpa_fieldSuperParent,purgeDryDissolvedOxygen,"Dissolved oxygen concentration at time of purge for purge dry method",real,milligramsPerLiter,,"[LESS_THAN_OR_EQUAL_TO (50)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (50)]"
+wpa_fieldSuperParent,purgeDryDissolvedOxygenSaturation,"Dissolved oxygen percent saturation at time of purge for purge dry method",real,percent,,"[LESS_THAN_OR_EQUAL_TO (500)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (500)]"
+wpa_fieldSuperParent,purgeDryWaterClarityDescrip,"Qualitative description of water clarity at time of purge for purge dry method",string,NA,,"[LOV]","[GROUNDWATER ONLY][LOV]"
+wpa_fieldSuperParent,purgeDryWaterColorDescrip,"Qualitative description of water color and clarity at time of purge for purge dry method",string,NA,,"[LOV]","[GROUNDWATER ONLY][LOV]"
+wpa_fieldSuperParent,pumpPlacementDate,"The pump placement date-time for low-yield sampling method",dateTime,NA,,,"[GROUNDWATER ONLY]"
+wpa_fieldSuperParent,pumpPlacementDepth,"Depth of pump placement for low-yield method",real,meter,,"[LESS_THAN_OR_EQUAL_TO (25)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (25)]"
+wpa_fieldSuperParent,screenedIntervalDepth,"Depth to the screened interval for low-yield method calculations",real,meter,,"[LESS_THAN_OR_EQUAL_TO (25)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (25)]"
+wpa_fieldSuperParent,maxAllowableDrawdown,"Maximum allowable drawdown for low-yield method sampling",real,meter,,"[LESS_THAN_OR_EQUAL_TO (25)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (25)]"
+wpa_fieldSuperParent,actualDrawdown,"Actual drawdown for low-yield method sampling",real,meter,,"[LESS_THAN_OR_EQUAL_TO (25)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (25)]"
+wpa_fieldSuperParent,MADExceeded,"Indicates whether the maximum allowable drawdown was exceeded prior to collection of filtered (FIL) and alkalinity (ALK) sample collection",string,NA,,"[LOV]","[GROUNDWATER ONLY][LOV]"
+wpa_fieldSuperParent,fulcrumVersion,"Version of the Fulcrum application used during data entry",string,NA,,"[ASCII]",
+wpa_fieldSuperParent,platformInfo,"Operating System and browser information (where applicable) of computer used during data entry",string,NA,,"[ASCII]",
+wpa_fieldSuperParent,aCollectedBy,"Primary NEON technician username who collected the data",string,NA,,"[ASCII]","[REQUIRE][FROM_PERSONNEL][SUGGESTED_ENTRY (previousValue)]"
+wpa_fieldSuperParent,bCollectedBy,"Secondary NEON technician username who collected the data",string,NA,,"[ASCII]","[FROM_PERSONNEL][SUGGESTED_ENTRY (previousValue)]"
+wpa_fieldSuperParent,remarks,"Technician notes; free text comments accompanying the record",string,NA,,"[ASCII]","[ASCII]"
+wpa_fieldSuperParent,fieldDataQF,"Data quality flag for field data",string,NA,,"[ASCII]",
+alg_domainLab,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+alg_domainLab,locationID,"Identifier for location where sample was collected",string,NA,"[DERIVE_FROM_SAMPLE_TREE('alg_fieldData_in.parentSampleID')]","[NAMED_LOCATION_TYPE('AOS S2 named location type' OR 'AOS littoral named location type' OR 'AOS buoy named location type' OR 'AOS reach named location type' OR 'AOS riparian named location type')]",
+alg_domainLab,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE('alg_fieldData_in.parentSampleID')]",,"[REQUIRE][HIDDEN][DEFAULT_TO (collectDate)]"
+alg_domainLab,collectDate,"Date of the collection event",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE('alg_fieldData_in.parentSampleID')]",,"[REQUIRE]"
+alg_domainLab,processedDate,"Date or date and time of processing event",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]","[REQUIRE]","[GREATER_THAN_OR_EQUAL_TO (collectDate)][LESS_THAN_OR_EQUAL_TO ([NOW + 24hr])][DATE_FORMAT(YYYY-MM-DDTHH:MM)][REQUIRE]"
+alg_domainLab,parentSampleID,"Parent sampleID of sample being processed",string,NA,,"[EXISTS][ASCII][REQUIRE]","[REQUIRE]"
+alg_domainLab,parentSampleFate,"Fate of a parent sample",string,NA,,"[REQUIRE][ASCII]","[HIDDEN][DEFAULT_TO('active')]"
+alg_domainLab,parentSampleCode,"Barcode of a parent sample",string,NA,,"[ASCII]","[HIDDEN]"
+alg_domainLab,fieldSampleID,"Unique identifier for a field sample",string,NA,,"[ASCII][REQUIRE]","[REQUIRE][SITE & '.' & startDate(YYYYMMDD) & '.' & algalSampleType & '.' & sampleNumber]"
+alg_domainLab,filterBlankRep1,"Identifier for blank filter replicate 1",string,NA,,"[IF(analysisType='AFDM'), ''][IF(analysisType='taxonomy'), ''][IF(analysisType='chl/pheo'), '']",
+alg_domainLab,filterBlankRep2,"Identifier for blank filter replicate 2",string,NA,,"[IF(analysisType='AFDM'), ''][IF(analysisType='taxonomy'), ''][IF(analysisType='chl/pheo'), '']",
+alg_domainLab,sampleID,"Identifier for sample",string,NA,,"[MIGHT_EXIST][ASCII][REQUIRE]","[REQUIRE][SITE & '.' & startDate(YYYYMMDD) & '.' & algalSampleType & '.' & sampleNumber & analysisType]"
+alg_domainLab,sampleFate,"Fate of a sample",string,NA,,"[REQUIRE][ASCII]","[HIDDEN][DEFAULT_TO('active')]"
+alg_domainLab,sampleCode,"Barcode of a sample",string,NA,,"[ASCII]","[HIDDEN]"
+alg_domainLab,sampleClass,"Class of a sample",string,NA,"[IF (analysisType = 'AFDM'), DEFAULT_TO ('alg_domainLab_in.sampleIDafdm')][IF (analysisType = 'taxonomy'), DEFAULT_TO ('alg_domainLab_in.sampleIDtaxonomy')][IF (analysisType != 'AFDM' & analysisType != 'taxonomy'), DEFAULT_TO ('alg_domainLab_in.sampleIDchem')]","[REQUIRE]",
+alg_domainLab,analysisType,"Type of analysis at external lab",string,NA,,"[LOV][REQUIRE]","[REQUIRE]"
+alg_domainLab,originalFieldSampleVolume,"Original sample volume collected in the field before adjustments",real,milliliter,"[DEFAULT_TO (0)]",,"COPY from field app fieldSampleVolume"
+alg_domainLab,alternateFieldSampleVolume,"Sample volume collected in the field, remeasured in the domain lab to account for any discrepancy or addition of sample due to porewater or other sampling factors",real,milliliter,"[DEFAULT_TO (0)]","[GREATER_THAN_OR_EQUAL_TO(0)][LESS_THAN_OR_EQUAL_TO (6000)]","[GREATER_THAN_OR_EQUAL_TO(0)][LESS_THAN_OR_EQUAL_TO (6000)][IF (alg_fieldData_in.algalSampleType = 'epiphyton'), REQUIRE]"
+alg_domainLab,fieldSampleVolume,"Sample volume collected in the field",real,milliliter,"[IF (alternateFieldSampleVolume > originalFieldSampleVolume), DEFAULT_TO (alternateFieldSampleVolume)][IF (alternateFieldSampleVolume <= originalFieldSampleVolume), DEFAULT_TO (originalFieldSampleVolume)]","[REQUIRE][GREATER_THAN_OR_EQUAL_TO(0)][LESS_THAN_OR_EQUAL_TO(10000)]",
+alg_domainLab,labSampleVolume,"Sample volume subsampled in the lab",real,milliliter,,"[IF(analysisType!='taxonomy'), REQUIRE_NULL][GREATER_THAN(20)][LESS_THAN_OR_EQUAL_TO (1000)]","[IF(analysisType!='taxonomy'), REQUIRE_NULL][GREATER_THAN(20)][LESS_THAN_OR_EQUAL_TO (1000)]"
+alg_domainLab,domainFilterVolume,"Volume of material passed through filter at domain lab",real,milliliter,,"[IF(analysisType='taxonomy'), REQUIRE_NULL][IF(analysisType!='taxonomy' & sampleCondition='OK'), REQUIRE][GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO (3000)]","[IF(analysisType='taxonomy'), REQUIRE_NULL][IF(analysisType!='taxonomy' & sampleCondition='OK'), REQUIRE][GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO (3000)]"
+alg_domainLab,filterNumber,"Number of filter",unsigned integer,NA,,"[IF(analysisType='taxonomy'), REQUIRE_NULL][IF(analysisType!='taxonomy' & sampleCondition='OK'), REQUIRE][GREATER_THAN_OR_EQUAL_TO(1)][LESS_THAN_OR_EQUAL_TO (2)]","[IF(analysisType='taxonomy'), REQUIRE_NULL][IF(analysisType!='taxonomy' & sampleCondition='OK'), REQUIRE][GREATER_THAN_OR_EQUAL_TO(1)][LESS_THAN_OR_EQUAL_TO (2)]"
+alg_domainLab,boatID,"Identifier for the weigh boat",string,NA,,"[ASCII]",
+alg_domainLab,plantMassOnly,"Indicator of whether mass data were only collected for plant material",string,NA,"[IF MATCH_REGULAR_EXPRESSION(sampleID, '(?i)EPIPHY') & (analysisType = 'AFDM'), DEFAULT_TO('N')]","[LOV]","[IF(analysisType='AFDM'), REQUIRE][DEFAULT_TO('N')]"
+alg_domainLab,boatMass,"Mass of the weigh boat",real,gram,,"[GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO (1000)]","[GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO (1000)]"
+alg_domainLab,dryMassBoatMass,"Oven-dried mass of the sample and weigh boat",real,gram,,"[IF(analysisType!='AFDM'), REQUIRE_NULL][IF(plantMassOnly='N'), REQUIRE][LESS_THAN_OR_EQUAL_TO (1000)][GREATER_THAN_OR_EQUAL_TO (boatMass)]","[IF(analysisType!='AFDM'), REQUIRE_NULL][IF(plantMassOnly='N'), REQUIRE][LESS_THAN_OR_EQUAL_TO (1000)][GREATER_THAN_OR_EQUAL_TO (boatMass)]"
+alg_domainLab,ashMassBoatMass,"Combusted mass of the sample and weigh boat",real,gram,,"[IF(analysisType!='AFDM'), REQUIRE_NULL][IF(plantMassOnly='N' & sampleCondition='OK'), REQUIRE][IF(IS_BLANK(ashMassDataQF)), LESS_THAN_OR_EQUAL_TO(dryMassBoatMass)][IF(IS_BLANK(ashMassDataQF)), GREATER_THAN_OR_EQUAL_TO (boatMass)]","[IF(analysisType!='AFDM'), REQUIRE_NULL][IF(plantMassOnly='N' & sampleCondition='OK'), REQUIRE][IF(IS_BLANK(ashMassDataQF), LESS_THAN_OR_EQUAL_TO (dryMassBoatMass)][IF(IS_BLANK(ashMassDataQF), GREATER_THAN_OR_EQUAL_TO (boatMass)]"
+alg_domainLab,adjAshFreeDryMass,"Combusted mass of the sample, multiplied to account for lab subsampling",real,gram,"[dryMassBoatMass - ashMassBoatMass]","[IF (IS_NOT_BLANK(dryMassBoatMass) & IS_NOT_BLANK(ashMassBoatMass)), REQUIRE][IF(IS_BLANK(ashMassDataQF)), GREATER_THAN_OR_EQUAL_TO(0)][IF(ashMassDataQF='belowDetection'), GREATER_THAN_OR_EQUAL_TO(0.0005-)][IF(ashMassDataQF='belowDetection'), LESS_THAN(0)][IF(ashMassDataQF='ashMassError'), LESS_THAN(0.0005-)]","[IF (IS_NOT_BLANK(dryMassBoatMass) & IS_NOT_BLANK(ashMassBoatMass)), REQUIRE][IF(IS_BLANK(ashMassDataQF)), GREATER_THAN_OR_EQUAL_TO(0)][IF(ashMassDataQF='belowDetection'), GREATER_THAN_OR_EQUAL_TO(-0.0005)][IF(ashMassDataQF='belowDetection'), LESS_THAN(0)][IF(ashMassDataQF='ashMassError'), LESS_THAN(-0.0005)]"
+alg_domainLab,plantDryMass,"Dry mass of plant(s) sampled",real,gram,,"[GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO (1000)]","[GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO (1000)]"
+alg_domainLab,plantSurfaceArea,"Estimated surface area of plant(s) sampled",real,squareCentimeter,,"[GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO (100000)]","[GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO (100000)]"
+alg_domainLab,plantBoatID,"Identifier for the weigh boat for the whole plant from which the epiphyton samples are scraped",string,NA,,"[ASCII]",
+alg_domainLab,plantBoatMass,"Mass of the weigh boat for the whole plant from which the epiphyton samples are scraped",real,gram,,"[GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO (1000)]","[GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO (1000)]"
+alg_domainLab,plantDryMassBoatMass,"Oven-dried mass of the sample and weigh boat for the whole plant from which the epiphyton samples are scraped",real,gram,,"[LESS_THAN_OR_EQUAL_TO (1000)][GREATER_THAN_OR_EQUAL_TO (plantBoatMass)]","[LESS_THAN_OR_EQUAL_TO (1000)][GREATER_THAN_OR_EQUAL_TO (boatMass)]"
+alg_domainLab,plantAshMassBoatMass,"Combusted mass of the sample and weigh boat for the whole plant from which the epiphyton samples are scraped",real,gram,,"[LESS_THAN_OR_EQUAL_TO (plantDryMassBoatMass)][GREATER_THAN_OR_EQUAL_TO (plantBoatMass)]","[LESS_THAN_OR_EQUAL_TO (dryMassBoatMass)][GREATER_THAN_OR_EQUAL_TO (boatMass)]"
+alg_domainLab,plantAdjAshFreeDryMass,"Combusted mass of the sample, multiplied to account for lab subsampling for the whole plant from which the epiphyton samples are scraped",real,gram,"[plantDryMassBoatMass - plantAshMassBoatMass]","[IF (IS_NOT_BLANK(plantDryMassBoatMass) & IS_NOT_BLANK(plantAshMassBoatMass)), REQUIRE]",
+alg_domainLab,preservativeType,"Type of preservative used in the sample",string,NA,,"[LOV][IF(analysisType!='taxonomy'), REQUIRE_NULL]","[IF(analysisType!='taxonomy'), REQUIRE_NULL][IF(analysisType='taxonomy'), WARN][LOV]"
+alg_domainLab,preservativeVolume,"Volume of preservative used in the sample",real,milliliter,,"[IF(analysisType!='taxonomy'), REQUIRE_NULL][GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO (1000)]","[IF(analysisType!='taxonomy'), REQUIRE_NULL][IF(analysisType='taxonomy'), WARN][GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO (1000)]"
+alg_domainLab,sampleCondition,"Condition of a sample",string,NA,,"[LOV]","[LOV]"
+alg_domainLab,remarks,"Technician notes; free text comments accompanying the record",string,NA,,"[ASCII]","[ASCII]"
+alg_domainLab,fulcrumVersion,"Version of the Fulcrum application used during data entry",string,NA,,"[ASCII]",
+alg_domainLab,platformInfo,"Operating System and browser information (where applicable) of computer used during data entry",string,NA,,"[ASCII]",
+alg_domainLab,measuredBy,"An identifier for the technician who measured or collected the data",string,NA,,"[ASCII]","[FROM_PERSONNEL][SUGGESTED_ENTRY (previousValue)]"
+alg_domainLab,recordedBy,"An identifier for the technician who recorded the data",string,NA,,"[ASCII]","[REQUIRE][FROM_PERSONNEL][SUGGESTED_ENTRY (previousValue)]"
+alg_domainLab,storageDays,"Total number of days clipped biomass was stored between collection and processing",real,nominalDay,"[processedDate - collectDate][DAYS]",,
+alg_domainLab,ashMassDataQF,"Data quality flag for ash mass measurements",string,NA,,"[LOV]","[IF(adjAshFreeDryMass >= 0), NULL][IF(0 > adjAshFreeDryMass >= -0.0005), 'belowDetection'][IF(adjAshFreeDryMass <= -0.0005), 'ashMassError']"
+alg_domainLab,dataQF,"Data quality flag",string,NA,,"[ASCII]",
+alg_domainLab,fulcrumPrimaryKey,"Primary identifier for the record in Fulcrum at the same granularity for which the record occurs in the NEON database (i.e., one fulcrumPrimaryKey should map to a single record in the NEON database)",string,NA,,"[ASCII]",
+asi_fieldData,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+asi_fieldData,stationID,"Identifier for station where sample was collected",string,NA,"[DERIVE_FROM_SAMPLE_TREE ('asi' OR 'gsi' OR 'swc.asi' OR 'gwc.gsi' OR 'asi.sdg' OR 'asi.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'asi.sdg.amc' OR 'swc.asi.sdg.amc')]","[NAMED_LOCATION_TYPE('AOS S2 named location type' OR 'AOS littoral named location type' OR 'AOS buoy named location type' OR 'AOS reach named location type' OR 'AOS groundwater well named location type')]",
+asi_fieldData,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE ('asi' OR 'gsi' OR 'swc.asi' OR 'gwc.gsi' OR 'asi.sdg' OR 'asi.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'asi.sdg.amc' OR 'swc.asi.sdg.amc')]",,
+asi_fieldData,collectDate,"Date of the collection event",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE ('asi' OR 'gsi' OR 'swc.asi' OR 'gwc.gsi' OR 'asi.sdg' OR 'asi.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'asi.sdg.amc' OR 'swc.asi.sdg.amc')]",,
+asi_fieldData,parentSampleID,"Parent sampleID of sample being processed",string,NA,,"[EXISTS][ASCII]","[DEFAULT_TO(wpa_fieldSuperParent_in.parentSampleID)]"
+asi_fieldData,parentSampleFate,"Fate of a parent sample",string,NA,,"[REQUIRE][ASCII]","[DEFAULT_TO(wpa_fieldSuperParent_in.parentSampleFate)"
+asi_fieldData,parentSampleCode,"Barcode of a parent sample",string,NA,,"[ASCII]","[DEFAULT_TO(wpa_fieldSuperParent_in.parentSampleCode)"
+asi_fieldData,isotopeH2OSampleCond,"Condition of a sample for 2H:1H and 18O:16O water stable isotope sample",string,NA,,"[LOV]","[LOV]"
+asi_fieldData,isotopeH2OSampleID,"Identifier of sample for 2H:1H and 18O:16O water stable isotope sample",string,NA,,"[DOES_NOT_EXIST][ASCII][MATCH_REGULAR_EXPRESSION('[A-Z]{4}.((?i)ss|in|ot|re|rs|c[0-3]|w[1-8]).20[0-9]{2}(0[1-9]|1[012])(0[1-9]|1[0-9]|2[0-9]|3[01]).H2O.[1-9]')][IF(IS_BLANK(isotopePOMSampleID) & IS_BLANK(isotopePOMRep2SampleID)), REQUIRE]","[IF (H2OIsotopeSampleCollected = Y), REQUIRE][SITE & '.' & namedLocation(xx) & '.' & startDate(YYYYMMDD) & '.H2O.1']"
+asi_fieldData,isotopeH2OSampleFate,"Fate of the water stable isotope sample",string,NA,,"[IF (IS_NOT_BLANK(isotopeH2OSampleID)), REQUIRE][IF (IS_BLANK(isotopeH2OSampleID)), REQUIRE_NULL][ASCII]","[HIDDEN][IF (IS_NOT_BLANK(isotopeH2OSampleID)), DEFAULT_TO('active')]"
+asi_fieldData,isotopeH2OSampleCode,"Barcode of the water stable isotope sample",string,NA,,"[ASCII]","[HIDDEN]"
+asi_fieldData,sampleClass,"Class of a sample",string,NA,,,"[HIDDEN][IF !(AOS groundwater well named location type), DEFAULT_TO ('asi_fieldData_in.isotopeH2OSampleIDasi')][IF (AOS groundwater well named location type), DEFAULT_TO ('asi_fieldData_in.isotopeH2OSampleIDgsi')]"
+asi_fieldData,isotopePOMRep2SampleCond,"Condition of a sample for 13C:12C and 15N:14N particulate organic matter (POM) stable isotope sample for replicate 2",string,NA,,"[LOV]","[LOV]"
+asi_fieldData,isotopePOMRep2SampleID,"Identifier of sample for 13C:12C and 15N:14N particulate organic matter (POM) stable isotope sample for replicate 2",string,NA,,"[DOES_NOT_EXIST][IF (IS_NOT_BLANK(sampleVolumeFilteredPOMRep2)), REQUIRE][ASCII][MATCH_REGULAR_EXPRESSION('[A-Z]{4}.((?i)ss|in|ot|re|rs|c[0-3]).20[0-9]{2}(0[1-9]|1[012])(0[1-9]|1[0-9]|2[0-9]|3[01]).POM.[1-9]')]","[IF (IS_NOT_BLANK(sampleVolumeFilteredPOMRep2)), REQUIRE][SITE & '.' & namedLocation(xx) & '.' & startDate(YYYYMMDD) & '.POM.2']"
+asi_fieldData,isotopePOMRep2SampleFate,"Fate of the particulate organic matter (POM) stable isotope sample, replicate 2",string,NA,,"[IF (IS_NOT_BLANK(isotopePOMRep2SampleID)), REQUIRE][IF (IS_BLANK(isotopePOMRep2SampleID)), REQUIRE_NULL][ASCII]","[HIDDEN][IF (IS_NOT_BLANK(isotopePOMRep2SampleID)), DEFAULT_TO('active')]"
+asi_fieldData,isotopePOMRep2SampleCode,"Barcode of the particulate organic matter (POM) stable isotope sample, replicate 2",string,NA,,"[ASCII]","[HIDDEN]"
+asi_fieldData,isotopePOMSampleCond,"Condition of a sample for 13C:12C and 15N:14N particulate organic matter (POM) stable isotope sample",string,NA,,"[LOV]","[LOV]"
+asi_fieldData,isotopePOMSampleID,"Identifier of sample for 13C:12C and 15N:14N particulate organic matter (POM) stable isotope sample",string,NA,,"[DOES_NOT_EXIST][IF (IS_NOT_BLANK(sampleVolumeFilteredPOMRep1)), REQUIRE][ASCII][MATCH_REGULAR_EXPRESSION('[A-Z]{4}.((?i)ss|in|ot|re|rs|c[0-3]).20[0-9]{2}(0[1-9]|1[012])(0[1-9]|1[0-9]|2[0-9]|3[01]).POM.[1-9]')]","[IF (IS_NOT_BLANK(sampleVolumeFilteredPOMRep1)), REQUIRE][SITE & '.' & namedLocation(xx) & '.' & startDate(YYYYMMDD) & '.POM.1']"
+asi_fieldData,isotopePOMSampleFate,"Fate of the particulate organic matter (POM) stable isotope sample",string,NA,,"[IF (IS_NOT_BLANK(isotopePOMSampleID)), REQUIRE][IF (IS_BLANK(isotopePOMSampleID)), REQUIRE_NULL][ASCII]","[HIDDEN][IF (IS_NOT_BLANK(isotopePOMSampleID)), DEFAULT_TO('active')]"
+asi_fieldData,isotopePOMSampleCode,"Barcode of the particulate organic matter (POM) stable isotope sample",string,NA,,"[ASCII]","[HIDDEN]"
+asi_fieldData,processedDateFilters,"Date or date and time of processing event of filtered samples",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]",,"[LESS_THAN (collectDate + 6)][HOURS][WARN]"
+asi_fieldData,processedDateH2OIsotopes,"Date or date and time of processing event of H2O isotope sample",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]",,"[LESS_THAN (collectDate + 6)][HOURS][WARN]"
+asi_fieldData,sampleVolumeFilteredPOMRep1,"Volume of water filtered through the filter for particulate organic matter (POM) replicate 1 for isotope external analysis",real,milliliter,,"[LESS_THAN_OR_EQUAL_TO (4000)]","[LESS_THAN_OR_EQUAL_TO (4000)][WARN]"
+asi_fieldData,sampleVolumeFilteredPOMRep2,"Volume of water filtered through the filter for particulate organic matter (POM) replicate 2 for isotope external analysis",real,milliliter,,"[LESS_THAN_OR_EQUAL_TO (4000)]","[LESS_THAN_OR_EQUAL_TO (4000)]"
+asi_fieldData,remarks,"Technician notes; free text comments accompanying the record",string,NA,,"[ASCII]","[ASCII]"
+asi_fieldData,fulcrumVersion,"Version of the Fulcrum application used during data entry",string,NA,,"[ASCII]",
+asi_fieldData,platformInfo,"Operating System and browser information (where applicable) of computer used during data entry",string,NA,,"[ASCII]",
+asi_fieldData,fieldDataQF,"Data quality flag for field data",string,NA,,"[ASCII]",
+asi_fieldData,fulcrumPrimaryKey,"Primary identifier for the record in Fulcrum at the same granularity for which the record occurs in the NEON database (i.e., one fulcrumPrimaryKey should map to a single record in the NEON database)",string,NA,,"[ASCII]",
+ptx_taxonomy,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+ptx_taxonomy,stationID,"Identifier for station where sample was collected",string,NA,"[DERIVE_FROM_SAMPLE_TREE('apl_clipHarvest_in.fieldID' OR 'apc_perTaxon_in.sampleIDplant' OR 'apc_perTaxon_in.sampleIDmacroalgae' OR 'apc_voucher_in.sampleID' OR 'alg_fieldData_in.parentSampleID' OR 'audit_sample' OR 'apc_voucher_in.sampleIDmacroalgae')]","[NAMED_LOCATION_TYPE('AOS aquatic plant named location type' OR 'AOS reach named location type' OR 'AOS S2 named location type' OR 'AOS littoral named location type' OR 'AOS buoy named location type' OR 'AOS riparian named location type' OR 'External Lab' OR 'SITE')]",
+ptx_taxonomy,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE('apl_clipHarvest_in.fieldID' OR 'apc_perTaxon_in.sampleIDplant' OR 'apc_perTaxon_in.sampleIDmacroalgae' OR 'apc_voucher_in.sampleID' OR 'alg_fieldData_in.parentSampleID' OR 'audit_sample' OR 'apc_voucher_in.sampleIDmacroalgae')]",,
+ptx_taxonomy,collectDate,"Date of the collection event",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE('apl_clipHarvest_in.fieldID' OR 'apc_perTaxon_in.sampleIDplant' OR 'apc_perTaxon_in.sampleIDmacroalgae' OR 'apc_voucher_in.sampleID' OR 'alg_fieldData_in.parentSampleID' OR 'audit_sample' OR 'apc_voucher_in.sampleIDmacroalgae')]",,
+ptx_taxonomy,identifiedDate,"Date on which the sample, individual, or specimen was identified",dateTime,NA,"[CONVERT_TO_UTC (laboratoryName)]","[LESS_THAN_OR_EQUAL_TO (NOW + 24hr)][REQUIRE_COLUMN]",
+ptx_taxonomy,sampleID,"Identifier for sample",string,NA,,"[REQUIRE][EXISTS][ASCII][REQUIRE_COLUMN]",
+ptx_taxonomy,sampleFate,"Fate of a sample",string,NA,"[DEFAULT_TO('active')]","[ASCII]",
+ptx_taxonomy,sampleCode,"Barcode of a sample",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_taxonomy,perBottleSampleVolume,"Sample volume per bottle in milliliters",real,milliliter,,"[IF(algalParameter != 'plant' & algalParameter != 'macroalgae' & algalParameter != 'subjective rating'), REQUIRE][GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO(1100)]",
+ptx_taxonomy,laboratoryName,"Name of the laboratory or facility that is processing the sample",string,NA,"[DEFAULT_TO_LAB_LOGGED_IN]","[NAMED_LOCATION_TYPE('External Lab')]",
+ptx_taxonomy,internalLabID,"Internal identifier used by the external facility",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_taxonomy,qcTaxonomyStatus,"Sample chosen as part of 10% of samples for quality control (QC)",string,NA,,"[LOV]",
+ptx_taxonomy,algalAnalysisMethod,"Laboratory analysis method used for periphyton or phytoplankton",string,NA,,"[LOV][IF(algalParameter != 'plant' & algalParameter != 'macroalgae' & algalParameter != 'subjective rating'), REQUIRE]",
+ptx_taxonomy,algalType,"Informal taxonomic grouping of algal species",string,NA,,"[LOV]",
+ptx_taxonomy,slideID,"Unique identifier associated with each slide per sampleID or subsampleID",string,NA,,"[MIGHT_EXIST][ASCII][IF(algalAnalysisMethod = 'diatom slide'), REQUIRE]",
+ptx_taxonomy,slideFate,"Fate of a slide",string,NA,"[DEFAULT_TO('active')]","[ASCII]",
+ptx_taxonomy,slideCode,"Barcode of a slide",string,NA,,"[ASCII]",
+ptx_taxonomy,algalParameter,"Parameter used for analysis of algal assemblages",string,NA,,"[IF(targetTaxaPresent='Y' & sampleCondition!='not analyzed'), REQUIRE][LOV][IF(algalParameterUnit = 'cellsPerBottle'), MATCH_REGULAR_EXPRESSION('cell density')][REQUIRE_COLUMN]",
+ptx_taxonomy,subsamplePercent,"Percent of the total sample contained in the subsample",real,percent,,"[IF(algalParameter != 'plant' & algalParameter != 'macroalgae' & algalParameter != 'subjective rating'), REQUIRE][GREATER_THAN(0)][LESS_THAN_OR_EQUAL_TO(100)]",
+ptx_taxonomy,algalParameterValue,"Value of the algalParameter",real,NA,,"[GREATER_THAN(0)][REQUIRE_COLUMN]",
+ptx_taxonomy,algalParameterUnit,"Unit of measure associated with the algalParameter",string,NA,,"[LOV]",
+ptx_taxonomy,targetTaxaPresent,"Indicator of whether the sample contained individuals of the target taxa",string,NA,"[IF(IS_NOT_BLANK(scientificName)), DEFAULT_TO('Y')]","[REQUIRE][LOV][REQUIRE_COLUMN]",
+ptx_taxonomy,scientificName,"Scientific name, associated with the taxonID. This is the name of the lowest level taxonomic rank that can be determined",string,NA,,"[IF(sampleCondition!='not analyzed'), REQUIRE][IF(algalParameter='plant' & sampleCondition!='not analyzed'), ELEMENT_OF('PLANT' , 'scientificName', 'F')][IF(algalParameter!='plant' & sampleCondition!='not analyzed'), ELEMENT_OF('ALGAE', 'scientificName', 'F')][IF(sampleCondition='not analyzed'), REQUIRE_NULL]",
+ptx_taxonomy,morphospeciesID,"Identifier for morphospecies",string,NA,,"[ASCII][IF(scientificName='Unknown Algae'), REQUIRE][REQUIRE_COLUMN]",
+ptx_taxonomy,kingdom,"The scientific name of the kingdom in which the taxon is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,subkingdom,"The scientific name of the subkingdom in which the taxon is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,infrakingdom,"The scientific name of the infrakingdom in which the taxon is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,superdivision,"The scientific name of the superdivision in which the taxon is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,division,"The scientific name of the division in which the taxon is classified",string,NA,,"[IF(targetTaxaPresent='Y' & sampleCondition!='not analyzed'), REQUIRE][ASCII][REQUIRE_COLUMN]",
+ptx_taxonomy,subdivision,"The scientific name of the subdivision in which the taxon is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,infradivision,"The scientific name of the infradivision in which the taxon is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,parvdivision,"The scientific name of the parvdivision in which the taxon is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,superclass,"The scientific name of the superclass in which the taxon is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,class,"The scientific name of the class in which the taxon is classified",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_taxonomy,subclass,"The scientific name of the subclass in which the taxon is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,infraclass,"The scientific name of the infraclass in which the taxon is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,superorder,"The scientific name of the superorder in which the taxon is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,order,"The scientific name of the order in which the taxon is classified",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_taxonomy,suborder,"The scientific name of the suborder in which the taxon is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,family,"The scientific name of the family in which the taxon is classified",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_taxonomy,subfamily,"The scientific name of the subfamily in which the organism is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,tribe,"The scientific name of the tribe in which the taxon is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,subtribe,"The scientific name of the subtribe in which the taxon is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,genus,"The scientific name of the genus in which the organism is classified",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_taxonomy,subgenus,"The scientific name of the subgenus in which the taxon is classified. Values should include the genus to avoid homonym confusion",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_taxonomy,section,"The scientific name of the section in which the organism is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,subsection,"The scientific name of the subsection in which the organism is classified",string,NA,,"[ASCII]",
+ptx_taxonomy,specificEpithet,"The specific epithet (second part of the species name) of the scientific name applied to the taxon",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_taxonomy,subspecies,"The subspecies (infraspecific name below the rank of infraspecific epithet) of the scientific name applied to the taxon",string,NA,,"[ASCII]",
+ptx_taxonomy,variety,"The variety (infraspecific name below the rank of infraspecific epithet) of the scientific name applied to the taxon",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_taxonomy,subvariety,"The subvariety (infraspecific name below the rank of variety) of the scientific name applied to the taxon",string,NA,,"[ASCII]",
+ptx_taxonomy,form,"The form (infraspecific name below the rank of infraspecific epithet) of the scientific name applied to the taxon",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_taxonomy,subform,"The subform (infraspecific name below the rank of form) of the scientific name applied to the taxon",string,NA,,"[ASCII]",
+ptx_taxonomy,speciesGroup,"The unofficial species group into which the taxon is categorized",string,NA,,"[ASCII]",
+ptx_taxonomy,scientificNameAuthorship,"Name of the individual(s) who designated the scientific name of the taxon",string,NA,,"[REQUIRE_COLUMN]",
+ptx_taxonomy,taxonDatabaseName,"Name of the taxonomic database",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_taxonomy,taxonDatabaseID,"Unique identifier for the taxon within the database",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_taxonomy,identificationQualifier,"A standard term to express the determiner's doubts about the Identification",string,NA,,"[LOV][REQUIRE_COLUMN]",
+ptx_taxonomy,identificationReferences,"A list of sources (concatenated and semicolon separated) used to derive the specific taxon concept; including field guide editions, books, or versions of NEON keys used",string,NA,,"[REQUIRE_COLUMN]",
+ptx_taxonomy,sampleCondition,"Condition of a sample",string,NA,,"[REQUIRE][LOV][REQUIRE_COLUMN]",
+ptx_taxonomy,testMethod,"Method used to conduct test",string,NA,,"[IF(sampleCondition!='not analyzed'), REQUIRE][LOV][REQUIRE_COLUMN]",
+ptx_taxonomy,method,"Published method used for analysis",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_taxonomy,dataQF,"Data quality flag",string,NA,,"[ASCII]",
+ptx_taxonomy,remarks,"Technician notes; free text comments accompanying the record",string,NA,,"[IF(sampleCondition='not analyzed'), REQUIRE][ASCII][REQUIRE_COLUMN]",
+ptx_taxonomy,identifiedBy,"An identifier for the technician who identified the specimen",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+alg_biovolumes,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+alg_biovolumes,laboratoryName,"Name of the laboratory or facility that is processing the sample",string,NA,"[DEFAULT_TO_LAB_LOGGED_IN]","[NAMED_LOCATION_TYPE('External Lab')]",
+alg_biovolumes,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[UPLOAD_DATE]",,
+alg_biovolumes,endDate,"The end date-time or interval during which an event occurred",dateTime,NA,"[UPLOAD_DATE]",,
+alg_biovolumes,taxonDatabaseName,"Name of the taxonomic database",string,NA,,"[ASCII]",
+alg_biovolumes,taxonDatabaseID,"Unique identifier for the taxon within the database",string,NA,,"[ASCII]",
+alg_biovolumes,taxonAbbreviation,"The abbreviation for the taxon",string,NA,,"[ASCII]",
+alg_biovolumes,scientificName,"Scientific name, associated with the taxonID. This is the name of the lowest level taxonomic rank that can be determined",string,NA,,"[REQUIRE][ELEMENT_OF('ALGAE', 'scientificName', 'F')]",
+alg_biovolumes,biovolumeSpecimenNumber,"Number of specimens measured for biovolume",unsigned integer,number,,,
+alg_biovolumes,biovolumeMean,"Arithmetic mean biovolume of cells of the same taxon",real,cubicMicrometer,,"[REQUIRE]",
+alg_biovolumes,biovolumeSD,"Standard deviation in biovolume across cells of the same taxon",real,cubicMicrometer,,,
+alg_biovolumes,biovolumeFormula,"Formula used to calculate biovolume of cells of the same taxon",string,NA,,"[ASCII]",
+alg_biovolumes,identificationReferences,"A list of sources (concatenated and semicolon separated) used to derive the specific taxon concept; including field guide editions, books, or versions of NEON keys used",string,NA,,"[ASCII]",
+alg_biovolumes,remarks,"Technician notes; free text comments accompanying the record",string,NA,,"[ASCII]",
+alg_biovolumes,dataQF,"Data quality flag",string,NA,,"[ASCII]",
+alg_biovolumes,labSpecificStartDate,"Date a specific analyte, instrument, and associated method detection limit combination started",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]","[REQUIRE][LESS_THAN_OR_EQUAL_TO (NOW + 24hr)]",
+alg_biovolumes,labSpecificEndDate,"Date a specific analyte, instrument, and associated method detection limit combination ended",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]","[GREATER_THAN (labSpecificStartDate)][LESS_THAN_OR_EQUAL_TO (NOW + 24hr)]",
+asih2o_externalLabH2OIsotopes,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+asih2o_externalLabH2OIsotopes,locationID,"Identifier for location where sample was collected",string,NA,"[DERIVE_FROM_SAMPLE_TREE('asi' OR 'gsi' OR 'swc.asi' OR 'gwc.gsi' OR 'asi.sdg' OR 'asi.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'asi.sdg.amc' OR 'swc.asi.sdg.amc' OR 'wdp_collection_in.isoSubsampleID' OR 'wdp_collection_in.isoTestSubsampleID' OR 'audit_sample')]","[NAMED_LOCATION_TYPE('AOS S2 named location type' OR 'AOS littoral named location type' OR 'AOS buoy named location type' OR 'AOS reach named location type' OR 'AOS groundwater well named location type' OR 'AOS wet deposition named location type' OR 'TOS wet deposition named location type' OR 'External Lab')]",
+asih2o_externalLabH2OIsotopes,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE('asi' OR 'gsi' OR 'swc.asi' OR 'gwc.gsi' OR 'asi.sdg' OR 'asi.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'asi.sdg.amc' OR 'swc.asi.sdg.amc' OR 'wdp_collection_in.isoSubsampleID' OR 'wdp_collection_in.isoTestSubsampleID' OR 'audit_sample')]",,
+asih2o_externalLabH2OIsotopes,collectDate,"Date of the collection event",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE('asi' OR 'gsi' OR 'swc.asi' OR 'gwc.gsi' OR 'asi.sdg' OR 'asi.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'asi.sdg.amc' OR 'swc.asi.sdg.amc' OR 'wdp_collection_in.isoSubsampleID' OR 'wdp_collection_in.isoTestSubsampleID' OR 'audit_sample')]",,
+asih2o_externalLabH2OIsotopes,analysisDate,"Date that the sample was analyzed",dateTime,NA,"[CONVERT_TO_UTC(laboratoryName)]","[IF (sampleCondition = 'OK'), REQUIRE][GREATER_THAN_OR_EQUAL_TO (2014-01-01T)][LESS_THAN_OR_EQUAL_TO (NOW + 24hr)][REQUIRE_COLUMN]",
+asih2o_externalLabH2OIsotopes,isotopeH2OSampleID,"Identifier of sample for 2H:1H and 18O:16O water stable isotope sample",string,NA,,"[IF (collectDate < 2020-01-31), REQUIRE][EXISTS][ASCII][REQUIRE_COLUMN]",
+asih2o_externalLabH2OIsotopes,isotopeH2OSampleFate,"Fate of the water stable isotope sample",string,NA,"[DEFAULT_TO('processed')]","[REQUIRE][ASCII]",
+asih2o_externalLabH2OIsotopes,isotopeH2OSampleCode,"Barcode of the water stable isotope sample",string,NA,,"[IF (collectDate > 2020-10-31), REQUIRE][ASCII][REQUIRE_COLUMN]",
+asih2o_externalLabH2OIsotopes,instrumentSN,"Serial number of instrument used to analyze sample",string,NA,,"[ASCII][IF(sampleCondition = 'OK'), REQUIRE][REQUIRE_COLUMN]",
+asih2o_externalLabH2OIsotopes,d18OWater,"Measure of the ratio of stable isotopes 18O:16O in H2O, relative to the Vienna Standard Mean Ocean Water",real,permill,,"[IF (sampleCondition = 'OK'), REQUIRE][REQUIRE_COLUMN]",
+asih2o_externalLabH2OIsotopes,d2HWater,"Measure of the ratio of stable isotopes 2H:1H in H2O, relative to the Vienna Standard Mean Ocean Water",real,permill,,"[IF (sampleCondition = 'OK'), REQUIRE][REQUIRE_COLUMN]",
+asih2o_externalLabH2OIsotopes,d18OsdWater,"Standard deviation of d18O of replicate H2O samples",real,permill,,"[IF (sampleCondition = 'OK'), REQUIRE][REQUIRE_COLUMN]",
+asih2o_externalLabH2OIsotopes,d2HsdWater,"Standard deviation of d2H of replicate H2O samples",real,permill,,"[IF (sampleCondition = 'OK'), REQUIRE][REQUIRE_COLUMN]",
+asih2o_externalLabH2OIsotopes,isotopeH2OExternalLabQF,"Quality flag for samples with high standard deviation (del2Hsd >=0.75 or del18Osd>=0.2) of H2O isotope samples. High standard deviations are flagged with a 1, else flag set to 0",unsigned integer,NA,,"[REQUIRE_COLUMN]",
+asih2o_externalLabH2OIsotopes,isotopeH2OExternalLabTest,"Test to ensure that either 18O or 2H isotope data is returned",string,NA,,"[IF(IS_BLANK(d18OWater) AND IS_BLANK(d2HWater) AND sampleCondition = 'OK'), FAIL][ASCII]",
+asih2o_externalLabH2OIsotopes,laboratoryName,"Name of the laboratory or facility that is processing the sample",string,NA,"[DEFAULT_TO_LAB_LOGGED_IN]","[NAMED_LOCATION_TYPE('External Lab')]",
+asih2o_externalLabH2OIsotopes,analyzedBy,"Name of lab personnel analyzing sample",string,NA,,"[REQUIRE][ASCII][REQUIRE_COLUMN]",
+asih2o_externalLabH2OIsotopes,shipmentID,"Unique identifier associated with shipment",string,NA,,"[ASCII]",
+asih2o_externalLabH2OIsotopes,sampleCondition,"Condition of a sample",string,NA,,"[REQUIRE][LOV][REQUIRE_COLUMN]",
+asih2o_externalLabH2OIsotopes,receivedDate,"Date a sample was received",dateTime,NA,"[CONVERT_TO_UTC(laboratoryName)]","[GREATER_THAN_OR_EQUAL_TO (2012-12-01T)][LESS_THAN_OR_EQUAL_TO (NOW + 24hr)]",
+asih2o_externalLabH2OIsotopes,receivedBy,"Anonymized name of lab personnel receiving the shipment",string,NA,,"[ASCII]",
+asih2o_externalLabH2OIsotopes,externalRemarks,"External lab notes; free text comments accompanying the record",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+asih2o_externalLabH2OIsotopes,externalLabDataQF,"Data quality flag for external lab data",string,NA,,"[ASCII]",
+aquchem_plantAlgaeExternalLabData,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+aquchem_plantAlgaeExternalLabData,locationID,"Identifier for location where sample was collected",string,NA,"[DERIVE_FROM_SAMPLE_TREE('asi' OR 'swc.asi' OR 'asi.sdg' OR 'asi.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'asi.sdg.amc' OR 'swc.asi.sdg.amc' OR 'alg_fieldData_in.parentSampleID' OR 'apl_clipHarvest_in.fieldID' OR 'audit_sample')]","[NAMED_LOCATION_TYPE('AOS S2 named location type' OR 'AOS littoral named location type' OR 'AOS buoy named location type' OR 'AOS reach named location type' OR 'AOS groundwater well named location type' OR 'AOS riparian named location type' OR 'AOS aquatic plant named location type' OR 'External Lab')]",
+aquchem_plantAlgaeExternalLabData,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE('asi' OR 'swc.asi' OR 'asi.sdg' OR 'asi.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'asi.sdg.amc' OR 'swc.asi.sdg.amc' OR 'alg_fieldData_in.parentSampleID' OR 'apl_clipHarvest_in.fieldID' OR 'audit_sample')]",,
+aquchem_plantAlgaeExternalLabData,collectDate,"Date of the collection event",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE('asi' OR 'swc.asi' OR 'asi.sdg' OR 'asi.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'asi.sdg.amc' OR 'swc.asi.sdg.amc' OR 'alg_fieldData_in.parentSampleID' OR 'apl_clipHarvest_in.fieldID' OR 'audit_sample')]",,
+aquchem_plantAlgaeExternalLabData,sampleID,"Identifier for sample",string,NA,,"[REQUIRE][EXISTS][ASCII][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,sampleFate,"Fate of a sample",string,NA,"[DEFAULT_TO('processed')]","[REQUIRE][ASCII]",
+aquchem_plantAlgaeExternalLabData,sampleCode,"Barcode of a sample",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,batchID,"Identifier for batch or analytical run",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,sampleCondition,"Condition of a sample",string,NA,,"[LOV][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,laboratoryName,"Name of the laboratory or facility that is processing the sample",string,NA,"[DEFAULT_TO_LAB_LOGGED_IN]","[NAMED_LOCATION_TYPE('External Lab')]",
+aquchem_plantAlgaeExternalLabData,internalLabID,"Internal identifier used by the external facility",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,analysisDate,"Date that the sample was analyzed",dateTime,NA,"[CONVERT_TO_UTC (laboratoryName)]","[REQUIRE][GREATER_THAN_OR_EQUAL_TO (2014-01-01T)][LESS_THAN_OR_EQUAL_TO(NOW + 24hr)][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,analyzedBy,"Name of lab personnel analyzing sample",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,sampleType,"Type of sample",string,NA,,"[LOV][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,replicate,"Sample replicate",string,NA,,"[REQUIRE][ASCII][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,sampleVolumeFiltered,"Volume of water filtered onto the filter for external analysis",real,milliliter,,"[LESS_THAN_OR_EQUAL_TO(4000)][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,filterSize,"Filter diameter",real,millimeter,"[DEFAULT_TO('25')]","[REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,percentFilterAnalyzed,"Fraction of the filter sampled (%)",real,percent,"[DEFAULT_TO('100')]","[REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,dilutionFactor,"The factor by which the sample was diluted prior to analysis",real,NA,,"[IF(analyte = 'chla' OR analyte = 'pheo' OR analyte = 'totalchla'), REQUIRE]",
+aquchem_plantAlgaeExternalLabData,solventVolume,"Volume of solvent used in the extraction",real,milliliter,,"[IF(analyte = 'chla' OR analyte = 'pheo' OR analyte = 'totalchla'), REQUIRE]",
+aquchem_plantAlgaeExternalLabData,responseFactor,"Response factor for sensitivity setting",real,NA,,"[IF(analyte = 'chla' OR analyte = 'pheo' OR analyte = 'totalchla'), REQUIRE]",
+aquchem_plantAlgaeExternalLabData,acidificationResponseFactor,"Response factor of standard before acidification divided by standard after acidification",real,NA,,"[IF(analyte = 'chla' OR analyte = 'pheo' OR analyte = 'totalchla'), REQUIRE]",
+aquchem_plantAlgaeExternalLabData,fluorometerSensitivitySetting,"Sensitivity setting on the fluorometer",real,NA,,"[IF(analyte = 'chla' OR analyte = 'pheo' OR analyte = 'totalchla'), REQUIRE]",
+aquchem_plantAlgaeExternalLabData,preAcidificationFluorescence,"Fluorescence read before acidification",real,NA,,"[IF(analyte = 'chla' OR analyte = 'pheo' OR analyte = 'totalchla'), REQUIRE]",
+aquchem_plantAlgaeExternalLabData,postAcidificationFluorescence,"Fluorescence read after acidification",real,NA,,"[IF(analyte = 'chla' OR analyte = 'pheo' OR analyte = 'totalchla'), REQUIRE]",
+aquchem_plantAlgaeExternalLabData,analyte,"Analyte or parameter measured",string,NA,,"[REQUIRE][LOV][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,analyteConcentration,"Concentration of analyte",real,NA,,"[REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,plantAlgaeLabUnits,"Standard units of measure used by the plant and algae external laboratory",string,NA,,"[LOV][IF IS_NOT_BLANK(analyteConcentration), REQUIRE][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,testMethod,"Method used to conduct test",string,NA,,"[REQUIRE][LOV][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,method,"Published method used for analysis",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,acidTreatment,"Indicator for whether a sample has been acidified to remove carbonate prior to analysis",string,NA,,"[LOV][IF(analyte = 'carbon' OR analyte = 'd13C'), REQUIRE]",
+aquchem_plantAlgaeExternalLabData,externalRemarks,"External lab notes; free text comments accompanying the record",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabData,externalLabDataQF,"Data quality flag for external lab data",string,NA,,"[ASCII]",
+ptx_qualityCheck,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+ptx_qualityCheck,stationID,"Identifier for station where sample was collected",string,NA,"[DERIVE_FROM_SAMPLE_TREE('apl_clipHarvest_in.fieldID' OR 'apc_perTaxon_in.sampleIDplant' OR 'apc_perTaxon_in.sampleIDmacroalgae' OR 'apc_voucher_in.sampleID' OR 'alg_fieldData_in.parentSampleID' OR 'audit_sample')]","[NAMED_LOCATION_TYPE('AOS aquatic plant named location type' OR 'AOS reach named location type' OR 'AOS S2 named location type' OR 'AOS littoral named location type' OR 'AOS buoy named location type' OR 'AOS riparian named location type' OR 'External Lab')]",
+ptx_qualityCheck,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE('apl_clipHarvest_in.fieldID' OR 'apc_perTaxon_in.sampleIDplant' OR 'apc_perTaxon_in.sampleIDmacroalgae' OR 'apc_voucher_in.sampleID' OR 'alg_fieldData_in.parentSampleID' OR 'audit_sample')]",,
+ptx_qualityCheck,collectDate,"Date of the collection event",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE('apl_clipHarvest_in.fieldID' OR 'apc_perTaxon_in.sampleIDplant' OR 'apc_perTaxon_in.sampleIDmacroalgae' OR 'apc_voucher_in.sampleID' OR 'alg_fieldData_in.parentSampleID' OR 'audit_sample')]",,
+ptx_qualityCheck,identifiedDate,"Date on which the sample, individual, or specimen was identified",dateTime,NA,"[CONVERT_TO_UTC (laboratoryName)]","[LESS_THAN_OR_EQUAL_TO (NOW + 24hr)][REQUIRE_COLUMN]",
+ptx_qualityCheck,internalLabID,"Internal identifier used by the external facility",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_qualityCheck,sampleID,"Identifier for sample",string,NA,,"[REQUIRE][EXISTS][ASCII][REQUIRE_COLUMN]",
+ptx_qualityCheck,sampleFate,"Fate of a sample",string,NA,"[DEFAULT_TO('active')]","[ASCII]",
+ptx_qualityCheck,sampleCode,"Barcode of a sample",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_qualityCheck,laboratoryName,"Name of the laboratory or facility that is processing the sample",string,NA,"[DEFAULT_TO_LAB_LOGGED_IN]","[NAMED_LOCATION_TYPE('External Lab')]",
+ptx_qualityCheck,algalAnalysisMethod,"Laboratory analysis method used for periphyton or phytoplankton",string,NA,,"[LOV][REQUIRE][REQUIRE_COLUMN]",
+ptx_qualityCheck,taxonAbbreviation,"The abbreviation for the taxon",string,NA,,"[ASCII]",
+ptx_qualityCheck,scientificName,"Scientific name, associated with the taxonID. This is the name of the lowest level taxonomic rank that can be determined",string,NA,,"[ELEMENT_OF('ALGAE', 'scientificName', 'F')]",
+ptx_qualityCheck,morphospeciesID,"Identifier for morphospecies",string,NA,,"[ASCII]",
+ptx_qualityCheck,identifiedBy,"An identifier for the technician who identified the specimen",string,NA,,"[ASCII][REQUIRE][REQUIRE_COLUMN]",
+ptx_qualityCheck,qcIdentifiedBy,"An identifier for the technician who quality checked the specimen",string,NA,,"[ASCII][REQUIRE][REQUIRE_COLUMN]",
+ptx_qualityCheck,individualCount,"Number of individuals of the same type",unsigned integer,number,,"[GREATER_THAN(0)][REQUIRE_COLUMN]",
+ptx_qualityCheck,qcIndividualCount,"Number of individuals of the same type in the quality checked sample",unsigned integer,number,,"[GREATER_THAN(0)][REQUIRE_COLUMN]",
+ptx_qualityCheck,enumerationDifference,"Percent difference in enumeration between the original sample and the quality checked sample",real,percent,,"[REQUIRE][GREATER_THAN_OR_EQUAL_TO(0)][LESS_THAN_OR_EQUAL_TO(100)][REQUIRE_COLUMN]",
+ptx_qualityCheck,qcPercentSimilarity,"Percent similarity of original taxonomy report and QC taxonomy report (identification + count)",real,percent,,"[REQUIRE][GREATER_THAN_OR_EQUAL_TO(0)][LESS_THAN_OR_EQUAL_TO(100)][REQUIRE_COLUMN]",
+ptx_qualityCheck,dataQF,"Data quality flag",string,NA,,"[ASCII]",
+ptx_qualityCheck,remarks,"Technician notes; free text comments accompanying the record",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_archive,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+ptx_archive,locationID,"Identifier for location where sample was collected",string,NA,"[DERIVE_FROM_SAMPLE_TREE('alg_fieldData_in.parentSampleID')]","[NAMED_LOCATION_TYPE('AOS aquatic plant named location type' OR 'AOS reach named location type' OR 'AOS S2 named location type' OR 'AOS littoral named location type' OR 'AOS buoy named location type' OR 'AOS riparian named location type' OR 'External Lab' OR 'SITE')]",
+ptx_archive,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE('alg_fieldData_in.parentSampleID')]",,
+ptx_archive,endDate,"The end date-time or interval during which an event occurred",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE('alg_fieldData_in.parentSampleID')]",,
+ptx_archive,sampleID,"Identifier for sample",string,NA,,"[REQUIRE][EXISTS][ASCII][REQUIRE_COLUMN]",
+ptx_archive,sampleFate,"Fate of a sample",string,NA,"[DEFAULT_TO('processed')]","[ASCII]",
+ptx_archive,sampleCode,"Barcode of a sample",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_archive,preservedID,"Identifier for preserved sample",string,NA,,"[DOES_NOT_EXIST][ASCII][REQUIRE_COLUMN]",
+ptx_archive,preservedFate,"Fate of preserved sample",string,NA,"[IF(IS_NOT_BLANK(preservedID)), DEFAULT_TO('active')]","[ASCII]",
+ptx_archive,preservedCode,"Barcode of preserved sample",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_archive,freezeDriedID,"Identifier for freeze dried sample",string,NA,,"[DOES_NOT_EXIST][ASCII][REQUIRE_COLUMN]",
+ptx_archive,freezeDriedFate,"Fate of freeze dried sample",string,NA,"[IF(IS_NOT_BLANK(freezeDriedID)), DEFAULT_TO('active')]","[ASCII]",
+ptx_archive,freezeDriedCode,"Barcode of freeze dried sample",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_archive,slideID,"Unique identifier associated with each slide per sampleID or subsampleID",string,NA,,"[EXISTS][ASCII][REQUIRE_COLUMN]",
+ptx_archive,slideFate,"Fate of a slide",string,NA,"[IF(IS_NOT_BLANK(slideID)), DEFAULT_TO('active')]","[ASCII]",
+ptx_archive,slideCode,"Barcode of a slide",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+ptx_archive,dataQF,"Data quality flag",string,NA,,"[ASCII]",
+aquchem_externalLabSummaryData,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+aquchem_externalLabSummaryData,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[UPLOAD_DATE]",,
+aquchem_externalLabSummaryData,endDate,"The end date-time or interval during which an event occurred",dateTime,NA,"[UPLOAD_DATE]",,
+aquchem_externalLabSummaryData,analyte,"Analyte or parameter measured",string,NA,,"[REQUIRE][LOV][REQUIRE_COLUMN]",
+aquchem_externalLabSummaryData,sampleType,"Type of sample",string,NA,,"[LOV][REQUIRE_COLUMN]",
+aquchem_externalLabSummaryData,instrument,"Type of instrument used for the analysis",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+aquchem_externalLabSummaryData,testMethod,"Method used to conduct test",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+aquchem_externalLabSummaryData,method,"Published method used for analysis",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+aquchem_externalLabSummaryData,qaReferenceID,"Identifier for quality assurance reference material or standard",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+aquchem_externalLabSummaryData,standardReferenceKnownValue,"The known value for QA reference material, with units tied to the analyte",real,NA,,"[IF (IS_NOT_BLANK(standardReferenceMeasuredMean)), REQUIRE][REQUIRE_COLUMN]",
+aquchem_externalLabSummaryData,standardReferenceMeasuredMean,"Long-term average of the measured value for QA reference material, with units tied to the analyte",real,NA,,"[REQUIRE_COLUMN]",
+aquchem_externalLabSummaryData,analyteAccuracy,"Long-term average accuracy, e.g. the absolute difference between observed and known values of the analyte, based on analysis of quality assurance reference materials or standards treated as unknowns",real,NA,,"[REQUIRE_COLUMN]",
+aquchem_externalLabSummaryData,analyteStandardDeviation,"Long-term average standard deviation values of the analyte, based on analysis of quality assurance reference materials or standards treated as unknowns",real,NA,,"[REQUIRE_COLUMN]",
+aquchem_externalLabSummaryData,analyteMetricsCount,"Count of how many measurements were used to determine analyte metrics",unsigned integer,number,,"[ASCII][REQUIRE_COLUMN]",
+aquchem_externalLabSummaryData,laboratoryName,"Name of the laboratory or facility that is processing the sample",string,NA,"[DEFAULT_TO_LAB_LOGGED_IN]","[NAMED_LOCATION_TYPE('External Lab')]",
+aquchem_externalLabSummaryData,labSpecificStartDate,"Date a specific analyte, instrument, and associated method detection limit combination started",dateTime,NA,"[CONVERT_TO_UTC (namedLocation)]","[REQUIRE][LESS_THAN_OR_EQUAL_TO(NOW + 24hr)][REQUIRE_COLUMN]",
+aquchem_externalLabSummaryData,labSpecificEndDate,"Date a specific analyte, instrument, and associated method detection limit combination ended",dateTime,NA,"[CONVERT_TO_UTC (namedLocation)]","[GREATER_THAN (labSpecificStartDate)][LESS_THAN_OR_EQUAL_TO(NOW + 24hr)][REQUIRE_COLUMN]",
+asih2o_externalLabSummaryData,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+asih2o_externalLabSummaryData,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[UPLOAD_DATE]",,
+asih2o_externalLabSummaryData,endDate,"The end date-time or interval during which an event occurred",dateTime,NA,"[UPLOAD_DATE]",,
+asih2o_externalLabSummaryData,analyte,"Analyte or parameter measured",string,NA,,"[REQUIRE][LOV][REQUIRE_COLUMN]",
+asih2o_externalLabSummaryData,sampleType,"Type of sample",string,NA,,"[LOV][REQUIRE_COLUMN]",
+asih2o_externalLabSummaryData,instrument,"Type of instrument used for the analysis",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+asih2o_externalLabSummaryData,testMethod,"Method used to conduct test",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+asih2o_externalLabSummaryData,method,"Published method used for analysis",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+asih2o_externalLabSummaryData,qaReferenceID,"Identifier for quality assurance reference material or standard",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+asih2o_externalLabSummaryData,standardReferenceKnownValue,"The known value for QA reference material, with units tied to the analyte",real,NA,,"[IF (IS_NOT_BLANK(standardReferenceMeasuredMean)), REQUIRE][REQUIRE_COLUMN]",
+asih2o_externalLabSummaryData,standardReferenceMeasuredMean,"Long-term average of the measured value for QA reference material, with units tied to the analyte",real,NA,,"[REQUIRE_COLUMN]",
+asih2o_externalLabSummaryData,analyteAccuracy,"Long-term average accuracy, e.g. the absolute difference between observed and known values of the analyte, based on analysis of quality assurance reference materials or standards treated as unknowns",real,NA,,"[REQUIRE_COLUMN]",
+asih2o_externalLabSummaryData,analyteStandardDeviation,"Long-term average standard deviation values of the analyte, based on analysis of quality assurance reference materials or standards treated as unknowns",real,NA,,"[REQUIRE_COLUMN]",
+asih2o_externalLabSummaryData,laboratoryName,"Name of the laboratory or facility that is processing the sample",string,NA,"[DEFAULT_TO_LAB_LOGGED_IN]","[NAMED_LOCATION_TYPE('External Lab')]",
+asih2o_externalLabSummaryData,labSpecificStartDate,"Date a specific analyte, instrument, and associated method detection limit combination started",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]","[REQUIRE][LESS_THAN_OR_EQUAL_TO (NOW + 24hr)][REQUIRE_COLUMN]",
+asih2o_externalLabSummaryData,labSpecificEndDate,"Date a specific analyte, instrument, and associated method detection limit combination ended",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]","[GREATER_THAN_OR_EQUAL_TO (labSpecificStartDate)][LESS_THAN_OR_EQUAL_TO (NOW + 24hr)][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabQA,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+aquchem_plantAlgaeExternalLabQA,laboratoryName,"Name of the laboratory or facility that is processing the sample",string,NA,"[DEFAULT_TO_LAB_LOGGED_IN]","[NAMED_LOCATION_TYPE('External Lab')]",
+aquchem_plantAlgaeExternalLabQA,analyzedBy,"Name of lab personnel analyzing sample",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabQA,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[DEFAULT_TO(analysisDate)]",,
+aquchem_plantAlgaeExternalLabQA,analysisDate,"Date that the sample was analyzed",dateTime,NA,"[CONVERT_TO_UTC (namedLocation)]","[LESS_THAN_OR_EQUAL_TO(NOW + 24hr)][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabQA,batchID,"Identifier for batch or analytical run",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabQA,internalLabID,"Internal identifier used by the external facility",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabQA,sampleID,"Identifier for sample",string,NA,,"[EXISTS][ASCII][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabQA,sampleFate,"Fate of a sample",string,NA,"[DEFAULT_TO('processed')]","[ASCII]",
+aquchem_plantAlgaeExternalLabQA,sampleCode,"Barcode of a sample",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabQA,qaType,"Type of quality assurance used in analysis",string,NA,,"[REQUIRE][LOV][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabQA,analyte,"Analyte or parameter measured",string,NA,,"[LOV][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabQA,analyteConcentration,"Concentration of analyte",real,NA,,"[REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabQA,plantAlgaeLabUnits,"Standard units of measure used by the plant and algae external laboratory",string,NA,,"[REQUIRE][LOV][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabQA,analyteKnownValue,"The known value of a given analyte for a quality assurance reference material or standard, with units tied to the analyte",real,NA,,"[REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabQA,analyteKnownValueUnits,"Associated units of measure for analyte known value",string,NA,,"[LOV][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabQA,externalRemarks,"External lab notes; free text comments accompanying the record",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+aquchem_plantAlgaeExternalLabQA,externalLabDataQF,"Data quality flag for external lab data",string,NA,,"[ASCII]",

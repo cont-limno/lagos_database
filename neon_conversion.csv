@@ -1,0 +1,33 @@
+,source_parameter,source_unit,datavalue_unit,datavalue_conversion
+1,ANC,milliequivalentsPerLiter,ueqL,1
+533,Ca,milligramsPerLiter,mgL,1
+1169,Cl,milligramsPerLiter,mgL,1
+2451,DIC,milligramsPerLiter,mgL,1
+2532,DIC,,mgL,1
+3128,dissolvedOxygen,milligramsPerLiter,mgL,1
+9880,DOC,milligramsPerLiter,mgL,1
+10002,DOC,,mgL,1
+10557,HCO3,milligramsPerLiter,ueqL,16666.66667
+11211,K,milligramsPerLiter,mgL,1
+11847,Mg,milligramsPerLiter,mgL,1
+12483,Na,milligramsPerLiter,mgL,1
+13119,NH4 - N,milligramsPerLiter,ugL,1000
+13689,NO2 - N,milligramsPerLiter,ugL,1000
+14258,NO3+NO2 - N,milligramsPerLiter,ugL,1000
+14828,Ortho - P,milligramsPerLiter,ugL,1000
+15398,pH,pH,pH,1
+16037,secchiMeanDepth,m,m,1
+16604,Si,milligramsPerLiter,mgL,1
+17240,SO4,milligramsPerLiter,mgL,1
+17868,specificConductance,microsiemensPerCentimeter,Umho_cm,1
+25152,TDN,milligramsPerLiter,ugL,1000
+25193,TDN,,ugL,1000
+25829,TDP,milligramsPerLiter,ugL,1000
+26398,TN,milligramsPerLiter,ugL,1000
+26453,TN,,ugL,1000
+27087,TOC,milligramsPerLiter,mgL,1
+27161,TOC,,mgL,1
+27776,TP,milligramsPerLiter,ugL,1000
+28355,TSS,milligramsPerLiter,mgL,1
+29012,waterTemp,celsius,degC,1
+,chlorophyll a ,microgramsPerLiter,ugL,1

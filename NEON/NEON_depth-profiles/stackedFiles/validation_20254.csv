@@ -1,0 +1,41 @@
+table,fieldName,description,dataType,units,parserToCreate,entryValidationRulesParser,entryValidationRulesForm
+dep_profileHeader,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+dep_profileHeader,stationID,"Identifier for station where sample was collected",string,NA,,"[REQUIRE][NAMED_LOCATION_TYPE('AOS buoy named location type')]","[REQUIRE][FROM_AOS_SPATIAL(AOS buoy named location type)]"
+dep_profileHeader,additionalCoordUncertainty,"Additional uncertainty to be added to the coordinate uncertainty at all sites",real,meter,,,"[DEFAULT_TO (10)]"
+dep_profileHeader,altLocation,"Alternate Sampling Location description",string,NA,,"[ASCII]",
+dep_profileHeader,altLatitude,"Alternate Sampling Location coordinate - latitude",real,decimalDegree,,"[GREATER_THAN_OR_EQUAL_TO (15)][LESS_THAN_OR_EQUAL_TO (72)]","[GREATER_THAN_OR_EQUAL_TO (15)][LESS_THAN_OR_EQUAL_TO (72)]"
+dep_profileHeader,altLongitude,"Alternate Sampling Location coordinate - longitude",real,decimalDegree,,"[GREATER_THAN_OR_EQUAL_TO (180-)][LESS_THAN_OR_EQUAL_TO (60-)]","[GREATER_THAN_OR_EQUAL_TO (180-)][LESS_THAN_OR_EQUAL_TO (60-)]"
+dep_profileHeader,altCoordinateUncertainty,"The horizontal distance (in meters) from the given altLatitude and altLongitude describing the smallest circle containing the whole of the Location. Zero is not a valid value for this term",real,meter,,"[GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (500)]","[GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (500)]"
+dep_profileHeader,altGeodeticDatum,"Model used to measure horizontal position on the earth for alternate location coordinate",string,NA,,"[LOV]","[LOV]"
+dep_profileHeader,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)][date]","[REQUIRE]","[REQUIRE][HIDDEN][DEFAULT_TO (date)]"
+dep_profileHeader,date,"Date or date and time of measurement, observation, or collection event",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]","[REQUIRE]","[REQUIRE][DATE_FORMAT(YYYY-MM-DDTHH:MM)][SUGGESTED_ENTRY (systemDateTime)]"
+dep_profileHeader,eventID,"An identifier for the set of information associated with the event, which includes information about the place and time of the event",string,NA,,"[MATCH_REGULAR_EXPRESSION('[A-Z]{4}\\.(ss|in|ot|re|c[0-3])\\.20[0-9]{2}(0[1-9]|1[012])(0[1-9]|1[0-9]|2[0-9]|3[01])')]","[SITE & '.' & stationID & '.' & YYYYMMDD]"
+dep_profileHeader,maxDepth,"Maximum depth",real,meter,,"[IF IS_BLANK(samplingImpractical), REQUIRE][GREATER_THAN (0)][LESS_THAN_OR_EQUAL_TO (100)]","[IF IS_BLANK(samplingImpractical), REQUIRE][GREATER_THAN (0)][LESS_THAN_OR_EQUAL_TO (100)]"
+dep_profileHeader,iceThickness,"Thickness of the ice covering the lake or river",real,meter,,"[GREATER_THAN (0)][LESS_THAN_OR_EQUAL_TO (2)]","[GREATER_THAN (0)][LESS_THAN_OR_EQUAL_TO (2)]"
+dep_profileHeader,snowThickness,"Thickness of the snow covering the lake or river",real,meter,,,
+dep_profileHeader,samplingProtocolVersion,"The NEON document number and version where detailed information regarding the sampling method used is available; format NEON.DOC.######vX",string,NA,,"[LOV]","[SUGGESTED_ENTRY (NEON.DOC.002792vA)]"
+dep_profileHeader,samplingImpractical,"Samples and/or measurements were not collected due to the indicated circumstance",string,NA,,"[LOV]","[LOV]"
+dep_profileHeader,thermalStratification,"Indication of whether the water column is stratified or non-stratified",string,NA,,"[LOV]","[See USER GUIDE]"
+dep_profileHeader,upperMetalimnionDepth,"Depth of upper bound of the metalimnion",string,NA,,"[ASCII]","[See USER GUIDE]"
+dep_profileHeader,lowerMetalimnionDepth,"Depth of lower bound of the metalimnion",string,NA,,"[ASCII]","[See USER GUIDE]"
+dep_profileHeader,upperMetalimnion2Depth,"Depth of upper bound of the second, deeper metalimnion",string,NA,,"[ASCII]","[See USER GUIDE]"
+dep_profileHeader,lowerMetalimnion2Depth,"Depth of lower bound of the second, deeper metalimnion",string,NA,,"[ASCII]","[See USER GUIDE]"
+dep_profileHeader,estimatedMetalimnionDepths,"An indication that the depths used in the calculation of the metalimnion are spaced wider than 1 m apart, resulting in estimates for the upper and lower depths of the metalimnion",string,NA,,"[LOV]","[See USER GUIDE]"
+dep_profileHeader,remarks,"Technician notes; free text comments accompanying the record",string,NA,,"[ASCII]","[ASCII]"
+dep_profileHeader,fulcrumVersion,"Version of the Fulcrum application used during data entry",string,NA,,"[ASCII]",
+dep_profileHeader,platformInfo,"Operating System and browser information (where applicable) of computer used during data entry",string,NA,,"[ASCII]",
+dep_profileHeader,recordedBy,"An identifier for the technician who recorded the data",string,NA,,"[ASCII]","[FROM_PERSONNEL][SUGGESTED_ENTRY (previousValue)]"
+dep_profileHeader,measuredBy,"An identifier for the technician who measured or collected the data",string,NA,,"[ASCII]","[REQUIRE][FROM_PERSONNEL][SUGGESTED_ENTRY (previousValue)]"
+dep_profileHeader,dataQF,"Data quality flag",string,NA,,"[ASCII]",
+dep_profileData,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+dep_profileData,stationID,"Identifier for station where sample was collected",string,NA,,"[REQUIRE][NAMED_LOCATION_TYPE('AOS buoy named location type')]","[DEFAULT_TO(dep_profileHeader_in.stationID)][REQUIRE]"
+dep_profileData,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]","[REQUIRE]","[DEFAULT_TO(dep_profileHeader_in.startDate)][REQUIRE]"
+dep_profileData,date,"Date or date and time of measurement, observation, or collection event",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]","[REQUIRE]","[DEFAULT_TO(dep_profileHeader_in.date)][REQUIRE]"
+dep_profileData,eventID,"An identifier for the set of information associated with the event, which includes information about the place and time of the event",string,NA,,"[REQUIRE][ASCII]","[DEFAULT_TO(dep_profileHeader_in.eventID)][REQUIRE]"
+dep_profileData,sampleDepth,"Depth sample was collected",real,meter,,"[REQUIRE][GREATER_THAN (0)]","[REQUIRE][GREATER_THAN (0)][LESS_THAN_OR_EQUAL_TO (dep_profileHeader_in.maxDepth)]"
+dep_profileData,waterTemp,"Temperature of water (C)",real,celsius,,"[GREATER_THAN (5-)][LESS_THAN_OR_EQUAL_TO (40)]","[GREATER_THAN (-5)][LESS_THAN_OR_EQUAL_TO (40)][WARN]"
+dep_profileData,specificConductance,"Conductivity auto-corrected to 25 degrees C",real,microsiemensPerCentimeter,,"[GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (9999)]","[GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (9999)]"
+dep_profileData,dissolvedOxygen,"Dissolved Oxygen Concentration",real,milligramsPerLiter,,"[GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (100)]","[GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (100)]"
+dep_profileData,dissolvedOxygenSaturation,"Dissolved Oxygen Percent Saturation",real,percent,,"[GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (500)]","[GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (500)]"
+dep_profileData,dataQF,"Data quality flag",string,NA,,"[ASCII]",
+dep_profileData,fulcrumPrimaryKey,"Primary identifier for the record in Fulcrum at the same granularity for which the record occurs in the NEON database (i.e., one fulcrumPrimaryKey should map to a single record in the NEON database)",string,NA,,"[ASCII]",
