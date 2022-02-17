@@ -121,7 +121,7 @@ Alkalinity,mg/l CaCO3,,NA NA,,39086,19.98,19.98,"Alkalinity, inflection-point ti
 Alkalinity,mg/l CaCO3,,NA NA,,39087,19.98,19.98,
 Alkalinity,mg/l CaCO3,,NA NA,,90410,19.98,19.98,"Alkalinity, low ionic-strength water, automated electrometric titration "
 Alkalinity,mg/l CaCO3,,NA NA,,95410,19.98,19.98,
-Alkalinity,ueq/L,,NA NA,,409,-1000000,-1000000,discard
+Alkalinity,ueq/L,,NA NA,,409,1,1,
 "Alkalinity, total",mg/l,mg/l,OREGONDEQ MOM grab,Field methods for DEQ Water sampling,,1,1,
 "Alkalinity, total",mg/l,,OREGONDEQ Not Available,Not Available,,1,1,
 "Alkalinity, carbonate",mg/l,mg/l,R10MIDNITE SM2320B,"Alkalinity, Carbonate, Bicarbonate",,1,1,
@@ -131,7 +131,7 @@ Alkalinity,ueq/L,,NA NA,,409,-1000000,-1000000,discard
 "Alkalinity, total",mg/l,mg/l,USDOI/USGS I1030,Alkalinity in Water by Titration,,1,1,
 "Alkalinity, total",mg/l,mg/l,USDOI/USGS I2700,Silica in Water by Colorimetry,,-1000000,-1000000,discard
 "Alkalinity, total",mg/l,mg/l,USEPA 120.1,Conductance,,-1000000,-1000000,discard
-"Alkalinity, total",mg/l,,USEPA 120.1,Conductance,,1,1,
+"Alkalinity, total",mg/l,,USEPA 120.1,Conductance,,-1000000,-1000000,
 "Alkalinity, total",mg/l,mg/l,USEPA 150.1,pH,,-1000000,-1000000,discard
 "Alkalinity, total",mg/l,mg/l,USEPA 170.1,Temperature,,-1000000,-1000000,discard
 "Alkalinity, total",mg/l,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,-1000000,-1000000,discard
