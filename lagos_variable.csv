@@ -1,5 +1,5 @@
 variableid_lagos,variablename,limit_low,limit_high,variableunitsid,variableshortname,unitsname,unitstype,unitsabbreviation
-1,Alkalinity,-1000,100000000,13,NA,microequivalents per liter,Concentration,ueqL
+1,Alkalinity,-1000,10000,13,NA,microequivalents per liter,Concentration,ueqL
 2,"Alkalinity, bicarbonate",0,100000000,13,NA,microequivalents per liter,Concentration,ueqL
 43,"Aluminum, dissolved",0,6000000,11,NA,micrograms per liter,Concentration,ugL
 42,"Aluminum, total",0,1000000,11,NA,micrograms per liter,Concentration,ugL
