@@ -57,7 +57,7 @@ Chloride,mg/l,,USGS IC022,"Anions, wf, IC",940,1,1,"CHLORIDE, FIL LOWLVL"
 Chloride,mg/l,,USGS IC024,"Anions, LIS wf, IC",940,1,1,"CHLORIDE, FIL LOWLVL"
 Chloride,mg/l,,USGS TT036,"Chloride, wf,silver nitrate titr",940,1,1,"CHLORIDE, FIL LOWLVL"
 Chloride,mg/l,,UTAHDWQ_WQX GENERIC METHOD,Used for all methods where historical methodology may not be available.,,1,1,uknown
-Chloride,mmol/L,mmol/L,USGS IC057,"Anions, wf, autom IC (USGSBGCA)",52683,-1000000,-1000000,
+Chloride,mmol/L,mmol/L,USGS IC057,"Anions, wf, autom IC (USGSBGCA)",52683,35.453,35.453,
 Chloride,ug/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,0.001,0.001,
 Chloride,ug/l,,NA NA,,91001,0.001,0.001,uknown
 Chloride,,mg/l,USGS IC022,"Anions, wf, IC",940,1,1,"CHLORIDE, FIL LOWLVL"

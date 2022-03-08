@@ -1,0 +1,53 @@
+variableid_lagos,lagos_variablename,variableunitsid,variableshortname,unitsname,unitstype,unitsabbreviation,source_parameter
+1,Alkalinity,13,NA,microequivalents per liter,Concentration,ueqL,ANC
+2,"Alkalinity, bicarbonate",13,NA,microequivalents per liter,Concentration,ueqL,HCO3
+4,"Carbon, dissolved inorganic",10,NA,milligrams per liter,Concentration,mgL,DIC
+5,"Carbon, total inorganic",10,NA,milligrams per liter,Concentration,mgL,
+13,Conductivity,17,NA,micromho per centimeter,Electrical Conductivity,Umho_cm,specificConductance
+23,"Oxygen, dissolved",10,NA,milligrams per liter,Concentration,mgL,dissolvedOxygen
+29,Potassium,10,NA,milligrams per liter,Concentration,mgL,K
+32,Sodium,10,NA,milligrams per liter,Concentration,mgL,Na
+33,"Solids, total suspended",10,NA,milligrams per liter,Concentration,mgL,TSS
+35,Temperature,25,NA,degree celsius,Temperature,degC,waterTemp
+36,Turbidity,27,NA,nephelometric turbidity units,Turbidity,NTU,
+7,"Carbon, total organic",10,TOC,milligrams per liter,Concentration,mgL,TOC
+9,Chlorophyll a,11,CHLA,micrograms per liter,Concentration,ugL,chlorophyll a
+11,"Color, apparent",9,COLORA,platinum cobalt units,Color,PCU,
+12,"Color, true",9,COLORT,platinum cobalt units,Color,PCU,
+15,"Nitrogen, dissolved Kjeldahl",11,DKN,micrograms per liter,Concentration,ugL,
+16,"Nitrogen, total Kjeldahl",11,TKN,micrograms per liter,Concentration,ugL,
+17,"Nitrogen, nitrite (NO2)",11,NO2,micrograms per liter,Concentration,ugL,NO2 - N
+18,"Nitrogen, nitrite (NO2) + nitrate (NO3)",11,NO2NO3,micrograms per liter,Concentration,ugL,NO3+NO2 - N
+19,"Nitrogen, NH4",11,NH4,micrograms per liter,Concentration,ugL,NH4 - N
+21,"Nitrogen, total",11,TN,micrograms per liter,Concentration,ugL,TN
+22,"Nitrogen, total dissolved",11,TDN,micrograms per liter,Concentration,ugL,TDN
+26,"Phosphorus, soluable reactive orthophosphate",11,SRP,micrograms per liter,Concentration,ugL,Ortho - P
+27,"Phosphorus, total",11,TP,micrograms per liter,Concentration,ugL,TP
+28,"Phosphorus, total dissolved",11,TDP,micrograms per liter,Concentration,ugL,TDP
+30,Secchi,20,SECCHI,meter,Length,m,secchiMeanDepth
+20,"Nitrogen, total organic",11,TON,micrograms per liter,Concentration,ugL,
+6,"Carbon, dissolved organic",10,DOC,milligrams per liter,Concentration,mgL,DOC
+37,Microcystin,11,NA,micrograms per liter,Concentration,ugL,
+38,"Atrazine, total",11,NA,micrograms per liter,Concentration,ugL,
+39,"Atrazine, dissolved",11,NA,micrograms per liter,Concentration,ugL,
+40,"Arsenic, total",11,NA,micrograms per liter,Concentration,ugL,
+41,"Arsenic, dissolved",11,NA,micrograms per liter,Concentration,ugL,
+42,"Aluminum, total",11,NA,micrograms per liter,Concentration,ugL,
+43,"Aluminum, dissolved",11,NA,micrograms per liter,Concentration,ugL,
+44,"Selenium, total",11,NA,micrograms per liter,Concentration,ugL,
+45,"Selenium, dissolved",11,NA,micrograms per liter,Concentration,ugL,
+24,"pH, equilibrated",15,NA,pH Unit,Dimensionless,pH,
+25,"pH, field or closed",15,NA,pH Unit,Dimensionless,pH,pH
+34,"Sulfate, dissolved",10,NA,milligrams per liter,Concentration,mgL,SO4
+8,"Chloride, dissolved",10,NA,milligrams per liter,Concentration,mgL,Cl
+31,"Silica, dissolved",10,NA,milligrams per liter,Concentration,mgL,Si
+3,"Calcium, dissolved",10,NA,milligrams per liter,Concentration,mgL,Ca
+14,"Magnesium, dissolved",10,NA,milligrams per liter,Concentration,mgL,Mg
+46,"Mercury, total",29,NA,nanograms per liter,Concentration,ngL,
+47,"Mercury, total dissolved",29,NA,nanograms per liter,Concentration,ngL,
+48,Salinity,30,PSU,parts per thousand,Concentration,ppt,
+49,E. coli,31,NA,colony-forming unit,Concentration,cfu,
+51,E. coli-MPN,32,NA,Most Probable Number,Concentration,MPN,
+52,E. coli-CFU,31,NA,colony-forming unit,Concentration,cfu,
+50,Methylmercury,29,NA,nanograms per liter,Concentration,ngL,
+53,"Methylmercury, dissolved",29,NA,nanograms per liter,Concentration,ngL,

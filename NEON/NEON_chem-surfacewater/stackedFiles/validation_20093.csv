@@ -1,0 +1,313 @@
+table,fieldName,description,dataType,units,parserToCreate,entryValidationRulesParser,entryValidationRulesForm
+wpa_fieldSuperParent,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+wpa_fieldSuperParent,stationID,"Identifier for station where sample was collected",string,NA,,"[REQUIRE][NAMED_LOCATION_TYPE('AOS S2 named location type' OR 'AOS littoral named location type' OR 'AOS buoy named location type' OR 'AOS reach named location type' OR 'AOS groundwater well named location type')]","[REQUIRE][FROM_AOS_SPATIAL(IF(siteType='lake'),  AOS outlet named location type OR AOS inlet named location type OR AOS buoy named location type OR AOS groundwater well named location type)][FROM_AOS_SPATIAL(IF(siteType='stream'),  AOS S2 named location type OR AOS reach named location type OR AOS groundwater well named location type)][FROM_AOS_SPATIAL(IF(siteType='river'),  AOS buoy named location type OR AOS reach named location type OR AOS groundwater well named location type)]"
+wpa_fieldSuperParent,additionalCoordUncertainty,"Additional uncertainty to be added to the coordinate uncertainty at all sites",real,meter,,,"[IF (IS_BLANK(altLocation)), DEFAULT_TO (10)]"
+wpa_fieldSuperParent,altLocation,"Alternate Sampling Location description",string,NA,,"[ASCII]","[SURFACE ONLY]"
+wpa_fieldSuperParent,altLatitude,"Alternate Sampling Location coordinate - latitude",real,decimalDegree,,"[GREATER_THAN_OR_EQUAL_TO (15)][LESS_THAN_OR_EQUAL_TO (72)]","[SURFACE ONLY][GREATER_THAN_OR_EQUAL_TO (15)][LESS_THAN_OR_EQUAL_TO (72)]"
+wpa_fieldSuperParent,altLongitude,"Alternate Sampling Location coordinate - longitude",real,decimalDegree,,"[GREATER_THAN_OR_EQUAL_TO (180-)][LESS_THAN_OR_EQUAL_TO (60-)]","[SURFACE ONLY][GREATER_THAN_OR_EQUAL_TO (180-)][LESS_THAN_OR_EQUAL_TO (60-)]"
+wpa_fieldSuperParent,altCoordinateUncertainty,"The horizontal distance (in meters) from the given altLatitude and altLongitude describing the smallest circle containing the whole of the Location. Zero is not a valid value for this term",real,meter,,"[GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (500)]","[SURFACE ONLY][GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (500)]"
+wpa_fieldSuperParent,altGeodeticDatum,"Model used to measure horizontal position on the earth for alternate location coordinate",string,NA,,"[LOV]","[SURFACE ONLY][LOV]"
+wpa_fieldSuperParent,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)][collectDate]","[REQUIRE]","[REQUIRE][HIDDEN][DEFAULT_TO (collectDate)]"
+wpa_fieldSuperParent,collectDate,"Date of the collection event",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]","[REQUIRE]","[REQUIRE][DATE_FORMAT(YYYY-MM-DDTHH:MM)][SUGGESTED_ENTRY (systemDateTime)]"
+wpa_fieldSuperParent,aquaticSiteType,"Type of aquatic site, includes lake, river or stream",string,NA,,"[LOV]","[REQUIRE][FROM_AOS_SITE_TYPE]"
+wpa_fieldSuperParent,samplingImpractical,"Samples and/or measurements were not collected due to the indicated circumstance",string,NA,,"[LOV]","[LOV]"
+wpa_fieldSuperParent,waterChemSamplesCollected,"Indicator of whether any water chemistry samples were collected",string,NA,,"[LOV]","[LOV]"
+wpa_fieldSuperParent,isotopeSamplesCollected,"Indicator of whether any stable isotope samples were collected",string,NA,,"[LOV]","[LOV]"
+wpa_fieldSuperParent,sdgSampleCollected,"Indicator of whether dissolved gas samples were collected. These are expected for all surface water samples, but not groundwater samples",string,NA,,"[LOV]","[LOV]"
+wpa_fieldSuperParent,microbeSamplesCollected,"Indicator of whether any surface water microbe cell count samples were collected. These are expected for some surface water samples, but not groundwater samples",string,NA,,"[LOV]","[LOV]"
+wpa_fieldSuperParent,adequateSampleVol,"An indication of whether or not there was adequate sample volume available for collecting all samples. When no: samples are prioritized in this order: isotopes; filtered analytes; alkalinity titrations; unfiltered analytes; particulate analysis",string,NA,,"[LOV]","[LOV]"
+wpa_fieldSuperParent,parentSampleID,"Parent sampleID of sample being processed",string,NA,,"[DOES_NOT_EXIST][IF (IS_BLANK(samplingImpractical)), REQUIRE][MATCH_REGULAR_EXPRESSION('[A-Z]{4}.((?i)ss|in|ot|re|c[0-3]|w[1-8]).20[0-9]{2}(0[1-9]|1[012])(0[1-9]|1[0-9]|2[0-9]|3[01])')]","[IF (IS_BLANK(samplingImpractical)), REQUIRE][SITE & . & namedLocation(xx) & . & startDate(YYYYMMDD)]"
+wpa_fieldSuperParent,parentSampleFate,"Fate of a parent sample",string,NA,,"[ASCII]","[HIDDEN][DEFAULT_TO('active')]"
+wpa_fieldSuperParent,parentSampleCode,"Barcode of a parent sample",string,NA,,"[ASCII]","[HIDDEN]"
+wpa_fieldSuperParent,sampleClass,"Class of a sample",string,NA,,"[ASCII]","create sampleClass based on which protocols are sampled"
+wpa_fieldSuperParent,eventID,"An identifier for the set of information associated with the event, which includes information about the place and time of the event",string,NA,,"[ASCII]","[SITE & . & YYYYMMDD]"
+wpa_fieldSuperParent,samplerType,"Type of sampler used to collect the sample",string,NA,,"[LOV]","[LOV]"
+wpa_fieldSuperParent,swcSamplingProtocolVersion,"The NEON document number and version of the water chemistry protocol where detailed information regarding the sampling method used is available; format NEON.DOC.######vX",string,NA,,"[LOV]","[IF (sampleClass contains swc), REQUIRE][LOV][SUGGESTED_ENTRY(previousValue)]"
+wpa_fieldSuperParent,asiSamplingProtocolVersion,"The NEON document number and version of the aquatic stable isotopes protocol where detailed information regarding the sampling method used is available; format NEON.DOC.######vX",string,NA,,"[LOV]","[IF (sampleClass contains asi), REQUIRE][LOV][SUGGESTED_ENTRY(previousValue)]"
+wpa_fieldSuperParent,amcSamplingProtocolVersion,"The NEON document number and version of the aquatic microbes protocol where detailed information regarding the sampling method used is available; format NEON.DOC.######vX",string,NA,,"[LOV]","[SURFACE ONLY][IF (sampleClass contains amc), REQUIRE][LOV][SUGGESTED_VALUE(previousValue)]"
+wpa_fieldSuperParent,sdgSamplingProtocolVersion,"The NEON document number and version of the dissolved gas protocol where detailed information regarding the sampling method used is available; format NEON.DOC.######vX",string,NA,,"[LOV]","[SURFACE ONLY][IF (sampleClass contains sdg), REQUIRE][LOV][SUGGESTED_ENTRY(previousValue)]"
+wpa_fieldSuperParent,lowerSegmentDepth,"Depth at bottom of stratified lake segment",real,meter,,"[GREATER_THAN_OR_EQUAL_TO (upperSegmentDepth)]","[SURFACE ONLY][GREATER_THAN_OR_EQUAL_TO (upperSegmentDepth)][IF (aquaticSiteType != 'stream'), WARN]"
+wpa_fieldSuperParent,upperSegmentDepth,"Depth at top of stratified lake segment",real,meter,,,"[SURFACE ONLY][IF (aquaticSiteType != 'stream'), WARN]"
+wpa_fieldSuperParent,maxDepth,"Maximum depth",real,meter,,"[LESS_THAN (40)]","[SURFACE ONLY][LESS_THAN (40)][IF (siteType != 'stream'), WARN]"
+wpa_fieldSuperParent,lakeSampleDepth1,"Sample depth of a single lake sample collected below the surface; the sample depth of the upper sample for a composite lake sample collected below the surface",real,meter,,"[LESS_THAN (40)]","[SURFACE ONLY][IF (stationID = c1 or c2), WARN][LESS_THAN (40)]"
+wpa_fieldSuperParent,lakeSampleDepth2,"Sample depth of the lower sample for a composite lake sample collected below the surface",real,meter,,"[GREATER_THAN_OR_EQUAL_TO(lakeSampleDepth1)][LESS_THAN (40)]","[SURFACE ONLY][IF (stationID = c1 or c2), WARN][GREATER_THAN_OR_EQUAL_TO(lakeSampleDepth2)][LESS_THAN (40)]"
+wpa_fieldSuperParent,measurementDepth,"Depth at which a measurement was taken",real,meter,,"[LESS_THAN_OR_EQUAL_TO (40)]","[SURFACE ONLY][LESS_THAN_OR_EQUAL_TO (40)]"
+wpa_fieldSuperParent,probeIDUnavailable,"Identifier for handheld sensor(s) that are unavailable at time of sampling",string,NA,,"[ASCII]",
+wpa_fieldSuperParent,dissolvedOxygen,"Dissolved Oxygen Concentration",real,milligramsPerLiter,,"[LESS_THAN_OR_EQUAL_TO (50)]","[LESS_THAN_OR_EQUAL_TO (50)]"
+wpa_fieldSuperParent,dissolvedOxygenSaturation,"Dissolved Oxygen Percent Saturation",real,percent,,"[LESS_THAN_OR_EQUAL_TO (500)]","[LESS_THAN_OR_EQUAL_TO (500)]"
+wpa_fieldSuperParent,specificConductance,"Conductivity auto-corrected to 25 degrees C",real,microsiemensPerCentimeter,,"[LESS_THAN_OR_EQUAL_TO (50000)]","[LESS_THAN_OR_EQUAL_TO (9999)]"
+wpa_fieldSuperParent,waterTemp,"Temperature of water (C)",real,celsius,,"[GREATER_THAN_OR_EQUAL_TO (10-)][LESS_THAN_OR_EQUAL_TO (40)]","[GREATER_THAN_OR_EQUAL_TO (-10)][LESS_THAN_OR_EQUAL_TO (40)]"
+wpa_fieldSuperParent,pH,"Measurement of pH in sample",real,pH,,"[GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (14)]","[GROUNDWATER ONLY][GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (14)][IF (probeUnavailable !='pH'), REQUIRE]"
+wpa_fieldSuperParent,ptBarometricPressure,"Point (pt)-based barometric pressure, measured by a handheld device during sampling activity",real,kilopascal,,"[GREATER_THAN_OR_EQUAL_TO (35)][LESS_THAN_OR_EQUAL_TO (125)]","[GREATER_THAN_OR_EQUAL_TO (35)][LESS_THAN_OR_EQUAL_TO (125)][IF (probeUnavailable !='Barometric Pressure'), REQUIRE]"
+wpa_fieldSuperParent,waterClarityDescrip,"Qualitative description of water clarity",string,NA,,"[LOV]","[GROUNDWATER ONLY][LOV]"
+wpa_fieldSuperParent,waterColorDescrip,"Qualitative description of water color and clarity",string,NA,,"[LOV]","[GROUNDWATER ONLY][LOV]"
+wpa_fieldSuperParent,sampleExtractionMethod,"Method used to extract the sample",string,NA,,"[LOV]","[GROUNDWATER ONLY]"
+wpa_fieldSuperParent,wellVolumePurged,"Total volume removed from the well, prior to sampling",real,liter,,"[LESS_THAN (25)]","[GROUNDWATER ONLY][LESS_THAN (25)]"
+wpa_fieldSuperParent,totalWellDepth,"Total well depth; used to calculate water column height",real,meter,,"[LESS_THAN_OR_EQUAL_TO (25)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (25)]"
+wpa_fieldSuperParent,wellDepthChanged,"Indicates whether or not the total well depth has changed by > 10 cm",string,NA,,"[LOV]","[GROUNDWATER ONLY][LOV]"
+wpa_fieldSuperParent,measTotalWellDepth,"Total well depth measured by field technicians when well depth has changed by > 10 cm",real,meter,,"[LESS_THAN_OR_EQUAL_TO (25)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (25)]"
+wpa_fieldSuperParent,wellRedeveloped,"Indication of whether the well was redeveloped just prior to sampling",string,NA,,"[LOV]","[GROUNDWATER ONLY][LOV]"
+wpa_fieldSuperParent,wellRedevelopedDate,"Date of well redevelopment",dateTime,NA,,"[IF (IS_NOT_BLANK(wellRedeveloped) & wellRedeveloped = 'Y'), REQUIRE]","[GROUNDWATER ONLY][IF (wellRedeveloped = Y), REQUIRE]"
+wpa_fieldSuperParent,wellWaterDepth,"Depth of water in well from top of well casing",real,meter,,"[LESS_THAN_OR_EQUAL_TO (25)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (25)]"
+wpa_fieldSuperParent,waterColumnHeight,"Height of the water column in the well; calculated as: total well depth - depth to water table",real,meter,"[totalWellDepth - wellWaterDepth]","[GREATER_THAN_OR_EQUAL_TO(0)]","[GROUNDWATER ONLY][totalWellDepth - wellWaterDepth]"
+wpa_fieldSuperParent,volume3Wells,"Three times the volume of the well",real,liter,,"[GREATER_THAN_OR_EQUAL_TO(0)]","[GROUNDWATER ONLY]"
+wpa_fieldSuperParent,pumpStartTime,"Time the pump was first started at the well",dateTime,NA,,"[LESS_THAN(collectDate)]","[GROUNDWATER ONLY][LESS_THAN(collectDate)]"
+wpa_fieldSuperParent,sampleDepth,"Depth sample was collected",real,meter,,"[LESS_THAN_OR_EQUAL_TO (25)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (25)]"
+wpa_fieldSuperParent,purgeAverageDischargeRate,"Average discharge rate during well stabilization purge",real,millilitersPerMinute,,"[LESS_THAN_OR_EQUAL_TO (500)]","[GROUNDWATER ONLY][LESS_THAN (500)]"
+wpa_fieldSuperParent,purgeTime,"Total time well was purged, prior to sampling",real,minute,,"[GREATER_THAN_OR_EQUAL_TO(0)]","[GROUNDWATER ONLY][GREATER_THAN_OR_EQUAL_TO (0)]"
+wpa_fieldSuperParent,gwWellStabilized,"Indicates whether specific conductance and temperature have stabilized in the well",string,NA,,"[LOV]","[GROUNDWATER ONLY][LOV]"
+wpa_fieldSuperParent,purgeDryDateTime,"The well purge date-time for purge dry sampling method",dateTime,NA,,,"[GROUNDWATER ONLY]"
+wpa_fieldSuperParent,purgeDryPH,"Measurement of pH in sample at time of purge for purge dry method",real,pH,,"[GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (14)]","[GROUNDWATER ONLY][GREATER_THAN_OR_EQUAL_TO (0)][LESS_THAN_OR_EQUAL_TO (14)]"
+wpa_fieldSuperParent,purgeDryWaterTemp,"Temperature of water at time of purge for purge dry method",real,celsius,,"[GREATER_THAN_OR_EQUAL_TO (10-)][LESS_THAN_OR_EQUAL_TO (40)]","[GROUNDWATER ONLY][GREATER_THAN_OR_EQUAL_TO (-10)][LESS_THAN_OR_EQUAL_TO (40)]"
+wpa_fieldSuperParent,purgeDrySpecificConductance,"Conductivity auto-corrected to 25 degrees celsius at time of purge for purge dry method",real,microsiemensPerCentimeter,,"[LESS_THAN_OR_EQUAL_TO (50000)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (9999)]"
+wpa_fieldSuperParent,purgeDryDissolvedOxygen,"Dissolved oxygen concentration at time of purge for purge dry method",real,milligramsPerLiter,,"[LESS_THAN_OR_EQUAL_TO (50)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (50)]"
+wpa_fieldSuperParent,purgeDryDissolvedOxygenSaturation,"Dissolved oxygen percent saturation at time of purge for purge dry method",real,percent,,"[LESS_THAN_OR_EQUAL_TO (500)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (500)]"
+wpa_fieldSuperParent,purgeDryWaterClarityDescrip,"Qualitative description of water clarity at time of purge for purge dry method",string,NA,,"[LOV]","[GROUNDWATER ONLY][LOV]"
+wpa_fieldSuperParent,purgeDryWaterColorDescrip,"Qualitative description of water color and clarity at time of purge for purge dry method",string,NA,,"[LOV]","[GROUNDWATER ONLY][LOV]"
+wpa_fieldSuperParent,pumpPlacementDate,"The pump placement date-time for low-yield sampling method",dateTime,NA,,,"[GROUNDWATER ONLY]"
+wpa_fieldSuperParent,pumpPlacementDepth,"Depth of pump placement for low-yield method",real,meter,,"[LESS_THAN_OR_EQUAL_TO (25)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (25)]"
+wpa_fieldSuperParent,screenedIntervalDepth,"Depth to the screened interval for low-yield method calculations",real,meter,,"[LESS_THAN_OR_EQUAL_TO (25)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (25)]"
+wpa_fieldSuperParent,maxAllowableDrawdown,"Maximum allowable drawdown for low-yield method sampling",real,meter,,"[LESS_THAN_OR_EQUAL_TO (25)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (25)]"
+wpa_fieldSuperParent,actualDrawdown,"Actual drawdown for low-yield method sampling",real,meter,,"[LESS_THAN_OR_EQUAL_TO (25)]","[GROUNDWATER ONLY][LESS_THAN_OR_EQUAL_TO (25)]"
+wpa_fieldSuperParent,MADExceeded,"Indicates whether the maximum allowable drawdown was exceeded prior to collection of filtered (FIL) and alkalinity (ALK) sample collection",string,NA,,"[LOV]","[GROUNDWATER ONLY][LOV]"
+wpa_fieldSuperParent,fulcrumVersion,"Version of the Fulcrum application used during data entry",string,NA,,"[ASCII]",
+wpa_fieldSuperParent,platformInfo,"Operating System and browser information (where applicable) of computer used during data entry",string,NA,,"[ASCII]",
+wpa_fieldSuperParent,aCollectedBy,"Primary NEON technician username who collected the data",string,NA,,"[ASCII]","[REQUIRE][FROM_PERSONNEL][SUGGESTED_ENTRY (previousValue)]"
+wpa_fieldSuperParent,bCollectedBy,"Secondary NEON technician username who collected the data",string,NA,,"[ASCII]","[FROM_PERSONNEL][SUGGESTED_ENTRY (previousValue)]"
+wpa_fieldSuperParent,remarks,"Technician notes; free text comments accompanying the record",string,NA,,"[ASCII]","[ASCII]"
+wpa_fieldSuperParent,fieldDataQF,"Data quality flag for field data",string,NA,,"[ASCII]",
+swc_fieldData,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+swc_fieldData,stationID,"Identifier for station where sample was collected",string,NA,"[DERIVE_FROM_SAMPLE_TREE ('swc' OR 'gwc' OR 'gwc.gsi' OR 'swc.asi' OR 'swc.sdg' OR 'swc.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'swc.sdg.amc' OR 'swc.asi.sdg.amc')]","[REQUIRE][NAMED_LOCATION_TYPE('AOS S2 named location type' OR 'AOS littoral named location type' OR 'AOS buoy named location type' OR 'AOS reach named location type' OR 'AOS groundwater well named location type')]","[DEFAULT_TO(wpa_fieldSuperParent_in.stationID)"
+swc_fieldData,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE ('swc' OR 'gwc' OR 'gwc.gsi' OR 'swc.asi' OR 'swc.sdg' OR 'swc.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'swc.sdg.amc' OR 'swc.asi.sdg.amc')]","[REQUIRE]","[DEFAULT_TO(wpa_fieldSuperParent_in.startDate)"
+swc_fieldData,collectDate,"Date of the collection event",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE ('swc' OR 'gwc' OR 'gwc.gsi' OR 'swc.asi' OR 'swc.sdg' OR 'swc.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'swc.sdg.amc' OR 'swc.asi.sdg.amc')]","[REQUIRE]","[DEFAULT_TO(wpa_fieldSuperParent_in.collectDate)"
+swc_fieldData,parentSampleID,"Parent sampleID of sample being processed",string,NA,,"[EXISTS][ASCII]","[DEFAULT_TO(wpa_fieldSuperParent_in.parentSampleID)]"
+swc_fieldData,parentSampleFate,"Fate of a parent sample",string,NA,,"[REQUIRE][ASCII]","[DEFAULT_TO(wpa_fieldSuperParent_in.parentSampleFate)"
+swc_fieldData,parentSampleCode,"Barcode of a parent sample",string,NA,,"[ASCII]","[DEFAULT_TO(wpa_fieldSuperParent_in.parentSampleCode)"
+swc_fieldData,sampleCondition,"Condition of a sample",string,NA,,"[LOV]","[LOV]"
+swc_fieldData,sampleID,"Identifier for sample",string,NA,,"[DOES_NOT_EXIST][REQUIRE][ASCII]","[REQUIRE][SITE & . & namedLocation(xx) & . & startDate(YYYYMMDD)]"
+swc_fieldData,sampleFate,"Fate of a sample",string,NA,,"[REQUIRE][ASCII]","[HIDDEN][DEFAULT_TO(active)]"
+swc_fieldData,sampleCode,"Barcode of a sample",string,NA,,"[ASCII]","[HIDDEN]"
+swc_fieldData,sampleClass,"Class of a sample",string,NA,,,"[HIDDEN][IF !(AOS groundwater well named location type), DEFAULT_TO ('swc_fieldData_in.sampleIDswc')[IF (AOS groundwater well named location type), DEFAULT_TO ('swc_fieldData_in.sampleIDgwc')"
+swc_fieldData,filtSampleCond,"Condition of filtered sample",string,NA,,"[LOV]","[LOV]"
+swc_fieldData,filtSampleID,"Identifier for filtered sample",string,NA,,"[DOES_NOT_EXIST][ASCII]","[SITE & . & namedLocation(xx) & . & startDate(YYYYMMDD) & .FIL]"
+swc_fieldData,filtSampleFate,"Fate of a filtered sample",string,NA,,"[IF (IS_NOT_BLANK(filtSampleID)), REQUIRE][ASCII]","[HIDDEN][DEFAULT_TO(active)]"
+swc_fieldData,filtSampleCode,"Barcode of a filtered sample",string,NA,,"[ASCII]","[HIDDEN]"
+swc_fieldData,filtSampleClass,"Class of a filtered sample",string,NA,,,"[HIDDEN][IF !(AOS groundwater well named location type), DEFAULT_TO ('swc_fieldData_in.filtSampleID')[IF (AOS groundwater well named location type), DEFAULT_TO ('swc_fieldData_in.filtSampleIDgwc')"
+swc_fieldData,filtSampleBottleSize,"The bottle size used to collect the filtered sample",string,NA,,"[LOV]",
+swc_fieldData,filtNutSampleCond,"Condition of a filtered nutrient sample",string,NA,,"[LOV]","[LOV]"
+swc_fieldData,filtNutSampleID,"Identifier for filtered nutrient sample",string,NA,,"[DOES_NOT_EXIST][ASCII]","[SITE & . & namedLocation(xx) & . & startDate(YYYYMMDD)&.RAW]"
+swc_fieldData,filtNutSampleFate,"Fate of a filtered nutrient sample",string,NA,,"[IF (IS_NOT_BLANK(filtNutSampleID)), REQUIRE][ASCII]","[HIDDEN][DEFAULT_TO(active)]"
+swc_fieldData,filtNutSampleBarcode,"Barcode of a filtered nutrient sample",string,NA,,"[ASCII]","[HIDDEN]"
+swc_fieldData,filtNutSampleClass,"Sample class of a filtered nutrient sample",string,NA,,"[ASCII]","[HIDDEN]"
+swc_fieldData,gwwFiltSampleHeadspace,"An indication of whether or not the filtered groundwater sample has headspace; for surface water samples no headspace is present in filtered samples",string,NA,,"[LOV]",
+swc_fieldData,gwwFiltBubbleFree,"An indication of whether or not the filtered groundwater sample was collected with a bubble free method",string,NA,,"[LOV]",
+swc_fieldData,gwwDICBubbleFree,"An indication of whether or not the DIC groundwater subsample was collected with a bubble free method",string,NA,,"[LOV]",
+swc_fieldData,gwwAlkSampleHeadspace,"An indication of whether or not the alkalinity groundwater sample has headspace; for surface water samples no headspace is present in alkalinity samples",string,NA,,"[LOV]",
+swc_fieldData,gwwAlkSampleBubbleFree,"An indication of whether or not the alkalinity groundwater sample was collected with a bubble free method",string,NA,,"[LOV]",
+swc_fieldData,rawSampleCond,"Condition of a raw whole water sample",string,NA,,"[LOV]","[LOV]"
+swc_fieldData,rawSampleID,"Identifier for raw whole water sample",string,NA,,"[DOES_NOT_EXIST][ASCII]","[SITE & . & namedLocation(xx) & . & startDate(YYYYMMDD)&.RAW]"
+swc_fieldData,rawSampleFate,"Fate of a raw whole water sample",string,NA,,"[IF (IS_NOT_BLANK(rawSampleID)), REQUIRE][ASCII]","[HIDDEN][DEFAULT_TO(active)]"
+swc_fieldData,rawSampleCode,"Barcode of a raw whole water sample",string,NA,,"[ASCII]","[HIDDEN]"
+swc_fieldData,rawSampleClass,"Class of a raw whole water sample",string,NA,,,"[HIDDEN][IF !(AOS groundwater well named location type), DEFAULT_TO ('swc_fieldData_in.rawSampleID')[IF (AOS groundwater well named location type), DEFAULT_TO ('swc_fieldData_in.rawSampleIDgwc')"
+swc_fieldData,rawNutSampleCond,"Condition of a raw nutrient sample",string,NA,,"[LOV]","[LOV]"
+swc_fieldData,rawNutSampleID,"Identifier for raw nutrient sample",string,NA,,"[DOES_NOT_EXIST][ASCII]","[SITE & . & namedLocation(xx) & . & startDate(YYYYMMDD)&.RAW]"
+swc_fieldData,rawNutSampleFate,"Fate of a raw nutrient sample",string,NA,,"[IF (IS_NOT_BLANK(rawNutSampleID)), REQUIRE][ASCII]","[HIDDEN][DEFAULT_TO(active)]"
+swc_fieldData,rawNutSampleBarcode,"Barcode of a raw nutrient sample",string,NA,,"[ASCII]","[HIDDEN]"
+swc_fieldData,rawNutSampleClass,"Sample class of a raw nutrient sample",string,NA,,"[ASCII]","[HIDDEN]"
+swc_fieldData,pcnSampleCond,"Condition of a particulate carbon and nitrogen sample",string,NA,,"[LOV]","[LOV]"
+swc_fieldData,pcnSampleID,"Identifier for particulate carbon and nitrogen sample",string,NA,,"[DOES_NOT_EXIST][ASCII]","[SITE & . & namedLocation(xx) & . & startDate(YYYYMMDD)&.PCN]"
+swc_fieldData,pcnSampleFate,"Fate of a particulate carbon and nitrogen sample",string,NA,,"[IF (IS_NOT_BLANK(pcnSampleID)), REQUIRE][ASCII]","[HIDDEN][DEFAULT_TO(active)]"
+swc_fieldData,pcnSampleCode,"Barcode of a particulate carbon and nitrogen sample",string,NA,,"[ASCII]","[HIDDEN]"
+swc_fieldData,pcnSampleClass,"Class of a particulate carbon and nitrogen sample",string,NA,,,"[HIDDEN][IF !(AOS groundwater well named location type), DEFAULT_TO ('swc_fieldData_in.pcnSampleID')[IF (AOS groundwater well named location type), DEFAULT_TO ('swc_fieldData_in.pcnSampleIDgwc')"
+swc_fieldData,dicSampleCond,"Condition of a dissolved inorganic carbon sample",string,NA,,"[LOV]","[LOV]"
+swc_fieldData,dicSampleID,"Identifier for dissolved inorganic carbon sample",string,NA,,"[DOES_NOT_EXIST][ASCII]","[SITE & . & namedLocation(xx) & . & startDate(YYYYMMDD)&.DIC]"
+swc_fieldData,dicSampleFate,"Fate of a dissolved inorganic carbon sample",string,NA,,"[IF (IS_NOT_BLANK(dicSampleID)), REQUIRE][ASCII]","[HIDDEN][DEFAULT_TO(active)]"
+swc_fieldData,dicSampleCode,"Barcode of a dissolved inorganic carbon sample",string,NA,,"[ASCII]","[HIDDEN]"
+swc_fieldData,labBlankNutSampleID,"Identifier for a lab blank nutrient sample",string,NA,,"[DOES_NOT_EXIST][ASCII]","[SITE & . & namedLocation(xx) & . & startDate(YYYYMMDD)&.RAW.NUT.LB]"
+swc_fieldData,labBlankNutSampleFate,"Fate of a lab blank nutrient sample",string,NA,,"[IF (IS_NOT_BLANK(labBlankNutSampleID)), REQUIRE][ASCII]","[HIDDEN][DEFAULT_TO(active)]"
+swc_fieldData,labBlankNutSampleBarcode,"Barcode of a lab blank nutrient sample",string,NA,,"[ASCII]","[HIDDEN]"
+swc_fieldData,labBlankNutSampleClass,"Class of a lab blank nutrient sample",string,NA,,,"[HIDDEN][IF !(AOS groundwater well named location type), DEFAULT_TO ('swc_fieldData_in.labBlankNutSampleID')[IF (AOS groundwater well named location type), DEFAULT_TO ('swc_fieldData_in.labBlankNutSampleIDgwc')"
+swc_fieldData,fieldBlankFilNutSampleID,"Identifier for a field blank filtered nutrient sample",string,NA,,"[DOES_NOT_EXIST][ASCII]","[SITE & . & namedLocation(xx) & . & startDate(YYYYMMDD)&.FIL.NUT.FB]"
+swc_fieldData,fieldBlankFilNutFate,"Fate of a field blank filtered nutrient sample",string,NA,,"[IF (IS_NOT_BLANK(fieldBlankFilNutSampleID)), REQUIRE][ASCII]","[HIDDEN][DEFAULT_TO(active)]"
+swc_fieldData,fieldBlankFilNutBarcode,"Barcode of a field blank filtered nutrient sample",string,NA,,"[ASCII]","[HIDDEN]"
+swc_fieldData,fieldBlankFilNutClass,"Class of a field blank filtered nutrient sample",string,NA,,,"[HIDDEN][IF !(AOS groundwater well named location type), DEFAULT_TO ('swc_fieldData_in.fieldBlankFilNutSampleID')[IF (AOS groundwater well named location type), DEFAULT_TO ('swc_fieldData_in.fieldBlankFilNutSampleIDgwc')"
+swc_fieldData,fieldBlankRawNutSampleID,"Identifier for a field blank raw nutrient sample",string,NA,,"[DOES_NOT_EXIST][ASCII]","[SITE & . & namedLocation(xx) & . & startDate(YYYYMMDD)&.RAW.NUT.FB]"
+swc_fieldData,fieldBlankRawNutFate,"Fate of a field blank raw nutrient sample",string,NA,,"[IF (IS_NOT_BLANK(fieldBlankRawNutSampleID)), REQUIRE][ASCII]","[HIDDEN][DEFAULT_TO(active)]"
+swc_fieldData,fieldBlankRawNutBarcode,"Barcode of a field blank raw nutrient sample",string,NA,,"[ASCII]","[HIDDEN]"
+swc_fieldData,fieldBlankRawNutClass,"Class of a field blank raw nutrient sample",string,NA,,,"[HIDDEN][IF !(AOS groundwater well named location type), DEFAULT_TO ('swc_fieldData_in.fieldBlankRawNutSampleID')[IF (AOS groundwater well named location type), DEFAULT_TO ('swc_fieldData_in.fieldBlankRawNutSampleIDgwc')"
+swc_fieldData,replicateNumber,"The number for the sample replicate",unsigned integer,NA,,,
+swc_fieldData,processedDate,"Date or date and time of processing event",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]",,"[DATE_FORMAT(YYYY-MM-DDTHH:MM)][WARN]"
+swc_fieldData,processedDateFilters,"Date or date and time of processing event of filtered samples",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]",,"[LESS_THAN (collectDate + 6hr)][HOURS][WARN]"
+swc_fieldData,sampleVolumeFiltered,"Volume of water filtered onto the filter for external analysis",real,milliliter,,"[IF(IS_NOT_BLANK(pcnSampleID) AND (pcnSampleFate != 'lost') AND (collectDate > 2018-01-01)), REQUIRE]","[GREATER_THAN_OR_EQUAL_TO (4000)][WARN]"
+swc_fieldData,shipmentTimeRange,"Indicates time delay between sample collection and shipment",string,NA,,"[LOV]","[LOV]"
+swc_fieldData,remarks,"Technician notes; free text comments accompanying the record",string,NA,,"[ASCII]","[ASCII]"
+swc_fieldData,fulcrumVersion,"Version of the Fulcrum application used during data entry",string,NA,,"[ASCII]",
+swc_fieldData,platformInfo,"Operating System and browser information (where applicable) of computer used during data entry",string,NA,,"[ASCII]",
+swc_fieldData,fieldDataQF,"Data quality flag for field data",string,NA,,"[ASCII]",
+swc_fieldData,fulcrumPrimaryKey,"Primary identifier for the record in Fulcrum at the same granularity for which the record occurs in the NEON database (i.e., one fulcrumPrimaryKey should map to a single record in the NEON database)",string,NA,,"[ASCII]",
+swc_domainLabData,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+swc_domainLabData,stationID,"Identifier for station where sample was collected",string,NA,"[DERIVE_FROM_SAMPLE_TREE ('swc' OR 'gwc' OR 'gwc.gsi' OR 'swc.asi' OR 'swc.sdg' OR 'swc.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'swc.sdg.amc' OR 'swc.asi.sdg.amc')]","[REQUIRE][NAMED_LOCATION_TYPE('AOS S2 named location type' OR 'AOS littoral named location type' OR 'AOS buoy named location type' OR 'AOS reach named location type' OR 'AOS groundwater well named location type')]",
+swc_domainLabData,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE ('swc' OR 'gwc' OR 'gwc.gsi' OR 'swc.asi' OR 'swc.sdg' OR 'swc.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'swc.sdg.amc' OR 'swc.asi.sdg.amc')]",,
+swc_domainLabData,collectDate,"Date of the collection event",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE ('swc' OR 'gwc' OR 'gwc.gsi' OR 'swc.asi' OR 'swc.sdg' OR 'swc.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'swc.sdg.amc' OR 'swc.asi.sdg.amc')]",,
+swc_domainLabData,titrationDate,"Date and time of titration",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]","[LESS_THAN_OR_EQUAL_TO (NOW + 24hr)]",
+swc_domainLabData,parentSampleID,"Parent sampleID of sample being processed",string,NA,,"[REQUIRE][EXISTS][ASCII]",
+swc_domainLabData,parentSampleFate,"Fate of a parent sample",string,NA,"[DEFAULT_TO('active')]","[REQUIRE][ASCII]",
+swc_domainLabData,parentSampleCode,"Barcode of a parent sample",string,NA,,"[ASCII]",
+swc_domainLabData,domainSampleID,"Identifier for sample from domain lab",string,NA,,"[REQUIRE][DOES_NOT_EXIST][ASCII]",
+swc_domainLabData,domainSampleFate,"Fate of the domain lab sample",string,NA,"[DEFAULT_TO('processed')]","[REQUIRE][ASCII]",
+swc_domainLabData,domainSampleCode,"Barcode of the domain lab sample",string,NA,,"[ASCII]",
+swc_domainLabData,titrationLocation,"Location where sample titration was completed",string,NA,,"[LOV]",
+swc_domainLabData,sampleType,"Type of sample",string,NA,,"[REQUIRE][LOV]",
+swc_domainLabData,pH4CheckValue,"pH meter reading during pH 4 check",real,pH,,,
+swc_domainLabData,pH7CheckValue,"pH meter reading during pH 7 check",real,pH,,,
+swc_domainLabData,pHMeterCalibration,"Was pH meter recalibrated?",string,NA,,"[LOV]",
+swc_domainLabData,initialSamplepH,"pH at start of titration",real,pH,,"[GREATER_THAN_OR_EQUAL_TO (1-)][LESS_THAN_OR_EQUAL_TO (15)]",
+swc_domainLabData,initialSampleTemp,"Temperature at start of titration",real,celsius,,"[REQUIRE][GREATER_THAN_OR_EQUAL_TO (10)][LESS_THAN_OR_EQUAL_TO (40)]",
+swc_domainLabData,normality,"Titrant normality used",string,equivalentsPerLiter,,"[REQUIRE][LOV]",
+swc_domainLabData,sampleVolume,"Sample volume in milliliters",real,milliliter,,"[REQUIRE][GREATER_THAN_OR_EQUAL_TO (10)][LESS_THAN_OR_EQUAL_TO (200)]",
+swc_domainLabData,methodType,"Method of titration used",string,NA,,"[REQUIRE][LOV]",
+swc_domainLabData,remarks,"Technician notes; free text comments accompanying the record",string,NA,,"[ASCII]","[ASCII]"
+swc_domainLabData,measuredBy,"An identifier for the technician who measured or collected the data",string,NA,,"[REQUIRE][ASCII]",
+swc_domainLabData,dataQF,"Data quality flag",string,NA,,"[ASCII]",
+swc_domainLabData,titrationDataString,"x,y pairs of pH and Counter Reading on digital titrator concatenated into a string",string,NA,,"[ASCII]",
+swc_domainLabData,alkMeqPerL,"alkalinity titration result in milliequivalents per Liter",real,milliequivalentsPerLiter,,,
+swc_domainLabData,alkMgPerL,"alkalinity titration result in milligrams of Calcium Carbonate per Liter",real,milligramsPerLiter,,,
+swc_domainLabData,ancMeqPerL,"acid neutralizing capacity titration result in milliequivalents per Liter",real,milliequivalentsPerLiter,,,
+swc_domainLabData,ancMgPerL,"acid neutralizing capacity titration result in milligrams of Calcium Carbonate per Liter",real,milligramsPerLiter,,,
+asi_fieldData,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+asi_fieldData,stationID,"Identifier for station where sample was collected",string,NA,"[DERIVE_FROM_SAMPLE_TREE ('asi' OR 'gsi' OR 'swc.asi' OR 'gwc.gsi' OR 'asi.sdg' OR 'asi.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'asi.sdg.amc' OR 'swc.asi.sdg.amc')]","[NAMED_LOCATION_TYPE('AOS S2 named location type' OR 'AOS littoral named location type' OR 'AOS buoy named location type' OR 'AOS reach named location type' OR 'AOS groundwater well named location type')]",
+asi_fieldData,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE ('asi' OR 'gsi' OR 'swc.asi' OR 'gwc.gsi' OR 'asi.sdg' OR 'asi.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'asi.sdg.amc' OR 'swc.asi.sdg.amc')]",,
+asi_fieldData,collectDate,"Date of the collection event",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE ('asi' OR 'gsi' OR 'swc.asi' OR 'gwc.gsi' OR 'asi.sdg' OR 'asi.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'asi.sdg.amc' OR 'swc.asi.sdg.amc')]",,
+asi_fieldData,parentSampleID,"Parent sampleID of sample being processed",string,NA,,"[EXISTS][ASCII]","[DEFAULT_TO(wpa_fieldSuperParent_in.parentSampleID)]"
+asi_fieldData,parentSampleFate,"Fate of a parent sample",string,NA,,"[REQUIRE][ASCII]","[DEFAULT_TO(wpa_fieldSuperParent_in.parentSampleFate)"
+asi_fieldData,parentSampleCode,"Barcode of a parent sample",string,NA,,"[ASCII]","[DEFAULT_TO(wpa_fieldSuperParent_in.parentSampleCode)"
+asi_fieldData,isotopeH2OSampleCond,"Condition of a sample for 2H:1H and 18O:16O water stable isotope sample",string,NA,,"[LOV]","[LOV]"
+asi_fieldData,isotopeH2OSampleID,"Identifier of sample for 2H:1H and 18O:16O water stable isotope sample",string,NA,,"[DOES_NOT_EXIST][ASCII][MATCH_REGULAR_EXPRESSION('[A-Z]{4}.((?i)ss|in|ot|re|rs|c[0-3]|w[1-8]).20[0-9]{2}(0[1-9]|1[012])(0[1-9]|1[0-9]|2[0-9]|3[01]).H2O.[1-9]')][IF(IS_BLANK(isotopePOMSampleID) & IS_BLANK(isotopePOMRep2SampleID)), REQUIRE]","[IF (H2OIsotopeSampleCollected = Y), REQUIRE][SITE & '.' & namedLocation(xx) & '.' & startDate(YYYYMMDD) & '.H2O.1']"
+asi_fieldData,isotopeH2OSampleFate,"Fate of the water stable isotope sample",string,NA,,"[IF (IS_NOT_BLANK(isotopeH2OSampleID)), REQUIRE][IF (IS_BLANK(isotopeH2OSampleID)), REQUIRE_NULL][ASCII]","[HIDDEN][IF (IS_NOT_BLANK(isotopeH2OSampleID)), DEFAULT_TO('active')]"
+asi_fieldData,isotopeH2OSampleCode,"Barcode of the water stable isotope sample",string,NA,,"[ASCII]","[HIDDEN]"
+asi_fieldData,sampleClass,"Class of a sample",string,NA,,,"[HIDDEN][IF !(AOS groundwater well named location type), DEFAULT_TO ('asi_fieldData_in.isotopeH2OSampleIDasi')][IF (AOS groundwater well named location type), DEFAULT_TO ('asi_fieldData_in.isotopeH2OSampleIDgsi')]"
+asi_fieldData,isotopePOMRep2SampleCond,"Condition of a sample for 13C:12C and 15N:14N particulate organic matter (POM) stable isotope sample for replicate 2",string,NA,,"[LOV]","[LOV]"
+asi_fieldData,isotopePOMRep2SampleID,"Identifier of sample for 13C:12C and 15N:14N particulate organic matter (POM) stable isotope sample for replicate 2",string,NA,,"[DOES_NOT_EXIST][IF (IS_NOT_BLANK(sampleVolumeFilteredPOMRep2)), REQUIRE][ASCII][MATCH_REGULAR_EXPRESSION('[A-Z]{4}.((?i)ss|in|ot|re|rs|c[0-3]).20[0-9]{2}(0[1-9]|1[012])(0[1-9]|1[0-9]|2[0-9]|3[01]).POM.[1-9]')]","[IF (IS_NOT_BLANK(sampleVolumeFilteredPOMRep2)), REQUIRE][SITE & '.' & namedLocation(xx) & '.' & startDate(YYYYMMDD) & '.POM.2']"
+asi_fieldData,isotopePOMRep2SampleFate,"Fate of the particulate organic matter (POM) stable isotope sample, replicate 2",string,NA,,"[IF (IS_NOT_BLANK(isotopePOMRep2SampleID)), REQUIRE][IF (IS_BLANK(isotopePOMRep2SampleID)), REQUIRE_NULL][ASCII]","[HIDDEN][IF (IS_NOT_BLANK(isotopePOMRep2SampleID)), DEFAULT_TO('active')]"
+asi_fieldData,isotopePOMRep2SampleCode,"Barcode of the particulate organic matter (POM) stable isotope sample, replicate 2",string,NA,,"[ASCII]","[HIDDEN]"
+asi_fieldData,isotopePOMSampleCond,"Condition of a sample for 13C:12C and 15N:14N particulate organic matter (POM) stable isotope sample",string,NA,,"[LOV]","[LOV]"
+asi_fieldData,isotopePOMSampleID,"Identifier of sample for 13C:12C and 15N:14N particulate organic matter (POM) stable isotope sample",string,NA,,"[DOES_NOT_EXIST][IF (IS_NOT_BLANK(sampleVolumeFilteredPOMRep1)), REQUIRE][ASCII][MATCH_REGULAR_EXPRESSION('[A-Z]{4}.((?i)ss|in|ot|re|rs|c[0-3]).20[0-9]{2}(0[1-9]|1[012])(0[1-9]|1[0-9]|2[0-9]|3[01]).POM.[1-9]')]","[IF (IS_NOT_BLANK(sampleVolumeFilteredPOMRep1)), REQUIRE][SITE & '.' & namedLocation(xx) & '.' & startDate(YYYYMMDD) & '.POM.1']"
+asi_fieldData,isotopePOMSampleFate,"Fate of the particulate organic matter (POM) stable isotope sample",string,NA,,"[IF (IS_NOT_BLANK(isotopePOMSampleID)), REQUIRE][IF (IS_BLANK(isotopePOMSampleID)), REQUIRE_NULL][ASCII]","[HIDDEN][IF (IS_NOT_BLANK(isotopePOMSampleID)), DEFAULT_TO('active')]"
+asi_fieldData,isotopePOMSampleCode,"Barcode of the particulate organic matter (POM) stable isotope sample",string,NA,,"[ASCII]","[HIDDEN]"
+asi_fieldData,processedDateFilters,"Date or date and time of processing event of filtered samples",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]",,"[LESS_THAN (collectDate + 6)][HOURS][WARN]"
+asi_fieldData,processedDateH2OIsotopes,"Date or date and time of processing event of H2O isotope sample",dateTime,NA,"[CONVERT_TO_UTC(namedLocation)]",,"[LESS_THAN (collectDate + 6)][HOURS][WARN]"
+asi_fieldData,sampleVolumeFilteredPOMRep1,"Volume of water filtered through the filter for particulate organic matter (POM) replicate 1 for isotope external analysis",real,milliliter,,"[LESS_THAN_OR_EQUAL_TO (4000)]","[LESS_THAN_OR_EQUAL_TO (4000)][WARN]"
+asi_fieldData,sampleVolumeFilteredPOMRep2,"Volume of water filtered through the filter for particulate organic matter (POM) replicate 2 for isotope external analysis",real,milliliter,,"[LESS_THAN_OR_EQUAL_TO (4000)]","[LESS_THAN_OR_EQUAL_TO (4000)]"
+asi_fieldData,remarks,"Technician notes; free text comments accompanying the record",string,NA,,"[ASCII]","[ASCII]"
+asi_fieldData,fulcrumVersion,"Version of the Fulcrum application used during data entry",string,NA,,"[ASCII]",
+asi_fieldData,platformInfo,"Operating System and browser information (where applicable) of computer used during data entry",string,NA,,"[ASCII]",
+asi_fieldData,fieldDataQF,"Data quality flag for field data",string,NA,,"[ASCII]",
+asi_fieldData,fulcrumPrimaryKey,"Primary identifier for the record in Fulcrum at the same granularity for which the record occurs in the NEON database (i.e., one fulcrumPrimaryKey should map to a single record in the NEON database)",string,NA,,"[ASCII]",
+wc_externalLabDataByAnalyte,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+wc_externalLabDataByAnalyte,sampleID,"Identifier for sample",string,NA,,"[EXISTS][ASCII][REQUIRE_COLUMN]",
+wc_externalLabDataByAnalyte,sampleFate,"Fate of a sample",string,NA,"[DEFAULT_TO('processed')]","[REQUIRE][ASCII]",
+wc_externalLabDataByAnalyte,sampleCode,"Barcode of a sample",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+wc_externalLabDataByAnalyte,stationID,"Identifier for station where sample was collected",string,NA,"[DERIVE_FROM_SAMPLE_TREE ('swc' OR 'gwc' OR 'gwc.gsi' OR 'swc.asi' OR 'swc.sdg' OR 'swc.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'swc.sdg.amc' OR 'swc.asi.sdg.amc' OR 'audit_sample')]","[NAMED_LOCATION_TYPE('AOS S2 named location type' OR 'AOS littoral named location type' OR 'AOS buoy named location type' OR 'AOS reach named location type' OR 'AOS groundwater well named location type' OR 'External Lab')]",
+wc_externalLabDataByAnalyte,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE ('swc' OR 'gwc' OR 'gwc.gsi' OR 'swc.asi' OR 'swc.sdg' OR 'swc.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'swc.sdg.amc' OR 'swc.asi.sdg.amc' OR 'audit_sample')]",,
+wc_externalLabDataByAnalyte,collectDate,"Date of the collection event",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE ('swc' OR 'gwc' OR 'gwc.gsi' OR 'swc.asi' OR 'swc.sdg' OR 'swc.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'swc.sdg.amc' OR 'swc.asi.sdg.amc' OR 'audit_sample')]",,
+wc_externalLabDataByAnalyte,laboratoryName,"Name of the laboratory or facility that is processing the sample",string,NA,"[DEFAULT_TO_LAB_LOGGED_IN]","[NAMED_LOCATION_TYPE('External Lab')]",
+wc_externalLabDataByAnalyte,analyte,"Analyte or parameter measured",string,NA,,"[LOV][REQUIRE][REQUIRE_COLUMN]",
+wc_externalLabDataByAnalyte,analyteConcentration,"Concentration of analyte",real,NA,,"[IF((sampleCondition='OK' OR sampleCondition='GOOD') AND IS_BLANK(belowDetectionQF)), REQUIRE][REQUIRE_COLUMN]",
+wc_externalLabDataByAnalyte,analyteUnits,"Associated units of measure for analyte",string,NA,,"[LOV][REQUIRE_COLUMN]",
+wc_externalLabDataByAnalyte,belowDetectionQF,"Quality Flag indicating that at least one of the parameters in this record is below the method detection limit",string,NA,,"[LOV]",
+wc_externalLabDataByAnalyte,runID,"A linking value provided by the external lab that associates the sample data to the run metadata, including QA values",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+wc_externalLabDataByAnalyte,internalLabID,"Internal identifier used by the external facility",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+wc_externalLabDataByAnalyte,coolerTemp,"Temperature of the cooler when the sample arrived at the external lab",real,celsius,,"[REQUIRE_COLUMN]",
+wc_externalLabDataByAnalyte,externalLabMetadata,"The external lab's metadata",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+wc_externalLabDataByAnalyte,remarks,"Technician notes; free text comments accompanying the record",string,NA,,"[IF(sampleCondition='Other'), REQUIRE][ASCII][REQUIRE_COLUMN]",
+wc_externalLabDataByAnalyte,uploadDate,"Date the file was uploaded",dateTime,NA,"[UPLOAD_DATE]","[GREATER_THAN (startDate)][LESS_THAN_OR_EQUAL_TO (NOW + 24hr)]",
+wc_externalLabDataByAnalyte,shipmentWarmQF,"Quality Flag for cooler arriving at external lab too warm (above 6 C)",real,NA,"[IF(IS_BLANK(coolerTemp)), '-1'][IF (coolerTemp > 6), DEFAULT_TO (1)][IF (coolerTemp <= 6), DEFAULT_TO (0)]",,
+wc_externalLabDataByAnalyte,dataQF,"Data quality flag",string,NA,,"[ASCII]",
+wc_externalLabDataByAnalyte,sampleCondition,"Condition of a sample",string,NA,,"[LOV][REQUIRE][REQUIRE_COLUMN]",
+wc_externalLabData,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]",,
+wc_externalLabData,sampleID,"Identifier for sample",string,NA,,"[EXISTS][REQUIRE][ASCII]",
+wc_externalLabData,sampleFate,"Fate of a sample",string,NA,"[DEFAULT_TO('processed')]","[REQUIRE][ASCII]",
+wc_externalLabData,sampleCode,"Barcode of a sample",string,NA,,"[ASCII]",
+wc_externalLabData,siteID,"NEON site code",string,NA,,"[ASCII]",
+wc_externalLabData,stationID,"Identifier for station where sample was collected",string,NA,"[DERIVE_FROM_SAMPLE_TREE ('swc' OR 'gwc' OR 'gwc.gsi' OR 'swc.asi' OR 'swc.sdg' OR 'swc.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'swc.sdg.amc' OR 'swc.asi.sdg.amc' OR 'audit_sample')]","[NAMED_LOCATION_TYPE('AOS S2 named location type' OR 'AOS littoral named location type' OR 'AOS buoy named location type' OR 'AOS reach named location type' OR 'AOS groundwater well named location type' OR 'External Lab')]",
+wc_externalLabData,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE ('swc' OR 'gwc' OR 'gwc.gsi' OR 'swc.asi' OR 'swc.sdg' OR 'swc.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'swc.sdg.amc' OR 'swc.asi.sdg.amc' OR 'audit_sample')]",,
+wc_externalLabData,collectDate,"Date of the collection event",dateTime,NA,"[DERIVE_FROM_SAMPLE_TREE ('swc' OR 'gwc' OR 'gwc.gsi' OR 'swc.asi' OR 'swc.sdg' OR 'swc.amc' OR 'swc.asi.sdg' OR 'swc.asi.amc' OR 'swc.sdg.amc' OR 'swc.asi.sdg.amc' OR 'audit_sample')]",,
+wc_externalLabData,laboratoryName,"Name of the laboratory or facility that is processing the sample",string,NA,"[DEFAULT_TO_LAB_LOGGED_IN]","[NAMED_LOCATION_TYPE('External Lab')]",
+wc_externalLabData,pH,"Measurement of pH in sample",real,pH,,"[GREATER_THAN (2)][LESS_THAN (11)]",
+wc_externalLabData,externalConductance,"Specific conductivity (auto-corrected to 25 degrees C) measured at the external lab",real,microsiemensPerCentimeter,,,
+wc_externalLabData,waterCarbonate,"Carbonate concentration",real,milligramsPerLiter,,,
+wc_externalLabData,waterBicarbonate,"Bicarbonate concentration",real,milligramsPerLiter,,,
+wc_externalLabData,externalANC,"Acid neutralizing capacity titration result from external lab in milligrams of Calcium Carbonate per liter",real,milliequivalentsPerLiter,,,
+wc_externalLabData,waterCalcium,"Calcium concentration",real,milligramsPerLiter,,,
+wc_externalLabData,waterMagnesium,"Magnesium concentration",real,milligramsPerLiter,,,
+wc_externalLabData,waterSodium,"Sodium concentration",real,milligramsPerLiter,,,
+wc_externalLabData,waterPotassium,"Potassium concentration",real,milligramsPerLiter,,,
+wc_externalLabData,waterSulfate,"Sulfate concentration",real,milligramsPerLiter,,,
+wc_externalLabData,waterChlorine,"Chlorine concentration",real,milligramsPerLiter,,,
+wc_externalLabData,waterManganese,"Manganese concentration",real,milligramsPerLiter,,,
+wc_externalLabData,waterIron,"Iron concentration",real,milligramsPerLiter,,,
+wc_externalLabData,waterBromine,"Bromine concentration",real,milligramsPerLiter,,,
+wc_externalLabData,waterFluorine,"Fluorine concentration",real,milligramsPerLiter,,,
+wc_externalLabData,waterSilica,"Silica concentration",real,milligramsPerLiter,,,
+wc_externalLabData,totalSuspendedSolids,"Total suspended solids concentration",real,milligramsPerLiter,,,
+wc_externalLabData,totalSuspendedSolidsDryMass,"Dry mass of total suspended solids",real,microgram,,,
+wc_externalLabData,totalDissolvedSolids,"Total dissolved solids concentration",real,milligramsPerLiter,,,
+wc_externalLabData,waterNitrateAndNitriteN,"Nitrate plus nitrite concentration as milligrams Nitrogen per liter",real,milligramsPerLiter,,,
+wc_externalLabData,waterNitriteN,"Nitrite concentration concentration as milligrams Nitrogen per liter",real,milligramsPerLiter,,,
+wc_externalLabData,waterAmmoniumN,"Ammonium concentration as milligrams Nitrogen per liter",real,milligramsPerLiter,,,
+wc_externalLabData,waterOrthophosphateP,"Orthophosphate concentration as milligrams Phosphorus per liter",real,milligramsPerLiter,,,
+wc_externalLabData,waterTotalNitrogen,"Total nitrogen concentration",real,milligramsPerLiter,,,
+wc_externalLabData,totalDissolvedNitrogen,"Total dissolved nitrogen concentration",real,milligramsPerLiter,,,
+wc_externalLabData,dissolvedInorganicCarbon,"Dissolved inorganic carbon concentration",real,milligramsPerLiter,,,
+wc_externalLabData,dissolvedOrganicCarbon,"Dissolved organic carbon concentration",real,milligramsPerLiter,,,
+wc_externalLabData,waterTotalOrganicCarbon,"Total organic carbon",real,milligramsPerLiter,,,
+wc_externalLabData,waterTotalPhosphorus,"Total phosphorus",real,milligramsPerLiter,,,
+wc_externalLabData,totalDissolvedPhosphorus,"Total dissolved phosphorus",real,milligramsPerLiter,,,
+wc_externalLabData,totalParticulateCarbonMass,"Total particulate carbon as milligrams Carbon",real,milligram,,,
+wc_externalLabData,totalParticulateNitrogenMass,"Total particulate nitrogen as milligrams Nitrogen",real,milligram,,,
+wc_externalLabData,uvAbsorbance250,"Ultraviolet absorbance at 250nm reported per 1cm path length",real,NA,,,
+wc_externalLabData,uvAbsorbance284,"Ultraviolet absorbance at 284nm reported per 1cm path length",real,NA,,,
+wc_externalLabData,nitrateNitriteRunID,"a linking value provided by the external lab that associates the nitrate plus nitrite to the run metadata",string,NA,,"[ASCII]",
+wc_externalLabData,nitriteRunID,"a linking value provided by the external lab that associates the nitrite to the run metadata",string,NA,,"[ASCII]",
+wc_externalLabData,nh4RunID,"a linking value provided by the external lab that associates the ammonium to the run metadata",string,NA,,"[ASCII]",
+wc_externalLabData,OrthoPRunID,"a linking value provided by the external lab that associates the orthophosphates to the run metadata",string,NA,,"[ASCII]",
+wc_externalLabData,tnRunID,"a linking value provided by the external lab that associates the total nitrogen to the run metadata",string,NA,,"[ASCII]",
+wc_externalLabData,tdnRunID,"a linking value provided by the external lab that associates the total dissolved nitrogen to the run metadata",string,NA,,"[ASCII]",
+wc_externalLabData,dicRunID,"a linking value provided by the external lab that associates the dissolved inorganic carbon to the run metadata",string,NA,,"[ASCII]",
+wc_externalLabData,docRunID,"a linking value provided by the external lab that associates the dissolved organic carbon to the run metadata",string,NA,,"[ASCII]",
+wc_externalLabData,tocRunID,"a linking value provided by the external lab that associates the total organic carbon to the run metadata",string,NA,,"[ASCII]",
+wc_externalLabData,tpcnRunDate,"A linking value provided by the external lab that associates the total carbon or total nitrogen to run date",dateTime,NA,"[CONVERT_TO_UTC(laboratoryName)]","[GREATER_THAN (startDate - 24hr)][LESS_THAN_OR_EQUAL_TO (NOW + 24hr)]",
+wc_externalLabData,uvBatchID,"a linking value provided by the external lab that associates the ultraviolet absorbance to the batch metadata",string,NA,,"[ASCII]",
+wc_externalLabData,internalLabID,"Internal identifier used by the external facility",string,NA,,"[ASCII]",
+wc_externalLabData,shipmentReceivedDate,"Date a sample was received",dateTime,NA,"[CONVERT_TO_UTC(laboratoryName)]","[GREATER_THAN (startDate - 24hr)][LESS_THAN_OR_EQUAL_TO (NOW + 24hr)]",
+wc_externalLabData,receivedBy,"Anonymized name of lab personnel receiving the shipment",string,NA,,"[ASCII]",
+wc_externalLabData,shipDate,"Date shipment sent by domain lab",dateTime,NA,"[CONVERT_TO_UTC(laboratoryName)]","[GREATER_THAN (startDate - 24hr)][LESS_THAN_OR_EQUAL_TO (NOW + 24hr)]",
+wc_externalLabData,shipmentID,"Unique identifier associated with shipment",string,NA,,"[ASCII]",
+wc_externalLabData,coolerTemp,"Temperature of the cooler when the sample arrived at the external lab",real,celsius,,,
+wc_externalLabData,shipmentCondition,"The condition in which the shipment was received",string,NA,,"[LOV]",
+wc_externalLabData,externalLabMetadata,"The external lab's metadata",string,NA,,"[ASCII]",
+wc_externalLabData,remarks,"Technician notes; free text comments accompanying the record",string,NA,,"[ASCII]",
+wc_externalLabData,uploadDate,"Date the file was uploaded",dateTime,NA,"[UPLOAD_DATE]","[GREATER_THAN (startDate)][LESS_THAN_OR_EQUAL_TO (NOW + 24hr)]",
+wc_externalLabData,shipmentWarmQF,"Quality Flag for cooler arriving at external lab too warm (above 6 C)",real,NA,"[IF(IS_BLANK(coolerTemp)), '-1'][IF (coolerTemp > 6), DEFAULT_TO (1)][IF (coolerTemp <= 6), DEFAULT_TO (0)]",,
+wc_externalLabData,shipmentLateQF,"Quality Flag for shipment arriving more than one day after shipment sent",real,NA,,,
+wc_externalLabData,shipmentLateTest,"Test for quality flag for shipment arriving more than one day after shipment sent",real,NA,,,
+wc_externalLabData,dataQF,"Data quality flag",string,NA,,"[ASCII]",
+wc_externalLabData,sampleCondition,"Condition of a sample",string,NA,,"[LOV]",
+wc_externalLabSummaryData,uid,"Unique ID within NEON database; an identifier for the record",string,NA,"[CREATE_UID]","[REQUIRE]",
+wc_externalLabSummaryData,laboratoryName,"Name of the laboratory or facility that is processing the sample",string,NA,"[DEFAULT_TO_LAB_LOGGED_IN]","[NAMED_LOCATION_TYPE('External Lab')][REQUIRE]",
+wc_externalLabSummaryData,startDate,"The start date-time or interval during which an event occurred",dateTime,NA,"[UPLOAD_DATE]","[REQUIRE]",
+wc_externalLabSummaryData,endDate,"The end date-time or interval during which an event occurred",dateTime,NA,"[UPLOAD_DATE]","[REQUIRE]",
+wc_externalLabSummaryData,analyte,"Analyte or parameter measured",string,NA,,"[REQUIRE][LOV][REQUIRE_COLUMN]",
+wc_externalLabSummaryData,instrument,"Type of instrument used for the analysis",string,NA,,"[REQUIRE][ASCII][REQUIRE_COLUMN]",
+wc_externalLabSummaryData,method,"Published method used for analysis",string,NA,,"[REQUIRE][ASCII][REQUIRE_COLUMN]",
+wc_externalLabSummaryData,methodModification,"Any remarks on modifications to published methods",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+wc_externalLabSummaryData,methodDetectionLimit,"Detection limit for method used",real,NA,,"[IF (analyte != 'UV Absorbance (250 nm)' OR 'UV Absorbance (280 nm)'), REQUIRE][REQUIRE_COLUMN]",
+wc_externalLabSummaryData,analyteUnits,"Associated units of measure for analyte",string,NA,,"[REQUIRE][LOV][REQUIRE_COLUMN]",
+wc_externalLabSummaryData,precision,"Closeness of agreement between indications or measured quantity values obtained by replicate measurements on the same or similar objects under specified conditions",real,NA,,"[IF (analyte != 'UV Absorbance (250 nm)' OR 'UV Absorbance (280 nm)'), REQUIRE_NULL][REQUIRE_COLUMN]",
+wc_externalLabSummaryData,precisionRepeatabilityUnits,"Units for closeness of agreement between indications or measured quantity values obtained by replicate measurements on the same or similar objects under specified conditions",string,NA,,"[IF (IS_NOT_BLANK(precision)), REQUIRE][LOV]",
+wc_externalLabSummaryData,absorbancePrecision,"Closeness of agreement between indications or measured quantity values obtained by replicate measurements on the same or similar objects under specified conditions for absorbance",string,NA,,"[IF (analyte = 'UV Absorbance (250 nm)' OR 'UV Absorbance (280 nm)'), REQUIRE][ASCII][REQUIRE_COLUMN]",
+wc_externalLabSummaryData,measurementUncertainty,"Parameter, associated with the result of a measurement, that characterizes the dispersion of the values that could reasonably be attributed to the measurant",real,NA,,"[REQUIRE_COLUMN]",
+wc_externalLabSummaryData,measurementUncertaintyUnits,"Units of measurement uncertainty",string,NA,,"[IF (IS_NOT_BLANK(measurementUncertainty)), REQUIRE][LOV]",
+wc_externalLabSummaryData,internalLabName,"Name of internal laboratory or facility that is processing the sample",string,NA,,"[ASCII][REQUIRE_COLUMN]",
+wc_externalLabSummaryData,labSpecificStartDate,"Date a specific analyte, instrument, and associated method detection limit combination started",dateTime,NA,"[CONVERT_TO_UTC (namedLocation)]","[REQUIRE][LESS_THAN_OR_EQUAL_TO (NOW + 24hr)][REQUIRE_COLUMN]",
+wc_externalLabSummaryData,labSpecificEndDate,"Date a specific analyte, instrument, and associated method detection limit combination ended",dateTime,NA,"[CONVERT_TO_UTC (namedLocation)]","[GREATER_THAN (labSpecificStartDate)][LESS_THAN_OR_EQUAL_TO (NOW + 24hr)][REQUIRE_COLUMN]",

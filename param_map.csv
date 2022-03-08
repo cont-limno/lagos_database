@@ -1,0 +1,100 @@
+CharacteristicName,source_parameter
+Alkalinity,Alkalinity
+Alkalinity,"Alkalinity, Bicarbonate as CaCO3"
+Alkalinity,"Alkalinity, Carbonate as CaCO3"
+Alkalinity,"Alkalinity, carbonate"
+Alkalinity,"Alkalinity, total"
+"Aluminum, dissolved",Aluminum
+"Aluminum, total",Aluminum
+"Arsenic, dissolved",Arsenate
+"Arsenic, dissolved",Arsenic
+"Arsenic, dissolved",Arsenite
+"Arsenic, total",Arsenic
+"Atrazine, dissolved",Atrazine
+"Calcium, dissolved",Calcium
+"Carbon, dissolved organic",Carbon
+"Carbon, dissolved organic",Organic carbon
+"Carbon, total organic",Carbon
+"Carbon, total organic",Organic carbon
+"Carbon, total organic",Total carbon
+"Chloride, dissolved",Chloride
+Chlorophyll a,Chlorophyll a - Phytoplankton (suspended)
+Chlorophyll a,Chlorophyll a
+Chlorophyll a,"Chlorophyll a, corrected for pheophytin"
+Chlorophyll a,"Chlorophyll a, free of pheophytin"
+Chlorophyll a,"Chlorophyll a, uncorrected for pheophytin"
+Chlorophyll a,Chlorophyll
+"Color, apparent",Apparent color
+"Color, apparent",Color
+"Color, true",True color
+Conductivity,Conductivity
+Conductivity,Specific conductance
+Depth,Depth of water column
+Depth,Depth
+Depth,"Depth, bottom"
+Depth,"Depth, data-logger (non-ported)"
+Depth,"Depth, data-logger (ported)"
+"Phosphorus, soluable reactive orthophosphate",Orthophosphate as P
+"Phosphorus, soluable reactive orthophosphate",Orthophosphate as PO4
+"Phosphorus, soluable reactive orthophosphate",Orthophosphate
+"Phosphorus, soluable reactive orthophosphate",Phosphate-phosphorus as P
+"Phosphorus, soluable reactive orthophosphate",Phosphate-phosphorus
+"Phosphorus, soluable reactive orthophosphate",Phosphorus
+"Nitrogen, total dissolved Kjeldahl",Kjeldahl nitrogen
+E. coli,Escherichia coli
+E. coli,Escherichia
+E. coli-CFU,Escherichia coli
+E. coli-CFU,Escherichia
+E. coli-MPN,Escherichia coli
+E. coli-MPN,Escherichia
+"Magnesium, dissolved",Magnesium
+"Mercury, dissolved",Mercury
+"Mercury, total",Mercury
+"Methylmercury, dissolved",Methylmercury(1+)
+Microcystin,Microcystin LA
+Microcystin,Microcystin LF
+Microcystin,Microcystin LR
+Microcystin,Microcystin RR
+Microcystin,Microcystin
+Microcystin,Microcystins
+"Nitrogen, NH4",Ammonia-nitrogen as N
+"Nitrogen, NH4",Ammonia-nitrogen
+"Nitrogen, NH4",Ammonia and ammonium
+"Nitrogen, NH4",Ammonia
+"Nitrogen, NH4",Ammonium
+"Nitrogen, nitrite (NO2)",Nitrite as N
+"Nitrogen, nitrite (NO2)",Nitrite
+"Nitrogen, nitrite (NO2) + nitrate (NO3)",Inorganic nitrogen (nitrate and nitrite) as N
+"Nitrogen, nitrite (NO2) + nitrate (NO3)",Inorganic nitrogen (nitrate and nitrite)
+"Nitrogen, nitrite (NO2) + nitrate (NO3)",Nitrate + Nitrite
+"Nitrogen, nitrite (NO2) + nitrate (NO3)",Nitrate
+"Nitrogen, nitrite (NO2) + nitrate (NO3)",Nitrogen
+"Oxygen, dissolved",Dissolved oxygen (DO)
+"Oxygen, dissolved",Oxygen
+"pH, equilibrated",pH
+Salinity,Salinity
+Secchi,"Depth, Secchi disk depth (choice list)"
+Secchi,"Depth, Secchi disk depth"
+"Selenium, dissolved",Selenium
+"Selenium, total",Selenium
+"Silica, dissolved",Silica
+"Silica, dissolved",Silicon
+"Sulfate, dissolved",Sulfate
+"Sulfate, dissolved",Sulfur Sulfate
+"Sulfate, dissolved",Sulfur
+"Solids, total suspended",Total dissolved solids
+"Solids, total suspended",Total solids
+"Solids, total suspended",Total suspended solids
+"Nitrogen, total dissolved",Nitrogen
+"Nitrogen, total dissolved","Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)"
+"Phosphorus, total dissolved",Phosphate-phosphorus
+"Phosphorus, total dissolved",Phosphorus
+"Nitrogen, total Kjeldahl",Kjeldahl nitrogen
+"Nitrogen, total Kjeldahl",Total Kjeldahl nitrogen (Organic N & NH3)
+"Nitrogen, total Kjeldahl",Total Kjeldahl nitrogen
+"Nitrogen, total",Nitrogen
+"Nitrogen, total","Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)"
+"Phosphorus, total",Phosphate-phosphorus
+"Phosphorus, total",Phosphorus
+Turbidity,Turbidity Field
+Turbidity,Turbidity
