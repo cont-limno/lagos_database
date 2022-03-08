@@ -537,7 +537,6 @@ summary(UTdatPull)
 allstates <- do.call("rbind", lapply(ls(pattern='datPull'),get))
 #figure out how to autodelete files that contain datpull
 rm(list=ls(pattern="datPull"))
-
 ```
 
 
@@ -551,12 +550,6 @@ write.csv(unique(data$CharacteristicName), file = "unique_characteristicnames.cs
 ```
 
 ```{r}
-
-#removing data that have Y's instead of keeping data that have N's
-read.csv("list of unique parameters to remove.csv") -> remove_params #update this
-data<- allstates[allstates$CharacteristicName %notin% remove_params$Unique.parameters,]
-
-write.csv(unique(data$CharacteristicName), file = "unique_characteristicnames.csv")
 data <- data %>% 
   unite('Method_Id', c(ResultAnalyticalMethod.MethodIdentifierContext, ResultAnalyticalMethod.MethodIdentifier), sep = " ", remove = FALSE)
 
@@ -635,7 +628,19 @@ data$ActivityDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityDepthHeightMea
 data$ActivityDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityDepthHeightMeasure.MeasureUnitCode == "feet", data$ActivityDepthHeightMeasure.MeasureValue*0.3048, data$ActivityDepthHeightMeasure.MeasureValue)
 data$ActivityDepthHeightMeasure.MeasureUnitCode[!is.na(data$ActivityDepthHeightMeasure.MeasureUnitCode)]<-"m"
 
-unique(data$ResultDepthHeightMeasure.MeasureUnitCode) 
+
+
+#needed to convert value column to numeric
+
+# unique(data$ResultDepthHeightMeasure.MeasureUnitCode) 
+# unique(data$ResultDepthHeightMeasure.MeasureValue) 
+# str(data)
+# temp<-data
+# temp$ResultDepthHeightMeasure.MeasureValue<-as.numeric(as.character(temp$ResultDepthHeightMeasure.MeasureValue))
+# str(temp)
+
+data$ResultDepthHeightMeasure.MeasureValue<-as.numeric(as.character(data$ResultDepthHeightMeasure.MeasureValue))
+
 data$ResultDepthHeightMeasure.MeasureValue<-ifelse(data$ResultDepthHeightMeasure.MeasureUnitCode == "ft", data$ResultDepthHeightMeasure.MeasureValue*0.3048, data$ResultDepthHeightMeasure.MeasureValue)
 data$ResultDepthHeightMeasure.MeasureValue<-ifelse(data$ResultDepthHeightMeasure.MeasureUnitCode == "feet", data$ResultDepthHeightMeasure.MeasureValue*0.3048, data$ResultDepthHeightMeasure.MeasureValue)
 data$ResultDepthHeightMeasure.MeasureUnitCode[!is.na(data$ResultDepthHeightMeasure.MeasureUnitCode)]<-"m"
@@ -649,7 +654,9 @@ data$ActivityTopDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityTopDepthHei
 data$ActivityTopDepthHeightMeasure.MeasureUnitCode[!is.na(data$ActivityTopDepthHeightMeasure.MeasureUnitCode)]<-"m"
 
 
-unique(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode) #all in m - no conversion needed
+unique(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode)
+#need to make values column numeric
+data$ActivityBottomDepthHeightMeasure.MeasureValue<-as.numeric(as.character(data$ActivityBottomDepthHeightMeasure.MeasureValue))
 data$ActivityBottomDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode == "ft", data$ActivityBottomDepthHeightMeasure.MeasureValue*0.3048, data$ActivityBottomDepthHeightMeasure.MeasureValue)
 data$ActivityBottomDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode == "feet", data$ActivityBottomDepthHeightMeasure.MeasureValue*0.3048, data$ActivityBottomDepthHeightMeasure.MeasureValue)
 data$ActivityBottomDepthHeightMeasure.MeasureUnitCode[!is.na(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode)]<-"m"
