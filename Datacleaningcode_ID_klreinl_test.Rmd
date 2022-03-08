@@ -92,6 +92,202 @@ file.path <-"~/Lagos Limno/" #arnab
 
 
 ```{r read-files}
+getwd()
+
+#NE STATES PULL
+
+CTdatPull<-read.csv(paste0(file.path,"CT_cleaned.csv"))
+CTdatPull$State<-c("CT")
+CTdatPull$Id_num<-c(seq(1:nrow(CTdatPull)))
+CTdatPull <- CTdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(CTdatPull)
+summary(CTdatPull)
+
+IAdatPull<-read.csv(paste0(file.path,"IA_cleaned.csv"))
+IAdatPull$State<-c("IA")
+IAdatPull$Id_num<-c(seq(1:nrow(IAdatPull)))
+IAdatPull <- IAdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(IAdatPull)
+summary(IAdatPull)
+
+ILdatPull<-read.csv(paste0(file.path,"IL_cleaned.csv"))
+ILdatPull$State<-c("IL")
+ILdatPull$Id_num<-c(seq(1:nrow(ILdatPull)))
+ILdatPull <- ILdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(ILdatPull)
+summary(ILdatPull)
+
+INdatPull<-read.csv(paste0(file.path,"IN_cleaned.csv"))
+INdatPull$State<-c("IN")
+INdatPull$Id_num<-c(seq(1:nrow(INdatPull)))
+INdatPull <- INdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(INdatPull)
+summary(INdatPull)
+
+MAdatPull<-read.csv(paste0(file.path,"MA_cleaned.csv"))
+MAdatPull$State<-c("MA")
+MAdatPull$Id_num<-c(seq(1:nrow(MAdatPull)))
+MAdatPull <- MAdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(MAdatPull)
+summary(MAdatPull)
+
+MEdatPull<-read.csv(paste0(file.path,"ME_cleaned.csv"))
+MEdatPull$State<-c("ME")
+MEdatPull$Id_num<-c(seq(1:nrow(MEdatPull)))
+MEdatPull <- MEdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(MEdatPull)
+summary(MEdatPull)
+
+MIdatPull<-read.csv(paste0(file.path,"MI_cleaned.csv"))
+MIdatPull$State<-c("MI")
+MIdatPull$Id_num<-c(seq(1:nrow(MIdatPull)))
+MIdatPull <- MIdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(MIdatPull)
+summary(MIdatPull)
+
+MNdatPull<-read.csv(paste0(file.path,"MN_cleaned.csv"))
+MNdatPull$State<-c("MN")
+MNdatPull$Id_num<-c(seq(1:nrow(MNdatPull)))
+MNdatPull <- MNdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(MNdatPull)
+summary(MNdatPull)
+
+MOdatPull<-read.csv(paste0(file.path,"MO_cleaned.csv"))
+MOdatPull$State<-c("MO")
+MOdatPull$Id_num<-c(seq(1:nrow(MOdatPull)))
+MOdatPull <- MOdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(MOdatPull)
+summary(MOdatPull)
+
+NHdatPull<-read.csv(paste0(file.path,"NH_cleaned.csv"))
+NHdatPull$State<-c("NH")
+NHdatPull$Id_num<-c(seq(1:nrow(NHdatPull)))
+NHdatPull <- NHdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(NHdatPull)
+summary(NHdatPull)
+
+NJdatPull<-read.csv(paste0(file.path,"NJ_cleaned.csv"))
+NJdatPull$State<-c("NJ")
+NJdatPull$Id_num<-c(seq(1:nrow(NJdatPull)))
+NJdatPull <- NJdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(NJdatPull)
+summary(NJdatPull)
+
+NYdatPull<-read.csv(paste0(file.path,"NY_cleaned.csv"))
+NYdatPull$State<-c("NY")
+NYdatPull$Id_num<-c(seq(1:nrow(NYdatPull)))
+NYdatPull <- NYdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(NYdatPull)
+summary(NYdatPull)
+
+OHdatPull<-read.csv(paste0(file.path,"OH_cleaned.csv"))
+OHdatPull$State<-c("OH")
+OHdatPull$Id_num<-c(seq(1:nrow(OHdatPull)))
+OHdatPull <- OHdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(OHdatPull)
+summary(OHdatPull)
+
+PAdatPull<-read.csv(paste0(file.path,"PA_cleaned.csv"))
+PAdatPull$State<-c("PA")
+PAdatPull$Id_num<-c(seq(1:nrow(PAdatPull)))
+PAdatPull <- PAdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(PAdatPull)
+summary(PAdatPull)
+
+RIdatPull<-read.csv(paste0(file.path,"RI_cleaned.csv"))
+RIdatPull$State<-c("RI")
+RIdatPull$Id_num<-c(seq(1:nrow(RIdatPull)))
+RIdatPull <- RIdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(RIdatPull)
+summary(RIdatPull)
+
+VTdatPull<-read.csv(paste0(file.path,"VT_cleaned.csv"))
+VTdatPull$State<-c("VT")
+VTdatPull$Id_num<-c(seq(1:nrow(VTdatPull)))
+VTdatPull <- VTdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(VTdatPull)
+summary(VTdatPull)
+
+WIdatPull<-read.csv(paste0(file.path,"WI_cleaned.csv"))
+WIdatPull$State<-c("WI")
+WIdatPull$Id_num<-c(seq(1:nrow(WIdatPull)))
+WIdatPull <- WIdatPull %>% 
+  unite('Obs_Id', c(State, Id_num), sep = "-", remove = FALSE)
+names(WIdatPull)
+summary(WIdatPull)
+
+
+#checking manually and filtering for start and end dates - checked for media and submedia type - all water
+
+#CT has no enddates
+CTdatPull<-CTdatPull %>% filter(ActivityStartDate >= "1975-01-01")
+
+#IA has no enddates past 2009
+IAdatPull<-IAdatPull %>% filter(ActivityStartDate >= "1975-01-01")
+
+#IL has end dates past 2020-11-20
+ILdatPull<-ILdatPull %>% filter(ActivityStartDate >= "1975-01-01" & ActivityEndDate <= "2020-11-20")
+
+
+#IN has no endates past 2020-11-20
+INdatPull<-INdatPull %>% filter(ActivityStartDate >= "1975-01-01")
+
+#MA no enddates past 2011
+MAdatPull<-MAdatPull %>% filter(ActivityStartDate >= "1975-01-01")
+
+#ME no enddates past 2015
+MEdatPull<-MEdatPull %>% filter(ActivityStartDate >= "1975-01-01")
+
+#MI has end dates past 2020-11-20
+MIdatPull<-MIdatPull %>% filter(ActivityStartDate >= "1975-01-01" & ActivityEndDate <= "2020-11-20")
+
+#MN has enddates past 2020-11-20
+MNdatPull<-MNdatPull %>% filter(ActivityStartDate >= "1975-01-01"& ActivityEndDate <= "2020-11-20")
+
+#MO no enddates past 1993
+MOdatPull<-MOdatPull %>% filter(ActivityStartDate >= "1975-01-01")
+
+#NH no enddates past 2016
+NHdatPull<-NHdatPull %>% filter(ActivityStartDate >= "1975-01-01")
+
+#NJ no enddates 
+NJdatPull<-NJdatPull %>% filter(ActivityStartDate >= "1975-01-01")
+
+#NY has enddates past 2020-11-20
+NYdatPull<-NYdatPull %>% filter(ActivityStartDate >= "1975-01-01" & ActivityEndDate <= "2020-11-20")
+
+#OH has enddates past 2020-11-20
+OHdatPull<-OHdatPull %>% filter(ActivityStartDate >= "1975-01-01" & ActivityEndDate <= "2020-11-20")
+
+#PA has enddates past 2020-11-20
+PAdatPull<-PAdatPull %>% filter(ActivityStartDate >= "1975-01-01" & ActivityEndDate <= "2020-11-20")
+
+#RI no enddates
+RIdatPull<-RIdatPull %>% filter(ActivityStartDate >= "1975-01-01")
+
+#VT no enddates past 2004
+VTdatPull<-VTdatPull %>% filter(ActivityStartDate >= "1975-01-01")
+
+#WI has enddates past 2020-11-20
+WIdatPull<-WIdatPull %>% filter(ActivityStartDate >= "1975-01-01" & ActivityEndDate <= "2020-11-20")
+
+#LAGOSUS STATES PULL
 
 IDdatPull<-read.csv(paste0(file.path,"ID_alldata_1975_to_2020.csv"))
 IDdatPull$State<-c("ID")
@@ -341,6 +537,7 @@ summary(UTdatPull)
 allstates <- do.call("rbind", lapply(ls(pattern='datPull'),get))
 #figure out how to autodelete files that contain datpull
 rm(list=ls(pattern="datPull"))
+
 ```
 
 
