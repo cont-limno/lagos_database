@@ -32,6 +32,7 @@ Mercury,ug/l,ug/l,USEPA 245.1,Mercury in Water by CVAA,,1000,1000,Reported as me
 Mercury,ug/l,ug/l,USEPA 245.2,Mercury by CVAA,,1000,1000,
 Mercury,ug/l,ug/l,USEPA 245.2,,,1000,1000,Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
 Mercury,ug/l,ug/l,USGS CV014,"Mercury, wf, CV-AFS",71890,1000,1000,Mercury in filtered water by CVAAS
+Mercury,ug/l,ug/l,USGS CV020,"Mercury wf,CVAA (DODEC,EPA7470A)",71890,1000,1000,
 Mercury,ug/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1000,1000,
 Mercury,ug/l,,21COL001 HISTORIC,,,1000,1000,unknown
 Mercury,ug/l,,NA NA,,71890,1000,1000,Mercury in filtered water by CVAAS

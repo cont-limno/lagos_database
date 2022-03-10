@@ -576,9 +576,34 @@ table(data$OrganizationFormalName) #tells us number of obvs in each organization
 
 ```{r Check-for-Activity-type}
 #looking at activity type codes #getting rid of quality control vars
-
+unique(data$ActivityTypeCode)
 remove_activity <- unique(data$ActivityTypeCode)
-activitytype_keep<-c("Quality Control Sample-Field Blank", "Quality Control Sample-Field Replicate", "Quality Control Field Replicate Msr/Obs")
+activitytype_keep<-c(
+  "Quality Control Sample-Field Replicate", 
+  "Quality Control Sample-Field Blank", 
+  "Quality Control Field Replicate Msr/Obs", 
+  "Quality Control Field Replicate Portable Data Logger", 
+  "Quality Control Sample-Reference Sample", 
+  "Quality Control Sample-Field Spike", 
+  "Quality Control Sample-Lab Matrix Spike", 
+  "Quality Control Field Sample Equipment Rinsate Blank", 
+  "Quality Control Sample-Spike Solution",
+  "Quality Control Sample-Measurement Precision Sample", 
+  "Quality Control Sample-Other", 
+  "Quality Control Sample-Equipment Blank",
+  "Quality Control Sample-Inter-lab Split", 
+  "Quality Control Sample-Lab Spike", 
+  "Quality Control Sample-Lab Matrix Spike Duplicate",
+  "Quality Control Sample-Lab Duplicate", 
+  "Quality Control Sample-Blind Duplicate", 
+  "Quality Control Sample-Trip Blank", 
+  "Quality Control Alternative Measurement Sensitivity Plus", 
+  "Quality Control Sample-Lab Blank", 
+  "Quality Control Alternative Measurement Sensitivity Plus", 
+  "Quality Control Sample-Lab Blank", 
+  "Quality Control Sample-Blind", 
+  "Quality Control Sample-Reagent Blank"
+  )
 remove_activity <- remove_activity[!remove_activity %in% activitytype_keep]
 remove_activity
 
@@ -683,7 +708,10 @@ data$source_unit <- data$ResultMeasure.MeasureUnitCode
 data$detectionlimit_legacy<- data$DetectionQuantitationLimitMeasure.MeasureValue
 data$detectionlimit_unit_legacy<- data$DetectionQuantitationLimitMeasure.MeasureUnitCode
 
-vars2process <- unique(data$CharacteristicName) #only once for first occurrence
+vars2process <- unique(data$CharacteristicName)#only once for first occurrence
+
+write.csv(unique(data$CharacteristicName), file = "unique_characteristicnames.csv")
+
 ```
 
 
@@ -714,7 +742,7 @@ lagos_name <- "Secchi"
 lagos_unit <- "m"
 dataset_name <-"secchi"
 
-params<-c("Depth, Secchi disk depth","Depth, Secchi disk depth (choice list)") #values for secchi
+params<-c("Depth, Secchi disk depth","Depth, Secchi disk depth (choice list)","Water transparency, Secchi disc") #values for secchi
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #che
 
@@ -759,7 +787,7 @@ lagos_unit <- "mg/l"
 dataset_name <-"Calcium_dissolved"
 
 vars2process
-params<-c("Calcium", "Calcium as CaCO3")
+params<-c("Calcium")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -773,8 +801,6 @@ unique(data_temp$ResultSampleFractionText)
 temp <- non_numerics()
 
 source("unit_conversions.R")
-
-
 
 ```
 
@@ -870,7 +896,6 @@ unique(data_temp$ResultSampleFractionText)
 temp <- non_numerics()
 
 source("unit_conversions.R")
-
 
 ```
 
