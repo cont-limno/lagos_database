@@ -80,3 +80,4 @@ Arsenic,ug/l,,UTAHDWQ_WQX GENERIC METHOD,Used for all methods where historical m
 Arsenic,,ug/l,NA NA,,1000,1,1,ARSENIC DISSOLVED (GFAA)
 Arsenic,,ug/l,USGS GF085,"Arsenic, wf, GFAAS",1000,1,1,ARSENIC DISSOLVED (GFAA)
 Arsenite,ug/L as As,ug/L as As,USGS PLM16,"Arsenics, wf, PO4 phase, cICP-MS",62452,1,1,
+Arsenite,ug/L as As,ug/L as As,USGS PLM35,"Arsenics, lab SPE PO4, ICP-MS",62452,1,1,
