@@ -167,6 +167,7 @@ pH,None,,21FLWQSP_WQX FT_1100,FIELD MEASUREMENT OF PH,,1,1,
 pH,None,,21FLWQSP_WQX FT1100,FIELD MEASUREMENT OF HYDROGEN ION ACTIVITY (pH),,1,1,
 pH,None,,21IOWA_WQX ISU 2510,ISU modification of APHA 2510,,1,1,
 pH,None,,21IOWA_WQX ISU 4500-H,ISU modification of APHA 4500-H,,1,1,
+pH,None,,21IOWA_WQX Unknown,Unknown,,1,1,
 pH,None,,21KY SM4500-H+ B,,,1,1,unknown
 pH,None,,21NC01WQ PH_FIELD,,,1,1,unknown
 pH,None,,21NC01WQ PH_LAB,,,1,1,unknown
@@ -210,6 +211,7 @@ pH,None,,LADEQWPD LDEQ-FMO,,,1,1,
 pH,None,,LAKELAND DEP SOP FT 1100,,,1,1,
 pH,None,,LAKELAND_WQX DEP SOP FT 1100,Field pH,,1,1,
 pH,None,,LAKELAND_WQX FDEP FT1100,FDEP FT1100,,1,1,
+pH,None,,MASSDEP FIELD MEAS,Field measurement of water quality parameters using in-situ probes,,1,1,
 pH,None,,MNPCA FLD,"Field measurement/observation, generic method",,1,1,
 pH,None,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1,1,
 pH,None,,MTWTRSHD_WQX HYDROLAB-MTWTRSHD,Field Measurements Using the Hydrolab Datasonde 4,,1,1,
@@ -228,6 +230,7 @@ pH,None,,TCEQMAIN N/A Calculation,N/A Calculation,,1,1,
 pH,None,,TDECWPC 1PH,,,1,1,unknown
 pH,None,,UC_REGION_USBOR_WQX SMEWW 4500H+ B,Standard Methods for the Examniation of Water and Wastewater,,1,1,unknown
 pH,None,,USDOI/USGS I-2587-85,"pH of Water Samples, Automated",,1,1,
+pH,None,,USEPA 00-01,Gross Alpha and Beta Activity in Water,,1,1,
 pH,None,,USEPA 150.1,pH,,1,1,"pH of unfiltered water, laboratory, by electrometry (EPA method 150.1; DODEC program)"
 pH,None,,USEPA 150.1,,,1,1,"pH of unfiltered water, laboratory, by electrometry (EPA method 150.1; DODEC program)"
 pH,None,,USEPA 150.2,pH by Continuous Monitoring,,1,1,"pH of unfiltered water, laboratory, by electrometry (EPA method 150.1; DODEC program)"

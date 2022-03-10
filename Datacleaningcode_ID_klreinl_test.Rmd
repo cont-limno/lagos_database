@@ -1221,7 +1221,7 @@ lagos_unit <- "ug/l"
 dataset_name <-"Chlorophyll_a"
 
 vars2process
-params<-c("Chlorophyll a, corrected for pheophytin", "Chlorophyll a", "Chlorophyll a, uncorrected for pheophytin", "Chlorophyll", "Chlorophyll a - Phytoplankton (suspended)", "Chlorophyll a (probe)", "Chlorophyll a (probe relative fluorescence)", "Chlorophyll a, free of pheophytin")
+params<-c("Chlorophyll a, corrected for pheophytin", "Chlorophyll a", "Chlorophyll a, uncorrected for pheophytin", "Chlorophyll", "Chlorophyll a - Phytoplankton (suspended)", "Chlorophyll a, free of pheophytin")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -1285,7 +1285,7 @@ lagos_name <- "Temperature"
 lagos_unit <- "deg C"
 dataset_name <-"wtemp"
 
-params<-c("Temperature, water")
+params<-c("Temperature, water", "Temperature, water, deg F")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #che
 
@@ -1315,9 +1315,7 @@ lagos_unit <- "mg/l"
 dataset_name <-"so4"
 
 vars2process
-params<-c("Sulfate as SO4",
-          "Sulfate as S",
-          "Sulfate", "Sulfur Sulfate", "Sulfur", "Sulfur-34", "Sulfite")
+params<-c("Sulfate as S","Sulfate", "Sulfur Sulfate", "Sulfur", "Sulfur-34", "Sulfite")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #che
 

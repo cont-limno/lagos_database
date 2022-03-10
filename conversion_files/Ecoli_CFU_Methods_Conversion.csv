@@ -11,6 +11,7 @@ Escherichia coli,#/ml,#/100ml,IDEXX COLILERT,Coliform/E. coli Enzyme substrate t
 Escherichia coli,#/ml,,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1.00E+06,-1.00E+06,discard
 Escherichia coli,CFU,,APHA 9223-B,,,-1.00E+06,-1.00E+06,discard
 Escherichia coli,CFU,,NA NA,,,-1.00E+06,-1.00E+06,discard
+Escherichia coli,cfu/100ml,#/100ml,USEPA 1603,Escherichia coli in Water by Membrane Filtration Using Modified membrane-Thermotolerant E. coli Agar (Modified mTEC),,1,1,Reported in CFU
 Escherichia coli,cfu/100ml,cfu/100ml,21ARIZ COLILERT,,,1,1,Reported in CFU
 Escherichia coli,cfu/100ml,cfu/100ml,21ARIZ FIELD,,,1,1,Reported in CFU
 Escherichia coli,cfu/100ml,cfu/100ml,21ARIZ UNKNOWN,,,1,1,Reported in CFU
