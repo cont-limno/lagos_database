@@ -11,6 +11,9 @@ Phosphate-phosphorus,mg/l,mg/l,21FLSFWM_WQX SM4500PF,SM4500PF,,-1.00E+06,-1.00E+
 Phosphate-phosphorus,mg/l,mg/l,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,1000,1000,
 Phosphate-phosphorus,mg/l,mg/l,21FLWPB_WQX DEP-SED-SOP-021,Total Phosphorus (TP) Colorimetric Automated Block Digester AAII,,1000,1000,
 Phosphate-phosphorus,mg/l,mg/l,21IOWA_WQX ISU 4500-P-E,ISU modification of APHA 4500-P-E,,-1.00E+06,-1.00E+06,discard
+Phosphate-phosphorus,mg/l,mg/l,21IOWA_WQX LAC 10-115-01-1F,LAC 10-115-01-1F  (UHL),,-1.00E+06,-1.00E+06,discard
+Phosphate-phosphorus,mg/l,mg/l,21IOWA_WQX LAC 10-115-01-2B,LAC 10-115-01-2B (UHL),,-1.00E+06,-1.00E+06,discard
+Phosphate-phosphorus,mg/l,mg/l,21IOWA_WQX LAC10-115-01-1C,LAC10-115-01-1C (UHL),,-1.00E+06,-1.00E+06,discard
 Phosphate-phosphorus,mg/l,mg/l,21IOWA_WQX LAC10-115-01-1D,LAC10-115-01-1D (UHL),,-1.00E+06,-1.00E+06,
 Phosphate-phosphorus,mg/l,mg/l,APHA 4500-NH3(D),4500 NH3 D  ~ Ammonia in Water by Selective Electrode Method,,-1.00E+06,-1.00E+06,discard
 Phosphate-phosphorus,mg/l,mg/l,APHA 4500-P-E,4500 P E ~ Phosphorus in Water by Colorimetry- Ascorbic Acid Method,,-1.00E+06,-1.00E+06,discard
@@ -65,6 +68,7 @@ Phosphorus,mg/l,mg/l,21ARIZ EPA 365.3 MOD,,,1000,1000,
 Phosphorus,mg/l,mg/l,21FLORAN EPA200.7,,,-1.00E+06,-1.00E+06,discard
 Phosphorus,mg/l,mg/l,21FLORAN EPA365.1,,,-1.00E+06,-1.00E+06,
 Phosphorus,mg/l,mg/l,21FLSFWM WQ-1,,,1000,1000,
+Phosphorus,mg/l,mg/l,21IOWA_WQX ISU 4500-P-E,ISU modification of APHA 4500-P-E,,-1.00E+06,-1.00E+06,discard
 Phosphorus,mg/l,mg/l,21SC60WQ_WQX LACHAT 10-115-01-1-E,Total Phosphorus in Water,,1000,1000,
 Phosphorus,mg/l,mg/l,APHA 4500-P-E,4500 P E ~ Phosphorus in Water by Colorimetry- Ascorbic Acid Method,,-1.00E+06,-1.00E+06,
 Phosphorus,mg/l,mg/l,APHA 4500-P-F,4500 P F ~ Phosphorus in Water by Colorimetry Automated Ascorbic Acid Method,,-1.00E+06,-1.00E+06,discard
@@ -187,9 +191,10 @@ Phosphorus,mg/l as P,mg/l as P,USGS PSF10,"P, brine,u, acid-persulf CFcolor",665
 Phosphorus,mg/l as P,,NA NA,,665,-1.00E+06,-1.00E+06,unclear
 Phosphorus,mg/l as P,,NA NA,,666,-1.00E+06,-1.00E+06,
 Phosphorus,mg/l as P,,USGS 00118,"Phosphorus, LL, wu, EPA method",665,1000,1000,
+Phosphorus,mg/l as P,,USGS 3,,665,-1.00E+06,-1.00E+06,unclear
 Phosphorus,mg/l as P,,USGS AKP01,"Nutrients, wu, WCA,persulfate,CF",665,-1.00E+06,-1.00E+06,
 Phosphorus,mg/l as P,,USGS CL001,"ASF, colorimetric",665,-1.00E+06,-1.00E+06,CLO1 uknown
-Phosphorus,mg/l as P,,USGS CL019,"P, wf, FCA, persulfate CF color",666,1.00E+03,1.00E+03,"Phosphorus, filtered water, acidified, acid-persulfate digestion, continuous flow (CF) colorimetry"
+Phosphorus,mg/l as P,,USGS CL019,"P, wf, FCA, persulfate CF color",666,1000,1000,"Phosphorus, filtered water, acidified, acid-persulfate digestion, continuous flow (CF) colorimetry"
 Phosphorus,mg/l as P,,USGS CL020,"P, wf, FCC, persulfate CF color",666,1000,1000,
 Phosphorus,mg/l as P,,USGS CL021,"P, wu, WCA, persulfate CF color",665,1000,1000,CL021 is total
 Phosphorus,mg/l as P,,USGS CL023,"Phosphorus,wu,persulfate colorim",665,1000,1000,
@@ -214,6 +219,7 @@ Phosphorus,MPN/100ml,,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring 
 Phosphorus,ppb,,11NPSWRD_WQX NPS_NURE_OR13,Oak Ridge Emission Spectrochemical Analysis of Waters for Selected Parameters,,-1.00E+06,-1.00E+06,
 Phosphorus,ppm,ppm,USEPA 365.4,Total Phosphorus After Block Digestion,,1000,1000,
 Phosphorus,ppm,ppm,USEPA 365.4,,,1000,1000,
+Phosphorus,ppm,,USEPA 365.1,Phosphorus by Colorimetry,,-1.00E+06,-1.00E+06,
 Phosphorus,ug,,21VASWCB USEPAPART.PHOS.,USEPA Chesapeake Bay Methods 1996 P IV - 30. Particulate Phosphorus,,-1.00E+06,-1.00E+06,
 Phosphorus,ug/l,ug/l,APHA 4500-P-E,4500 P E ~ Phosphorus in Water by Colorimetry- Ascorbic Acid Method,,-1.00E+06,-1.00E+06,
 Phosphorus,ug/l,ug/l,AZDEQ_SW EPA 365.1,EPA 365.1,,-1.00E+06,-1.00E+06,

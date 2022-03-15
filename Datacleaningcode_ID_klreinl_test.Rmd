@@ -92,8 +92,6 @@ file.path <-"~/Lagos Limno/" #arnab
 
 
 ```{r read-files}
-getwd()
-
 #NE STATES PULL
 
 CTdatPull<-read.csv(paste0(file.path,"CT_cleaned.csv"))
@@ -1427,7 +1425,7 @@ lagos_unit <- "ueq/l"
 dataset_name <-"Alkalinity"
 
 vars2process
-params<-c("Alkalinity, total", "Alkalinity, Carbonate as CaCO3", "Alkalinity", "Alkalinity, carbonate", "Alkalinity, Bicarbonate as CaCO3")
+params<-c("Alkalinity, total", "Alkalinity, Carbonate as CaCO3", "Alkalinity", "Alkalinity, carbonate", "Alkalinity, Bicarbonate as CaCO3", "Alkalinity, bicarbonate", "Alkalinity, Hydroxide as CaCO3")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -1544,7 +1542,8 @@ params<-c("Orthophosphate",
           "Phosphate-phosphorus as P",
           "Phosphorus", 
           "Orthophosphate as PO4", 
-          "Phosphate-phosphorus as PO4")
+          "Phosphate-phosphorus as PO4", 
+          "Inorganic phosphorus")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #che
 
@@ -1575,7 +1574,8 @@ vars2process
 params<-c("Phosphorus",
           "Phosphate-phosphorus",
           "Total Phosphorus, mixed forms",
-          "Phosphorus as P")
+          "Phosphorus as P", 
+          "Inorganic phosphorus")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #che
 
@@ -1751,6 +1751,7 @@ unique(data_temp$ResultSampleFractionText)
 temp<-non_numerics()
 
 source("unit_conversions.R")
+rm(data_temp_temp_notes)
 
 ```
 
@@ -1788,10 +1789,13 @@ dataset_name <-"no3"
 
 params<-c("Inorganic nitrogen (nitrate and nitrite)", 
           "Inorganic nitrogen (nitrate and nitrite) as N", 
-          "Nitrate", "Nitrate as N","Nitrate + Nitrite",
+          "Nitrate", 
+          "Nitrate as N",
+          "Nitrate + Nitrite",
           "Nitrogen",
           "Total Nitrogen, mixed forms",
-          "Total Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)"
+          "Total Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",
+          "Inorganic nitrogen (NO2, NO3, & NH3)"
           )
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #che

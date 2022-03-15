@@ -1,8 +1,8 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Salinity,%,,KAWNATON KAW_SOP,,,-1000000,-1000000,discard
-Salinity,%,,NA NA,,,-1000000,-1000000,discard
-Salinity,0/00,,21FLPDEM FT 1000,,,-1000000,-1000000,discard
-Salinity,0/00,,NA NA,,,-1000000,-1000000,discard
+Salinity,%,,KAWNATON KAW_SOP,,,-1.00E+06,-1.00E+06,discard
+Salinity,%,,NA NA,,,-1.00E+06,-1.00E+06,discard
+Salinity,0/00,,21FLPDEM FT 1000,,,-1.00E+06,-1.00E+06,discard
+Salinity,0/00,,NA NA,,,-1.00E+06,-1.00E+06,discard
 Salinity,g/l,,NA NA,,70305,1,1,
 Salinity,g/l,,USGS CAL21,"Salinity, Great Salt Lake Equatn",70305,1,1,
 Salinity,mg/l,,APHA 2520-C,,,0.001,0.001,
@@ -22,10 +22,11 @@ Salinity,ppt,,APHA 2520-B,2520 B ~ Salinity in Water- Electrical Conductivity Me
 Salinity,ppt,,CEDEN 136,EPA 600/R-94-025,,1,1,
 Salinity,ppt,,CEDEN 214,EPA 600/R-95-136,,1,1,
 Salinity,ppt,,CEDEN 84,EPA 600/R-95-136M,,1,1,
+Salinity,ppt,,MNPCA FLD,"Field measurement/observation, generic method",,1,1,
 Salinity,ppt,,NA NA,,,1,1,unknown
-Salinity,ppt,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,
-Salinity,ppt,,USEPA 130.1,Total Hardness,,-1000000,-1000000,
-Salinity,ppt,,USEPA 310.1,Alkalinity by Titration,,-1000000,-1000000,
+Salinity,ppt,,TCEQMAIN N/A Calculation,N/A Calculation,,-1.00E+06,-1.00E+06,
+Salinity,ppt,,USEPA 130.1,Total Hardness,,-1.00E+06,-1.00E+06,
+Salinity,ppt,,USEPA 310.1,Alkalinity by Titration,,-1.00E+06,-1.00E+06,
 Salinity,ppt,,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,unknown
 Salinity,ppth,ppth,21FLMANA GENERIC,,,1,1,
 Salinity,ppth,ppth,21FLMANA_WQX GENERIC,General Listing of Field and Lab Analytical Procedures for Manatee County,,1,1,
@@ -67,11 +68,11 @@ Salinity,ppth,,21FLSUW_WQX FT 1300,Field Measurement of  Salinity,,1,1,
 Salinity,ppth,,21FLSUW_WQX OTHER/UNKNOWN,Other of Unknown Procedure,,1,1,
 Salinity,ppth,,21FLSWFD_WQX FT-1300,Field Measurement of Salinity,,1,1,
 Salinity,ppth,,21FLTLHR_WQX FDEP FT1300,FDEP FT1300,,1,1,
-Salinity,ppth,,21FLTLHR_WQX FT_1300,FIELD MEASUREMENT OF SPECIFIC CONDUCTANCE,,-1000000,-1000000,
+Salinity,ppth,,21FLTLHR_WQX FT_1300,FIELD MEASUREMENT OF SPECIFIC CONDUCTANCE,,-1.00E+06,-1.00E+06,
 Salinity,ppth,,21FLTPA_WQX FDEP FT1300,FDEP FT1300,,1,1,
 Salinity,ppth,,21FLTPA_WQX FT_1300,FIELD MEASUREMENT OF SALINITY,,1,1,
 Salinity,ppth,,21FLTPA_WQX FT1300,Salinity,,1,1,
-Salinity,ppth,,21FLTPA_WQX FT1400,Temperature,,-1000000,-1000000,
+Salinity,ppth,,21FLTPA_WQX FT1400,Temperature,,-1.00E+06,-1.00E+06,
 Salinity,ppth,,21FLVEMD_WQX FDEP FT1300,FDEP FT1300,,1,1,
 Salinity,ppth,,21FLVEMD_WQX MULTIPROBE,MULTIPROBE HYDROLAB FIELD MEASUREMENT,,1,1,
 Salinity,ppth,,21FLWET_WQX FT_1300,FIELD MEASUREMENT OF SALINITY,,1,1,
@@ -83,13 +84,13 @@ Salinity,ppth,,21FLWQSP_WQX FDEP FT1300,FDEP FT1300,,1,1,
 Salinity,ppth,,21NC01WQ UNKNOWN,,,1,1,
 Salinity,ppth,,21NC02WQ WQS SOP,,,1,1,
 Salinity,ppth,,21NC03WQ WSSSOP,WSSSOP,,1,1,
-Salinity,ppth,,APHA 2130,Turbidity in Water,,-1000000,-1000000,
+Salinity,ppth,,APHA 2130,Turbidity in Water,,-1.00E+06,-1.00E+06,
 Salinity,ppth,,APHA 2520-B,2520 B ~ Salinity in Water- Electrical Conductivity Method,,1,1,Reported as salt ions
 Salinity,ppth,,LADEQWPD LDEQ-FMO,,,1,1,
 Salinity,ppth,,NA NA,,480,1,1,
 Salinity,ppth,,NA NA,,,1,1,unknown
 Salinity,ppth,,OREGONDEQ Not Available,Not Available,,1,1,
-Salinity,ppth,,USEPA 120.1,Conductance,,-1000000,-1000000,
+Salinity,ppth,,USEPA 120.1,Conductance,,-1.00E+06,-1.00E+06,
 Salinity,ppth,,USEPA 120.1,,,1,1,
 Salinity,ppth,,USGS 00094,Salinity,480,1,1,
 Salinity,ppth,,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,unknown
@@ -101,5 +102,5 @@ Salinity,PSS,,CHEROKEE_WQX CN_QAPP,CN_QAPP,,1,1,
 Salinity,PSS,,NA NA,,,1,1,
 Salinity,PSU,PSU,NA NA,,,1,1,
 Salinity,PSU,,11NPSWRD_WQX NPS_INSITU_AT600,Field Measurements by In-Situ Aqua TROLL 600,,1,1,
-Salinity,umho/cm,,21FLWPB_WQX FT_1300,FIELD MEASUREMENT OF SALINITY,,-1000000,-1000000,discard
-Salinity,uS/cm,,NA NA,,,-1000000,-1000000,discard
+Salinity,umho/cm,,21FLWPB_WQX FT_1300,FIELD MEASUREMENT OF SALINITY,,-1.00E+06,-1.00E+06,discard
+Salinity,uS/cm,,NA NA,,,-1.00E+06,-1.00E+06,discard

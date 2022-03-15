@@ -1,12 +1,12 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
 Carbon,%,%,AZDEQ_SW WALKLEY BLACK,WALKLEY BLACK,,-1.00E+06,-1.00E+06,discard
 Carbon,%,,AZDEQ_SW WALKLEY BLACK,WALKLEY BLACK,,-1.00E+06,-1.00E+06,discard
-Carbon,mg/l,,NA NA,,690,1.00E+00,1.00E+00,
-Carbon,mg/l,,TCEQMAIN N/A Calculation,N/A Calculation,,1.00E+00,1.00E+00,
+Carbon,mg/l,,NA NA,,690,1,1,
+Carbon,mg/l,,TCEQMAIN N/A Calculation,N/A Calculation,,1,1,
 Carbon,mg/l,,USEPA 440(S),440 S  ~ Determination of Carbon and Nitrogen,,1,1,Reported as carbon
 Carbon,ug,,USEPA 440(S),440 S  ~ Determination of Carbon and Nitrogen,,-1.00E+06,-1.00E+06,discard
-Organic carbon,mg/kg,,OREGONDEQ Not Available,Not Available,,1.00E+00,1.00E+00,
-Organic carbon,mg/kg,,TCEQMAIN N/A Calculation,N/A Calculation,,1.00E+00,1.00E+00,
+Organic carbon,mg/kg,,OREGONDEQ Not Available,Not Available,,1,1,
+Organic carbon,mg/kg,,TCEQMAIN N/A Calculation,N/A Calculation,,1,1,
 Organic carbon,mg/l,mg/l,21ARIZ SW846,,,1,1,
 Organic carbon,mg/l,mg/l,21FLGW_WQX 900456,QA Plan #900456,,1,1,
 Organic carbon,mg/l,mg/l,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,1,1,
@@ -94,6 +94,7 @@ Organic carbon,mg/l,,USEPA 502.1,Volatile Halogenated Organics,,1,1,
 Organic carbon,mg/l,,USEPA 502.1,,,1,1,
 Organic carbon,mg/l,,USEPA 507,Nitrogen and Phosphorus Pesticides,,1,1,
 Organic carbon,mg/l,,USEPA 9060,Total Organic Carbon in Water and Waste,,1,1,
+Organic carbon,mg/l,,USGS 2,,680,1,1,
 Organic carbon,mg/l,,USGS COMB4,"Organic-C, combustion-IR method",680,1,1,
 Organic carbon,mg/l,,USGS COMB9,"TOC, high-temp combustion (NWQL)",680,1,1,
 Organic carbon,mg/l,,USGS OX001,"TOC, persulfate-UV oxid (NYSDEC)",680,1,1,

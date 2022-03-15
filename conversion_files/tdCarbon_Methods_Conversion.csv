@@ -9,6 +9,7 @@ Organic carbon,mg/l,mg/l,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,,1
 Organic carbon,mg/l,mg/l,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,1,1,Organic carbon in unfiltered water (TOC) by high-temperature combustion (SM5310B; DODESP) 
 Organic carbon,mg/l,mg/l,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,1,1,
 Organic carbon,mg/l,mg/l,APHA 5310-C,,,1,1,
+Organic carbon,mg/l,mg/l,APHA 5310-D,5310 D ~ Total Organic Carbon in Water- Wet-Oxidation Method,,1,1,
 Organic carbon,mg/l,mg/l,APHA_SM20ED 5310-B,5310 B ~ Total Organic Carbon by High-Temperature Combustion Method,,1,1,Organic carbon in unfiltered water (TOC) by high-temperature combustion (SM5310B; DODESP) 
 Organic carbon,mg/l,mg/l,AZDEQ_SW EPA 415.1,EPA 415.1,,1,1,
 Organic carbon,mg/l,mg/l,AZDEQ_SW EPA 415.2,EPA 415.2,,1,1,
@@ -74,6 +75,7 @@ Organic carbon,mg/l,,USGS 00123,"DOC, EPA method",681,1,1,
 Organic carbon,mg/l,,USGS CMB15,"DOC, wf, 0.45 um cap, combust IR",681,1,1,
 Organic carbon,mg/l,,USGS CMB16,"DOC, wf, 0.7 um GFF, combust IR",681,1,1,
 Organic carbon,mg/l,,USGS COMB4,"Organic-C, combustion-IR method",681,1,1,
+Organic carbon,mg/l,,USGS OX002,"DOC, persulfate oxidation & IR",681,1,1,
 Organic carbon,mg/l,,USGS OX006,"DOC,0.45um cap,acid,persulfateIR",681,1,1,
 Organic carbon,mg/l,,USGS OX007,"DOC, 0.45u silver, persulfate IR",681,1,1,
 Organic carbon,mg/l,,USGS OX008,"DOC, 0.7um GFF,acid,persulfateIR",681,1,1,

@@ -1,110 +1,110 @@
-,x
-1,"Depth, data-logger (non-ported)"
-2,"Temperature, water"
-3,pH
-4,Total suspended solids
-5,Specific conductance
-6,Chlorophyll a
-7,Dissolved oxygen (DO)
-8,Calcium
-9,Kjeldahl nitrogen
-10,Ammonia-nitrogen
-11,Phosphorus
-12,Chloride
-13,"Depth, Secchi disk depth"
-14,"Alkalinity, total"
-15,"Depth, bottom"
-16,Total dissolved solids
-17,Escherichia coli
-18,Inorganic nitrogen (nitrate and nitrite)
-19,Turbidity
-20,Orthophosphate
-21,True color
-22,Sulfate
-23,Magnesium
-24,Salinity
-25,Conductivity
-26,Aluminum
-27,Organic carbon
-28,Selenium
-29,Oxygen
-30,Potassium
-31,Nitrite
-32,Nitrate
-33,Ammonia
-34,Total solids
-35,Total carbon
-36,Alkalinity
-37,Arsenic
-38,Ammonia and ammonium
-39,Apparent color
-40,Mercury
-41,Sodium
-42,Depth
-43,Silica
-44,Color
-45,Bicarbonate
-46,Phosphate-phosphorus
-47,"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)"
-48,Ammonia as NH3
-49,Inorganic nitrogen (nitrate and nitrite) as N
-50,"Alkalinity, Carbonate as CaCO3"
-51,Sulfate as S
-52,Escherichia
-53,Chlorine
-54,Orthophosphate as PO4
-55,Silicon
-56,Chlorophyll
-57,"Chlorophyll a, uncorrected for pheophytin"
-58,Atrazine
-59,Carbon
-60,Nitrogen
-61,Inorganic carbon
-62,"Chlorophyll a, corrected for pheophytin"
-63,"Alkalinity, bicarbonate"
-64,Methylmercury(1+)
-65,"Depth, Secchi disk depth (choice list)"
-66,"Depth, data-logger (ported)"
-67,"Alkalinity, carbonate"
-68,Microcystin
-69,Ammonium
-70,Chlorophyll a - Phytoplankton (suspended)
-71,Ammonia-nitrogen as N
-72,"Alkalinity, Hydroxide as CaCO3"
-73,Nitrate as N
-74,Sulfur Sulfate
-75,Microcystin LR
-76,Total Kjeldahl nitrogen (Organic N & NH3)
-77,"Total Phosphorus, mixed forms"
-78,Depth of water column
-79,Microcystin LA
-80,Microcystin RR
-81,Microcystins
-82,Nitrate + Nitrite
-83,"Water transparency, Secchi disc"
-84,Nitrite as N
-85,Phosphate-phosphorus as P
-86,Orthophosphate as P
-87,"Alkalinity, Bicarbonate as CaCO3"
-88,Total Kjeldahl nitrogen
-89,Nutrient-nitrogen
-90,Microcystin LF
-91,Phosphate-phosphorus as PO4
-92,Microcystins and nodularins
-93,"Chlorophyll a, free of pheophytin"
-94,"Transparency, tube with disk"
-95,"Temperature, water, deg F"
-96,Silicate
-97,"Total Nitrogen, mixed forms"
-98,Phosphorus as P
-99,"Total Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)"
-100,Sulfite
-101,"Inorganic nitrogen (NO2, NO3, & NH3)"
-102,Arsenite
-103,Arsenate
-104,Sulfur-34
-105,Sulfur
-106,Microcystis
-107,Turbidity Field
-108,Inorganic phosphorus
-109,"Aluminum, Organic + Inorganic Monomeric (reactive aluminum)"
+"","x"
+"1","Depth, data-logger (non-ported)"
+"2","Temperature, water"
+"3","pH"
+"4","Total suspended solids"
+"5","Specific conductance"
+"6","Chlorophyll a"
+"7","Dissolved oxygen (DO)"
+"8","Calcium"
+"9","Kjeldahl nitrogen"
+"10","Ammonia-nitrogen"
+"11","Phosphorus"
+"12","Chloride"
+"13","Depth, Secchi disk depth"
+"14","Alkalinity, total"
+"15","Depth, bottom"
+"16","Total dissolved solids"
+"17","Escherichia coli"
+"18","Inorganic nitrogen (nitrate and nitrite)"
+"19","Turbidity"
+"20","Orthophosphate"
+"21","True color"
+"22","Sulfate"
+"23","Magnesium"
+"24","Salinity"
+"25","Conductivity"
+"26","Aluminum"
+"27","Organic carbon"
+"28","Selenium"
+"29","Oxygen"
+"30","Potassium"
+"31","Nitrite"
+"32","Nitrate"
+"33","Ammonia"
+"34","Total solids"
+"35","Total carbon"
+"36","Alkalinity"
+"37","Arsenic"
+"38","Ammonia and ammonium"
+"39","Apparent color"
+"40","Mercury"
+"41","Sodium"
+"42","Depth"
+"43","Silica"
+"44","Color"
+"45","Bicarbonate"
+"46","Phosphate-phosphorus"
+"47","Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)"
+"48","Ammonia as NH3"
+"49","Inorganic nitrogen (nitrate and nitrite) as N"
+"50","Alkalinity, Carbonate as CaCO3"
+"51","Sulfate as S"
+"52","Escherichia"
+"53","Chlorine"
+"54","Orthophosphate as PO4"
+"55","Silicon"
+"56","Chlorophyll"
+"57","Chlorophyll a, uncorrected for pheophytin"
+"58","Atrazine"
+"59","Carbon"
+"60","Nitrogen"
+"61","Inorganic carbon"
+"62","Chlorophyll a, corrected for pheophytin"
+"63","Alkalinity, bicarbonate"
+"64","Methylmercury(1+)"
+"65","Depth, Secchi disk depth (choice list)"
+"66","Depth, data-logger (ported)"
+"67","Alkalinity, carbonate"
+"68","Microcystin"
+"69","Ammonium"
+"70","Chlorophyll a - Phytoplankton (suspended)"
+"71","Ammonia-nitrogen as N"
+"72","Alkalinity, Hydroxide as CaCO3"
+"73","Nitrate as N"
+"74","Sulfur Sulfate"
+"75","Microcystin LR"
+"76","Total Kjeldahl nitrogen (Organic N & NH3)"
+"77","Total Phosphorus, mixed forms"
+"78","Depth of water column"
+"79","Microcystin LA"
+"80","Microcystin RR"
+"81","Microcystins"
+"82","Nitrate + Nitrite"
+"83","Water transparency, Secchi disc"
+"84","Nitrite as N"
+"85","Phosphate-phosphorus as P"
+"86","Orthophosphate as P"
+"87","Alkalinity, Bicarbonate as CaCO3"
+"88","Total Kjeldahl nitrogen"
+"89","Nutrient-nitrogen"
+"90","Microcystin LF"
+"91","Phosphate-phosphorus as PO4"
+"92","Microcystins and nodularins"
+"93","Chlorophyll a, free of pheophytin"
+"94","Transparency, tube with disk"
+"95","Temperature, water, deg F"
+"96","Silicate"
+"97","Total Nitrogen, mixed forms"
+"98","Phosphorus as P"
+"99","Total Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)"
+"100","Sulfite"
+"101","Inorganic nitrogen (NO2, NO3, & NH3)"
+"102","Arsenite"
+"103","Arsenate"
+"104","Sulfur-34"
+"105","Sulfur"
+"106","Microcystis"
+"107","Turbidity Field"
+"108","Inorganic phosphorus"
+"109","Aluminum, Organic + Inorganic Monomeric (reactive aluminum)"
