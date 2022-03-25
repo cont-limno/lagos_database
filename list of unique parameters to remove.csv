@@ -515,6 +515,7 @@ Oil and Grease
 "Oil and Grease, surface slick/sheen - severity (choice list)"
 Oil range organics
 Omeprazole
+Organic nitrogen
 ortho & para Xylene mix
 Oryzalin
 Oxadiazon
@@ -1116,7 +1117,6 @@ Particle distribution
 Light attenuation coefficient
 Nitrogen ion
 Distance from/to
-Organic Nitrogen
 Phytoplankton biovolume
 "Elevation, MSL"
 Precipitation
@@ -1335,7 +1335,6 @@ Carbon-13/Carbon-12 ratio
 "Hydrocarbons, petroleum"
 "Volume, total"
 Specific UV Absorbance at 254 nm
-Total microcystins plus nodularins
 Hydrolyzable phosphorus
 Depth of pond or reservoir in feet
 Iodide
@@ -1361,7 +1360,6 @@ o-Fluorophenol
 Phenol-d5
 p-Terphenyl
 Nitrobenzene-D5
-Total microcystins plus nodularins
 Hydrolyzable phosphorus
 Cesium
 Isobutyl alcohol-d6
@@ -1650,7 +1648,6 @@ Sulfamerazine
 Anhydrochlortetracycline
 Demeclocycline
 Length
-Microcystin HiLR
 Cyclonite
 "Floating vegetation severity, choice list"
 "3,5-Dinitroaniline"
@@ -2023,7 +2020,6 @@ Chlordene
 Caprolactam
 Cations-Anions
 Partial Pressure O2
-Microcystin-HtyR
 Acetyl norfentanyl
 Water Pressure
 Density
@@ -2031,12 +2027,9 @@ Lamivudine
 Selenite
 "Cyanobacteria, visual observation"
 C9-C12 Aliphatics
-Microcystin-HilR
 Phytoplankton productivity
-Microcystin dLR
 Battery voltage
 RBP Turbidity Code (choice list)
-Microcystin dRR
 Homoanatoxin
 "Petroleum hydrocarbons, total extractable"
 Selenomethionine
@@ -2057,17 +2050,14 @@ Norcarfentanil
 C5-C8 Aliphatics
 Gasoline
 Aroclor 1268
-Microcystin WR
 Aroclor 1262
 "Fuel, Diesel Range (C10-C32)"
-Microcystin LW
 Spike Recovery
 Relative percent difference
 Ice thickness
 Tetrahydrofuran-d8
 Domoic acid
 Nodularin
-Microcystin HtYR
 Water level reference point elevation
 Okadaic acid
 "Sludge, floating - severity (choice list)"
@@ -2157,7 +2147,6 @@ Hexachlorocyclohexane
 2-Methylisoborneol
 Geosmin
 "Triazines mixture, unspecified"
-Dissolved microcystins plus nodularins
 Gas bubble severity (choice list)
 Altitude
 Actinomycetes
@@ -2218,7 +2207,6 @@ Glufosinate-ammonium
 Dicofol
 Imazapyr
 Acesulfame
-Microcystin LY
 Sucralose
 Tolfenpyrad
 Dinotefuran
@@ -2315,7 +2303,6 @@ Gemfibrozil-D6
 Bromoxynil-13C6
 "Surfactants, unspecified mix"
 Clopidogrel carboxylic acid
-Microcystin YR
 Glipizide
 Ruthenium
 Lorazepam glucuronide
@@ -2621,7 +2608,6 @@ Number of valves
 Phaeophytin - Phytoplankton (suspended)
 Trinexapac-Ethyl
 Acibenzolar-S-methyl
-Gran acid neutralizing capacity
 Extract volume
 Wind Speed Severity (choice list)
 Precipitation event duration
