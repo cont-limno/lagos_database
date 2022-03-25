@@ -53,10 +53,10 @@ Specific conductance,deg C,,NA NA,,,-1000000,-1000000,discard
 Specific conductance,mg/l,,21FLCEN_WQX FT 1200,Conductivity,,-1000000,-1000000,discard
 Specific conductance,mg/l,,21FLCEN_WQX FT_1200,FIELD MEASUREMENT OF SPECIFIC CONDUCTANCE,,-1000000,-1000000,discard
 Specific conductance,mg/l,,21FLCEN_WQX HISTORICAL,Standard Operation Procedure,,-1000000,-1000000,discard
-Specific conductance,mho/cm,,21FLPDEM FT 1000,,,1000,1000,
-Specific conductance,mho/cm,,21FLPDEM HYDROLAB 005,,,1000,1000,
-Specific conductance,mho/cm,,NA NA,,,1000,1000,
-Specific conductance,mho/cm,,USEPA 120.1,Conductance,,1000,1000,
+Specific conductance,mho/cm,,21FLPDEM FT 1000,,,1000000,1000000,
+Specific conductance,mho/cm,,21FLPDEM HYDROLAB 005,,,1000000,1000000,
+Specific conductance,mho/cm,,NA NA,,,1000000,1000000,
+Specific conductance,mho/cm,,USEPA 120.1,Conductance,,1000000,1000000,
 Specific conductance,mmhos/cm,umho/cm,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,-1000000,-1000000,discard
 Specific conductance,mS/cm,mS/cm,NA NA,,,1000,1000,
 Specific conductance,mS/cm,mS/cm,USEPA 120.1,Conductance,,1000,1000,
@@ -293,8 +293,8 @@ Specific conductance,uS/cm,,MDEQ_WQ_WQX UNKNOWN-MDEQ-WQ,Unknown Method or Proced
 Specific conductance,uS/cm,,MEDEP_WQX FIELD,FIELD TEST,,1,1,
 Specific conductance,uS/cm,,MNPCA FLD,"Field measurement/observation, generic method",,1,1,
 Specific conductance,uS/cm,,MNPCA LEG_P00095,SPECIFIC CONDUCTANCE (UMHOS/CM @ 25C),,1,1,
-<<<<<<< Updated upstream
-=======
+<<<<<<< Updated upstream,,,,,,,,
+=======,,,,,,,,
 Specific conductance,umho/cm,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1,1,
 Specific conductance,umho/cm,,MTWTRSHD_WQX HYDROLAB-MTWTRSHD,Field Measurements Using the Hydrolab Datasonde 4,,1,1,
 Specific conductance,umho/cm,,MTWTRSHD_WQX UNKNOWN-MTWTRSHD,Unknown Method or Procedure,,1,1,
@@ -318,7 +318,7 @@ Specific conductance,mho/cm,,NA NA,,,1000,1000,
 Specific conductance,mS/cm,,NA NA,,,1000,1000,unknown
 Specific conductance,nu,,NA NA,,,-1000000,-1000000,discard
 Specific conductance,umho/cm,,NA NA,,,1,1,discard
->>>>>>> Stashed changes
+>>>>>>> Stashed changes,,,,,,,,
 Specific conductance,uS/cm,,NA NA,,402,1,1,
 Specific conductance,uS/cm,,NA NA,,,1,1,discard
 Specific conductance,uS/cm,,R10BUNKER I2781,I2781,,1,1,unknown
