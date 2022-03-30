@@ -170,7 +170,7 @@ Alkalinity,,mg/l CaCO3,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",29801,1,1,"A
 "Alkalinity, total",mg/l CaCO3,,HACH 8221,Alkalinity by Buret Titration,,1,1,
 "Alkalinity, total",mg/l CaCO3,,KAWNATON_WQX 8221,Alkalinity by Buret Titration,,1,1,
 "Alkalinity, total",mg/l CaCO3,,USEPA 310.2,Alkalinity by Colorimetric Analysis,,1,1,
-"Alkalinity, total",MPN,,KAWNATON_WQX 2320-B,Alkalinity by Gran Titration,,1,1,Methods line up -- maybe a typo for units?
+"Alkalinity, total",MPN,,KAWNATON_WQX 2320-B,Alkalinity by Gran Titration,,-1000000,-1000000,discard
 "Alkalinity, total",ppm,ppm,USEPA 310.1,Alkalinity by Titration,,1,1,
 "Alkalinity, total",ppm,,11NPSWRD_WQX NPS_LAMOT4491DR,LaMotte Alkalinity Test Kit 4491-DR,,1,1,
 "Alkalinity, total",ppm,,APHA 4500-CO2(B),4500 CO2 B  ~ Carbon Dioxide in Water by Nomography,,-1000000,-1000000,discard

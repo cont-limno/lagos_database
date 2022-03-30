@@ -4,7 +4,7 @@ Conductivity,mg/l,,NA NA,,,-1000000,-1000000,discard
 Conductivity,mS/cm,mS/cm,NA NA,,,1000,1000,discard?
 Conductivity,mS/cm,uS/cm,NA NA,,,1000,1,discard?
 Conductivity,mS/cm,,APHA 2510,Conductivity in Water,,1000,1000,
-Conductivity,mS/cm,,ASTM D888(B),D888 B  ~ Dissolved Oxygen by Instrumental Probe,,1000,1000,
+Conductivity,mS/cm,,ASTM D888(B),D888 B  ~ Dissolved Oxygen by Instrumental Probe,,-1000000,-1000000,discard
 Conductivity,mS/cm,,EPA_R7_WQX 2334.04,Field sampling params.,,1000,1000,
 Conductivity,mS/cm,,EPA_R7_WQX Cond Field,Conductivity Field Measure,,1000,1000,
 Conductivity,mS/cm,,EPA_R7_WQX field,Field Measure,,1000,1000,
@@ -14,7 +14,7 @@ Conductivity,mS/cm,,USEPA 9050,Specific Conductance,,1000,1000,
 Conductivity,ppm,ppm,NA NA,,,-1000000,-1000000,discard
 Conductivity,ug/l,ug/l,USEPA 120.1,Conductance,,-1000000,-1000000,discard
 Conductivity,ug/l,,NA NA,,,-1000000,-1000000,discard
-Conductivity,umho,umho,USEPA 360.1,Dissolved Oxygen Using an ISE,,-1000000,-1000000,discard?
+Conductivity,umho,umho,USEPA 360.1,Dissolved Oxygen Using an ISE,,-1000000,-1000000,discard
 Conductivity,umho/cm,umho/cm,APHA 2510,Conductivity in Water,,1,1,
 Conductivity,umho/cm,umho/cm,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,1,1,Reported as conductivity in water
 Conductivity,umho/cm,umho/cm,OREGONDEQ MOM grab,Field methods for DEQ Water sampling,,1,1,
@@ -38,12 +38,12 @@ Conductivity,uS/cm,uS/cm,USEPA 120.1,Conductance,,1,1,
 Conductivity,uS/cm,,11NPSWRD_WQX NPS_INSITU_AT600,Field Measurements by In-Situ Aqua TROLL 600,,1,1,
 Conductivity,uS/cm,,11NPSWRD_WQX SFAN_SOP_5,Field Methods for Measurement of Core Parameters,,1,1,
 Conductivity,uS/cm,,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,1,1,
-Conductivity,uS/cm,,CEDEN 11,EPA 600/4-91-002M,,1,1,
-Conductivity,uS/cm,,CEDEN 131,EPA 821/R-02-012M,,1,1,
-Conductivity,uS/cm,,CEDEN 140,EPA 600/R-99-064,,1,1,
-Conductivity,uS/cm,,CEDEN 162,EPA 821/R-02-012,,1,1,
-Conductivity,uS/cm,,CEDEN 312,USGS I-2781-85,,1,1,
-Conductivity,uS/cm,,CEDEN 85,EPA 600/R-99-064M,,1,1,
+Conductivity,uS/cm,,CEDEN 11,EPA 600/4-91-002M,,1,1,discard - toxicity tests?
+Conductivity,uS/cm,,CEDEN 131,EPA 821/R-02-012M,,1,1,discard - toxicity tests?
+Conductivity,uS/cm,,CEDEN 140,EPA 600/R-99-064,,1,1,discard - toxicity tests?
+Conductivity,uS/cm,,CEDEN 162,EPA 821/R-02-012,,1,1,discard - toxicity tests?
+Conductivity,uS/cm,,CEDEN 312,USGS I-2781-85,,1,1,discard - toxicity tests?
+Conductivity,uS/cm,,CEDEN 85,EPA 600/R-99-064M,,1,1,discard - toxicity tests?
 Conductivity,uS/cm,,CHEROKEE_WQX CN_QAPP,CN_QAPP,,1,1,
 Conductivity,uS/cm,,KAWNATON_WQX 120.1,Conductance,,1,1,
 Conductivity,uS/cm,,NA NA,,,1,1,discard?
