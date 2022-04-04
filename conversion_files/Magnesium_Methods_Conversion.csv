@@ -40,7 +40,7 @@ Magnesium,mg/l,,NA NA,,,1,1,methods_unknown
 Magnesium,mg/l,,OREGONDEQ Not Available,Not Available,,1,1,methods_unknown
 Magnesium,mg/l,,R10MIDNITE D6010,Dissolved Metals,,1,1,EPA 6010
 Magnesium,mg/l,,SPIRITLK PLA11,PLA11,,1,1,methods_unknown
-Magnesium,mg/l,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,methods_fail
+Magnesium,mg/l,,TCEQMAIN N/A Calculation,N/A Calculation,,1,1,methods_unknown
 Magnesium,mg/l,,USACOEND 6010A,ICP Metals in Water,,1,1,EPA 6010 A
 Magnesium,mg/l,,USDOI/USGS I1472,Metals in Water by ICP,,1,1,USGS I-1472-87
 Magnesium,mg/l,,USEPA 1638,Trace Elements in Water by ICP/MS,,1,1,EPA 1638
