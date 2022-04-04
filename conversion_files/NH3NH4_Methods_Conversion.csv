@@ -1,84 +1,84 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Ammonium,mg/l,mg/l,APHA 4110-C,4110 C ~ Single Column Ion Chromatography,,-1000000,-1000000,
+Ammonium,mg/l,mg/l,APHA 4110-C,4110 C ~ Single Column Ion Chromatography,,-1000000,-1000000,method_fail
 Ammonia,mg/l,mg/l,APHA 4500-NH3(D),4500 NH3 D  ~ Ammonia in Water by Selective Electrode Method,,1000,1000,Ammonia as N
 Ammonia-nitrogen,mg/l,mg/l,APHA 4500-NH3(F),4500 NH3 F  ~ Ammonia in Water Using Phenate Method,,1000,1000,
 Ammonia-nitrogen,mg/l,mg/l,APHA 4500-NH3(G),4500 NH3 G  ~ Ammonia in Water Using Automated Phenate Method,,1000,1000,
+Ammonia-nitrogen,mg/l,,APHA 4500-NH3(G),4500 NH3 G  ~ Ammonia in Water Using Automated Phenate Method,,1000,1000,
 Ammonia,mg/l,mg/l,APHA 4500-NH3 G,4500 NH3 G ~ Ammonia by Automated Phenate,,1000,1000,
 Ammonium,mg/l,mg/l,APHA 4500-NH3 G,4500 NH3 G ~ Ammonia by Automated Phenate,,1000,1000,Ammonium as N
+Ammonia-nitrogen,mg/l,,APHA 4500-NH3(H),4500 NH3 H  ~ Ammonia in Water - Flow Injection Analysis,,1000,1000,
 Ammonia,mg/l,mg/l,APHA 4500-NH3 H,4500 NH3 H ~ Ammonia by Flow Injection Analysis,,1000,1000,
 Ammonia,mg/l,mg/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,1000,1000,Ammonia as N
 Ammonia-nitrogen,mg/l,mg/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,1000,1000,Ammonia as N
 Ammonium,mg/l,mg/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,1000,1000,Ammonium as N
+Ammonia,mg/l,,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,1000,1000,
+Ammonia-nitrogen,mg/l,,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,1000,1000,Ammonia as N
 Ammonia,mg/l,mg/l,11NPSWRD_WQX BLCA_SHC02,"Ammonia, wf, DA sal/hypo (NWQL)",,1000,1000,
-Ammonium,mg/l,mg/l,21FLVEMD_WQX 4500(G)-NH3,Ammonium,,1000,1000,
+Ammonium,mg/l,mg/l,21FLVEMD_WQX 4500(G)-NH3,Ammonium,,-1.00E+06,-1.00E+06,method_fail
+Ammonia,mg/l,,CEDEN 274,Hach Method 8038,,1000,1000,as N
+Ammonia-nitrogen,mg/l,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1000,1000,
 Ammonia-nitrogen,mg/l,mg/l,R10BUNKER I2525,I2525,,1000,1000,Ammonia as N
+Ammonia-nitrogen,mg/l,,R10BUNKER I2525,I2525,,1000,1000,Ammonia as N
 Ammonia-nitrogen,mg/l,mg/l,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,1000,1000,
 Ammonia,mg/l,mg/l,USDOI/USGS I-2525,"Nitrogen, ammonia, dissolved, low ionic-strength, colorimetric, ASF",,1000,1000,
+Ammonia,mg/l,,USDOI/USGS I-2525,"Nitrogen, ammonia, dissolved, low ionic-strength, colorimetric, ASF",,1000,1000,
+Ammonia-nitrogen,mg/l,,11NPSWRD_WQX USGS_CL037,"Nutrients, salic/hypo, color",,1000,1000,
+Ammonia,mg/l,,11NPSWRD_WQX NPS_MISSING,Procedure not Required when Result Entered into National Database,,-1000000,-1000000,method_fail
+Ammonia,mg/l,,CEDEN 5255,SM 4500-NH3 D,,1000,1000,
+Ammonia,mg/l,,CEDEN 5226,SM 4500-NH3 H v21,,1000,1000,
 Ammonia-nitrogen,mg/l,mg/l,21FLSFWM_WQX SM4500NH3H,SM4500NH3H,,1000,1000,
 Ammonia-nitrogen,mg/l,mg/l,21FLSFWM_WQX SM4500NH3H/NO3F,SM4500NH3H/NO3F,,1000,1000,
-Ammonia-nitrogen,mg/l,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,,1000,1000,unknown
+Ammonia,mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,-1000000,-1000000,method_fail
+Ammonia-nitrogen,mg/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1000,1000,
+Ammonia,mg/l,,11NPSWRD_WQX USGS_UNSPEC,Unspecified USGS Lab Analytical Procedures at NWQL Following Standard Protocols,,1000,1000,
+Ammonia-nitrogen,mg/l,,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,1000,1000,
+Ammonia-nitrogen,mg/l,,R10BUNKER USGS_HIST,USGS_HIST,,1000,1000,unknown
+Ammonia-nitrogen,mg/l,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,,1000,1000,unknown_method
+Ammonia-nitrogen,mg/l,,R10BUNKER USGS_UNKN,USGS_UNKN,,1000,1000,unknown_method
+Ammonia-nitrogen,mg/l,,21COL001 HISTORIC,,,1000,1000,
 Ammonia-nitrogen as N,mg/l,mg/l,21FLSFWM WQ-1,,,1000,1000,
+Ammonia-nitrogen as N,mg/l,,21FLSFWM WQ-1,,,1000,1000,
+Ammonia-nitrogen,mg/l,,NA NA,,,1000,1000,unknown_method
 Ammonia-nitrogen as N,mg/l,mg/l,USEPA 350.1,,,1000,1000,EPA Method 350.1: Determination of Ammonia Nitrogen by Semi-Automated Colorimetry
-Ammonia-nitrogen,,mg/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,1000,1000,Ammonia as N
-Ammonium,,mg/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,1000,1000,Ammonium as N
+Ammonia-nitrogen as N,mg/l,,USEPA 350.1,,,1000,1000,
+Ammonia and ammonium,mg/l as N,,USGS CL038,"Ammonia, LIS, ASF salicylate",608,1000,1000,Ammonia in low ionic strength (LIS) water by automated segmented flow (ASF) salicylate/hypochlorite colorimetry
 Ammonia and ammonium,mg/l as N,mg/l as N,USGS 43,"Ammonia, LL, wf",608,1000,1000,
+Ammonia and ammonium,mg/l as N,,USGS CL003,"Ammonia, LL, wf, ASF salicylate",608,1000,1000,
 Ammonia and ammonium,mg/l as N,mg/l as N,USGS CL101,"Ammonia, LL, wf, auto phenate",608,1000,1000,
 Ammonia and ammonium,mg/l as N,mg/l as N,USGS CL143,"Ammonia, LL, wf, phenate (COWSC)",608,1000,1000,
 Ammonia and ammonium,mg/l as N,mg/l as N,USGS PHH01,"Ammonia, seawater,f,phenol(NWQL)",608,1000,1000,
+Ammonia and ammonium,mg/l as N,,USGS CL035,"Ammonia, wf, ASF salicylate",608,1000,1000,Ammonia in filtered water by automated segmented flow (ASF) salicylate/hypochlorite colorimetry
 Ammonia and ammonium,mg/l as N,mg/l as N,USGS CL172,"Ammonia, wf, DA phenate (NWQL)",608,1000,1000,
 Ammonia and ammonium,mg/l as N,mg/l as N,USGS SHC02,"Ammonia, wf, DA sal/hypo (NWQL)",608,1000,1000,Ammonia in filtered water by discrete analyzer salicylate-hypochlorite reaction and colorimetry (formerly Mcode 00048; NWQL)
+Ammonia and ammonium,mg/l as N,,USGS SHC02,"Ammonia, wf, DA sal/hypo (NWQL)",608,1000,1000,Ammonia in filtered water by discrete analyzer salicylate-hypochlorite reaction and colorimetry (formerly Mcode 00048; NWQL)
 Ammonia and ammonium,mg/l as N,mg/l as N,USGS CL015,"Ammonia, wf, phenate colorimetry",608,1000,1000,
 Ammonia and ammonium,mg/l as N,mg/l as N,USGS SHC04,"Ammonia, wf, salicylate (NWQL)",608,1000,1000,
 Ammonia and ammonium,mg/l as N,mg/l as N,USGS PHN05,"Ammonia, wf,auto phenate colorim",608,1000,1000,
 Ammonia and ammonium,mg/l as N,mg/l as N,USGS CL153,"Nutrients, brines, colorimetry",608,1000,1000,
+Ammonia and ammonium,mg/l as N,,USGS CL036,"Nutrients, FCA, salicylate color",608,1000,1000,
 Ammonia and ammonium,mg/l as N,mg/l as N,USGS CL039,"Nutrients, LL, wf, color",608,1000,1000,"Nutrients, low level, filtered water, salicylate-hypochlorite, colorimetric"
+Ammonia and ammonium,mg/l as N,,USGS CL039,"Nutrients, LL, wf, color",608,1000,1000,"Nutrients, low level, filtered water, salicylate-hypochlorite, colorimetric"
 Ammonia and ammonium,mg/l as N,mg/l as N,USGS 00048,"Nutrients, wf, color, DA",608,1000,1000,Ammonia in filtered water by discrete analyzer salicylate-hypochlorite reaction and colorimetry (formerly Mcode 00048; NWQL)
+Ammonia and ammonium,mg/l as N,,USGS 00048,"Nutrients, wf, color, DA",608,1000,1000,
 Ammonia and ammonium,mg/l as N,mg/l as N,USGS 48,"Nutrients, wf, color, DA",608,1000,1000,
 Ammonia and ammonium,mg/l as N,mg/l as N,USGS CL037,"Nutrients, wf, salicylate color",608,1000,1000,"Nutrients, filtered water, salicylate-hypochlorite, colorimetric"
-Ammonia and ammonium,mg/l as N,mg/l as N,NA NA,,608,1000,1000,
+Ammonia and ammonium,mg/l as N,,USGS CL037,"Nutrients, wf, salicylate color",608,1000,1000,"Nutrients, filtered water, salicylate-hypochlorite, colorimetric"
+Ammonia and ammonium,mg/l as N,mg/l as N,NA NA,,608,1000,1000,unknown_method
+Ammonia and ammonium,mg/l as N,,NA NA,,608,1000,1000,unknown_method
+Ammonia and ammonium,mg/l as N,,USGS O,,608,1000,1000,
+Ammonia and ammonium,mg/l NH4,,USGS S0438,"Ammonia, wf, calculated",71846,-1000000,-1000000,method_fail; calculated
+Ammonia and ammonium,mg/l NH4,,NA NA,,71846,-1000000,-1000000,method_fail
+Ammonia and ammonium,mg/l NH4,,USGS O,,71846,-1000000,-1000000,method_fail; calculated
+Ammonium,ug/l,ug/l,APHA 4500-NH3(G),4500 NH3 G  ~ Ammonia in Water Using Automated Phenate Method,,1,1,
+Ammonia-nitrogen,ug/l,ug/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,1,1,Ammonia as N
+Ammonia-nitrogen,ug/l,,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,1,1,Ammonia as N
+Ammonia-nitrogen,ug/l,ug/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,-1.00E+06,-1.00E+06,method_fail
+Ammonia-nitrogen,,mg/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,1000,1000,Ammonia as N
+Ammonium,,mg/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,1000,1000,Ammonium as N
 Ammonia and ammonium,,mg/l as N,USGS CL038,"Ammonia, LIS, ASF salicylate",608,1000,1000,Ammonia in low ionic strength (LIS) water by automated segmented flow (ASF) salicylate/hypochlorite colorimetry
 Ammonia and ammonium,,mg/l as N,USGS CL035,"Ammonia, wf, ASF salicylate",608,1000,1000,Ammonia in filtered water by automated segmented flow (ASF) salicylate/hypochlorite colorimetry
 Ammonia and ammonium,,mg/l as N,USGS SHC02,"Ammonia, wf, DA sal/hypo (NWQL)",608,1000,1000,Ammonia in filtered water by discrete analyzer salicylate-hypochlorite reaction and colorimetry (formerly Mcode 00048; NWQL)
 Ammonia and ammonium,,mg/l as N,USGS CL039,"Nutrients, LL, wf, color",608,1000,1000,"Nutrients, low level, filtered water, salicylate-hypochlorite, colorimetric"
 Ammonia and ammonium,,mg/l as N,USGS 00048,"Nutrients, wf, color, DA",608,1000,1000,Ammonia in filtered water by discrete analyzer salicylate-hypochlorite reaction and colorimetry (formerly Mcode 00048; NWQL)
 Ammonia and ammonium,,mg/l as N,USGS CL037,"Nutrients, wf, salicylate color",608,1000,1000,"Nutrients, filtered water, salicylate-hypochlorite, colorimetric"
-Ammonia and ammonium,,mg/l as N,NA NA,,608,1000,1000,unknown
-Ammonium,ug/l,ug/l,APHA 4500-NH3(G),4500 NH3 G  ~ Ammonia in Water Using Automated Phenate Method,,1,1,
-Ammonia-nitrogen,ug/l,ug/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,1,1,Ammonia as N
-Ammonia-nitrogen,ug/l,ug/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1,1,Ammonia as N
-Ammonia-nitrogen,mg/l,,APHA 4500-NH3(G),4500 NH3 G  ~ Ammonia in Water Using Automated Phenate Method,,1000,1000,
-Ammonia-nitrogen,mg/l,,APHA 4500-NH3(H),4500 NH3 H  ~ Ammonia in Water - Flow Injection Analysis,,1000,1000,
-Ammonia,mg/l,,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,1000,1000,
-Ammonia-nitrogen,mg/l,,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,1000,1000,Ammonia as N
-Ammonia,mg/l,,CEDEN 274,Hach Method 8038,,1000,1000,
-Ammonia-nitrogen,mg/l,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,-1000000,-1000000,
-Ammonia-nitrogen,mg/l,,R10BUNKER I2525,I2525,,1000,1000,Ammonia as N
-Ammonia,mg/l,,USDOI/USGS I-2525,"Nitrogen, ammonia, dissolved, low ionic-strength, colorimetric, ASF",,1000,1000,
-Ammonia-nitrogen,mg/l,,11NPSWRD_WQX USGS_CL037,"Nutrients, salic/hypo, color",,1000,1000,
-Ammonia,mg/l,,11NPSWRD_WQX NPS_MISSING,Procedure not Required when Result Entered into National Database,,-1000000,-1000000,
-Ammonia,mg/l,,CEDEN 5255,SM 4500-NH3 D,,1000,1000,
-Ammonia,mg/l,,CEDEN 5226,SM 4500-NH3 H v21,,1000,1000,
-Ammonia,mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,-1000000,-1000000,
-Ammonia-nitrogen,mg/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1000,1000,
-Ammonia,mg/l,,11NPSWRD_WQX USGS_UNSPEC,Unspecified USGS Lab Analytical Procedures at NWQL Following Standard Protocols,,1000,1000,
-Ammonia-nitrogen,mg/l,,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,1000,1000,
-Ammonia-nitrogen,mg/l,,R10BUNKER USGS_HIST,USGS_HIST,,1000,1000,unknown
-Ammonia-nitrogen,mg/l,,R10BUNKER USGS_UNKN,USGS_UNKN,,1000,1000,unknown
-Ammonia-nitrogen,mg/l,,21COL001 HISTORIC,,,1000,1000,
-Ammonia-nitrogen as N,mg/l,,21FLSFWM WQ-1,,,1000,1000,
-Ammonia-nitrogen,mg/l,,NA NA,,,1000,1000,
-Ammonia-nitrogen as N,mg/l,,USEPA 350.1,,,1000,1000,
-Ammonia and ammonium,mg/l as N,,USGS CL038,"Ammonia, LIS, ASF salicylate",608,1000,1000,Ammonia in low ionic strength (LIS) water by automated segmented flow (ASF) salicylate/hypochlorite colorimetry
-Ammonia and ammonium,mg/l as N,,USGS CL003,"Ammonia, LL, wf, ASF salicylate",608,1000,1000,
-Ammonia and ammonium,mg/l as N,,USGS CL035,"Ammonia, wf, ASF salicylate",608,1000,1000,Ammonia in filtered water by automated segmented flow (ASF) salicylate/hypochlorite colorimetry
-Ammonia and ammonium,mg/l as N,,USGS SHC02,"Ammonia, wf, DA sal/hypo (NWQL)",608,1000,1000,Ammonia in filtered water by discrete analyzer salicylate-hypochlorite reaction and colorimetry (formerly Mcode 00048; NWQL)
-Ammonia and ammonium,mg/l as N,,USGS CL036,"Nutrients, FCA, salicylate color",608,1000,1000,
-Ammonia and ammonium,mg/l as N,,USGS CL039,"Nutrients, LL, wf, color",608,1000,1000,"Nutrients, low level, filtered water, salicylate-hypochlorite, colorimetric"
-Ammonia and ammonium,mg/l as N,,USGS 00048,"Nutrients, wf, color, DA",608,1000,1000,
-Ammonia and ammonium,mg/l as N,,USGS CL037,"Nutrients, wf, salicylate color",608,1000,1000,"Nutrients, filtered water, salicylate-hypochlorite, colorimetric"
-Ammonia and ammonium,mg/l as N,,NA NA,,608,1000,1000,unknown
-Ammonia and ammonium,mg/l as N,,USGS O,,608,1000,1000,
-Ammonia and ammonium,mg/l NH4,,USGS S0438,"Ammonia, wf, calculated",71846,-1000000,-1000000,drop calculated
-Ammonia and ammonium,mg/l NH4,,NA NA,,71846,-1000000,-1000000,drop calculated
-Ammonia and ammonium,mg/l NH4,,USGS O,,71846,-1000000,-1000000,calculated
-Ammonia-nitrogen,ug/l,,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,1,1,Ammonia as N
+Ammonia and ammonium,,mg/l as N,NA NA,,608,1000,1000,unknown_method
