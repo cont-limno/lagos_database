@@ -33,7 +33,7 @@ Chloride,mg/l,,APHA 3500-CR(E),,,-1000000,-1000000,methods_fail
 Chloride,mg/l,,APHA 4110-B,4110 B ~ Anions in Water by Ion Chromatography,,1,1,APHA 4110 B
 Chloride,mg/l,,APHA 4500-CL-(B),4500 CL- B  ~ Chloride in Water by Titration- Argentometric Method,,1,1,APHA 4500-CL-(B)
 Chloride,mg/l,,APHA 4500-CL-(E),4500 CL- E  ~ Chloride in Water by Colorimetry- Automated Ferricyanide Method,,1,1,APHA 4500-CL-(E)
-Chloride,mg/l,,APHA 4500-CL-(F),4500 CL- F  ~ Chloride in Water by Ion Chromatography,,-1000000,-1000000,methods_fail; description doesn't match the method
+Chloride,mg/l,,APHA 4500-CL-(F),4500 CL- F  ~ Chloride in Water by Ion Chromatography,,1,1,APHA 4500-CL-(F)
 Chloride,mg/l,,APHA 4500-CL(E),4500 CL E  ~ Residual Chlorine in Water by Titration- Low-Level Amperometric Method,,-1000000,-1000000,methods_fail; method appears to be for chlorine 
 Chloride,mg/l,,CEDEN 16,EPA 300.0,,1,1,EPA 300.0
 Chloride,mg/l,,CEDEN 302,USGS I-2057-90,,1,1,USGS I-2057
