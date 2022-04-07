@@ -1,67 +1,67 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Alkalinity,mg/l CaCO3,mg/l CaCO3,NA NA,,417,1,1,USGS
-Alkalinity,mg/l CaCO3,mg/l CaCO3,NA NA,,90410,1,1,USGS
-Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT008,"ANC, wu, field, fixed EP",410,1,1,USGS
-Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT010,"ANC, wu, lab, fixed EP",417,1,1,USGS
-Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",29801,1,1,Alkalinity by automated electrometric titration to pH 4.5 (NWQL)
-Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",90410,1,1,"Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
-Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT060,"ANC or alkalinity, lab,Gran,auto",413,1,1,USGS
-Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT060,"ANC or alkalinity, lab,Gran,auto",29803,1,1,USGS
-Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT085,"Alkalinity, wf, lab (SM2320B,CO)",29801,1,1,USGS
-Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT086,"Alkalinity, wf,lab,mod TT040,IPT",39087,1,1,USGS
-Alkalinity,mg/l CaCO3,,NA NA,,410,1,1,"Acid neutralizing capacity, fixed endpoint titration, Hach digital titrator "
-Alkalinity,mg/l CaCO3,,NA NA,,411,1,1,USGS
-Alkalinity,mg/l CaCO3,,NA NA,,413,1,1,USGS
-Alkalinity,mg/l CaCO3,,NA NA,,415,1,1,USGS
-Alkalinity,mg/l CaCO3,,NA NA,,416,1,1,USGS
-Alkalinity,mg/l CaCO3,,NA NA,,417,1,1,USGS
-Alkalinity,mg/l CaCO3,,NA NA,,418,1,1,USGS
-Alkalinity,mg/l CaCO3,,NA NA,,419,1,1,"Acid neutralizing capacity, inflection-point titration method (incremental titration method), Hach digital titrator "
-Alkalinity,mg/l CaCO3,,NA NA,,421,1,1,USGS
-Alkalinity,mg/l CaCO3,,NA NA,,431,1,1,USGS
-Alkalinity,mg/l CaCO3,,NA NA,,29801,1,1,USGS
-Alkalinity,mg/l CaCO3,,NA NA,,29802,1,1,USGS
-Alkalinity,mg/l CaCO3,,NA NA,,29803,1,1,USGS
-Alkalinity,mg/l CaCO3,,NA NA,,29813,1,1,USGS
-Alkalinity,mg/l CaCO3,,NA NA,,39036,1,1,USGS
-Alkalinity,mg/l CaCO3,,NA NA,,39086,1,1,"Alkalinity, inflection-point titration method (incremental titration method), Hach digital titrator "
-Alkalinity,mg/l CaCO3,,NA NA,,39087,1,1,USGS
-Alkalinity,mg/l CaCO3,,NA NA,,90410,1,1,"Alkalinity, low ionic-strength water, automated electrometric titration "
-Alkalinity,mg/l CaCO3,,NA NA,,95410,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS 0,,39036,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS A,,419,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS A,,39036,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS C,,410,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS C,,419,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS C,,39086,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS D,,419,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS D,,39086,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS D,,90410,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS F,,419,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS F,,29813,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS H,,39086,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS I,,410,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS I,,39036,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS TT001,"ANC, wu, field, increm. (annon)",419,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS TT008,"ANC, wu, field, fixed EP",410,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS TT009,"ANC, wu, field",410,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS TT010,"ANC, wu, lab, fixed EP",417,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS TT011,"ANC, wu, lab",417,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS TT012,"Alkalinity, wf, field, fixed EP",39086,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS TT013,"Alkalinity, wf, field, increment",39086,1,1,"Alkalinity, dissolved, field, incremental titration "
-Alkalinity,mg/l CaCO3,,USGS TT014,"Alkalinity, wf, lab, fixed EP",39087,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS TT015,"Alkalinity, wf, lab, incremental",39087,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS TT034,"ANC, wu, titration to pH 4.5",90410,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",29801,1,1,"Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
-Alkalinity,mg/l CaCO3,,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",90410,1,1,"Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
-Alkalinity,mg/l CaCO3,,USGS TT042,"Alkalinity, LIS, auto electmetr",90410,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS TT056,"Alkalinity, Gran, Hach",29802,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS TT060,"ANC or alkalinity, lab,Gran,auto",413,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS TT061,"Alkalinity, IPT, Hach",39086,1,1,USGS
-Alkalinity,mg/l CaCO3,,USGS TT065,"ANC, IPT, Hach",419,1,1,"Acid neutralizing capacity, inflection-point titration method (incremental titration method), Hach digital titrator "
-Alkalinity,mg/l CaCO3,,USGS TT104,"Alkalinity, IP, automatic titr",39087,1,1,USGS
-Alkalinity,ueq/L,,NA NA,,409,0.05005,0.05005,USGS
-Alkalinity,,mg/l CaCO3,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",29801,1,1,"Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
+Alkalinity,mg/l CaCO3,mg/l CaCO3,NA NA,,417,1,1,USGS_00417
+Alkalinity,mg/l CaCO3,mg/l CaCO3,NA NA,,90410,1,1,USGS_90410
+Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT008,"ANC, wu, field, fixed EP",410,1,1,USGS_00410
+Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT010,"ANC, wu, lab, fixed EP",417,1,1,USGS_00417
+Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",29801,1,1,USGS_29801; Alkalinity by automated electrometric titration to pH 4.5 (NWQL)
+Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",90410,1,1,"USGS_90410; Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
+Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT060,"ANC or alkalinity, lab,Gran,auto",413,1,1,USGS_00413
+Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT060,"ANC or alkalinity, lab,Gran,auto",29803,1,1,USGS_29803
+Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT085,"Alkalinity, wf, lab (SM2320B,CO)",29801,1,1,USGS_29801
+Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT086,"Alkalinity, wf,lab,mod TT040,IPT",39087,1,1,USGS_39087
+Alkalinity,mg/l CaCO3,,NA NA,,410,1,1,"USGS_00410; Acid neutralizing capacity, fixed endpoint titration, Hach digital titrator "
+Alkalinity,mg/l CaCO3,,NA NA,,411,1,1,USGS_00411
+Alkalinity,mg/l CaCO3,,NA NA,,413,1,1,USGS_00413
+Alkalinity,mg/l CaCO3,,NA NA,,415,1,1,USGS_00415
+Alkalinity,mg/l CaCO3,,NA NA,,416,1,1,USGS_00416
+Alkalinity,mg/l CaCO3,,NA NA,,417,1,1,USGS_00417
+Alkalinity,mg/l CaCO3,,NA NA,,418,1,1,USGS_00418
+Alkalinity,mg/l CaCO3,,NA NA,,419,1,1,"USGS_00419; Acid neutralizing capacity, inflection-point titration method (incremental titration method), Hach digital titrator "
+Alkalinity,mg/l CaCO3,,NA NA,,421,1,1,USGS_00421
+Alkalinity,mg/l CaCO3,,NA NA,,431,1,1,USGS_00431
+Alkalinity,mg/l CaCO3,,NA NA,,29801,1,1,USGS_29801
+Alkalinity,mg/l CaCO3,,NA NA,,29802,1,1,USGS_29802
+Alkalinity,mg/l CaCO3,,NA NA,,29803,1,1,USGS_29803
+Alkalinity,mg/l CaCO3,,NA NA,,29813,1,1,USGS_29813
+Alkalinity,mg/l CaCO3,,NA NA,,39036,1,1,USGS_39036
+Alkalinity,mg/l CaCO3,,NA NA,,39086,1,1,"USGS_39086; Alkalinity, inflection-point titration method (incremental titration method), Hach digital titrator "
+Alkalinity,mg/l CaCO3,,NA NA,,39087,1,1,USGS_39087
+Alkalinity,mg/l CaCO3,,NA NA,,90410,1,1,"USGS_90410; Alkalinity, low ionic-strength water, automated electrometric titration "
+Alkalinity,mg/l CaCO3,,NA NA,,95410,1,1,USGS_95410
+Alkalinity,mg/l CaCO3,,USGS 0,,39036,1,1,USGS_39036
+Alkalinity,mg/l CaCO3,,USGS A,,419,1,1,USGS_00419
+Alkalinity,mg/l CaCO3,,USGS A,,39036,1,1,USGS_39036
+Alkalinity,mg/l CaCO3,,USGS C,,410,1,1,USGS_00410
+Alkalinity,mg/l CaCO3,,USGS C,,419,1,1,USGS_00419
+Alkalinity,mg/l CaCO3,,USGS C,,39086,1,1,USGS_39086
+Alkalinity,mg/l CaCO3,,USGS D,,419,1,1,USGS_00419
+Alkalinity,mg/l CaCO3,,USGS D,,39086,1,1,USGS_39086
+Alkalinity,mg/l CaCO3,,USGS D,,90410,1,1,USGS_90410
+Alkalinity,mg/l CaCO3,,USGS F,,419,1,1,USGS_00419
+Alkalinity,mg/l CaCO3,,USGS F,,29813,1,1,USGS_29813
+Alkalinity,mg/l CaCO3,,USGS H,,39086,1,1,USGS_39086
+Alkalinity,mg/l CaCO3,,USGS I,,410,1,1,USGS_00410
+Alkalinity,mg/l CaCO3,,USGS I,,39036,1,1,USGS_39036
+Alkalinity,mg/l CaCO3,,USGS TT001,"ANC, wu, field, increm. (annon)",419,1,1,USGS_00419
+Alkalinity,mg/l CaCO3,,USGS TT008,"ANC, wu, field, fixed EP",410,1,1,USGS_00410
+Alkalinity,mg/l CaCO3,,USGS TT009,"ANC, wu, field",410,1,1,USGS_00410
+Alkalinity,mg/l CaCO3,,USGS TT010,"ANC, wu, lab, fixed EP",417,1,1,USGS_00417
+Alkalinity,mg/l CaCO3,,USGS TT011,"ANC, wu, lab",417,1,1,USGS_00417
+Alkalinity,mg/l CaCO3,,USGS TT012,"Alkalinity, wf, field, fixed EP",39086,1,1,USGS_39086
+Alkalinity,mg/l CaCO3,,USGS TT013,"Alkalinity, wf, field, increment",39086,1,1,"USGS_39086; Alkalinity, dissolved, field, incremental titration "
+Alkalinity,mg/l CaCO3,,USGS TT014,"Alkalinity, wf, lab, fixed EP",39087,1,1,USGS_39087
+Alkalinity,mg/l CaCO3,,USGS TT015,"Alkalinity, wf, lab, incremental",39087,1,1,USGS_39087
+Alkalinity,mg/l CaCO3,,USGS TT034,"ANC, wu, titration to pH 4.5",90410,1,1,USGS_90410
+Alkalinity,mg/l CaCO3,,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",29801,1,1,"USGS_29801; Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
+Alkalinity,mg/l CaCO3,,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",90410,1,1,"USGS_90410; Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
+Alkalinity,mg/l CaCO3,,USGS TT042,"Alkalinity, LIS, auto electmetr",90410,1,1,USGS_90410
+Alkalinity,mg/l CaCO3,,USGS TT056,"Alkalinity, Gran, Hach",29802,1,1,USGS_29802
+Alkalinity,mg/l CaCO3,,USGS TT060,"ANC or alkalinity, lab,Gran,auto",413,1,1,USGS_00413
+Alkalinity,mg/l CaCO3,,USGS TT061,"Alkalinity, IPT, Hach",39086,1,1,USGS_39086
+Alkalinity,mg/l CaCO3,,USGS TT065,"ANC, IPT, Hach",419,1,1,"USGS_00419; Acid neutralizing capacity, inflection-point titration method (incremental titration method), Hach digital titrator "
+Alkalinity,mg/l CaCO3,,USGS TT104,"Alkalinity, IP, automatic titr",39087,1,1,USGS_39087
+Alkalinity,ueq/L,,NA NA,,409,0.05005,0.05005,USGS_00409
+Alkalinity,,mg/l CaCO3,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",29801,1,1,"USGS_29801; Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
 "Alkalinity, total",mg/l,mg/l,21ARIZ SM 2320B,,,1,1,APHA 2320
 "Alkalinity, total",mg/l,mg/l,21ARIZ UNKNOWN,,,1,1,methods_unknown
 "Alkalinity, total",mg/l,mg/l,21FLALTA_WQX 2320-B,"Alkalinity, Total",,1,1,APHA 2320
@@ -109,7 +109,7 @@ Alkalinity,,mg/l CaCO3,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",29801,1,1,"A
 "Alkalinity, total",mg/l,mg/l,USEPA 365.1,Phosphorus by Colorimetry,,-1000000,-1000000,methods_fail
 "Alkalinity, total",mg/l,mg/l,USEPA 365.3,Phosphorus by Two Reagent Colorimetry,,-1000000,-1000000,methods_fail
 "Alkalinity, total",mg/l,mg/l,USEPA 365.4,Total Phosphorus After Block Digestion,,-1000000,-1000000,methods_fail
-"Alkalinity, total",mg/l,,11NPSWRD_WQX BLCA_TT061,"Alkalinity, inflection-point titration method (incremental titration method), Hach digital titrator",,1,1,USGS
+"Alkalinity, total",mg/l,,11NPSWRD_WQX BLCA_TT061,"Alkalinity, inflection-point titration method (incremental titration method), Hach digital titrator",,1,1,misc
 "Alkalinity, total",mg/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,methods_unknown
 "Alkalinity, total",mg/l,,21ARIZ SM 2320B,,,1,1,APHA 2320
 "Alkalinity, total",mg/l,,21ARIZ UNKNOWN,,,1,1,methods_unknown
