@@ -2,8 +2,8 @@ CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasu
 Kjeldahl nitrogen,mg/l,mg/l,LACHAT 10-107-06-2-E,10-107-06-2 E ~ Kjeldahl nitrogen- Mercury catalyst,,1000,1000,
 Kjeldahl nitrogen,mg/l,mg/l,USEPA 351.3(A),351.3 A  ~ Total Kjeldahl Nitrogen by Titration,,1000,1000,
 Kjeldahl nitrogen,mg/l,,USEPA 351.3(A),351.3 A  ~ Total Kjeldahl Nitrogen by Titration,,1000,1000,
-Kjeldahl nitrogen,mg/l,mg/l,USEPA 351.3(B),351.3 B  ~ Total Kjeldahl Nitrogen - Nesslerization,,1000,10000,
-Kjeldahl nitrogen,mg/l,mg/l,USEPA 351.3(C),351.3 C  ~ Total Kjeldahl Nitrogen - Potentiometric,,1000,10000,
+Kjeldahl nitrogen,mg/l,mg/l,USEPA 351.3(B),351.3 B  ~ Total Kjeldahl Nitrogen - Nesslerization,,1000,1000,
+Kjeldahl nitrogen,mg/l,mg/l,USEPA 351.3(C),351.3 C  ~ Total Kjeldahl Nitrogen - Potentiometric,,1000,1000,
 Kjeldahl nitrogen,ppm,,APHA_SM21ED 4500-N-B,4500 N B ~ In-Line UV/Persulfate Digestion and Oxidation and Flow Injection Analysis,,-1000000,-1000000,method_fail
 Kjeldahl nitrogen,mg/l,,APHA_SM20ED 4500-N-C,4500 N C ~ Persulfate Method for Total Nitrogen,,-1000000,-1000000,method_fail
 Kjeldahl nitrogen,mg/l,mg/l,APHA 4500-NH3(D),4500 NH3 D  ~ Ammonia in Water by Selective Electrode Method,,-1000000,-1000000,method_fail
@@ -135,7 +135,7 @@ Kjeldahl nitrogen,ppm,ppm,USEPA 351.2,Total Kjeldahl Nitrogen by Colorimetry,,10
 Kjeldahl nitrogen,ug/l,,USEPA 351.2,Total Kjeldahl Nitrogen by Colorimetry,,1,1,
 Kjeldahl nitrogen,mg/l,mg/l,11NPSWRD_WQX CRLA_CCAL_TKN1,Total Kjeldahl Nitrogen Fisher Electro Model 81 Spectrophotometer,,1000,1000,
 Kjeldahl nitrogen,mg/l,mg/l,11NPSWRD_WQX CRLA_CCAL_TKN2,Total Kjeldahl Nitrogen Milton-Roy 601,,1000,1000,
-Kjeldahl nitrogen,mg/l,mg/l,USEPA 351.4,Total Kjeldahl Nitrogen Using an ISE,,1000,10000,
+Kjeldahl nitrogen,mg/l,mg/l,USEPA 351.4,Total Kjeldahl Nitrogen Using an ISE,,1000,1000,
 Kjeldahl nitrogen,mg/l,,USEPA 351.4,Total Kjeldahl Nitrogen Using an ISE,,1000,1000,
 Kjeldahl nitrogen,mg/l,mg/l,21FLMANA_WQX TKN,Total Kjeldal Nitrogen,,1000,1000,
 Kjeldahl nitrogen,mg/l,mg/l,21IOWA_WQX Unknown,Unknown,,1000,1000,
@@ -169,8 +169,8 @@ Kjeldahl nitrogen,mg/l,mg/l,LAKELAND PAI-DK0,,,1000,1000,
 Kjeldahl nitrogen,mg/l,mg/l,NA NA,,,1000,1000,
 Kjeldahl nitrogen,mg/l,mg/l,USEPA 351.1,,,1000,1000,
 Kjeldahl nitrogen,mg/l,mg/l,USEPA 351.2,,,1000,1000,
-Kjeldahl nitrogen,mg/l,mg/l,USEPA 351.3(A),,,1000,10000,
-Kjeldahl nitrogen,mg/l,mg/l,USEPA 351.3(B),,,1000,10000,
+Kjeldahl nitrogen,mg/l,mg/l,USEPA 351.3(A),,,1000,1000,
+Kjeldahl nitrogen,mg/l,mg/l,USEPA 351.3(B),,,1000,1000,
 Kjeldahl nitrogen,mg/l,mg/l,USEPA 353.2,,,-1000000,-1000000,method_fail
 Kjeldahl nitrogen,mg/l,mg/l,USEPA 353.3,,,-1000000,-1000000,method_fail
 Kjeldahl nitrogen,mg/l,,21ARIZ EPA 351.3,,,1000,1000,
