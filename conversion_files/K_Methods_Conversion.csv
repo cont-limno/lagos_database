@@ -120,7 +120,7 @@ Potassium,mg/l,11NPSWRD_WQX CRLA_FES_K,Potassium by Flame Emission Spectroscopy,
 Potassium,mg/l,APHA 3500-K-B,NA,NA,NA,1,1,APHA 3500-K D
 Potassium,mg/l,USEPA 6010A,6010 A ~ ICP Spectroscopy,mg/l,NA,1,1,EPA 6010
 Potassium,mg/l,USEPA 6010A,6010 A ~ ICP Spectroscopy,NA,NA,1,1,EPA 6010
-Potassium,mg/l,TCEQMAIN N/A Calculation,N/A Calculation,NA,NA,-1000000,-1000000,methods_fail
+Potassium,mg/l,TCEQMAIN N/A Calculation,N/A Calculation,NA,NA,1,1,methods_unknown
 Potassium,mg/l,R10MIDNITE D6010,Dissolved Metals,NA,NA,1,1,EPA 6010
 Potassium,ug/l,USEPA 6020,Inductively Coupled Plasma - Mass Spec.,NA,NA,0.001,0.001,EPA 6020
 Potassium,mg/l,APHA 4110-C,4110 C ~ Single Column Ion Chromatography,mg/l,NA,-1000000,-1000000,methods_fail; anion method
