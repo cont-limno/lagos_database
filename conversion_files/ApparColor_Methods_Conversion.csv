@@ -1,29 +1,29 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Apparent color,ADMI value,ADMI value,USEPA 110.1,Color by Calculating ADMI Values,,-1000000,-1000000,
-Apparent color,PCU,mg/l,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,-1000000,-1000000,
-Apparent color,PCU,NTU,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,-1000000,-1000000,
-Apparent color,PCU,PCU,21FLGW_WQX 900456,QA Plan #900456,,1,1,
-Apparent color,PCU,PCU,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,1,1,
-Apparent color,PCU,PCU,21FLMANA COLOR,,,1,1,
-Apparent color,PCU,PCU,21FLMANA GENERIC,,,1,1,
-Apparent color,PCU,PCU,21FLMANA_WQX COLOR,Color,,1,1,
-Apparent color,PCU,PCU,21FLMANA_WQX GENERIC,General Listing of Field and Lab Analytical Procedures for Manatee County,,1,1,
-Apparent color,PCU,PCU,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,1,
-Apparent color,PCU,PCU,APHA 2120-C,2120 C ~ Color in Water by Spectrophotometry,,1,1,
-Apparent color,PCU,PCU,USEPA 110.1,Color by Calculating ADMI Values,,1,1,
-Apparent color,PCU,PCU,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,1,1,
-Apparent color,PCU,PCU,USEPA 110.2,,,1,1,
-Apparent color,PCU,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,
-Apparent color,PCU,,21FLMANA GENERIC,,,1,1,
-Apparent color,PCU,,21FLMANA_WQX GENERIC,General Listing of Field and Lab Analytical Procedures for Manatee County,,1,1,
-Apparent color,PCU,,21FLSUW_WQX OTHER/UNKNOWN,Other of Unknown Procedure,,1,1,
-Apparent color,PCU,,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,1,
-Apparent color,PCU,,APHA 2120-B,,,1,1,
-Apparent color,PCU,,HACH 8025,"Color, APHA Platinum-Cobalt",,1,1,
-Apparent color,PCU,,KAWNATON_WQX 8025,"Color, APHA Platinum-Cobalt",,1,1,
-Apparent color,PCU,,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,1,1,
-Apparent color,PCU,,USEPA 110.2,,,1,1,
-Apparent color,pt,pt,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,1,
+Apparent color,ADMI value,ADMI value,USEPA 110.1,Color by Calculating ADMI Values,,-1000000,-1000000,units_fail
+Apparent color,PCU,mg/l,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,1,-1000000,EPA 110.2
+Apparent color,PCU,NTU,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,1,-1000000,EPA 110.2
+Apparent color,PCU,PCU,21FLGW_WQX 900456,QA Plan #900456,,1,1,methods_unknown
+Apparent color,PCU,PCU,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,1,1,methods_unknown
+Apparent color,PCU,PCU,21FLMANA COLOR,,,1,1,methods_unknown
+Apparent color,PCU,PCU,21FLMANA GENERIC,,,1,1,methods_unknown
+Apparent color,PCU,PCU,21FLMANA_WQX COLOR,Color,,1,1,methods_unknown
+Apparent color,PCU,PCU,21FLMANA_WQX GENERIC,General Listing of Field and Lab Analytical Procedures for Manatee County,,1,1,methods_unknown
+Apparent color,PCU,PCU,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,1,APHA 2120-B
+Apparent color,PCU,PCU,APHA 2120-C,2120 C ~ Color in Water by Spectrophotometry,,1,1,APHA 2120-C
+Apparent color,PCU,PCU,USEPA 110.1,Color by Calculating ADMI Values,,1,1,EPA 110.1
+Apparent color,PCU,PCU,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,1,1,EPA 110.2
+Apparent color,PCU,PCU,USEPA 110.2,,,1,1,EPA 110.2
+Apparent color,PCU,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,methods_unknown
+Apparent color,PCU,,21FLMANA GENERIC,,,1,1,methods_unknown
+Apparent color,PCU,,21FLMANA_WQX GENERIC,General Listing of Field and Lab Analytical Procedures for Manatee County,,1,1,methods_unknown
+Apparent color,PCU,,21FLSUW_WQX OTHER/UNKNOWN,Other of Unknown Procedure,,1,1,methods_unknown
+Apparent color,PCU,,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,1,APHA 2120-B
+Apparent color,PCU,,APHA 2120-B,,,1,1,APHA 2120-B
+Apparent color,PCU,,HACH 8025,"Color, APHA Platinum-Cobalt",,1,1,HACH 8025
+Apparent color,PCU,,KAWNATON_WQX 8025,"Color, APHA Platinum-Cobalt",,1,1,methods_unknown
+Apparent color,PCU,,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,1,1,EPA 110.2
+Apparent color,PCU,,USEPA 110.2,,,1,1,EPA 110.2
+Apparent color,pt,pt,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,1,APHA 2120-B
 Color,PCU,PCU,USGS CC003,"Color, wf, visual comparison",80,1,1,True color of filtered water by visual comparison with standards (EPA method 110.2; DODEC program) 
 Color,PCU,,NA NA,,80,1,1,True color of filtered water by visual comparison with standards (EPA method 110.2; DODEC program) 
 Color,PCU,,USGS CC003,"Color, wf, visual comparison",80,1,1,True color of filtered water by visual comparison with standards (EPA method 110.2; DODEC program) 
