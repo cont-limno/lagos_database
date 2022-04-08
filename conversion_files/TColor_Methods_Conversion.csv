@@ -1,69 +1,69 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-True color,%,%,APHA 2120-B,,,-1000000,-1000000,
-True color,ADMI value,ADMI value,USEPA 110.1,Color by Calculating ADMI Values,,-1000000,-1000000,
-True color,ADMI value,,21NC01WQ CLR_PH76,,,-1000000,-1000000,
-True color,ADMI value,,21NC01WQ CLR_PHSAMP,,,-1000000,-1000000,
-True color,ADMI value,,USEPA 110.1,Color by Calculating ADMI Values,,-1000000,-1000000,
-True color,in,,NA NA,,,-1000000,-1000000,
-True color,mg/l,,APHA 2120-C,2120 C ~ Color in Water by Spectrophotometry,,-1000000,-1000000,
-True color,None,None,21NEV1_WQX 0029,Color - Visual Comparison Method,,-1000000,-1000000,
-True color,None,None,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,-1000000,-1000000,
-True color,None,,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,-1000000,-1000000,
-True color,None,,NA NA,,,-1000000,-1000000,
-True color,None,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,
-True color,PCU,mg/l,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,-1000000,-1000000,
-True color,PCU,None,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,-1000000,-1000000,
-True color,PCU,PCU,21FLHILL_WQX COLOR,Color - Pt/Co units,,1,1,
-True color,PCU,PCU,21FLHILL_WQX COLOR345C,COLOR 345 C,,1,1,
-True color,PCU,PCU,21FLHILL_WQX COLOR345F_.45,COLOR 345 F .45,,1,1,
-True color,PCU,PCU,21FLHILL_WQX COLOR440F_.22,COLOR 440 F .22,,1,1,
-True color,PCU,PCU,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,1,1,
-True color,PCU,PCU,21FLLCPC_WQX SM2120B,COLOR,,1,1,
-True color,PCU,PCU,21FLMANA_WQX COLOR,Color,,1,1,
-True color,PCU,PCU,21FLMCGL SOP-1,,,1,1,
-True color,PCU,PCU,21FLORAN SM2120B,,,1,1,
-True color,PCU,PCU,21FLORAN_WQX 2120-B(M),Color in Water by Spectrophotometry Modified,,1,1,
-True color,PCU,PCU,21FLPDEM SM 2120 B,,,1,1,
-True color,PCU,PCU,21FLPDEM_WQX SM 2120 B,"Color, True",,1,1,
-True color,PCU,PCU,21FLSFWM WQ-1,,,1,1,
-True color,PCU,PCU,21FLSFWM_WQX SM2120C,SM2120C,,1,1,
-True color,PCU,PCU,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,1,1,
-True color,PCU,PCU,21FLSJWM_WQX OTHER/UNKNOWN,Other or Unknown Procedure,,1,1,
-True color,PCU,PCU,21FLSUW_WQX OTHER/UNKNOWN,Other of Unknown Procedure,,1,1,
-True color,PCU,PCU,21FLWPB_WQX 2120B,STANDARD METHODS 2120B COLOR BY VISUAL,,1,1,
-True color,PCU,PCU,21NEV1_WQX 0029,Color - Visual Comparison Method,,1,1,
-True color,PCU,PCU,21NEV1_WQX 0030,Color - Spectrophotometric Single Wavelength Method,,1,1,
-True color,PCU,PCU,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,1,
-True color,PCU,PCU,APHA 2120-B,,,1,1,
-True color,PCU,PCU,APHA 2120-C,2120 C ~ Color in Water by Spectrophotometry,,1,1,
-True color,PCU,PCU,APHA 2120-C,,,1,1,
-True color,PCU,PCU,APHA 4500-F-C,,,1,1,
-True color,PCU,PCU,USEPA 110.1,Color by Calculating ADMI Values,,1,1,
-True color,PCU,PCU,USEPA 110.1,,,1,1,
-True color,PCU,PCU,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,1,1,
-True color,PCU,PCU,USEPA 110.2,,,1,1,
-True color,PCU,PCU,USEPA 110.3,,,1,1,
-True color,PCU,PCU,USEPA 160.3,,,1,1,
-True color,PCU,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,unknown
-True color,PCU,,21FLCEN_WQX HISTORICAL,Standard Operation Procedure,,1,1,
-True color,PCU,,21FLCEN_WQX SOP-ANALY,Standard Analytical Procedure,,1,1,
-True color,PCU,,21FLCOLL_WQX LKTRAFF,Lake Trafford,,1,1,
-True color,PCU,,21FLHILL_WQX COLOR,Color - Pt/Co units,,1,1,
-True color,PCU,,21FLLCPC_WQX SM2120B,COLOR,,1,1,
-True color,PCU,,21FLMCGL SOP-1,,,1,1,
-True color,PCU,,21FLPDEM SM 2120 B,,,1,1,
-True color,PCU,,21FLPDEM_WQX SM 2120 B,"Color, True",,1,1,
-True color,PCU,,21FLSFWM WQ-1,,,1,1,
-True color,PCU,,21FLTPA_WQX SOP-2,To be updated,,1,1,
-True color,PCU,,21NC01WQ UNKNOWN,,,1,1,
-True color,PCU,,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,1,
-True color,PCU,,APHA 2120-B,,,1,1,
-True color,PCU,,APHA 2120-C,,,1,1,
-True color,PCU,,HACH 8025,"Color, APHA Platinum-Cobalt",,1,1,
-True color,PCU,,KAWNATON_WQX 8025,"Color, APHA Platinum-Cobalt",,1,1,
-True color,PCU,,MNPCA LEG_P00080,COLOR (PLATINUM-COBALT UNITS),,1,1,
-True color,PCU,,NA NA,,,1,1,
-True color,PCU,,OREGONDEQ Not Available,Not Available,,1,1,
-True color,PCU,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,
-True color,PCU,,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,1,1,
-True color,PCU,,USEPA 110.2,,,1,1,
+True color,%,%,APHA 2120-B,,,-1000000,-1000000,units_fail
+True color,ADMI value,ADMI value,USEPA 110.1,Color by Calculating ADMI Values,,-1000000,-1000000,units_fail
+True color,ADMI value,,21NC01WQ CLR_PH76,,,-1000000,-1000000,units_fail
+True color,ADMI value,,21NC01WQ CLR_PHSAMP,,,-1000000,-1000000,units_fail
+True color,ADMI value,,USEPA 110.1,Color by Calculating ADMI Values,,-1000000,-1000000,units_fail
+True color,in,,NA NA,,,-1000000,-1000000,units_fail
+True color,mg/l,,APHA 2120-C,2120 C ~ Color in Water by Spectrophotometry,,-1000000,-1000000,units_fail
+True color,None,None,21NEV1_WQX 0029,Color - Visual Comparison Method,,-1000000,-1000000,units_fail
+True color,None,None,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,-1000000,-1000000,units_fail
+True color,None,,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,-1000000,-1000000,units_fail
+True color,None,,NA NA,,,-1000000,-1000000,units_fail
+True color,None,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,units_fail
+True color,PCU,mg/l,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,1,-1000000,methods_unknown
+True color,PCU,None,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,-1000000,APHA 2120-B
+True color,PCU,PCU,21FLHILL_WQX COLOR,Color - Pt/Co units,,1,1,methods_unknown
+True color,PCU,PCU,21FLHILL_WQX COLOR345C,COLOR 345 C,,1,1,methods_unknown
+True color,PCU,PCU,21FLHILL_WQX COLOR345F_.45,COLOR 345 F .45,,1,1,methods_unknown
+True color,PCU,PCU,21FLHILL_WQX COLOR440F_.22,COLOR 440 F .22,,1,1,methods_unknown
+True color,PCU,PCU,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,1,1,methods_unknown
+True color,PCU,PCU,21FLLCPC_WQX SM2120B,COLOR,,1,1,APHA 2120-B
+True color,PCU,PCU,21FLMANA_WQX COLOR,Color,,1,1,methods_unknown
+True color,PCU,PCU,21FLMCGL SOP-1,,,1,1,methods_unknown
+True color,PCU,PCU,21FLORAN SM2120B,,,1,1,APHA 2120-B
+True color,PCU,PCU,21FLORAN_WQX 2120-B(M),Color in Water by Spectrophotometry Modified,,1,1,APHA 2120-C
+True color,PCU,PCU,21FLPDEM SM 2120 B,,,1,1,APHA 2120-B
+True color,PCU,PCU,21FLPDEM_WQX SM 2120 B,"Color, True",,1,1,APHA 2120-B
+True color,PCU,PCU,21FLSFWM WQ-1,,,1,1,methods_unknown
+True color,PCU,PCU,21FLSFWM_WQX SM2120C,SM2120C,,1,1,APHA 2120-B
+True color,PCU,PCU,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,1,1,methods_unknown
+True color,PCU,PCU,21FLSJWM_WQX OTHER/UNKNOWN,Other or Unknown Procedure,,1,1,methods_unknown
+True color,PCU,PCU,21FLSUW_WQX OTHER/UNKNOWN,Other of Unknown Procedure,,1,1,methods_unknown
+True color,PCU,PCU,21FLWPB_WQX 2120B,STANDARD METHODS 2120B COLOR BY VISUAL,,1,1,APHA 2120-B
+True color,PCU,PCU,21NEV1_WQX 0029,Color - Visual Comparison Method,,1,1,methods_unknown
+True color,PCU,PCU,21NEV1_WQX 0030,Color - Spectrophotometric Single Wavelength Method,,1,1,methods_unknown
+True color,PCU,PCU,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,1,APHA 2120-B
+True color,PCU,PCU,APHA 2120-B,,,1,1,APHA 2120-B
+True color,PCU,PCU,APHA 2120-C,2120 C ~ Color in Water by Spectrophotometry,,1,1,APHA 2120-C
+True color,PCU,PCU,APHA 2120-C,,,1,1,APHA 2120-C
+True color,PCU,PCU,APHA 4500-F-C,,,1,1,methods_fail; APHA 4500-F-C
+True color,PCU,PCU,USEPA 110.1,Color by Calculating ADMI Values,,1,1,EPA 110.1
+True color,PCU,PCU,USEPA 110.1,,,1,1,EPA 110.1
+True color,PCU,PCU,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,1,1,EPA 110.2
+True color,PCU,PCU,USEPA 110.2,,,1,1,EPA 110.2
+True color,PCU,PCU,USEPA 110.3,,,1,1,EPA 110.3
+True color,PCU,PCU,USEPA 160.3,,,1,1,methods_fail; EPA 160.3
+True color,PCU,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,methods_unknown
+True color,PCU,,21FLCEN_WQX HISTORICAL,Standard Operation Procedure,,1,1,methods_unknown
+True color,PCU,,21FLCEN_WQX SOP-ANALY,Standard Analytical Procedure,,1,1,methods_unknown
+True color,PCU,,21FLCOLL_WQX LKTRAFF,Lake Trafford,,1,1,methods_unknown
+True color,PCU,,21FLHILL_WQX COLOR,Color - Pt/Co units,,1,1,methods_unknown
+True color,PCU,,21FLLCPC_WQX SM2120B,COLOR,,1,1,APHA 2120-B
+True color,PCU,,21FLMCGL SOP-1,,,1,1,methods_unknown
+True color,PCU,,21FLPDEM SM 2120 B,,,1,1,APHA 2120-B
+True color,PCU,,21FLPDEM_WQX SM 2120 B,"Color, True",,1,1,APHA 2120-B
+True color,PCU,,21FLSFWM WQ-1,,,1,1,methods_unknown
+True color,PCU,,21FLTPA_WQX SOP-2,To be updated,,1,1,methods_unknown
+True color,PCU,,21NC01WQ UNKNOWN,,,1,1,methods_unknown
+True color,PCU,,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,1,APHA 2120-B
+True color,PCU,,APHA 2120-B,,,1,1,APHA 2120-B
+True color,PCU,,APHA 2120-C,,,1,1,APHA 2120-C
+True color,PCU,,HACH 8025,"Color, APHA Platinum-Cobalt",,1,1,methods_unknown
+True color,PCU,,KAWNATON_WQX 8025,"Color, APHA Platinum-Cobalt",,1,1,methods_unknown
+True color,PCU,,MNPCA LEG_P00080,COLOR (PLATINUM-COBALT UNITS),,1,1,methods_unknown
+True color,PCU,,NA NA,,,1,1,methods_unknown
+True color,PCU,,OREGONDEQ Not Available,Not Available,,1,1,methods_unknown
+True color,PCU,,TCEQMAIN N/A Calculation,N/A Calculation,,1,1,methods_unknown
+True color,PCU,,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,1,1,EPA 110.2
+True color,PCU,,USEPA 110.2,,,1,1,EPA 110.2
