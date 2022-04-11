@@ -36,7 +36,7 @@ Orthophosphate,mg/l,,21FLSUW_WQX OTHER/UNKNOWN,Other of Unknown Procedure,,1000,
 Orthophosphate,mg/l,,APHA 4500-P-F,4500 P F ~ Phosphorus in Water by Colorimetry Automated Ascorbic Acid Method,,1000,1000,APHA 4500-P-F
 Orthophosphate,mg/l,,APHA 4500-P-H,4500 P H ~ Manual Digestion and Flow Injection Analysis for Total Phosphorus,,1000,1000,APHA 4500-P-H
 Orthophosphate,mg/l,,APHA_SM21ED 4500-P-G,4500 P G ~ Manual Digestion and Flow Injection Analysis for Orthophosphate,,1000,1000,APHA 4500-P-G
-Orthophosphate,mg/l,,MNPCA LEG_P00671,"PHOSPHORUS, DISSOLVED ORTHOPHOSPHATE (MG/L AS P)",,1000,1000,methods_unknown
+Orthophosphate,mg/l,,MNPCA LEG_P00671,"PHOSPHORUS, DISSOLVED ORTHOPHOSPHATE (MG/L AS P)",,1000,1000,USGS_00671
 Orthophosphate,mg/l,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1000,1000,methods_WQX
 Orthophosphate,mg/l,,NA NA,,,-1000000,-1000000,methods_fail
 Orthophosphate,mg/l,,R10BUNKER I2606,I2606,,1000,1000,USGS I-2606
