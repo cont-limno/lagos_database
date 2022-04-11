@@ -1951,6 +1951,31 @@ data_all$DetectionQuantitationLimitMeasure.MeasureValue<-data_all$Converted_dl
 data_all<-data_all %>% select(-Converted, -Converted_dl)
 write_csv(data_all, file = "alldata.csv")
 
+# vals<-unique(data_all$MonitoringLocationIdentifier)
+# 
+# vals1<-data_all %>% select(MonitoringLocationIdentifier)
+# temp<-vals1 %>% distinct() 
+# vals1<-vals %>% distinct()
+# 
+# vals2<-data_all %>% select(lagoslakeid)
+# temp<-vals2 %>% distinct() 
+# 
+# vals3<-data_all %>% select(wqp_monitoringlocationname)
+# temp<-vals3 %>% distinct() 
+# 
+# lakelink<-read.csv("~/GitHub/lagos_database/lake_link.csv")
+# 
+# temp<-lakelink %>% filter(!is.na(wqp_monitoringlocationidentifier))
+# n_lakes<-unique(temp$lagoslakeid)
+# 
+# n_lakes2<-unique(data_all$lagoslakeid)
+
+
+UniqueMonitoringLocationIdentifier<-data_all %>% distinct(MonitoringLocationIdentifier, .keep_all = T)
+write_csv(UniqueMonitoringLocationIdentifier, file = "UniqueMonitoringLocationIdentifier.csv")
+
+
+
 
 ```
 
