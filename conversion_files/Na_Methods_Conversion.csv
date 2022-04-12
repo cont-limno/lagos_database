@@ -1,122 +1,122 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Sodium,mg/l,mg/l,USEPA 200.7_M,200.7 M ~ ICP-AES For Trace Element Analysis,NA,1,1,USEPA 200.7
-Sodium,mg/l,NA,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,NA,1,1,USEPA 200.7
-Sodium,mg/l,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,NA,1,1,USEPA 200.7
-Sodium,mg/l,NA,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,NA,1,1,USEPA 200.8
-Sodium,mg/l,mg/l,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,NA,1,1,USEPA 200.8
+Sodium,mg/l,mg/l,USEPA 200.7_M,200.7 M ~ ICP-AES For Trace Element Analysis,NA,1,1,EPA 200.7
+Sodium,mg/l,NA,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,NA,1,1,EPA 200.7
+Sodium,mg/l,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,NA,1,1,EPA 200.7
+Sodium,mg/l,NA,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,NA,1,1,EPA 200.8
+Sodium,mg/l,mg/l,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,NA,1,1,EPA 200.8
 Sodium,mg/l,NA,APHA 3111-B,3111 B ~ Metals in Water by FLAA- Direct Air-Acetylene Flame,NA,1,1,APHA 3111-B
 Sodium,mg/l,mg/l,APHA 3111-B,3111 B ~ Metals in Water by FLAA- Direct Air-Acetylene Flame,NA,1,1,APHA 3111-B
 Sodium,mg/l,mg/l,APHA 3113-B,3113 B ~ Metals in Water by GFAA,NA,1,1,APHA 3113-B
-Sodium,mg/l,mg/l,APHA 3120 B (TOTAL),3120 B TOTAL  ~ Metals (total recoverable) in Water by ICP,NA,1,1,APHA 3120 B
+Sodium,mg/l,mg/l,APHA 3120 B (TOTAL),3120 B TOTAL  ~ Metals (total recoverable) in Water by ICP,NA,1,1,APHA 3120-B
 Sodium,mg/l,mg/l,APHA 4110-C,4110 C ~ Single Column Ion Chromatography,NA,-1000000,-1000000,methods_fail; anion method
-Sodium,mg/l,NA,USEPA 6010A,6010 A ~ ICP Spectroscopy,NA,1,1,USEPA 6010A
-Sodium,mg/l,mg/l,USEPA 6010A,6010 A ~ ICP Spectroscopy,NA,1,1,USEPA 6010A
-Sodium,mg/l,NA,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,NA,1,1,USEPA 6010B
-Sodium,mg/l,mg/l,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,NA,1,1,USEPA 6010B
-Sodium,ug/l,NA,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,NA,0.001,0.001,USEPA 6010B
-Sodium,ug/l,ug/l,USEPA 6010C,6010 C ~ Inductively Coupled Plasma - Atomic Emission Spectroscopy (ICP-AES),NA,0.001,0.001,USEPA 6010C
+Sodium,mg/l,NA,USEPA 6010A,6010 A ~ ICP Spectroscopy,NA,1,1,EPA 6010A
+Sodium,mg/l,mg/l,USEPA 6010A,6010 A ~ ICP Spectroscopy,NA,1,1,EPA 6010A
+Sodium,mg/l,NA,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,NA,1,1,EPA 6010B
+Sodium,mg/l,mg/l,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,NA,1,1,EPA 6010B
+Sodium,ug/l,NA,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,NA,0.001,0.001,EPA 6010B
+Sodium,ug/l,ug/l,USEPA 6010C,6010 C ~ Inductively Coupled Plasma - Atomic Emission Spectroscopy (ICP-AES),NA,0.001,0.001,EPA 6010C
 Sodium,ug/l,ug/l,USEPA 215.2,Calcium by EDTA Titrimetric Analysis,NA,-1000000,-1000000,methods_fail
-Sodium,%,NA,MHA_NATN Calculation,Calculation,NA,-1000000,-1000000,units_fail
-Sodium,mg/l,mg/l,11NPSWRD_WQX CUPN_OLDCATIONS,Cation analysis from 7-10-2002 through 9-30-2004 (not approved),NA,1,1,methods_unknown
-Sodium,mg/l,NA,R10MIDNITE D6010,Dissolved Metals,NA,1,1,methods_unknown
+Sodium,%,NA,MHA_NATN Calculation,Calculation,NA,-1000000,-1000000,unitsmethods_fail
+Sodium,mg/l,mg/l,11NPSWRD_WQX CUPN_OLDCATIONS,Cation analysis from 7-10-2002 through 9-30-2004 (not approved),NA,1,1,methods_WQX
+Sodium,mg/l,NA,R10MIDNITE D6010,Dissolved Metals,NA,1,1,EPA 6010
 Sodium,mg/l,mg/l,USGS PL130,"Elements, wf, ICP (200.7; COWSC)",930,1,1,USGS_00930
-Sodium,mg/l,mg/l,AZDEQ_SW EPA 200.7,EPA 200.7,NA,1,1,USEPA 200.7
-Sodium,mg/l,NA,AZDEQ_SW EPA 200.7,EPA 200.7,NA,1,1,USEPA 200.7
-Sodium,mg/l,NA,CEDEN 15,EPA 200.7,NA,1,1,USEPA 200.7
-Sodium,mg/l,mg/l,AZDEQ_SW EPA 200.7-DISS,EPA 200.7-DISS,NA,1,1,USEPA 200.7
-Sodium,mg/l,NA,21ARIZ_WQX EPA 200.7-DISS,EPA 200.7-DISSOLVED,NA,1,1,USEPA 200.7
-Sodium,mg/l,mg/l,AZDEQ_SW EPA 200.8,EPA 200.8,NA,1,1,USEPA 200.8
-Sodium,ug/l,ug/l,AZDEQ_SW EPA 200.8,EPA 200.8,NA,0.001,0.001,USEPA 200.8
-Sodium,mg/l,mg/l,AZDEQ_SW EPA 273.1,EPA 273.1,NA,1,1,USEPA 273.1
-Sodium,mg/l,NA,CEDEN 24,EPA 6010A,NA,1,1,USEPA 6010A
-Sodium,mg/l,NA,21ARIZ_WQX FIELD,FIELD PARAMETERS,NA,1,1,methods_unknown
+Sodium,mg/l,mg/l,AZDEQ_SW EPA 200.7,EPA 200.7,NA,1,1,EPA 200.7
+Sodium,mg/l,NA,AZDEQ_SW EPA 200.7,EPA 200.7,NA,1,1,EPA 200.7
+Sodium,mg/l,NA,CEDEN 15,EPA 200.7,NA,1,1,EPA 200.7
+Sodium,mg/l,mg/l,AZDEQ_SW EPA 200.7-DISS,EPA 200.7-DISS,NA,1,1,EPA 200.7
+Sodium,mg/l,NA,21ARIZ_WQX EPA 200.7-DISS,EPA 200.7-DISSOLVED,NA,1,1,EPA 200.7
+Sodium,mg/l,mg/l,AZDEQ_SW EPA 200.8,EPA 200.8,NA,1,1,EPA 200.8
+Sodium,ug/l,ug/l,AZDEQ_SW EPA 200.8,EPA 200.8,NA,0.001,0.001,EPA 200.8
+Sodium,mg/l,mg/l,AZDEQ_SW EPA 273.1,EPA 273.1,NA,1,1,EPA 273.1
+Sodium,mg/l,NA,CEDEN 24,EPA 6010A,NA,1,1,EPA 6010A
+Sodium,mg/l,NA,21ARIZ_WQX FIELD,FIELD PARAMETERS,NA,1,1,methods_WQX
 Sodium,mg/l,NA,TURTLEMT GS_UNKNOWN,GS_UNKNOWN,NA,1,1,methods_unknown
-Sodium,mg/kg,NA,KAWNATON_WQX 6010,Hydrogen Cyanide by Visible Absorption,NA,-1000000,-1000000,units_fail
-Sodium,mg/l,NA,USACOEND 6010A,ICP Metals in Water,NA,1,1,USEPA 6010A
+Sodium,mg/kg,NA,KAWNATON_WQX 6010,Hydrogen Cyanide by Visible Absorption,NA,-1000000,-1000000,unitsmethods_fail
+Sodium,mg/l,NA,USACOEND 6010A,ICP Metals in Water,NA,1,1,EPA 6010A
 Sodium,ug/l,NA,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,NA,0.001,0.001,methods_unknown
-Sodium,ug/l,NA,21DELAWQ_WQX 200.7_ELS,Inductively Coupled Plasma - Atomic Emission Spectrometry (ICP-AES),NA,0.001,0.001,USEPA 200.7
-Sodium,mg/l,NA,KAWNATON_WQX 6020,Inductively Coupled Plasma - Mass Spec.,NA,1,1,USEPA 6020; Sodium  not on analyte list
-Sodium,ug/l,NA,USEPA 6020,Inductively Coupled Plasma - Mass Spec.,NA,0.001,0.001,USEPA 6020; Sodium  not on analyte list
+Sodium,ug/l,NA,21DELAWQ_WQX 200.7_ELS,Inductively Coupled Plasma - Atomic Emission Spectrometry (ICP-AES),NA,0.001,0.001,EPA 200.7
+Sodium,mg/l,NA,KAWNATON_WQX 6020,Inductively Coupled Plasma - Mass Spec.,NA,1,1,EPA 6020
+Sodium,ug/l,NA,USEPA 6020,Inductively Coupled Plasma - Mass Spec.,NA,0.001,0.001,EPA 6020
 Sodium,mg/kg,NA,KAWNATON_WQX 6010B,Inductively Coupled Plasma AES,NA,-1000000,-1000000,units_fail
 Sodium,mg/l,mg/l,USGS IC032,"Ions, wf, auto IC  (NRP & CO)",930,1,1,USGS_00930
-Sodium,mg/l,mg/l,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,NA,1,1,methods_unknown
-Sodium,mg/l,mg/l,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,NA,1,1,methods_unknown
-Sodium,ppm,NA,11NPSWRD_WQX NPS_NURE_LL2-NA,Lawrence Livermore Lab Neutron Activation Analysis of Waters for Selected Parameters,NA,1,1,misc
-Sodium,mg/l,NA,21ARIZ_WQX EPA 200.7,METALS,NA,1,1,USEPA 200.7
-Sodium,mg/l,NA,21ARIZ_WQX EPA 200.8,METALS,NA,1,1,USEPA 200.8
-Sodium,ug/l,NA,21ARIZ_WQX EPA 200.8,METALS,NA,0.001,0.001,USEPA 200.8
+Sodium,mg/l,mg/l,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,NA,1,1,methods_WQX
+Sodium,mg/l,mg/l,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,NA,1,1,methods_WQX
+Sodium,ppm,NA,11NPSWRD_WQX NPS_NURE_LL2-NA,Lawrence Livermore Lab Neutron Activation Analysis of Waters for Selected Parameters,NA,1,1,methods_WQX
+Sodium,mg/l,NA,21ARIZ_WQX EPA 200.7,METALS,NA,1,1,EPA 200.7
+Sodium,mg/l,NA,21ARIZ_WQX EPA 200.8,METALS,NA,1,1,EPA 200.8
+Sodium,ug/l,NA,21ARIZ_WQX EPA 200.8,METALS,NA,0.001,0.001,EPA 200.8
 Sodium,mg/l,mg/l,USDOI/USGS I1472,Metals in Water by ICP,NA,1,1,USGS I1472
 Sodium,mg/l,NA,USDOI/USGS I1472,Metals in Water by ICP,NA,1,1,USGS I1472
 Sodium,mg/l,mg/l,APHA 3125,Metals in Water by ICP/MS,NA,1,1,APHA 3125
-Sodium,mg/l,NA,USEPA 200.7,Metals in Water by ICP-AES,NA,1,1,USEPA 200.7
-Sodium,mg/l,mg/l,USEPA 200.7,Metals in Water by ICP-AES,NA,1,1,USEPA 200.7
-Sodium,ug/l,ug/l,USEPA 200.7,Metals in Water by ICP-AES,NA,0.001,0.001,USEPA 200.7
-Sodium,ppm,ppm,USEPA 200.7,Metals in Water by ICP-AES,NA,1,1,USEPA 200.7
-Sodium,ug/l,NA,USEPA 200.7,Metals in Water by ICP-AES,NA,0.001,0.001,USEPA 200.7
-Sodium,mg/l,ug/l,USEPA 200.7,Metals in Water by ICP-AES,NA,1,1,USEPA 200.7
-Sodium,mg/l,NA,KAWNATON_WQX 200.7,Metals in Water by ICP-AES,NA,1,1,USEPA 200.7
+Sodium,mg/l,NA,USEPA 200.7,Metals in Water by ICP-AES,NA,1,1,EPA 200.7
+Sodium,mg/l,mg/l,USEPA 200.7,Metals in Water by ICP-AES,NA,1,1,EPA 200.7
+Sodium,ug/l,ug/l,USEPA 200.7,Metals in Water by ICP-AES,NA,0.001,0.001,EPA 200.7
+Sodium,ppm,ppm,USEPA 200.7,Metals in Water by ICP-AES,NA,1,1,EPA 200.7
+Sodium,ug/l,NA,USEPA 200.7,Metals in Water by ICP-AES,NA,0.001,0.001,EPA 200.7
+Sodium,mg/l,ug/l,USEPA 200.7,Metals in Water by ICP-AES,NA,1,1,EPA 200.7
+Sodium,mg/l,NA,KAWNATON_WQX 200.7,Metals in Water by ICP-AES,NA,1,1,EPA 200.7
 Sodium,mg,NA,KAWNATON_WQX 200.7,Metals in Water by ICP-AES,NA,-1000000,-1000000,units_fail
-Sodium,ug/l,NA,USEPA 200.15,Metals in Water by Nebulization and ICP-AES,NA,0.001,0.001,USEPA 200.15
-Sodium,mg/l,NA,USEPA 200.8,Metals in Waters by ICP/MS,NA,1,1,USEPA 200.8
-Sodium,mg/l,mg/l,USEPA 200.8,Metals in Waters by ICP/MS,NA,1,1,USEPA 200.8
-Sodium,ug/l,NA,USEPA 200.8,Metals in Waters by ICP/MS,NA,0.001,0.001,USEPA 200.8
-Sodium,ug/l,ug/l,USEPA 200.8,Metals in Waters by ICP/MS,NA,0.001,0.001,USEPA 200.8
-Sodium,mg/l,mg/l,MDEQ_WQ_WQX ICAP-SCAN-MDEQ-WQ,Metals Scan via Inductively Coupled Argon Plasma Spectroscopy,NA,1,1,misc
+Sodium,ug/l,NA,USEPA 200.15,Metals in Water by Nebulization and ICP-AES,NA,0.001,0.001,EPA 200.15
+Sodium,mg/l,NA,USEPA 200.8,Metals in Waters by ICP/MS,NA,1,1,EPA 200.8
+Sodium,mg/l,mg/l,USEPA 200.8,Metals in Waters by ICP/MS,NA,1,1,EPA 200.8
+Sodium,ug/l,NA,USEPA 200.8,Metals in Waters by ICP/MS,NA,0.001,0.001,EPA 200.8
+Sodium,ug/l,ug/l,USEPA 200.8,Metals in Waters by ICP/MS,NA,0.001,0.001,EPA 200.8
+Sodium,mg/l,mg/l,MDEQ_WQ_WQX ICAP-SCAN-MDEQ-WQ,Metals Scan via Inductively Coupled Argon Plasma Spectroscopy,NA,1,1,methods_WQX
 Sodium,mg/l,NA,USGS PLA09,"Metals, LL, wf, ICP-AES",930,1,1,USGS_00930
 Sodium,mg/l,mg/l,USGS PLA09,"Metals, LL, wf, ICP-AES",930,1,1,USGS_00930
 Sodium,mg/l,mg/l,USGS PLA24,"Metals, wf, ICP-AES (NRP & CO)",930,1,1,USGS_00930
 Sodium,mg/l,NA,USGS PLA11,"Metals, wf, ICP-AES (NWQL)",930,1,1,USGS_00930
 Sodium,mg/l,mg/l,USGS PLA11,"Metals, wf, ICP-AES (NWQL)",930,1,1,USGS_00930
-Sodium,mg/l,mg/l,21FLPNS_WQX 200.7 MOD,"Metals,tot.recoverable in aq. samples by trace-ICP emission spectroscopy",NA,1,1,USEPA 200.7
-Sodium,mg/l,NA,TCEQMAIN N/A Calculation,N/A Calculation,NA,-1000000,-1000000,method_fail
+Sodium,mg/l,mg/l,21FLPNS_WQX 200.7 MOD,"Metals,tot.recoverable in aq. samples by trace-ICP emission spectroscopy",NA,1,1,EPA 200.7
+Sodium,mg/l,NA,TCEQMAIN N/A Calculation,N/A Calculation,NA,-1000000,-1000000,methods_fail
 Sodium,mg/l,NA,NA NA,NA,930,1,1,USGS_00930
 Sodium,mg/l,NA,NA NA,NA,NA,1,1,methods_unknown
-Sodium,mg/l,mg/l,USEPA 200.7(W),NA,NA,1,1,USEPA 200.7
+Sodium,mg/l,mg/l,USEPA 200.7(W),NA,NA,1,1,EPA 200.7
 Sodium,mg/l,NA,21ARIZ UNKNOWN,NA,NA,1,1,methods_unknown
-Sodium,mg/l,mg/l,USEPA 273.1,NA,NA,1,1,USEPA 273.1
-Sodium,mg/l,NA,USEPA 200.7(W),NA,NA,1,1,USEPA 200.7
+Sodium,mg/l,mg/l,USEPA 273.1,NA,NA,1,1,EPA 273.1
+Sodium,mg/l,NA,USEPA 200.7(W),NA,NA,1,1,EPA 200.7
 Sodium,mg/l,mg/l,21ARIZ UNKNOWN,NA,NA,1,1,methods_unknown
 Sodium,ug/l,NA,NA NA,NA,91053,0.001,0.001,USGS_91053
 Sodium,mg/l,mg/l,NA NA,NA,930,1,1,USGS_00930
 Sodium,mg/l,NA,APHA 3111-B,NA,NA,1,1,APHA 3111-B
-Sodium,mg/l,NA,21FLSFWM WQ-1,NA,NA,1,1,method_unknown
-Sodium,mg/l,mg/l,21FLSFWM WQ-1,NA,NA,1,1,method_unknown
+Sodium,mg/l,NA,21FLSFWM WQ-1,NA,NA,1,1,methods_unknown
+Sodium,mg/l,mg/l,21FLSFWM WQ-1,NA,NA,1,1,methods_unknown
 Sodium,mg/l,mg/l,APHA 3111-B,NA,NA,1,1,APHA 3111-B
-Sodium,mg/l,mg/l,21FLORAN EPA200.7,NA,NA,1,1,USEPA 200.7
-Sodium,mg/l,NA,USEPA 6010A,NA,NA,1,1,USEPA 6010A
-Sodium,mg/l,NA,USEPA 6010B,NA,NA,1,1,USEPA 6010B
-Sodium,mg/l,NA,USEPA 273.1,NA,NA,1,1,USEPA 273.1
-Sodium,ppm,ppm,USEPA 200.7_M,NA,NA,1,1,USEPA 200.7
+Sodium,mg/l,mg/l,21FLORAN EPA200.7,NA,NA,1,1,EPA 200.7
+Sodium,mg/l,NA,USEPA 6010A,NA,NA,1,1,EPA 6010A
+Sodium,mg/l,NA,USEPA 6010B,NA,NA,1,1,EPA 6010B
+Sodium,mg/l,NA,USEPA 273.1,NA,NA,1,1,EPA 273.1
+Sodium,ppm,ppm,USEPA 200.7_M,NA,NA,1,1,EPA 200.7
 Sodium,ug/l,ug/l,NA NA,NA,82035,0.001,0.001,USGS_82035
 Sodium,mg/l,NA,21NC01WQ UNKNOWN,NA,NA,1,1,methods_unknown
 Sodium,mg/l,mg/l,21NC01WQ UNKNOWN,NA,NA,1,1,methods_unknown
 Sodium,mg/g,NA,USEPA 200.7(S),NA,NA,-1000000,-1000000,units_fail
 Sodium,ppm,NA,OKCORCOM CC-001,NA,NA,1,1,methods_unknown
 Sodium,mg/l,NA,APHA 3500-NA(B),NA,NA,1,1,APHA 3500-NA(B)
-Sodium,mg/l,mg/l,USEPA 6010A,NA,NA,1,1,USEPA 6010A
-Sodium,ug/l,NA,USEPA 200.7(W),NA,NA,0.001,0.001,USEPA 200.7
+Sodium,mg/l,mg/l,USEPA 6010A,NA,NA,1,1,EPA 6010A
+Sodium,ug/l,NA,USEPA 200.7(W),NA,NA,0.001,0.001,EPA 200.7
 Sodium,mg/l,NA,OREGONDEQ Not Available,Not Available,NA,1,1,methods_unknown
-Sodium,ppm,NA,11NPSWRD_WQX NPS_NURE_OR13,Oak Ridge Emission Spectrochemical Analysis of Waters for Selected Parameters,NA,1,1,misc
-Sodium,mg/l,NA,21FLSUW_WQX OTHER/UNKNOWN,Other of Unknown Procedure,NA,1,1,methods_unknown
-Sodium,mg/l,NA,SPIRITLK PLA11,PLA11,NA,1,1,method_unknown
-Sodium,mg/l,mg/l,21FLGW_WQX 900456,QA Plan #900456,NA,-1000000,-1000000,method_unknown
-Sodium,mg/l,mg/l,LADEQWPD_WQX SW6010,Same as 6010,NA,1,1,USEPA 6010
+Sodium,ppm,NA,11NPSWRD_WQX NPS_NURE_OR13,Oak Ridge Emission Spectrochemical Analysis of Waters for Selected Parameters,NA,1,1,methods_WQX
+Sodium,mg/l,NA,21FLSUW_WQX OTHER/UNKNOWN,Other of Unknown Procedure,NA,1,1,methods_WQX
+Sodium,mg/l,NA,SPIRITLK PLA11,PLA11,NA,1,1,methods_unknown
+Sodium,mg/l,mg/l,21FLGW_WQX 900456,QA Plan #900456,NA,1,1,methods_WQX
+Sodium,mg/l,mg/l,LADEQWPD_WQX SW6010,Same as 6010,NA,1,1,EPA 6010
 Sodium,mg/l,mg/l,11NPSWRD_WQX NPS_SM15_303A,SM 15th Ed Method 303A Flame Atomic Absorption Spectroscopy,NA,1,1,APHA 303A
 Sodium,mg/l,mg/l,11NPSWRD_WQX CRLA_CCAL_303A,SM 15th Ed Method 303A Flame Atomic Absorption with Perkins-Elmer 5000 Spectrophotometer,NA,1,1,APHA 303A
 Sodium,mg/l,mg/l,AZDEQ_SW SM 3111 B,SM 3111 B,NA,1,1,APHA 3111-B
-Sodium,mg/l,mg/l,21FLSFWM_WQX SM3120B,SM3120B,NA,1,1,APHA 3120 B
-Sodium,mg/l,NA,21ARIZ_WQX EPA 273.1,SODIUM,NA,1,1,USEPA 273.1
-Sodium,mg/l,NA,USEPA 273.1,Sodium by FLAA,NA,1,1,USEPA 273.1
-Sodium,mg/l,mg/l,USEPA 273.1,Sodium by FLAA,NA,1,1,USEPA 273.1
-Sodium,mg/l,NA,11NPSWRD_WQX CRLA_FES_NA,Sodium by Flame Emission Spectroscopy,NA,1,1,misc
+Sodium,mg/l,mg/l,21FLSFWM_WQX SM3120B,SM3120B,NA,1,1,APHA 3120-B
+Sodium,mg/l,NA,21ARIZ_WQX EPA 273.1,SODIUM,NA,1,1,EPA 273.1
+Sodium,mg/l,NA,USEPA 273.1,Sodium by FLAA,NA,1,1,EPA 273.1
+Sodium,mg/l,mg/l,USEPA 273.1,Sodium by FLAA,NA,1,1,EPA 273.1
+Sodium,mg/l,NA,11NPSWRD_WQX CRLA_FES_NA,Sodium by Flame Emission Spectroscopy,NA,1,1,methods_WQX
 Sodium,mg/l,NA,USGS AA036,"Sodium, LL, wf, direct AAS",930,1,1,USGS_00930
 Sodium,mg/l,NA,USGS AA035,"Sodium, wf, direct AAS (NWQL)",930,1,1,USGS_00930
 Sodium,mg/l,mg/l,USGS AA035,"Sodium, wf, direct AAS (NWQL)",930,1,1,USGS_00930
-Sodium,mg/l,NA,UC_REGION_USBOR_WQX SMEWW 3120 B,Standard Methods for the Examination of Water and Wastewater,NA,1,1,APHA 3120 B
+Sodium,mg/l,NA,UC_REGION_USBOR_WQX SMEWW 3120 B,Standard Methods for the Examination of Water and Wastewater,NA,1,1,APHA 3120-B
 Sodium,mg/l,NA,USGS PLA06,"Trace elements, wf, ICP/T (Ocala",930,1,1,USGS_00930
 Sodium,mg/l,NA,AZDEQ_SW UNKNOWN,UNKNOWN,NA,1,1,methods_unknown
 Sodium,mg/l,mg/l,AZDEQ_SW UNKNOWN,UNKNOWN,NA,1,1,methods_unknown
-Sodium,mg/l,NA,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,NA,1,1,methods_unknown
+Sodium,mg/l,NA,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,NA,1,1,methods_WQX
 Sodium,%,NA,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,NA,-1000000,-1000000,units_fail
-Sodium,mg/l,NA,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,NA,1,1,methods_unknown
+Sodium,mg/l,NA,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,NA,1,1,methods_WQX
 Sodium,mg/l,NA,CEDEN 298,USGS I-1472-87,NA,1,1,USGS I1472
