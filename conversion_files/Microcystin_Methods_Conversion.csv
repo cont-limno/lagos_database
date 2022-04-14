@@ -37,7 +37,7 @@ Microcystin LA,ug/l,,CEDEN 5341,LC/MS/MS,,1,1,methods_unknown
 Microcystin LA,ug/l,,USEPA 8321,Non-Volatile Compounds by HPLC,,-1000000,-1000000,methods_fail
 Microcystin LF,ug/l,ug/l,USEPA 8321,Non-Volatile Compounds by HPLC,,-1000000,-1000000,methods_fail
 Microcystin LF,ug/l,,USEPA 8321,Non-Volatile Compounds by HPLC,,-1000000,-1000000,methods_fail
-Microcystin LR,ng/l,ng/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,methods_WQX
+Microcystin LR,ng/l,ng/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,0.001,0.001,methods_WQX
 Microcystin LR,ppb,ppb,CAHFS DTOX-02-670,"Microcystin LA, Microcystin RR, and Microcystin YR Analysis",,1,1,methods_unknown
 Microcystin LR,ppb,ppb,POMO989_WQX MICROCYSTIN,MICROCYSTIN,,1,1,methods_WQX
 Microcystin LR,ppb,,EPA_R7_WQX ELISA,Abraxis enzyme-linked immuno-sorbent assay,,1,1,methods_WQX
@@ -49,7 +49,7 @@ Microcystin LR,ug/l,,CEDEN 4041,"Mekebri, et al., 2009",,1,1,https://doi.org/10.
 Microcystin LR,ug/l,,CEDEN 5341,LC/MS/MS,,1,1,methods_unknown
 Microcystin LR,ug/l,,EPA_R7_WQX ELISA,Abraxis enzyme-linked immuno-sorbent assay,,1,1,methods_WQX
 Microcystin LR,ug/l,,USEPA 8321,Non-Volatile Compounds by HPLC,,-1000000,-1000000,methods_fail
-Microcystin RR,ng/l,ng/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,methods_WQX
+Microcystin RR,ng/l,ng/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,0.001,0.001,methods_WQX
 Microcystin RR,ppb,ppb,CAHFS DTOX-02-670,"Microcystin LA, Microcystin RR, and Microcystin YR Analysis",,1,1,methods_unknown
 Microcystin RR,ppb,ppb,POMO989_WQX MICROCYSTIN,MICROCYSTIN,,1,1,methods_WQX
 Microcystin RR,ug/l,ug/l,MTVOLWQM_WQX 544M-MTVOLWQM,Determination of Microcystins and Nodularin in Drinking Water by LC/MS/MS - Modified,,1,1,methods_WQX
