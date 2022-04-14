@@ -1,96 +1,96 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Selenium,%,%,USACENWS_WQX SOP BAL-0501,SOP BAL-0501,,-1000000,-1000000,
-Selenium,mg/kg,mg/kg,AZDEQ_SW EPA 6010B,EPA 6010B,,1,1,Trace elements in filtered water by ICP-AES (DODEC program)
-Selenium,mg/kg,mg/kg,AZDEQ_SW EPA 6020A,EPA 6020A,,1,1,Elements in filtered water by inductively coupled plasma-mass spectrometry (EPA 6020A; DODESP)
-Selenium,mg/kg,,KAWNATON_WQX 6010,Hydrogen Cyanide by Visible Absorption,,-1000000,-1000000,
-Selenium,mg/kg,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,
-Selenium,mg/l,mg/l,21FLORAN EPA200.7,,,1000,1000,
-Selenium,mg/l,mg/l,21FLORAN EPA270.2,,,1000,1000,"Selenium (Atomic Absorption, Furnace Technique)"
-Selenium,mg/l,mg/l,APHA 3113-B,3113 B ~ Metals in Water by GFAA,,1000,1000,
-Selenium,mg/l,mg/l,APHA 3113-B,,,1000,1000,
-Selenium,mg/l,mg/l,APHA 3114-B,3114 B ~ Metals in Water by Manual HYDAA,,1000,1000,
-Selenium,mg/l,mg/l,AZDEQ_SW EPA 200.8,EPA 200.8,,1000,1000,Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
-Selenium,mg/l,mg/l,AZDEQ_SW EPA 200.9,EPA 200.9,,1000,1000,Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
-Selenium,mg/l,mg/l,CHEROKEE_WQX CN_QAPP,CN_QAPP,,-1000000,-1000000,
-Selenium,mg/l,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1000,1000,
-Selenium,mg/l,mg/l,USEPA 200.7(W),,,1000,1000,
-Selenium,mg/l,mg/l,USEPA 200.8,Metals in Waters by ICP/MS,,1000,1000,Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
-Selenium,mg/l,mg/l,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1000,1000,
-Selenium,mg/l,mg/l,USEPA 200.8(W),,,1000,1000,
-Selenium,mg/l,mg/l,USEPA 204.2,,,1000,1000,
-Selenium,mg/l,mg/l,USEPA 270.2,,,1000,1000,
-Selenium,mg/l,mg/l,USEPA 7741A,7741 A ~ Selenium in Water by Gaseous Hydride,,1000,1000,
-Selenium,mg/l,ug/l,AZDEQ_SW EPA 200.9,EPA 200.9,,1000,1,Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
-Selenium,mg/l,ug/l,USEPA 200.9,,,1000,1,Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
-Selenium,mg/l,,21ARIZ_WQX EPA 200.8,METALS,,1000,1000,Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
-Selenium,mg/l,,KAWNATON_WQX 200.8,Metals in Waters by ICP/MS,,1000,1000,
-Selenium,mg/l,,USACOEND 6010A,ICP Metals in Water,,1000,1000,Trace elements in filtered water by ICP-AES (DODEC program)
-Selenium,mg/l,,USACOEND 6020,Priority Pollutant Metals in Water,,1000,1000,Elements in filtered water by inductively coupled plasma-mass spectrometry (EPA 6020A; DODESP)
-Selenium,mg/l,,USEPA 200.7,Metals in Water by ICP-AES,,1000,1000,
-Selenium,mg/l,,USEPA 200.7(W),,,1000,1000,
-Selenium,mg/l,,USEPA 200.8,Metals in Waters by ICP/MS,,1000,1000,
-Selenium,mg/l,,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1000,1000,
-Selenium,mg/l,,USEPA 200.9,Metals by Temperature Stabilized GFAA,,1000,1000,
-Selenium,mg/l,,USEPA 270.2,Selenium by GFAA,,1000,1000,
-Selenium,mg/l,,USEPA 270.2,,,1000,1000,
-Selenium,mg/l,,USEPA 6010A,,,1000,1000,
-Selenium,mg/l,,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1000,1000,
-Selenium,mg/l,,USEPA 7740,Selenium in Various Matrices by GFAA,,1000,1000,
-Selenium,ug/l,ug/l,21ARIZ UNKNOWN,,,-1000000,-1000000,unknown
-Selenium,ug/l,ug/l,21FLORAN EPA270.2,,,1,1,
-Selenium,ug/l,ug/l,21FLSFWM WQ-1,,,-1000000,-1000000,
-Selenium,ug/l,ug/l,21NC01WQ UNKNOWN,,,-1000000,-1000000,unknown
-Selenium,ug/l,ug/l,APHA 3113-B,3113 B ~ Metals in Water by GFAA,,1,1,
-Selenium,ug/l,ug/l,APHA 3114-B,3114 B ~ Metals in Water by Manual HYDAA,,1,1,Reported as selenium
-Selenium,ug/l,ug/l,APHA 3500-SE(H),,,1,1,
-Selenium,ug/l,ug/l,AZDEQ_SW EPA 1638 DRC,EPA 1638 DRC,,1,1,unknown
-Selenium,ug/l,ug/l,AZDEQ_SW EPA 200.8,EPA 200.8,,1,1,Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
-Selenium,ug/l,ug/l,AZDEQ_SW EPA 200.9,EPA 200.9,,1,1,Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
-Selenium,ug/l,ug/l,AZDEQ_SW UNKNOWN,UNKNOWN,,-1000000,-1000000,unknown
-Selenium,ug/l,ug/l,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,,-1000000,-1000000,unknown
-Selenium,ug/l,ug/l,R10MIDNITE 7040,Antimony,,-1000000,-1000000,
-Selenium,ug/l,ug/l,USEPA 1638,Trace Elements in Water by ICP/MS,,1,1,
-Selenium,ug/l,ug/l,USEPA 200.7,Metals in Water by ICP-AES,,1,1,
-Selenium,ug/l,ug/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1,1,
-Selenium,ug/l,ug/l,USEPA 200.7(W),,,1,1,
-Selenium,ug/l,ug/l,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
-Selenium,ug/l,ug/l,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1,1,Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
-Selenium,ug/l,ug/l,USEPA 200.8(W),,,1,1,
-Selenium,ug/l,ug/l,USEPA 200.9,Metals by Temperature Stabilized GFAA,,1,1,
-Selenium,ug/l,ug/l,USEPA 200.9,,,1,1,Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
-Selenium,ug/l,ug/l,USEPA 270.2,Selenium by GFAA,,1,1,
-Selenium,ug/l,ug/l,USEPA 270.2,,,1,1,SELENIUM DISSOLVED (GFAA)
-Selenium,ug/l,ug/l,USEPA 6010A,6010 A ~ ICP Spectroscopy,,1,1,
-Selenium,ug/l,ug/l,USEPA 6010A,,,1,1,
-Selenium,ug/l,ug/l,USGS GF102,"Selenium, wu, GFAAS (NWQL)",1147,1,1,Reported as selenium
-Selenium,ug/l,ug/l,USGS PL120,"Metals, wu, ICP-OES/MS (NWQL)",1147,1,1,Reported as selenium
-Selenium,ug/l,ug/l,USGS PLM10,"Elements, wf, cICP-MS",1147,1,1,Reported as selenium
-Selenium,ug/l,ug/l,USGS PLM11,"Elements, wu, cICP-MS",1147,1,1,Reported as selenium
-Selenium,ug/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,unknown
-Selenium,ug/l,,21ARIZ UNKNOWN,,,1,1,unknown
-Selenium,ug/l,,21ARIZ_WQX EPA 1638 DRC,TRACE METALS ICP/MS WITH DYNAMIC REACTION CELL,,1,1,unknown
-Selenium,ug/l,,21ARIZ_WQX EPA 200.8,METALS,,1,1,Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
-Selenium,ug/l,,21ARIZ_WQX FIELD,FIELD PARAMETERS,,-1000000,-1000000,unknown
-Selenium,ug/l,,21COL001 HISTORIC,,,-1000000,-1000000,unknown
-Selenium,ug/l,,21NC01WQ UNKNOWN,,,-1000000,-1000000,
-Selenium,ug/l,,APHA 3114-B,,,1,1,Reported as selenium
-Selenium,ug/l,,APHA 3500-SE(H),,,1,1,
-Selenium,ug/l,,AZDEQ_SW UNKNOWN,UNKNOWN,,-1000000,-1000000,unknown
-Selenium,ug/l,,CEDEN 139,EPA 6020,,1,1,
-Selenium,ug/l,,NA NA,,1147,1,1,Reported as selenium
-Selenium,ug/l,,NA NA,,,-1000000,-1000000,
-Selenium,ug/l,,SPIRITLK LC3133,LC3133,,-1000000,-1000000,
-Selenium,ug/l,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,
-Selenium,ug/l,,USACOEND 6020,Priority Pollutant Metals in Water,,1,1,
-Selenium,ug/l,,USEPA 1638,Trace Elements in Water by ICP/MS,,1,1,Reported as selenium
-Selenium,ug/l,,USEPA 200.15,Metals in Water by Nebulization and ICP-AES,,1,1,Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
-Selenium,ug/l,,USEPA 200.7(W),,,1,1,Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
-Selenium,ug/l,,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,Reported as selenium
-Selenium,ug/l,,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1,1,
-Selenium,ug/l,,USEPA 200.9,Metals by Temperature Stabilized GFAA,,1,1,
-Selenium,ug/l,,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1,1,
-Selenium,ug/l,,USGS GF102,"Selenium, wu, GFAAS (NWQL)",1147,1,1,unknown
-Selenium,ug/l,,USGS HY012,"Selenium, wu, auto hydride AAS",1147,1,1,Reported as selenium
-Selenium,ug/l,,USGS PL120,"Metals, wu, ICP-OES/MS (NWQL)",1147,1,1,Reported as selenium
-Selenium,ug/l,,USGS PLM11,"Elements, wu, cICP-MS",1147,1,1,
-Selenium,ug/l,,USGS PLM77,"Metals, wu, 2% corr, cICP-MS",1147,1,1,
+Selenium,%,%,USACENWS_WQX SOP BAL-0501,SOP BAL-0501,,-1000000,-1000000,units_fail
+Selenium,mg/kg,mg/kg,AZDEQ_SW EPA 6010B,EPA 6010B,,-1000000,-1000000,units_fail
+Selenium,mg/kg,mg/kg,AZDEQ_SW EPA 6020A,EPA 6020A,,-1000000,-1000000,units_fail
+Selenium,mg/kg,,KAWNATON_WQX 6010,Hydrogen Cyanide by Visible Absorption,,-1000000,-1000000,unitsmethods_fail
+Selenium,mg/kg,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,units_fail
+Selenium,mg/l,mg/l,21FLORAN EPA200.7,,,1000,1000,EPA 200.7
+Selenium,mg/l,mg/l,21FLORAN EPA270.2,,,1000,1000,"EPA 270.2; Selenium (Atomic Absorption, Furnace Technique)"
+Selenium,mg/l,mg/l,APHA 3113-B,3113 B ~ Metals in Water by GFAA,,1000,1000,APHA 3113-B
+Selenium,mg/l,mg/l,APHA 3113-B,,,1000,1000,APHA 3113-B
+Selenium,mg/l,mg/l,APHA 3114-B,3114 B ~ Metals in Water by Manual HYDAA,,1000,1000,APHA 3113-B
+Selenium,mg/l,mg/l,AZDEQ_SW EPA 200.8,EPA 200.8,,1000,1000,EPA 200.8; Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
+Selenium,mg/l,mg/l,AZDEQ_SW EPA 200.9,EPA 200.9,,1000,1000,EPA 200.9; Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
+Selenium,mg/l,mg/l,CHEROKEE_WQX CN_QAPP,CN_QAPP,,1000,1000,methods_WQX
+Selenium,mg/l,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1000,1000,EPA 200.7
+Selenium,mg/l,mg/l,USEPA 200.7(W),,,1000,1000,EPA 200.7
+Selenium,mg/l,mg/l,USEPA 200.8,Metals in Waters by ICP/MS,,1000,1000,EPA 200.8; Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
+Selenium,mg/l,mg/l,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1000,1000,EPA 200.8
+Selenium,mg/l,mg/l,USEPA 200.8(W),,,1000,1000,EPA 200.8
+Selenium,mg/l,mg/l,USEPA 204.2,,,-1000000,-1000000,methods_fail; antimony
+Selenium,mg/l,mg/l,USEPA 270.2,,,1000,1000,EPA 270.2
+Selenium,mg/l,mg/l,USEPA 7741A,7741 A ~ Selenium in Water by Gaseous Hydride,,1000,1000,EPA 7741A
+Selenium,mg/l,ug/l,AZDEQ_SW EPA 200.9,EPA 200.9,,1000,1,EPA 200.9; Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
+Selenium,mg/l,ug/l,USEPA 200.9,,,1000,1,EPA 200.9; Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
+Selenium,mg/l,,21ARIZ_WQX EPA 200.8,METALS,,1000,1000,EPA 200.8; Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
+Selenium,mg/l,,KAWNATON_WQX 200.8,Metals in Waters by ICP/MS,,1000,1000,EPA 200.8
+Selenium,mg/l,,USACOEND 6010A,ICP Metals in Water,,1000,1000,EPA 6010A; Trace elements in filtered water by ICP-AES (DODEC program)
+Selenium,mg/l,,USACOEND 6020,Priority Pollutant Metals in Water,,1000,1000,EPA 6020; Elements in filtered water by inductively coupled plasma-mass spectrometry (EPA 6020A; DODESP)
+Selenium,mg/l,,USEPA 200.7,Metals in Water by ICP-AES,,1000,1000,EPA 200.7
+Selenium,mg/l,,USEPA 200.7(W),,,1000,1000,EPA 200.7
+Selenium,mg/l,,USEPA 200.8,Metals in Waters by ICP/MS,,1000,1000,EPA 200.8
+Selenium,mg/l,,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1000,1000,EPA 200.8
+Selenium,mg/l,,USEPA 200.9,Metals by Temperature Stabilized GFAA,,1000,1000,EPA 200.9
+Selenium,mg/l,,USEPA 270.2,Selenium by GFAA,,1000,1000,EPA 270.2
+Selenium,mg/l,,USEPA 270.2,,,1000,1000,EPA 270.2
+Selenium,mg/l,,USEPA 6010A,,,1000,1000,EPA 6010A
+Selenium,mg/l,,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1000,1000,EPA 6010B
+Selenium,mg/l,,USEPA 7740,Selenium in Various Matrices by GFAA,,1000,1000,EPA 7740
+Selenium,ug/l,ug/l,21ARIZ UNKNOWN,,,-1000000,-1000000,methods_fail
+Selenium,ug/l,ug/l,21FLORAN EPA270.2,,,1,1,EPA 270.2
+Selenium,ug/l,ug/l,21FLSFWM WQ-1,,,-1000000,-1000000,methods_fail
+Selenium,ug/l,ug/l,21NC01WQ UNKNOWN,,,-1000000,-1000000,methods_fail
+Selenium,ug/l,ug/l,APHA 3113-B,3113 B ~ Metals in Water by GFAA,,1,1,APHA 3113-B
+Selenium,ug/l,ug/l,APHA 3114-B,3114 B ~ Metals in Water by Manual HYDAA,,1,1,APHA 3113-B
+Selenium,ug/l,ug/l,APHA 3500-SE(H),,,1,1,APHA 3500-SE(H)
+Selenium,ug/l,ug/l,AZDEQ_SW EPA 1638 DRC,EPA 1638 DRC,,1,1,EPA 1638
+Selenium,ug/l,ug/l,AZDEQ_SW EPA 200.8,EPA 200.8,,1,1,EPA 200.8; Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
+Selenium,ug/l,ug/l,AZDEQ_SW EPA 200.9,EPA 200.9,,1,1,EPA 200.9; Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
+Selenium,ug/l,ug/l,AZDEQ_SW UNKNOWN,UNKNOWN,,-1000000,-1000000,methods_fail
+Selenium,ug/l,ug/l,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,,-1000000,-1000000,methods_fail
+Selenium,ug/l,ug/l,R10MIDNITE 7040,Antimony,,-1000000,-1000000,methods_fail
+Selenium,ug/l,ug/l,USEPA 1638,Trace Elements in Water by ICP/MS,,1,1,EPA 1638
+Selenium,ug/l,ug/l,USEPA 200.7,Metals in Water by ICP-AES,,1,1,EPA 200.7
+Selenium,ug/l,ug/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1,1,EPA 200.7
+Selenium,ug/l,ug/l,USEPA 200.7(W),,,1,1,EPA 200.7
+Selenium,ug/l,ug/l,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,EPA 200.8; Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
+Selenium,ug/l,ug/l,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1,1,EPA 200.8; Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
+Selenium,ug/l,ug/l,USEPA 200.8(W),,,1,1,EPA 200.8
+Selenium,ug/l,ug/l,USEPA 200.9,Metals by Temperature Stabilized GFAA,,1,1,EPA 200.9
+Selenium,ug/l,ug/l,USEPA 200.9,,,1,1,EPA 200.9; Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
+Selenium,ug/l,ug/l,USEPA 270.2,Selenium by GFAA,,1,1,EPA 270.2
+Selenium,ug/l,ug/l,USEPA 270.2,,,1,1,EPA 270.2; SELENIUM DISSOLVED (GFAA)
+Selenium,ug/l,ug/l,USEPA 6010A,6010 A ~ ICP Spectroscopy,,1,1,EPA 6010A
+Selenium,ug/l,ug/l,USEPA 6010A,,,1,1,EPA 6010A
+Selenium,ug/l,ug/l,USGS GF102,"Selenium, wu, GFAAS (NWQL)",1147,1,1,"USGS_01147; Selenium, water, unfiltered, micrograms per liter"
+Selenium,ug/l,ug/l,USGS PL120,"Metals, wu, ICP-OES/MS (NWQL)",1147,1,1,"USGS_01147; Selenium, water, unfiltered, micrograms per liter"
+Selenium,ug/l,ug/l,USGS PLM10,"Elements, wf, cICP-MS",1147,1,1,"USGS_01147; Selenium, water, unfiltered, micrograms per liter"
+Selenium,ug/l,ug/l,USGS PLM11,"Elements, wu, cICP-MS",1147,1,1,"USGS_01147; Selenium, water, unfiltered, micrograms per liter"
+Selenium,ug/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,methods_WQX
+Selenium,ug/l,,21ARIZ UNKNOWN,,,-1000000,-1000000,methods_fail
+Selenium,ug/l,,21ARIZ_WQX EPA 1638 DRC,TRACE METALS ICP/MS WITH DYNAMIC REACTION CELL,,1,1,EPA 1638
+Selenium,ug/l,,21ARIZ_WQX EPA 200.8,METALS,,1,1,EPA 200.8; Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
+Selenium,ug/l,,21ARIZ_WQX FIELD,FIELD PARAMETERS,,1,1,methods_WQX
+Selenium,ug/l,,21COL001 HISTORIC,,,-1000000,-1000000,methods_fail
+Selenium,ug/l,,21NC01WQ UNKNOWN,,,-1000000,-1000000,methods_fail
+Selenium,ug/l,,APHA 3114-B,,,1,1,APHA 3114-B
+Selenium,ug/l,,APHA 3500-SE(H),,,1,1,APHA 3500-SE(H)
+Selenium,ug/l,,AZDEQ_SW UNKNOWN,UNKNOWN,,-1000000,-1000000,methods_fail
+Selenium,ug/l,,CEDEN 139,EPA 6020,,1,1,EPA 6020 
+Selenium,ug/l,,NA NA,,1147,1,1,"USGS_01147; Selenium, water, unfiltered, micrograms per liter"
+Selenium,ug/l,,NA NA,,,-1000000,-1000000,methods_fail
+Selenium,ug/l,,SPIRITLK LC3133,LC3133,,-1000000,-1000000,methods_fail
+Selenium,ug/l,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,methods_fail
+Selenium,ug/l,,USACOEND 6020,Priority Pollutant Metals in Water,,1,1,EPA 6020
+Selenium,ug/l,,USEPA 1638,Trace Elements in Water by ICP/MS,,1,1,EPA 1638
+Selenium,ug/l,,USEPA 200.15,Metals in Water by Nebulization and ICP-AES,,1,1,EPA 200.15
+Selenium,ug/l,,USEPA 200.7(W),,,1,1,EPA 200.7; Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
+Selenium,ug/l,,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,EPA 200.8
+Selenium,ug/l,,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1,1,EPA 200.8
+Selenium,ug/l,,USEPA 200.9,Metals by Temperature Stabilized GFAA,,1,1,EPA 200.9 
+Selenium,ug/l,,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1,1,EPA 6010B
+Selenium,ug/l,,USGS GF102,"Selenium, wu, GFAAS (NWQL)",1147,1,1,"USGS_01147; Selenium, water, unfiltered, micrograms per liter"
+Selenium,ug/l,,USGS HY012,"Selenium, wu, auto hydride AAS",1147,1,1,"USGS_01147; Selenium, water, unfiltered, micrograms per liter"
+Selenium,ug/l,,USGS PL120,"Metals, wu, ICP-OES/MS (NWQL)",1147,1,1,"USGS_01147; Selenium, water, unfiltered, micrograms per liter"
+Selenium,ug/l,,USGS PLM11,"Elements, wu, cICP-MS",1147,1,1,"USGS_01147; Selenium, water, unfiltered, micrograms per liter"
+Selenium,ug/l,,USGS PLM77,"Metals, wu, 2% corr, cICP-MS",1147,1,1,"USGS_01147; Selenium, water, unfiltered, micrograms per liter"
