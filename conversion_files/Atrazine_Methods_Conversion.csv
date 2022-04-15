@@ -1,23 +1,23 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Atrazine,% recovery,,11NPSWRD_WQX NPS_1694P,"EPA/NPS-EC PPCPs in Water by Liquid Chromatography-Mass Spectrometry Using EPA 1694, Positive Mode",,-1.00E+06,-1.00E+06,unknown
-Atrazine,% recovery,,11NPSWRD_WQX NPS_M8321,EPA/NPS-EC Pesticides in Water by Liquid Chromatography-Mass Spectrometry Using Modified EPA 8321A,,-1.00E+06,-1.00E+06,unknown
-Atrazine,ng/l,ng/l,USGS GM038,"Current-use pesticides, wf,GC/MS",65065,0.001,0.001,
-Atrazine,ng/l,ng/l,USGS LCM56,"Pharma, wf, LC/MS/MS (Sch 2440)",65065,0.001,0.001,"Current-use pesticides in filtered water by HLB extraction, recoverable by gas chromatography and mass spectrometry"
-Atrazine,ng/l,ng/l,USGS LCM60,"Pesticides, wf, dir inj LC/MS/MS",65065,0.001,0.001,"Current-use pesticides in filtered water by HLB extraction, recoverable by gas chromatography and mass spectrometry"
-Atrazine,ng/l,,USGS LCM60,"Pesticides, wf, dir inj LC/MS/MS",65065,0.001,0.001,"Current-use pesticides in filtered water by HLB extraction, recoverable by gas chromatography and mass spectrometry"
-Atrazine,ug/l,ug/l,USGS GCM15,"Pest, herbs, wf, spe, GCMS-SIM",39632,1,1,Reported as pesticide
-Atrazine,ug/l,ug/l,USGS GCM35,"Pest, high use, SPE, GCMS-SIM",39632,1,1,Reported as pesticide
-Atrazine,ug/l,ug/l,USGS LCM29,"Pest, polar, wf, spe, HPLC-MS",39632,1,1,Reported as pesticide
-Atrazine,ug/l,ug/l,USGS LCM44,"Triazines & Phenylureas,SPE,LCMS",39632,1,1,Reported as pesticide
-Atrazine,ug/l,ug/l,USGS LCM82,"Atrazine, wf, LC/MS (OGRL LCAZ)",39632,1,1,Reported as pesticide
-Atrazine,ug/l,,11NPSWRD_WQX USGS_GCM35,"Pest, high use, SPE, GCMS-SIM",,1,1,unknown
-Atrazine,ug/l,,NA NA,,39632,1,1,Reported as pesticide
-Atrazine,ug/l,,NA NA,,99775,1,1,Unpublished immunoassay method for atrazine in filtered water
-Atrazine,ug/l,,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,
-Atrazine,ug/l,,USEPA 619,Triazine Pesticides in Wastewater,,1,1,
-Atrazine,ug/l,,USGS B,,39632,1,1,
-Atrazine,ug/l,,USGS GCM15,"Pest, herbs, wf, spe, GCMS-SIM",39632,1,1,Reported as pesticide
-Atrazine,ug/l,,USGS GCM35,"Pest, high use, SPE, GCMS-SIM",39632,1,1,Reported as pesticide
-Atrazine,ug/l,,USGS GCM36,"Pest, hi use, SPE, fld, GCMS-SIM",39632,1,1,
-Atrazine,ug/l,,USGS GCM45,"Triazines&CAAs, Sch GCR, SPEGCMS",39632,1,1,Reported as pesticide
-Atrazine,ug/l,,USGS IMM01,"Atrazine, wf, by immunoassay",99775,1,1,Unpublished immunoassay method for atrazine in filtered water
+Atrazine,% recovery,,11NPSWRD_WQX NPS_1694P,"EPA/NPS-EC PPCPs in Water by Liquid Chromatography-Mass Spectrometry Using EPA 1694, Positive Mode",,-1000000,-1000000,units_fail
+Atrazine,% recovery,,11NPSWRD_WQX NPS_M8321,EPA/NPS-EC Pesticides in Water by Liquid Chromatography-Mass Spectrometry Using Modified EPA 8321A,,-1000000,-1000000,units_fail
+Atrazine,ng/l,ng/l,USGS GM038,"Current-use pesticides, wf,GC/MS",65065,0.001,0.001,"USGS_65065; Atrazine, water, filtered, recoverable, nanograms per liter"
+Atrazine,ng/l,ng/l,USGS LCM56,"Pharma, wf, LC/MS/MS (Sch 2440)",65065,0.001,0.001,"USGS_65065; Atrazine, water, filtered, recoverable, nanograms per liter; Current-use pesticides in filtered water by HLB extraction, recoverable by gas chromatography and mass spectrometry"
+Atrazine,ng/l,ng/l,USGS LCM60,"Pesticides, wf, dir inj LC/MS/MS",65065,0.001,0.001,"USGS_65065; Atrazine, water, filtered, recoverable, nanograms per liter; Current-use pesticides in filtered water by HLB extraction, recoverable by gas chromatography and mass spectrometry"
+Atrazine,ng/l,,USGS LCM60,"Pesticides, wf, dir inj LC/MS/MS",65065,0.001,0.001,"USGS_65065; Atrazine, water, filtered, recoverable, nanograms per liter; Current-use pesticides in filtered water by HLB extraction, recoverable by gas chromatography and mass spectrometry"
+Atrazine,ug/l,ug/l,USGS GCM15,"Pest, herbs, wf, spe, GCMS-SIM",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
+Atrazine,ug/l,ug/l,USGS GCM35,"Pest, high use, SPE, GCMS-SIM",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
+Atrazine,ug/l,ug/l,USGS LCM29,"Pest, polar, wf, spe, HPLC-MS",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
+Atrazine,ug/l,ug/l,USGS LCM44,"Triazines & Phenylureas,SPE,LCMS",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
+Atrazine,ug/l,ug/l,USGS LCM82,"Atrazine, wf, LC/MS (OGRL LCAZ)",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
+Atrazine,ug/l,,11NPSWRD_WQX USGS_GCM35,"Pest, high use, SPE, GCMS-SIM",,1,1,methods_WQX
+Atrazine,ug/l,,NA NA,,39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
+Atrazine,ug/l,,NA NA,,99775,1,1,"USGS_99775; Atrazine, water, filtered, immunoassay, unadjusted, recoverable, micrograms per liter; Unpublished immunoassay method for atrazine in filtered water"
+Atrazine,ug/l,,USEPA 200.8,Metals in Waters by ICP/MS,,-1000000,-1000000,methods_fail
+Atrazine,ug/l,,USEPA 619,Triazine Pesticides in Wastewater,,1,1,EPA 619
+Atrazine,ug/l,,USGS B,,39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
+Atrazine,ug/l,,USGS GCM15,"Pest, herbs, wf, spe, GCMS-SIM",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
+Atrazine,ug/l,,USGS GCM35,"Pest, high use, SPE, GCMS-SIM",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
+Atrazine,ug/l,,USGS GCM36,"Pest, hi use, SPE, fld, GCMS-SIM",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
+Atrazine,ug/l,,USGS GCM45,"Triazines&CAAs, Sch GCR, SPEGCMS",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
+Atrazine,ug/l,,USGS IMM01,"Atrazine, wf, by immunoassay",99775,1,1,"USGS_99775; Atrazine, water, filtered, immunoassay, unadjusted, recoverable, micrograms per liter; Unpublished immunoassay method for atrazine in filtered water"
