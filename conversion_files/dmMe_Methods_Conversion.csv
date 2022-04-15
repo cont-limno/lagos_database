@@ -1,7 +1,7 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Methylmercury(1+),ng/l,ng/l,CSU_FISHERIESECOLOGYLAB Quick,Quicksilver,,1,1,unknown
-Methylmercury(1+),ng/l,ng/l,NA NA,,50285,1,1,Reported as methylmercury
-Methylmercury(1+),ng/l,ng/l,USEPA 1630,"Methyl Mercury in Water by Distillation, Aqueous Ethylation, Purge and Trap and CVAFS",,1,1,
-Methylmercury(1+),ng/l,ng/l,USGS CV011,"Methyl mercury, wf, GC-CVAFD",50285,1,1,
-Methylmercury(1+),ng/l,,NA NA,,50285,1,1,
-Methylmercury(1+),,ng/l,NA NA,,50285,1,1,Reported as methylmercury
+Methylmercury(1+),ng/l,ng/l,CSU_FISHERIESECOLOGYLAB Quick,Quicksilver,,1,1,methods_unknown
+Methylmercury(1+),ng/l,ng/l,NA NA,,50285,1,1,"USGS_50285; Methylmercury, water, filtered, recoverable, nanograms per liter"
+Methylmercury(1+),ng/l,ng/l,USEPA 1630,"Methyl Mercury in Water by Distillation, Aqueous Ethylation, Purge and Trap and CVAFS",,1,1,EPA 1630
+Methylmercury(1+),ng/l,ng/l,USGS CV011,"Methyl mercury, wf, GC-CVAFD",50285,1,1,"USGS_50285; Methylmercury, water, filtered, recoverable, nanograms per liter"
+Methylmercury(1+),ng/l,,NA NA,,50285,1,1,"USGS_50285; Methylmercury, water, filtered, recoverable, nanograms per liter"
+Methylmercury(1+),,ng/l,NA NA,,50285,1,1,"USGS_50285; Methylmercury, water, filtered, recoverable, nanograms per liter"
