@@ -1,16 +1,16 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode,Conversion,Conversion_dl,Notes
-Inorganic carbon,mg/l,USGS 00127,PIC,mg/l,688,1,1,"Carbon, inorganic, suspended (Total Particulate Inorganic Carbon (PIC))"
-Inorganic carbon,mg/l,USGS COMB8,"Inorg carbon, wf, OI/Dohrmann",NA,691,1,1,
-Inorganic carbon,mg/l,NA NA,NA,NA,685,1,1,"Inorganic carbon, water, unfiltered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (USGS-NYL)"
-Inorganic carbon,mg/l,NA NA,NA,NA,691,-1000000,-1000000,"Dissolved inorganic carbon (DIC), water, filtered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (NWQL)"
-Inorganic carbon,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,mg/l,NA,1,1,
-Inorganic carbon,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,NA,NA,1,1,
-Inorganic carbon,mg/l,USEPA 415.2,Low Level Total Organic Carbon in Water,NA,NA,1,1,
-Inorganic carbon,mg/l,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,NA,NA,1,1,
-Inorganic carbon,mg/l,APHA 5310-D,5310 D ~ Total Organic Carbon in Water- Wet-Oxidation Method,mg/l,NA,-1000000,-1000000,
-Inorganic carbon,mg/l,USGS COMB8,"Inorg carbon, wf, OI/Dohrmann",NA,685,1,1,"Inorganic carbon, water, unfiltered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (USGS-NYL)"
-Inorganic carbon,mg/l,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,NA,NA,1,1,
-Inorganic carbon,mg/l,USGS 00127,PIC,NA,688,1,1,"Carbon, inorganic, suspended (Total Particulate Inorganic Carbon (PIC))"
-Inorganic carbon,mg/l,USEPA 440(W),440 W  ~ Determination of Carbon and Nitrogen,NA,NA,1,1,
-Inorganic carbon,mg/l,R10MIDNITE DUSDA-23C,Dissolved Inorganic Carbon,NA,NA,-1000000,-1000000,
-Inorganic carbon,mg/l,USGS IR006,"DIC, wf, IR (NWQL)",NA,691,-1000000,-1000000,"Dissolved inorganic carbon (DIC), water, filtered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (NWQL)"
+Inorganic carbon,mg/l,USGS 00127,PIC,mg/l,688,-1000000,-1000000,"methods_fail; Carbon, inorganic, suspended (Total Particulate Inorganic Carbon (PIC))"
+Inorganic carbon,mg/l,USGS COMB8,"Inorg carbon, wf, OI/Dohrmann",NA,691,1,1,"USGS_00691; Inorganic carbon, water, filtered, milligrams per liter"
+Inorganic carbon,mg/l,NA NA,NA,NA,685,1,1,"USGS_00685; Inorganic carbon, water, unfiltered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (USGS-NYL)"
+Inorganic carbon,mg/l,NA NA,NA,NA,691,1,1,"USGS_00691; Dissolved inorganic carbon (DIC), water, filtered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (NWQL)"
+Inorganic carbon,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,mg/l,NA,1,1,methods_unknown
+Inorganic carbon,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,NA,NA,1,1,methods_unknown
+Inorganic carbon,mg/l,USEPA 415.2,Low Level Total Organic Carbon in Water,NA,NA,-1000000,-1000000,methods_fail; org C
+Inorganic carbon,mg/l,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,NA,NA,1,1,methods_unknown
+Inorganic carbon,mg/l,APHA 5310-D,5310 D ~ Total Organic Carbon in Water- Wet-Oxidation Method,mg/l,NA,-1000000,-1000000,methods_fail; org C
+Inorganic carbon,mg/l,USGS COMB8,"Inorg carbon, wf, OI/Dohrmann",NA,685,1,1,"USGS_00685; Inorganic carbon, water, unfiltered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (USGS-NYL)"
+Inorganic carbon,mg/l,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,NA,NA,1,1,methods_WQX
+Inorganic carbon,mg/l,USGS 00127,PIC,NA,688,-1000000,-1000000,"methods_fail; Carbon, inorganic, suspended (Total Particulate Inorganic Carbon (PIC))"
+Inorganic carbon,mg/l,USEPA 440(W),440 W  ~ Determination of Carbon and Nitrogen,NA,NA,-1000000,-1000000,methods_fail; particulate
+Inorganic carbon,mg/l,R10MIDNITE DUSDA-23C,Dissolved Inorganic Carbon,NA,NA,-1000000,-1000000,methods_unknown
+Inorganic carbon,mg/l,USGS IR006,"DIC, wf, IR (NWQL)",NA,691,1,1,"USGS_00691; Dissolved inorganic carbon (DIC), water, filtered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (NWQL)"
