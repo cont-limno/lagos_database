@@ -50,3 +50,4 @@ variableid_lagos,variablename,limit_low,limit_high,variableunitsid,variableshort
 51,E. coli-MPN,0,100000000,32,ecoli_mpn100ml,number per 100 ml,Concentration,n100ml
 52,E. coli-CFU,0,100000000,31,ecoli_cfu100ml,number per 100 ml,Concentration,n100ml
 53,"Methylmercury, dissolved",0,100000000,29,d_mehg_ngl,nanograms per liter,Concentration,ngL
+54,Depth,0,,,,,,
