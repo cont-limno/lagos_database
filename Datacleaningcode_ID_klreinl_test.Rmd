@@ -1394,6 +1394,7 @@ temp <- non_numerics()
 source("unit_conversions.R")
 ```
 
+
 ```{r total-dissolved-carbon}
 abbrev <- "tdCarbon"
 lagos_name <- "Carbon, dissolved organic"
@@ -1957,8 +1958,8 @@ write_csv(data_all, file = "alldata.csv")
 # temp<-vals1 %>% distinct() 
 # vals1<-vals %>% distinct()
 # 
-# vals2<-data_all %>% select(lagoslakeid)
-# temp<-vals2 %>% distinct() 
+vals2<-data_all %>% select(lagoslakeid)
+temp<-vals2 %>% distinct() 
 # 
 # vals3<-data_all %>% select(wqp_monitoringlocationname)
 # temp<-vals3 %>% distinct() 
@@ -1972,8 +1973,8 @@ write_csv(data_all, file = "alldata.csv")
 
 
 UniqueMonitoringLocationIdentifier<-data_all %>% distinct(MonitoringLocationIdentifier, .keep_all = T)
-write_csv(UniqueMonitoringLocationIdentifier, file = "UniqueMonitoringLocationIdentifier.csv")
 
+write_csv(UniqueMonitoringLocationIdentifier, file = "UniqueMonitoringLocationIdentifier.csv")
 
 
 
