@@ -22,7 +22,7 @@ variableid_lagos,variablename,limit_low,limit_high,variableunitsid,variableshort
 22,"Nitrogen, total dissolved",0,100000,11,tdn_ugl,micrograms per liter,Concentration,ugL
 23,"Oxygen, dissolved",0,25,10,do_mgl,milligrams per liter,Concentration,mgL
 25,"pH, field or lab",0,15,15,ph,pH Unit,Dimensionless,pH
-26,"Phosphorus, soluble reactive orthophosphate",0,100000,11,srp_ugl,micrograms per liter,Concentration,ugL
+26,"Phosphorus, soluble reactive orthophosphate",0,100000,11,srp_p_ugl,micrograms per liter,Concentration,ugL
 27,"Phosphorus, total",0,100000,11,tp_ugl,micrograms per liter,Concentration,ugL
 28,"Phosphorus, total dissolved",0,100000,11,tdp_ugl,micrograms per liter,Concentration,ugL
 29,Potassium,0,5000,10,k_mgl,milligrams per liter,Concentration,mgL
