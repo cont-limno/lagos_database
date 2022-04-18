@@ -1,125 +1,125 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Escherichia,CFU,,APHA 9223-B,,,-1.00E+06,-1.00E+06,discard
-Escherichia,MPN/100ml,MPN/100ml,21FLPDEM_WQX SM 9223 B,Total Coliforms,,1,1,
-Escherichia,MPN/100ml,,21FLPDEM_WQX SM 9223 B,Total Coliforms,,1,1,
-Escherichia,MPN/100ml,,KAWNATON_WQX 9223-B,Total Coliform- Chromogenic Substrate Test,,1,1,
-Escherichia coli,#/100L,,APHA_SM22ED 9223-B,9223 B ~ Enzyme Substrate Test,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,#/100ml,#/100ml,APHA 9213-D,9213 D ~ E. coli method,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,#/100ml,#/100ml,APHA 9213D,9213 D ~ E. coli by Membrane filtration plating on mTEC agar,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,#/100ml,#/100ml,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1.00E+06,-1.00E+06,discard
-Escherichia coli,#/100ml,,APHA 9223-B,,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,#/100ml,,HACH 10029,,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,#/100ml,,NA NA,,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,#/ml,#/100ml,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,#/ml,,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,CFU,,APHA 9223-B,,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,CFU,,NA NA,,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,#/100ml,USEPA 1603,Escherichia coli in Water by Membrane Filtration Using Modified membrane-Thermotolerant E. coli Agar (Modified mTEC),,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,cfu/100ml,21ARIZ COLILERT,,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,cfu/100ml,21ARIZ FIELD,,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,cfu/100ml,21ARIZ UNKNOWN,,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,cfu/100ml,APHA 9213-D,9213 D ~ E. coli method,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,cfu/100ml,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,cfu/100ml,AZDEQ_SW FIELD,FIELD,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,cfu/100ml,HACH 10029,m-ColiBlue24 Method of the Determination of Total Coliforms and E. coli,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,cfu/100ml,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,cfu/100ml,NIOSH 1603,Acetic acid by GC/FID,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,cfu/100ml,USEPA 1603,Escherichia coli in Water by Membrane Filtration Using Modified membrane-Thermotolerant E. coli Agar (Modified mTEC),,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,MPN/100ml,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,None,AZDEQ_SW FIELD,FIELD,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,None,AZDEQ_SW UNKNOWN,UNKNOWN,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,11NPSWRD_WQX USGS_31633,"Escherichia coli, m-TEC MF method",,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,21ARIZ COLILERT,,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,21ARIZ FIELD,,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,21ARIZ UNKNOWN,,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,21ARIZ_WQX COLILERT,COLILERT (EDBERG),,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,21ARIZ_WQX FIELD,FIELD PARAMETERS,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,21FLLCPC_WQX 9222G,E. COLI MF PARTITIN PROCEDURES,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,APHA 9213D,9213 D ~ E. coli by Membrane filtration plating on mTEC agar,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,APHA 9221-F,"9221 F ~ Escherichia coli, Multi-tube Fermentation Technique",,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,APHA 9222B,9222 B ~ Standard Total Coliform Membrane Filter Procedure,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,APHA 9222D,9222 D ~ Membrane filtration test for fecal coliforms,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,APHA 9222G,9222 G ~ Membrane filtration plating of E. coli with MUG-fluorescent detection,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,AZDEQ_SW CALCULATION,CALCULATION,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,AZDEQ_SW FIELD,FIELD,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,AZDEQ_SW UNKNOWN,UNKNOWN,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,COEOMAHA_WQX FDA IV,Standard Total Coliform- Membrane Filter Procedure,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,IDEXX COLILERT-182000,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,IDEXX COLILERT/2000,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,KAWNATON_WQX 9221-B,Standard Total Coliform- Fermentation Technique,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,KAWNATON_WQX 9221-F,"Escherichia coli, Multi-tube Fermentation Techniqu",,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,NA NA,,31633,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,NA NA,,31648,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,NA NA,,31693,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,NA NA,,50275,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,NA NA,,90901,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,NA NA,,90902,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,NA NA,,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,USEPA 1103.1,Escherichia coli in Water by Membrane Filtration Using membrane-Thermotolerant E. coli Agar (mTEC),,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,USEPA 1603,Escherichia coli in Water by Membrane Filtration Using Modified membrane-Thermotolerant E. coli Agar (Modified mTEC),,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,USEPA 1604,Total Coliforms and E. coli in Water by Membrane Filtration Using a Simultaneous Detection Technique (MI Medium),,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,USGS B,,31633,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,USGS BAC19,"E coli, modified m-TEC MF method",90902,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,USGS BAC21,"E coli, m-TEC MF method, water",31633,-1.00E+06,-1.00E+06,discard
-Escherichia coli,cfu/100ml,,USGS BAC24,"E coli, NA-MUG MF method, water",50278,-1.00E+06,-1.00E+06,discard
-Escherichia coli,hours,,NA NA,,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,hours,,TCEQMAIN N/A Calculation,N/A Calculation,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,mg/l,,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1.00E+06,-1.00E+06,discard
-Escherichia coli,mg/l,,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,MPN,MPN,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,1,1,Reported in MPN
-Escherichia coli,MPN,MPN,CHEROKEE_WQX CN_QAPP,CN_QAPP,,1,1,Reported in MPN
-Escherichia coli,MPN,MPN,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,Reported in MPN
-Escherichia coli,MPN,MPN,IDEXX COLILERT-18,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,Reported in MPN
-Escherichia coli,MPN,,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1.00E+06,-1.00E+06,discard
-Escherichia coli,MPN,,CHEROKEE CN_QAPP,,,1,1,Reported in MPN
-Escherichia coli,MPN,,IDEXX COLILERT/2000,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,Reported in MPN
-Escherichia coli,MPN,,KAWNATON_WQX 9221-F,"Escherichia coli, Multi-tube Fermentation Techniqu",,1,1,Reported in MPN
-Escherichia coli,MPN,,KAWNATON_WQX 9222-F,Klebsiella- Membrane Filter Procedure,,1,1,Reported in MPN
-Escherichia coli,MPN,,KAWNATON_WQX 9223-B,Total Coliform- Chromogenic Substrate Test,,1,1,Reported in MPN
-Escherichia coli,MPN,,NA NA,,,1,1,Reported in MPN
-Escherichia coli,MPN/100 ml,MPN/100 ml,NA NA,,31689,1,1,Reported in MPN
-Escherichia coli,MPN/100 ml,MPN/100 ml,USGS BAC77,"Coliforms, enzyme substr (9223B)",31689,1,1,Reported in MPN
-Escherichia coli,MPN/100 ml,,NA NA,,31689,1,1,Reported in MPN
-Escherichia coli,MPN/100 ml,,NA NA,,50468,1,1,Reported in MPN
-Escherichia coli,MPN/100 ml,,USGS BAC14,"E coli, water, Colilert (24-28)",50468,1,1,Reported in MPN
-Escherichia coli,MPN/100 ml,,USGS BAC15,"E coli, water,Colilert-18(18-22)",50468,1,1,Reported in MPN
-Escherichia coli,MPN/100g,,NA NA,,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,mg/l,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1.00E+06,-1.00E+06,discard
-Escherichia coli,MPN/100ml,MPN/100ml,21FLCEN_WQX COLILERT/2000,E coli,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,MPN/100ml,21FLFTM_WQX COLILERT/2000,COLILERT/2000,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,MPN/100ml,21FLGW_WQX 9223,Escherichia coli by Colilert QuantiTray,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,MPN/100ml,APHA 9221-E,9221 E ~ Fecal Coliform Procedure- Multiple-Tube Procedure,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,MPN/100ml,APHA 9222B,9222 B ~ Standard Total Coliform Membrane Filter Procedure,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,MPN/100ml,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,MPN/100ml,AZDEQ_SW COLILERT,COLILERT,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,MPN/100ml,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,MPN/100ml,IDEXX COLILERT-18,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,MPN/100ml,IDEXX COLILERT-182000,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,MPN/100ml,IDEXX COLILERT/2000,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,None,AZDEQ_SW COLILERT,COLILERT,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,MPN/100ml,,21FLLCPC_WQX SM9223B,TOTAL COLIFORM BY CHROMOGENIC SUBSTRATE,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,21FLPDEM_WQX SM 9223 B,Total Coliforms,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,APHA 9221-F,"9221 F ~ Escherichia coli, Multi-tube Fermentation Technique",,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,APHA 9222B,9222 B ~ Standard Total Coliform Membrane Filter Procedure,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,APHA 9222D,9222 D ~ Membrane filtration test for fecal coliforms,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,APHA 9222G,9222 G ~ Membrane filtration plating of E. coli with MUG-fluorescent detection,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,APHA_SM22ED 9223-B,9223 B ~ Enzyme Substrate Test,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,AZDEQ_SW COLILERT,COLILERT,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,AZDEQ_SW FIELD,FIELD,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,CSKTRIBE CSKT_QUAPP,Confederated Salish and Kootenai Tribes Quality Assurance Project Plan,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,EPA_R7_WQX 2334.25,E. Coli and Total Coliform,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,IDEXX COLILERT-18,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,IDEXX COLILERT-182000,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,IDEXX COLILERT/2000,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,KAWNATON_WQX 9221-F,"Escherichia coli, Multi-tube Fermentation Techniqu",,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,KAWNATON_WQX 9222-B,Standard Total Coliform- Membrane Filter Procedure,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,KAWNATON_WQX 9222-F,Klebsiella- Membrane Filter Procedure,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,KAWNATON_WQX 9223-B,Total Coliform- Chromogenic Substrate Test,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,NA NA,,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,TCEQMAIN N/A Calculation,N/A Calculation,,1,1,Reported in MPN
-Escherichia coli,MPN/100ml,,TURTLEMT GS_UNKNOWN,GS_UNKNOWN,,1,1,Reported in MPN
-Escherichia coli,None,,NA NA,,,-1.00E+06,-1.00E+06,discard
-Escherichia coli,None,,TCEQMAIN N/A Calculation,N/A Calculation,,-1.00E+06,-1.00E+06,discard
+Escherichia,CFU,,APHA 9223-B,,,-1000000,-1000000,units_fail
+Escherichia,MPN/100ml,MPN/100ml,21FLPDEM_WQX SM 9223 B,Total Coliforms,,1,1,"APHA 9223-B; enzyme substrate coliform test, reported in MPN"
+Escherichia,MPN/100ml,,21FLPDEM_WQX SM 9223 B,Total Coliforms,,1,1,"APHA 9223-B; enzyme substrate coliform test, reported in MPN"
+Escherichia,MPN/100ml,,KAWNATON_WQX 9223-B,Total Coliform- Chromogenic Substrate Test,,1,1,"APHA 9223-B; enzyme substrate coliform test, reported in MPN"
+Escherichia coli,#/100L,,APHA_SM22ED 9223-B,9223 B ~ Enzyme Substrate Test,,-1000000,-1000000,units_fail
+Escherichia coli,#/100ml,#/100ml,APHA 9213-D,9213 D ~ E. coli method,,-1000000,-1000000,units_fail
+Escherichia coli,#/100ml,#/100ml,APHA 9213D,9213 D ~ E. coli by Membrane filtration plating on mTEC agar,,-1000000,-1000000,units_fail
+Escherichia coli,#/100ml,#/100ml,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1000000,-1000000,units_fail
+Escherichia coli,#/100ml,,APHA 9223-B,,,-1000000,-1000000,units_fail
+Escherichia coli,#/100ml,,HACH 10029,,,-1000000,-1000000,units_fail
+Escherichia coli,#/100ml,,NA NA,,,-1000000,-1000000,units_fail
+Escherichia coli,#/ml,#/100ml,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1000000,-1000000,units_fail
+Escherichia coli,#/ml,,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1000000,-1000000,units_fail
+Escherichia coli,CFU,,APHA 9223-B,,,-1000000,-1000000,units_fail
+Escherichia coli,CFU,,NA NA,,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,#/100ml,USEPA 1603,Escherichia coli in Water by Membrane Filtration Using Modified membrane-Thermotolerant E. coli Agar (Modified mTEC),,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,cfu/100ml,21ARIZ COLILERT,,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,cfu/100ml,21ARIZ FIELD,,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,cfu/100ml,21ARIZ UNKNOWN,,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,cfu/100ml,APHA 9213-D,9213 D ~ E. coli method,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,cfu/100ml,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,cfu/100ml,AZDEQ_SW FIELD,FIELD,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,cfu/100ml,HACH 10029,m-ColiBlue24 Method of the Determination of Total Coliforms and E. coli,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,cfu/100ml,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,cfu/100ml,NIOSH 1603,Acetic acid by GC/FID,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,cfu/100ml,USEPA 1603,Escherichia coli in Water by Membrane Filtration Using Modified membrane-Thermotolerant E. coli Agar (Modified mTEC),,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,MPN/100ml,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,None,AZDEQ_SW FIELD,FIELD,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,None,AZDEQ_SW UNKNOWN,UNKNOWN,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,11NPSWRD_WQX USGS_31633,"Escherichia coli, m-TEC MF method",,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,21ARIZ COLILERT,,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,21ARIZ FIELD,,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,21ARIZ UNKNOWN,,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,21ARIZ_WQX COLILERT,COLILERT (EDBERG),,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,21ARIZ_WQX FIELD,FIELD PARAMETERS,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,21FLLCPC_WQX 9222G,E. COLI MF PARTITIN PROCEDURES,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,APHA 9213D,9213 D ~ E. coli by Membrane filtration plating on mTEC agar,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,APHA 9221-F,"9221 F ~ Escherichia coli, Multi-tube Fermentation Technique",,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,APHA 9222B,9222 B ~ Standard Total Coliform Membrane Filter Procedure,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,APHA 9222D,9222 D ~ Membrane filtration test for fecal coliforms,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,APHA 9222G,9222 G ~ Membrane filtration plating of E. coli with MUG-fluorescent detection,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,AZDEQ_SW CALCULATION,CALCULATION,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,AZDEQ_SW FIELD,FIELD,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,AZDEQ_SW UNKNOWN,UNKNOWN,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,COEOMAHA_WQX FDA IV,Standard Total Coliform- Membrane Filter Procedure,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,IDEXX COLILERT-182000,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,IDEXX COLILERT/2000,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,KAWNATON_WQX 9221-B,Standard Total Coliform- Fermentation Technique,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,KAWNATON_WQX 9221-F,"Escherichia coli, Multi-tube Fermentation Techniqu",,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,NA NA,,31633,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,NA NA,,31648,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,NA NA,,31693,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,NA NA,,50275,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,NA NA,,90901,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,NA NA,,90902,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,NA NA,,,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,USEPA 1103.1,Escherichia coli in Water by Membrane Filtration Using membrane-Thermotolerant E. coli Agar (mTEC),,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,USEPA 1603,Escherichia coli in Water by Membrane Filtration Using Modified membrane-Thermotolerant E. coli Agar (Modified mTEC),,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,USEPA 1604,Total Coliforms and E. coli in Water by Membrane Filtration Using a Simultaneous Detection Technique (MI Medium),,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,USGS B,,31633,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,USGS BAC19,"E coli, modified m-TEC MF method",90902,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,USGS BAC21,"E coli, m-TEC MF method, water",31633,-1000000,-1000000,units_fail
+Escherichia coli,cfu/100ml,,USGS BAC24,"E coli, NA-MUG MF method, water",50278,-1000000,-1000000,units_fail
+Escherichia coli,hours,,NA NA,,,-1000000,-1000000,units_fail
+Escherichia coli,hours,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,units_fail
+Escherichia coli,mg/l,,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1000000,-1000000,units_fail
+Escherichia coli,mg/l,,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1000000,-1000000,units_fail
+Escherichia coli,MPN,MPN,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,1,1,"APHA 9223-B; enzyme substrate coliform test, reported in MPN"
+Escherichia coli,MPN,MPN,CHEROKEE_WQX CN_QAPP,CN_QAPP,,1,1,methods_WQX
+Escherichia coli,MPN,MPN,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,COLILERT test; Reported in MPN
+Escherichia coli,MPN,MPN,IDEXX COLILERT-18,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,COLILERT test; Reported in MPN
+Escherichia coli,MPN,,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,1,1,"APHA 9223-B; enzyme substrate coliform test, reported in MPN"
+Escherichia coli,MPN,,CHEROKEE CN_QAPP,,,1,1,methods_unknown
+Escherichia coli,MPN,,IDEXX COLILERT/2000,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,COLILERT test; Reported in MPN
+Escherichia coli,MPN,,KAWNATON_WQX 9221-F,"Escherichia coli, Multi-tube Fermentation Techniqu",,1,1,APHA 9221-F; Reported in MPN
+Escherichia coli,MPN,,KAWNATON_WQX 9222-F,Klebsiella- Membrane Filter Procedure,,1,1,APHA 9222-F; Reported in MPN; method specifies CFU
+Escherichia coli,MPN,,KAWNATON_WQX 9223-B,Total Coliform- Chromogenic Substrate Test,,1,1,"APHA 9223-B; enzyme substrate coliform test, reported in MPN"
+Escherichia coli,MPN,,NA NA,,,1,1,methods_unknown
+Escherichia coli,MPN/100 ml,MPN/100 ml,NA NA,,31689,1,1,"USGS_31689; Escherichia coli, water, most probable number per 100 milliliters"
+Escherichia coli,MPN/100 ml,MPN/100 ml,USGS BAC77,"Coliforms, enzyme substr (9223B)",31689,1,1,"USGS_31689; Escherichia coli, water, most probable number per 100 milliliters"
+Escherichia coli,MPN/100 ml,,NA NA,,31689,1,1,"USGS_31689; Escherichia coli, water, most probable number per 100 milliliters"
+Escherichia coli,MPN/100 ml,,NA NA,,50468,1,1,"USGS_50468; Escherichia coli, defined substrate test method (DSTM), water, most probable number per 100 milliliters"
+Escherichia coli,MPN/100 ml,,USGS BAC14,"E coli, water, Colilert (24-28)",50468,1,1,"USGS_50468; Escherichia coli, defined substrate test method (DSTM), water, most probable number per 100 milliliters"
+Escherichia coli,MPN/100 ml,,USGS BAC15,"E coli, water,Colilert-18(18-22)",50468,1,1,"USGS_50468; Escherichia coli, defined substrate test method (DSTM), water, most probable number per 100 milliliters"
+Escherichia coli,MPN/100g,,NA NA,,,-1000000,-1000000,units_fail
+Escherichia coli,MPN/100ml,mg/l,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,1,1,"APHA 9223-B; enzyme substrate coliform test, reported in MPN"
+Escherichia coli,MPN/100ml,MPN/100ml,21FLCEN_WQX COLILERT/2000,E coli,,1,1,COLILERT test; Reported in MPN
+Escherichia coli,MPN/100ml,MPN/100ml,21FLFTM_WQX COLILERT/2000,COLILERT/2000,,1,1,COLILERT test; Reported in MPN
+Escherichia coli,MPN/100ml,MPN/100ml,21FLGW_WQX 9223,Escherichia coli by Colilert QuantiTray,,1,1,"APHA 9223-B; enzyme substrate coliform test, reported in MPN"
+Escherichia coli,MPN/100ml,MPN/100ml,APHA 9221-E,9221 E ~ Fecal Coliform Procedure- Multiple-Tube Procedure,,1,1,APHA 9221-E; Reported in MPN
+Escherichia coli,MPN/100ml,MPN/100ml,APHA 9222B,9222 B ~ Standard Total Coliform Membrane Filter Procedure,,1,1,APHA 9222-B; Reported in MPN; method specifies CFU
+Escherichia coli,MPN/100ml,MPN/100ml,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,1,1,"APHA 9223-B; enzyme substrate coliform test, reported in MPN"
+Escherichia coli,MPN/100ml,MPN/100ml,AZDEQ_SW COLILERT,COLILERT,,1,1,COLILERT test; Reported in MPN
+Escherichia coli,MPN/100ml,MPN/100ml,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,COLILERT test; Reported in MPN
+Escherichia coli,MPN/100ml,MPN/100ml,IDEXX COLILERT-18,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,COLILERT test; Reported in MPN
+Escherichia coli,MPN/100ml,MPN/100ml,IDEXX COLILERT-182000,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,COLILERT test; Reported in MPN
+Escherichia coli,MPN/100ml,MPN/100ml,IDEXX COLILERT/2000,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,COLILERT test; Reported in MPN
+Escherichia coli,MPN/100ml,None,AZDEQ_SW COLILERT,COLILERT,,1,1,COLILERT test; Reported in MPN
+Escherichia coli,MPN/100ml,,21FLLCPC_WQX SM9223B,TOTAL COLIFORM BY CHROMOGENIC SUBSTRATE,,1,1,"APHA 9223-B; enzyme substrate coliform test, reported in MPN"
+Escherichia coli,MPN/100ml,,21FLPDEM_WQX SM 9223 B,Total Coliforms,,1,1,"APHA 9223-B; enzyme substrate coliform test, reported in MPN"
+Escherichia coli,MPN/100ml,,APHA 9221-F,"9221 F ~ Escherichia coli, Multi-tube Fermentation Technique",,1,1,APHA 9221-F; Reported in MPN
+Escherichia coli,MPN/100ml,,APHA 9222B,9222 B ~ Standard Total Coliform Membrane Filter Procedure,,1,1,APHA 9222-B; Reported in MPN; method specifies CFU
+Escherichia coli,MPN/100ml,,APHA 9222D,9222 D ~ Membrane filtration test for fecal coliforms,,1,1,APHA 9222-G; Reported in MPN; method specifies CFU
+Escherichia coli,MPN/100ml,,APHA 9222G,9222 G ~ Membrane filtration plating of E. coli with MUG-fluorescent detection,,1,1,APHA 9222-D; Reported in MPN; method specifies CFU
+Escherichia coli,MPN/100ml,,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,1,1,"APHA 9223-B; enzyme substrate coliform test, reported in MPN"
+Escherichia coli,MPN/100ml,,APHA_SM22ED 9223-B,9223 B ~ Enzyme Substrate Test,,1,1,"APHA 9223-B; enzyme substrate coliform test, reported in MPN"
+Escherichia coli,MPN/100ml,,AZDEQ_SW COLILERT,COLILERT,,1,1,COLILERT test; Reported in MPN
+Escherichia coli,MPN/100ml,,AZDEQ_SW FIELD,FIELD,,1,1,methods_unknown
+Escherichia coli,MPN/100ml,,CSKTRIBE CSKT_QUAPP,Confederated Salish and Kootenai Tribes Quality Assurance Project Plan,,1,1,methods_unknown
+Escherichia coli,MPN/100ml,,EPA_R7_WQX 2334.25,E. Coli and Total Coliform,,1,1,methods_WQX
+Escherichia coli,MPN/100ml,,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,COLILERT test; Reported in MPN
+Escherichia coli,MPN/100ml,,IDEXX COLILERT-18,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,COLILERT test; Reported in MPN
+Escherichia coli,MPN/100ml,,IDEXX COLILERT-182000,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,COLILERT test; Reported in MPN
+Escherichia coli,MPN/100ml,,IDEXX COLILERT/2000,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,1,1,COLILERT test; Reported in MPN
+Escherichia coli,MPN/100ml,,KAWNATON_WQX 9221-F,"Escherichia coli, Multi-tube Fermentation Techniqu",,1,1,APHA 9221-F; Reported in MPN
+Escherichia coli,MPN/100ml,,KAWNATON_WQX 9222-B,Standard Total Coliform- Membrane Filter Procedure,,1,1,APHA 9222-B; Reported in MPN; method specifies CFU
+Escherichia coli,MPN/100ml,,KAWNATON_WQX 9222-F,Klebsiella- Membrane Filter Procedure,,1,1,APHA 9222-F; Reported in MPN; method specifies CFU
+Escherichia coli,MPN/100ml,,KAWNATON_WQX 9223-B,Total Coliform- Chromogenic Substrate Test,,1,1,"APHA 9223-B; enzyme substrate coliform test, reported in MPN"
+Escherichia coli,MPN/100ml,,NA NA,,,1,1,methods_unknown
+Escherichia coli,MPN/100ml,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,methods_fail
+Escherichia coli,MPN/100ml,,TURTLEMT GS_UNKNOWN,GS_UNKNOWN,,1,1,methods_unknown
+Escherichia coli,None,,NA NA,,,-1000000,-1000000,unitsmethods_fail
+Escherichia coli,None,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,unitsmethods_fail
