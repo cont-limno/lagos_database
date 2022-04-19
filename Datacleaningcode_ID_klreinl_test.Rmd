@@ -1958,8 +1958,8 @@ write_csv(data_all, file = "alldata.csv")
 # temp<-vals1 %>% distinct() 
 # vals1<-vals %>% distinct()
 # 
-vals2<-data_all %>% select(lagoslakeid)
-temp<-vals2 %>% distinct() 
+#vals2<-data_all %>% select(lagoslakeid)
+#temp<-vals2 %>% distinct() 
 # 
 # vals3<-data_all %>% select(wqp_monitoringlocationname)
 # temp<-vals3 %>% distinct() 
@@ -1972,11 +1972,20 @@ temp<-vals2 %>% distinct()
 # n_lakes2<-unique(data_all$lagoslakeid)
 
 
-UniqueMonitoringLocationIdentifier<-data_all %>% distinct(MonitoringLocationIdentifier, .keep_all = T)
+#UniqueMonitoringLocationIdentifier<-data_all %>% distinct(MonitoringLocationIdentifier, .keep_all = T)
 
-write_csv(UniqueMonitoringLocationIdentifier, file = "UniqueMonitoringLocationIdentifier.csv")
+#write_csv(UniqueMonitoringLocationIdentifier, file = "UniqueMonitoringLocationIdentifier.csv")
 
-
+# vars2process
+# data_all <- do.call("rbind", lapply(ls(pattern='^data_'),get))
+# data_all$ResultMeasureValue<-data_all$Converted
+# data_all$DetectionQuantitationLimitMeasure.MeasureValue<-data_all$Converted_dl
+# data_all<-data_all %>% select(-Converted, -Converted_dl)
+# write_csv(data_all, file = "alldata_patrick.csv")
+# 
+# 
+# 
+# texas<-read.csv("~/Lagos Limno/TX_alldata_1975_to_2020.csv")
 
 ```
 
