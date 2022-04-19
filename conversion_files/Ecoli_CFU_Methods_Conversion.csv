@@ -65,6 +65,7 @@ Escherichia coli,hours,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000
 Escherichia coli,mg/l,,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1000000,-1000000,units_fail
 Escherichia coli,mg/l,,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1000000,-1000000,units_fail
 Escherichia coli,MPN,,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1000000,-1000000,units_fail
+Escherichia coli,MPN/100g,,NA NA,,,-1000000,-1000000,units_fail
 Escherichia coli,MPN/100ml,mg/l,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1000000,-1000000,units_fail
 Escherichia coli,MPN/100ml,MPN/100ml,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1000000,-1000000,units_fail
 Escherichia coli,MPN/100ml,MPN/100ml,AZDEQ_SW COLILERT,COLILERT,,-1000000,-1000000,units_fail
@@ -76,5 +77,6 @@ Escherichia coli,MPN/100ml,,AZDEQ_SW FIELD,FIELD,,-1000000,-1000000,units_fail
 Escherichia coli,MPN/100ml,,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1000000,-1000000,units_fail
 Escherichia coli,MPN/100ml,,IDEXX COLILERT-18,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1000000,-1000000,units_fail
 Escherichia coli,MPN/100ml,,IDEXX COLILERT/2000,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1000000,-1000000,units_fail
+Escherichia coli,MPN/100ml,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,units_fail
 Escherichia coli,None,,NA NA,,,-1000000,-1000000,unitsmethods_fail
 Escherichia coli,None,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,unitsmethods_fail
