@@ -1367,6 +1367,43 @@ data_temp<-data[data$CharacteristicName%in%params,] #want to match all records t
 ###create dataset to check for non numeric objects in dataset
 temp <- non_numerics()
 
+unique(temp$ResultMeasureValue)
+temp2 <- temp %>% filter(ResultMeasureValue == "148`")
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- 148
+
+
+temp2 <- temp %>% filter(ResultMeasureValue == "1,035")
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- 1035
+
+temp2 <- temp %>% filter(ResultMeasureValue == "1,044")
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- 1044
+
+temp2 <- temp %>% filter(ResultMeasureValue == "1,020")
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- 1020
+
+temp2 <- temp %>% filter(ResultMeasureValue == "1,021")
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- 1021
+
+temp2 <- temp %>% filter(ResultMeasureValue == "1,090")
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- 1090
+
+temp2 <- temp %>% filter(ResultMeasureValue == "1,024")
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- 1024
+
+temp2 <- temp %>% filter(ResultMeasureValue == "1,022")
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- 1022
+
+temp2 <- temp %>% filter(ResultMeasureValue == "1,031")
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- 1031
+
+temp<-non_numerics()
+
+# vals <- gsub("[^0-9.-]", "", temp2$ResultMeasureValue)
+# data_temp$DetectionQuantitationLimitMeasure.MeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals
+# data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Less Than"
+# data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- NA
+
+
 source("unit_conversions.R")
 
 ```

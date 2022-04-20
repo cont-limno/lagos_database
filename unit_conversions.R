@@ -48,7 +48,7 @@ data_temp<-merge(data_temp,conversions,by=c("CharacteristicName",
                                             "Method_Id",
                                             "ResultAnalyticalMethod.MethodName", 
                                             "USGSPCode"),all.x = T) #Assign conversion factors using unique characteristic and method identifiers 
-if((nrow(data_temp) - data.size)!=0) stop("error in merge") #should be zero!
+if((nrow(data_temp) - data.size)!=0) stop("error in merge datasize != right after merge") #should be zero!
 
 data_temp <- data_temp %>% 
     mutate(Converted = ResultMeasureValue*Conversion) %>% 

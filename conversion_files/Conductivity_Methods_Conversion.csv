@@ -293,29 +293,7 @@ Specific conductance,uS/cm,,MDEQ_WQ_WQX UNKNOWN-MDEQ-WQ,Unknown Method or Proced
 Specific conductance,uS/cm,,MEDEP_WQX FIELD,FIELD TEST,,1,1,methods_WQX
 Specific conductance,uS/cm,,MNPCA FLD,"Field measurement/observation, generic method",,1,1,methods_unknown
 Specific conductance,uS/cm,,MNPCA LEG_P00095,SPECIFIC CONDUCTANCE (UMHOS/CM @ 25C),,1,1,USGS_00095
-Specific conductance,umho/cm,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1,1,methods_WQX
-Specific conductance,umho/cm,,MTWTRSHD_WQX HYDROLAB-MTWTRSHD,Field Measurements Using the Hydrolab Datasonde 4,,1,1,methods_WQX
-Specific conductance,umho/cm,,MTWTRSHD_WQX UNKNOWN-MTWTRSHD,Unknown Method or Procedure,,1,1,methods_WQX
-Conductivity,mS/cm,mS/cm,NA NA,,,1000,1000,methods_unknown
-Specific conductance,mS/cm,mS/cm,NA NA,,,1000,1000,methods_unknown
-Conductivity,ppm,ppm,NA NA,,,-1000000,-1000000,units_fail
-Specific conductance,umho/cm,umho/cm,NA NA,,,1,1,methods_unknown
-Conductivity,mS/cm,uS/cm,NA NA,,,1000,1,methods_unknown
-Conductivity,uS/cm,uS/cm,NA NA,,,1,1,methods_unknown
-Specific conductance,mS/cm,uS/cm,NA NA,,,1000,1,methods_unknown
-Specific conductance,uS/cm,uS/cm,NA NA,,,1,1,methods_unknown
 Specific conductance,uS/cm @25C,uS/cm @25C,NA NA,,90095,1,1,USGS 90095
-Conductivity,mg/l,,NA NA,,,-1000000,-1000000,units_fail
-Conductivity,mS/cm,,NA NA,,,1000,1000,methods_unknown
-Conductivity,ug/l,,NA NA,,,-1000000,-1000000,units_fail
-Conductivity,umho/cm,,NA NA,,,1,1,methods_unknown
-Conductivity,uS/cm,,NA NA,,,1,1,methods_unknown
-Conductivity,uW/cm2,,NA NA,,,-1000000,-1000000,units_fail
-Specific conductance,deg C,,NA NA,,,-1000000,-1000000,units_fail
-Specific conductance,mho/cm,,NA NA,,,1000000,1000000,methods_unknown
-Specific conductance,mS/cm,,NA NA,,,1000,1000,methods_unknown
-Specific conductance,nu,,NA NA,,,-1000000,-1000000,units_fail
-Specific conductance,umho/cm,,NA NA,,,1,1,methods_unknown
 Specific conductance,uS/cm,,NA NA,,402,-1000000,-1000000,methods_fail; no temp corr
 Specific conductance,uS/cm,,NA NA,,,1,1,methods_unknown
 Specific conductance,uS/cm,,R10BUNKER I2781,I2781,,1,1,USGS I-2781-85
@@ -334,7 +312,6 @@ Specific conductance,uS/cm,,USEPA 120.1,,,1,1,EPA 120.1
 Specific conductance,uS/cm,,USEPA 160.4,,,-1000000,-1000000,methods_fail
 Specific conductance,uS/cm,,USEPA 9050,Specific Conductance,,1,1,EPA 9050
 Specific conductance,uS/cm,,USEPA 9050A,9050 A ~ Specific Conductance,,1,1,EPA 9050
-Specific conductance,uS/cm @25C,uS/cm @25C,NA NA,,90095,1,1,USGS 90095
 Specific conductance,uS/cm @25C,uS/cm @25C,USGS SC001,Specific conductance sensor,95,1,1,USGS 00095
 Specific conductance,uS/cm @25C,uS/cm @25C,USGS SC002,"Specific cond, EPA meth (DODEC)",90095,1,1,USGS 90095
 Specific conductance,uS/cm @25C,uS/cm @25C,USGS WHT01,"Spec. cond., lab, bridge (NWQL)",90095,1,1,USGS 90095
