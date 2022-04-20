@@ -1,4 +1,7 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Color,PCU,PCU,USGS CC003,"Color, wf, visual comparison",80,1,1,
+Color,PCU,,NA NA,,80,1,1,
+Color,PCU,,USGS CC003,"Color, wf, visual comparison",80,1,1,
 True color,%,%,APHA 2120-B,,,-1000000,-1000000,units_fail
 True color,ADMI value,ADMI value,USEPA 110.1,Color by Calculating ADMI Values,,-1000000,-1000000,units_fail
 True color,ADMI value,,21NC01WQ CLR_PH76,,,-1000000,-1000000,units_fail
