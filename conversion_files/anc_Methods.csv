@@ -1,0 +1,7 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode
+Gran acid neutralizing capacity,mg/l CaCO3,11NPSWRD_WQX USGS_UNKNOWN,USGS Unknown/Unspecified Analytical Procedure,NA,NA
+Gran acid neutralizing capacity,ueq/L,CEDEN 278,WRS 12A.1,NA,NA
+Gran acid neutralizing capacity,ueq/L,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,NA,NA
+Gran acid neutralizing capacity,mg/l CaCO3,11NPSWRD_WQX CUPN_ANC_FIELD,ANC Field Procedure Using Colorimetric Titration,NA,NA
+Gran acid neutralizing capacity,mg/l CaCO3,HACH 8221,Alkalinity by Buret Titration,NA,NA
+Gran acid neutralizing capacity,ueq/L,11NPSWRD_WQX GRYN_180.1,Acid Neutralizing Capacity (ANC),NA,NA
