@@ -720,7 +720,7 @@ lagos_name <- "Depth"
 lagos_unit <- "m"
 dataset_name <-"depth"
 
-params<-c("Depth, data-logger (non-ported)", "Depth", "Depth, data-logger (ported)", "Depth, bottom", "Depth of water column")
+params<-c("Depth", "Depth, bottom", "Depth of water column")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -1499,7 +1499,7 @@ lagos_unit <- "PCU"
 dataset_name <-"Color_true"
 
 vars2process
-params<-c("True color")
+params<-c("True color", "Color")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -1518,7 +1518,7 @@ lagos_unit <- "PCU"
 dataset_name <-"Color_apparent"
 
 vars2process
-params<-c("Color", "Apparent color")
+params<-c("Apparent color")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -1544,7 +1544,8 @@ params<-c("Orthophosphate",
           "Phosphorus", 
           "Orthophosphate as PO4", 
           "Phosphate-phosphorus as PO4", 
-          "Inorganic phosphorus")
+          "Inorganic phosphorus", 
+          "Soluble Reactive Phosphorus (SRP)")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #che
 
@@ -1858,7 +1859,7 @@ lagos_unit <- "ug/l"
 dataset_name <-"Microcystin"
 
 vars2process
-params<-c("Microcystin", "Microcystin RR", "Microcystin LF", "Microcystins and nodularins", "Microcystis", "Microcystin LR", "Microcystin LA", "Microcystins")
+params<-c("Microcystin", "Microcystin RR", "Microcystin LF", "Microcystins and nodularins", "Microcystis", "Microcystin LR", "Microcystin LA", "Microcystins", "Microcystin YR", "Microcystin WR", "Microcystin-HtyR", "Microcystin HtYR", "Total microcystins plus nodularins", "Microcystin-HilR", "Microcystin dRR", "Microcystin HiLR", "Microcystin LY", "Dissolved microcystins plus nodularins", "Microcystin dLR", "Microcystin LW")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -1921,10 +1922,31 @@ rm(data_temp_temp_notes)
 abbrev <- "Inorganic carbon"
 lagos_name <- "Carbon, total inorganic"
 lagos_unit <- "mg/l"
-dataset_name <-"Inorganic carbon"
+dataset_name <-"Inorganic_carbon"
 
 vars2process
 params<-c("Inorganic carbon")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
+data_temp_temp_notes
+rm(data_temp_temp_notes)
+```
+
+```{r}
+abbrev <- "anc"
+lagos_name <- "ANC"
+lagos_unit <- "ueq/l"
+dataset_name <-"anc"
+
+vars2process
+params<-c("Gran acid neutralizing capacity")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -1942,9 +1964,10 @@ rm(data_temp_temp_notes)
 
 
 
-
-
 ```{r}
+data_pH_equilibrated<-data_pH_equilibrated %>% select(-URL)
+
+
 vars2process
 data_all <- do.call("rbind", lapply(ls(pattern='^data_'),get))
 data_all$ResultMeasureValue<-data_all$Converted
