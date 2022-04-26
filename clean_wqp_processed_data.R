@@ -19,68 +19,113 @@ data_dir <- "~/Lottig Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NE
 #list files
 dat <- read_csv(paste0(data_dir,"alldata.csv"), col_types = cols(.default = "c",ResultMeasureValue=col_double()))
 unique(dat$State)
+length(unique(dat$State))
 
 #check to make sure no weird sample fractions and activity types made it in
 #make sure these get excluded 
 activitytypes <- unique(dat$ActivityTypeCode)
-types_to_exclude <- c("Quality Control Sample-Reference Sample",
-                      "Quality Control Field Sample Equipment Rinsate Blank",
-                      "Quality Control Sample-Blind Duplicate",
-                      "Quality Control Sample-Blind",
-                      "Quality Control Field Replicate Portable Data Logger",
-                      "Quality Control Sample-Inter-lab Split",
-                      "Quality Control Sample-Equipment Blank",
-                      "Sample-Integrated Cross-Sectional Profile",
-                      "Quality Control Sample-Lab Matrix Spike",
-                      "Quality Control Sample-Field Spike",
-                      "Quality Control Sample-Other",
-                      "Quality Control Sample-Trip Blank",
-                      "Quality Control Sample-Lab Duplicate",
-                      "Quality Control Sample-Measurement Precision Sample",
-                      "Quality Control Sample-Lab Blank",
-                      "Quality Control Sample-Lab Matrix Spike Duplicate")
+activitytypes
+types_to_exclude <- c("Sample-Integrated Cross-Sectional Profile")
 activitytypes <- activitytypes[!activitytypes %in% types_to_exclude]
 activitytypes #check to make sure we want all of this
-
 dat <- dat %>% filter(ActivityTypeCode %in% activitytypes)
+
+#assign sampledate
+dat$sampledate <- ymd(dat$ActivityStartDate)
+
+#assign known depths that are specified
+dat <- dat %>% mutate_at(c('ActivityDepthHeightMeasure.MeasureValue',
+                           'ResultDepthHeightMeasure.MeasureValue',
+                           'ActivityBottomDepthHeightMeasure.MeasureValue',
+                           'ActivityTopDepthHeightMeasure.MeasureValue')
+                         ,as.numeric)
+dat$source_sampledepth <- dat$ActivityDepthHeightMeasure.MeasureValue
+temp <- dat %>% filter(is.na(source_sampledepth)) %>% 
+    filter(!is.na(ResultDepthHeightMeasure.MeasureValue))
+dat$source_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- temp$ResultDepthHeightMeasure.MeasureValue
+
+#extract profile data
+unique(dat$source_parameter)
+meter_vars <-c("Conductivity",
+               "Specific conductance",
+               "Dissolved oxygen (DO)",
+               "pH",
+               "Salinity",
+               "Turbidity",
+               "Turbidity Field",
+               "Depth")
+
+dat_profile <- dat %>% filter(source_parameter %in% meter_vars)
+dat_profile <- dat_profile %>% group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,CharacteristicName) %>% 
+    mutate(n=n()) %>% ungroup() %>% filter(n>1) %>% select(-n)
+
+write_csv(dat_profile,"profile_data.csv")
+
+
+#generate data excluding profile data
+dat <- dat %>% filter(!Obs_Id %in% dat_profile$Obs_Id)
+rm(dat_profile)
+
+#Assign secondary depths
+temp <- dat %>% filter(is.na(source_sampledepth)) %>% 
+    filter(!is.na(ActivityBottomDepthHeightMeasure.MeasureValue))
+dat$source_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- temp$ActivityBottomDepthHeightMeasure.MeasureValue
+temp <- dat %>% filter(is.na(source_sampledepth)) %>% 
+    filter(!is.na(ActivityTopDepthHeightMeasure.MeasureValue))
+dat$source_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- temp$ActivityTopDepthHeightMeasure.MeasureValue
+temp <- dat %>% filter(is.na(source_sampledepth))
+rm(temp)
+
+#remove repeated samples by randomly selecting one sample
+dat <- dat %>% group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,source_sampledepth,CharacteristicName) %>% slice_sample(n=1) %>% 
+    ungroup()
+
+
 
 unique(dat$ResultSampleFractionText)
 
-dat <- dat %>% filter(!grepl("sediment",tolower(SampleCollectionMethod.MethodName))) #remove sediment samples that were included
 
 #filter out depth because we don't want it
 dat <- dat %>% filter(source_parameter!="Depth") %>% filter(CharacteristicName!="Depth")
 
-dat <- dat %>% filter(source_unit != "mg/kg") %>% 
-    filter(source_unit != "mg/g") %>% 
-    filter(source_unit != "mg/m2") %>% 
-    filter(source_unit != "ng/g")
-
+#check to see if any odd variable units that should be excluded
 unique(dat$source_unit)
 
-lagos_variables <- dbGetQuery(con,'select * from limno.lagosvariables_us', stringsAsFactors = FALSE) %>% 
-    select(variableid_lagos,variablename,variableunitsid)
-units <- dbGetQuery(con,'select * from limno.units', stringsAsFactors = FALSE) %>% 
-    select(variableunitsid,unitsabbreviation)
-dat <- dat %>% left_join(lagos_variables,by=c("CharacteristicName" = "variablename")) %>% 
-    left_join(units)
-variables <- read_csv("lagos_variable.csv")
-dat <- dat %>% left_join(variables %>% select(variableid_lagos,limit_low,limit_high), by = c("variableid_lagos" = "variableid_lagos"))
+# lagos_variables <- dbGetQuery(con,'select * from limno.lagosvariables_us', stringsAsFactors = FALSE) %>% 
+#     select(variableid_lagos,variablename,variableunitsid)
+# units <- dbGetQuery(con,'select * from limno.units', stringsAsFactors = FALSE) %>% 
+#     select(variableunitsid,unitsabbreviation)
+# dat <- dat %>% left_join(lagos_variables,by=c("CharacteristicName" = "variablename")) %>% 
+#     left_join(units)
 
+#temporary fix of ph label
+dat <- dat %>% mutate(CharacteristicName = case_when(CharacteristicName=='pH, equilibrated' ~'pH, field or lab',TRUE ~ as.character(CharacteristicName)))
+dat <- dat %>% mutate(CharacteristicName = case_when(CharacteristicName=='Phosphorus, soluable reactive orthophosphate' ~'Phosphorus, soluble reactive orthophosphate',TRUE ~ as.character(CharacteristicName)))
+dat <- dat %>% mutate(CharacteristicName = case_when(CharacteristicName=='Nitrogen, total dissolved Kjeldahl' ~'Nitrogen, dissolved Kjeldahl',TRUE ~ as.character(CharacteristicName)))
+dat <- dat %>% mutate(CharacteristicName = case_when(CharacteristicName=='Mercury, dissolved' ~'Mercury, total dissolved',TRUE ~ as.character(CharacteristicName)))
+
+
+variables <- read_csv("lagos_variable.csv")
+dat <- dat %>% select(-variableid_lagos,-limit_low,-limit_high,-variableshortname)
+dat <- dat %>% left_join(variables %>% select(variablename,variableid_lagos,limit_low,limit_high,variableshortname), by = c("CharacteristicName" = "variablename"))
+
+# temp <- dat %>% select(ActivityIdentifier,MonitoringLocationIdentifier,source_parameter,ActivityStartDate,USGSPCode) %>% distinct()
 
 #identify repeated nines and remove
-dat <- dat %>% mutate(datavalue_int = as.integer(source_value))
-nines <- c(999,9999,99999,999999,9999999,99999999,999999999)
-nines_dat <- dat %>% filter(datavalue_int %in% nines) %>% 
-    select(Obs_Id,lagoslakeid,ActivityStartDate, ActivityConductingOrganizationText,OrganizationFormalName,
-           CharacteristicName,source_parameter,ResultMeasureValue,source_value,source_unit,
-           Conversion,DetectionQuantitationLimitMeasure.MeasureValue,
-           ResultAnalyticalMethod.MethodIdentifierContext,ResultAnalyticalMethod.MethodIdentifier,
-           MethodDescriptionText,ActivityCommentText,wqp_monitoringlocationname,datavalue_int) %>% 
-    filter(ResultMeasureValue-datavalue_int==0) %>% 
-    select(-datavalue_int)
+# dat <- dat %>% mutate(datavalue_int = as.integer(source_value))
+# 
+# nines <- c(99,999,9999,99999,999999,9999999,99999999,999999999)
+# nines_dat <- dat %>% filter(datavalue_int %in% nines) %>% 
+#     select(Obs_Id,lagoslakeid,ActivityStartDate, ActivityConductingOrganizationText,OrganizationFormalName,
+#            CharacteristicName,source_parameter,ResultMeasureValue,source_value,source_unit,
+#            Conversion,DetectionQuantitationLimitMeasure.MeasureValue,
+#            ResultAnalyticalMethod.MethodIdentifierContext,ResultAnalyticalMethod.MethodIdentifier,
+#            MethodDescriptionText,ActivityCommentText,wqp_monitoringlocationname,datavalue_int) %>% 
+#     filter(ResultMeasureValue-datavalue_int==0) %>% 
+#     select(-datavalue_int)
+# 
+# dat <- dat %>% filter(!Obs_Id %in% nines_dat$Obs_Id)
 
-dat <- dat %>% filter(!Obs_Id %in% nines_dat$Obs_Id)
 
 #pre egreggious values plots
 options(scipen=999)
@@ -98,13 +143,54 @@ for(i in 1:nrow(variables)) {
 }
 dev.off()
 
-#qaqc and look at variables if needed
-temp <- dat %>% filter(CharacteristicName=="Color, true") %>% 
-    filter(ResultMeasureValue >1000) %>% 
-    select(ActivityConductingOrganizationText,OrganizationFormalName,
-           CharacteristicName,source_parameter,ResultMeasureValue,source_value,source_unit,
-           Conversion,ResultAnalyticalMethod.MethodIdentifierContext,ResultAnalyticalMethod.MethodIdentifier,
-           MethodDescriptionText,ActivityCommentText,wqp_monitoringlocationname)
+options(scipen=999)
+pdf(file="graphics/histograms_pre_less1.pdf",width=8.5,height=11)
+par(mfrow=c(3,2),mar=c(4,10,4,4))
+
+for(i in 1:nrow(variables)) {
+    temp <- (as.numeric(dat$ResultMeasureValue))[which(dat$CharacteristicName==variables$variablename[i])]
+    temp <- temp[which(temp<1)]
+    if(length(temp)>25) {
+        adjbox(x = temp ,main=paste(variables$variablename[i],variables$unitsabbreviation[i],sep=" - "),notch=TRUE,las=1)
+        abline(h=variables$limit_high[i],col="red")
+        abline(h=variables$limit_low[i],col="blue")
+        mtext(side=3,adj=0.1,paste("n=",length(temp))) 
+    } else {next()}
+}
+dev.off()
+
+options(scipen=999)
+pdf(file="graphics/density_pre.pdf",width=8.5,height=11)
+par(mfrow=c(3,2),mar=c(4,10,4,4))
+
+for(i in 1:nrow(variables)) {
+    temp <- (as.numeric(dat$ResultMeasureValue))[which(dat$CharacteristicName==variables$variablename[i])]
+    if(length(temp)>25) {
+        d <-density(x = temp)
+        plot(d,main=paste(variables$variablename[i],variables$unitsabbreviation[i],sep=" - "),notch=TRUE,las=1)
+        abline(v=variables$limit_high[i],col="red")
+        abline(v=variables$limit_low[i],col="blue")
+        mtext(side=3,adj=0.1,paste("n=",length(temp))) 
+    } else {next()}
+}
+dev.off()
+
+options(scipen=999)
+pdf(file="graphics/density_pre_less1.pdf",width=8.5,height=11)
+par(mfrow=c(3,2),mar=c(4,10,4,4))
+
+for(i in 1:nrow(variables)) {
+    temp <- (as.numeric(dat$ResultMeasureValue))[which(dat$CharacteristicName==variables$variablename[i])]
+    temp <- temp[which(temp<1)]
+    if(length(temp)>25) {
+        d <-density(x = temp)
+        plot(d,main=paste(variables$variablename[i],variables$unitsabbreviation[i],sep=" - "),notch=TRUE,las=1)
+        abline(v=variables$limit_high[i],col="red")
+        abline(v=variables$limit_low[i],col="blue")
+        mtext(side=3,adj=0.1,paste("n=",length(temp))) 
+    } else {next()}
+}
+dev.off()
 
 #filter egregios values and write to data file
 egreg_dat <- dat %>% filter(ResultMeasureValue < limit_low | ResultMeasureValue > limit_high) %>% 
@@ -116,10 +202,8 @@ egreg_dat <- dat %>% filter(ResultMeasureValue < limit_low | ResultMeasureValue 
 
 dat <- dat %>% filter(!Obs_Id %in% egreg_dat$Obs_Id)
 
-egreg_dat <- rbind(egreg_dat,nines_dat)
 write_csv(egreg_dat,"excluded_values.csv")
 rm(egreg_dat)
-rm(nines_dat)
 
 
 #plot data after removing egregious values
@@ -130,13 +214,51 @@ par(mfrow=c(3,2),mar=c(4,10,4,4))
 for(i in 1:nrow(variables)) {
     temp <- (as.numeric(dat$ResultMeasureValue))[which(dat$CharacteristicName==variables$variablename[i])]
     if(length(temp)>25) {
-        adjbox(x = temp ,main=paste(variables$variablename[i],variables$unitsabbreviation[i],sep=" - "),notch=TRUE,las=1)
+        adjbox(x = (temp) ,main=paste(variables$variablename[i],variables$unitsabbreviation[i],sep=" - "),notch=TRUE,las=1)
         abline(h=variables$limit_high[i],col="red")
         abline(h=variables$limit_low[i],col="blue")
         mtext(side=3,adj=0.1,paste("n=",length(temp))) 
     } else {next()}
 }
 dev.off()
+
+options(scipen=999)
+pdf(file="graphics/density_post.pdf",width=8.5,height=11)
+par(mfrow=c(3,2),mar=c(4,10,4,4))
+
+for(i in 1:nrow(variables)) {
+    temp <- (as.numeric(dat$ResultMeasureValue))[which(dat$CharacteristicName==variables$variablename[i])]
+    if(length(temp)>25) {
+        d <-density(x = log10(temp),na.rm = T)
+        plot(d,main=paste(variables$variablename[i],variables$unitsabbreviation[i],sep=" - "),notch=TRUE,las=1)
+        # abline(v=variables$limit_high[i],col="red")
+        # abline(v=variables$limit_low[i],col="blue")
+        mtext(side=3,adj=0.1,paste("n=",length(temp))) 
+    } else {next()}
+}
+dev.off()
+
+options(scipen=999)
+pdf(file="graphics/density_post_less1.pdf",width=8.5,height=11)
+par(mfrow=c(3,2),mar=c(4,10,4,4))
+
+for(i in 1:nrow(variables)) {
+    temp <- (as.numeric(dat$ResultMeasureValue))[which(dat$CharacteristicName==variables$variablename[i])]
+    temp <- temp[which(temp<1)]
+    if(length(temp)>25) {
+        d <-density(x = log10(temp),na.rm=T)
+        plot(d,main=paste(variables$variablename[i],variables$unitsabbreviation[i],sep=" - "),notch=TRUE,las=1)
+        abline(v=variables$limit_high[i],col="red")
+        abline(v=variables$limit_low[i],col="blue")
+        mtext(side=3,adj=0.1,paste("n=",length(temp))) 
+    } else {next()}
+}
+dev.off()
+
+
+temp <- dat %>% filter(ResultMeasureValue<0.01) %>% filter(ResultMeasureValue!=0) %>% select(CharacteristicName,ResultMeasureValue,source_value,source_unit) %>% 
+    filter(ResultMeasureValue>0)
+
 
 
 
@@ -563,7 +685,7 @@ out.file <- data.frame(
     source_detectionlimit_unit = dat2$detectionlimit_unit_legacy,
     source_labmethoddescription = NA,
     source_labmethodid = dat2$source_labmethodid,
-    source_labemethod_name = NA,
+    source_labmethod_name = NA,
     source_parameter = dat2$source_parameter,
     source_sampledepth = dat2$sampledepth_m_legacy,
     source_sampleposition = dat2$sampleposition_legacy,
