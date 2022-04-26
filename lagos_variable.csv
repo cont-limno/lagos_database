@@ -1,53 +1,53 @@
 variableid_lagos,variablename,limit_low,limit_high,variableunitsid,variableshortname,unitsname,unitstype,unitsabbreviation
-1,Alkalinity,-1000,10000,10,alk_caco3_mgl,milligrams per liter,Concentration,mgL
+1,Alkalinity,-10,10000,10,alk_caco3_mgl,milligrams per liter,Concentration,mgL
 2,ANC,-1000,100000000,13,anc_ueql,microequivalents per liter,Concentration,ueqL
-3,"Calcium, dissolved",0,4000,10,ca_mgl,milligrams per liter,Concentration,mgL
-4,"Carbon, dissolved inorganic",0,100000000,10,dic_mgl,milligrams per liter,Concentration,mgL
-5,"Carbon, total inorganic",0,1000,10,tic_mgl,milligrams per liter,Concentration,mgL
-6,"Carbon, dissolved organic",0,1000,10,doc_mgl,milligrams per liter,Concentration,mgL
-7,"Carbon, total organic",0,1000,10,toc_mgl,milligrams per liter,Concentration,mgL
-8,"Chloride, dissolved",0,300000,10,cl_mgl,milligrams per liter,Concentration,mgL
-9,Chlorophyll a,0,200000,11,chla_ugl,micrograms per liter,Concentration,ugL
-11,"Color, apparent",0,10000,9,colora_pcu,platinum cobalt units,Color,PCU
-12,"Color, true",0,10000,9,colort_pcu,platinum cobalt units,Color,PCU
+3,"Calcium, dissolved",-10,400,10,ca_mgl,milligrams per liter,Concentration,mgL
+4,"Carbon, dissolved inorganic",-10,400,10,dic_mgl,milligrams per liter,Concentration,mgL
+5,"Carbon, total inorganic",-10,1000000,10,tic_mgl,milligrams per liter,Concentration,mgL
+6,"Carbon, dissolved organic",-10,1000000,10,doc_mgl,milligrams per liter,Concentration,mgL
+7,"Carbon, total organic",-10,400,10,toc_mgl,milligrams per liter,Concentration,mgL
+8,"Chloride, dissolved",-10,400000,10,cl_mgl,milligrams per liter,Concentration,mgL
+9,Chlorophyll a,-1000,200000,11,chla_ugl,micrograms per liter,Concentration,ugL
+11,"Color, apparent",0,2000,9,colora_pcu,platinum cobalt units,Color,PCU
+12,"Color, true",0,2000,9,colort_pcu,platinum cobalt units,Color,PCU
 13,Conductivity,0,1000000,17,spcond_uscm,microsiemens per cm,Electrical Conductivity,uscm
-14,"Magnesium, dissolved",0,10000,10,mg_mgl,milligrams per liter,Concentration,mgL
-15,"Nitrogen, dissolved Kjeldahl",0,100000,11,dkn_ugl,micrograms per liter,Concentration,ugL
-16,"Nitrogen, total Kjeldahl",0,100000,11,tkn_ugl,micrograms per liter,Concentration,ugL
-17,"Nitrogen, nitrite (NO2)",0,100000,11,no2_n_ugl,micrograms per liter,Concentration,ugL
-18,"Nitrogen, nitrite (NO2) + nitrate (NO3)",0,100000,11,no2no3_n_ugl,micrograms per liter,Concentration,ugL
-19,"Nitrogen, NH4",0,100000,11,nh4_n_ugl,micrograms per liter,Concentration,ugL
-20,"Nitrogen, total organic",0,100000,11,ton_ugl,micrograms per liter,Concentration,ugL
-21,"Nitrogen, total",0,100000,11,tn_ugl,micrograms per liter,Concentration,ugL
-22,"Nitrogen, total dissolved",0,100000,11,tdn_ugl,micrograms per liter,Concentration,ugL
-23,"Oxygen, dissolved",0,25,10,do_mgl,milligrams per liter,Concentration,mgL
+14,"Magnesium, dissolved",-10,20000,10,mg_mgl,milligrams per liter,Concentration,mgL
+15,"Nitrogen, dissolved Kjeldahl",-1000,100000,11,dkn_ugl,micrograms per liter,Concentration,ugL
+16,"Nitrogen, total Kjeldahl",-1000,100000,11,tkn_ugl,micrograms per liter,Concentration,ugL
+17,"Nitrogen, nitrite (NO2)",-1000,2000,11,no2_n_ugl,micrograms per liter,Concentration,ugL
+18,"Nitrogen, nitrite (NO2) + nitrate (NO3)",-1000,100000,11,no2no3_n_ugl,micrograms per liter,Concentration,ugL
+19,"Nitrogen, NH4",-1000,50000,11,nh4_n_ugl,micrograms per liter,Concentration,ugL
+20,"Nitrogen, total organic",-1000,100000,11,ton_ugl,micrograms per liter,Concentration,ugL
+21,"Nitrogen, total",-1000,100000,11,tn_ugl,micrograms per liter,Concentration,ugL
+22,"Nitrogen, total dissolved",-1000,100000,11,tdn_ugl,micrograms per liter,Concentration,ugL
+23,"Oxygen, dissolved",-10,25,10,do_mgl,milligrams per liter,Concentration,mgL
 25,"pH, field or lab",0,15,15,ph,pH Unit,Dimensionless,pH
-26,"Phosphorus, soluble reactive orthophosphate",0,100000,11,srp_p_ugl,micrograms per liter,Concentration,ugL
-27,"Phosphorus, total",0,100000,11,tp_ugl,micrograms per liter,Concentration,ugL
-28,"Phosphorus, total dissolved",0,100000,11,tdp_ugl,micrograms per liter,Concentration,ugL
-29,Potassium,0,5000,10,k_mgl,milligrams per liter,Concentration,mgL
+26,"Phosphorus, soluble reactive orthophosphate",-1000,100000,11,srp_p_ugl,micrograms per liter,Concentration,ugL
+27,"Phosphorus, total",-1000,100000,11,tp_ugl,micrograms per liter,Concentration,ugL
+28,"Phosphorus, total dissolved",-1000,100000,11,tdp_ugl,micrograms per liter,Concentration,ugL
+29,Potassium,-10,15000,10,k_mgl,milligrams per liter,Concentration,mgL
 30,Secchi,0,500,20,secchi_m,meter,Length,m
-31,"Silica, dissolved",0,100000000,10,si_mgl,milligrams per liter,Concentration,mgL
-32,Sodium,0,90000,10,na_mgl,milligrams per liter,Concentration,mgL
-33,"Solids, total suspended",0,100000000,10,tss_mgl,milligrams per liter,Concentration,mgL
-34,"Sulfate, dissolved",0,20000,10,so4_mgl,milligrams per liter,Concentration,mgL
-35,Temperature,0,100000000,25,temp_degc,degree celsius,Temperature,degC
+31,"Silica, dissolved",-10,2000,10,si_mgl,milligrams per liter,Concentration,mgL
+32,Sodium,-10,1000000,10,na_mgl,milligrams per liter,Concentration,mgL
+33,"Solids, total suspended",-10,1000000,10,tss_mgl,milligrams per liter,Concentration,mgL
+34,"Sulfate, dissolved",-10,1000000,10,so4_mgl,milligrams per liter,Concentration,mgL
+35,Temperature,-10,100000000,25,temp_degc,degree celsius,Temperature,degC
 36,Turbidity,0,20000,27,turb_ntu,nephelometric turbidity units,Turbidity,NTU
-37,Microcystin,0,100000000,11,microcystin_ugl,micrograms per liter,Concentration,ugL
-38,"Atrazine, total",0,100000000,11,t_atz_ugl,micrograms per liter,Concentration,ugL
-39,"Atrazine, dissolved",0,100000000,11,d_atz_ugl,micrograms per liter,Concentration,ugL
-40,"Arsenic, total",0,25000,11,t_as_ugl,micrograms per liter,Concentration,ugL
-41,"Arsenic, dissolved",0,25000,11,d_as_ugl,micrograms per liter,Concentration,ugL
-42,"Aluminum, total",0,1000000,11,t_al_ugl,micrograms per liter,Concentration,ugL
-43,"Aluminum, dissolved",0,6000000,11,d_al_ugl,micrograms per liter,Concentration,ugL
-44,"Selenium, total",0,30000,11,t_se_ugl,micrograms per liter,Concentration,ugL
-45,"Selenium, dissolved",0,30000,11,d_se_ugl,micrograms per liter,Concentration,ugL
-46,"Mercury, total",0,50000000,29,t_hg_ngl,nanograms per liter,Concentration,ngL
-47,"Mercury, total dissolved",0,100000000,29,d_hg_ngl,nanograms per liter,Concentration,ngL
+37,Microcystin,-1000,5000,11,microcystin_ugl,micrograms per liter,Concentration,ugL
+38,"Atrazine, total",-1000,1000000,11,t_atz_ugl,micrograms per liter,Concentration,ugL
+39,"Atrazine, dissolved",-1000,1000000,11,d_atz_ugl,micrograms per liter,Concentration,ugL
+40,"Arsenic, total",-1000,25000,11,t_as_ugl,micrograms per liter,Concentration,ugL
+41,"Arsenic, dissolved",-1000,5000,11,d_as_ugl,micrograms per liter,Concentration,ugL
+42,"Aluminum, total",-1000,1500000,11,t_al_ugl,micrograms per liter,Concentration,ugL
+43,"Aluminum, dissolved",-1000,1500000,11,d_al_ugl,micrograms per liter,Concentration,ugL
+44,"Selenium, total",-1000,30000,11,t_se_ugl,micrograms per liter,Concentration,ugL
+45,"Selenium, dissolved",-1000,30000,11,d_se_ugl,micrograms per liter,Concentration,ugL
+46,"Mercury, total",-1000,50000000,29,t_hg_ngl,nanograms per liter,Concentration,ngL
+47,"Mercury, total dissolved",-1000,100000000,29,d_hg_ngl,nanograms per liter,Concentration,ngL
 48,Salinity,0,20000,30,salinity_ppt,parts per thousand,Concentration,ppt
-49,E. coli,0,100000000,31,ecoli_n100ml,number per 100 ml,Concentration,n100ml
-50,Methylmercury,0,100000000,29,t_mehg_ngl,nanograms per liter,Concentration,ngL
-51,E. coli-MPN,0,100000000,32,ecoli_mpn100ml,number per 100 ml,Concentration,n100ml
-52,E. coli-CFU,0,100000000,31,ecoli_cfu100ml,number per 100 ml,Concentration,n100ml
-53,"Methylmercury, dissolved",0,100000000,29,d_mehg_ngl,nanograms per liter,Concentration,ngL
-54,Depth,0,,,,,,
+49,E. coli,0,100000,31,ecoli_n100ml,number per 100 ml,Concentration,n100ml
+50,Methylmercury,-1000,1000000,29,t_mehg_ngl,nanograms per liter,Concentration,ngL
+51,E. coli-MPN,0,100000,32,ecoli_mpn100ml,number per 100 ml,Concentration,n100ml
+52,E. coli-CFU,0,100000,31,ecoli_cfu100ml,number per 100 ml,Concentration,n100ml
+53,"Methylmercury, dissolved",-1000,1000000,29,d_mehg_ngl,nanograms per liter,Concentration,ngL
+54,Depth,0,1000,,,,,
