@@ -6,7 +6,7 @@ Georgia DNR Environmental Protection Division,EPDAMU,33754,composite of photic z
 Iowa DNR Surface Water Monitoring Data,BEACH;EPABEACH,31885,contacted chris
 USGS Louisiana Water Science Center,NA,26859,
 Orlando Streets Drainage Stormwater Utility Bureau(Florida),LAKESAMP,22586,
-Arkansas Department of Environmental Quality,1,17739,
+Arkansas Department of Environmental Quality,1,17739,looked at qapp but no depth info (https://www.adeq.state.ar.us/water/planning/surface/) but when I looked at data for one lake most was epilimnion.
 USGS Florida Water Science Center,NA,16590,
 USGS Colorado Water Science Center,NA,15306,
 Georgia DNR Environmental Protection Division,100,14763,composite of photic zone
