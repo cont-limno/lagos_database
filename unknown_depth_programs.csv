@@ -1,7 +1,7 @@
 OrganizationFormalName,ProjectIdentifier,n,Notes
 Florida LAKEWATCH,LW_V,167399,30 cm for nutrients and chl per sop
 Iowa DNR Surface Water Monitoring Data,AMBLAKE-ISU,41975,contacted chris
-Delaware Department Of Natural Resources And Environmental Control,DE-ASWQMP,38053,left voicemail
+Delaware Department Of Natural Resources And Environmental Control,DE-ASWQMP,38053,surface samples
 Georgia DNR Environmental Protection Division,EPDAMU,33754,composite of photic zone
 Iowa DNR Surface Water Monitoring Data,BEACH;EPABEACH,31885,contacted chris
 USGS Louisiana Water Science Center,NA,26859,
@@ -11,7 +11,7 @@ USGS Florida Water Science Center,NA,16590,
 USGS Colorado Water Science Center,NA,15306,
 Georgia DNR Environmental Protection Division,100,14763,composite of photic zone
 Nebraska Department of Environment and Energy,NA,14239,
-DENR,SWLAZZZ1,11887,
+DENR,SWLAZZZ1,11887,Have a phone call in
 Utah Department Of Environmental Quality,350,11573,
 Iowa DNR Surface Water Monitoring Data,AMBLAKE-SHL,11309,contacted chris
 "McGlynn Laboratories, Inc (Florida)",LCLDATA,11137,
@@ -33,8 +33,8 @@ USGS Kansas Water Science Center,NA,6000,
 USGS Missouri Water Science Center,NA,5914,
 USGS California Water Science Center,NA,5831,
 Iowa DNR Surface Water Monitoring Data,TMDL,5739,contacted chris
-USGS Georgia Water Science Center,NA,5646,contacted department
-South Carolina Department of Health and Environmental Control,SWS-2005,5456,
+USGS Georgia Water Science Center,NA,5646,
+South Carolina Department of Health and Environmental Control,SWS-2005,5456,contacted department
 City of Lakeland (Florida),17LKHIST,5109,
 South Carolina Department of Health and Environmental Control,SWS-2006,4984,
 National Park Service Water Resources Division,ROMO0004,4913,
@@ -117,7 +117,7 @@ DENR,CITMONZ1,888,
 USGS New Jersey Water Science Center,NA,872,
 Elem Indian Colony,HAB,859,
 USGS Iowa Water Science Center,NA,835,
-Coquille Indian Tribe,WQ Data,825,
+Coquille Indian Tribe,WQ Data,825,surface samples
 Utah Department Of Environmental Quality,302,823,
 "Three Affiliated Tribes: Mandan, Hidatsa, and Arikara Nation",USAC,781,
 USGS Montana Water Science Center,NA,780,
@@ -126,7 +126,7 @@ National Park Service Water Resources Division,PRSF_WQ,740,
 Absentee Shawnee Tribe of Oklahoma,106- 2013,724,
 DENR,MITCH98D,711,
 Metro Waste Water Reclamation District (Colorado),RES,702,
-Delaware Department Of Natural Resources And Environmental Control,DE-STORM,692,
+Delaware Department Of Natural Resources And Environmental Control,DE-STORM,692,surface samples
 Texas Commission on Environmental Quality,1302,691,
 Seneca Cayuga Tribe,WQM,685,
 DENR,NELAKES2,659,
@@ -503,7 +503,7 @@ EPA R7,EPABEACH;HABRARE,26,
 Massachusetts Department of Environmental Protection (MassDEP),2013-02,26,
 North Dakota Department Of Environmental Quality,RLAWARD,26,
 SD Dept of Environmental & Natural Resources,ELMZZZZ1,26,
-Delaware Department Of Natural Resources And Environmental Control,DE-RBA,25,
+Delaware Department Of Natural Resources And Environmental Control,DE-RBA,25,surface samples
 MDEQ_WQ_WQX - Montana DEQ WQPB,LK-KOOCANUSA-WQ,25,
 National Park Service Water Resources Division,GLAC0001,25,
 North Dakota Department Of Environmental Quality,RISABEL,25,
