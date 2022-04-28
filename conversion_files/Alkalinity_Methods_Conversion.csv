@@ -177,3 +177,9 @@ Alkalinity,,mg/l CaCO3,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",29801,1,1,"U
 "Alkalinity, total",ueq/L,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,0.05005,0.05005,methods_WQX
 "Alkalinity, total",ug/l,ug/l,USEPA 310.1,Alkalinity by Titration,,0.001,0.001,EPA 310.1
 "Alkalinity, total",ug/l,ug/l,USEPA 310.1_M,310.1 M ~ Alkalinity in Water by Titration,,0.001,0.001,EPA 310.1
+Gran acid neutralizing capacity,mg/l CaCO3,,11NPSWRD_WQX USGS_UNKNOWN,USGS Unknown/Unspecified Analytical Procedure,,1,1,methods_WQX
+Gran acid neutralizing capacity,ueq/L,,CEDEN 278,WRS 12A.1,,0.05005,0.05005,methods_unknown
+Gran acid neutralizing capacity,ueq/L,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,0.05005,0.05005,methods_WQX
+Gran acid neutralizing capacity,mg/l CaCO3,,11NPSWRD_WQX CUPN_ANC_FIELD,ANC Field Procedure Using Colorimetric Titration,,1,1,methods_WQX
+Gran acid neutralizing capacity,mg/l CaCO3,,HACH 8221,Alkalinity by Buret Titration,,1,1,HACH 8221
+Gran acid neutralizing capacity,ueq/L,,11NPSWRD_WQX GRYN_180.1,Acid Neutralizing Capacity (ANC),,0.05005,0.05005,methods_WQX
