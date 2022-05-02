@@ -18,20 +18,30 @@ con <- dbConnect(drv, dbname = "lagos_us_limno",
 data_dir <- "~/Lottig Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/"
 #list files
 dat <- read_csv(paste0(data_dir,"alldata.csv"), col_types = cols(.default = "c",ResultMeasureValue=col_double()))
+
+#assign sampledate
+dat <- dat %>% rename(sampledate = ActivityStartDate) %>% 
+    mutate(sampledate = ymd(sampledate))
+
 unique(dat$State)
 length(unique(dat$State))
 
+
+#Add Activity data
+activities <- read_csv("activities.csv", 
+                       col_types = cols(ActivityStartDate = col_date(format = "%Y-%m-%d"), 
+                                        ActivityRelativeDepthName = col_character()))
+activities <- activities %>% distinct() %>% 
+    rename(sampledate = ActivityStartDate)
+# activities <- activities %>% group_by(OrganizationIdentifier,ActivityIdentifier,ActivityStartDate) %>% 
+    # mutate(n=n()) %>% ungroup() %>% filter(n==1) %>% select(-n)
+
+dat <- dat %>% left_join(activities)
+
+
 #check to make sure no weird sample fractions and activity types made it in
 #make sure these get excluded 
-activitytypes <- unique(dat$ActivityTypeCode)
-activitytypes
-types_to_exclude <- c("Sample-Integrated Cross-Sectional Profile")
-activitytypes <- activitytypes[!activitytypes %in% types_to_exclude]
-activitytypes #check to make sure we want all of this
-dat <- dat %>% filter(ActivityTypeCode %in% activitytypes)
 
-temp <- dat %>% filter(if_any(everything(), ~str_detect(tolower(.), "sediment")))
-dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id)
 
 #choose only samples where we can use the depth
 unique(dat$ActivityDepthAltitudeReferencePointText)
