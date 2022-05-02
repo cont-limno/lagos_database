@@ -534,6 +534,7 @@ summary(UTdatPull)
 ```{r}
 allstates <- do.call("rbind", lapply(ls(pattern='datPull'),get))
 #figure out how to autodelete files that contain datpull
+merge1 <- allstates %>% group_by(State) %>% summarize(n=n())
 rm(list=ls(pattern="datPull"))
 ```
 
@@ -542,6 +543,7 @@ rm(list=ls(pattern="datPull"))
 #removing data that have Y's instead of keeping data that have N's
 read.csv("list of unique parameters to remove.csv") -> remove_params #update this
 data<- allstates[allstates$CharacteristicName %notin% remove_params$Unique.parameters,]
+merge2 <- data %>% group_by(State) %>% summarize(n=n())
 
 write.csv(unique(data$CharacteristicName), file = "unique_characteristicnames.csv")
 
@@ -555,7 +557,7 @@ data <- data %>%
 lagos_link <- read_csv("lagos_wqp_20210920.csv") %>% 
     rename(MonitoringLocationIdentifier = wqp_monitoringlocationidentifier)
 data <- data %>% left_join(lagos_link) %>% drop_na(lagoslakeid)
-
+merge2 = data %>% group_by(State) %>% summarize(n=n())
 rm(allstates)
 
 str(data$ResultMeasureValue)
