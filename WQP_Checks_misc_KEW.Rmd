@@ -1,0 +1,71 @@
+---
+title: "WQP_Checks_misc_KEW"
+author: "K Webster"
+date: "5/2/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r library, echo=FALSE}
+library(tidyverse)
+```
+
+
+```{r datpath}
+#Set path to dropbox folder
+filepath <- "C:/Users/kathe/Dropbox/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/"
+```
+
+```{r load}
+
+#Bring in depth data to check for secchi disk
+dat <- read.csv(paste0(filepath, "no_depth.csv"))
+
+
+```
+
+```{r filter}
+#Looked for secchi just for the heck of it
+sec <- dat %>%        # 62 
+    select(ResultCommentText) %>% 
+    filter_all(any_vars(grepl('secchi', ignore.case=TRUE, .))) 
+
+
+depth <- dat %>% #1209 without Secchi
+    select(wqp_monitoringlocationname, ResultCommentText, SampleCollectionMethod.MethodIdentifier) %>%   #, ActivityCommentText) %>% 
+    filter_all(any_vars(grepl("depth", ignore.case = TRUE, .))) %>% 
+    filter_all(any_vars(!grepl("secchi", ignore.case = TRUE, .)))  #Get rid of secchi 
+   
+surf <- dat %>%  #6570
+    filter(ActivityDepthAltitudeReferencePointText != "Below land-surface datum") %>%  #column 16
+    filter_all(any_vars(grepl("surface", ignore.case = TRUE, .))) 
+
+d <- unique(surf$ActivityDepthAltitudeReferencePointText)   # [1] "SURFACE" "Surface"
+d <- unique(surf$OrganizationFormalName) 
+d
+int <- dat %>%  #1135
+    select(SampleCollectionMethod.MethodName, ActivityCommentText, ActivityTypeCode, ResultCommentText ) %>% 
+    filter_all(any_vars(grepl("integrated", ignore.case = TRUE, .)))# %>% 
+    
+
+deep <- dat %>%  #4606 mostly in wqp_monitoringlocationname; not relevant to samples
+    select(MonitoringLocationIdentifier, wqp_monitoringlocationname) %>% 
+    filter_all(any_vars(grepl("deep", ignore.case = TRUE, .))) 
+
+#These have no matches
+epi <- dat %>%  # 0
+    filter_all(any_vars(grepl("epi", ignore.case = TRUE, .))) 
+
+photic <- dat %>%  # 0
+    filter_all(any_vars(grepl("photic", ignore.case = TRUE, .))) 
+
+
+
+
+
+```
+
