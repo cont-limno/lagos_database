@@ -12,6 +12,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r library, echo=FALSE}
 library(tidyverse)
+
+`%notin%` <- Negate(`%in%`)
 ```
 
 
@@ -22,7 +24,7 @@ filepath <- "C:/Users/kathe/Dropbox/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/"
 
 ```{r load}
 
-#Bring in depth data to check for secchi disk
+#Bring in depth data to check for missing depths
 dat <- read.csv(paste0(filepath, "no_depth.csv"))
 
 
@@ -35,8 +37,8 @@ sec <- dat %>%        # 62
     filter_all(any_vars(grepl('secchi', ignore.case=TRUE, .))) 
 
 
-depth <- dat %>% #1209 without Secchi
-    select(wqp_monitoringlocationname, ResultCommentText, SampleCollectionMethod.MethodIdentifier) %>%   #, ActivityCommentText) %>% 
+depth <- dat %>% #1209 without Secchi -- some can be mined but would take work
+    select(wqp_monitoringlocationname, ResultCommentText, SampleCollectionMethod.MethodIdentifier) %>%   #, ActivityCommentText)  
     filter_all(any_vars(grepl("depth", ignore.case = TRUE, .))) %>% 
     filter_all(any_vars(!grepl("secchi", ignore.case = TRUE, .)))  #Get rid of secchi 
    
@@ -44,10 +46,17 @@ surf <- dat %>%  #6570
     filter(ActivityDepthAltitudeReferencePointText != "Below land-surface datum") %>%  #column 16
     filter_all(any_vars(grepl("surface", ignore.case = TRUE, .))) 
 
-d <- unique(surf$ActivityDepthAltitudeReferencePointText)   # [1] "SURFACE" "Surface"
-d <- unique(surf$OrganizationFormalName) 
-d
-int <- dat %>%  #1135
+dep <- unique(surf$ActivityDepthAltitudeReferencePointText)   # [1] "SURFACE" "Surface"
+org <- unique(surf$OrganizationFormalName) 
+
+summary(dep)
+print(dep)
+print(org)
+
+
+#Checked the following but none of easy use
+
+int <- dat %>%  #1135 but generally lacking depths
     select(SampleCollectionMethod.MethodName, ActivityCommentText, ActivityTypeCode, ResultCommentText ) %>% 
     filter_all(any_vars(grepl("integrated", ignore.case = TRUE, .)))# %>% 
     
@@ -64,8 +73,199 @@ photic <- dat %>%  # 0
     filter_all(any_vars(grepl("photic", ignore.case = TRUE, .))) 
 
 
+```
+```{r load zeroes}
+
+#Interrogate observations with values = 0
+
+#Bring in depth data to check for missing depths
+dat <- read.csv(paste0(filepath, "data_for_checking/zero_values.csv"))
+
+```
+
+
+```{r Overview, include=FALSE}
+
+#Overview of zeroes analysis -- run code below for specifics
+#Total n=78055
+
+
+# 1.  NOTE for future, 17 observations were duplicated
+# 2.  NWIS  :12759  and STORET:65296 -- Theory about zeroes deleted on export not validated 
+# 3.  Keep: units not as amount/volume or mass AND those allowed to be =0: alkalinity and D Oxygen AND w/DLs / n=55369
+# 4.  Drop: opposite of Keep -- no DL and characteristics not allowed to be zero / n=22686
+# 5.  A wrinkle -- 139 observations have DL=0.  Alk and Turb are OK, but Chl (12), Tot Hg (76) and TSS (1) might need to be deleted
+
+
+```
+
+
+
+
+
+```{r zeroes analysis}
+
+summary(dat)
+
+
+#Found 17 duplicate Obs_Id
+tst<-dat %>% 
+    group_by(Obs_Id) %>% 
+    summarise(n=n()) %>% 
+    filter(n>1)
+
+
+#####################
+# streamline data file
+zdat <- dat %>% 
+    select(1:3, 7, 11, 31, 50, 54:56, 58:61, 63) %>% 
+    mutate(CharacteristicName = as.factor(CharacteristicName),
+           OrganizationIdentifier = as.factor(OrganizationIdentifier),
+           State = as.factor(State),
+           source_parameter = as.factor(source_parameter),
+           wqp_providername = as.factor(wqp_providername))
+
+################################
+#Summarise by provider:  NWIS  :12759   STORET:65296  
+#Hypothesis that zeroes were removed from NWIS is disproven!!
+
+prov <- zdat %>% 
+    select(wqp_providername) %>% 
+    mutate(wqp_providername = as.factor(wqp_providername)) 
+    
+summary(prov)
+
+#############################################
+#Overview of characteristics in zdat, units, etc.
+bychar <- zdat %>% 
+    group_by(CharacteristicName) %>% 
+    summarise(n=n()) %>% 
+    arrange(desc(n))
+print(bychar)
+
+u <- unique(zdat$ResultMeasure.MeasureUnitCode)
+print(u)
+#[1] "ueq/l"   "ug/l"    "mg/l"    "PCU"     "uS/cm"   "m"       "#/100ml" "CFU"     "MPN"     "ng/l"    "pH"      "ppt"     "NTU" 
+
+c <- unique(zdat$CharacteristicName)
+print(c)
+
+## Make decisions on which units and characteristics to retain, for example variables not per vol can't have zeroes
+## Other variables are allowed to have zeroes even if their units are per vol
+units_retain <- c("PCU",  "m" ,  "CFU",     "MPN", "NTU" )  #Allowed to have 0 values
+char_retain <- c("Oxygen, dissolved", "Alkalinity" )        #Allowed to have 0 values but have per vol units
+
+
+#Keep all these acc to units/variables allowed to be zero
+keep<-zdat %>%   
+    filter(ResultMeasure.MeasureUnitCode %in% units_retain | CharacteristicName %in% char_retain ) 
+
+summary(keep)
+    
+keep_summ <- keep %>%     
+    group_by(CharacteristicName) %>% 
+    summarise(n=n()) %>% 
+    arrange(desc(n))
+
+
+### keep those with DLs
+#examine detection limits
+keepdls <- zdat %>% 
+    filter(ResultMeasure.MeasureUnitCode %notin% units_retain & CharacteristicName %notin% char_retain ) %>% #Already kept
+    filter(!is.na(detectionlimit_legacy)) %>%    #Drop values missing DLS
+    filter(CharacteristicName %notin% char_drop) %>%   #Drop all pH even with det limit ?conductivity
+    droplevels()
+unique(keepdls$CharacteristicName)
+
+summary(keepdls)
+
+
+#Some DL=0; need to decide on what to do about these....  see below
+dls_0 <- keepdls %>% 
+    filter(detectionlimit_legacy == 0) %>% 
+    group_by(CharacteristicName) %>% 
+    summarise(n=n())
+
+#select out zeroes to keep
+zeroes_keep <- bind_rows(keep, keepdls) %>%   #n=55369
+    mutate(status="keep")
+summary(zeroes_keep)    
+
+keep_sum <- zeroes_keep %>% 
+    group_by(CharacteristicName) %>% 
+    summarise(n=n()) %>% 
+    arrange(desc(n))
+print(keep_sum)
+
+
+```
+
+
+```{r dlzero}
+
+#Here are observations with dl=zero.  Should we delete?
+#Maybe just for Chla, Hg, TSS; allow for Alkalinity and Turbidity
+
+dlzero <- zeroes_keep %>% 
+    filter(detectionlimit_legacy == 0)
+
+dlzero_summ <- dlzero %>%  #n=139
+    group_by(CharacteristicName, status) %>% 
+    summarise(n=n(), min_dl = min(detectionlimit_legacy, na.rm=TRUE), max_dl=max(detectionlimit_legacy, na.rm=TRUE)) %>% 
+    arrange(CharacteristicName, status)
+print(dlzero_summ)
 
 
 
 ```
+
+
+
+```{r drop zeroes}
+
+#Always drop those with no detection limits or ph=0 never acceptable
+#Remove detection limits = 0 and delete ph as zeroes not acceptable
+
+#These obs should be dropped == no DL, not protected variables, or pH with or without DL
+char_drop <- c("pH, equilibrated")                          #even if have dl cannot have 0?conductivity....
+
+zeroes_drop <- zdat %>%   #n=22,686
+    filter(ResultMeasure.MeasureUnitCode %notin% units_retain & CharacteristicName %notin% char_retain ) %>% 
+    filter(is.na(detectionlimit_legacy) | CharacteristicName == "pH, equilibrated") %>%  
+    mutate(status="drop") %>% 
+    droplevels()
+summary(zeroes_drop)
+unique(zeroes_drop$CharacteristicName)
+
+
+drop_summ <- zeroes_drop %>% 
+    group_by(CharacteristicName) %>% 
+    summarise(n=n()) %>% 
+    arrange(desc(n))
+print(drop_summ)
+
+
+
+```
+
+```{r zerotest}
+
+zdat_status <- bind_rows(keep_zero, drop_ids) %>% 
+    right_join(zdat, by="Obs_Id") %>% 
+    mutate(status = as.factor(status))
+  
+summary(zdat_status)  
+    
+zdat_summ <- zdat_status %>% 
+    group_by(CharacteristicName, status) %>% 
+    summarise(n=n(), min_dl = min(detectionlimit_legacy, na.rm=TRUE), max_dl=max(detectionlimit_legacy, na.rm=TRUE)) %>% 
+    arrange(CharacteristicName, status)
+
+print(zdat_summ)
+
+
+
+
+```
+
 
