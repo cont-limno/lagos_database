@@ -92,9 +92,11 @@ file.path <-"~/Lagos Limno/" #arnab
 
 
 ```{r read-files}
+read.csv("list of unique parameters to remove.csv") -> remove_params #update this
+
 #NE STATES PULL
 
-CTdatPull<-read.csv(paste0(file.path,"CT_cleaned.csv"))
+CTdatPull<-read.csv(paste0(file.path,"CT_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 CTdatPull$State<-c("CT")
 CTdatPull$Id_num<-c(seq(1:nrow(CTdatPull)))
 CTdatPull <- CTdatPull %>% 
@@ -102,7 +104,7 @@ CTdatPull <- CTdatPull %>%
 names(CTdatPull)
 summary(CTdatPull)
 
-IAdatPull<-read.csv(paste0(file.path,"IA_cleaned.csv"))
+IAdatPull<-read.csv(paste0(file.path,"IA_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 IAdatPull$State<-c("IA")
 IAdatPull$Id_num<-c(seq(1:nrow(IAdatPull)))
 IAdatPull <- IAdatPull %>% 
@@ -110,7 +112,7 @@ IAdatPull <- IAdatPull %>%
 names(IAdatPull)
 summary(IAdatPull)
 
-ILdatPull<-read.csv(paste0(file.path,"IL_cleaned.csv"))
+ILdatPull<-read.csv(paste0(file.path,"IL_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 ILdatPull$State<-c("IL")
 ILdatPull$Id_num<-c(seq(1:nrow(ILdatPull)))
 ILdatPull <- ILdatPull %>% 
@@ -118,7 +120,7 @@ ILdatPull <- ILdatPull %>%
 names(ILdatPull)
 summary(ILdatPull)
 
-INdatPull<-read.csv(paste0(file.path,"IN_cleaned.csv"))
+INdatPull<-read.csv(paste0(file.path,"IN_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 INdatPull$State<-c("IN")
 INdatPull$Id_num<-c(seq(1:nrow(INdatPull)))
 INdatPull <- INdatPull %>% 
@@ -126,7 +128,7 @@ INdatPull <- INdatPull %>%
 names(INdatPull)
 summary(INdatPull)
 
-MAdatPull<-read.csv(paste0(file.path,"MA_cleaned.csv"))
+MAdatPull<-read.csv(paste0(file.path,"MA_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 MAdatPull$State<-c("MA")
 MAdatPull$Id_num<-c(seq(1:nrow(MAdatPull)))
 MAdatPull <- MAdatPull %>% 
@@ -134,7 +136,7 @@ MAdatPull <- MAdatPull %>%
 names(MAdatPull)
 summary(MAdatPull)
 
-MEdatPull<-read.csv(paste0(file.path,"ME_cleaned.csv"))
+MEdatPull<-read.csv(paste0(file.path,"ME_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 MEdatPull$State<-c("ME")
 MEdatPull$Id_num<-c(seq(1:nrow(MEdatPull)))
 MEdatPull <- MEdatPull %>% 
@@ -142,7 +144,7 @@ MEdatPull <- MEdatPull %>%
 names(MEdatPull)
 summary(MEdatPull)
 
-MIdatPull<-read.csv(paste0(file.path,"MI_cleaned.csv"))
+MIdatPull<-read.csv(paste0(file.path,"MI_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 MIdatPull$State<-c("MI")
 MIdatPull$Id_num<-c(seq(1:nrow(MIdatPull)))
 MIdatPull <- MIdatPull %>% 
@@ -150,7 +152,7 @@ MIdatPull <- MIdatPull %>%
 names(MIdatPull)
 summary(MIdatPull)
 
-MNdatPull<-read.csv(paste0(file.path,"MN_cleaned.csv"))
+MNdatPull<-read.csv(paste0(file.path,"MN_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 MNdatPull$State<-c("MN")
 MNdatPull$Id_num<-c(seq(1:nrow(MNdatPull)))
 MNdatPull <- MNdatPull %>% 
@@ -158,7 +160,7 @@ MNdatPull <- MNdatPull %>%
 names(MNdatPull)
 summary(MNdatPull)
 
-MOdatPull<-read.csv(paste0(file.path,"MO_cleaned.csv"))
+MOdatPull<-read.csv(paste0(file.path,"MO_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 MOdatPull$State<-c("MO")
 MOdatPull$Id_num<-c(seq(1:nrow(MOdatPull)))
 MOdatPull <- MOdatPull %>% 
@@ -166,7 +168,7 @@ MOdatPull <- MOdatPull %>%
 names(MOdatPull)
 summary(MOdatPull)
 
-NHdatPull<-read.csv(paste0(file.path,"NH_cleaned.csv"))
+NHdatPull<-read.csv(paste0(file.path,"NH_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 NHdatPull$State<-c("NH")
 NHdatPull$Id_num<-c(seq(1:nrow(NHdatPull)))
 NHdatPull <- NHdatPull %>% 
@@ -174,7 +176,7 @@ NHdatPull <- NHdatPull %>%
 names(NHdatPull)
 summary(NHdatPull)
 
-NJdatPull<-read.csv(paste0(file.path,"NJ_cleaned.csv"))
+NJdatPull<-read.csv(paste0(file.path,"NJ_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 NJdatPull$State<-c("NJ")
 NJdatPull$Id_num<-c(seq(1:nrow(NJdatPull)))
 NJdatPull <- NJdatPull %>% 
@@ -182,7 +184,7 @@ NJdatPull <- NJdatPull %>%
 names(NJdatPull)
 summary(NJdatPull)
 
-NYdatPull<-read.csv(paste0(file.path,"NY_cleaned.csv"))
+NYdatPull<-read.csv(paste0(file.path,"NY_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 NYdatPull$State<-c("NY")
 NYdatPull$Id_num<-c(seq(1:nrow(NYdatPull)))
 NYdatPull <- NYdatPull %>% 
@@ -190,7 +192,7 @@ NYdatPull <- NYdatPull %>%
 names(NYdatPull)
 summary(NYdatPull)
 
-OHdatPull<-read.csv(paste0(file.path,"OH_cleaned.csv"))
+OHdatPull<-read.csv(paste0(file.path,"OH_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 OHdatPull$State<-c("OH")
 OHdatPull$Id_num<-c(seq(1:nrow(OHdatPull)))
 OHdatPull <- OHdatPull %>% 
@@ -198,7 +200,7 @@ OHdatPull <- OHdatPull %>%
 names(OHdatPull)
 summary(OHdatPull)
 
-PAdatPull<-read.csv(paste0(file.path,"PA_cleaned.csv"))
+PAdatPull<-read.csv(paste0(file.path,"PA_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 PAdatPull$State<-c("PA")
 PAdatPull$Id_num<-c(seq(1:nrow(PAdatPull)))
 PAdatPull <- PAdatPull %>% 
@@ -206,7 +208,7 @@ PAdatPull <- PAdatPull %>%
 names(PAdatPull)
 summary(PAdatPull)
 
-RIdatPull<-read.csv(paste0(file.path,"RI_cleaned.csv"))
+RIdatPull<-read.csv(paste0(file.path,"RI_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 RIdatPull$State<-c("RI")
 RIdatPull$Id_num<-c(seq(1:nrow(RIdatPull)))
 RIdatPull <- RIdatPull %>% 
@@ -214,7 +216,7 @@ RIdatPull <- RIdatPull %>%
 names(RIdatPull)
 summary(RIdatPull)
 
-VTdatPull<-read.csv(paste0(file.path,"VT_cleaned.csv"))
+VTdatPull<-read.csv(paste0(file.path,"VT_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 VTdatPull$State<-c("VT")
 VTdatPull$Id_num<-c(seq(1:nrow(VTdatPull)))
 VTdatPull <- VTdatPull %>% 
@@ -222,7 +224,7 @@ VTdatPull <- VTdatPull %>%
 names(VTdatPull)
 summary(VTdatPull)
 
-WIdatPull<-read.csv(paste0(file.path,"WI_cleaned.csv"))
+WIdatPull<-read.csv(paste0(file.path,"WI_cleaned.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 WIdatPull$State<-c("WI")
 WIdatPull$Id_num<-c(seq(1:nrow(WIdatPull)))
 WIdatPull <- WIdatPull %>% 
@@ -231,63 +233,9 @@ names(WIdatPull)
 summary(WIdatPull)
 
 
-#checking manually and filtering for start and end dates - checked for media and submedia type - all water
-
-#CT has no enddates
-CTdatPull<-CTdatPull %>% filter(ActivityStartDate >= "1975-01-01")
-
-#IA has no enddates past 2009
-IAdatPull<-IAdatPull %>% filter(ActivityStartDate >= "1975-01-01")
-
-#IL has end dates past 2020-11-20
-ILdatPull<-ILdatPull %>% filter(ActivityStartDate >= "1975-01-01" & ActivityEndDate <= "2020-11-20")
-
-
-#IN has no endates past 2020-11-20
-INdatPull<-INdatPull %>% filter(ActivityStartDate >= "1975-01-01")
-
-#MA no enddates past 2011
-MAdatPull<-MAdatPull %>% filter(ActivityStartDate >= "1975-01-01")
-
-#ME no enddates past 2015
-MEdatPull<-MEdatPull %>% filter(ActivityStartDate >= "1975-01-01")
-
-#MI has end dates past 2020-11-20
-MIdatPull<-MIdatPull %>% filter(ActivityStartDate >= "1975-01-01" & ActivityEndDate <= "2020-11-20")
-
-#MN has enddates past 2020-11-20
-MNdatPull<-MNdatPull %>% filter(ActivityStartDate >= "1975-01-01"& ActivityEndDate <= "2020-11-20")
-
-#MO no enddates past 1993
-MOdatPull<-MOdatPull %>% filter(ActivityStartDate >= "1975-01-01")
-
-#NH no enddates past 2016
-NHdatPull<-NHdatPull %>% filter(ActivityStartDate >= "1975-01-01")
-
-#NJ no enddates 
-NJdatPull<-NJdatPull %>% filter(ActivityStartDate >= "1975-01-01")
-
-#NY has enddates past 2020-11-20
-NYdatPull<-NYdatPull %>% filter(ActivityStartDate >= "1975-01-01" & ActivityEndDate <= "2020-11-20")
-
-#OH has enddates past 2020-11-20
-OHdatPull<-OHdatPull %>% filter(ActivityStartDate >= "1975-01-01" & ActivityEndDate <= "2020-11-20")
-
-#PA has enddates past 2020-11-20
-PAdatPull<-PAdatPull %>% filter(ActivityStartDate >= "1975-01-01" & ActivityEndDate <= "2020-11-20")
-
-#RI no enddates
-RIdatPull<-RIdatPull %>% filter(ActivityStartDate >= "1975-01-01")
-
-#VT no enddates past 2004
-VTdatPull<-VTdatPull %>% filter(ActivityStartDate >= "1975-01-01")
-
-#WI has enddates past 2020-11-20
-WIdatPull<-WIdatPull %>% filter(ActivityStartDate >= "1975-01-01" & ActivityEndDate <= "2020-11-20")
-
 #LAGOSUS STATES PULL
 
-IDdatPull<-read.csv(paste0(file.path,"ID_alldata_1975_to_2020.csv"))
+IDdatPull<-read.csv(paste0(file.path,"ID_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 IDdatPull$State<-c("ID")
 IDdatPull$Id_num<-c(seq(1:nrow(IDdatPull)))
 IDdatPull <- IDdatPull %>% 
@@ -295,7 +243,7 @@ IDdatPull <- IDdatPull %>%
 names(IDdatPull)
 summary(IDdatPull)
 
-DEdatPull<-read.csv(paste0(file.path,"DE_alldata_1975_to_2020.csv"))
+DEdatPull<-read.csv(paste0(file.path,"DE_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 DEdatPull$State<-c("DE")
 DEdatPull$Id_num<-c(seq(1:nrow(DEdatPull)))
 DEdatPull <- DEdatPull %>% 
@@ -303,7 +251,7 @@ DEdatPull <- DEdatPull %>%
 names(DEdatPull)
 summary(DEdatPull)
 
-MDdatPull<-read.csv(paste0(file.path,"MD_alldata_1975_to_2020.csv"))
+MDdatPull<-read.csv(paste0(file.path,"MD_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 MDdatPull$State<-c("MD")
 MDdatPull$Id_num<-c(seq(1:nrow(MDdatPull)))
 MDdatPull <- MDdatPull %>% 
@@ -311,7 +259,7 @@ MDdatPull <- MDdatPull %>%
 names(MDdatPull)
 summary(MDdatPull)
 
-VAdatPull<-read.csv(paste0(file.path,"VA_alldata_1975_to_2020.csv"))
+VAdatPull<-read.csv(paste0(file.path,"VA_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 VAdatPull$State<-c("VA")
 VAdatPull$Id_num<-c(seq(1:nrow(VAdatPull)))
 VAdatPull <- VAdatPull %>% 
@@ -319,7 +267,7 @@ VAdatPull <- VAdatPull %>%
 names(VAdatPull)
 summary(VAdatPull)
 
-COdatPull<-read.csv(paste0(file.path,"CO_alldata_1975_to_2020.csv"))
+COdatPull<-read.csv(paste0(file.path,"CO_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 COdatPull$State<-c("CO")
 COdatPull$Id_num<-c(seq(1:nrow(COdatPull)))
 COdatPull <- COdatPull %>% 
@@ -327,7 +275,7 @@ COdatPull <- COdatPull %>%
 names(COdatPull)
 summary(COdatPull)
 
-AZdatPull<-read.csv(paste0(file.path,"AZ_alldata_1975_to_2020.csv"))
+AZdatPull<-read.csv(paste0(file.path,"AZ_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 AZdatPull$State<-c("AZ")
 AZdatPull$Id_num<-c(seq(1:nrow(AZdatPull)))
 AZdatPull <- AZdatPull %>% 
@@ -335,7 +283,7 @@ AZdatPull <- AZdatPull %>%
 names(AZdatPull)
 summary(AZdatPull)
 
-ARdatPull<-read.csv(paste0(file.path,"AR_alldata_1975_to_2020.csv"))
+ARdatPull<-read.csv(paste0(file.path,"AR_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 ARdatPull$State<-c("AR")
 ARdatPull$Id_num<-c(seq(1:nrow(ARdatPull)))
 ARdatPull <- ARdatPull %>% 
@@ -343,7 +291,7 @@ ARdatPull <- ARdatPull %>%
 names(ARdatPull)
 summary(ARdatPull)
 
-ALdatPull<-read.csv(paste0(file.path,"AL_alldata_1975_to_2020.csv"))
+ALdatPull<-read.csv(paste0(file.path,"AL_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 ALdatPull$State<-c("AL")
 ALdatPull$Id_num<-c(seq(1:nrow(ALdatPull)))
 ALdatPull <- ALdatPull %>% 
@@ -351,7 +299,7 @@ ALdatPull <- ALdatPull %>%
 names(ALdatPull)
 summary(ALdatPull)
 
-WYdatPull<-read.csv(paste0(file.path,"WY_alldata_1975_to_2020.csv"))
+WYdatPull<-read.csv(paste0(file.path,"WY_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 WYdatPull$State<-c("WY")
 WYdatPull$Id_num<-c(seq(1:nrow(WYdatPull)))
 WYdatPull <- WYdatPull %>% 
@@ -359,7 +307,7 @@ WYdatPull <- WYdatPull %>%
 names(WYdatPull)
 summary(WYdatPull)
 
-KYdatPull<-read.csv(paste0(file.path,"KY_alldata_1975_to_2020.csv"))
+KYdatPull<-read.csv(paste0(file.path,"KY_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 KYdatPull$State<-c("KY")
 KYdatPull$Id_num<-c(seq(1:nrow(KYdatPull)))
 KYdatPull <- KYdatPull %>% 
@@ -367,7 +315,7 @@ KYdatPull <- KYdatPull %>%
 names(KYdatPull)
 summary(KYdatPull)
 
-NVdatPull<-read.csv(paste0(file.path,"NV_alldata_1975_to_2020.csv"))
+NVdatPull<-read.csv(paste0(file.path,"NV_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 NVdatPull$State<-c("NV")
 NVdatPull$Id_num<-c(seq(1:nrow(NVdatPull)))
 NVdatPull <- NVdatPull %>% 
@@ -375,7 +323,7 @@ NVdatPull <- NVdatPull %>%
 names(NVdatPull)
 summary(NVdatPull)
 
-OKdatPull<-read.csv(paste0(file.path,"OK_alldata_1975_to_2020.csv"))
+OKdatPull<-read.csv(paste0(file.path,"OK_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 OKdatPull$State<-c("OK")
 OKdatPull$Id_num<-c(seq(1:nrow(OKdatPull)))
 OKdatPull <- OKdatPull %>% 
@@ -383,7 +331,7 @@ OKdatPull <- OKdatPull %>%
 names(OKdatPull)
 summary(OKdatPull)
 
-WAdatPull<-read.csv(paste0(file.path,"WA_alldata_1975_to_2020.csv"))
+WAdatPull<-read.csv(paste0(file.path,"WA_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 WAdatPull$State<-c("WA")
 WAdatPull$Id_num<-c(seq(1:nrow(WAdatPull)))
 WAdatPull <- WAdatPull %>% 
@@ -391,7 +339,7 @@ WAdatPull <- WAdatPull %>%
 names(WAdatPull)
 summary(WAdatPull)
 
-KSdatPull<-read.csv(paste0(file.path,"KS_alldata_1975_to_2020.csv"))
+KSdatPull<-read.csv(paste0(file.path,"KS_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 KSdatPull$State<-c("KS")
 KSdatPull$Id_num<-c(seq(1:nrow(KSdatPull)))
 KSdatPull <- KSdatPull %>% 
@@ -399,7 +347,7 @@ KSdatPull <- KSdatPull %>%
 names(KSdatPull)
 summary(KSdatPull)
 
-TNdatPull<-read.csv(paste0(file.path,"TN_alldata_1975_to_2020.csv"))
+TNdatPull<-read.csv(paste0(file.path,"TN_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 TNdatPull$State<-c("TN")
 TNdatPull$Id_num<-c(seq(1:nrow(TNdatPull)))
 TNdatPull <- TNdatPull %>% 
@@ -407,7 +355,7 @@ TNdatPull <- TNdatPull %>%
 names(TNdatPull)
 summary(TNdatPull)
 
-CAdatPull<-read.csv(paste0(file.path,"CA_alldata_1975_to_2020.csv"))
+CAdatPull<-read.csv(paste0(file.path,"CA_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 CAdatPull$State<-c("CA")
 CAdatPull$Id_num<-c(seq(1:nrow(CAdatPull)))
 CAdatPull <- CAdatPull %>% 
@@ -415,7 +363,7 @@ CAdatPull <- CAdatPull %>%
 names(CAdatPull)
 summary(CAdatPull)
 
-FLdatPull<-read.csv(paste0(file.path,"FL_alldata_1975_to_2020.csv"))
+FLdatPull<-read.csv(paste0(file.path,"FL_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 FLdatPull$State<-c("FL")
 FLdatPull$Id_num<-c(seq(1:nrow(FLdatPull)))
 FLdatPull <- FLdatPull %>% 
@@ -423,7 +371,7 @@ FLdatPull <- FLdatPull %>%
 names(FLdatPull)
 summary(FLdatPull)
 
-GAdatPull<-read.csv(paste0(file.path,"GA_alldata_1975_to_2020.csv"))
+GAdatPull<-read.csv(paste0(file.path,"GA_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 GAdatPull$State<-c("GA")
 GAdatPull$Id_num<-c(seq(1:nrow(GAdatPull)))
 GAdatPull <- GAdatPull %>% 
@@ -431,7 +379,7 @@ GAdatPull <- GAdatPull %>%
 names(GAdatPull)
 summary(GAdatPull)
 
-LAdatPull<-read.csv(paste0(file.path,"LA_alldata_1975_to_2020.csv"))
+LAdatPull<-read.csv(paste0(file.path,"LA_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 LAdatPull$State<-c("LA")
 LAdatPull$Id_num<-c(seq(1:nrow(LAdatPull)))
 LAdatPull <- LAdatPull %>% 
@@ -439,7 +387,7 @@ LAdatPull <- LAdatPull %>%
 names(LAdatPull)
 summary(LAdatPull)
 
-MSdatPull<-read.csv(paste0(file.path,"MS_alldata_1975_to_2020.csv"))
+MSdatPull<-read.csv(paste0(file.path,"MS_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 MSdatPull$State<-c("MS")
 MSdatPull$Id_num<-c(seq(1:nrow(MSdatPull)))
 MSdatPull <- MSdatPull %>% 
@@ -447,7 +395,7 @@ MSdatPull <- MSdatPull %>%
 names(MSdatPull)
 summary(MSdatPull)
 
-MTdatPull<-read.csv(paste0(file.path,"MT_alldata_1975_to_2020.csv"))
+MTdatPull<-read.csv(paste0(file.path,"MT_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 MTdatPull$State<-c("MT")
 MTdatPull$Id_num<-c(seq(1:nrow(MTdatPull)))
 MTdatPull <- MTdatPull %>% 
@@ -455,7 +403,7 @@ MTdatPull <- MTdatPull %>%
 names(MTdatPull)
 summary(MTdatPull)
 
-NEdatPull<-read.csv(paste0(file.path,"NE_alldata_1975_to_2020.csv"))
+NEdatPull<-read.csv(paste0(file.path,"NE_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 NEdatPull$State<-c("NE")
 NEdatPull$Id_num<-c(seq(1:nrow(NEdatPull)))
 NEdatPull <- NEdatPull %>% 
@@ -463,7 +411,7 @@ NEdatPull <- NEdatPull %>%
 names(NEdatPull)
 summary(NEdatPull)
 
-NMdatPull<-read.csv(paste0(file.path,"NM_alldata_1975_to_2020.csv"))
+NMdatPull<-read.csv(paste0(file.path,"NM_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 NMdatPull$State<-c("NM")
 NMdatPull$Id_num<-c(seq(1:nrow(NMdatPull)))
 NMdatPull <- NMdatPull %>% 
@@ -471,7 +419,7 @@ NMdatPull <- NMdatPull %>%
 names(NMdatPull)
 summary(NMdatPull)
 
-NCdatPull<-read.csv(paste0(file.path,"NC_alldata_1975_to_2020.csv"))
+NCdatPull<-read.csv(paste0(file.path,"NC_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 NCdatPull$State<-c("NC")
 NCdatPull$Id_num<-c(seq(1:nrow(NCdatPull)))
 NCdatPull <- NCdatPull %>% 
@@ -479,7 +427,7 @@ NCdatPull <- NCdatPull %>%
 names(NCdatPull)
 summary(NCdatPull)
 
-NDdatPull<-read.csv(paste0(file.path,"ND_alldata_1975_to_2020.csv"))
+NDdatPull<-read.csv(paste0(file.path,"ND_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 NDdatPull$State<-c("ND")
 NDdatPull$Id_num<-c(seq(1:nrow(NDdatPull)))
 NDdatPull <- NDdatPull %>% 
@@ -487,7 +435,7 @@ NDdatPull <- NDdatPull %>%
 names(NDdatPull)
 summary(NDdatPull)
 
-ORdatPull<-read.csv(paste0(file.path,"OR_alldata_1975_to_2020.csv"))
+ORdatPull<-read.csv(paste0(file.path,"OR_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 ORdatPull$State<-c("OR")
 ORdatPull$Id_num<-c(seq(1:nrow(ORdatPull)))
 ORdatPull <- ORdatPull %>% 
@@ -495,7 +443,7 @@ ORdatPull <- ORdatPull %>%
 names(ORdatPull)
 summary(ORdatPull)
 
-SCdatPull<-read.csv(paste0(file.path,"SC_alldata_1975_to_2020.csv"))
+SCdatPull<-read.csv(paste0(file.path,"SC_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 SCdatPull$State<-c("SC")
 SCdatPull$Id_num<-c(seq(1:nrow(SCdatPull)))
 SCdatPull <- SCdatPull %>% 
@@ -503,7 +451,7 @@ SCdatPull <- SCdatPull %>%
 names(SCdatPull)
 summary(SCdatPull)
 
-SDdatPull<-read.csv(paste0(file.path,"SD_alldata_1975_to_2020.csv"))
+SDdatPull<-read.csv(paste0(file.path,"SD_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 SDdatPull$State<-c("SD")
 SDdatPull$Id_num<-c(seq(1:nrow(SDdatPull)))
 SDdatPull <- SDdatPull %>% 
@@ -511,7 +459,7 @@ SDdatPull <- SDdatPull %>%
 names(SDdatPull)
 summary(SDdatPull)
 
-TXdatPull<-read.csv(paste0(file.path,"TX_alldata_1975_to_2020.csv"))
+TXdatPull<-read.csv(paste0(file.path,"TX_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 TXdatPull$State<-c("TX")
 TXdatPull$Id_num<-c(seq(1:nrow(TXdatPull)))
 TXdatPull <- TXdatPull %>% 
@@ -519,7 +467,7 @@ TXdatPull <- TXdatPull %>%
 names(TXdatPull)
 summary(TXdatPull)
 
-UTdatPull<-read.csv(paste0(file.path,"UT_alldata_1975_to_2020.csv"))
+UTdatPull<-read.csv(paste0(file.path,"UT_alldata_1975_to_2020.csv")) %>% filter(!CharacteristicName %in% remove_params$Unique.parameters)
 UTdatPull$State<-c("UT")
 UTdatPull$Id_num<-c(seq(1:nrow(UTdatPull)))
 UTdatPull <- UTdatPull %>% 
@@ -533,6 +481,8 @@ summary(UTdatPull)
 
 ```{r}
 allstates <- do.call("rbind", lapply(ls(pattern='datPull'),get))
+allstates<-allstates %>% select(-ActivityStartTime.TimeZoneCode, -ActivityEndTime.Time, -ActivityEndTime.TimeZoneCode, -HydrologicCondition, -HydrologicEvent, -LaboratoryName, -AnalysisStartDate, -PreparationStartDate)
+
 #figure out how to autodelete files that contain datpull
 merge1 <- allstates %>% group_by(State) %>% summarize(n=n())
 rm(list=ls(pattern="datPull"))
@@ -543,8 +493,11 @@ rm(list=ls(pattern="datPull"))
 #removing data that have Y's instead of keeping data that have N's
 read.csv("list of unique parameters to remove.csv") -> remove_params #update this
 data<- allstates[allstates$CharacteristicName %notin% remove_params$Unique.parameters,]
+rm(allstates)
+gc()
 merge2 <- data %>% group_by(State) %>% summarize(n=n())
-
+data$ActivityStartDate<-lubridate:::ymd(data$ActivityStartDate)
+data<-data %>% filter(ActivityStartDate >= lubridate:::ymd ("1975-01-01")) %>% filter(ActivityStartDate <= lubridate:::ymd("2020-11-20"))
 write.csv(unique(data$CharacteristicName), file = "unique_characteristicnames.csv")
 
 ```
@@ -559,6 +512,8 @@ lagos_link <- read_csv("lagos_wqp_20210920.csv") %>%
 data <- data %>% left_join(lagos_link) %>% drop_na(lagoslakeid)
 merge2 = data %>% group_by(State) %>% summarize(n=n())
 rm(allstates)
+rm(lagos_link)
+gc()
 
 str(data$ResultMeasureValue)
 sum(is.na(data$ResultMeasureValue))
@@ -567,7 +522,7 @@ data2<-data %>% filter(!is.na(DetectionQuantitationLimitMeasure.MeasureValue)) %
 data3<-rbind(data1, data2)
 data<-data3
 rm(data1, data2, data3)
-
+gc()
 #unique organizations
 unique(data$OrganizationIdentifier) #19 organizations data
 table(data$OrganizationFormalName) #tells us number of obvs in each organization
@@ -616,37 +571,72 @@ unique(data$ActivityTypeCode)
 #manually checking these columns to see if these is data we keep or can drop
 
 unique(data$SubjectTaxonomicName) #expected it to be na - to make sure nothing we need is in there
+data<-data %>% filter(is.na(SubjectTaxonomicName))
 unique(data$SampleTissueAnatomyName) #also NA's - expected
 unique(data$ActivityMediaSubdivisionName)
-#only keeping subdivision name with surface water and NA's - dropping everything else 
-data<-data %>% filter(ActivityMediaSubdivisionName == "Surface Water" | is.na(ActivityMediaSubdivisionName))
+subdivision_remove<-c("Groundwater", 
+                      "Elutriation", 
+                      "Wastewater Treatment Plant Effluent", 
+                      "Interstitial",
+                      "Interstitial Water",
+                      "Surface Soil/Sediment",
+                      "Soil moisture",
+                      "Landfill effluent",
+                      "Bulk deposition", 
+                      "Surface Water Sediment",
+                      "Wet Fall Material",
+                      "Stormwater"
+                      )
+data<-data %>% filter(!ActivityMediaSubdivisionName %in% subdivision_remove)
 unique(data$ActivityMediaSubdivisionName)
+rm(subdivision_remove)
+
+#only keeping subdivision name with surface water and NA's - dropping everything else
+#want to filter things out that are non-ambigouous - keep unknowns - eg. filter out tissue but keep uncertain data
+#data<-data %>% filter(ActivityMediaSubdivisionName == "Surface Water" | is.na(ActivityMediaSubdivisionName))
+#unique(data$ActivityMediaSubdivisionName)
 
 unique(data$ResultStatusIdentifier)
 data <- data %>% filter(ResultStatusIdentifier != "Rejected")
 
 unique(data$ResultValueTypeName)
-data<-data %>% filter(ResultValueTypeName == "Actual" | is.na(ResultValueTypeName))
+value_typename_remove<-c("Estimated",
+                         "Calculated")
+data<-data %>% filter(!ResultValueTypeName %in% value_typename_remove)
+unique(data$ResultValueTypeName)
+rm(value_typename_remove)
+
+unique(data$ResultAnalyticalMethod.MethodName)
 data <- data %>% filter(ResultAnalyticalMethod.MethodName !="Computation by NWIS algorithm" | is.na(ResultAnalyticalMethod.MethodName))
 
 unique(data$ResultDetectionConditionText)
 #filtered out vars we don't need in resultsdetection condition text - did it in multistep because R doesn't handle multiple OR statements well
 
 data<-data %>% filter(ResultDetectionConditionText != "Systematic Contamination" | is.na(ResultDetectionConditionText))
-data<-data %>% filter(is.na(ResultDetectionConditionText) | ResultDetectionConditionText != "Not Reported")
 unique(data$ResultDetectionConditionText)
 
 
 
 unique(data$ResultSampleFractionText)
-data<-data %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText != "Bed Sediment")
-data<-data %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText != "Recoverable")
-data<-data %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText != "Acid Soluble")
-data<-data %>% filter(is.na(ResultSampleFractionText) | ResultSampleFractionText != "Total Recoverable")
+types_to_exclude<-c("Bed Sediment", 
+                    "Recoverable", 
+                    "Acid Soluble", 
+                    "Total Recoverable", 
+                    "Volatile", 
+                    "Non-volatile", 
+                    "Supernate",
+                    "Total Recovrble",
+                    "Total Residual",
+                    "Extractable")
+
+data<-data %>% filter(!ResultSampleFractionText %in% types_to_exclude)
 unique(data$ResultSampleFractionText)
+rm(types_to_exclude)
+data<-data %>% select(-ActivityMediaName, -ActivityMediaSubdivisionName, -SampleAquifer, -SubjectTaxonomicName, -SampleTissueAnatomyName)
 
-data<-data %>% select(-ActivityMediaName, -ActivityMediaSubdivisionName, -ActivityStartTime.TimeZoneCode, -ActivityEndTime.Time, -ActivityEndTime.TimeZoneCode, -SampleAquifer, -HydrologicCondition, -HydrologicEvent, -SubjectTaxonomicName, -SampleTissueAnatomyName, -LaboratoryName, -AnalysisStartDate, -PreparationStartDate)
 
+gc()
+merge2<-data %>% group_by(State) %>% summarise(n=n())
 #depthheight conversions 
 unique(data$ActivityDepthHeightMeasure.MeasureUnitCode) 
 data$ActivityDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityDepthHeightMeasure.MeasureUnitCode == "ft", data$ActivityDepthHeightMeasure.MeasureValue*0.3048, data$ActivityDepthHeightMeasure.MeasureValue)
