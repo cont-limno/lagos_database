@@ -28,7 +28,7 @@ length(unique(dat$State))
 
 
 #Add Activity data
-activities <- read_csv("activities.csv", 
+activities <- read_csv("big_data/activities.csv", 
                        col_types = cols(ActivityStartDate = col_date(format = "%Y-%m-%d"), 
                                         ActivityRelativeDepthName = col_character()))
 activities <- activities %>% distinct() %>% 
@@ -102,15 +102,17 @@ meter_vars <-c("Conductivity",
                "Depth")
 
 dat_profile <- dat %>% filter(source_parameter %in% meter_vars)
-dat_profile <- dat_profile %>% group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,CharacteristicName) %>% 
-    mutate(n=n()) %>% ungroup() %>% filter(n>1) %>% select(-n)
 
-# write_csv(dat_profile,"profile_data.csv")
+dat_profile_keep <- dat_profile %>% 
+    filter(!is.na(source_sampledepth)) %>% 
+    group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,CharacteristicName) %>% 
+    arrange(source_sampledepth, .by_group = TRUE) %>% 
+    slice_head()
 
-
-#generate data excluding profile data
+dat_profile <- dat_profile %>% filter(!Obs_Id %in% dat_profile_keep$Obs_Id)
 dat <- dat %>% filter(!Obs_Id %in% dat_profile$Obs_Id)
 rm(dat_profile)
+rm(dat_profile_keep)
 
 temp <- dat %>% filter(is.na(source_sampledepth)) %>% 
     filter(!is.na(ActivityBottomDepthHeightMeasure.MeasureValue))
