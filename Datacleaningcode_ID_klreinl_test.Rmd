@@ -482,7 +482,7 @@ summary(UTdatPull)
 ```{r}
 allstates <- do.call("rbind", lapply(ls(pattern='datPull'),get))
 allstates<-allstates %>% select(-ActivityStartTime.TimeZoneCode, -ActivityEndTime.Time, -ActivityEndTime.TimeZoneCode, -HydrologicCondition, -HydrologicEvent, -LaboratoryName, -AnalysisStartDate, -PreparationStartDate)
-
+allstates<-allstates %>% select(-ActivityEndDate, -ResultTimeBasisText, -ResultParticleSizeBasisText, -ActivityStartDateTime, -ActivityEndDateTime)
 #figure out how to autodelete files that contain datpull
 merge1 <- allstates %>% group_by(State) %>% summarize(n=n())
 rm(list=ls(pattern="datPull"))
@@ -505,7 +505,7 @@ write.csv(unique(data$CharacteristicName), file = "unique_characteristicnames.cs
 ```{r}
 data <- data %>% 
   unite('Method_Id', c(ResultAnalyticalMethod.MethodIdentifierContext, ResultAnalyticalMethod.MethodIdentifier), sep = " ", remove = FALSE)
-
+data<-data %>% select(-ResultAnalyticalMethod.MethodIdentifierContext, -ResultAnalyticalMethod.MethodIdentifier)
 #get only locations that have a lagoslakeid
 lagos_link <- read_csv("lagos_wqp_20210920.csv") %>% 
     rename(MonitoringLocationIdentifier = wqp_monitoringlocationidentifier)
@@ -519,13 +519,9 @@ str(data$ResultMeasureValue)
 sum(is.na(data$ResultMeasureValue))
 data1<-data %>% filter(!is.na(ResultMeasureValue))
 data2<-data %>% filter(!is.na(DetectionQuantitationLimitMeasure.MeasureValue)) %>% filter(is.na(ResultMeasureValue))
-data3<-rbind(data1, data2)
-data<-data3
-rm(data1, data2, data3)
+data<-rbind(data1, data2)
+rm(data1, data2)
 gc()
-#unique organizations
-unique(data$OrganizationIdentifier) #19 organizations data
-table(data$OrganizationFormalName) #tells us number of obvs in each organization
 ```
 
 
@@ -632,35 +628,57 @@ types_to_exclude<-c("Bed Sediment",
 data<-data %>% filter(!ResultSampleFractionText %in% types_to_exclude)
 unique(data$ResultSampleFractionText)
 rm(types_to_exclude)
+unique(data$SampleAquifer)
+data<-data %>% filter(is.na(SampleAquifer))
+unique(data$SampleAquifer)
+
 data<-data %>% select(-ActivityMediaName, -ActivityMediaSubdivisionName, -SampleAquifer, -SubjectTaxonomicName, -SampleTissueAnatomyName)
-
-
 gc()
 merge2<-data %>% group_by(State) %>% summarise(n=n())
+saveRDS(data, "USlimno.rds")
+#data<-readRDS("USlimno.rds")
+
 #depthheight conversions 
+
+#ActivityDepthHeightMeasure.MeasureUnitCode
+#ActivityDepthHeightMeasure.MeasureValue
+
 unique(data$ActivityDepthHeightMeasure.MeasureUnitCode) 
 data$ActivityDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityDepthHeightMeasure.MeasureUnitCode == "ft", data$ActivityDepthHeightMeasure.MeasureValue*0.3048, data$ActivityDepthHeightMeasure.MeasureValue)
 data$ActivityDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityDepthHeightMeasure.MeasureUnitCode == "feet", data$ActivityDepthHeightMeasure.MeasureValue*0.3048, data$ActivityDepthHeightMeasure.MeasureValue)
+data$ActivityDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityDepthHeightMeasure.MeasureUnitCode == "cm", data$ActivityDepthHeightMeasure.MeasureValue*0.01, data$ActivityDepthHeightMeasure.MeasureValue)
+data$ActivityDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityDepthHeightMeasure.MeasureUnitCode == "mm", data$ActivityDepthHeightMeasure.MeasureValue*0.001, data$ActivityDepthHeightMeasure.MeasureValue)
+data$ActivityDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityDepthHeightMeasure.MeasureUnitCode == "in", data$ActivityDepthHeightMeasure.MeasureValue*0.0254, data$ActivityDepthHeightMeasure.MeasureValue)
+
+
+unitstodrop<-c("FTU", "None")
+data<-data %>% filter(!ActivityDepthHeightMeasure.MeasureUnitCode %in% unitstodrop)
+unique(data$ActivityDepthHeightMeasure.MeasureUnitCode) 
 data$ActivityDepthHeightMeasure.MeasureUnitCode[!is.na(data$ActivityDepthHeightMeasure.MeasureUnitCode)]<-"m"
 
 
+#ResultDepthHeightMeasure.MeasureValue
+#ResultDepthHeightMeasure.MeasureUnitCOde
 
-#needed to convert value column to numeric
 
-# unique(data$ResultDepthHeightMeasure.MeasureUnitCode) 
-# unique(data$ResultDepthHeightMeasure.MeasureValue) 
-# str(data)
-# temp<-data
-# temp$ResultDepthHeightMeasure.MeasureValue<-as.numeric(as.character(temp$ResultDepthHeightMeasure.MeasureValue))
-# str(temp)
+unique(data$ResultDepthHeightMeasure.MeasureValue[is.na(as.numeric(data$ResultDepthHeightMeasure.MeasureValue))])
 
 data$ResultDepthHeightMeasure.MeasureValue<-as.numeric(as.character(data$ResultDepthHeightMeasure.MeasureValue))
+unique(data$ResultDepthHeightMeasure.MeasureValue) 
 
 data$ResultDepthHeightMeasure.MeasureValue<-ifelse(data$ResultDepthHeightMeasure.MeasureUnitCode == "ft", data$ResultDepthHeightMeasure.MeasureValue*0.3048, data$ResultDepthHeightMeasure.MeasureValue)
-data$ResultDepthHeightMeasure.MeasureValue<-ifelse(data$ResultDepthHeightMeasure.MeasureUnitCode == "feet", data$ResultDepthHeightMeasure.MeasureValue*0.3048, data$ResultDepthHeightMeasure.MeasureValue)
+data$ResultDepthHeightMeasure.MeasureValue<-ifelse(data$ResultDepthHeightMeasure.MeasureUnitCode == "cm", data$ResultDepthHeightMeasure.MeasureValue*0.01, data$ResultDepthHeightMeasure.MeasureValue)
+data$ResultDepthHeightMeasure.MeasureValue<-ifelse(data$ResultDepthHeightMeasure.MeasureUnitCode == "in", data$ResultDepthHeightMeasure.MeasureValue*0.0254, data$ResultDepthHeightMeasure.MeasureValue)
 data$ResultDepthHeightMeasure.MeasureUnitCode[!is.na(data$ResultDepthHeightMeasure.MeasureUnitCode)]<-"m"
 
+#ActivityTopDepthHeightMeasure.MeasureValue
+#ActivityTopDepthHeightMeasure.MeasureUnitCode
 unique(data$ActivityTopDepthHeightMeasure.MeasureValue[is.na(as.numeric(data$ActivityTopDepthHeightMeasure.MeasureValue))])
+data <- data %>% mutate(ActivityTopDepthHeightMeasure.MeasureValue = case_when(ActivityTopDepthHeightMeasure.MeasureValue=="0-2" ~ "0",TRUE ~ as.character(ActivityTopDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityTopDepthHeightMeasure.MeasureValue = case_when(ActivityTopDepthHeightMeasure.MeasureValue=="'0.85" ~ "0.85",TRUE ~ as.character(ActivityTopDepthHeightMeasure.MeasureValue)))
+
+
 data$ActivityTopDepthHeightMeasure.MeasureValue<-as.numeric(as.character(data$ActivityTopDepthHeightMeasure.MeasureValue))
 
 unique(data$ActivityTopDepthHeightMeasure.MeasureUnitCode) 
@@ -669,9 +687,138 @@ data$ActivityTopDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityTopDepthHei
 data$ActivityTopDepthHeightMeasure.MeasureUnitCode[!is.na(data$ActivityTopDepthHeightMeasure.MeasureUnitCode)]<-"m"
 
 
+#ActivityBottomDepthHeightMeasure.MeasureUnitCode
+#ActivityBottomDepthHeightMeasure.MeasureValue
+
 unique(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode)
-#need to make values column numeric
+unique(data$ActivityBottomDepthHeightMeasure.MeasureValue[is.na(as.numeric(data$ActivityBottomDepthHeightMeasure.MeasureValue))])
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="6.4-7.3" ~ "7.3",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="2-2.4" ~ "2.4",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="3-3.7" ~ "3.7",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="7.9-8.5" ~ "8.5",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="4.6-5.2" ~ "5.2",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="4.3-4.6" ~ "4.6",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="10.7-11" ~ "11",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="10.1-10.7" ~ "10.7",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="6.4-6.7" ~ "6.7",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="5.8-7" ~ "7",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+
+
+
+
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="11.6-12.2" ~ "12.2",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="14-15.8" ~ "15.8",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="10.1-11" ~ "11",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="10.5-11" ~ "11",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="13.7-14.3" ~ "14.3",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="7.5-8.5" ~ "8.5",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="5.5-5.8" ~ "5.8",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="16.8-18" ~ "18",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="12.2-13.9" ~ "13.9",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="18-19" ~ "19",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="14.3-15.2" ~ "15.2",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+
+
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="14-14.6" ~ "14.6",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="14-15.2" ~ "15.2",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="8.8-9.1" ~ "9.1",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="18-18.6" ~ "18.6",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="4.3-5.6" ~ "5.6",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="5.5-6.1" ~ "6.1",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="6.1-7.3" ~ "7.3",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="7.6-8.2" ~ "8.2",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="5.2-6.7" ~ "6.7",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="2.1-4.6" ~ "4.6",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="6.7-8.8" ~ "8.8",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+
+
+
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="18.3-19.8" ~ "19.8",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="6.7-7.3" ~ "7.3",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="4.3-5.2" ~ "5.2",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="13.1-14.6" ~ "14.6",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="17.7-18.6" ~ "18.6",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="5.9-6.7" ~ "6.7",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="4.9-6.1" ~ "6.1",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="1.8-2.1" ~ "2.1",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="10.4-11.6" ~ "11.6",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="10.2-11.9" ~ "11.9",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="9.1-10.1" ~ "10.1",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+
+
+
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="6.4-7" ~ "7",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="9.1-9.8" ~ "9.8",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="7.6-9.1" ~ "9.1",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="6.4-7.6" ~ "7.6",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="5.8-6.7" ~ "6.7",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="5.8-7.3" ~ "7.3",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="2.7-3.0" ~ "3.0",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="2.5-3" ~ "3",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+data <- data %>% mutate(ActivityBottomDepthHeightMeasure.MeasureValue = case_when(ActivityBottomDepthHeightMeasure.MeasureValue=="7.9-8.2" ~ "8.2",TRUE ~ as.character(ActivityBottomDepthHeightMeasure.MeasureValue)))
+
+unique(data$ActivityBottomDepthHeightMeasure.MeasureValue[is.na(as.numeric(data$ActivityBottomDepthHeightMeasure.MeasureValue))])
 data$ActivityBottomDepthHeightMeasure.MeasureValue<-as.numeric(as.character(data$ActivityBottomDepthHeightMeasure.MeasureValue))
+
+unique(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode)
+
+
 data$ActivityBottomDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode == "ft", data$ActivityBottomDepthHeightMeasure.MeasureValue*0.3048, data$ActivityBottomDepthHeightMeasure.MeasureValue)
 data$ActivityBottomDepthHeightMeasure.MeasureValue<-ifelse(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode == "feet", data$ActivityBottomDepthHeightMeasure.MeasureValue*0.3048, data$ActivityBottomDepthHeightMeasure.MeasureValue)
 data$ActivityBottomDepthHeightMeasure.MeasureUnitCode[!is.na(data$ActivityBottomDepthHeightMeasure.MeasureUnitCode)]<-"m"
