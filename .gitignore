@@ -6,3 +6,4 @@ alldata.csv
 ~$unique_characteristicnames.xlsx
 
 big_data/
+*.rds
