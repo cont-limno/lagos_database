@@ -28,13 +28,14 @@ length(unique(dat$State))
 
 
 #Add Activity data
-activities <- read_csv("activities.csv", 
+activities <- read_csv("big_data/activities.csv", 
                        col_types = cols(ActivityStartDate = col_date(format = "%Y-%m-%d"), 
                                         ActivityRelativeDepthName = col_character()))
 activities <- activities %>% distinct() %>% 
     rename(sampledate = ActivityStartDate)
-# activities <- activities %>% group_by(OrganizationIdentifier,ActivityIdentifier,ActivityStartDate) %>% 
-    # mutate(n=n()) %>% ungroup() %>% filter(n==1) %>% select(-n)
+
+activities <- activities %>% group_by(OrganizationIdentifier,ActivityIdentifier,sampledate) %>% 
+    mutate(n=n()) %>% ungroup() %>% filter(n==1) %>% select(-n)
 
 dat <- dat %>% left_join(activities)
 
@@ -85,7 +86,6 @@ temp<- dat %>% filter(CharacteristicName=="Depth") %>%
     rename(reported_depth=ResultMeasureValue)
 
 dat <- dat %>% left_join(temp)
-# temp<- dat %>% filter(is.na(source_sampledepth))
 dat <- dat %>% 
     mutate(source_sampledepth = ifelse(is.na(source_sampledepth),reported_depth,source_sampledepth))
 # temp<- dat %>% filter(is.na(source_sampledepth))
@@ -102,15 +102,18 @@ meter_vars <-c("Conductivity",
                "Depth")
 
 dat_profile <- dat %>% filter(source_parameter %in% meter_vars)
-dat_profile <- dat_profile %>% group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,CharacteristicName) %>% 
-    mutate(n=n()) %>% ungroup() %>% filter(n>1) %>% select(-n)
 
-# write_csv(dat_profile,"profile_data.csv")
+dat_profile_keep <- dat_profile %>% 
+    filter(!is.na(source_sampledepth)) %>% 
+    group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,CharacteristicName) %>% 
+    arrange(source_sampledepth, .by_group = TRUE) %>% 
+    slice_head()
 
-
-#generate data excluding profile data
+dat_profile <- dat_profile %>% filter(!Obs_Id %in% dat_profile_keep$Obs_Id)
 dat <- dat %>% filter(!Obs_Id %in% dat_profile$Obs_Id)
 rm(dat_profile)
+rm(dat_profile_keep)
+gc()
 
 temp <- dat %>% filter(is.na(source_sampledepth)) %>% 
     filter(!is.na(ActivityBottomDepthHeightMeasure.MeasureValue))
@@ -239,22 +242,22 @@ temp <- dat %>% filter(is.na(lagos_sampledepth)) %>%
     filter(OrganizationFormalName == "Nebraska Department of Environment and Energy")
 dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
 dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-#     filter(OrganizationFormalName == "DENR")
-# unique(temp$SampleCollectionMethod.MethodName)
-# unique(temp$wqp_monitoringlocationname)
-# 
-# unique(temp$ActivityStartDate)
-# 
-# unique(temp$SampleCollectionMethod.MethodName)
-#     
-# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-#     filter(OrganizationFormalName == "SD Dept of Environmental & Natural Resources")
-# unique(temp$SampleCollectionMethod.MethodName)
-# unique(temp$wqp_monitoringlocationname)
-# 
 
 
+temp <- dat %>% filter(OrganizationIdentifier=="SDWRAP")
+dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id) #per SD, delete all SDWRAP data
+
+temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+    filter(OrganizationFormalName == "DENR") %>% 
+    filter(sampledate >= ymd("2007-12-31"))
+dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "EPI_INT"
+
+
+temp <- dat %>% group_by(OrganizationFormalName) %>% 
+    summarize(depths = sum(!is.na(lagos_sampledepth)),no_depths = sum(is.na(lagos_sampledepth))) %>% 
+    filter(no_depths>99)
+write_csv(temp,"no_depth_info.csv")
 
 
 
@@ -263,12 +266,12 @@ temp <- dat %>% filter(is.na(lagos_sampledepth)) %>%
 
 
 temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(OrganizationFormalName == "MISSISSIPPI DEPARTMENT OF ENVIRONMENTAL QUALITY")
+    filter(OrganizationFormalName == "National Park Service Water Resources Division")
 
 unique(temp$SampleCollectionEquipmentName)
 
 
-temp <- dat %>% group_by(OrganizationFormalName,ActivityConductingOrganizationText) %>% 
+temp <- dat %>% group_by(OrganizationFormalName) %>% 
     summarize(depths = sum(!is.na(lagos_sampledepth)),no_depths = sum(is.na(lagos_sampledepth))) %>% 
     filter(no_depths>99)
 write_csv(temp,"no_depth_info.csv")
