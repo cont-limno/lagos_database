@@ -2149,7 +2149,7 @@ data_all <- do.call("rbind", lapply(ls(pattern='^data_'),get))
 data_all$ResultMeasureValue<-data_all$Converted
 data_all$DetectionQuantitationLimitMeasure.MeasureValue<-data_all$Converted_dl
 data_all<-data_all %>% select(-Converted, -Converted_dl)
-write_csv(data_all, file = "alldata.csv")
+write_csv(data_all, file = "secchi_chla_data.csv")
 
 # vals<-unique(data_all$MonitoringLocationIdentifier)
 # 
