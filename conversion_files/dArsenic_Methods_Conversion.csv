@@ -38,6 +38,7 @@ Arsenic,ug/l,ug/l,USEPA 200.7(W),,,1,1,EPA 200.7
 Arsenic,ug/l,ug/l,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,EPA 200.8; Determination of Trace Elements in Waters and Wastes by Inductively Coupled Plasma-Mass Spectrometry
 Arsenic,ug/l,ug/l,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1,1,"EPA 200.8; Trace elements, unfiltered water, inductively coupled plasma-atomic emission spectrometry (ICP-AES) (EPA 200.7; DODESP)"
 Arsenic,ug/l,ug/l,USEPA 200.8(W),,,1,1,EPA 200.8
+Arsenic,ug/l,ug/l,USEPA 6020,Inductively Coupled Plasma - Mass Spec.,,1,1,
 Arsenic,ug/l,ug/l,USEPA 7060A,7060 A ~ Arsenic by GFAA,,1,1,EPA 7060A
 Arsenic,ug/l,ug/l,USGS GF085,"Arsenic, wf, GFAAS",1000,1,1,"USGS_01000; Arsenic, water, filtered, micrograms per liter, ARSENIC DISSOLVED (GFAA)"
 Arsenic,ug/l,ug/l,USGS PLM10,"Elements, wf, cICP-MS",1000,1,1,"USGS_01000; Arsenic, water, filtered, micrograms per liter, ARSENIC DISSOLVED (GFAA)"
@@ -54,6 +55,7 @@ Arsenic,ug/l,,21FLSFWM WQ-1,,,1,1,methods_unknown
 Arsenic,ug/l,,21NC01WQ UNKNOWN,,,1,1,methods_unknown
 Arsenic,ug/l,,CEDEN 118,EPA 200.8,,1,1,EPA 200.8
 Arsenic,ug/l,,CEDEN 90,EPA 1638M,,1,1,EPA 1638
+Arsenic,ug/l,,MNPCA FRONTIER-MTLS,Trace Metals by ICP/MS at Frontier Labs,,1,1,
 Arsenic,ug/l,,NA NA,,1000,1,1,"USGS_01000; Arsenic, water, filtered, micrograms per liter, ARSENIC DISSOLVED (GFAA)"
 Arsenic,ug/l,,NA NA,,,1,1,methods_unknown
 Arsenic,ug/l,,R10BUNKER I2063,I2063,,1,1,USGS I-2063
@@ -67,6 +69,7 @@ Arsenic,ug/l,,USEPA 200.8(W),,,1,1,"EPA 200.8; Trace elements, unfiltered water,
 Arsenic,ug/l,,USEPA 200.9,Metals by Temperature Stabilized GFAA,,1,1,"EPA 200.9; Trace elements, unfiltered water, inductively coupled plasma-atomic emission spectrometry (ICP-AES) (EPA 200.7; DODESP)"
 Arsenic,ug/l,,USEPA 6010A,6010 A ~ ICP Spectroscopy,,1,1,EPA 6010A
 Arsenic,ug/l,,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1,1,EPA 6010B
+Arsenic,ug/l,,USEPA 6020,Inductively Coupled Plasma - Mass Spec.,,1,1,
 Arsenic,ug/l,,USEPA 7060A,7060 A ~ Arsenic by GFAA,,1,1,EPA 7060A
 Arsenic,ug/l,,USGS GF042,"Arsenic, wf, GFAA",1000,1,1,"USGS_01000; Arsenic, water, filtered, micrograms per liter, ARSENIC DISSOLVED (GFAA)"
 Arsenic,ug/l,,USGS GF085,"Arsenic, wf, GFAAS",1000,1,1,"USGS_01000; Arsenic, water, filtered, micrograms per liter, ARSENIC DISSOLVED (GFAA)"
