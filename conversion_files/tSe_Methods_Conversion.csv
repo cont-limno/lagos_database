@@ -73,10 +73,15 @@ Selenium,ug/l,,21ARIZ_WQX EPA 200.8,METALS,,1,1,EPA 200.8; Trace elements in fil
 Selenium,ug/l,,21ARIZ_WQX FIELD,FIELD PARAMETERS,,1,1,methods_WQX
 Selenium,ug/l,,21COL001 HISTORIC,,,-1000000,-1000000,methods_fail
 Selenium,ug/l,,21NC01WQ UNKNOWN,,,-1000000,-1000000,methods_fail
+Selenium,ug/l,,21OHIO_WQX SM 3113B,SM 3113B,,1,1,
+Selenium,ug/l,,APHA 3113-B,3113 B ~ Metals in Water by GFAA,,1,1,
+Selenium,ug/l,,APHA 3113-B,,,1,1,
 Selenium,ug/l,,APHA 3114-B,,,1,1,APHA 3114-B
 Selenium,ug/l,,APHA 3500-SE(H),,,1,1,APHA 3500-SE(H)
 Selenium,ug/l,,AZDEQ_SW UNKNOWN,UNKNOWN,,-1000000,-1000000,methods_fail
 Selenium,ug/l,,CEDEN 139,EPA 6020,,1,1,EPA 6020 
+Selenium,ug/l,,EPA_R7_WQX Procedure is unknown,Procedure is unknown,,-1000000,-1000000,methods_fail
+Selenium,ug/l,,IL_EPA LAB,,,-1000000,-1000000,methods_fail
 Selenium,ug/l,,NA NA,,1147,1,1,"USGS_01147; Selenium, water, unfiltered, micrograms per liter"
 Selenium,ug/l,,NA NA,,,-1000000,-1000000,methods_fail
 Selenium,ug/l,,SPIRITLK LC3133,LC3133,,-1000000,-1000000,methods_fail
@@ -84,6 +89,7 @@ Selenium,ug/l,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,metho
 Selenium,ug/l,,USACOEND 6020,Priority Pollutant Metals in Water,,1,1,EPA 6020
 Selenium,ug/l,,USEPA 1638,Trace Elements in Water by ICP/MS,,1,1,EPA 1638
 Selenium,ug/l,,USEPA 200.15,Metals in Water by Nebulization and ICP-AES,,1,1,EPA 200.15
+Selenium,ug/l,,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1,1,
 Selenium,ug/l,,USEPA 200.7(W),,,1,1,EPA 200.7; Trace elements in filtered water and wastes by inductively coupled plasma - mass spectrometry
 Selenium,ug/l,,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,EPA 200.8
 Selenium,ug/l,,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1,1,EPA 200.8
