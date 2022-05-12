@@ -9,15 +9,15 @@ Aluminum,ug/l,ug/l,USEPA 200.7(W),,,1,1,EPA 200.7
 Aluminum,ug/l,ug/l,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,EPA 200.8
 Aluminum,ug/l,ug/l,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1,1,EPA 200.8
 Aluminum,ug/l,ug/l,USEPA 200.8(W),,,1,1,EPA 200.8
-Aluminum,ug/l,ug/l,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1,1,
-Aluminum,ug/l,ug/l,USGS GF110,"Al, wf, GFAAS (NY WSC; ALSC)",1106,1,1,
-Aluminum,ug/l,ug/l,USGS PL127,"Elements, wf, ICP/OES (USGS-NYL)",1106,1,1,
+Aluminum,ug/l,ug/l,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1,1,EPA 6010 B
+Aluminum,ug/l,ug/l,USGS GF110,"Al, wf, GFAAS (NY WSC; ALSC)",1106,1,1,"USGS_01106; Aluminum, water, filtered, micrograms per liter"
+Aluminum,ug/l,ug/l,USGS PL127,"Elements, wf, ICP/OES (USGS-NYL)",1106,1,1,"USGS_01106; Aluminum, water, filtered, micrograms per liter"
 Aluminum,ug/l,ug/l,USGS PLA13,"Metals, wf, suppliment, ICP-AES",1106,1,1,"USGS_01106; Aluminum, water, filtered, micrograms per liter"
 Aluminum,ug/l,ug/l,USGS PLM43,"Metals, wf, ICP-MS",1106,1,1,"USGS_01106; Aluminum, water, filtered, micrograms per liter"
 Aluminum,ug/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,methods_WQX
-Aluminum,ug/l,,APHA 3113-B,3113 B ~ Metals in Water by GFAA,,1,1,
+Aluminum,ug/l,,APHA 3113-B,3113 B ~ Metals in Water by GFAA,,1,1,APHA 3113 B
 Aluminum,ug/l,,CEDEN 90,EPA 1638M,,1,1,EPA 1638
-Aluminum,ug/l,,MNPCA LEG_P01106,"ALUMINUM, DISSOLVED (UG/L AS AL)",,1,1,
+Aluminum,ug/l,,MNPCA LEG_P01106,"ALUMINUM, DISSOLVED (UG/L AS AL)",,1,1,EPA 1638
 Aluminum,ug/l,,NA NA,,1106,1,1,"USGS_01106; Aluminum, water, filtered, micrograms per liter"
 Aluminum,ug/l,,NA NA,,,-1000000,-1000000,methods_fail
 Aluminum,ug/l,,SPIRITLK I2477,I2477,,1,1,USGS I-2477
@@ -29,18 +29,18 @@ Aluminum,ug/l,,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1,1,EPA 200
 Aluminum,ug/l,,USEPA 200.7(W),,,1,1,EPA 200.7
 Aluminum,ug/l,,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,EPA 200.8
 Aluminum,ug/l,,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1,1,EPA 200.8
-Aluminum,ug/l,,USEPA 202.2,Aluminum by GFAA,,1,1,
+Aluminum,ug/l,,USEPA 202.2,Aluminum by GFAA,,1,1,EPA 202.2
 Aluminum,ug/l,,USEPA 6010A,6010 A ~ ICP Spectroscopy,,1,1,EPA 6010 A
-Aluminum,ug/l,,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1,1,EPA 6010 B
-Aluminum,ug/l,,USEPA 6010C,6010 C ~ Inductively Coupled Plasma - Atomic Emission Spectroscopy (ICP-AES),,1,1,
-Aluminum,ug/l,,USEPA 6020,Inductively Coupled Plasma - Mass Spec.,,1,1,
-Aluminum,ug/l,,USEPA 6020A,6020 A ~ ICP-MS,,1,1,
+Aluminum,ug/l,,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1,1,EPA 6010 C
+Aluminum,ug/l,,USEPA 6010C,6010 C ~ Inductively Coupled Plasma - Atomic Emission Spectroscopy (ICP-AES),,1,1,EPA 6010 B
+Aluminum,ug/l,,USEPA 6020,Inductively Coupled Plasma - Mass Spec.,,1,1,EPA 6020
+Aluminum,ug/l,,USEPA 6020A,6020 A ~ ICP-MS,,1,1,EPA 6020 A
 Aluminum,ug/l,,USGS CX001,"Aluminum, wf, extract and AAS",1106,1,1,"USGS_01106; Aluminum, water, filtered, micrograms per liter"
 Aluminum,ug/l,,USGS DCP01,"Aluminum, wf, DC plasma",1106,1,1,"USGS_01106; Aluminum, water, filtered, micrograms per liter"
 Aluminum,ug/l,,USGS DCP02,"Aluminum, wf, DCP-AES",1106,1,1,"USGS_01106; Aluminum, water, filtered, micrograms per liter"
-Aluminum,ug/l,,USGS E,,4096,1,1,"Elements, filtered water, inductively coupled plasma optical emission spectrometry ICP/OES (USGS-NYL)"
-Aluminum,ug/l,,USGS PL125,"Elements, wf, ICP/OES (USGS-NYL)",1106,1,1,
-Aluminum,ug/l,,USGS PL127,"Elements, wf, ICP/OES (USGS-NYL)",1106,1,1,
+Aluminum,ug/l,,USGS E,,4096,1,1,"USGS_04096; Elements, filtered water, inductively coupled plasma optical emission spectrometry ICP/OES (USGS-NYL)"
+Aluminum,ug/l,,USGS PL125,"Elements, wf, ICP/OES (USGS-NYL)",1106,1,1,"USGS_01106; Aluminum, water, filtered, micrograms per liter"
+Aluminum,ug/l,,USGS PL127,"Elements, wf, ICP/OES (USGS-NYL)",1106,1,1,"USGS_01106; Aluminum, water, filtered, micrograms per liter"
 Aluminum,ug/l,,USGS PLA06,"Trace elements, wf, ICP/T (Ocala",1106,1,1,"USGS_01106; Aluminum, water, filtered, micrograms per liter"
 Aluminum,ug/l,,USGS PLA13,"Metals, wf, suppliment, ICP-AES",1106,1,1,"USGS_01106; Aluminum, water, filtered, micrograms per liter"
 Aluminum,ug/l,,USGS PLA18,"Elements, wf, ICP-AES (DODEC)",1106,1,1,"USGS_01106; Aluminum, water, filtered, micrograms per liter"
@@ -60,7 +60,7 @@ Aluminum,mg/l,mg/l,AZDEQ_SW EPA 6010B,EPA 6010B,,1000,1000,EPA 6010 B
 Aluminum,mg/l,mg/l,AZDEQ_SW EPA 6010C,EPA 6010C,,1000,1000,EPA 6010 C
 Aluminum,mg/l,mg/l,R10MIDNITE D6010,Dissolved Metals,,1000,1000,EPA 6010
 Aluminum,mg/l,mg/l,USEPA 200.7,Metals in Water by ICP-AES,,1000,1000,EPA 200.7
-Aluminum,mg/l,mg/l,USEPA 200.7_M,200.7 M ~ ICP-AES For Trace Element Analysis,,1,1,
+Aluminum,mg/l,mg/l,USEPA 200.7_M,200.7 M ~ ICP-AES For Trace Element Analysis,,1000,1000,EPA 200.7
 Aluminum,mg/l,mg/l,USEPA 200.8,Metals in Waters by ICP/MS,,1000,1000,EPA 200.8
 Aluminum,mg/l,,21AWIC ADEM_HISTORICAL,Unkn Lab Proc,,-1000000,-1000000,methods_fail
 Aluminum,mg/l,,21FLPDEM_WQX EPA 200.7,"Aluminum, dissolved",,1000,1000,EPA 200.7
