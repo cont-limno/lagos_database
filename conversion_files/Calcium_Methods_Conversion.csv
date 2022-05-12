@@ -7,7 +7,7 @@ Calcium,mg/l,mg/l,21FLSJWM OTHER/UNKNOWN,,,1,1,methods_unknown
 Calcium,mg/l,mg/l,APHA 3111-B,3111 B ~ Metals in Water by FLAA- Direct Air-Acetylene Flame,,1,1,APHA 3111
 Calcium,mg/l,mg/l,APHA 3111-D,3111 D ~ Metals in Water by FLAA- Direct Nitrous Oxide-Acetylene Flame,,1,1,APHA 3111
 Calcium,mg/l,mg/l,APHA 3120 B (TOTAL),3120 B TOTAL  ~ Metals (total recoverable) in Water by ICP,,1,1,APHA 3120 B
-Calcium,mg/l,mg/l,APHA 4110-C,4110 C ~ Single Column Ion Chromatography,,-1.00E+06,-1.00E+06,methods_fail; APHA 4110 C ~ Single Column Ion Chromatography for anions
+Calcium,mg/l,mg/l,APHA 4110-C,4110 C ~ Single Column Ion Chromatography,,-1000000,-1000000,methods_fail; APHA 4110 C ~ Single Column Ion Chromatography for anions
 Calcium,mg/l,mg/l,AZDEQ_SW EPA 200.7,EPA 200.7,,1,1,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Calcium,mg/l,mg/l,AZDEQ_SW EPA 215.1,EPA 215.1,,1,1,EPA 215.1
 Calcium,mg/l,mg/l,NA NA,,915,1,1,USGS_00915
@@ -16,64 +16,64 @@ Calcium,mg/l,mg/l,USDOI/USGS I1472,Metals in Water by ICP,,1,1,USGS I-1472
 Calcium,mg/l,mg/l,USEPA 200.7,Metals in Water by ICP-AES,,1,1,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Calcium,mg/l,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1,1,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Calcium,mg/l,mg/l,USEPA 200.7(W),,,1,1,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
-Calcium,mg/l,mg/l,USEPA 200.7_M,200.7 M ~ ICP-AES For Trace Element Analysis,,1,1,
+Calcium,mg/l,mg/l,USEPA 200.7_M,200.7 M ~ ICP-AES For Trace Element Analysis,,1,1,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Calcium,mg/l,mg/l,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,EPA 200.8
 Calcium,mg/l,mg/l,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1,1,EPA 200.8
 Calcium,mg/l,mg/l,USEPA 215.1,Calcium by FLAA,,1,1,EPA 215.1
 Calcium,mg/l,mg/l,USEPA 215.1,,,1,1,EPA 215.1
-Calcium,mg/l,mg/l,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1,1,
+Calcium,mg/l,mg/l,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1,1,EPA 6010 B 
 Calcium,mg/l,mg/l,USGS AA008,"Calcium, wf, direct AAS (NWQL)",915,1,1,USGS_00915
 Calcium,mg/l,mg/l,USGS IC032,"Ions, wf, auto IC  (NRP & CO)",915,1,1,USGS_00915
 Calcium,mg/l,mg/l,USGS PL130,"Elements, wf, ICP (200.7; COWSC)",915,1,1,USGS_00915
 Calcium,mg/l,mg/l,USGS PLA09,"Metals, LL, wf, ICP-AES",915,1,1,USGS_00915
 Calcium,mg/l,mg/l,USGS PLA11,"Metals, wf, ICP-AES (NWQL)",915,1,1,USGS_00915
 Calcium,mg/l,mg/l,USGS PLA24,"Metals, wf, ICP-AES (NRP & CO)",915,1,1,USGS_00915
-Calcium,mg/l,,11NPSWRD_WQX CACO_CATIONS,"Cations, Atomic Absorption Spectrometry",,1,1,
+Calcium,mg/l,,11NPSWRD_WQX CACO_CATIONS,"Cations, Atomic Absorption Spectrometry",,1,1,methods_WQX
 Calcium,mg/l,,11NPSWRD_WQX CRLA_AAS_CA,Calcium by Atomic Absorption Spectroscopy,,1,1,methods_WQX
 Calcium,mg/l,,11NPSWRD_WQX NPS_MISSING,Procedure not Required when Result Entered into National Database,,1,1,methods_WQX
 Calcium,mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1,1,methods_WQX
 Calcium,mg/l,,21ARIZ_WQX EPA 200.7,METALS,,1,1,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Calcium,mg/l,,21FLSFWM WQ-1,,,1,1,methods_unknown
-Calcium,mg/l,,APHA 3111-B,3111 B ~ Metals in Water by FLAA- Direct Air-Acetylene Flame,,1,1,
+Calcium,mg/l,,APHA 3111-B,3111 B ~ Metals in Water by FLAA- Direct Air-Acetylene Flame,,1,1,APHA 3111
 Calcium,mg/l,,APHA 3111-D,3111 D ~ Metals in Water by FLAA- Direct Nitrous Oxide-Acetylene Flame,,1,1,APHA 3111
-Calcium,mg/l,,APHA 3120,Metals in Water by ICP,,1,1,
+Calcium,mg/l,,APHA 3120,Metals in Water by ICP,,1,1,APHA 3120
 Calcium,mg/l,,AZDEQ_SW EPA 200.7,EPA 200.7,,1,1,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Calcium,mg/l,,CEDEN 15,EPA 200.7,,1,1,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Calcium,mg/l,,CEDEN 24,EPA 6010A,,1,1,EPA 6010 A
 Calcium,mg/l,,CEDEN 298,USGS I-1472-87,,1,1,USGS I-1472-87
-Calcium,mg/l,,IL_EPA LAB,,,1,1,
-Calcium,mg/l,,MNPCA FRONTIER-MTLS,Trace Metals by ICP/MS at Frontier Labs,,1,1,
-Calcium,mg/l,,MNPCA LEG_P00915,"CALCIUM, DISSOLVED (MG/L AS CA)",,1,1,
-Calcium,mg/l,,MNPCA LEG_P82368,CALCIUM DISSOLVED IN WATER AS CACO3          MG/L,,1,1,
-Calcium,mg/l,,MNPCA LEG_UNKNOWN,Legacy STORET migration; analytical procedure not specified,,1,1,
+Calcium,mg/l,,IL_EPA LAB,,,1,1,methods_unknown
+Calcium,mg/l,,MNPCA FRONTIER-MTLS,Trace Metals by ICP/MS at Frontier Labs,,1,1,methods_unknown
+Calcium,mg/l,,MNPCA LEG_P00915,"CALCIUM, DISSOLVED (MG/L AS CA)",,1,1,USGS_00915
+Calcium,mg/l,,MNPCA LEG_P82368,CALCIUM DISSOLVED IN WATER AS CACO3          MG/L,,-1000000,-1000000,units_fail
+Calcium,mg/l,,MNPCA LEG_UNKNOWN,Legacy STORET migration; analytical procedure not specified,,1,1,methods_unknown
 Calcium,mg/l,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1,1,methods_WQX
 Calcium,mg/l,,NA NA,,915,1,1,USGS_00915
 Calcium,mg/l,,NA NA,,,1,1,methods_unknown
 Calcium,mg/l,,OREGONDEQ Not Available,Not Available,,1,1,methods_unknown
 Calcium,mg/l,,R10MIDNITE D6010,Dissolved Metals,,1,1,EPA 6010
 Calcium,mg/l,,SPIRITLK PLA11,PLA11,,1,1,methods_unknown
-Calcium,mg/l,,TCEQMAIN N/A Calculation,N/A Calculation,,-1.00E+06,-1.00E+06,methods_fail
+Calcium,mg/l,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,methods_fail
 Calcium,mg/l,,USACOEND 6010A,ICP Metals in Water,,1,1,EPA 6010 A
 Calcium,mg/l,,USDOI/USGS I1472,Metals in Water by ICP,,1,1,USGS I-1472
 Calcium,mg/l,,USEPA 1638,Trace Elements in Water by ICP/MS,,1,1,EPA 1638
 Calcium,mg/l,,USEPA 200.7,Metals in Water by ICP-AES,,1,1,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Calcium,mg/l,,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1,1,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Calcium,mg/l,,USEPA 200.7(W),,,1,1,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
-Calcium,mg/l,,USEPA 200.7_M,200.7 M ~ ICP-AES For Trace Element Analysis,,1,1,
+Calcium,mg/l,,USEPA 200.7_M,200.7 M ~ ICP-AES For Trace Element Analysis,,1,1,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Calcium,mg/l,,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,EPA 200.8
 Calcium,mg/l,,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1,1,EPA 200.8
-Calcium,mg/l,,USEPA 215.1,Calcium by FLAA,,1,1,
+Calcium,mg/l,,USEPA 215.1,Calcium by FLAA,,1,1,EPA 215.1
 Calcium,mg/l,,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1,1,EPA 6010
-Calcium,mg/l,,USEPA 6010C,6010 C ~ Inductively Coupled Plasma - Atomic Emission Spectroscopy (ICP-AES),,1,1,
-Calcium,mg/l,,USEPA 6020,Inductively Coupled Plasma - Mass Spec.,,1,1,
-Calcium,mg/l,,USEPA 6020A,6020 A ~ ICP-MS,,1,1,
-Calcium,mg/l,,USEPA 7140,Calcium by FLAA,,1,1,
+Calcium,mg/l,,USEPA 6010C,6010 C ~ Inductively Coupled Plasma - Atomic Emission Spectroscopy (ICP-AES),,1,1,EPA 6010 C
+Calcium,mg/l,,USEPA 6020,Inductively Coupled Plasma - Mass Spec.,,1,1,EPA 6020
+Calcium,mg/l,,USEPA 6020A,6020 A ~ ICP-MS,,1,1,EPA 6020 A
+Calcium,mg/l,,USEPA 7140,Calcium by FLAA,,1,1,EPA 7140
 Calcium,mg/l,,USGS AA007,"Calcium, LIS wf, AAS",915,1,1,USGS_00915
 Calcium,mg/l,,USGS AA008,"Calcium, wf, direct AAS (NWQL)",915,1,1,USGS_00915
 Calcium,mg/l,,USGS G0039,NWQL method number I-1150-77,915,1,1,USGS_00915
 Calcium,mg/l,,USGS PL051,"Metals, blank water, ICP",915,1,1,USGS_00915
-Calcium,mg/l,,USGS PL125,"Elements, wf, ICP/OES (USGS-NYL)",915,1,1,
-Calcium,mg/l,,USGS PL127,"Elements, wf, ICP/OES (USGS-NYL)",915,1,1,
+Calcium,mg/l,,USGS PL125,"Elements, wf, ICP/OES (USGS-NYL)",915,1,1,USGS_00915
+Calcium,mg/l,,USGS PL127,"Elements, wf, ICP/OES (USGS-NYL)",915,1,1,USGS_00915
 Calcium,mg/l,,USGS PLA06,"Trace elements, wf, ICP/T (Ocala",915,1,1,USGS_00915
 Calcium,mg/l,,USGS PLA09,"Metals, LL, wf, ICP-AES",915,1,1,USGS_00915
 Calcium,mg/l,,USGS PLA11,"Metals, wf, ICP-AES (NWQL)",915,1,1,USGS_00915
@@ -84,7 +84,7 @@ Calcium,ppm,,11NPSWRD_WQX NPS_NURE_OR13,Oak Ridge Emission Spectrochemical Analy
 Calcium,ug/l,ug/l,AZDEQ_SW EPA 200.7,EPA 200.7,,0.001,0.001,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Calcium,ug/l,ug/l,USEPA 200.7,Metals in Water by ICP-AES,,0.001,0.001,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Calcium,ug/l,ug/l,USEPA 200.8,Metals in Waters by ICP/MS,,0.001,0.001,EPA 200.8
-Calcium,ug/l,ug/l,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1,1,
+Calcium,ug/l,ug/l,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,0.001,0.001,EPA 6010 B 
 Calcium,ug/l,,21DELAWQ_WQX 200.7_ELS,Inductively Coupled Plasma - Atomic Emission Spectrometry (ICP-AES),,0.001,0.001,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Calcium,ug/l,,NA NA,,91051,0.001,0.001,USGS-91051; Metals and trace elements in water and wastes by ICP-AES
 Calcium,ug/l,,USEPA 200.15,Metals in Water by Nebulization and ICP-AES,,0.001,0.001,EPA 200.8
