@@ -1,23 +1,23 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Depth,%,,MNPCA LEG_P00005,"X-SEC. LOC., VERTICAL (PERCENT OF TOTAL DEPTH)",,-1.00E+06,-1.00E+06,
-Depth,ft,,NA NA,,64,-1.00E+06,-1.00E+06,"methods_fail; Mean depth of stream, feet"
-Depth,ft,,NA NA,,72001,-1.00E+06,-1.00E+06,"methods_fail; Depth of hole, feet below land surface datum"
-Depth,ft,,NA NA,,72008,-1.00E+06,-1.00E+06,"methods_fail; Depth of well, feet below land surface datum"
+Depth,%,,MNPCA LEG_P00005,"X-SEC. LOC., VERTICAL (PERCENT OF TOTAL DEPTH)",,-1000000,-1000000,units_fail
+Depth,ft,,NA NA,,64,-1000000,-1000000,"methods_fail; Mean depth of stream, feet"
+Depth,ft,,NA NA,,72001,-1000000,-1000000,"methods_fail; Depth of hole, feet below land surface datum"
+Depth,ft,,NA NA,,72008,-1000000,-1000000,"methods_fail; Depth of well, feet below land surface datum"
 Depth,ft,,NA NA,,81903,0.3048,0.3048,"USGS_81903; Depth to bottom at sample location, feet"
 Depth,ft,,USGS 0,,81903,0.3048,0.3048,"USGS_81903; Depth to bottom at sample location, feet"
 Depth,ft,,USGS 4,,81903,0.3048,0.3048,"USGS_81903; Depth to bottom at sample location, feet"
 Depth,ft,,USGS A,,81903,0.3048,0.3048,"USGS_81903; Depth to bottom at sample location, feet"
 Depth,ft,,USGS I,,81903,0.3048,0.3048,"USGS_81903; Depth to bottom at sample location, feet"
 Depth,ft,,NA NA,,82016,0.3048,0.3048,"USGS_82016; Maximum depth of lake, feet"
-Depth,ft,ft,1119USBR_WQX 20,Zebra/Quagga Mussel APHA 10200G Modified,,-1.00E+06,-1.00E+06,methods_fail; plankton sample
+Depth,ft,ft,1119USBR_WQX 20,Zebra/Quagga Mussel APHA 10200G Modified,,-1000000,-1000000,methods_fail; plankton sample
 Depth,ft,ft,OREGONDEQ MOM grab,Field methods for DEQ Water sampling,,0.3048,0.3048,methods_unknown
 Depth,ft,,NA NA,,,0.3048,0.3048,methods_unknown
 Depth,ft,,SDDENR_WQX UNKOWN,UNKOWN,,0.3048,0.3048,methods_WQX
 Depth,ft,,SDWRAP WRAPFLD,,,0.3048,0.3048,methods_unknown
-Depth,ft,,11113300 TAPE MEASURE,"TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,0.3048,0.3048,
-Depth,ft,,11113300 WEIGHTED TAPE MEAS.,WEIGHTED TAPE MEASURE,,0.3048,0.3048,
-Depth,ft,,21MICH MDEQ-EPA,,,0.3048,0.3048,
-Depth,ft,,IL_EPA FIELD,,,0.3048,0.3048,
+Depth,ft,,11113300 TAPE MEASURE,"TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,0.3048,0.3048,methods_unknown
+Depth,ft,,11113300 WEIGHTED TAPE MEAS.,WEIGHTED TAPE MEASURE,,0.3048,0.3048,methods_unknown
+Depth,ft,,21MICH MDEQ-EPA,,,0.3048,0.3048,methods_unknown
+Depth,ft,,IL_EPA FIELD,,,0.3048,0.3048,methods_unknown
 Depth of water column,ft,,NA NA,,72199,0.3048,0.3048,"USGS_72199; Water depth, water surface to bottom, feet"
 "Depth, bottom",ft,ft,NA NA,,,0.3048,0.3048,methods_unknown
 "Depth, bottom",ft,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,0.3048,0.3048,methods_WQX
@@ -30,26 +30,26 @@ Depth of water column,ft,,NA NA,,72199,0.3048,0.3048,"USGS_72199; Water depth, w
 "Depth, bottom",ft,,OREGONDEQ Not Available,Not Available,,0.3048,0.3048,methods_unknown
 "Depth, bottom",ft,,R10BUNKER FLOW-USGS,FLOW-USGS,,0.3048,0.3048,methods_unknown
 "Depth, bottom",ft,,SDDENR_WQX UNKOWN,UNKOWN,,0.3048,0.3048,methods_WQX
-"Depth, bottom",ft,ft,SDDENR_WQX field,UNKOWN,,0.3048,0.3048,
-"Depth, bottom",ft,m,SDDENR_WQX field,UNKOWN,,0.3048,1,
-"Depth, bottom",ft,,11NPSWRD_WQX NPS_UNSPECIFIED,Unknown or Unspecified Procedure,,0.3048,0.3048,
-"Depth, bottom",ft,,IL_EPA FIELD,,,0.3048,0.3048,
-"Depth, bottom",ft,,IL_EPA_WQX FIELD,MEASURED IN FIELD,,0.3048,0.3048,
-"Depth, bottom",ft,,SDDENR_WQX UNKNOWN,UNKNOWN,,0.3048,0.3048,
-"Depth, data-logger (non-ported)",ft,,NA NA,,,-1.00E+06,-1.00E+06,methods_fail
-"Depth, data-logger (ported)",ft,,CHEROKEE CN_QAPP,,,-1.00E+06,-1.00E+06,methods_fail
-Depth,in,,11113300 TAPE MEASURE,"TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,0.0254,0.0254,
+"Depth, bottom",ft,ft,SDDENR_WQX field,UNKOWN,,0.3048,0.3048,methods_WQX
+"Depth, bottom",ft,m,SDDENR_WQX field,UNKOWN,,0.3048,1,methods_WQX
+"Depth, bottom",ft,,11NPSWRD_WQX NPS_UNSPECIFIED,Unknown or Unspecified Procedure,,0.3048,0.3048,methods_WQX
+"Depth, bottom",ft,,IL_EPA FIELD,,,0.3048,0.3048,methods_unknown
+"Depth, bottom",ft,,IL_EPA_WQX FIELD,MEASURED IN FIELD,,0.3048,0.3048,methods_WQX
+"Depth, bottom",ft,,SDDENR_WQX UNKNOWN,UNKNOWN,,0.3048,0.3048,methods_WQX
+"Depth, data-logger (non-ported)",ft,,NA NA,,,-1000000,-1000000,methods_fail; data logger
+"Depth, data-logger (ported)",ft,,CHEROKEE CN_QAPP,,,-1000000,-1000000,methods_fail; data logger
+Depth,in,,11113300 TAPE MEASURE,"TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,0.0254,0.0254,methods_unknown
 Depth,m,,NA NA,,82903,1,1,"USGS_82903; Depth to bottom from water surface, at sampling location, meters  "
 Depth,m,,NA NA,,85310,1,1,"USGS_85310; Depth of lake, maximum, meters"
 Depth,m,,USGS B,,85310,1,1,"USGS_85310; Depth of lake, maximum, meters"
 Depth,m,,USGS D,,85310,1,1,"USGS_85310; Depth of lake, maximum, meters"
-Depth,m,m,1119USBR_WQX 10,"Depth, Secchi disk depth",,-1.00E+06,-1.00E+06,methods_fail; secchi
-Depth,m,m,21FLORAN_WQX EPD100.1,"Depth, Secchi disk depth",,-1.00E+06,-1.00E+06,methods_fail; secchi
-Depth,m,,21FLORAN_WQX EPD100.1,"Depth, Secchi disk depth",,-1.00E+06,-1.00E+06,methods_fail; secchi
-Depth,m,,21FLSUW_WQX FT 1700,Field Measurement of Light Penetration (Secchi Depth and Transparency),,-1.00E+06,-1.00E+06,methods_fail; secchi
-Depth,m,,21FLTPA_WQX FT1700,"Depth, Secchi disk depth",,-1.00E+06,-1.00E+06,methods_fail; secchi
-Depth,m,,ASTM D5413(B),D5413 B  ~ Water Levels Using Recording Devices,,-1.00E+06,-1.00E+06,methods_fail; water level
-Depth,m,,TCEQMAIN N/A Calculation,N/A Calculation,,-1.00E+06,-1.00E+06,methods_fail
+Depth,m,m,1119USBR_WQX 10,"Depth, Secchi disk depth",,-1000000,-1000000,methods_fail; secchi
+Depth,m,m,21FLORAN_WQX EPD100.1,"Depth, Secchi disk depth",,-1000000,-1000000,methods_fail; secchi
+Depth,m,,21FLORAN_WQX EPD100.1,"Depth, Secchi disk depth",,-1000000,-1000000,methods_fail; secchi
+Depth,m,,21FLSUW_WQX FT 1700,Field Measurement of Light Penetration (Secchi Depth and Transparency),,-1000000,-1000000,methods_fail; secchi
+Depth,m,,21FLTPA_WQX FT1700,"Depth, Secchi disk depth",,-1000000,-1000000,methods_fail; secchi
+Depth,m,,ASTM D5413(B),D5413 B  ~ Water Levels Using Recording Devices,,-1000000,-1000000,methods_fail; water level
+Depth,m,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,methods_fail
 Depth,m,m,21FLMANA GENERIC,,,1,1,methods_unknown
 Depth,m,m,21FLMANA_WQX GENERIC,General Listing of Field and Lab Analytical Procedures for Manatee County,,1,1,methods_WQX
 Depth,m,m,21FLSFWM WQ-1,,,1,1,methods_unknown
@@ -85,19 +85,19 @@ Depth,m,,OREGONDEQ Not Available,Not Available,,1,1,methods_unknown
 Depth,m,,SDDENR_WQX UNKOWN,UNKOWN,,1,1,methods_WQX
 Depth,m,,SDWRAP WRAPFLD,,,1,1,methods_unknown
 Depth,m,,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,methods_WQX
-Depth,m,,11113300 TAPE MEASURE,"TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,1,1,
-Depth,m,,11113300 WEIGHTED TAPE MEAS.,WEIGHTED TAPE MEASURE,,1,1,
-Depth,m,,11NPSWRD_WQX NPS_UNSPECIFIED,Unknown or Unspecified Procedure,,1,1,
-Depth,m,,21FLBRA FT 1700,,,-1.00E+06,-1.00E+06,methods_fail
-Depth,m,,21FLSUW FT 1700,,,-1.00E+06,-1.00E+06,methods_fail
-Depth,m,,MNPCA DEPTH BOTTOM,"Depth, bottom",,1,1,
-Depth,m,,MNPCA FLD,"Field measurement/observation, generic method",,1,1,
-Depth,m,,YSI 120.1,Direct Measurement Method,,1,1,
-"Depth, bottom",m,m,21FLORAN_WQX EPD100.1,"Depth, Secchi disk depth",,-1.00E+06,-1.00E+06,methods_fail
-"Depth, bottom",m,,21FLCEN_WQX FT 1700,Secchi disk depth,,-1.00E+06,-1.00E+06,methods_fail; secchi
-"Depth, bottom",m,,21FLLEON_WQX FT_1700,Sechi Disk Depth,,-1.00E+06,-1.00E+06,methods_fail
-"Depth, bottom",m,,21FLORAN_WQX EPD100.1,"Depth, Secchi disk depth",,-1.00E+06,-1.00E+06,methods_fail
-"Depth, bottom",m,,USEPA 170.1,Temperature,,-1.00E+06,-1.00E+06,methods_fail
+Depth,m,,11113300 TAPE MEASURE,"TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,1,1,methods_unknown
+Depth,m,,11113300 WEIGHTED TAPE MEAS.,WEIGHTED TAPE MEASURE,,1,1,methods_unknown
+Depth,m,,11NPSWRD_WQX NPS_UNSPECIFIED,Unknown or Unspecified Procedure,,1,1,methods_WQX
+Depth,m,,21FLBRA FT 1700,,,1,1,methods_unknown
+Depth,m,,21FLSUW FT 1700,,,1,1,methods_unknown
+Depth,m,,MNPCA DEPTH BOTTOM,"Depth, bottom",,1,1,methods_unknown
+Depth,m,,MNPCA FLD,"Field measurement/observation, generic method",,1,1,methods_unknown
+Depth,m,,YSI 120.1,Direct Measurement Method,,1,1,methods_unknown
+"Depth, bottom",m,m,21FLORAN_WQX EPD100.1,"Depth, Secchi disk depth",,-1000000,-1000000,methods_fail; secchi
+"Depth, bottom",m,,21FLCEN_WQX FT 1700,Secchi disk depth,,-1000000,-1000000,methods_fail; secchi
+"Depth, bottom",m,,21FLLEON_WQX FT_1700,Sechi Disk Depth,,-1000000,-1000000,methods_fail; secchi
+"Depth, bottom",m,,21FLORAN_WQX EPD100.1,"Depth, Secchi disk depth",,-1000000,-1000000,methods_fail; secchi
+"Depth, bottom",m,,USEPA 170.1,Temperature,,1,1,methods_unknown
 "Depth, bottom",m,m,21FLORAN EPA100.1,,,1,1,methods_unknown
 "Depth, bottom",m,m,21FLORAN EPD100.1,,,1,1,methods_unknown
 "Depth, bottom",m,m,21FLORL_WQX EPA100.1,Sample Depth,,1,1,methods_WQX
@@ -132,11 +132,11 @@ Depth,m,,YSI 120.1,Direct Measurement Method,,1,1,
 "Depth, bottom",m,,NA NA,,,1,1,methods_unknown
 "Depth, bottom",m,,SDDENR_WQX UNKOWN,UNKOWN,,1,1,methods_WQX
 "Depth, bottom",m,,SDWRAP WRAPFLD,,,1,1,methods_unknown
-"Depth, bottom",m,,11113300 TAPE MEASURE,"TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,1,1,
-"Depth, bottom",m,,11113300 WEIGHTED TAPE MEAS.,WEIGHTED TAPE MEASURE,,1,1,
-"Depth, bottom",m,,11NPSWRD_WQX GLKN_HL_DS4X,Multiprobe Field Analysis,,1,1,
-"Depth, bottom",m,,11NPSWRD_WQX NPS_HYDRLAB_MS,Hydrolab MiniSonde Data Logger Probes,,-1.00E+06,-1.00E+06,methods_fail
-"Depth, data-logger (non-ported)",m,,NA NA,,,-1.00E+06,-1.00E+06,methods_fail
-"Depth, data-logger (ported)",m,,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,-1.00E+06,-1.00E+06,methods_fail
-Depth,m/sec,,NA NA,,,-1.00E+06,-1.00E+06,units_fail
-Depth,mg,,21FLSUW_WQX FS 2100,Surface Water Sampling,,-1.00E+06,-1.00E+06,units_fail
+"Depth, bottom",m,,11113300 TAPE MEASURE,"TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,1,1,methods_unknown
+"Depth, bottom",m,,11113300 WEIGHTED TAPE MEAS.,WEIGHTED TAPE MEASURE,,1,1,methods_unknown
+"Depth, bottom",m,,11NPSWRD_WQX GLKN_HL_DS4X,Multiprobe Field Analysis,,1,1,methods_WQX
+"Depth, bottom",m,,11NPSWRD_WQX NPS_HYDRLAB_MS,Hydrolab MiniSonde Data Logger Probes,,-1000000,-1000000,methods_fail; data logger
+"Depth, data-logger (non-ported)",m,,NA NA,,,-1000000,-1000000,methods_fail; data logger
+"Depth, data-logger (ported)",m,,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,-1000000,-1000000,methods_fail; data logger
+Depth,m/sec,,NA NA,,,-1000000,-1000000,units_fail
+Depth,mg,,21FLSUW_WQX FS 2100,Surface Water Sampling,,-1000000,-1000000,units_fail
