@@ -1,18 +1,24 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Escherichia,CFU,,APHA 9223-B,,,1,1,APHA 9223-B
+Escherichia,cfu/100ml,,21MICH MDEQ-EPA,,,1,1,methods_unknown
 Escherichia coli,#/100L,,APHA_SM22ED 9223-B,9223 B ~ Enzyme Substrate Test,,-1000000,-1000000,units_fail
 Escherichia coli,#/100ml,#/100ml,APHA 9213-D,9213 D ~ E. coli method,,-1000000,-1000000,units_fail
 Escherichia coli,#/100ml,#/100ml,APHA 9213D,9213 D ~ E. coli by Membrane filtration plating on mTEC agar,,-1000000,-1000000,units_fail
 Escherichia coli,#/100ml,#/100ml,APHA 9223-B,9223 B ~ Enzyme substrate assay for measuring total coliforms and E. coli (ONPG-MUG test or CPRG-MUG test),,-1000000,-1000000,units_fail
+Escherichia coli,#/100ml,CFU,21IOWA_WQX APHA 9222 G,Fecal coliform- MF Partition Procedures,,-1000000,-1000000,units_fail
+Escherichia coli,#/100ml,CFU,21IOWA_WQX Unknown,Unknown,,-1000000,-1000000,units_fail
+Escherichia coli,#/100ml,CFU,APHA 9213-D,9213 D ~ E. coli method,,-1000000,-1000000,units_fail
+Escherichia coli,#/100ml,CFU,NA NA,,,-1000000,-1000000,units_fail
+Escherichia coli,#/100ml,cfu/100ml,21IOWA APHA 9222 G,,,-1000000,-1000000,units_fail
 Escherichia coli,#/100ml,,APHA 9223-B,,,-1000000,-1000000,units_fail
 Escherichia coli,#/100ml,,HACH 10029,,,-1000000,-1000000,units_fail
 Escherichia coli,#/100ml,,NA NA,,,-1000000,-1000000,units_fail
+Escherichia coli,#/100ml,,USEPA 9213,Cyanide in Water by ISE,,-1000000,-1000000,units_fail
 Escherichia coli,#/ml,#/100ml,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1000000,-1000000,units_fail
 Escherichia coli,#/ml,,IDEXX COLILERT,Coliform/E. coli Enzyme substrate test; ONPG-MUG test,,-1000000,-1000000,units_fail
-Escherichia,CFU,,APHA 9223-B,,,1,1,APHA 9223-B
 Escherichia coli,CFU,CFU,NA NA,,,1,1,methods_unknown
 Escherichia coli,CFU,,APHA 9223-B,,,1,1,APHA 9223-B
 Escherichia coli,CFU,,NA NA,,,1,1,methods_unknown
-Escherichia,cfu/100ml,,21MICH MDEQ-EPA,,,1,1,methods_unknown
 Escherichia coli,cfu/100ml,#/100ml,USEPA 1603,Escherichia coli in Water by Membrane Filtration Using Modified membrane-Thermotolerant E. coli Agar (Modified mTEC),,1,-1000000,EPA 1603
 Escherichia coli,cfu/100ml,#/100ml,USEPA 1603,,,1,1,EPA 1603
 Escherichia coli,cfu/100ml,cfu/100ml,21ARIZ COLILERT,,,1,1,COLILERT test

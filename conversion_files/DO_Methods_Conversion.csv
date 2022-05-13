@@ -1,14 +1,24 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Dissolved oxygen (DO),%,%,21ARIZ FIELD,,,-1000000,-1000000,units_fail
-Dissolved oxygen (DO),%,,11NPSWRD_WQX NPS_YSI85,"YSI Model 85 DO, Conductivity, Salinity, Temperature Instrument",,-1000000,-1000000,units_fail
-Dissolved oxygen (DO),%,,11NPSWRD_WQX SFAN_SOP_5,Field Methods for Measurement of Core Parameters,,-1000000,-1000000,units_fail
-Dissolved oxygen (DO),%,,21ARIZ FIELD,,,-1000000,-1000000,units_fail
-Dissolved oxygen (DO),%,,21ARIZ UNKNOWN,,,-1000000,-1000000,units_fail
-Dissolved oxygen (DO),%,,21FLPDEM_WQX FT 1000,Field Measurements and Observations,,-1000000,-1000000,units_fail
-Dissolved oxygen (DO),%,,21VASWCB 2500-O G,Oxygen by Membrane Electrode Method Standard Methods 20 ed,,-1000000,-1000000,units_fail
-Dissolved oxygen (DO),%,,CHEROKEE_WQX CN_QAPP,CN_QAPP,,-1000000,-1000000,units_fail
-Dissolved oxygen (DO),%,,NA NA,,,-1000000,-1000000,units_fail
-Dissolved oxygen (DO),mg,,NA NA,,,-1000000,-1000000,units_fail
+Dissolved oxygen (DO),%,%,21ARIZ FIELD,,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),%,,11NPSWRD_WQX NPS_YSI85,"YSI Model 85 DO, Conductivity, Salinity, Temperature Instrument",,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),%,,11NPSWRD_WQX SFAN_SOP_5,Field Methods for Measurement of Core Parameters,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),%,,21ARIZ FIELD,,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),%,,21ARIZ UNKNOWN,,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),%,,21FLPDEM_WQX FT 1000,Field Measurements and Observations,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),%,,21VASWCB 2500-O G,Oxygen by Membrane Electrode Method Standard Methods 20 ed,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),%,,CHEROKEE_WQX CN_QAPP,CN_QAPP,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),%,,INSTOR_WQX SM4500-OG,SM4500-OG,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),%,,NA NA,,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),deg C,,NA NA,,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),deg F,,NA NA,,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),g/l,,NA NA,,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),mg,,NA NA,,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),mg/l,mg/l,11NPSWRD_WQX CACO_DO_WINK_75,DO by Winkler Titration in 1975,,1,1.00E+00,methods_WQX
+Dissolved oxygen (DO),mg/l,mg/l,11NPSWRD_WQX CACO_DO_YSIWINK,DO by YSI or Winkler Titration,,1,1.00E+00,methods_WQX
+Dissolved oxygen (DO),mg/l,mg/l,11NPSWRD_WQX CACO_WINK_DO,DO by Winkler Titration,,1,1.00E+00,methods_WQX
+Dissolved oxygen (DO),mg/l,mg/l,11NPSWRD_WQX NPS_HYDROLA_H2O,Hydrolab H2O,,1,1.00E+00,methods_WQX
+Dissolved oxygen (DO),mg/l,mg/l,11NPSWRD_WQX NPS_YSI6820,YSI 6820 Multi-parameter Water Quality Sonde,,1,1.00E+00,methods_WQX
+Dissolved oxygen (DO),mg/l,mg/l,11NPSWRD_WQX NPS_YSIDOUNKNOW,YSI Unknown Model DO Meter,,1,1.00E+00,methods_WQX
 Dissolved oxygen (DO),mg/l,mg/l,11NPSWRD_WQX SFAN_SOP_5,Field Methods for Measurement of Core Parameters,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,mg/l,21ARIZ FIELD,,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,mg/l,21FLCOSP_WQX FDEP FT1500,FDEP FT1500,,1,1,methods_WQX
@@ -16,7 +26,7 @@ Dissolved oxygen (DO),mg/l,mg/l,21FLLCPC_WQX SM4500OG,DISSOLVED OXYGEN,,1,1,APHA
 Dissolved oxygen (DO),mg/l,mg/l,21FLMANA GENERIC,,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,mg/l,21FLMANA_WQX GENERIC,General Listing of Field and Lab Analytical Procedures for Manatee County,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,mg/l,21FLMCGL SOP-1,,,1,1,methods_unknown
-Dissolved oxygen (DO),mg/l,mg/l,21FLORAN EPA200.7,,,-1000000,-1000000,methods_fail
+Dissolved oxygen (DO),mg/l,mg/l,21FLORAN EPA200.7,,,-1000000,-1.00E+06,methods_fail
 Dissolved oxygen (DO),mg/l,mg/l,21FLORAN FT1500,,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,mg/l,21FLORAN_WQX FT1500,Field Measurement of Dissolved Oxygen,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,mg/l,21FLORL FT_1500,,,1,1,methods_unknown
@@ -28,39 +38,68 @@ Dissolved oxygen (DO),mg/l,mg/l,21FLSEM_WQX FDEP FT1500,FDEP FT1500,,1,1,methods
 Dissolved oxygen (DO),mg/l,mg/l,21FLSEM_WQX FT1500,Dissolved Oxygen (DO) by FDEP Standards,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,mg/l,21FLSFWM WQ-1,,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,mg/l,21FLWPB_WQX 4500,STANDARD METHODS 4500 - DISSOLVED OXYGEN BY PROBE,,1,1,APHA 4500
-Dissolved oxygen (DO),mg/l,mg/l,21FLWPB_WQX 4500F,STANDARD METHODS 4500F - FLUORIDE,,-1000000,-1000000,methods_fail
+Dissolved oxygen (DO),mg/l,mg/l,21FLWPB_WQX 4500F,STANDARD METHODS 4500F - FLUORIDE,,-1000000,-1.00E+06,methods_fail
 Dissolved oxygen (DO),mg/l,mg/l,21FLWPB_WQX FT_1500,FIELD MEASUREMENT OF DISSOLVED OXYGEN,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,mg/l,21IOWA_WQX ISU 4500-O-G,ISU modification of APHA 4500-O-G,,1,1,APHA 4500-O G
 Dissolved oxygen (DO),mg/l,mg/l,21IOWA_WQX Unknown,Unknown,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,mg/l,21NC03WQ WSSSOP,WSSSOP,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,mg/l,APHA 4500-O-C,4500 O C ~ Total Dissolved Oxygen by Titration- Azide Modification,,1,1,APHA 4500-O C
 Dissolved oxygen (DO),mg/l,mg/l,APHA 4500-O-G,4500 O G ~ Total Dissolved Oxygen by Membrane Electrode Method,,1,1,APHA 4500-O G
+Dissolved oxygen (DO),mg/l,mg/l,APHA 4500-O-G,,,1,1,APHA 4500-O G
+Dissolved oxygen (DO),mg/l,mg/l,ASTM D888(B),D888 B  ~ Dissolved Oxygen by Instrumental Probe,,1,1,APHA 4500-O G
 Dissolved oxygen (DO),mg/l,mg/l,ASTM D888(C),D888 C  ~ Dissolved Oxygen by Luminescence-based Sensor,,1,1,ASTM D888
 Dissolved oxygen (DO),mg/l,mg/l,AZDEQ_SW FIELD,FIELD,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,mg/l,HACH 10360,Luminescence Measurement of Dissolved Oxygen in Water and Wastewater and for Use in the Determination of BOD5 and cBOD5,,1,1,methods_unknown
+Dissolved oxygen (DO),mg/l,mg/l,HACH 8157,Dissolved Oxygen in Water,,1,1,
 Dissolved oxygen (DO),mg/l,mg/l,HACH 8229,Dissolved Oxygen in Water,,1,1,methods_unknown
+Dissolved oxygen (DO),mg/l,mg/l,INSTOR_WQX ASTM D888-09(C),ASTM D888-09(C),,1,1,
+Dissolved oxygen (DO),mg/l,mg/l,INSTOR_WQX SM4500-OG,SM4500-OG,,1,1,
 Dissolved oxygen (DO),mg/l,mg/l,MASSDEP FIELD MEAS,Field measurement of water quality parameters using in-situ probes,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,mg/l,NA NA,,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,mg/l,OREGONDEQ MOM grab,Field methods for DEQ Water sampling,,1,1,methods_unknown
+Dissolved oxygen (DO),mg/l,mg/l,SDDENR_WQX field,UNKOWN,,1,1,
 Dissolved oxygen (DO),mg/l,mg/l,SDWRAP WRAPFLD,,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,mg/l,USDOI/USGS NFM 6.2.1-LUM,"Dissolved-oxygen concentration, field measurement by luminescent sensor",,1,1,methods_unknown
-Dissolved oxygen (DO),mg/l,mg/l,USEPA 310.1,Alkalinity by Titration,,-1000000,-1000000,methods_fail
+Dissolved oxygen (DO),mg/l,mg/l,USEPA 310.1,Alkalinity by Titration,,-1000000,-1.00E+06,methods_fail
 Dissolved oxygen (DO),mg/l,mg/l,USEPA 360.1,Dissolved Oxygen Using an ISE,,1,1,EPA 360.1; Reported as dissolved oxygen by membrane electrode
 Dissolved oxygen (DO),mg/l,mg/l,USEPA 360.1,,,1,1,EPA 360.1; Reported as dissolved oxygen by membrane electrode
 Dissolved oxygen (DO),mg/l,mg/l,USEPA 360.2,Dissolved Oxygen by Winkler Technique,,1,1,EPA 360.2; Reported as dissolved oxygen by membrWinklere electrode
 Dissolved oxygen (DO),mg/l,mg/l,USEPA 360.2,,,1,1,EPA 360.2; Reported as dissolved oxygen by membrWinklere electrode
 Dissolved oxygen (DO),mg/l,mg/l,YSI 120.1,Direct Measurement Method,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,None,APHA 4500-O-G,4500 O G ~ Total Dissolved Oxygen by Membrane Electrode Method,,1,1,APHA 4500-O G
+Dissolved oxygen (DO),mg/l,ug/l,USEPA 360.1,,,1,1,
 Dissolved oxygen (DO),mg/l,umho/cm,21IOWA_WQX Unknown,Unknown,,1,-1.00E+06,methods_WQX
+Dissolved oxygen (DO),mg/l,umho/cm,NA NA,,,1,-1.00E+06,
+Dissolved oxygen (DO),mg/l,,11113300 UNKNOWN,EXACT FIELD OR LAB METHOD IS UNKNOWN,,1,-1.00E+06,
 Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX CUPN_YSI_PROODO,YSI ProODO Item #626279,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX CURE_HYDROLAB_MS5,Hydrolab MS5 Multiprobe with LDO Sensor,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX GLKN_HL_DS4X,Multiprobe Field Analysis,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX GLKN_HL_DS5.0,Multiprobe Field Analysis Hydrolab DS5.0,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX GLKN_HL_DS5X,Multiprobe Field Analysis,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX GLKN_HL_MS5.0,Multiprobe Field Analysis,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX GLKN_MM774,Multiprobe Field Analysis with Eureka Manta MM774,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX GLKN_MM775,Multiprobe Field Analysis with Eureka Manta MM775,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX GLKN_MT132,Multiprobe Field Analysis with Eureka Manta M09050132,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX GLKN_MT318,Multiprobe Field Analysis with Eureka Manta M080600318,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX GLKN_MT603,Multiprobe Field Analysis with Eureka Manta MT01193603,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX GLKN_MT888,Multiprobe Field Analysis with Eureka Manta MT08193888,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX GLKN_MY938,Multiprobe Field Analysis with Eureka Manta MY938,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX GLKN_YSI650MDS,Multiprobe Field Analysis with YSI Model 650 MDS,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX GLKN_YSI6820,Multiprobe Field Analysis with YSI Model 6820,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX GLKN_YSI6920,Multiprobe Field Analysis with YSI Model 6920,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX GLKN_YSIPROPLUS,Multiprobe Field Analysis with YSI ProPlus,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX NETN_EXO1,Northeast Temperate Network EXO1 Multiparameter Sonde,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX NETN_YSI52,Northeast Temperate Network YSI52 Multiparameter Sonde,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX NETN_YSI600,Northeast Temperate Network YSI600 Multiparameter Sonde,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX NPS_HYDR_M&D_4A,Hydrolab MiniSonde 4a or Hydrolab DataSonde 4a,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX NPS_HYDRLAB_MS,Hydrolab MiniSonde Data Logger Probes,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX NPS_INSITU_AT600,Field Measurements by In-Situ Aqua TROLL 600,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX NPS_INTROLL9000,In-Situ TROLL 9000 Multi-Parameter Water Quality Monitor,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX NPS_MISSING,Procedure not Required when Result Entered into National Database,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX NPS_SM14_WINKDO,Dissolved Oxygen Winkler Method-Standard Methods 14th Edition,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX NPS_UNSPECIFIED,Unknown or Unspecified Procedure,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX NPS_YSI50B,YSI Portable Dissolved Oxygen Meter,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX NPS_YSI556MPS,YSI Model 556 Multiprobe System,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,11NPSWRD_WQX NPS_YSI57,YSI Model 57 DO Meter,,1,1,methods_WQX
@@ -77,6 +116,7 @@ Dissolved oxygen (DO),mg/l,,21FLA_WQX FDEP FT1500,FDEP FT1500,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21FLA_WQX FT_1500,Dissolved Oxygen,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21FLACEP_WQX FDEP FT1500,FDEP FT1500,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21FLALTA_WQX FT1500,Field Measurement of Dissolved Oxygen,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,21FLBRA FT 1500,,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21FLBREV FT1500,,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,,21FLCBA_WQX FIELD,Field Measurments,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21FLCEN_WQX FDEP FT1500,FDEP FT1500,,1,1,methods_WQX
@@ -128,8 +168,10 @@ Dissolved oxygen (DO),mg/l,,21FLSFWM WQ-1,,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,,21FLSFWM_WQX SFWMD-FSQM,SFWMD-FSQM,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21FLSFWM_WQX SFWMD FSQM,SFWMD FSQM,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,21FLSJWM OTHER/UNKNOWN,,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21FLSJWM_WQX ASTM D888,ASTM D888,,1,1,ASTM D888
 Dissolved oxygen (DO),mg/l,,21FLSJWM_WQX OTHER/UNKNOWN,Other or Unknown Procedure,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,21FLSUW FT 1500,,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21FLSUW_WQX ASTM D888,ASTM D888,,1,1,ASTM D888
 Dissolved oxygen (DO),mg/l,,21FLSUW_WQX FT 1500,Field Measurement of Dissolved Oxygen,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21FLSUW_WQX OTHER/UNKNOWN,Other of Unknown Procedure,,1,1,methods_WQX
@@ -153,15 +195,19 @@ Dissolved oxygen (DO),mg/l,,21FLWQSP_WQX FDEP FT1500,FDEP FT1500,,1,1,methods_WQ
 Dissolved oxygen (DO),mg/l,,21FLWQSP_WQX FT_1500,FIELD MEASUREMENT OF DISSOLVED OXYGEN,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21FLWQSP_WQX FT1500,FT 1500 FIELD MEASUREMENT OF DISSOLVED OXYGEN,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21GAEPD_WQX UNKNOWN,Procedure is unknown,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,21IND_WQX SM4500-OG,SM4500-OG,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21IOWA_WQX ISU 4500-O-G,ISU modification of APHA 4500-O-G,,1,1,APHA 4500-O G
 Dissolved oxygen (DO),mg/l,,21IOWA_WQX Unknown,Unknown,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21KAN001_WQX SM 12th Ed Pg 406,Iodometric Method,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21KY SM4500-O G,,,1,1,APHA 4500-O G
+Dissolved oxygen (DO),mg/l,,21MICH MDEQ-EPA,,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21NC01WQ UNKNOWN,,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,,21NC02WQ WQS SOP,,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,,21NC03WQ WSSSOP,WSSSOP,,1,1,methods_unknown
+Dissolved oxygen (DO),mg/l,,21NJDEP1 DO,,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,21VASWCB 2500-O G,Oxygen by Membrane Electrode Method Standard Methods 20 ed,,1,1,methods_unknown
-Dissolved oxygen (DO),mg/l,,APHA 4500-CL(B),4500 CL B  ~ Residual Chlorine in Water by Titration- Iodometric Method I,,-1000000,-1000000,methods_fail
+Dissolved oxygen (DO),mg/l,,AOAC 973.45,Oxygen (Dissolved) in Water,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,APHA 4500-CL(B),4500 CL B  ~ Residual Chlorine in Water by Titration- Iodometric Method I,,-1000000,-1.00E+06,methods_fail
 Dissolved oxygen (DO),mg/l,,APHA 4500-O-B,,,1,1,APHA 4500-O B
 Dissolved oxygen (DO),mg/l,,APHA 4500-O-C,4500 O C ~ Total Dissolved Oxygen by Titration- Azide Modification,,1,1,APHA 4500-O C
 Dissolved oxygen (DO),mg/l,,APHA 4500-O-G,4500 O G ~ Total Dissolved Oxygen by Membrane Electrode Method,,1,1,APHA 4500-O G
@@ -173,32 +219,45 @@ Dissolved oxygen (DO),mg/l,,AZDEQ_SW FIELD,FIELD,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,,AZDEQ_SW SM 4500-OG,SM 4500-OG,,1,1,APHA 4500-O G
 Dissolved oxygen (DO),mg/l,,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,,CAPECRD_WQX ASTM D888,ASTM D888,,1,1,ASTM D888
-Dissolved oxygen (DO),mg/l,,CEDEN 11,EPA 600/4-91-002M,,-1000000,-1000000,methods_fail; toxicity tests
-Dissolved oxygen (DO),mg/l,,CEDEN 131,EPA 821/R-02-012M,,-1000000,-1000000,methods_fail; toxicity tests
-Dissolved oxygen (DO),mg/l,,CEDEN 136,EPA 600/R-94-025,,-1000000,-1000000,methods_fail; toxicity tests
-Dissolved oxygen (DO),mg/l,,CEDEN 140,EPA 600/R-99-064,,-1000000,-1000000,methods_fail; toxicity tests
-Dissolved oxygen (DO),mg/l,,CEDEN 162,EPA 821/R-02-012,,-1000000,-1000000,methods_fail; toxicity tests
-Dissolved oxygen (DO),mg/l,,CEDEN 214,EPA 600/R-95-136,,-1000000,-1000000,methods_fail; toxicity tests
-Dissolved oxygen (DO),mg/l,,CEDEN 84,EPA 600/R-95-136M,,-1000000,-1000000,methods_fail; toxicity tests
-Dissolved oxygen (DO),mg/l,,CEDEN 85,EPA 600/R-99-064M,,-1000000,-1000000,methods_fail; toxicity tests
+Dissolved oxygen (DO),mg/l,,CEDEN 11,EPA 600/4-91-002M,,-1000000,-1.00E+06,methods_fail; toxicity tests
+Dissolved oxygen (DO),mg/l,,CEDEN 131,EPA 821/R-02-012M,,-1000000,-1.00E+06,methods_fail; toxicity tests
+Dissolved oxygen (DO),mg/l,,CEDEN 136,EPA 600/R-94-025,,-1000000,-1.00E+06,methods_fail; toxicity tests
+Dissolved oxygen (DO),mg/l,,CEDEN 140,EPA 600/R-99-064,,-1000000,-1.00E+06,methods_fail; toxicity tests
+Dissolved oxygen (DO),mg/l,,CEDEN 162,EPA 821/R-02-012,,-1000000,-1.00E+06,methods_fail; toxicity tests
+Dissolved oxygen (DO),mg/l,,CEDEN 214,EPA 600/R-95-136,,-1000000,-1.00E+06,methods_fail; toxicity tests
+Dissolved oxygen (DO),mg/l,,CEDEN 84,EPA 600/R-95-136M,,-1000000,-1.00E+06,methods_fail; toxicity tests
+Dissolved oxygen (DO),mg/l,,CEDEN 85,EPA 600/R-99-064M,,-1000000,-1.00E+06,methods_fail; toxicity tests
 Dissolved oxygen (DO),mg/l,,CHEROKEE CN_QAPP,,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,,CHEROKEE_WQX CN_QAPP,CN_QAPP,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,COE/ISU APHA 4500-O C,,,1,1,
+Dissolved oxygen (DO),mg/l,,COE/ISU_WQX APHA 4500-O C,Oxygen (dissolved) - Azide Modification,,1,1,
 Dissolved oxygen (DO),mg/l,,CSU_FISHERIESECOLOGYLAB FISH,CSU,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,,EPA_R7_WQX 2334.04,Field sampling params.,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,EPA_R7_WQX DO W Field,Total Dissolved Oxygen in Water by Field Measurement,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,EPA_R7_WQX field,Field Measure,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,HACH 10360,Luminescence Measurement of Dissolved Oxygen in Water and Wastewater and for Use in the Determination of BOD5 and cBOD5,,1,1,
 Dissolved oxygen (DO),mg/l,,HACH 8157,Dissolved Oxygen in Water,,1,1,HACH 8157
 Dissolved oxygen (DO),mg/l,,HACH 8157,,,1,1,HACH 8157
 Dissolved oxygen (DO),mg/l,,HACH 8229,Dissolved Oxygen in Water,,1,1,HACH 8229
 Dissolved oxygen (DO),mg/l,,HACH 8229,,,1,1,HACH 8229
+Dissolved oxygen (DO),mg/l,,IL_EPA FIELD,,,1,1,
+Dissolved oxygen (DO),mg/l,,IL_EPA_WQX FIELD,MEASURED IN FIELD,,1,1,
+Dissolved oxygen (DO),mg/l,,INSTOR_WQX 360.1,360.1,,1,1,
+Dissolved oxygen (DO),mg/l,,INSTOR_WQX ASTM D888-09(C),ASTM D888-09(C),,1,1,
+Dissolved oxygen (DO),mg/l,,INSTOR_WQX SM4500-OG,SM4500-OG,,1,1,
+Dissolved oxygen (DO),mg/l,,IOWATER CHEMPHYS,,,-1000000,-1000000,
+Dissolved oxygen (DO),mg/l,,IOWATER_WQX CHEMPHYS,IOWATER Chemical/Physical Assessment,,-1000000,-1000000,
 Dissolved oxygen (DO),mg/l,,KAWNATON KAW_SOP,,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,,KAWNATON_WQX 360.1,Dissolved Oxygen Using an ISE,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,KWMNDATA LAMOTTE 5860,,,1,1,
 Dissolved oxygen (DO),mg/l,,LADEQWPD LDEQ-FMO,,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,,LAKELAND DEP SOP FT 1500,,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,,LAKELAND OXYGEN,,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,,LAKELAND_WQX DEP SOP FT 1500,Field Dissolved Oxygen,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,LAKELAND_WQX FDEP FT1500,FDEP FT1500,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,MCHD See QA Plan,See QA Plan for this Project,,1,1,
 Dissolved oxygen (DO),mg/l,,MDEQ_WQ_WQX UNKNOWN-MDEQ-WQ,Unknown Method or Procedure,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,MNPCA DO PROBE,"Dissolved Oxygen, Membrane Electrode Method",,1,1,
 Dissolved oxygen (DO),mg/l,,MNPCA DO WINKLER,"Dissolved Oxygen, Iodometric Method with Azide Modification",,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,,MNPCA FLD,"Field measurement/observation, generic method",,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1,1,methods_WQX
@@ -206,40 +265,55 @@ Dissolved oxygen (DO),mg/l,,MTWTRSHD_WQX HYDROLAB-MTWTRSHD,Field Measurements Us
 Dissolved oxygen (DO),mg/l,,MTWTRSHD_WQX UNKNOWN-MTWTRSHD,Unknown Method or Procedure,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,,NA NA,,,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,,OREGONDEQ Not Available,Not Available,,1,1,methods_unknown
+Dissolved oxygen (DO),mg/l,,PIIC_WQX PIIC_QAPP,PIIC_QAPP,,1,1,
+Dissolved oxygen (DO),mg/l,,PTI_ITS_WQX YSI Meter 556,YSI Model 556 Multiparameter Meter,,1,1,
 Dissolved oxygen (DO),mg/l,,R10BUNKER DO-USGS,DO-USGS,,1,1,methods_unknown; Reported as dissolved oxygen
+Dissolved oxygen (DO),mg/l,,SDDENR_WQX UNKNOWN,UNKNOWN,,1,1,
 Dissolved oxygen (DO),mg/l,,SDDENR_WQX UNKOWN,UNKOWN,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,,STCROIX_WQX UNKWN,Unknown method - historic STORET DATA,,1,1,
+Dissolved oxygen (DO),mg/l,,STOCKBRIDGE_MUNSEE SMC_4500-O-G,Total Dissolved Oxygen by Membrane Electrode Method,,1,1,
 Dissolved oxygen (DO),mg/l,,TDECWPC 1DO,,,1,1,methods_unknown; Reported as dissolved oxygen by membrane electrode
 Dissolved oxygen (DO),mg/l,,USDOI/USGS NFM 6.2.1-LUM,"Dissolved-oxygen concentration, field measurement by luminescent sensor",,1,1,methods_unknown
 Dissolved oxygen (DO),mg/l,,USEPA 1002-8-2009,Dissolved Oxygen (DO) Measurement by Optical Probe,,1,1,EPA 1002-8-2009; Reported as dissolved oxygen by membrane electrode
+Dissolved oxygen (DO),mg/l,,USEPA 160.1_M,160.1 M ~ Total Dissolved Solids,,1,1,
 Dissolved oxygen (DO),mg/l,,USEPA 360.1,Dissolved Oxygen Using an ISE,,1,1,EPA 360.1; Reported as dissolved oxygen by membrane electrode
 Dissolved oxygen (DO),mg/l,,USEPA 360.1,,,1,1,EPA 360.1; Reported as dissolved oxygen by membrane electrode
 Dissolved oxygen (DO),mg/l,,USEPA 360.2,Dissolved Oxygen by Winkler Technique,,1,1,EPA 360.2; Reported as dissolved oxygen by membrWinklere electrode
-Dissolved oxygen (DO),mg/l,,USEPA 9050,Specific Conductance,,-1000000,-1000000,methods_fail
+Dissolved oxygen (DO),mg/l,,USEPA 9050,Specific Conductance,,-1000000,-1.00E+06,methods_fail
 Dissolved oxygen (DO),mg/l,,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,methods_WQX
-Dissolved oxygen (DO),ml/l,,MDEQ_WQ_WQX UNKNOWN-MDEQ-WQ,Unknown Method or Procedure,,-1000000,-1000000,units_fail
-Dissolved oxygen (DO),None,,EPA_R7_WQX DO W Field,Total Dissolved Oxygen in Water by Field Measurement,,-1000000,-1000000,units_fail
+Dissolved oxygen (DO),mg/l,,WEARTH_WQX FLD,"Field measurement/observation, generic method",,1,1,
+Dissolved oxygen (DO),mg/l,,YSI 120.1,Direct Measurement Method,,1,1,
+Dissolved oxygen (DO),ml/l,,MDEQ_WQ_WQX UNKNOWN-MDEQ-WQ,Unknown Method or Procedure,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),mS/cm,mS/cm,USEPA 9050,Specific Conductance,,-1000000,-1.00E+06,
+Dissolved oxygen (DO),None,,EPA_R7_WQX DO W Field,Total Dissolved Oxygen in Water by Field Measurement,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),ppm,,KWMNDATA YSI DO,,,-1000000,-1.00E+06,
 Dissolved oxygen (DO),ppm,,NA NA,,,1,1,methods_unknown
-Dissolved oxygen (DO),ppt,,NA NA,,,-1000000,-1000000,units_fail
-Dissolved oxygen (DO),ug/l,,NA NA,,,-1000000,-1000000,units_fail
-Dissolved oxygen (DO),umho/cm,,NA NA,,,-1000000,-1000000,units_fail
-Dissolved oxygen (DO),uS/cm,,NA NA,,,-1000000,-1000000,units_fail
-Dissolved oxygen (DO),uS/cm,,USEPA 1002-8-2009,Dissolved Oxygen (DO) Measurement by Optical Probe,,-1000000,-1000000,units_fail
-Oxygen,% saturatn,,NA NA,,301,-1000000,-1000000,units_fail
-Oxygen,% saturatn,,USGS 3,,301,-1000000,-1000000,units_fail
-Oxygen,% saturatn,,USGS B,,301,-1000000,-1000000,units_fail
-Oxygen,% saturatn,,USGS E,,301,-1000000,-1000000,units_fail
-Oxygen,% saturatn,,USGS F,,301,-1000000,-1000000,units_fail
-Oxygen,% saturatn,,USGS G0019,No information exists for method,301,-1000000,-1000000,units_fail
-Oxygen,% saturatn,,USGS I,,301,-1000000,-1000000,units_fail
+Dissolved oxygen (DO),ppt,,NA NA,,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),ug/l,,NA NA,,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),umho/cm,,NA NA,,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),uS/cm,,NA NA,,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),uS/cm,,USEPA 1002-8-2009,Dissolved Oxygen (DO) Measurement by Optical Probe,,-1000000,-1.00E+06,units_fail
+Dissolved oxygen (DO),,,APHA 4500-O-G,,,-1000000,-1.00E+06,units_fail
+Oxygen,% saturatn,,NA NA,,301,-1000000,-1.00E+06,units_fail
+Oxygen,% saturatn,,USGS 3,,301,-1000000,-1.00E+06,units_fail
+Oxygen,% saturatn,,USGS B,,301,-1000000,-1.00E+06,units_fail
+Oxygen,% saturatn,,USGS CAL35,"DO saturation, wu, multimeter",301,-1000000,-1.00E+06,units_fail
+Oxygen,% saturatn,,USGS E,,301,-1000000,-1.00E+06,units_fail
+Oxygen,% saturatn,,USGS F,,301,-1000000,-1.00E+06,units_fail
+Oxygen,% saturatn,,USGS G0019,No information exists for method,301,-1000000,-1.00E+06,units_fail
+Oxygen,% saturatn,,USGS I,,301,-1000000,-1.00E+06,units_fail
+Oxygen,mg/l,mg/l,APHA 4500-H+B,"4500 H+B ~ pH in Water by Potentiometry, pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode",,1,1.00E+00,
 Oxygen,mg/l,,21KAN001_WQX SM 12th Ed Pg 406,Iodometric Method,,1,1,methods_WQX
+Oxygen,mg/l,,AOAC 973.45,Oxygen (Dissolved) in Water,,1,1.00E+00,
 Oxygen,mg/l,,CHATFLD HORRIBU U-10,,,1,1,methods_unknown
 Oxygen,mg/l,,NA NA,,300,1,1,"USGS_00300; Dissolved oxygen, water, unfiltered, milligrams per liter"
 Oxygen,mg/l,,NA NA,,90300,1,1,"USGS_90300; Dissolved oxygen, water, unfiltered, area weighted average, milligrams per liter"
 Oxygen,mg/l,,NA NA,,,1,1,methods_unknown
-Oxygen,mg/l,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,methods_fail
+Oxygen,mg/l,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1.00E+06,methods_fail
 Oxygen,mg/l,,USEPA 360.1,Dissolved Oxygen Using an ISE,,1,1,EPA 360.1; Reported as dissolved oxygen by membrane electrode
 Oxygen,mg/l,,USGS 0,,300,1,1,"USGS_00300; Dissolved oxygen, water, unfiltered, milligrams per liter"
 Oxygen,mg/l,,USGS 2,,300,1,1,"USGS_00300; Dissolved oxygen, water, unfiltered, milligrams per liter"
+Oxygen,mg/l,,USGS 4,,300,1,1,
 Oxygen,mg/l,,USGS AZIDE,"Diss oxygen, azide-mod Winkler",300,1,1,"USGS_00300; Dissolved oxygen, water, unfiltered, milligrams per liter"
 Oxygen,mg/l,,USGS G0017,No information exists for method,300,1,1,"USGS_00300; Dissolved oxygen, water, unfiltered, milligrams per liter"
 Oxygen,mg/l,,USGS G0018,No information exists for method,300,1,1,"USGS_00300; Dissolved oxygen, water, unfiltered, milligrams per liter"
@@ -248,7 +322,7 @@ Oxygen,mg/l,,USGS INDKT,"DO, indigo carmine field kit",300,1,1,"USGS_00300; Diss
 Oxygen,mg/l,,USGS LUMIN,"Diss oxygen, luminescence sensor",300,1,1,"USGS_00300; Dissolved oxygen, water, unfiltered, milligrams per liter"
 Oxygen,mg/l,,USGS MEMBR,"Diss oxygen, membrane electrode",300,1,1,"USGS_00300; Dissolved oxygen, water, unfiltered, milligrams per liter"
 Oxygen,mg/l,,USGS Q,,300,1,1,"USGS_00300; Dissolved oxygen, water, unfiltered, milligrams per liter"
-Oxygen,None,,NA NA,,,-1000000,-1000000,units_fail
-Oxygen,None,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,units_fail
-Oxygen,nu,,NA NA,,,-1000000,-1000000,units_fail
-Oxygen,nu,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,units_fail
+Oxygen,None,,NA NA,,,-1000000,-1.00E+06,units_fail
+Oxygen,None,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1.00E+06,units_fail
+Oxygen,nu,,NA NA,,,-1000000,-1.00E+06,units_fail
+Oxygen,nu,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1.00E+06,units_fail
