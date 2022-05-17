@@ -1,13 +1,13 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Salinity,%,,KAWNATON KAW_SOP,,,-1000000,-1000000,units_fail
-Salinity,%,,NA NA,,,-1000000,-1000000,units_fail
-Salinity,0/00,,21FLPDEM FT 1000,,,-1000000,-1000000,units_fail
-Salinity,0/00,,NA NA,,,-1000000,-1000000,units_fail
+Salinity,%,,KAWNATON KAW_SOP,,,-1.00E+06,-1.00E+06,units_fail
+Salinity,%,,NA NA,,,-1.00E+06,-1.00E+06,units_fail
+Salinity,0/00,,21FLPDEM FT 1000,,,-1.00E+06,-1.00E+06,units_fail
+Salinity,0/00,,NA NA,,,-1.00E+06,-1.00E+06,units_fail
 Salinity,g/l,,NA NA,,70305,1,1,"USGS_70305; Salinity, water, grams per liter"
 Salinity,g/l,,USGS CAL21,"Salinity, Great Salt Lake Equatn",70305,1,1,"USGS_70305; Salinity, water, grams per liter"
 Salinity,mg/l,,APHA 2520-C,,,0.001,0.001,APHA 2520-C
 Salinity,mg/l,,KAWNATON_WQX 2520-B,Salinity in Water- Electrical Conductivity Method,,0.001,0.001,APHA 2520-B
-Salinity,mg/l,,KAWNATON_WQX 2560-C,Particle Counting by Light-Blockage,,-1000000,-1000000,methods_fail
+Salinity,mg/l,,KAWNATON_WQX 2560-C,Particle Counting by Light-Blockage,,-1.00E+06,-1.00E+06,methods_fail
 Salinity,mg/mL @25C,,NA NA,,96,1,1,"USGS_00096; Salinity, water, unfiltered, milligrams per milliliter at 25 degrees Celsius"
 Salinity,ppm,,NA NA,,,0.001,0.001,methods_unknown
 Salinity,ppt,mg/l,APHA 2520-C,2520 C ~ Salinity in Water- Density Method,,1,0.001,APHA 2520-C
@@ -19,23 +19,25 @@ Salinity,ppt,,21FLFTM_WQX FT_1300,Field measurement of Salinity,,1,1,methods_WQX
 Salinity,ppt,,21FLPDEM_WQX FT 1000,Field Measurements and Observations,,1,1,methods_WQX
 Salinity,ppt,,21FLPNS_WQX SALINITY,Field Measurement of Salinity DEP SOP FT 1300,,1,1,methods_WQX
 Salinity,ppt,,APHA 2520-B,2520 B ~ Salinity in Water- Electrical Conductivity Method,,1,1,APHA 2520-B
-Salinity,ppt,,CEDEN 136,EPA 600/R-94-025,,-1000000,-1000000,methods_fail; chronic and acute toxicity tests
-Salinity,ppt,,CEDEN 214,EPA 600/R-95-136,,-1000000,-1000000,methods_fail; chronic and acute toxicity tests
-Salinity,ppt,,CEDEN 84,EPA 600/R-95-136M,,-1000000,-1000000,methods_fail; chronic and acute toxicity tests
+Salinity,ppt,,CEDEN 136,EPA 600/R-94-025,,-1.00E+06,-1.00E+06,methods_fail; chronic and acute toxicity tests
+Salinity,ppt,,CEDEN 214,EPA 600/R-95-136,,-1.00E+06,-1.00E+06,methods_fail; chronic and acute toxicity tests
+Salinity,ppt,,CEDEN 84,EPA 600/R-95-136M,,-1.00E+06,-1.00E+06,methods_fail; chronic and acute toxicity tests
 Salinity,ppt,,MNPCA FLD,"Field measurement/observation, generic method",,1,1,methods_unknown
 Salinity,ppt,,NA NA,,,1,1,methods_unknown
-Salinity,ppt,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,methods_fail
-Salinity,ppt,,USEPA 130.1,Total Hardness,,-1000000,-1000000,methods_fail
-Salinity,ppt,,USEPA 310.1,Alkalinity by Titration,,-1000000,-1000000,methods_fail
+Salinity,ppt,,TCEQMAIN N/A Calculation,N/A Calculation,,-1.00E+06,-1.00E+06,methods_fail
+Salinity,ppt,,USEPA 130.1,Total Hardness,,-1.00E+06,-1.00E+06,methods_fail
+Salinity,ppt,,USEPA 310.1,Alkalinity by Titration,,-1.00E+06,-1.00E+06,methods_fail
 Salinity,ppt,,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,methods_WQX
 Salinity,ppth,ppth,21FLMANA GENERIC,,,1,1,methods_unknown
 Salinity,ppth,ppth,21FLMANA_WQX GENERIC,General Listing of Field and Lab Analytical Procedures for Manatee County,,1,1,methods_WQX
 Salinity,ppth,ppth,APHA 2520-B,2520 B ~ Salinity in Water- Electrical Conductivity Method,,1,1,APHA 2520-B
+Salinity,ppth,,11113300 UNKNOWN,EXACT FIELD OR LAB METHOD IS UNKNOWN,,1,1,
 Salinity,ppth,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,methods_WQX
 Salinity,ppth,,11NPSWRD_WQX NPS_YSI85,"YSI Model 85 DO, Conductivity, Salinity, Temperature Instrument",,1,1,methods_WQX
 Salinity,ppth,,11NPSWRD_WQX SFAN_SOP_5,Field Methods for Measurement of Core Parameters,,1,1,methods_WQX
 Salinity,ppth,,21FLA_WQX FDEP FT1300,FDEP FT1300,,1,1,methods_WQX
 Salinity,ppth,,21FLA_WQX FT_1300,Salinity,,1,1,methods_WQX
+Salinity,ppth,,21FLBRA FT 1300,,,1,1,
 Salinity,ppth,,21FLBREV FT1300,,,1,1,methods_unknown
 Salinity,ppth,,21FLCBA_WQX FIELD,Field Measurments,,1,1,methods_WQX
 Salinity,ppth,,21FLCEN_WQX FDEP FT1300,FDEP FT1300,,1,1,methods_WQX
@@ -63,16 +65,17 @@ Salinity,ppth,,21FLSFWM WQ-1,,,1,1,methods_unknown
 Salinity,ppth,,21FLSJWM OTHER/UNKNOWN,,,1,1,methods_unknown
 Salinity,ppth,,21FLSJWM_WQX FDEP FT1300,FDEP FT1300,,1,1,methods_WQX
 Salinity,ppth,,21FLSJWM_WQX OTHER/UNKNOWN,Other or Unknown Procedure,,1,1,methods_WQX
+Salinity,ppth,,21FLSUW FT 1300,,,1,1,
 Salinity,ppth,,21FLSUW_WQX FDEP FT1300,FDEP FT1300,,1,1,methods_WQX
 Salinity,ppth,,21FLSUW_WQX FT 1300,Field Measurement of  Salinity,,1,1,methods_WQX
 Salinity,ppth,,21FLSUW_WQX OTHER/UNKNOWN,Other of Unknown Procedure,,1,1,methods_WQX
 Salinity,ppth,,21FLSWFD_WQX FT-1300,Field Measurement of Salinity,,1,1,methods_WQX
 Salinity,ppth,,21FLTLHR_WQX FDEP FT1300,FDEP FT1300,,1,1,methods_WQX
-Salinity,ppth,,21FLTLHR_WQX FT_1300,FIELD MEASUREMENT OF SPECIFIC CONDUCTANCE,,-1000000,-1000000,methods_fail
+Salinity,ppth,,21FLTLHR_WQX FT_1300,FIELD MEASUREMENT OF SPECIFIC CONDUCTANCE,,-1.00E+06,-1.00E+06,methods_fail
 Salinity,ppth,,21FLTPA_WQX FDEP FT1300,FDEP FT1300,,1,1,methods_WQX
 Salinity,ppth,,21FLTPA_WQX FT_1300,FIELD MEASUREMENT OF SALINITY,,1,1,methods_WQX
 Salinity,ppth,,21FLTPA_WQX FT1300,Salinity,,1,1,methods_WQX
-Salinity,ppth,,21FLTPA_WQX FT1400,Temperature,,-1000000,-1000000,methods_fail
+Salinity,ppth,,21FLTPA_WQX FT1400,Temperature,,-1.00E+06,-1.00E+06,methods_fail
 Salinity,ppth,,21FLVEMD_WQX FDEP FT1300,FDEP FT1300,,1,1,methods_WQX
 Salinity,ppth,,21FLVEMD_WQX MULTIPROBE,MULTIPROBE HYDROLAB FIELD MEASUREMENT,,1,1,methods_WQX
 Salinity,ppth,,21FLWET_WQX FT_1300,FIELD MEASUREMENT OF SALINITY,,1,1,methods_WQX
@@ -84,23 +87,27 @@ Salinity,ppth,,21FLWQSP_WQX FDEP FT1300,FDEP FT1300,,1,1,methods_WQX
 Salinity,ppth,,21NC01WQ UNKNOWN,,,1,1,methods_unknown
 Salinity,ppth,,21NC02WQ WQS SOP,,,1,1,methods_unknown
 Salinity,ppth,,21NC03WQ WSSSOP,WSSSOP,,1,1,methods_unknown
-Salinity,ppth,,APHA 2130,Turbidity in Water,,-1000000,-1000000,methods_fail
+Salinity,ppth,,APHA 2130,Turbidity in Water,,-1.00E+06,-1.00E+06,methods_fail
 Salinity,ppth,,APHA 2520-B,2520 B ~ Salinity in Water- Electrical Conductivity Method,,1,1,APHA 2520-B; Reported as salt ions
 Salinity,ppth,,LADEQWPD LDEQ-FMO,,,1,1,methods_unknown
+Salinity,ppth,,MCHD See QA Plan,See QA Plan for this Project,,1,1,
 Salinity,ppth,,NA NA,,480,1,1,"USGS_00480;   Salinity, water, unfiltered, parts per thousand"
 Salinity,ppth,,NA NA,,,1,1,methods_unknown
 Salinity,ppth,,OREGONDEQ Not Available,Not Available,,1,1,methods_unknown
-Salinity,ppth,,USEPA 120.1,Conductance,,-1000000,-1000000,methods_fail
-Salinity,ppth,,USEPA 120.1,,,-1000000,-1000000,methods_fail
+Salinity,ppth,,USEPA 120.1,Conductance,,-1.00E+06,-1.00E+06,methods_fail
+Salinity,ppth,,USEPA 120.1,,,-1.00E+06,-1.00E+06,methods_fail
 Salinity,ppth,,USGS 00094,Salinity,480,1,1,"USGS_00480;   Salinity, water, unfiltered, parts per thousand"
 Salinity,ppth,,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,methods_WQX
-Salinity,PSS,,21FLCOSP_WQX FDEP FT1300,FDEP FT1300,,-1000000,-1000000,units_fail
-Salinity,PSS,,21FLFTM_WQX FDEP FT1300,FDEP FT1300,,-1000000,-1000000,units_fail
-Salinity,PSS,,21FLSARA_WQX FT-1300,Field Measurement of Salinity,,-1000000,-1000000,units_fail
-Salinity,PSS,,CHEROKEE CN_QAPP,,,-1000000,-1000000,units_fail
-Salinity,PSS,,CHEROKEE_WQX CN_QAPP,CN_QAPP,,-1000000,-1000000,units_fail
-Salinity,PSS,,NA NA,,,-1000000,-1000000,units_fail
-Salinity,PSU,PSU,NA NA,,,-1000000,-1000000,units_fail
-Salinity,PSU,,11NPSWRD_WQX NPS_INSITU_AT600,Field Measurements by In-Situ Aqua TROLL 600,,-1000000,-1000000,units_fail
-Salinity,umho/cm,,21FLWPB_WQX FT_1300,FIELD MEASUREMENT OF SALINITY,,-1000000,-1000000,units_fail
-Salinity,uS/cm,,NA NA,,,-1000000,-1000000,units_fail
+Salinity,PSS,PSS,APHA 2520-B,2520 B ~ Salinity in Water- Electrical Conductivity Method,,-1.00E+06,-1.00E+06,units_fail
+Salinity,PSS,,21FLCOSP_WQX FDEP FT1300,FDEP FT1300,,-1.00E+06,-1.00E+06,units_fail
+Salinity,PSS,,21FLFTM_WQX FDEP FT1300,FDEP FT1300,,-1.00E+06,-1.00E+06,units_fail
+Salinity,PSS,,21FLSARA_WQX FT-1300,Field Measurement of Salinity,,-1.00E+06,-1.00E+06,units_fail
+Salinity,PSS,,APHA 2520-B,2520 B ~ Salinity in Water- Electrical Conductivity Method,,1.00E+00,1.00E+00,
+Salinity,PSS,,CHEROKEE CN_QAPP,,,-1.00E+06,-1.00E+06,units_fail
+Salinity,PSS,,CHEROKEE_WQX CN_QAPP,CN_QAPP,,-1.00E+06,-1.00E+06,units_fail
+Salinity,PSS,,NA NA,,,-1.00E+06,-1.00E+06,units_fail
+Salinity,PSU,PSU,NA NA,,,-1.00E+06,-1.00E+06,units_fail
+Salinity,PSU,,11NPSWRD_WQX NPS_INSITU_AT600,Field Measurements by In-Situ Aqua TROLL 600,,-1.00E+06,-1.00E+06,units_fail
+Salinity,PSU,,NA NA,,,-1.00E+06,-1.00E+06,units_fail
+Salinity,umho/cm,,21FLWPB_WQX FT_1300,FIELD MEASUREMENT OF SALINITY,,-1.00E+06,-1.00E+06,units_fail
+Salinity,uS/cm,,NA NA,,,-1.00E+06,-1.00E+06,units_fail
