@@ -10,20 +10,25 @@ Conductivity,mS/cm,,EPA_R7_WQX Cond Field,Conductivity Field Measure,,1000,1000,
 Conductivity,mS/cm,,EPA_R7_WQX field,Field Measure,,1000,1000,methods_WQX
 Conductivity,mS/cm,,HACH 8160,Conductivity in Water by Direct Measurement,,1000,1000,HACH 8160
 Conductivity,mS/cm,,NA NA,,,1000,1000,methods_unknown
+Conductivity,mS/cm,,STCROIX_WQX UNKWN,Unknown method - historic STORET DATA,,1000,1000,
 Conductivity,mS/cm,,USEPA 9050,Specific Conductance,,1000,1000,EPA 9050
+Conductivity,None,,NA NA,,,-1000000,-1000000,units_fail
+Conductivity,NTU,,NA NA,,,-1000000,-1000000,units_fail
 Conductivity,ppm,ppm,NA NA,,,-1000000,-1000000,units_fail
 Conductivity,ug/l,ug/l,USEPA 120.1,Conductance,,-1000000,-1000000,units_fail
 Conductivity,ug/l,,NA NA,,,-1000000,-1000000,units_fail
 Conductivity,umho,umho,USEPA 360.1,Dissolved Oxygen Using an ISE,,-1000000,-1000000,methods_fail
+Conductivity,umho,,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,-1000000,-1000000,methods_fail
 Conductivity,umho/cm,umho/cm,APHA 2510,Conductivity in Water,,1,1,APHA 2510
 Conductivity,umho/cm,umho/cm,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,1,1,APHA 2510
 Conductivity,umho/cm,umho/cm,OREGONDEQ MOM grab,Field methods for DEQ Water sampling,,1,1,methods_unknown
 Conductivity,umho/cm,umho/cm,USEPA 120.1,Conductance,,1,1,EPA 120.1
 Conductivity,umho/cm,umho/cm,USEPA 310.1,Alkalinity by Titration,,-1000000,-1000000,methods_fail
 Conductivity,umho/cm,umho/cm,USEPA 9050A,9050 A ~ Specific Conductance,,1,1,EPA 9050
-Conductivity,umho/cm,,APHA 2510,Conductivity in Water,,1,1,APHA 2510
+Conductivity,umho/cm,,21NYDECA_WQX UNKNOWN,UNKNOWN,,1,1,fdhklfdglk ndflk dfz';kldfvkl' dfb;k vf;nsfrl xdfvklnc xl; xsdfvl;sfxbl[
+Conductivity,umho/cm,,APHA 2510,Conductivity in Water,,1,1,
 Conductivity,umho/cm,,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,1,1,APHA 2510
-Conductivity,umho/cm,,KAWNATON_WQX 120.1,Conductance,,1,1,EPA 120.1
+Conductivity,umho/cm,,KAWNATON_WQX 120.1,Conductance,,1,1,EPA 120.1 
 Conductivity,umho/cm,,NA NA,,,1,1,methods_unknown
 Conductivity,umho/cm,,OREGONDEQ Not Available,Not Available,,1,1,methods_unknown
 Conductivity,umho/cm,,USEPA 120.1,Conductance,,1,1,EPA 120.1
@@ -45,6 +50,7 @@ Conductivity,uS/cm,,CEDEN 162,EPA 821/R-02-012,,-1000000,-1000000,methods_fail
 Conductivity,uS/cm,,CEDEN 312,USGS I-2781-85,,1,1,USGS I-2781-85
 Conductivity,uS/cm,,CEDEN 85,EPA 600/R-99-064M,,-1000000,-1000000,methods_fail
 Conductivity,uS/cm,,CHEROKEE_WQX CN_QAPP,CN_QAPP,,1,1,methods_WQX
+Conductivity,uS/cm,,HACH 8160,Conductivity in Water by Direct Measurement,,1,1,
 Conductivity,uS/cm,,KAWNATON_WQX 120.1,Conductance,,1,1,EPA 120.1
 Conductivity,uS/cm,,NA NA,,,1,1,methods_unknown
 Conductivity,uS/cm,,USEPA 120.1,Conductance,,1,1,EPA 120.1
@@ -53,20 +59,31 @@ Specific conductance,deg C,,NA NA,,,-1000000,-1000000,units_fail
 Specific conductance,mg/l,,21FLCEN_WQX FT 1200,Conductivity,,-1000000,-1000000,units_fail
 Specific conductance,mg/l,,21FLCEN_WQX FT_1200,FIELD MEASUREMENT OF SPECIFIC CONDUCTANCE,,-1000000,-1000000,units_fail
 Specific conductance,mg/l,,21FLCEN_WQX HISTORICAL,Standard Operation Procedure,,-1000000,-1000000,units_fail
+Specific conductance,mg/l,,APHA 2510,Conductivity in Water,,-1000000,-1000000,units_fail
+Specific conductance,mg/l,,NA NA,,,-1000000,-1000000,units_fail
 Specific conductance,mho/cm,,21FLPDEM FT 1000,,,1000000,1000000,methods_unknown
 Specific conductance,mho/cm,,21FLPDEM HYDROLAB 005,,,1000000,1000000,methods_unknown
 Specific conductance,mho/cm,,NA NA,,,1000000,1000000,methods_unknown
 Specific conductance,mho/cm,,USEPA 120.1,Conductance,,1000000,1000000,EPA 120.1
 Specific conductance,mmhos/cm,umho/cm,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,1000,1,APHA 2510
+Specific conductance,mS/cm,mS/cm,11NPSWRD_WQX NPS_HYDROLA_H2O,Hydrolab H2O,,1000,1000,
+Specific conductance,mS/cm,mS/cm,11NPSWRD_WQX NPS_YSI33S-C-T,YSI Model 33 Salinity-Conductivity-Temperature Meter,,1000,1000,
+Specific conductance,mS/cm,mS/cm,11NPSWRD_WQX NPS_YSI6820,YSI 6820 Multi-parameter Water Quality Sonde,,1000,1000,
+Specific conductance,mS/cm,mS/cm,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,1000,1000,
 Specific conductance,mS/cm,mS/cm,NA NA,,,1000,1000,methods_unknown
 Specific conductance,mS/cm,mS/cm,USEPA 120.1,Conductance,,1000,1000,EPA 120.1
+Specific conductance,mS/cm,mS/cm,USEPA 9050,Specific Conductance,,1000,1000,
+Specific conductance,mS/cm,mS/cm,USEPA 9050,,,1000,1000,
 Specific conductance,mS/cm,umho/cm,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,1000,1,APHA 2510
 Specific conductance,mS/cm,uS/cm,NA NA,,,1000,1,methods_unknown
+Specific conductance,mS/cm,,11NPSWRD_WQX NPS_YSI_3403,YSI 3403 Conductivity Cell,,1000,1000,
+Specific conductance,mS/cm,,21FLBRA FT 1200,,,1000,1000,
 Specific conductance,mS/cm,,21FLCBA_WQX FIELD,Field Measurments,,1000,1000,methods_WQX
 Specific conductance,mS/cm,,21FLCEN_WQX FT_1200,FIELD MEASUREMENT OF SPECIFIC CONDUCTANCE,,1000,1000,methods_WQX
 Specific conductance,mS/cm,,21FLPDEM FT 1000,,,1000,1000,methods_unknown
 Specific conductance,mS/cm,,21FLPDEM_WQX FDEP FT1200,FDEP FT1200,,1000,1000,methods_WQX
 Specific conductance,mS/cm,,21FLPDEM_WQX FT 1000,Field Measurements and Observations,,1000,1000,methods_WQX
+Specific conductance,mS/cm,,21FLSUW FT 1200,,,1000,1000,
 Specific conductance,mS/cm,,21FLSUW_WQX FT 1200,Field Measurement of Specific Conductance (Conductivity),,1000,1000,methods_WQX
 Specific conductance,mS/cm,,21FLTPA_WQX FT_1200,FIELD MEASUREMENT OF SPECIFIC CONDUCTANCE,,1000,1000,methods_WQX
 Specific conductance,mS/cm,,21FLWQSP_WQX FT1200,FT 1200 FIELD MEASUREMENT OF SPECIFIC CONDUCTANCE,,1000,1000,methods_WQX
@@ -80,11 +97,17 @@ Specific conductance,mS/cm,,NIOSH 2510,1-Octanethiol by GC/FPD,,-1000000,-100000
 Specific conductance,mS/cm,,R10BUNKER SC-001,SC-001,,1000,1000,methods_unknown
 Specific conductance,mS/cm,,SDWRAP WRAPFLD,,,1000,1000,methods_unknown
 Specific conductance,mS/cm,,USEPA 120.1,,,1000,1000,EPA 120.1
+Specific conductance,mS/cm,,USEPA 9050,Specific Conductance,,1000,1000,
+Specific conductance,mS/cm,,YSI 120.1,Direct Measurement Method,,1000,1000,
+Specific conductance,None,None,USEPA 150.1,pH,,-1000000,-1000000,units_fail
 Specific conductance,None,,USEPA 120.1,Conductance,,-1000000,-1000000,units_fail
 Specific conductance,nu,,NA NA,,,-1000000,-1000000,units_fail
 Specific conductance,nu,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,units_fail
 Specific conductance,ppth,,21FLWPB_WQX FT_1200,FIRLD MEASUREMENT OF SPECIFIC CONDUCTANCE,,-1000000,-1000000,units_fail
+Specific conductance,S/m,,NA NA,,,-1000000,-1000000,units_fail
+Specific conductance,ug/l,,APHA 2510,Conductivity in Water,,-1000000,-1000000,units_fail
 Specific conductance,umho,,11NPSWRD_WQX NPS_YSI33S-C-T,YSI Model 33 Salinity-Conductivity-Temperature Meter,,1,1,methods_WQX
+Specific conductance,umho/cm,m,APHA 2510,,,-1000000,-1000000,units_fail
 Specific conductance,umho/cm,umho/cm,21ARIZ FIELD,,,1,1,methods_unknown
 Specific conductance,umho/cm,umho/cm,21FLLCPC_WQX SM45002510B,SPECIFIC CONDUCTANCE,,1,1,APHA 2510
 Specific conductance,umho/cm,umho/cm,21FLLCPC_WQX SM5210B,BOD 5DAY,,-1000000,-1000000,methods_fail
@@ -106,7 +129,9 @@ Specific conductance,umho/cm,umho/cm,APHA 2510,Conductivity in Water,,1,1,APHA 2
 Specific conductance,umho/cm,umho/cm,APHA 2510,,,1,1,APHA 2510
 Specific conductance,umho/cm,umho/cm,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,1,1,APHA 2510
 Specific conductance,umho/cm,umho/cm,APHA 4500-H+B,"4500 H+B ~ pH in Water by Potentiometry, pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode",,-1000000,-1000000,methods_fail
+Specific conductance,umho/cm,umho/cm,INSTOR_WQX SM2510B,SM2510B,,1,1,
 Specific conductance,umho/cm,umho/cm,NA NA,,,1,1,methods_unknown
+Specific conductance,umho/cm,umho/cm,SDDENR_WQX field,UNKOWN,,1,1,
 Specific conductance,umho/cm,umho/cm,SDWRAP WRAPFLD,,,1,1,methods_unknown
 Specific conductance,umho/cm,umho/cm,USEPA 110.2,,,-1000000,-1000000,methods_fail
 Specific conductance,umho/cm,umho/cm,USEPA 120.1,Conductance,,1,1,EPA 120.1
@@ -114,6 +139,7 @@ Specific conductance,umho/cm,umho/cm,USEPA 120.1,,,1,1,EPA 120.1
 Specific conductance,umho/cm,uS/cm,USEPA 120.1,,,1,1,EPA 120.1
 Specific conductance,umho/cm,,11NPSWRD_WQX NPS_NURE_LASCS,Los Alamos Procedure to Determine Specific Conductance Values in the Field from Samples,,1,1,methods_WQX
 Specific conductance,umho/cm,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1,1,methods_WQX
+Specific conductance,umho/cm,,11NPSWRD_WQX NPS_UNSPECIFIED,Unknown or Unspecified Procedure,,1,1,
 Specific conductance,umho/cm,,11NPSWRD_WQX NPS_YSI23200_SC,Specific Conductance YSI Model 23200-009 Conductivity Bridge,,1,1,methods_WQX
 Specific conductance,umho/cm,,11NPSWRD_WQX NPS_YSI556MPS,YSI Model 556 Multiprobe System,,1,1,methods_WQX
 Specific conductance,umho/cm,,11NPSWRD_WQX NPS_YSI85,"YSI Model 85 DO, Conductivity, Salinity, Temperature Instrument",,1,1,methods_WQX
@@ -157,6 +183,7 @@ Specific conductance,umho/cm,,21FLPOLK YSI,,,1,1,methods_unknown
 Specific conductance,umho/cm,,21FLPOLK_WQX DEP SOP FT 1200,"Conductance, specific",,1,1,methods_WQX
 Specific conductance,umho/cm,,21FLPOLK_WQX FDEP FT1200,FDEP FT1200,,1,1,methods_WQX
 Specific conductance,umho/cm,,21FLSARA_WQX FT-1200,Field Measurement of Specific Conductance,,1,1,methods_WQX
+Specific conductance,umho/cm,,21FLSJWM OTHER/UNKNOWN,,,1,1,
 Specific conductance,umho/cm,,21FLSUW_WQX FT 1200,Field Measurement of Specific Conductance (Conductivity),,1,1,methods_WQX
 Specific conductance,umho/cm,,21FLSUW_WQX OTHER/UNKNOWN,Other of Unknown Procedure,,1,1,methods_WQX
 Specific conductance,umho/cm,,21FLTLHR_WQX FDEP FT1200,FDEP FT1200,,1,1,methods_WQX
@@ -175,13 +202,21 @@ Specific conductance,umho/cm,,21FLWQA_WQX FT_1200,FIELD MEASUREMENT OF SPECIFIC 
 Specific conductance,umho/cm,,21FLWQSP_WQX FDEP FT1200,FDEP FT1200,,1,1,methods_WQX
 Specific conductance,umho/cm,,21FLWQSP_WQX FT_1200,FIELD MEASUREMENT OF SPECIFIC CONDUCTANCE,,1,1,methods_WQX
 Specific conductance,umho/cm,,21GAEPD_WQX FIELD/NS,Field procedure or Not Specified,,1,1,methods_WQX
+Specific conductance,umho/cm,,21IND_WQX SM2510B,SM2510B,,1,1,
 Specific conductance,umho/cm,,21IOWA_WQX ISO 7888:1995,Determination of electrical conductivity,,1,1,methods_WQX
 Specific conductance,umho/cm,,21KAN001_WQX SM 12th Ed Pg 281,Wheatstone bridge method,,1,1,methods_WQX
+Specific conductance,umho/cm,,21MICH MDEQ-EPA,,,1,1,
 Specific conductance,umho/cm,,21NC01WQ UNKNOWN,,,1,1,methods_unknown
 Specific conductance,umho/cm,,21NC02WQ WQS SOP,,,1,1,methods_unknown
+Specific conductance,umho/cm,,21OHIO_WQX SM 2510B,SM 2510B,,1,1,
 Specific conductance,umho/cm,,APHA 2510,Conductivity in Water,,1,1,APHA 2510
 Specific conductance,umho/cm,,APHA 2510,,,1,1,APHA 2510
 Specific conductance,umho/cm,,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,1,1,APHA 2510
+Specific conductance,umho/cm,,APHA 2520-B,2520 B ~ Salinity in Water- Electrical Conductivity Method,,1,1,
+Specific conductance,umho/cm,,IL_EPA FIELD,,,1,1,
+Specific conductance,umho/cm,,IL_EPA LAB,,,1,1,
+Specific conductance,umho/cm,,IL_EPA_WQX FIELD,MEASURED IN FIELD,,1,1,
+Specific conductance,umho/cm,,INSTOR_WQX SM2510B,SM2510B,,1,1,
 Specific conductance,umho/cm,,LADEQWPD LDEQ-FMO,,,1,1,methods_unknown
 Specific conductance,umho/cm,,LAKELAND DEP SOP FT 1200,,,1,1,methods_unknown
 Specific conductance,umho/cm,,LAKELAND_WQX FDEP FT1200,FDEP FT1200,,1,1,methods_WQX
@@ -190,14 +225,18 @@ Specific conductance,umho/cm,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,
 Specific conductance,umho/cm,,MTWTRSHD_WQX HYDROLAB-MTWTRSHD,Field Measurements Using the Hydrolab Datasonde 4,,1,1,methods_WQX
 Specific conductance,umho/cm,,MTWTRSHD_WQX UNKNOWN-MTWTRSHD,Unknown Method or Procedure,,1,1,methods_WQX
 Specific conductance,umho/cm,,NA NA,,,1,1,methods_unknown
+Specific conductance,umho/cm,,PTI_ITS_WQX YSI Meter 556,YSI Model 556 Multiparameter Meter,,1,1,
 Specific conductance,umho/cm,,SDDENR_WQX field,UNKOWN,,1,1,methods_WQX
 Specific conductance,umho/cm,,SDDENR_WQX umho/cm,REGRAVAN,,1,1,methods_WQX
+Specific conductance,umho/cm,,SDDENR_WQX UNKNOWN,UNKNOWN,,1,1,
 Specific conductance,umho/cm,,SDDENR_WQX UNKOWN,UNKOWN,,1,1,methods_WQX
 Specific conductance,umho/cm,,SDWRAP WRAPFLD,,,1,1,methods_unknown
 Specific conductance,umho/cm,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,methods_fail
 Specific conductance,umho/cm,,TDECWPC 1CONDUCTIVITY,,,1,1,methods_unknown
+Specific conductance,umho/cm,,USDOI/USGS I1780,Specific Conductance,,1,1,
 Specific conductance,umho/cm,,USEPA 120.1,Conductance,,1,1,EPA 120.1
 Specific conductance,umho/cm,,USEPA 120.1,,,1,1,EPA 120.1
+Specific conductance,umho/cm,,USEPA 160.1_M,160.1 M ~ Total Dissolved Solids,,1,1,
 Specific conductance,umho/cm,,USEPA 9050,Specific Conductance,,1,1,EPA 9050
 Specific conductance,umho/cm,,USEPA 9050A,9050 A ~ Specific Conductance,,1,1,EPA 9050
 Specific conductance,umho/cm,,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,methods_WQX
@@ -220,26 +259,53 @@ Specific conductance,uS/cm,uS/cm,21IOWA_WQX ISU 2510,ISU modification of APHA 25
 Specific conductance,uS/cm,uS/cm,21NC03WQ WSSSOP,WSSSOP,,1,1,methods_unknown
 Specific conductance,uS/cm,uS/cm,APHA 2510,Conductivity in Water,,1,1,APHA 2510
 Specific conductance,uS/cm,uS/cm,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,1,1,APHA 2510
+Specific conductance,uS/cm,uS/cm,APHA 2520-B,2520 B ~ Salinity in Water- Electrical Conductivity Method,,1,1,
 Specific conductance,uS/cm,uS/cm,AZDEQ_SW EPA 120.1,EPA 120.1,,1,1,EPA 120.1
 Specific conductance,uS/cm,uS/cm,AZDEQ_SW FIELD,FIELD,,1,1,methods_unknown
 Specific conductance,uS/cm,uS/cm,AZDEQ_SW SM 2340B,SM 2340B,,-1000000,-1000000,methods_fail
 Specific conductance,uS/cm,uS/cm,AZDEQ_SW SM 2510B,SM 2510B,,1,1,APHA 2510
 Specific conductance,uS/cm,uS/cm,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,methods_unknown
+Specific conductance,uS/cm,uS/cm,HACH 8160,Conductivity in Water by Direct Measurement,,1,1,
+Specific conductance,uS/cm,uS/cm,INSTOR_WQX SM2510A,SM2510A,,1,1,
+Specific conductance,uS/cm,uS/cm,INSTOR_WQX SM2510B,SM2510B,,1,1,
 Specific conductance,uS/cm,uS/cm,NA NA,,,1,1,methods_unknown
 Specific conductance,uS/cm,uS/cm,USDOI/USGS I-2781-85,"Specific Conductance of Water, Automated",,1,1,USGS I-2781-85
+Specific conductance,uS/cm,uS/cm,USEPA 100.1,Analytical Method For Determination Of Asbestos Fibers In Water,,1,1,
 Specific conductance,uS/cm,uS/cm,USEPA 120.1,Conductance,,1,1,EPA 120.1
 Specific conductance,uS/cm,uS/cm,USEPA 120.1,,,1,1,EPA 120.1
+Specific conductance,uS/cm,uS/cm,USEPA 9050,Specific Conductance,,1,1,
+Specific conductance,uS/cm,uS/cm,USEPA 9050A,9050 A ~ Specific Conductance,,1,1,
 Specific conductance,uS/cm,volts,21IOWA_WQX ISU 2510,ISU modification of APHA 2510,,1,-1000000,APHA 2510
 Specific conductance,uS/cm,Watts,21IOWA_WQX ISU 2510,ISU modification of APHA 2510,,1,-1000000,APHA 2510
 Specific conductance,uS/cm,weeks,21IOWA_WQX ISU 2510,ISU modification of APHA 2510,,1,-1000000,APHA 2510
 Specific conductance,uS/cm,yd,21IOWA_WQX ISU 2510,ISU modification of APHA 2510,,1,-1000000,APHA 2510
 Specific conductance,uS/cm,yd3,21IOWA_WQX ISU 2510,ISU modification of APHA 2510,,1,-1000000,APHA 2510
 Specific conductance,uS/cm,years,21IOWA_WQX ISU 2510,ISU modification of APHA 2510,,1,-1000000,APHA 2510
+Specific conductance,uS/cm,,11113300 UNKNOWN,EXACT FIELD OR LAB METHOD IS UNKNOWN,,1,1,
 Specific conductance,uS/cm,,1119USBR P94,,,1,1,methods_unknown
 Specific conductance,uS/cm,,11NPSWRD_WQX CUPN_APERA_PH_SPC,Apera pH/Conductivity Portable Meter SX823-B,,1,1,methods_WQX
 Specific conductance,uS/cm,,11NPSWRD_WQX CUPN_OAKTON300_PH/SP,Oakton Portable Waterproof pH/CON 300 Meter 35631-00,,1,1,methods_WQX
 Specific conductance,uS/cm,,11NPSWRD_WQX CURE_HYDROLAB_MS5,Hydrolab MS5 Multiprobe with LDO Sensor,,1,1,methods_WQX
+Specific conductance,uS/cm,,11NPSWRD_WQX GLKN_HL_DS4X,Multiprobe Field Analysis,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX GLKN_HL_DS5.0,Multiprobe Field Analysis Hydrolab DS5.0,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX GLKN_HL_DS5X,Multiprobe Field Analysis,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX GLKN_HL_MS5.0,Multiprobe Field Analysis,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX GLKN_MM774,Multiprobe Field Analysis with Eureka Manta MM774,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX GLKN_MM775,Multiprobe Field Analysis with Eureka Manta MM775,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX GLKN_MT132,Multiprobe Field Analysis with Eureka Manta M09050132,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX GLKN_MT318,Multiprobe Field Analysis with Eureka Manta M080600318,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX GLKN_MT603,Multiprobe Field Analysis with Eureka Manta MT01193603,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX GLKN_MT888,Multiprobe Field Analysis with Eureka Manta MT08193888,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX GLKN_MY938,Multiprobe Field Analysis with Eureka Manta MY938,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX GLKN_YSI650MDS,Multiprobe Field Analysis with YSI Model 650 MDS,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX GLKN_YSI6820,Multiprobe Field Analysis with YSI Model 6820,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX GLKN_YSI6920,Multiprobe Field Analysis with YSI Model 6920,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX GLKN_YSIPROPLUS,Multiprobe Field Analysis with YSI ProPlus,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX NETN_EXO1,Northeast Temperate Network EXO1 Multiparameter Sonde,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX NETN_YSI52,Northeast Temperate Network YSI52 Multiparameter Sonde,,1,1,
+Specific conductance,uS/cm,,11NPSWRD_WQX NETN_YSI600,Northeast Temperate Network YSI600 Multiparameter Sonde,,1,1,
 Specific conductance,uS/cm,,11NPSWRD_WQX NPS_HYDR_M&D_4A,Hydrolab MiniSonde 4a or Hydrolab DataSonde 4a,,1,1,methods_WQX
+Specific conductance,uS/cm,,11NPSWRD_WQX NPS_HYDRLAB_MS,Hydrolab MiniSonde Data Logger Probes,,1,1,
 Specific conductance,uS/cm,,11NPSWRD_WQX NPS_INSITU_AT600,Field Measurements by In-Situ Aqua TROLL 600,,1,1,methods_WQX
 Specific conductance,uS/cm,,11NPSWRD_WQX NPS_INTROLL9000,In-Situ TROLL 9000 Multi-Parameter Water Quality Monitor,,1,1,methods_WQX
 Specific conductance,uS/cm,,11NPSWRD_WQX NPS_MISSING,Procedure not Required when Result Entered into National Database,,1,1,methods_WQX
@@ -247,6 +313,7 @@ Specific conductance,uS/cm,,11NPSWRD_WQX NPS_SBE19_C-T-D,"Sea-Bird Model SBE19 C
 Specific conductance,uS/cm,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1,1,methods_WQX
 Specific conductance,uS/cm,,11NPSWRD_WQX NPS_YSI85,"YSI Model 85 DO, Conductivity, Salinity, Temperature Instrument",,1,1,methods_WQX
 Specific conductance,uS/cm,,11NPSWRD_WQX SFAN_SOP_5,Field Methods for Measurement of Core Parameters,,1,1,methods_WQX
+Specific conductance,uS/cm,,11NPSWRD_WQX SM2510-B,APHA Standard Methods: Specific Conductance,,1,1,
 Specific conductance,uS/cm,,11NPSWRD_WQX USGS_UNKFIELDPR,USGS Unknown Field Analytical Procedure,,1,1,methods_WQX
 Specific conductance,uS/cm,,11NPSWRD_WQX USGS_UNSPEC,Unspecified USGS Lab Analytical Procedures at NWQL Following Standard Protocols,,1,1,methods_WQX
 Specific conductance,uS/cm,,21ARIZ_WQX SM 2510B,CONDUCTIVITY LABORATORY METHOD,,1,1,APHA 2510
@@ -275,10 +342,14 @@ Specific conductance,uS/cm,,21FLSWFD_WQX FT-1200,Field Measurement of Specific C
 Specific conductance,uS/cm,,21IOWA_WQX ISU 2510,ISU modification of APHA 2510,,1,1,APHA 2510
 Specific conductance,uS/cm,,21KY SM2510 B,,,1,1,APHA 2510
 Specific conductance,uS/cm,,21NC03WQ WSSSOP,WSSSOP,,1,1,methods_unknown
+Specific conductance,uS/cm,,21NJDEP1 SC,,,1,1,
+Specific conductance,uS/cm,,APHA 2130-B,2130 B ~ Nephelometric Method,,1,1,
 Specific conductance,uS/cm,,APHA 2510,Conductivity in Water,,1,1,APHA 2510
 Specific conductance,uS/cm,,APHA 2510,,,1,1,APHA 2510
 Specific conductance,uS/cm,,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,1,1,APHA 2510
+Specific conductance,uS/cm,,APHA 2520-B,2520 B ~ Salinity in Water- Electrical Conductivity Method,,1,1,
 Specific conductance,uS/cm,,APHA_SM20ED 2510B,2510 B ~ Conductivity - Laboratory Method Standard: Methods for the Examination of Water and Wastewater,,1,1,APHA 2510
+Specific conductance,uS/cm,,ASTM D1125(A),D1125 A  ~ Conductivity and Resistivity in Water,,1,1,
 Specific conductance,uS/cm,,ASTM D3858,Open-Channel Flow Measurement by Area,,-1000000,-1000000,methods_fail
 Specific conductance,uS/cm,,AZDEQ_SW EPA 120.1,EPA 120.1,,1,1,EPA 120.1
 Specific conductance,uS/cm,,AZDEQ_SW FIELD,FIELD,,1,1,methods_unknown
@@ -286,21 +357,26 @@ Specific conductance,uS/cm,,AZDEQ_SW SM 2510B,SM 2510B,,1,1,APHA 2510
 Specific conductance,uS/cm,,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,methods_unknown
 Specific conductance,uS/cm,,CHATFLD HORRIBU,,,1,1,methods_unknown
 Specific conductance,uS/cm,,CHEROKEE_WQX CN_QAPP,CN_QAPP,,1,1,methods_WQX
+Specific conductance,uS/cm,,HACH 8160,Conductivity in Water by Direct Measurement,,1,1,
+Specific conductance,uS/cm,,INSTOR_WQX SM2510B,SM2510B,,1,1,
 Specific conductance,uS/cm,,KAWNATON KAW_SOP,,,1,1,methods_unknown
 Specific conductance,uS/cm,,LAKELAND_WQX DEP SOP FT 1200,Field Specific Conductance,,1,1,methods_WQX
 Specific conductance,uS/cm,,MASSDEP FIELD MEAS-TCOMP,Field measurement of water quality parameters using in-situ probes with temperature compensation,,1,1,methods_unknown
+Specific conductance,uS/cm,,MCHD See QA Plan,See QA Plan for this Project,,1,1,
 Specific conductance,uS/cm,,MDEQ_WQ_WQX UNKNOWN-MDEQ-WQ,Unknown Method or Procedure,,1,1,methods_WQX
 Specific conductance,uS/cm,,MEDEP_WQX FIELD,FIELD TEST,,1,1,methods_WQX
 Specific conductance,uS/cm,,MNPCA FLD,"Field measurement/observation, generic method",,1,1,methods_unknown
 Specific conductance,uS/cm,,MNPCA LEG_P00095,SPECIFIC CONDUCTANCE (UMHOS/CM @ 25C),,1,1,USGS_00095
-Specific conductance,uS/cm @25C,uS/cm @25C,NA NA,,90095,1,1,USGS 90095
+Specific conductance,uS/cm,,MNPCA LEG_UNKNOWN,Legacy STORET migration; analytical procedure not specified,,1,1,
 Specific conductance,uS/cm,,NA NA,,402,-1000000,-1000000,methods_fail; no temp corr
 Specific conductance,uS/cm,,NA NA,,,1,1,methods_unknown
+Specific conductance,uS/cm,,ONEIDA_WQX UNKNOWN,UNKNOWN,,1,1,
 Specific conductance,uS/cm,,R10BUNKER I2781,I2781,,1,1,USGS I-2781-85
 Specific conductance,uS/cm,,R10BUNKER SC-USGS,SC-USGS,,1,1,methods_unknown
 Specific conductance,uS/cm,,SDWRAP WRAPFLD,,,1,1,methods_unknown
 Specific conductance,uS/cm,,SPIRITLK I2781,I2781,,1,1,USGS I-2781-85
 Specific conductance,uS/cm,,SPIRITLK WHT03,WHT03,,1,1,methods_unknown
+Specific conductance,uS/cm,,STOCKBRIDGE_MUNSEE SMC_2520-B,Salinity in Water- Electrical Conductivity Method,,1,1,
 Specific conductance,uS/cm,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,methods_fail
 Specific conductance,uS/cm,,TDECWPC 1CONDUCTIVITY,,,1,1,methods_unknown
 Specific conductance,uS/cm,,TURTLEMT GS_UNKNOWN,GS_UNKNOWN,,1,1,methods_unknown
@@ -312,6 +388,7 @@ Specific conductance,uS/cm,,USEPA 120.1,,,1,1,EPA 120.1
 Specific conductance,uS/cm,,USEPA 160.4,,,-1000000,-1000000,methods_fail
 Specific conductance,uS/cm,,USEPA 9050,Specific Conductance,,1,1,EPA 9050
 Specific conductance,uS/cm,,USEPA 9050A,9050 A ~ Specific Conductance,,1,1,EPA 9050
+Specific conductance,uS/cm @25C,uS/cm @25C,NA NA,,90095,1,1,USGS 90095
 Specific conductance,uS/cm @25C,uS/cm @25C,USGS SC001,Specific conductance sensor,95,1,1,USGS 00095
 Specific conductance,uS/cm @25C,uS/cm @25C,USGS SC002,"Specific cond, EPA meth (DODEC)",90095,1,1,USGS 90095
 Specific conductance,uS/cm @25C,uS/cm @25C,USGS WHT01,"Spec. cond., lab, bridge (NWQL)",90095,1,1,USGS 90095
@@ -320,11 +397,14 @@ Specific conductance,uS/cm @25C,uS/cm @25C,USGS WHT04,"Specific cond, lab auto (
 Specific conductance,uS/cm @25C,,NA NA,,94,1,1,USGS 00094
 Specific conductance,uS/cm @25C,,NA NA,,95,1,1,USGS 00095
 Specific conductance,uS/cm @25C,,NA NA,,90095,1,1,USGS 90095
+Specific conductance,uS/cm @25C,,USGS 0,,95,1,1,
 Specific conductance,uS/cm @25C,,USGS B,,95,1,1,USGS 00095
 Specific conductance,uS/cm @25C,,USGS C,,95,1,1,USGS 00095
 Specific conductance,uS/cm @25C,,USGS D,,95,1,1,USGS 00095
 Specific conductance,uS/cm @25C,,USGS SC001,Specific conductance sensor,95,1,1,USGS 00095
 Specific conductance,uS/cm @25C,,USGS SC003,"Specific cond, field (NRP & CO)",95,1,1,USGS 00095
 Specific conductance,uS/cm @25C,,USGS SC005,"SC, lab, manual (USGS-NYL)",90095,1,1,USGS 90095
+Specific conductance,uS/cm @25C,,USGS SC006,"SC, lab, auto (USGS-NYL)",90095,1,1,
 Specific conductance,uS/cm @25C,,USGS WHT01,"Spec. cond., lab, bridge (NWQL)",90095,1,1,USGS 90095
 Specific conductance,uS/cm @25C,,USGS WHT03,"Specific cond, lab, autom bridge",90095,1,1,USGS 90095
+Specific conductance,,,APHA 2510,Conductivity in Water,,-1000000,-1000000,methods_fail
