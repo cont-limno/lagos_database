@@ -1,5 +1,5 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Alkalinity,mg/l CaCO3,mg/l CaCO3,NA NA,,410,1,1,
+Alkalinity,mg/l CaCO3,mg/l CaCO3,NA NA,,410,1,1,USGS_00410
 Alkalinity,mg/l CaCO3,mg/l CaCO3,NA NA,,417,1,1,USGS_00417
 Alkalinity,mg/l CaCO3,mg/l CaCO3,NA NA,,90410,1,1,USGS_90410
 Alkalinity,mg/l CaCO3,mg/l CaCO3,USGS TT008,"ANC, wu, field, fixed EP",410,1,1,USGS_00410
@@ -32,14 +32,14 @@ Alkalinity,mg/l CaCO3,,NA NA,,95410,1,1,USGS_95410
 Alkalinity,mg/l CaCO3,,USGS 0,,39036,1,1,USGS_39036
 Alkalinity,mg/l CaCO3,,USGS A,,419,1,1,USGS_00419
 Alkalinity,mg/l CaCO3,,USGS A,,39036,1,1,USGS_39036
-Alkalinity,mg/l CaCO3,,USGS B,,416,1,1,
+Alkalinity,mg/l CaCO3,,USGS B,,416,1,1,USGS_00416
 Alkalinity,mg/l CaCO3,,USGS C,,410,1,1,USGS_00410
 Alkalinity,mg/l CaCO3,,USGS C,,419,1,1,USGS_00419
 Alkalinity,mg/l CaCO3,,USGS C,,39086,1,1,USGS_39086
 Alkalinity,mg/l CaCO3,,USGS D,,419,1,1,USGS_00419
 Alkalinity,mg/l CaCO3,,USGS D,,39086,1,1,USGS_39086
 Alkalinity,mg/l CaCO3,,USGS D,,90410,1,1,USGS_90410
-Alkalinity,mg/l CaCO3,,USGS F,,413,1,1,
+Alkalinity,mg/l CaCO3,,USGS F,,413,1,1,USGS_00413
 Alkalinity,mg/l CaCO3,,USGS F,,419,1,1,USGS_00419
 Alkalinity,mg/l CaCO3,,USGS F,,29813,1,1,USGS_29813
 Alkalinity,mg/l CaCO3,,USGS H,,39086,1,1,USGS_39086
@@ -64,159 +64,159 @@ Alkalinity,mg/l CaCO3,,USGS TT061,"Alkalinity, IPT, Hach",39086,1,1,USGS_39086
 Alkalinity,mg/l CaCO3,,USGS TT065,"ANC, IPT, Hach",419,1,1,"USGS_00419; Acid neutralizing capacity, inflection-point titration method (incremental titration method), Hach digital titrator "
 Alkalinity,mg/l CaCO3,,USGS TT104,"Alkalinity, IP, automatic titr",39087,1,1,USGS_39087
 Alkalinity,ueq/L,,NA NA,,409,0.05005,0.05005,USGS_00409
-Alkalinity,ueq/L,,USGS TT080,"ANC, lab, auto Gran (USGS-NYL)",409,0.05005,0.05005,
-Alkalinity,ueq/L,,USGS TT090,"ANC, wu, Gran (USGSNYWC; ALSC)",409,0.05005,0.05005,
+Alkalinity,ueq/L,,USGS TT080,"ANC, lab, auto Gran (USGS-NYL)",409,0.05005,0.05005,USGS_00409
+Alkalinity,ueq/L,,USGS TT090,"ANC, wu, Gran (USGSNYWC; ALSC)",409,0.05005,0.05005,USGS_00409
 Alkalinity,,mg/l CaCO3,USGS TT040,"Alkalinity, titr. pH 4.5 (NWQL)",29801,1,1,"USGS_29801; Alkalinity, water, filtered, lab, custom modification of TT040 for alkalinity by inflection point "
-"Alkalinity, total",mg/l,mg/l,21ARIZ SM 2320B,,,1,1,APHA 2320
+"Alkalinity, total",mg/l,mg/l,21ARIZ SM 2320B,,,1,1,APHA 2320 B
 "Alkalinity, total",mg/l,mg/l,21ARIZ UNKNOWN,,,1,1,methods_unknown
-"Alkalinity, total",mg/l,mg/l,21FLALTA_WQX 2320-B,"Alkalinity, Total",,1,1,APHA 2320
+"Alkalinity, total",mg/l,mg/l,21FLALTA_WQX 2320-B,"Alkalinity, Total",,1,1,APHA 2320 B
 "Alkalinity, total",mg/l,mg/l,21FLCOLL_WQX LKTRAFF,Lake Trafford,,1,1,methods_WQX
 "Alkalinity, total",mg/l,mg/l,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,1,1,methods_WQX
 "Alkalinity, total",mg/l,mg/l,21FLMCGL SOP-1,,,1,1,methods_unknown
-"Alkalinity, total",mg/l,mg/l,21FLORAN SM2320B,,,1,1,APHA 2320
-"Alkalinity, total",mg/l,mg/l,21FLPDEM_WQX SM 2320 B,Alkalinity,,1,1,APHA 2320
-"Alkalinity, total",mg/l,mg/l,21FLPOLK 2320 B,,,1,1,APHA 2320
-"Alkalinity, total",mg/l,mg/l,21FLPOLK_WQX 2320 B,Alkalinity total,,1,1,APHA 2320
+"Alkalinity, total",mg/l,mg/l,21FLORAN SM2320B,,,1,1,APHA 2320 B
+"Alkalinity, total",mg/l,mg/l,21FLPDEM_WQX SM 2320 B,Alkalinity,,1,1,APHA 2320 B
+"Alkalinity, total",mg/l,mg/l,21FLPOLK 2320 B,,,1,1,APHA 2320 B
+"Alkalinity, total",mg/l,mg/l,21FLPOLK_WQX 2320 B,Alkalinity total,,1,1,APHA 2320 B
 "Alkalinity, total",mg/l,mg/l,21FLSFWM WQ-1,,,1,1,methods_unknown
-"Alkalinity, total",mg/l,mg/l,21FLSFWM_WQX SM2320B,SM2320B,,1,1,APHA 2320
+"Alkalinity, total",mg/l,mg/l,21FLSFWM_WQX SM2320B,SM2320B,,1,1,APHA 2320 B
 "Alkalinity, total",mg/l,mg/l,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,1,1,methods_WQX
 "Alkalinity, total",mg/l,mg/l,21FLSJWM_WQX OTHER/UNKNOWN,Other or Unknown Procedure,,1,1,methods_WQX
 "Alkalinity, total",mg/l,mg/l,21FLSUW_WQX OTHER/UNKNOWN,Other of Unknown Procedure,,1,1,methods_WQX
 "Alkalinity, total",mg/l,mg/l,21NC01WQ ACALK_LAB,,,1,1,methods_unknown
-"Alkalinity, total",mg/l,mg/l,21NYDECA_WQX UNKNOWN,UNKNOWN,,1,1,
-"Alkalinity, total",mg/l,mg/l,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,-1.00E+06,-1.00E+06,methods_fail
+"Alkalinity, total",mg/l,mg/l,21NYDECA_WQX UNKNOWN,UNKNOWN,,1,1,methods_WQX
+"Alkalinity, total",mg/l,mg/l,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,-1000000,-1000000,methods_fail
 "Alkalinity, total",mg/l,mg/l,APHA 2320,Alkalinity in Water by Titration,,1,1,APHA 2320
 "Alkalinity, total",mg/l,mg/l,APHA 2320,,,1,1,APHA 2320
-"Alkalinity, total",mg/l,mg/l,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,1,1,"APHA 2320; Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
-"Alkalinity, total",mg/l,mg/l,APHA 2540-C,2540 C ~ Total Dissolved Solids in Water,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,mg/l,APHA 4500-H+B,"4500 H+B ~ pH in Water by Potentiometry, pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode",,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,mg/l,APHA 4500-NH3(G),4500 NH3 G  ~ Ammonia in Water Using Automated Phenate Method,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,mg/l,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,mg/l,AZDEQ_SW EPA 200.7,EPA 200.7,,-1.00E+06,-1.00E+06,methods_fail
+"Alkalinity, total",mg/l,mg/l,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,1,1,"APHA 2320 B; Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
+"Alkalinity, total",mg/l,mg/l,APHA 2540-C,2540 C ~ Total Dissolved Solids in Water,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,mg/l,APHA 4500-H+B,"4500 H+B ~ pH in Water by Potentiometry, pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode",,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,mg/l,APHA 4500-NH3(G),4500 NH3 G  ~ Ammonia in Water Using Automated Phenate Method,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,mg/l,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,mg/l,AZDEQ_SW EPA 200.7,EPA 200.7,,-1000000,-1000000,methods_fail
 "Alkalinity, total",mg/l,mg/l,AZDEQ_SW EPA 310.2,EPA 310.2,,1,1,EPA 310.2
-"Alkalinity, total",mg/l,mg/l,AZDEQ_SW SM 2320B,SM 2320B,,1,1,APHA 2320
+"Alkalinity, total",mg/l,mg/l,AZDEQ_SW SM 2320B,SM 2320B,,1,1,APHA 2320 B
 "Alkalinity, total",mg/l,mg/l,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,methods_unknown
-"Alkalinity, total",mg/l,mg/l,HACH 8221,Alkalinity by Buret Titration,,1,1,
-"Alkalinity, total",mg/l,mg/l,INSTOR_WQX 310.2,310.2,,1,1,
-"Alkalinity, total",mg/l,mg/l,INSTOR_WQX SM2320B,SM2320B,,1,1,
+"Alkalinity, total",mg/l,mg/l,HACH 8221,Alkalinity by Buret Titration,,1,1,HACH 8221
+"Alkalinity, total",mg/l,mg/l,INSTOR_WQX 310.2,310.2,,1,1,EPA 310.2
+"Alkalinity, total",mg/l,mg/l,INSTOR_WQX SM2320B,SM2320B,,1,1,APHA 2320 B
 "Alkalinity, total",mg/l,mg/l,OREGONDEQ MOM grab,Field methods for DEQ Water sampling,,1,1,methods_unknown
-"Alkalinity, total",mg/l,mg/l,U_NH01 2320 B MODIFIED,UNH METHOD,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,mg/l,USDOI/USGS I1030,Alkalinity in Water by Titration,,1,1,USGS I-1030-85
-"Alkalinity, total",mg/l,mg/l,USDOI/USGS I2700,Silica in Water by Colorimetry,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,mg/l,USEPA 120.1,Conductance,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,mg/l,USEPA 150.1,pH,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,mg/l,USEPA 170.1,Temperature,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,mg/l,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,mg/l,USEPA 310.1,Alkalinity by Titration,,1,1,EPA 310.1; Reported as alkalinity
+"Alkalinity, total",mg/l,mg/l,U_NH01 2320 B MODIFIED,UNH METHOD,,1,1,APHA 2320 B
+"Alkalinity, total",mg/l,mg/l,USDOI/USGS I1030,Alkalinity in Water by Titration,,1,1,USGS I-1030
+"Alkalinity, total",mg/l,mg/l,USDOI/USGS I2700,Silica in Water by Colorimetry,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,mg/l,USEPA 120.1,Conductance,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,mg/l,USEPA 150.1,pH,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,mg/l,USEPA 170.1,Temperature,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,mg/l,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,mg/l,USEPA 310.1,Alkalinity by Titration,,1,1,EPA 310.1
 "Alkalinity, total",mg/l,mg/l,USEPA 310.1,,,1,1,EPA 310.1
-"Alkalinity, total",mg/l,mg/l,USEPA 310.1_M,310.1 M ~ Alkalinity in Water by Titration,,1.00E+00,1.00E+00,
+"Alkalinity, total",mg/l,mg/l,USEPA 310.1_M,310.1 M ~ Alkalinity in Water by Titration,,1,1,EPA 310.1
 "Alkalinity, total",mg/l,mg/l,USEPA 310.1_M,,,1,1,EPA 310.1
 "Alkalinity, total",mg/l,mg/l,USEPA 310.2,Alkalinity by Colorimetric Analysis,,1,1,EPA 310.2
 "Alkalinity, total",mg/l,mg/l,USEPA 310.2,,,1,1,EPA 310.2
-"Alkalinity, total",mg/l,mg/l,USEPA 351.2,Total Kjeldahl Nitrogen by Colorimetry,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,mg/l,USEPA 360.1,Dissolved Oxygen Using an ISE,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,mg/l,USEPA 365.1,Phosphorus by Colorimetry,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,mg/l,USEPA 365.3,Phosphorus by Two Reagent Colorimetry,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,mg/l,USEPA 365.4,Total Phosphorus After Block Digestion,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,,11113300 2320 B MODIFIED,UNH METHOD,,-1.00E+06,-1.00E+06,methods_fail
+"Alkalinity, total",mg/l,mg/l,USEPA 351.2,Total Kjeldahl Nitrogen by Colorimetry,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,mg/l,USEPA 360.1,Dissolved Oxygen Using an ISE,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,mg/l,USEPA 365.1,Phosphorus by Colorimetry,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,mg/l,USEPA 365.3,Phosphorus by Two Reagent Colorimetry,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,mg/l,USEPA 365.4,Total Phosphorus After Block Digestion,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,,11113300 2320 B MODIFIED,UNH METHOD,,1,1,APHA 2320 B
 "Alkalinity, total",mg/l,,11NPSWRD_WQX BLCA_TT061,"Alkalinity, inflection-point titration method (incremental titration method), Hach digital titrator",,1,1,methods_WQX
-"Alkalinity, total",mg/l,,11NPSWRD_WQX NPS_LEGACY,LEGACY,,1,1,
+"Alkalinity, total",mg/l,,11NPSWRD_WQX NPS_LEGACY,LEGACY,,1,1,methods_WQX
 "Alkalinity, total",mg/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,methods_WQX
-"Alkalinity, total",mg/l,,1VTDECWQ VTDEC-105,"Gran Alkalinity (Pfeiffer and Festa, 1980)",,1,1,
-"Alkalinity, total",mg/l,,21ARIZ SM 2320B,,,1,1,APHA 2320
+"Alkalinity, total",mg/l,,1VTDECWQ VTDEC-105,"Gran Alkalinity (Pfeiffer and Festa, 1980)",,1,1,methods_unknown
+"Alkalinity, total",mg/l,,21ARIZ SM 2320B,,,1,1,APHA 2320 B
 "Alkalinity, total",mg/l,,21ARIZ UNKNOWN,,,1,1,methods_unknown
-"Alkalinity, total",mg/l,,21ARIZ_WQX SM 2320B,STANDARD METHOD 2320B,,1,1,APHA 2320
+"Alkalinity, total",mg/l,,21ARIZ_WQX SM 2320B,STANDARD METHOD 2320B,,1,1,APHA 2320 B
 "Alkalinity, total",mg/l,,21AWIC ADEM_HISTORICAL,Unkn Lab Proc,,1,1,methods_unknown
 "Alkalinity, total",mg/l,,21COL001 HISTORIC,,,1,1,methods_unknown
 "Alkalinity, total",mg/l,,21FLCOLL_WQX LKTRAFF,Lake Trafford,,1,1,methods_WQX
 "Alkalinity, total",mg/l,,21FLGFWF 2320 FIELD,,,1,1,APHA 2320
-"Alkalinity, total",mg/l,,21FLPDEM_WQX SM 2320 B,Alkalinity,,1,1,APHA 2320
+"Alkalinity, total",mg/l,,21FLPDEM_WQX SM 2320 B,Alkalinity,,1,1,APHA 2320 B
 "Alkalinity, total",mg/l,,21FLSFWM WQ-1,,,1,1,methods_unknown
 "Alkalinity, total",mg/l,,21FLSUW_WQX OTHER/UNKNOWN,Other of Unknown Procedure,,1,1,methods_WQX
-"Alkalinity, total",mg/l,,21IND_WQX 310.1,310.1,,1,1,
+"Alkalinity, total",mg/l,,21IND_WQX 310.1,310.1,,1,1,EPA 310.1
 "Alkalinity, total",mg/l,,21KAN001_WQX Automated Methyl Ora,Alkalinity,,1,1,methods_WQX
 "Alkalinity, total",mg/l,,21KAN001_WQX SM 12th Ed Pg 48,Colorimetric Phenolphthalein,,1,1,methods_WQX
-"Alkalinity, total",mg/l,,21MICH MDEQ-EPA,,,1,1,
+"Alkalinity, total",mg/l,,21MICH MDEQ-EPA,,,1,1,methods_unknown
 "Alkalinity, total",mg/l,,21NC01WQ ACALK_LAB,,,1,1,methods_unknown
-"Alkalinity, total",mg/l,,21NYDECA_WQX UNKNOWN,UNKNOWN,,1,1,
-"Alkalinity, total",mg/l,,21OHIO_WQX USEPA 310.1,USEPA 310.1,,1,1,
+"Alkalinity, total",mg/l,,21NYDECA_WQX UNKNOWN,UNKNOWN,,1,1,methods_WQX
+"Alkalinity, total",mg/l,,21OHIO_WQX USEPA 310.1,USEPA 310.1,,1,1,EPA 310.1
 "Alkalinity, total",mg/l,,21VASWCB USER DEFINED,CONTACT VADEQ FOR DETAILS,,1,1,methods_unknown
 "Alkalinity, total",mg/l,,APHA 2320,Alkalinity in Water by Titration,,1,1,"APHA 2320; Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
 "Alkalinity, total",mg/l,,APHA 2320,,,1,1,APHA 2320
-"Alkalinity, total",mg/l,,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,1,1,"APHA 2320; Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
-"Alkalinity, total",mg/l,,APHA 2340B,2340 B ~ Hardness by Calculation,,1,1,"APHA 2320; Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
-"Alkalinity, total",mg/l,,APHA_SM20ED SM2310B4a,SM2310 B4a ~ Hot Peroxide Acidity,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,,AZDEQ_SW SM 2320B,SM 2320B,,1,1,APHA 2320
+"Alkalinity, total",mg/l,,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,1,1,"APHA 2320 B; Alkalinity of filtered water by fixed endpoint titration to pH 4.5, laboratory (Standard Methods 2320B, but on a filtered sample; Colorado WSC) "
+"Alkalinity, total",mg/l,,APHA 2340B,2340 B ~ Hardness by Calculation,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,,APHA_SM20ED SM2310B4a,SM2310 B4a ~ Hot Peroxide Acidity,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,,AZDEQ_SW SM 2320B,SM 2320B,,1,1,APHA 2320 B
 "Alkalinity, total",mg/l,,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,methods_unknown
-"Alkalinity, total",mg/l,,CEDEN 11,EPA 600/4-91-002M,,-1.00E+06,-1.00E+06,methods_fail; part of acute toxicity testing manual references using standard methods for alkalinity
-"Alkalinity, total",mg/l,,CEDEN 131,EPA 821/R-02-012M,,-1.00E+06,-1.00E+06,methods_fail; part of acute toxicity testing manual references using standard methods for alkalinity
-"Alkalinity, total",mg/l,,CEDEN 140,EPA 600/R-99-064,,-1.00E+06,-1.00E+06,methods_fail; part of acute toxicity testing manual references using standard methods for alkalinity
-"Alkalinity, total",mg/l,,CEDEN 162,EPA 821/R-02-012,,-1.00E+06,-1.00E+06,methods_fail; part of acute toxicity testing manual references using standard methods for alkalinity
+"Alkalinity, total",mg/l,,CEDEN 11,EPA 600/4-91-002M,,-1000000,-1000000,methods_fail; part of acute toxicity testing manual references using standard methods for alkalinity
+"Alkalinity, total",mg/l,,CEDEN 131,EPA 821/R-02-012M,,-1000000,-1000000,methods_fail; part of acute toxicity testing manual references using standard methods for alkalinity
+"Alkalinity, total",mg/l,,CEDEN 140,EPA 600/R-99-064,,-1000000,-1000000,methods_fail; part of acute toxicity testing manual references using standard methods for alkalinity
+"Alkalinity, total",mg/l,,CEDEN 162,EPA 821/R-02-012,,-1000000,-1000000,methods_fail; part of acute toxicity testing manual references using standard methods for alkalinity
 "Alkalinity, total",mg/l,,CEDEN 167,EPA 310.1,,1,1,EPA 310.1
 "Alkalinity, total",mg/l,,CEDEN 301,USGS I-2030-89,,1,1,USGS I-2030-89
-"Alkalinity, total",mg/l,,CEDEN 46,SM 2320 B,,1,1,APHA 2320
+"Alkalinity, total",mg/l,,CEDEN 46,SM 2320 B,,1,1,APHA 2320 B
 "Alkalinity, total",mg/l,,CEDEN 5228,EPA 310.2,,1,1,EPA 310.2
-"Alkalinity, total",mg/l,,CEDEN 85,EPA 600/R-99-064M,,-1.00E+06,-1.00E+06,methods_fail; part of acute toxicity testing manual references using standard methods for alkalinity
+"Alkalinity, total",mg/l,,CEDEN 85,EPA 600/R-99-064M,,-1000000,-1000000,methods_fail; part of acute toxicity testing manual references using standard methods for alkalinity
 "Alkalinity, total",mg/l,,CHEROKEE CN_QAPP,,,1,1,methods_unknown
 "Alkalinity, total",mg/l,,CHEROKEE_WQX CN_QAPP,CN_QAPP,,1,1,methods_WQX
-"Alkalinity, total",mg/l,,COE/ISU APHA 2320 B,,,1,1,
-"Alkalinity, total",mg/l,,COE/ISU_WQX APHA 2320 B,Alkalinity - Titration Method,,1,1,
-"Alkalinity, total",mg/l,,EPA_R7_WQX Procedure is unknown,Procedure is unknown,,1,1,
-"Alkalinity, total",mg/l,,HACH 8203,Phenolphthalein and Total Alkalinity by Digital Titrator,,1,1,
-"Alkalinity, total",mg/l,,HACH 8221,Alkalinity by Buret Titration,,1,1,
-"Alkalinity, total",mg/l,,IL_EPA LAB,,,1,1,
-"Alkalinity, total",mg/l,,IL_EPA_WQX FIELD,MEASURED IN FIELD,,1,1,
-"Alkalinity, total",mg/l,,INSTOR_WQX 310.1,310.1,,1,1,
-"Alkalinity, total",mg/l,,INSTOR_WQX 310.2,310.2,,1,1,
-"Alkalinity, total",mg/l,,KAWNATON_WQX 2320-B,Alkalinity by Gran Titration,,1,1,APHA 2320
+"Alkalinity, total",mg/l,,COE/ISU APHA 2320 B,,,1,1,APHA 2320 B
+"Alkalinity, total",mg/l,,COE/ISU_WQX APHA 2320 B,Alkalinity - Titration Method,,1,1,APHA 2320 B
+"Alkalinity, total",mg/l,,EPA_R7_WQX Procedure is unknown,Procedure is unknown,,1,1,methods_WQX
+"Alkalinity, total",mg/l,,HACH 8203,Phenolphthalein and Total Alkalinity by Digital Titrator,,1,1,HACH 8203
+"Alkalinity, total",mg/l,,HACH 8221,Alkalinity by Buret Titration,,1,1,HACH 8221
+"Alkalinity, total",mg/l,,IL_EPA LAB,,,1,1,methods_unknown
+"Alkalinity, total",mg/l,,IL_EPA_WQX FIELD,MEASURED IN FIELD,,1,1,methods_WQX
+"Alkalinity, total",mg/l,,INSTOR_WQX 310.1,310.1,,1,1,EPA 310.1
+"Alkalinity, total",mg/l,,INSTOR_WQX 310.2,310.2,,1,1,EPA 310.2
+"Alkalinity, total",mg/l,,KAWNATON_WQX 2320-B,Alkalinity by Gran Titration,,1,1,APHA 2320 B
 "Alkalinity, total",mg/l,,KAWNATON_WQX 310.1,Alkalinity by Titration,,1,1,EPA 310.1
-"Alkalinity, total",mg/l,,KWMNDATA ALKALINITY,,,1,1,
+"Alkalinity, total",mg/l,,KWMNDATA ALKALINITY,,,1,1,methods_unknown
 "Alkalinity, total",mg/l,,MNPCA FLD,"Field measurement/observation, generic method",,1,1,methods_unknown
-"Alkalinity, total",mg/l,,MNPCA LEG_UNKNOWN,Legacy STORET migration; analytical procedure not specified,,1,1,
-"Alkalinity, total",mg/l,,MNPCA UNKNOWN,Analytical procedure not specified,,1,1,
+"Alkalinity, total",mg/l,,MNPCA LEG_UNKNOWN,Legacy STORET migration; analytical procedure not specified,,1,1,methods_unknown
+"Alkalinity, total",mg/l,,MNPCA UNKNOWN,Analytical procedure not specified,,1,1,methods_unknown
 "Alkalinity, total",mg/l,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1,1,methods_WQX
 "Alkalinity, total",mg/l,,NA NA,,,1,1,methods_unknown
-"Alkalinity, total",mg/l,,ONEIDA_WQX UNKNOWN,UNKNOWN,,1,1,
+"Alkalinity, total",mg/l,,ONEIDA_WQX UNKNOWN,UNKNOWN,,1,1,methods_WQX
 "Alkalinity, total",mg/l,,OREGONDEQ Not Available,Not Available,,1,1,methods_unknown
-"Alkalinity, total",mg/l,,SDDENR_WQX 2320-B,UNKOWN,,1,1,APHA 2320
-"Alkalinity, total",mg/l,,STCROIX_WQX UNKWN,Unknown method - historic STORET DATA,,1,1,
-"Alkalinity, total",mg/l,,STOCKBRIDGE_MUNSEE SMC_310.1,Alkalinity by Titration,,1,1,
-"Alkalinity, total",mg/l,,TCEQMAIN N/A Calculation,N/A Calculation,,-1.00E+06,-1.00E+06,methods_fail
+"Alkalinity, total",mg/l,,SDDENR_WQX 2320-B,UNKOWN,,1,1,APHA 2320 B
+"Alkalinity, total",mg/l,,STCROIX_WQX UNKWN,Unknown method - historic STORET DATA,,1,1,methods_WQX
+"Alkalinity, total",mg/l,,STOCKBRIDGE_MUNSEE SMC_310.1,Alkalinity by Titration,,1,1,EPA 310.1
+"Alkalinity, total",mg/l,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,methods_fail
 "Alkalinity, total",mg/l,,TURTLEMT GS_UNKNOWN,GS_UNKNOWN,,1,1,methods_unknown
-"Alkalinity, total",mg/l,,U_NH01 2320 B MODIFIED,UNH METHOD,,1,1,
-"Alkalinity, total",mg/l,,USDOI/USGS I2030,Alkalinity in Water by Titration,,1,1,
-"Alkalinity, total",mg/l,,USEPA 120.1,Conductance,,-1.00E+06,-1.00E+06,methods_fail
-"Alkalinity, total",mg/l,,USEPA 310.1,Alkalinity by Titration,,1,1,EPA 310.1; Reported as alkalinity
+"Alkalinity, total",mg/l,,U_NH01 2320 B MODIFIED,UNH METHOD,,1,1,APHA 2320 B
+"Alkalinity, total",mg/l,,USDOI/USGS I2030,Alkalinity in Water by Titration,,1,1,USGS I-2030
+"Alkalinity, total",mg/l,,USEPA 120.1,Conductance,,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l,,USEPA 310.1,Alkalinity by Titration,,1,1,EPA 310.1
 "Alkalinity, total",mg/l,,USEPA 310.1,,,1,1,EPA 310.1
 "Alkalinity, total",mg/l,,USEPA 310.1_M,310.1 M ~ Alkalinity in Water by Titration,,1,1,EPA 310.1
 "Alkalinity, total",mg/l,,USEPA 310.2,Alkalinity by Colorimetric Analysis,,1,1,EPA 310.2
-"Alkalinity, total",mg/l CaCO3,mg/l,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,1,1,
+"Alkalinity, total",mg/l CaCO3,mg/l,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,1,1,APHA 2320 B
 "Alkalinity, total",mg/l CaCO3,mg/l CaCO3,APHA 2320,Alkalinity in Water by Titration,,1,1,APHA 2320
-"Alkalinity, total",mg/l CaCO3,mg/l CaCO3,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,1,1,APHA 2320
-"Alkalinity, total",mg/l CaCO3,mg/l CaCO3,APHA_SM20ED 2340C,2340 C ~ EDTA Titrimetric Method (Hardness),,1,1,
-"Alkalinity, total",mg/l CaCO3,mg/l CaCO3,HACH 8221,,,1,1,
+"Alkalinity, total",mg/l CaCO3,mg/l CaCO3,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,1,1,APHA 2320 B
+"Alkalinity, total",mg/l CaCO3,mg/l CaCO3,APHA_SM20ED 2340C,2340 C ~ EDTA Titrimetric Method (Hardness),,-1000000,-1000000,methods_fail
+"Alkalinity, total",mg/l CaCO3,mg/l CaCO3,HACH 8221,,,1,1,HACH 8221
 "Alkalinity, total",mg/l CaCO3,mg/l CaCO3,USEPA 310.1,Alkalinity by Titration,,1,1,EPA 310.1
 "Alkalinity, total",mg/l CaCO3,mg/l CaCO3,USEPA 310.1,,,1,1,EPA 310.1
 "Alkalinity, total",mg/l CaCO3,mg/l CaCO3,USEPA 310.1_M,310.1 M ~ Alkalinity in Water by Titration,,1,1,EPA 310.1
 "Alkalinity, total",mg/l CaCO3,mg/l CaCO3,USEPA 310.1_M,,,1,1,EPA 310.1
 "Alkalinity, total",mg/l CaCO3,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,methods_WQX
-"Alkalinity, total",mg/l CaCO3,,11NPSWRD_WQX NPS_SM14_403_4A,"Alkalinity by Standard Methods 14th Edition Method 403, Procedure 4A",,1,1,APHA 403
+"Alkalinity, total",mg/l CaCO3,,11NPSWRD_WQX NPS_SM14_403_4A,"Alkalinity by Standard Methods 14th Edition Method 403, Procedure 4A",,1,1,methods_WQX
 "Alkalinity, total",mg/l CaCO3,,APHA 2320,Alkalinity in Water by Titration,,1,1,APHA 2320
-"Alkalinity, total",mg/l CaCO3,,APHA 2320,,,1,1,
-"Alkalinity, total",mg/l CaCO3,,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,1,1,APHA 2320
+"Alkalinity, total",mg/l CaCO3,,APHA 2320,,,1,1,APHA 2320
+"Alkalinity, total",mg/l CaCO3,,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,1,1,APHA 2320 B
 "Alkalinity, total",mg/l CaCO3,,HACH 8221,Alkalinity by Buret Titration,,1,1,HACH 8221
 "Alkalinity, total",mg/l CaCO3,,KAWNATON_WQX 8221,Alkalinity by Buret Titration,,1,1,methods_WQX
-"Alkalinity, total",mg/l CaCO3,,USEPA 310.1,Alkalinity by Titration,,1,1,
+"Alkalinity, total",mg/l CaCO3,,USEPA 310.1,Alkalinity by Titration,,1,1,EPA 310.1
 "Alkalinity, total",mg/l CaCO3,,USEPA 310.2,Alkalinity by Colorimetric Analysis,,1,1,EPA 310.2
-"Alkalinity, total",MPN,,KAWNATON_WQX 2320-B,Alkalinity by Gran Titration,,-1.00E+06,-1.00E+06,units_fail
-"Alkalinity, total",PCU,mg/l CaCO3,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,-1.00E+06,-1.00E+06,units_fail
+"Alkalinity, total",MPN,,KAWNATON_WQX 2320-B,Alkalinity by Gran Titration,,-1000000,-1000000,units_fail
+"Alkalinity, total",PCU,mg/l CaCO3,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,-1000000,-1000000,units_fail
 "Alkalinity, total",ppm,ppm,USEPA 310.1,Alkalinity by Titration,,1,1,EPA 310.1
 "Alkalinity, total",ppm,,11NPSWRD_WQX NPS_LAMOT4491DR,LaMotte Alkalinity Test Kit 4491-DR,,1,1,methods_WQX
-"Alkalinity, total",ppm,,APHA 4500-CO2(B),4500 CO2 B  ~ Carbon Dioxide in Water by Nomography,,-1.00E+06,-1.00E+06,methods_fail
+"Alkalinity, total",ppm,,APHA 4500-CO2(B),4500 CO2 B  ~ Carbon Dioxide in Water by Nomography,,-1000000,-1000000,methods_fail
 "Alkalinity, total",ueq/L,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,0.05005,0.05005,methods_WQX
-"Alkalinity, total",ueq/L,,APHA 2320,Alkalinity in Water by Titration,,0.05005,0.05005,
+"Alkalinity, total",ueq/L,,APHA 2320,Alkalinity in Water by Titration,,0.05005,0.05005,APHA 2320
 "Alkalinity, total",ug/l,ug/l,USEPA 310.1,Alkalinity by Titration,,0.001,0.001,EPA 310.1
 "Alkalinity, total",ug/l,ug/l,USEPA 310.1_M,310.1 M ~ Alkalinity in Water by Titration,,0.001,0.001,EPA 310.1
 Gran acid neutralizing capacity,mg/l CaCO3,,11NPSWRD_WQX CUPN_ANC_FIELD,ANC Field Procedure Using Colorimetric Titration,,1,1,methods_WQX

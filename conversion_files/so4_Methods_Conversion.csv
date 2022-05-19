@@ -1,76 +1,76 @@
-"CharacteristicName","ResultMeasure.MeasureUnitCode","DetectionQuantitationLimitMeasure.MeasureUnitCode","Method_Id","ResultAnalyticalMethod.MethodName","USGSPCode","Conversion","Conversion_dl","Notes"
-"Sulfate","mg/l","mg/l","21FLHILL_WQX MOD375.4","MOD375.4",,1,1,"EPA 375.4"
-"Sulfate","mg/l","mg/l","21FLSFWM_WQX EPA300.0","EPA300.0",,1,1,"EPA 300.0"
-"Sulfate","mg/l","mg/l","21FLSFWM_WQX SM4110B","SM4110B",,1,1,"APHA 4110-B"
-"Sulfate","mg/l","mg/l","21FLSFWM_WQX WQ-1","Laboratory Procedures for Water Quality Chemical Analysis",,1,1,"methods_WQX"
-"Sulfate","mg/l","mg/l","APHA 4110-B","4110 B ~ Anions in Water by Ion Chromatography",,1,1,"APHA 4110-B"
-"Sulfate","mg/l","mg/l","APHA 4500-SO4(B)","4500 SO4 B  ~ Sulfate in Water by Ion Chromatography",,1,1,"APHA 4500-SO4(B)"
-"Sulfate","mg/l","mg/l","APHA 4500-SO4(D)","4500 SO4 D  ~ Sulfate in Water by Gravimetric Analysis",,1,1,"APHA 4500-SO4(D)"
-"Sulfate","mg/l","mg/l","ASTM D516","Sulfate in Water by Turbidimeter",,1,1,"ASTM D516"
-"Sulfate","mg/l","mg/l","CEDEN 16","EPA 300.0",,1,1,"EPA 300.0"
-"Sulfate","mg/l","mg/l","INSTOR_WQX 300.0","300",,1,1,"EPA 300.0"
-"Sulfate","mg/l","mg/l","INSTOR_WQX 300.0","300.0",,,,
-"Sulfate","mg/l","mg/l","NA NA",,945,1,1,"USGS_00945"
-"Sulfate","mg/l","mg/l","USDOI/USGS I2057","Anions in Water by Ion Chromatography",,1,1,"USGS I-2057"
-"Sulfate","mg/l","mg/l","USEPA 300","Inorganic Anions by Ion Chromatography",,1,1,"EPA 300.0"
-"Sulfate","mg/l","mg/l","USEPA 300(A)","300 A  ~ Inorganic Anions by Ion Chromatography",,1,1,"EPA 300.0"
-"Sulfate","mg/l","mg/l","USEPA 300.0","Determination of Inorganic Anions by Ion Chromatography",,1,1,"EPA 300.0"
-"Sulfate","mg/l","mg/l","USEPA 375.2","Sulfate in Water by Colorimetry",,1,1,"EPA 375.2"
-"Sulfate","mg/l","mg/l","USEPA 375.4","Sulfate by Turbidimetric Determination",,1,1,"EPA 375.4"
-"Sulfate","mg/l","mg/l","USEPA 6010B","6010 B ~ Inductively Coupled Plasma AES",,-1e+06,-1e+06,"methods_fail"
-"Sulfate","mg/l","mg/l","USGS CL065","Sulfate,wf,ASF methylthymol blue",945,1,1,"USGS_00945"
-"Sulfate","mg/l","mg/l","USGS IC009","Anions, IC, EPA 300.0",945,1,1,"USGS_00945"
-"Sulfate","mg/l","mg/l","USGS IC022","Anions, wf, IC",945,1,1,"USGS_00945"
-"Sulfate","mg/l","mg/l","USGS IC024","Anions, LIS wf, IC",945,1,1,"USGS_00945"
-"Sulfate","mg/l","mg/l","USGS IC032","Ions, wf, auto IC  (NRP & CO)",945,1,1,"USGS_00945"
-"Sulfate","mg/l","mg/l","USGS IC034","Anions, wf, IC (USGS-NYL)",945,1,1,"USGS_00946"
-"Sulfate","mg/l","mg/l","USGS IC037","Anions, wf,IC (EPA 300.1;CO WSC)",945,1,1,"USGS_00945"
-"Sulfate","mg/l",,"21IND_WQX 300.0","300",,1,1,"EPA 300.0"
-"Sulfate","mg/l",,"21IND_WQX 300.0","300.0",,,,
-"Sulfate","mg/l",,"APHA 4110-B","4110 B ~ Anions in Water by Ion Chromatography",,1,1,"APHA 4110-B"
-"Sulfate","mg/l",,"APHA 4500-SO4(B)","4500 SO4 B  ~ Sulfate in Water by Ion Chromatography",,1,1,"APHA 4500-SO4(B)"
-"Sulfate","mg/l",,"APHA 4500-SO4(G)","4500 SO4 G  ~ Sulfate in Water by Methylthymol Blue Flow Injection Analysis",,1,1,"APHA 4500-SO4(G)"
-"Sulfate","mg/l",,"ASTM D516","Sulfate in Water by Turbidimeter",,1,1,"ASTM D516"
-"Sulfate","mg/l",,"CEDEN 16","EPA 300.0",,1,1,"EPA 300.0"
-"Sulfate","mg/l",,"CEDEN 302","USGS I-2057-90",,1,1,"USGS I-2057"
-"Sulfate","mg/l",,"INSTOR_WQX 300.0","300",,1,1,"EPA 300.0"
-"Sulfate","mg/l",,"INSTOR_WQX 300.0","300.0",,,,
-"Sulfate","mg/l",,"MNPCA LEG_UNKNOWN","Legacy STORET migration; analytical procedure not specified",,1,1,"methods_unknown"
-"Sulfate","mg/l",,"MONT_DEQ_WQX HISTORIC-MONT-DEQ","Historic Procedure",,1,1,"methods_WQX"
-"Sulfate","mg/l",,"NA NA",,945,1,1,"USGS_00945"
-"Sulfate","mg/l",,"NA NA",,99113,1,1,"USGS_99113"
-"Sulfate","mg/l",,"NA NA",,,1,1,"methods_unknown"
-"Sulfate","mg/l",,"SPIRITLK IC022","IC022",,1,1,"methods_unknown"
-"Sulfate","mg/l",,"USDOI/USGS I2057","Anions in Water by Ion Chromatography",,1,1,"USGS I-2057"
-"Sulfate","mg/l",,"USEPA 300","Inorganic Anions by Ion Chromatography",,1,1,"EPA 300.0"
-"Sulfate","mg/l",,"USEPA 300(A)","300 A  ~ Inorganic Anions by Ion Chromatography",,1,1,"EPA 300.0"
-"Sulfate","mg/l",,"USEPA 300.0","300.0 ~ EPA; Determination of Inorganic Anions by Ion Chromatography",,1,1,"EPA 300.0"
-"Sulfate","mg/l",,"USEPA 300.0","Determination of Inorganic Anions by Ion Chromatography",,1,1,"EPA 300.0"
-"Sulfate","mg/l",,"USEPA 300_M","300 M ~ Determination of Anions by IC",,1,1,"EPA 300.0"
-"Sulfate","mg/l",,"USEPA 375.2","Sulfate in Water by Colorimetry",,1,1,"EPA 375.2"
-"Sulfate","mg/l",,"USEPA 375.4","Sulfate by Turbidimetric Determination",,1,1,"EPA 375.4"
-"Sulfate","mg/l",,"USGS 00073","Sulfate, wf, turbidimetry (NWQL)",945,1,1,"USGS_00945"
-"Sulfate","mg/l",,"USGS 00074","Sulfate, wf,turb,bkg corr (NWQL)",945,1,1,"USGS_00945"
-"Sulfate","mg/l",,"USGS 73","Sulfate, wf, turbidimetry (NWQL)",945,1,1,"USGS_00945"
-"Sulfate","mg/l",,"USGS 74","Sulfate, wf,turb,bkg corr (NWQL)",945,1,1,"USGS_00945"
-"Sulfate","mg/l",,"USGS CL065","Sulfate,wf,ASF methylthymol blue",945,1,1,"USGS_00945"
-"Sulfate","mg/l",,"USGS IC009","Anions, IC, EPA 300.0",945,1,1,"USGS_00945"
-"Sulfate","mg/l",,"USGS IC019","Anions, wf, autom IC (NWQL)",945,1,1,"USGS_00945"
-"Sulfate","mg/l",,"USGS IC022","Anions, wf, IC",945,1,1,"USGS_00945"
-"Sulfate","mg/l",,"USGS IC024","Anions, LIS wf, IC",945,1,1,"USGS_00945"
-"Sulfate","mg/l",,"USGS IC034","Anions, wf, IC (USGS-NYL)",945,1,1,"USGS_00946"
-"Sulfate","mg/l",,"UTAHDWQ_WQX GENERIC METHOD2","Used for half of methods where historical methodology may not be available.",,1,1,"methods_WQX"
-"Sulfate","ug/l","ug/l","USEPA 300(A)","300 A  ~ Inorganic Anions by Ion Chromatography",,0.001,0.001,"EPA 300.0"
-"Sulfate","ug/l","ug/l","USEPA 300.0","300.0 ~ EPA; Determination of Inorganic Anions by Ion Chromatography",,0.001,0.001,"EPA 300.0"
-"Sulfate","ug/l",,"NA NA",,91005,0.001,0.001,"USGS_91005"
-"Sulfate","umol/L","umol/L","USGS IC057","Anions, wf, autom IC (USGSBGCA)",52682,0.09606,0.09606,"USGS_52682"
-"Sulfate as SO4","mg/l",,"NA NA",,,1,1,"methods_unknown"
-"Sulfur","mg/l",,"11NPSWRD_WQX NPS_Unspecified","Unknown or Unspecified Procedure",,-1e+06,-1e+06,"units_fail; unknown if is as S or as SO4"
-"Sulfur","ug/l","ug/l","USEPA 6A","6A ~ Sulfur Dioxide, Carbon Dioxide, Moisture",,-1e+06,-1e+06,"methods_fail; for SO2 not SO4"
-"Sulfur","ug/l",,"USEPA 6010B","6010 B ~ Inductively Coupled Plasma AES",,-1e+06,-1e+06,"methods_fail"
-"Sulfur-34","per mil",,"NA NA",,82748,-1e+06,-1e+06,"unitsmethods_fail"
-"Sulfur Sulfate","mg/l","mg/l","USDOI/USGS I2057","Anions in Water by Ion Chromatography",,1,1,"USGS I-2057"
-"Sulfur Sulfate","mg/l",,"11NPSWRD_WQX CACO_10511001A","IC ? Anions, Chloride, Sulfates, (rapid determination)",,1,1,"methods_WQX"
-"Sulfur Sulfate","mg/l",,"11NPSWRD_WQX CRLA_TURB_SO4","Sulfate by Turbidimetric Procedure",,1,1,"methods_WQX"
-"Sulfur Sulfate","mg/l",,"11NPSWRD_WQX NPS_GS79-101_IC","Selected Anions in Water by Ion Chromatography-USGS WRI No. 79-101.",,1,1,"methods_WQX"
-"Sulfur Sulfate","mg/l",,"11NPSWRD_WQX NPS_Unspecified","Unknown or Unspecified Procedure",,1,1,"methods_WQX"
+CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Sulfate,mg/l,mg/l,21FLHILL_WQX MOD375.4,MOD375.4,,1,1,EPA 375.4
+Sulfate,mg/l,mg/l,21FLSFWM_WQX EPA300.0,EPA300.0,,1,1,EPA 300.0
+Sulfate,mg/l,mg/l,21FLSFWM_WQX SM4110B,SM4110B,,1,1,APHA 4110-B
+Sulfate,mg/l,mg/l,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,1,1,methods_WQX
+Sulfate,mg/l,mg/l,APHA 4110-B,4110 B ~ Anions in Water by Ion Chromatography,,1,1,APHA 4110-B
+Sulfate,mg/l,mg/l,APHA 4500-SO4(B),4500 SO4 B  ~ Sulfate in Water by Ion Chromatography,,1,1,APHA 4500-SO4(B)
+Sulfate,mg/l,mg/l,APHA 4500-SO4(D),4500 SO4 D  ~ Sulfate in Water by Gravimetric Analysis,,1,1,APHA 4500-SO4(D)
+Sulfate,mg/l,mg/l,ASTM D516,Sulfate in Water by Turbidimeter,,1,1,ASTM D516
+Sulfate,mg/l,mg/l,CEDEN 16,EPA 300.0,,1,1,EPA 300.0
+Sulfate,mg/l,mg/l,INSTOR_WQX 300.0,300,,1,1,EPA 300.0
+Sulfate,mg/l,mg/l,INSTOR_WQX 300.0,300,,1,1,EPA 300.0
+Sulfate,mg/l,mg/l,NA NA,,945,1,1,USGS_00945
+Sulfate,mg/l,mg/l,USDOI/USGS I2057,Anions in Water by Ion Chromatography,,1,1,USGS I-2057
+Sulfate,mg/l,mg/l,USEPA 300,Inorganic Anions by Ion Chromatography,,1,1,EPA 300.0
+Sulfate,mg/l,mg/l,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,1,1,EPA 300.0
+Sulfate,mg/l,mg/l,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,,1,1,EPA 300.0
+Sulfate,mg/l,mg/l,USEPA 375.2,Sulfate in Water by Colorimetry,,1,1,EPA 375.2
+Sulfate,mg/l,mg/l,USEPA 375.4,Sulfate by Turbidimetric Determination,,1,1,EPA 375.4
+Sulfate,mg/l,mg/l,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,-1000000,-1000000,methods_fail
+Sulfate,mg/l,mg/l,USGS CL065,"Sulfate,wf,ASF methylthymol blue",945,1,1,USGS_00945
+Sulfate,mg/l,mg/l,USGS IC009,"Anions, IC, EPA 300.0",945,1,1,USGS_00945
+Sulfate,mg/l,mg/l,USGS IC022,"Anions, wf, IC",945,1,1,USGS_00945
+Sulfate,mg/l,mg/l,USGS IC024,"Anions, LIS wf, IC",945,1,1,USGS_00945
+Sulfate,mg/l,mg/l,USGS IC032,"Ions, wf, auto IC  (NRP & CO)",945,1,1,USGS_00945
+Sulfate,mg/l,mg/l,USGS IC034,"Anions, wf, IC (USGS-NYL)",945,1,1,USGS_00946
+Sulfate,mg/l,mg/l,USGS IC037,"Anions, wf,IC (EPA 300.1;CO WSC)",945,1,1,USGS_00945
+Sulfate,mg/l,,21IND_WQX 300.0,300,,1,1,EPA 300.0
+Sulfate,mg/l,,21IND_WQX 300.0,300,,1,1,EPA 300.0
+Sulfate,mg/l,,APHA 4110-B,4110 B ~ Anions in Water by Ion Chromatography,,1,1,APHA 4110-B
+Sulfate,mg/l,,APHA 4500-SO4(B),4500 SO4 B  ~ Sulfate in Water by Ion Chromatography,,1,1,APHA 4500-SO4(B)
+Sulfate,mg/l,,APHA 4500-SO4(G),4500 SO4 G  ~ Sulfate in Water by Methylthymol Blue Flow Injection Analysis,,1,1,APHA 4500-SO4(G)
+Sulfate,mg/l,,ASTM D516,Sulfate in Water by Turbidimeter,,1,1,ASTM D516
+Sulfate,mg/l,,CEDEN 16,EPA 300.0,,1,1,EPA 300.0
+Sulfate,mg/l,,CEDEN 302,USGS I-2057-90,,1,1,USGS I-2057
+Sulfate,mg/l,,INSTOR_WQX 300.0,300,,1,1,EPA 300.0
+Sulfate,mg/l,,INSTOR_WQX 300.0,300,,1,1,EPA 300.0
+Sulfate,mg/l,,MNPCA LEG_UNKNOWN,Legacy STORET migration; analytical procedure not specified,,1,1,methods_unknown
+Sulfate,mg/l,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1,1,methods_WQX
+Sulfate,mg/l,,NA NA,,945,1,1,USGS_00945
+Sulfate,mg/l,,NA NA,,99113,1,1,USGS_99113
+Sulfate,mg/l,,NA NA,,,1,1,methods_unknown
+Sulfate,mg/l,,SPIRITLK IC022,IC022,,1,1,methods_unknown
+Sulfate,mg/l,,USDOI/USGS I2057,Anions in Water by Ion Chromatography,,1,1,USGS I-2057
+Sulfate,mg/l,,USEPA 300,Inorganic Anions by Ion Chromatography,,1,1,EPA 300.0
+Sulfate,mg/l,,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,1,1,EPA 300.0
+Sulfate,mg/l,,USEPA 300.0,300.0 ~ EPA; Determination of Inorganic Anions by Ion Chromatography,,1,1,EPA 300.0
+Sulfate,mg/l,,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,,1,1,EPA 300.0
+Sulfate,mg/l,,USEPA 300_M,300 M ~ Determination of Anions by IC,,1,1,EPA 300.0
+Sulfate,mg/l,,USEPA 375.2,Sulfate in Water by Colorimetry,,1,1,EPA 375.2
+Sulfate,mg/l,,USEPA 375.4,Sulfate by Turbidimetric Determination,,1,1,EPA 375.4
+Sulfate,mg/l,,USGS 00073,"Sulfate, wf, turbidimetry (NWQL)",945,1,1,USGS_00945
+Sulfate,mg/l,,USGS 00074,"Sulfate, wf,turb,bkg corr (NWQL)",945,1,1,USGS_00945
+Sulfate,mg/l,,USGS 73,"Sulfate, wf, turbidimetry (NWQL)",945,1,1,USGS_00945
+Sulfate,mg/l,,USGS 74,"Sulfate, wf,turb,bkg corr (NWQL)",945,1,1,USGS_00945
+Sulfate,mg/l,,USGS CL065,"Sulfate,wf,ASF methylthymol blue",945,1,1,USGS_00945
+Sulfate,mg/l,,USGS IC009,"Anions, IC, EPA 300.0",945,1,1,USGS_00945
+Sulfate,mg/l,,USGS IC019,"Anions, wf, autom IC (NWQL)",945,1,1,USGS_00945
+Sulfate,mg/l,,USGS IC022,"Anions, wf, IC",945,1,1,USGS_00945
+Sulfate,mg/l,,USGS IC024,"Anions, LIS wf, IC",945,1,1,USGS_00945
+Sulfate,mg/l,,USGS IC034,"Anions, wf, IC (USGS-NYL)",945,1,1,USGS_00946
+Sulfate,mg/l,,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,1,1,methods_WQX
+Sulfate,ug/l,ug/l,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,0.001,0.001,EPA 300.0
+Sulfate,ug/l,ug/l,USEPA 300.0,300.0 ~ EPA; Determination of Inorganic Anions by Ion Chromatography,,0.001,0.001,EPA 300.0
+Sulfate,ug/l,,NA NA,,91005,0.001,0.001,USGS_91005
+Sulfate,umol/L,umol/L,USGS IC057,"Anions, wf, autom IC (USGSBGCA)",52682,0.09606,0.09606,USGS_52682
+Sulfate as SO4,mg/l,,NA NA,,,1,1,methods_unknown
+Sulfur,mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,-1000000,-1000000,units_fail; unknown if is as S or as SO4
+Sulfur,ug/l,ug/l,USEPA 6A,"6A ~ Sulfur Dioxide, Carbon Dioxide, Moisture",,-1000000,-1000000,methods_fail; for SO2 not SO4
+Sulfur,ug/l,,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,-1000000,-1000000,methods_fail
+Sulfur-34,per mil,,NA NA,,82748,-1000000,-1000000,unitsmethods_fail
+Sulfur Sulfate,mg/l,mg/l,USDOI/USGS I2057,Anions in Water by Ion Chromatography,,1,1,USGS I-2057
+Sulfur Sulfate,mg/l,,11NPSWRD_WQX CACO_10511001A,"IC ? Anions, Chloride, Sulfates, (rapid determination)",,1,1,methods_WQX
+Sulfur Sulfate,mg/l,,11NPSWRD_WQX CRLA_TURB_SO4,Sulfate by Turbidimetric Procedure,,1,1,methods_WQX
+Sulfur Sulfate,mg/l,,11NPSWRD_WQX NPS_GS79-101_IC,Selected Anions in Water by Ion Chromatography-USGS WRI No. 79-101.,,1,1,methods_WQX
+Sulfur Sulfate,mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1,1,methods_WQX
