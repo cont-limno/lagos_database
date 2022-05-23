@@ -1,14 +1,14 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Gran acid neutralizing capacity,mg/l,,11113300 GRAN PLOT,GRAN PLOT TITRATION FOR ALKALINITY,,19.98,19.98,
-Gran acid neutralizing capacity,mg/l,,11113300 GRAN PLOT AUTO,GRAN PLOT TITRATION FOR ALKALINITY DONE BY AUTOMATED INSTRUMENT,,19.98,19.98,
-Gran acid neutralizing capacity,mg/l,,APHA 2320,Alkalinity in Water by Titration,,19.98,19.98,
-Gran acid neutralizing capacity,mg/l CaCO3,,11NPSWRD_WQX CUPN_ANC_FIELD,ANC Field Procedure Using Colorimetric Titration,,19.98,19.98,methods_WQX
-Gran acid neutralizing capacity,mg/l CaCO3,,11NPSWRD_WQX USGS_UNKNOWN,USGS Unknown/Unspecified Analytical Procedure,,19.98,19.98,methods_WQX
-Gran acid neutralizing capacity,mg/l CaCO3,,HACH 8221,Alkalinity by Buret Titration,,19.98,19.98,HACH 8221
-Gran acid neutralizing capacity,ueq/L,,11NPSWRD_WQX GRYN_180.1,Acid Neutralizing Capacity (ANC),,1,1,methods_WQX
-Gran acid neutralizing capacity,ueq/L,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,methods_WQX
-Gran acid neutralizing capacity,ueq/L,,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,1,1,
-Gran acid neutralizing capacity,ueq/L,,CEDEN 278,WRS 12A.1,,1,1,methods_unknown
-Gran acid neutralizing capacity,ueq/L,,NARS_WQX U.S. EPA (1987),U.S. EPA (1987),,1,1,
-Gran acid neutralizing capacity,ueq/L,,USDOI/USGS I2030,Alkalinity in Water by Titration,,1,1,
-Gran acid neutralizing capacity,ug/l,,21MICH MDEQ-EPA,,,19980,19980,
+Gran acid neutralizing capacity,mg/l,,11113300 GRAN PLOT,GRAN PLOT TITRATION FOR ALKALINITY,,1,1,methods_unknown
+Gran acid neutralizing capacity,mg/l,,11113300 GRAN PLOT AUTO,GRAN PLOT TITRATION FOR ALKALINITY DONE BY AUTOMATED INSTRUMENT,,1,1,methods_unknown
+Gran acid neutralizing capacity,mg/l,,APHA 2320,Alkalinity in Water by Titration,,1,1,APHA 2320
+Gran acid neutralizing capacity,mg/l CaCO3,,11NPSWRD_WQX CUPN_ANC_FIELD,ANC Field Procedure Using Colorimetric Titration,,1,1,methods_WQX
+Gran acid neutralizing capacity,mg/l CaCO3,,11NPSWRD_WQX USGS_UNKNOWN,USGS Unknown/Unspecified Analytical Procedure,,1,1,methods_WQX
+Gran acid neutralizing capacity,mg/l CaCO3,,HACH 8221,Alkalinity by Buret Titration,,1,1,HACH 8221
+Gran acid neutralizing capacity,ueq/L,,11NPSWRD_WQX GRYN_180.1,Acid Neutralizing Capacity (ANC),,0.05005,0.05005,methods_WQX
+Gran acid neutralizing capacity,ueq/L,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,0.05005,0.05005,methods_WQX
+Gran acid neutralizing capacity,ueq/L,,APHA 2320-B,2320 B ~ Alkalinity by Gran Titration,,0.05005,0.05005,APHA 2320-B
+Gran acid neutralizing capacity,ueq/L,,CEDEN 278,WRS 12A.1,,0.05005,0.05005,methods_unknown
+Gran acid neutralizing capacity,ueq/L,,NARS_WQX U.S. EPA (1987),U.S. EPA (1987),,0.05005,0.05005,methods_WQX
+Gran acid neutralizing capacity,ueq/L,,USDOI/USGS I2030,Alkalinity in Water by Titration,,0.05005,0.05005,USGS I-2030
+Gran acid neutralizing capacity,ug/l,,21MICH MDEQ-EPA,,,1000,1000,methods_unknown
