@@ -1,10 +1,10 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Total dissolved solids,g/l,,11113300 UNKNOWN,EXACT FIELD OR LAB METHOD IS UNKNOWN,,1000,1000,
+Total dissolved solids,g/l,,11113300 UNKNOWN,EXACT FIELD OR LAB METHOD IS UNKNOWN,,1000,1000,methods_unknown
 Total dissolved solids,g/l,,APHA 2540-C,2540 C ~ Total Dissolved Solids in Water,,1000,1000,APHA 2540-C; Total Dissolved Solids in Water
-Total dissolved solids,g/l,,MNPCA FLD,"Field measurement/observation, generic method",,1000,1000,
+Total dissolved solids,g/l,,MNPCA FLD,"Field measurement/observation, generic method",,1000,1000,methods_unknown
 Total dissolved solids,g/l,,NA NA,,,1000,1000,methods_unknown
-Total dissolved solids,g/l,,STCROIX_WQX UNKWN,Unknown method - historic STORET DATA,,1000,1000,
-Total dissolved solids,g/l,,STOCKBRIDGE_MUNSEE SMC_2520-B,Salinity in Water- Electrical Conductivity Method,,-1000000,-1000000,
+Total dissolved solids,g/l,,STCROIX_WQX UNKWN,Unknown method - historic STORET DATA,,1000,1000,methods_WQX
+Total dissolved solids,g/l,,STOCKBRIDGE_MUNSEE SMC_2520-B,Salinity in Water- Electrical Conductivity Method,,-1000000,-1000000,methods_fail
 Total dissolved solids,mg/l,mg/l,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,1,1,methods_WQX
 Total dissolved solids,mg/l,mg/l,21FLLCPC_WQX SM2540C,TOTAL DISSOLVED SOLIDS,,1,1,APHA 2540-C; Total Dissolved Solids in Water
 Total dissolved solids,mg/l,mg/l,21FLMANA GENERIC,,,1,1,methods_unknown
@@ -29,76 +29,76 @@ Total dissolved solids,mg/l,,21FLMANA_WQX GENERIC,General Listing of Field and L
 Total dissolved solids,mg/l,,21FLSEM YSI,,,1,1,methods_unknown
 Total dissolved solids,mg/l,,21FLSFWM WQ-1,,,1,1,methods_unknown
 Total dissolved solids,mg/l,,21IOWA_WQX HYDROLAB,HYDROLAB,,1,1,methods_WQX
-Total dissolved solids,mg/l,,21IOWA_WQX ISU 2510,ISU modification of APHA 2510,,1,1,methods_fail; calculation
+Total dissolved solids,mg/l,,21IOWA_WQX ISU 2510,ISU modification of APHA 2510,,-1000000,-1000000,methods_fail; calculation
 Total dissolved solids,mg/l,,21KAN001_WQX USGS I-1751-78,TDS,,1,1,USGS I-1751-78; method not found
-Total dissolved solids,mg/l,,21OHIO_WQX SM 2540C,SM 2540C,,1,1,
-Total dissolved solids,mg/l,,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,-1000000,-1000000,
-Total dissolved solids,mg/l,,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,-1000000,-1000000,
+Total dissolved solids,mg/l,,21OHIO_WQX SM 2540C,SM 2540C,,1,1,APHA 2540-C; Total Dissolved Solids in Water
+Total dissolved solids,mg/l,,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,-1000000,-1000000,methods_fail
+Total dissolved solids,mg/l,,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,-1000000,-1000000,methods_fail
 Total dissolved solids,mg/l,,APHA 2540-C,2540 C ~ Total Dissolved Solids in Water,,1,1,APHA 2540-C; Total Dissolved Solids in Water
 Total dissolved solids,mg/l,,APHA 2540-C,,,1,1,APHA 2540-C; Total Dissolved Solids in Water
-Total dissolved solids,mg/l,,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,,1,1,
+Total dissolved solids,mg/l,,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,,1,1,APHA 2540-D; tss
 Total dissolved solids,mg/l,,APHA 2540-D,,,1,1,APHA 2540-D; tss
 Total dissolved solids,mg/l,,APHA_SM22ED 2540C,2540C ~ Solids in Water (Total Dissolved Solids Dried at 180oC),,1,1,APHA 2540-C; Total Dissolved Solids in Water
-Total dissolved solids,mg/l,,ASTM D516-90,Standard Test Method for Sulfate Ion in Water,,-1000000,-1000000,
+Total dissolved solids,mg/l,,ASTM D516-90,Standard Test Method for Sulfate Ion in Water,,-1000000,-1000000,methods_fail
 Total dissolved solids,mg/l,,KAWNATON KAW_SOP,,,1,1,methods_unknown
 Total dissolved solids,mg/l,,MNPCA FLD,"Field measurement/observation, generic method",,1,1,methods_unknown
 Total dissolved solids,mg/l,,MNPCA LEG_P70300,"RESIDUE,TOTAL FILTRABLE (DRIED AT 180C),MG/L",,1,1,"USGS_70300; Dissolved solids dried at 180 degrees Celsius, water, filtered, milligrams per liter"
-Total dissolved solids,mg/l,,MNPCA LEG_P70301,"SOLIDS, DISSOLVED-SUM OF CONSTITUENTS (MG/L)",,-1000000,-1000000,
+Total dissolved solids,mg/l,,MNPCA LEG_P70301,"SOLIDS, DISSOLVED-SUM OF CONSTITUENTS (MG/L)",,-1000000,-1000000,methods_fail
 Total dissolved solids,mg/l,,NA NA,,,1,1,methods_unknown
-Total dissolved solids,mg/l,,ONEIDA_WQX UNKNOWN,UNKNOWN,,-1000000,-1000000,
-Total dissolved solids,mg/l,,SDDENR_WQX UNKNOWN,UNKNOWN,,-1000000,-1000000,
+Total dissolved solids,mg/l,,ONEIDA_WQX UNKNOWN,UNKNOWN,,1,1,methods_WQX
+Total dissolved solids,mg/l,,SDDENR_WQX UNKNOWN,UNKNOWN,,1,1,methods_WQX
 Total dissolved solids,mg/l,,USEPA 160.1,Filterable Residue - TDS,,1,1,"EPA 160.1; TDS Residue, Filterable, 180 deg. C"
 Total dissolved solids,mg/l,,USEPA 160.1,,,1,1,"EPA 160.1; TDS Residue, Filterable, 180 deg. C"
 Total dissolved solids,mg/l,,USEPA 160.2,,,1,1,EPA 160.2; TSS
 Total dissolved solids,ppm,ppm,USEPA 160.1,Filterable Residue - TDS,,1,1,"EPA 160.1; TDS Residue, Filterable, 180 deg. C"
 Total dissolved solids,ppm,ppm,USEPA 160.2,,,1,1,EPA 160.2; TSS
 Total dissolved solids,ug/l,ug/l,USEPA 160.1,Filterable Residue - TDS,,0.001,0.001,"EPA 160.1; TDS Residue, Filterable, 180 deg. C"
-Total solids,%,%,AZDEQ_SW EPA 160.3,EPA 160.3,,-1.00E+06,-1.00E+06,units_fail
-Total solids,%,%,AZDEQ_SW SM 2320B,SM 2320B,,-1.00E+06,-1.00E+06,units_fail
-Total solids,%,%,AZDEQ_SW SM 2540G,SM 2540G,,-1.00E+06,-1.00E+06,units_fail
-Total solids,%,,21OHIO_WQX OEPA Method,OEPA Method,,-1000000,-1000000,
-Total solids,%,,AZDEQ_SW SM 2540C,SM 2540C,,-1.00E+06,-1.00E+06,units_fail
-Total solids,%,,AZDEQ_SW SM 2540D,SM 2540D,,-1.00E+06,-1.00E+06,units_fail
-Total solids,%,,AZDEQ_SW SM 2540G,SM 2540G,,-1.00E+06,-1.00E+06,units_fail
-Total solids,%,,AZDEQ_SW UNKNOWN,UNKNOWN,,-1.00E+06,-1.00E+06,units_fail
-Total solids,%,,CEDEN 192,EPA 8081BM,,-1.00E+06,-1.00E+06,units_fail
-Total solids,%,,CEDEN 5288,EPA 1668CM,,-1.00E+06,-1.00E+06,units_fail
-Total solids,%,,CEDEN 5289,EPA 1614AM,,-1.00E+06,-1.00E+06,units_fail
-Total solids,%,,MNPCA LEG_P70318,"SOLIDS, TOTAL, PERCENT OF WET SAMPLE",,-1000000,-1000000,
+Total solids,%,%,AZDEQ_SW EPA 160.3,EPA 160.3,,-1000000,-1000000,units_fail
+Total solids,%,%,AZDEQ_SW SM 2320B,SM 2320B,,-1000000,-1000000,units_fail
+Total solids,%,%,AZDEQ_SW SM 2540G,SM 2540G,,-1000000,-1000000,units_fail
+Total solids,%,,21OHIO_WQX OEPA Method,OEPA Method,,-1000000,-1000000,units_fail
+Total solids,%,,AZDEQ_SW SM 2540C,SM 2540C,,-1000000,-1000000,units_fail
+Total solids,%,,AZDEQ_SW SM 2540D,SM 2540D,,-1000000,-1000000,units_fail
+Total solids,%,,AZDEQ_SW SM 2540G,SM 2540G,,-1000000,-1000000,units_fail
+Total solids,%,,AZDEQ_SW UNKNOWN,UNKNOWN,,-1000000,-1000000,units_fail
+Total solids,%,,CEDEN 192,EPA 8081BM,,-1000000,-1000000,units_fail
+Total solids,%,,CEDEN 5288,EPA 1668CM,,-1000000,-1000000,units_fail
+Total solids,%,,CEDEN 5289,EPA 1614AM,,-1000000,-1000000,units_fail
+Total solids,%,,MNPCA LEG_P70318,"SOLIDS, TOTAL, PERCENT OF WET SAMPLE",,-1000000,-1000000,units_fail
 Total solids,mg/l,mg/l,21FLORAN EPA160.2,,,1,1,EPA 160.2; TSS
 Total solids,mg/l,mg/l,21FLORAN EPA160.3,,,1,1,EPA 160.3; total residue
 Total solids,mg/l,mg/l,21NC01WQ UNKNOWN,,,1,1,methods_unknown
 Total solids,mg/l,mg/l,APHA 2540-B,2540 B ~ Total Solids Dried 103-105C in Water,,1,1,APHA 2540-B; total solids
 Total solids,mg/l,mg/l,APHA 2540-B,,,1,1,APHA 2540-B; total solids
 Total solids,mg/l,mg/l,APHA 2540-D,,,1,1,APHA 2540-D; tss
-Total solids,mg/l,mg/l,APHA 2540-G,"2540 G ~ Total, Fixed and Volatile Solids",,-1.00E+06,-1.00E+06,methods_fail; for sediment
-Total solids,mg/l,mg/l,INSTOR_WQX 160.3,160.3,,1,1,
-Total solids,mg/l,mg/l,INSTOR_WQX SM2540B,SM2540B,,1,1,
-Total solids,mg/l,mg/l,NA NA,,500,1,1,
+Total solids,mg/l,mg/l,APHA 2540-G,"2540 G ~ Total, Fixed and Volatile Solids",,-1000000,-1000000,methods_fail; for sediment
+Total solids,mg/l,mg/l,INSTOR_WQX 160.3,160.3,,1,1,EPA 160.3; total residue
+Total solids,mg/l,mg/l,INSTOR_WQX SM2540B,SM2540B,,1,1,APHA 2540-B; total solids
+Total solids,mg/l,mg/l,NA NA,,500,1,1,"USGS_00500; Total solids dried at 105 degrees Celsius, water, unfiltered, milligrams per liter; Total solids, water, unfiltered, dried at 103-105 degrees Celsius, gravimetric (Standard Methods 2450 B; USGS-NYL)"
 Total solids,mg/l,mg/l,USEPA 160.1,Filterable Residue - TDS,,1,1,"EPA 160.1; TDS Residue, Filterable, 180 deg. C"
 Total solids,mg/l,mg/l,USEPA 160.2,,,1,1,EPA 160.2; TSS
 Total solids,mg/l,mg/l,USEPA 160.3,Total Residue,,1,1,EPA 160.3; total residue
 Total solids,mg/l,mg/l,USEPA 160.3,,,1,1,EPA 160.3; total residue
-Total solids,mg/l,mg/l,USEPA 180.1,,,-1.00E+06,-1.00E+06,methods_fail; turbidity
+Total solids,mg/l,mg/l,USEPA 180.1,,,-1000000,-1000000,methods_fail; turbidity
 Total solids,mg/l,mg/l,USGS ROE12,"ROE, wu, 105C, by weight (NWQL)",500,1,1,"USGS_00500; Total solids dried at 105 degrees Celsius, water, unfiltered, milligrams per liter; Total solids, water, unfiltered, dried at 103-105 degrees Celsius, gravimetric (Standard Methods 2450 B; USGS-NYL)"
-Total solids,mg/l,,21IND_WQX 160.3,160.3,,1,1,
+Total solids,mg/l,,21IND_WQX 160.3,160.3,,1,1,EPA 160.3; total residue
 Total solids,mg/l,,21KAN001_WQX USGS I-1751-78,TDS,,1,1,USGS I-1751-78; method not found
 Total solids,mg/l,,21NC01WQ UNKNOWN,,,1,1,methods_unknown
-Total solids,mg/l,,21OHIO_WQX SM 2540B,SM 2540B,,1,1,
+Total solids,mg/l,,21OHIO_WQX SM 2540B,SM 2540B,,1,1,APHA 2540-B; total solids
 Total solids,mg/l,,APHA 2540-B,2540 B ~ Total Solids Dried 103-105C in Water,,1,1,APHA 2540-B; total solids
 Total solids,mg/l,,APHA 2540-B,,,1,1,APHA 2540-B; total solids
-Total solids,mg/l,,INSTOR_WQX 160.3,160.3,,1,1,
-Total solids,mg/l,,INSTOR_WQX SM2540B,SM2540B,,1,1,
+Total solids,mg/l,,INSTOR_WQX 160.3,160.3,,1,1,EPA 160.3; total residue
+Total solids,mg/l,,INSTOR_WQX SM2540B,SM2540B,,1,1,APHA 2540-B; total solids
 Total solids,mg/l,,MNPCA LEG_P00500,"RESIDUE, TOTAL (MG/L)",,1,1,"USGS_00500; Total solids dried at 105 degrees Celsius, water, unfiltered, milligrams per liter; Total solids, water, unfiltered, dried at 103-105 degrees Celsius, gravimetric (Standard Methods 2450 B; USGS-NYL)"
-Total solids,mg/l,,MNPCA UNKNOWN,Analytical procedure not specified,,1,1,
+Total solids,mg/l,,MNPCA UNKNOWN,Analytical procedure not specified,,1,1,methods_unknown
 Total solids,mg/l,,NA NA,,500,1,1,"USGS_00500; Total solids dried at 105 degrees Celsius, water, unfiltered, milligrams per liter; Total solids, water, unfiltered, dried at 103-105 degrees Celsius, gravimetric (Standard Methods 2450 B; USGS-NYL)"
 Total solids,mg/l,,OKCORCOM CC-001,,,1,1,methods_unknown
-Total solids,mg/l,,USACOEND I-3750-85,"Solids, Total",,1,1,USGS I-3750-85
-Total solids,mg/l,,USDOI/USGS I3750,Residue by Evaporation and Gravimetric,,1,1,USGS I-3750
+Total solids,mg/l,,USACOEND I-3750-85,"Solids, Total",,1,1,"USGS I-3765-85; Solids, residue at 105 degrees Celsius, suspended, gravimetric (USGS I-3765-85; PA WSC; PA-DEP)"
+Total solids,mg/l,,USDOI/USGS I3750,Residue by Evaporation and Gravimetric,,1,1,"USGS I-3765-85; Solids, residue at 105 degrees Celsius, suspended, gravimetric (USGS I-3765-85; PA WSC; PA-DEP)"
 Total solids,mg/l,,USEPA 160.2,Non-Filterable Residue - TSS,,1,1,EPA 160.2; TSS
 Total solids,mg/l,,USEPA 160.3,Total Residue,,1,1,EPA 160.3; total residue
 Total solids,mg/l,,USGS ROE12,"ROE, wu, 105C, by weight (NWQL)",500,1,1,"USGS_00500; Total solids dried at 105 degrees Celsius, water, unfiltered, milligrams per liter; Total solids, water, unfiltered, dried at 103-105 degrees Celsius, gravimetric (Standard Methods 2450 B; USGS-NYL)"
-Total suspended solids,mg/l,cfu/100ml,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,,1,-1.00E+06,APHA 2540-D; tss
+Total suspended solids,mg/l,cfu/100ml,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,,1,-1000000,APHA 2540-D; tss
 Total suspended solids,mg/l,mg/l,21ARIZ UNKNOWN,,,1,1,methods_unknown
 Total suspended solids,mg/l,mg/l,21FLGW_WQX 900456,QA Plan #900456,,1,1,methods_WQX
 Total suspended solids,mg/l,mg/l,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,1,1,methods_WQX
@@ -120,67 +120,67 @@ Total suspended solids,mg/l,mg/l,21FLSFWM_WQX WQ-1,Laboratory Procedures for Wat
 Total suspended solids,mg/l,mg/l,21FLSJWM_WQX OTHER/UNKNOWN,Other or Unknown Procedure,,1,1,methods_WQX
 Total suspended solids,mg/l,mg/l,21FLWPB_WQX 2540D,STANDARD METHODS 2540D - TSS,,1,1,APHA 2540-D; tss
 Total suspended solids,mg/l,mg/l,21NDHDWQ UNKOWN,,,1,1,methods_unknown
-Total suspended solids,mg/l,mg/l,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,APHA 2320,Alkalinity in Water by Titration,,-1.00E+06,-1.00E+06,methods_fail
+Total suspended solids,mg/l,mg/l,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,APHA 2320,Alkalinity in Water by Titration,,-1000000,-1000000,methods_fail
 Total suspended solids,mg/l,mg/l,APHA 2540-B,2540 B ~ Total Solids Dried 103-105C in Water,,1,1,APHA 2540-B; total solids
 Total suspended solids,mg/l,mg/l,APHA 2540-C,2540 C ~ Total Dissolved Solids in Water,,1,1,APHA 2540-C; Total Dissolved Solids in Water
 Total suspended solids,mg/l,mg/l,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,,1,1,APHA 2540-D; tss
 Total suspended solids,mg/l,mg/l,APHA 2540-D,,,1,1,APHA 2540-D; tss
 Total suspended solids,mg/l,mg/l,APHA 2540-E,2540 E ~ Fixed and Volatile Solids in Water,,1,1,APHA 2540-E; fixed and volatile
-Total suspended solids,mg/l,mg/l,APHA 4500-NH3(G),4500 NH3 G  ~ Ammonia in Water Using Automated Phenate Method,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,APHA 4500-SI(E),4500 SI E  ~ Silica in Water by Spectrophotometry- Heteropoly Blue Method,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,APHA 5210-B,5210 B ~ 5-Day Biochemical Oxygen Demand,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,-1.00E+06,-1.00E+06,methods_fail
+Total suspended solids,mg/l,mg/l,APHA 4500-NH3(G),4500 NH3 G  ~ Ammonia in Water Using Automated Phenate Method,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,APHA 4500-SI(E),4500 SI E  ~ Silica in Water by Spectrophotometry- Heteropoly Blue Method,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,APHA 5210-B,5210 B ~ 5-Day Biochemical Oxygen Demand,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,-1000000,-1000000,methods_fail
 Total suspended solids,mg/l,mg/l,AZDEQ_SW ASTM D3977C,ASTM D3977C,,1,1,ASTM D3977C
 Total suspended solids,mg/l,mg/l,AZDEQ_SW EPA 160.1,EPA 160.1,,1,1,"EPA 160.1; TDS Residue, Filterable, 180 deg. C"
 Total suspended solids,mg/l,mg/l,AZDEQ_SW EPA 160.2,EPA 160.2,,1,1,EPA 160.2; TSS
-Total suspended solids,mg/l,mg/l,AZDEQ_SW EPA 160.4,EPA 160.4,,1,1,methods_fail; volatile SS
-Total suspended solids,mg/l,mg/l,AZDEQ_SW EPA 180.1,EPA 180.1,,-1.00E+06,-1.00E+06,methods_fail; turbidity
-Total suspended solids,mg/l,mg/l,AZDEQ_SW SM 2340B,SM 2340B,,-1.00E+06,-1.00E+06,methods_fail; hardness
+Total suspended solids,mg/l,mg/l,AZDEQ_SW EPA 160.4,EPA 160.4,,-1000000,-1000000,methods_fail; volatile SS
+Total suspended solids,mg/l,mg/l,AZDEQ_SW EPA 180.1,EPA 180.1,,-1000000,-1000000,methods_fail; turbidity
+Total suspended solids,mg/l,mg/l,AZDEQ_SW SM 2340B,SM 2340B,,-1000000,-1000000,methods_fail; hardness
 Total suspended solids,mg/l,mg/l,AZDEQ_SW SM 2540D,SM 2540D,,1,1,APHA 2540-D; tss
-Total suspended solids,mg/l,mg/l,AZDEQ_SW SM 2550B-00,SM 2550B-00,,-1.00E+06,-1.00E+06,methods_fail; temp
+Total suspended solids,mg/l,mg/l,AZDEQ_SW SM 2550B-00,SM 2550B-00,,-1000000,-1000000,methods_fail; temp
 Total suspended solids,mg/l,mg/l,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,methods_unknown
-Total suspended solids,mg/l,mg/l,INSTOR_WQX 160.2,160.2,,1,1,
-Total suspended solids,mg/l,mg/l,INSTOR_WQX SM2540D,SM2540D,,1,1,
-Total suspended solids,mg/l,mg/l,LEECHLAK_WQX I-3765-85,USGS I-3765-85,,1,1,
-Total suspended solids,mg/l,mg/l,STOCKBRIDGE_MUNSEE SMC_TSS,Total Suspended Solids,,1,1,
+Total suspended solids,mg/l,mg/l,INSTOR_WQX 160.2,160.2,,1,1,EPA 160.2; TSS
+Total suspended solids,mg/l,mg/l,INSTOR_WQX SM2540D,SM2540D,,1,1,APHA 2540-D; tss
+Total suspended solids,mg/l,mg/l,LEECHLAK_WQX I-3765-85,USGS I-3765-85,,1,1,"USGS I-3765-85; Solids, residue at 105 degrees Celsius, suspended, gravimetric (USGS I-3765-85; PA WSC; PA-DEP)"
+Total suspended solids,mg/l,mg/l,STOCKBRIDGE_MUNSEE SMC_TSS,Total Suspended Solids,,1,1,methods_unknown
 Total suspended solids,mg/l,mg/l,USDOI/USGS I-3765-85,"Solids, residue at 105°C",,1,1,"USGS I-3765-85; Solids, residue at 105 degrees Celsius, suspended, gravimetric (USGS I-3765-85; PA WSC; PA-DEP)"
 Total suspended solids,mg/l,mg/l,USDOI/USGS I-3765-85,"Solids, residue at 105Â°C",,1,1,"USGS I-3765-85; Solids, residue at 105 degrees Celsius, suspended, gravimetric (USGS I-3765-85; PA WSC; PA-DEP)"
-Total suspended solids,mg/l,mg/l,USDOI/USGS I2700,Silica in Water by Colorimetry,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,USDOI/USGS I3765,Residue by Evaporation and Gravimetric,,1,1,
+Total suspended solids,mg/l,mg/l,USDOI/USGS I2700,Silica in Water by Colorimetry,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,USDOI/USGS I3765,Residue by Evaporation and Gravimetric,,1,1,"USGS I-3765-85; Solids, residue at 105 degrees Celsius, suspended, gravimetric (USGS I-3765-85; PA WSC; PA-DEP)"
 Total suspended solids,mg/l,mg/l,USDOI/USGS I3765,,,1,1,"USGS I-3765-85; Solids, residue at 105 degrees Celsius, suspended, gravimetric (USGS I-3765-85; PA WSC; PA-DEP)"
-Total suspended solids,mg/l,mg/l,USEPA 120.1,Conductance,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,USEPA 150.1,pH,,-1.00E+06,-1.00E+06,methods_fail
+Total suspended solids,mg/l,mg/l,USEPA 120.1,Conductance,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,USEPA 150.1,pH,,-1000000,-1000000,methods_fail
 Total suspended solids,mg/l,mg/l,USEPA 160.1,Filterable Residue - TDS,,1,1,"EPA 160.1; TDS Residue, Filterable, 180 deg. C"
 Total suspended solids,mg/l,mg/l,USEPA 160.1,,,1,1,"EPA 160.1; TDS Residue, Filterable, 180 deg. C"
 Total suspended solids,mg/l,mg/l,USEPA 160.2,Non-Filterable Residue - TSS,,1,1,EPA 160.2; TSS
 Total suspended solids,mg/l,mg/l,USEPA 160.2,,,1,1,EPA 160.2; TSS
-Total suspended solids,mg/l,mg/l,USEPA 160.4,,,1,1,methods_fail; volatile SS
-Total suspended solids,mg/l,mg/l,USEPA 170.1,Temperature,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,USEPA 180.1,Turbidity by Nephelometry,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,USEPA 180.1,,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,USEPA 351.2,Total Kjeldahl Nitrogen by Colorimetry,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,USEPA 351.2,,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,USEPA 360.1,Dissolved Oxygen Using an ISE,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,USEPA 365.1,Phosphorus by Colorimetry,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,USEPA 365.3,Phosphorus by Two Reagent Colorimetry,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,USEPA 365.4,Total Phosphorus After Block Digestion,,-1.00E+06,-1.00E+06,methods_fail
-Total suspended solids,mg/l,mg/l,USEPA C-008-1,Total Suspended Solids in Water,,1,1,EPA C-008-1
-Total suspended solids,mg/l,MPN,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,,1,1,
-Total suspended solids,mg/l,,11NPSWRD_WQX NPS_LEGACY,LEGACY,,1,1,
+Total suspended solids,mg/l,mg/l,USEPA 160.4,,,-1000000,-1000000,methods_fail; volatile SS
+Total suspended solids,mg/l,mg/l,USEPA 170.1,Temperature,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,USEPA 180.1,Turbidity by Nephelometry,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,USEPA 180.1,,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,USEPA 351.2,Total Kjeldahl Nitrogen by Colorimetry,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,USEPA 351.2,,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,USEPA 360.1,Dissolved Oxygen Using an ISE,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,USEPA 365.1,Phosphorus by Colorimetry,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,USEPA 365.3,Phosphorus by Two Reagent Colorimetry,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,USEPA 365.4,Total Phosphorus After Block Digestion,,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,mg/l,USEPA C-008-1,Total Suspended Solids in Water,,1,1,methods_unknown
+Total suspended solids,mg/l,MPN,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,,1,-1000000,APHA 2540-D; tss
+Total suspended solids,mg/l,,11NPSWRD_WQX NPS_LEGACY,LEGACY,,1,1,methods_WQX
 Total suspended solids,mg/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,methods_WQX
 Total suspended solids,mg/l,,21ARIZ UNKNOWN,,,1,1,methods_unknown
 Total suspended solids,mg/l,,21ARIZ_WQX ASTM D3977C,"ASTM 3977C, SEDIMENT CONCENTRATION",,1,1,ASTM D3977C
 Total suspended solids,mg/l,,21ARIZ_WQX EPA 160.1,TOTAL FILTRATABLE RESIDUE,,1,1,"EPA 160.1; TDS Residue, Filterable, 180 deg. C"
 Total suspended solids,mg/l,,21ARIZ_WQX EPA 160.2,TOTAL NONFILTRATABLE RESIDUE,,1,1,EPA 160.2; TSS
-Total suspended solids,mg/l,,21ARIZ_WQX SM 2340B,HARDNESS IN WATER BY EDTA TITRATION,,-1.00E+06,-1.00E+06,methods_fail
+Total suspended solids,mg/l,,21ARIZ_WQX SM 2340B,HARDNESS IN WATER BY EDTA TITRATION,,-1000000,-1000000,methods_fail
 Total suspended solids,mg/l,,21ARIZ_WQX SM 2540D,"TOTAL SUSPENDED SOLIDS, DRIED AT 103-105C",,1,1,APHA 2540-D; tss
-Total suspended solids,mg/l,,21ARIZ_WQX SM 2550B-00,PH TEMPERATURE BY SM 2550B-00,,-1.00E+06,-1.00E+06,methods_fail
+Total suspended solids,mg/l,,21ARIZ_WQX SM 2550B-00,PH TEMPERATURE BY SM 2550B-00,,-1000000,-1000000,methods_fail
 Total suspended solids,mg/l,,21FLCEN_WQX HISTORICAL,Standard Operation Procedure,,1,1,methods_WQX
 Total suspended solids,mg/l,,21FLCEN_WQX SOP-ANALY,Standard Analytical Procedure,,1,1,methods_WQX
 Total suspended solids,mg/l,,21FLGW_WQX 900456,QA Plan #900456,,1,1,methods_WQX
@@ -188,42 +188,42 @@ Total suspended solids,mg/l,,21FLMANA GENERIC,,,1,1,methods_unknown
 Total suspended solids,mg/l,,21FLMANA_WQX GENERIC,General Listing of Field and Lab Analytical Procedures for Manatee County,,1,1,methods_WQX
 Total suspended solids,mg/l,,21FLPDEM SM2540 B,,,1,1,APHA 2540-B; total solids
 Total suspended solids,mg/l,,21FLPDEM_WQX SM2540 D,Total Suspended Solids (TSS),,1,1,APHA 2540-D; tss
-Total suspended solids,mg/l,,21IND_WQX 160.2,160.2,,1,1,
-Total suspended solids,mg/l,,21MICH MDEQ-EPA,,,1,1,
+Total suspended solids,mg/l,,21IND_WQX 160.2,160.2,,1,1,EPA 160.2; TSS
+Total suspended solids,mg/l,,21MICH MDEQ-EPA,,,1,1,methods_unknown
 Total suspended solids,mg/l,,21NDHDWQ STANDARD METHOD,,,1,1,methods_unknown
 Total suspended solids,mg/l,,21NDHDWQ UNKOWN,,,1,1,methods_unknown
-Total suspended solids,mg/l,,21OHIO_WQX SM 2540D,SM 2540D,,1,1,
-Total suspended solids,mg/l,,APHA 2540-B,2540 B ~ Total Solids Dried 103-105C in Water,,1,1,
-Total suspended solids,mg/l,,APHA 2540-C,2540 C ~ Total Dissolved Solids in Water,,1,1,
+Total suspended solids,mg/l,,21OHIO_WQX SM 2540D,SM 2540D,,1,1,APHA 2540-D; tss
+Total suspended solids,mg/l,,APHA 2540-B,2540 B ~ Total Solids Dried 103-105C in Water,,1,1,APHA 2540-B; total solids
+Total suspended solids,mg/l,,APHA 2540-C,2540 C ~ Total Dissolved Solids in Water,,1,1,APHA 2540-C; Total Dissolved Solids in Water
 Total suspended solids,mg/l,,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,,1,1,APHA 2540-D; tss
 Total suspended solids,mg/l,,APHA 2540-D,,,1,1,APHA 2540-D; tss
 Total suspended solids,mg/l,,AZDEQ_SW EPA 160.2,EPA 160.2,,1,1,EPA 160.2; TSS
 Total suspended solids,mg/l,,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,methods_unknown
 Total suspended solids,mg/l,,CEDEN 119,SM 2540 D,,1,1,APHA 2540-D; tss
 Total suspended solids,mg/l,,CEDEN 7,EPA 160.2,,1,1,EPA 160.2; TSS
-Total suspended solids,mg/l,,EPA_R7_WQX Procedure is unknown,Procedure is unknown,,1,1,
-Total suspended solids,mg/l,,INSTOR_WQX 160.2,160.2,,1,1,
-Total suspended solids,mg/l,,INSTOR_WQX SM2540D,SM2540D,,1,1,
-Total suspended solids,mg/l,,KWMNDATA TSS,,,1,1,
-Total suspended solids,mg/l,,MCHD See QA Plan,See QA Plan for this Project,,1,1,
+Total suspended solids,mg/l,,EPA_R7_WQX Procedure is unknown,Procedure is unknown,,1,1,methods_WQX
+Total suspended solids,mg/l,,INSTOR_WQX 160.2,160.2,,1,1,EPA 160.2; TSS
+Total suspended solids,mg/l,,INSTOR_WQX SM2540D,SM2540D,,1,1,APHA 2540-D; tss
+Total suspended solids,mg/l,,KWMNDATA TSS,,,1,1,methods_unknown
+Total suspended solids,mg/l,,MCHD See QA Plan,See QA Plan for this Project,,1,1,methods_unknown
 Total suspended solids,mg/l,,MNPCA LEG_P00530,"RESIDUE, TOTAL NONFILTRABLE (MG/L)",,1,1,"USGS_00530; Suspended solids, water, unfiltered, milligrams per liter"
-Total suspended solids,mg/l,,MNPCA LEG_P70299,"SOLIDS, SUSP. - RESIDUE ON EVAP. AT 180 C (MG/L)",,1,1,
-Total suspended solids,mg/l,,MNPCA LEG_UNKNOWN,Legacy STORET migration; analytical procedure not specified,,1,1,
-Total suspended solids,mg/l,,MNPCA UNKNOWN,Analytical procedure not specified,,1,1,
+Total suspended solids,mg/l,,MNPCA LEG_P70299,"SOLIDS, SUSP. - RESIDUE ON EVAP. AT 180 C (MG/L)",,1,1,"USGS_70299; Suspended solids dried at 110 degrees Celsius, water, unfiltered, milligrams per liter, Residue SUS 110 deg. C"
+Total suspended solids,mg/l,,MNPCA LEG_UNKNOWN,Legacy STORET migration; analytical procedure not specified,,1,1,methods_unknown
+Total suspended solids,mg/l,,MNPCA UNKNOWN,Analytical procedure not specified,,1,1,methods_unknown
 Total suspended solids,mg/l,,NA NA,,70293,1,1,"USGS_70293; Suspended solids, dried at 105 degrees Celsius, water, milligrams per liter"
 Total suspended solids,mg/l,,NA NA,,70299,1,1,"USGS_70299; Suspended solids dried at 110 degrees Celsius, water, unfiltered, milligrams per liter, Residue SUS 110 deg. C"
 Total suspended solids,mg/l,,NA NA,,,1,1,methods_unknown
-Total suspended solids,mg/l,,ONEIDA_WQX UNKNOWN,UNKNOWN,,1,1,
+Total suspended solids,mg/l,,ONEIDA_WQX UNKNOWN,UNKNOWN,,1,1,methods_WQX
 Total suspended solids,mg/l,,USACOEND I-3765-85,"Solids, Suspended and Volatile Suspended",,1,1,"USGS I-3765-85; Solids, residue at 105 degrees Celsius, suspended, gravimetric (USGS I-3765-85; PA WSC; PA-DEP)"
-Total suspended solids,mg/l,,USDOI/USGS I3765,Residue by Evaporation and Gravimetric,,1,1,
-Total suspended solids,mg/l,,USDOI/USGS I3765,,,1,1,
-Total suspended solids,mg/l,,USEPA 160.1,Filterable Residue - TDS,,1,1,
+Total suspended solids,mg/l,,USDOI/USGS I3765,Residue by Evaporation and Gravimetric,,1,1,"USGS I-3765-85; Solids, residue at 105 degrees Celsius, suspended, gravimetric (USGS I-3765-85; PA WSC; PA-DEP)"
+Total suspended solids,mg/l,,USDOI/USGS I3765,,,1,1,"USGS I-3765-85; Solids, residue at 105 degrees Celsius, suspended, gravimetric (USGS I-3765-85; PA WSC; PA-DEP)"
+Total suspended solids,mg/l,,USEPA 160.1,Filterable Residue - TDS,,1,1,"EPA 160.1; TDS Residue, Filterable, 180 deg. C"
 Total suspended solids,mg/l,,USEPA 160.2,Non-Filterable Residue - TSS,,1,1,EPA 160.2; TSS
 Total suspended solids,mg/l,,USEPA 160.2,,,1,1,EPA 160.2; TSS
-Total suspended solids,mg/l,,USEPA 160.3,Total Residue,,1,1,
-Total suspended solids,mg/l,,USEPA 1631,"Mercury in Water by Oxidation, Purge and Trap, and CVAFS",,-1000000,-1000000,
-Total suspended solids,mg/l,,USEPA C-008-1,Total Suspended Solids in Water,,1,1,EPA C-008-1
+Total suspended solids,mg/l,,USEPA 160.3,Total Residue,,1,1,EPA 160.3; total residue
+Total suspended solids,mg/l,,USEPA 1631,"Mercury in Water by Oxidation, Purge and Trap, and CVAFS",,-1000000,-1000000,methods_fail
+Total suspended solids,mg/l,,USEPA C-008-1,Total Suspended Solids in Water,,1,1,methods_unknown
 Total suspended solids,ppm,ppm,USEPA 160.2,Non-Filterable Residue - TSS,,1,1,EPA 160.2; TSS
-Total suspended solids,tons/day,,NA NA,,91055,-1.00E+06,-1.00E+06,units_fail
-Total suspended solids,,,21FLMANA GENERIC,,,-1.00E+06,-1.00E+06,units_fail
-Total suspended solids,,,KWMNDATA TSS,,,1,1,
+Total suspended solids,tons/day,,NA NA,,91055,-1000000,-1000000,units_fail
+Total suspended solids,,,21FLMANA GENERIC,,,-1000000,-1000000,units_fail
+Total suspended solids,,,KWMNDATA TSS,,,-1000000,-1000000,units_fail
