@@ -1,99 +1,99 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
 Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,11NPSWRD_WQX USGS_CL048,"Nutrients, Cd reduct, color",,1000,1000,methods_WQX; USGS-usually as N
 Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,APHA 4500-NO3(F),4500 NO3 F  ~ Nitrate in Water- Automated Cadmium Reduction,,1000,1000,APHA 4500-NO3(F)
-Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,APHA 4500-NO3(H),4500 NO3 H  ~ Nitrate in Water- Automated Hydrazine Reduction,,1000,1000,
-Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,CEDEN 124,EPA 353.2,,1000,1000,EPA 353.2; Determination of Nitrate-Nitrite Nitrogen by Automated Colorimetry
+Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,APHA 4500-NO3(H),4500 NO3 H  ~ Nitrate in Water- Automated Hydrazine Reduction,,1000,1000,APHA 4500-NO3(H)
+Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,CEDEN 124,EPA 353.2,,1000,1000,EPA 353.2
 Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,CEDEN 154,SM 4500-NO3 F,,1000,1000,APHA 4500-NO3(F)
 Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,CEDEN 308,USGS I-2545-90,,1000,1000,USGS I-2545-90
-Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,CEDEN 5293,CCAMP_SOP_Calculation_Summed_Analytes,,-1.00E+06,-1.00E+06,methods_fail
+Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,CEDEN 5293,CCAMP_SOP_Calculation_Summed_Analytes,,-1000000,-1000000,methods_fail
 Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,R10BUNKER I2546,I2546,,1000,1000,USGS I-2546
-Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,R10BUNKER USGS_HIST,USGS_HIST,,1000,1000,methods_unknown; assumed as N
+Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,R10BUNKER USGS_HIST,USGS_HIST,,1000,1000,methods_unknown
 Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,USDOI/USGS I2545(W),Nitrite- Plus Nitrate-Nitrogen in Water,,1000,1000,USGS I-2545
-Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,-1.00E+06,-1.00E+06,methods_fail
+Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,-1000000,-1000000,methods_fail
 Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1000,1000,EPA 353.2
 Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,USEPA 353.3,Nitrate-Nitrite Nitrogen by Cd Reduction,,1000,1000,EPA 353.3
-Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,-1.00E+06,-1.00E+06,"methods_fail; USGS, EPA, or ARS"
-Inorganic nitrogen (nitrate and nitrite),mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,-1.00E+06,-1.00E+06,methods_fail
-Inorganic nitrogen (nitrate and nitrite),mg/l,,APHA 4110-B,4110 B ~ Anions in Water by Ion Chromatography,,-1.00E+06,-1.00E+06,methods_fail
+Inorganic nitrogen (nitrate and nitrite),mg/l,mg/l,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,1000,1000,methods_WQX
+Inorganic nitrogen (nitrate and nitrite),mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1000,1000,methods_WQX
+Inorganic nitrogen (nitrate and nitrite),mg/l,,APHA 4110-B,4110 B ~ Anions in Water by Ion Chromatography,,1000,1000,APHA 4110-B
 Inorganic nitrogen (nitrate and nitrite),mg/l,,APHA 4500-NO3(F),4500 NO3 F  ~ Nitrate in Water- Automated Cadmium Reduction,,1000,1000,APHA 4500-NO3(F)
 Inorganic nitrogen (nitrate and nitrite),mg/l,,APHA 4500-NO3(H),4500 NO3 H  ~ Nitrate in Water- Automated Hydrazine Reduction,,1000,1000,APHA 4500-NO3(H)
 Inorganic nitrogen (nitrate and nitrite),mg/l,,APHA 4500-NO3(I),4500 NO3 I  ~ Nitrate in Water- Cadmium Reduction Flow Injection,,1000,1000,APHA 4500-NO3(I)
-Inorganic nitrogen (nitrate and nitrite),mg/l,,BL 818-87T,818-87T ~ Total Nitrogen (BRAN AND LUEBBE METHOD 1987),,-1.00E+06,-1.00E+06,methods_fail
+Inorganic nitrogen (nitrate and nitrite),mg/l,,BL 818-87T,818-87T ~ Total Nitrogen (BRAN AND LUEBBE METHOD 1987),,-1000000,-1000000,methods_fail
 Inorganic nitrogen (nitrate and nitrite),mg/l,,CEDEN 124,EPA 353.2,,1000,1000,EPA 353.2
 Inorganic nitrogen (nitrate and nitrite),mg/l,,CEDEN 152,EPA 353.1,,1000,1000,EPA 353.1
 Inorganic nitrogen (nitrate and nitrite),mg/l,,CEDEN 154,SM 4500-NO3 F,,1000,1000,APHA 4500-NO3(F)
 Inorganic nitrogen (nitrate and nitrite),mg/l,,CEDEN 308,USGS I-2545-90,,1000,1000,USGS I-2545-90
-Inorganic nitrogen (nitrate and nitrite),mg/l,,CEDEN 5293,CCAMP_SOP_Calculation_Summed_Analytes,,-1.00E+06,-1.00E+06,methods_fail
+Inorganic nitrogen (nitrate and nitrite),mg/l,,CEDEN 5293,CCAMP_SOP_Calculation_Summed_Analytes,,-1000000,-1000000,methods_fail
 Inorganic nitrogen (nitrate and nitrite),mg/l,,MDEDAT03_WQX NITR-01,Nitrogen in Water,,1000,1000,methods_WQX; assumed is N based on method name
-Inorganic nitrogen (nitrate and nitrite),mg/l,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,-1.00E+06,-1.00E+06,methods_fail
-Inorganic nitrogen (nitrate and nitrite),mg/l,,NA NA,,,-1.00E+06,-1.00E+06,methods_fail
+Inorganic nitrogen (nitrate and nitrite),mg/l,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1000,1000,methods_WQX
+Inorganic nitrogen (nitrate and nitrite),mg/l,,NA NA,,,-1000000,-1000000,methods_fail
 Inorganic nitrogen (nitrate and nitrite),mg/l,,R10BUNKER I2546,I2546,,1000,1000,USGS I-2546
-Inorganic nitrogen (nitrate and nitrite),mg/l,,USDOI/USGS I-2546-91,Nitrate and Nitrite in Low Ionic-Strength Water by Colorimetry,,1.00E+03,1.00E+03,
-Inorganic nitrogen (nitrate and nitrite),mg/l,,USDOI/USGS I2545(W),Nitrite- Plus Nitrate-Nitrogen in Water,,1.00E+03,1.00E+03,
+Inorganic nitrogen (nitrate and nitrite),mg/l,,USDOI/USGS I-2546-91,Nitrate and Nitrite in Low Ionic-Strength Water by Colorimetry,,1000,1000,USGS I-2546-91
+Inorganic nitrogen (nitrate and nitrite),mg/l,,USDOI/USGS I2545(W),Nitrite- Plus Nitrate-Nitrogen in Water,,1000,1000,USGS I-2545
 Inorganic nitrogen (nitrate and nitrite),mg/l,,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1000,1000,EPA 353.2
-Inorganic nitrogen (nitrate and nitrite),mg/l,,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,-1.00E+06,-1.00E+06,"methods_fail; USGS, EPA, or ARS"
-Inorganic nitrogen (nitrate and nitrite) as N,mg/l,mg/l,21FLMCGL SOP-1,,,1000,1000,methods_unknown 
+Inorganic nitrogen (nitrate and nitrite),mg/l,,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,1000,1000,methods_WQX
+Inorganic nitrogen (nitrate and nitrite) as N,mg/l,mg/l,21FLMCGL SOP-1,,,-1000000,-1000000,methods_fail
 Inorganic nitrogen (nitrate and nitrite) as N,mg/l,mg/l,USEPA 353.2,,,1000,1000,EPA 353.2
 Inorganic nitrogen (nitrate and nitrite) as N,mg/l,mg/l,USEPA 353.3,,,1000,1000,EPA 353.3
-Inorganic nitrogen (nitrate and nitrite) as N,mg/l,,21NDHDWQ UNKOWN,,,1000,1000,methods_unknown 
+Inorganic nitrogen (nitrate and nitrite) as N,mg/l,,21NDHDWQ UNKOWN,,,-1000000,-1000000,methods_fail
 Inorganic nitrogen (nitrate and nitrite) as N,mg/l,,APHA 4500-NO3(G),,,1000,1000,APHA 4500-NO3(G)
-Inorganic nitrogen (nitrate and nitrite) as N,mg/l,,NA NA,,,-1.00E+06,-1.00E+06,methods_fail
+Inorganic nitrogen (nitrate and nitrite) as N,mg/l,,NA NA,,,-1000000,-1000000,methods_fail
 Inorganic nitrogen (nitrate and nitrite) as N,mg/l,,USEPA 353.2,,,1000,1000,EPA 353.2
 Nitrate,mg/l,mg/l,11NPSWRD_WQX USGS_UNSPEC,Unspecified USGS Lab Analytical Procedures at NWQL Following Standard Protocols,,1000,1000,methods_WQX; USGS-usually as N
-Nitrate,mg/l,mg/l,21FLMCGL SOP-1,,,1000,1000,methods_unknown 
+Nitrate,mg/l,mg/l,21FLMCGL SOP-1,,,-1000000,-1000000,methods_fail
 Nitrate,mg/l,mg/l,21FLSFWM_WQX SM4500NH3H/NO3F,SM4500NH3H/NO3F,,1000,1000,APHA 4500-NO3(F)
 Nitrate,mg/l,mg/l,21FLSFWM_WQX SM4500NO3F,SM4500NO3F,,1000,1000,APHA 4500-NO3(F)
 Nitrate,mg/l,mg/l,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,1000,1000,methods_WQX
-Nitrate,mg/l,mg/l,APHA 4110-C,4110 C ~ Single Column Ion Chromatography,,-1.00E+06,-1.00E+06,methods_fail
+Nitrate,mg/l,mg/l,APHA 4110-C,4110 C ~ Single Column Ion Chromatography,,1000,1000,APHA 4110-C
 Nitrate,mg/l,mg/l,CEDEN 154,SM 4500-NO3 F,,1000,1000,APHA 4500-NO3(F)
 Nitrate,mg/l,mg/l,CEDEN 16,EPA 300.0,,1000,1000,EPA 300
-Nitrate,mg/l,mg/l,CEDEN 269,Lachat 31-107-04-1-C,,1000,1000,EPA 353.4
+Nitrate,mg/l,mg/l,CEDEN 269,Lachat 31-107-04-1-C,,1000,1000,Lachat 31-107-04-1-C
 Nitrate,mg/l,mg/l,CEDEN 5230,SM 4500-NO3 I v21,,1000,1000,APHA 4500-NO3(I)
 Nitrate,mg/l,mg/l,USEPA 300,Inorganic Anions by Ion Chromatography,,1000,1000,EPA 300
 Nitrate,mg/l,mg/l,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,1000,1000,EPA 300
 Nitrate,mg/l,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1000,1000,EPA 353.2
-Nitrate,mg/l,,11NPSWRD_WQX NPS_LEGACY,LEGACY,,1000,1000,
-Nitrate,mg/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,-1.00E+06,-1.00E+06,methods_fail
-Nitrate,mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,-1.00E+06,-1.00E+06,methods_fail
-Nitrate,mg/l,,21COL001 HISTORIC,,,-1.00E+06,-1.00E+06,methods_fail
+Nitrate,mg/l,,11NPSWRD_WQX NPS_LEGACY,LEGACY,,1000,1000,methods_WQX
+Nitrate,mg/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1000,1000,methods_WQX
+Nitrate,mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1000,1000,methods_WQX
+Nitrate,mg/l,,21COL001 HISTORIC,,,-1000000,-1000000,methods_fail
 Nitrate,mg/l,,APHA 4500-NO3(F),4500 NO3 F  ~ Nitrate in Water- Automated Cadmium Reduction,,1000,1000,APHA 4500-NO3(F)
 Nitrate,mg/l,,APHA 4500-NO3(H),4500 NO3 H  ~ Nitrate in Water- Automated Hydrazine Reduction,,1000,1000,APHA 4500-NO3(H)
 Nitrate,mg/l,,CEDEN 154,SM 4500-NO3 F,,1000,1000,APHA 4500-NO3(F)
 Nitrate,mg/l,,CEDEN 16,EPA 300.0,,1000,1000,EPA 300
-Nitrate,mg/l,,CEDEN 269,Lachat 31-107-04-1-C,,1000,1000,EPA 353.4
+Nitrate,mg/l,,CEDEN 269,Lachat 31-107-04-1-C,,1000,1000,Lachat 31-107-04-1-C
 Nitrate,mg/l,,CEDEN 5230,SM 4500-NO3 I v21,,1000,1000,APHA 4500-NO3(I)
 Nitrate,mg/l,,HACH 10206,"Nitrate, Dimethylphenol Method",,1000,1000,HACH 10206
-Nitrate,mg/l,,HACH 8171,Nitrates in Water,,1000,1000,
-Nitrate,mg/l,,MDE_FIELDSERVICES_WQX MISC_CALC,Miscellaneous Calculations for Nutrients,,-1.00E+06,-1.00E+06,methods_fail
-Nitrate,mg/l,,MNPCA LEG_P00618,"NITRATE NITROGEN, DISSOLVED (MG/L AS N)",,1000,1000,
-Nitrate,mg/l,,MNPCA LEG_UNKNOWN,Legacy STORET migration; analytical procedure not specified,,-1.00E+06,-1.00E+06,methods_fail
-Nitrate,mg/l,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,-1.00E+06,-1.00E+06,methods_fail
-Nitrate,mg/l,,NA NA,,,-1.00E+06,-1.00E+06,methods_fail
+Nitrate,mg/l,,HACH 8171,Nitrates in Water,,1000,1000,HACH 8171
+Nitrate,mg/l,,MDE_FIELDSERVICES_WQX MISC_CALC,Miscellaneous Calculations for Nutrients,,-1000000,-1000000,methods_fail
+Nitrate,mg/l,,MNPCA LEG_P00618,"NITRATE NITROGEN, DISSOLVED (MG/L AS N)",,1000,1000,USGS_00618
+Nitrate,mg/l,,MNPCA LEG_UNKNOWN,Legacy STORET migration; analytical procedure not specified,,1000,1000,methods_unknown
+Nitrate,mg/l,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1000,1000,methods_WQX
+Nitrate,mg/l,,NA NA,,,-1000000,-1000000,methods_fail
 Nitrate,mg/l,,USEPA 300,Inorganic Anions by Ion Chromatography,,1000,1000,EPA 300
-Nitrate,mg/l,,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,1000,1000,methods_fail
-Nitrate,mg/l,,USEPA 300.0,300.0 ~ EPA; Determination of Inorganic Anions by Ion Chromatography,,1000,1000,methods_fail
-Nitrate,mg/l,,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,,1000,1000,methods_fail
-Nitrate,mg/l,,USEPA 300_M,300 M ~ Determination of Anions by IC,,1000,1000,methods_fail
+Nitrate,mg/l,,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,1000,1000,EPA 300
+Nitrate,mg/l,,USEPA 300.0,300.0 ~ EPA; Determination of Inorganic Anions by Ion Chromatography,,1000,1000,EPA 300
+Nitrate,mg/l,,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,,1000,1000,EPA 300
+Nitrate,mg/l,,USEPA 300_M,300 M ~ Determination of Anions by IC,,1000,1000,EPA 300
 Nitrate,mg/l,,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1000,1000,EPA 353.2
-Nitrate,mg/l,,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,-1.00E+06,-1.00E+06,methods_fail
-Nitrate + Nitrite,mg/l,mg/l,11NPSWRD_WQX BLCA_RED02,Konelab Nitrate Reductase method,,-1.00E+06,-1.00E+06,methods_fail
+Nitrate,mg/l,,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,1000,1000,methods_WQX
+Nitrate + Nitrite,mg/l,mg/l,11NPSWRD_WQX BLCA_RED02,Konelab Nitrate Reductase method,,1000,1000,methods_WQX
 Nitrate + Nitrite,mg/l,mg/l,ASTM D7781,Nitrite-Nitrate in Water by Nitrate Reductase,,1000,1000,ASTM-D7781; NO3-N
 Nitrate + Nitrite,mg/l,mg/l,USDOI/USGS I-2546-91,Nitrate and Nitrite in Low Ionic-Strength Water by Colorimetry,,1000,1000,USGS I-2546-91
 Nitrate + Nitrite,mg/l,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1000,1000,EPA 353.2
-Nitrate + Nitrite,mg/l,,11NPSWRD_WQX NPS_MISSING,Procedure not Required when Result Entered into National Database,,-1.00E+06,-1.00E+06,methods_fail
-Nitrate + Nitrite,mg/l,,APHA 4500-NO3(F),4500 NO3 F  ~ Nitrate in Water- Automated Cadmium Reduction,,1000,1000,
+Nitrate + Nitrite,mg/l,,11NPSWRD_WQX NPS_MISSING,Procedure not Required when Result Entered into National Database,,1000,1000,methods_WQX
+Nitrate + Nitrite,mg/l,,APHA 4500-NO3(F),4500 NO3 F  ~ Nitrate in Water- Automated Cadmium Reduction,,1000,1000,APHA 4500-NO3(F)
 Nitrate + Nitrite,mg/l,,USDOI/USGS I-2545,"Nitrogen, nitrite plus nitrate, dissolved, colorimetric, ASF",,1000,1000,USGS I-2545
 Nitrate + Nitrite,mg/l,,USDOI/USGS I-2546-91,Nitrate and Nitrite in Low Ionic-Strength Water by Colorimetry,,1000,1000,USGS I-2546-91
 Nitrate + Nitrite,mg/l,,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1000,1000,EPA 353.2
-Nitrate as N,mg/l,mg/l,21FLSFWM WQ-1,,,1000,1000,methods_unknown 
-Nitrate as N,mg/l,,21FLSFWM WQ-1,,,1000,1000,methods_unknown 
+Nitrate as N,mg/l,mg/l,21FLSFWM WQ-1,,,-1000000,-1000000,methods_fail
+Nitrate as N,mg/l,,21FLSFWM WQ-1,,,-1000000,-1000000,methods_fail
 Nitrate as N,mg/l,,APHA 4500-NO3(G),,,1000,1000,APHA 4500-NO3(G)
 Nitrate as N,mg/l,,USEPA 300(A),,,1000,1000,EPA 300
-Nitrogen,mg/l,mg/l,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,-1.00E+06,-1.00E+06,methods_fail
-Nitrogen,mg/l,mg/l,SOKAOGON_WQX calculation,calculation for Nitrogen,,-1.00E+06,-1.00E+06,methods_fail
+Nitrogen,mg/l,mg/l,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,-1000000,-1000000,methods_fail
+Nitrogen,mg/l,mg/l,SOKAOGON_WQX calculation,calculation for Nitrogen,,-1000000,-1000000,methods_fail
 Nitrogen,mg/l,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1000,1000,EPA 353.2
-Nitrogen,mg/l,,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,-1.00E+06,-1.00E+06,methods_fail
-Nitrogen,mg/l,,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1.00E+03,1.00E+03,
+Nitrogen,mg/l,,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,-1000000,-1000000,methods_fail
+Nitrogen,mg/l,,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1000,1000,EPA 353.2
 "Total Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,USEPA 352.1,Nitrate Nitrogen by Colorimetry,,1000,1000,EPA 352.1
 Inorganic nitrogen (nitrate and nitrite),mg/l as N,mg/l as N,NA NA,,631,1000,1000,USGS_00631
 Inorganic nitrogen (nitrate and nitrite),mg/l as N,mg/l as N,USGS CDR05,"NO2+NO3, LL, wf,autoCd-reduction",631,1000,1000,USGS_00631
@@ -122,27 +122,27 @@ Inorganic nitrogen (nitrate and nitrite),mg/l as N,,USGS CL081,"NO2+NO3, wu, ASF
 Inorganic nitrogen (nitrate and nitrite),mg/l as N,,USGS RED01,"NO3+NO2, wf, FCC,NaR, DA",631,1000,1000,USGS_00631
 Inorganic nitrogen (nitrate and nitrite),mg/l as N,,USGS RED02,"NO3+NO2, wf, FCC,NaR, DA, LL",631,1000,1000,USGS_00631
 Inorganic nitrogen (nitrate and nitrite),mg/l as N,,USGS RED03,"NO3+NO2, wf, FCA, NaR, DA",631,1000,1000,USGS_00631
-Nitrate,mg/l as N,mg/l as N,USGS IC024,"Anions, LIS wf, IC",618,1000,1000,"USGS_00618; Inorganic anions, water, filtered, ion chromatography (DODEC)"
+Nitrate,mg/l as N,mg/l as N,USGS IC024,"Anions, LIS wf, IC",618,1000,1000,USGS_00618
 Nitrate,mg/l as N,mg/l as N,USGS IC025,"Anions, wf, IC (DODEC)",618,1000,1000,USGS_00618
 Nitrate,mg/l as N,mg/l as N,USGS IC032,"Ions, wf, auto IC  (NRP & CO)",618,1000,1000,USGS_00618
-Nitrate,mg/l as N,mg/l as N,USGS IC034,"Anions, wf, IC (USGS-NYL)",618,1000,1000,
+Nitrate,mg/l as N,mg/l as N,USGS IC034,"Anions, wf, IC (USGS-NYL)",618,1000,1000,USGS_00619
 Nitrate,mg/l as N,,NA NA,,618,1000,1000,USGS_00618
 Nitrate,mg/l as N,,NA NA,,99121,1000,1000,USGS_99121
 Nitrate,mg/l as N,,USGS CAL08,"Nitrate, wf, calculated",618,1000,1000,USGS_00618
 Nitrate,mg/l as N,,USGS CL006,"Nitrate, LL, wf, colorimetry",618,1000,1000,USGS_00618
 Nitrate,mg/l as N,,USGS IC004,"Nitrate, wf, IC",618,1000,1000,USGS_00618
 Nitrate,mg/l as N,,USGS IC024,"Anions, LIS wf, IC",618,1000,1000,USGS_00618
-Nitrate,mg/l as N,,USGS IC034,"Anions, wf, IC (USGS-NYL)",618,1000,1000,
+Nitrate,mg/l as N,,USGS IC034,"Anions, wf, IC (USGS-NYL)",618,1000,1000,USGS_00619
 Nitrate,mg/l asNO3,,NA NA,,71851,226,226,USGS_71851; as NO3
 Inorganic nitrogen (nitrate and nitrite),ug/l,ug/l,11NPSWRD_WQX USGS_CL048,"Nutrients, Cd reduct, color",,1,1,methods_WQX; USGS-usually as N
 Inorganic nitrogen (nitrate and nitrite),ug/l,ug/l,APHA 4500-NO3(F),4500 NO3 F  ~ Nitrate in Water- Automated Cadmium Reduction,,1,1,APHA 4500-NO3(F)
 Inorganic nitrogen (nitrate and nitrite),ug/l,ug/l,R10BUNKER I2546,I2546,,1,1,USGS I-2546; As N
-Inorganic nitrogen (nitrate and nitrite),ug/l,ug/l,R10BUNKER USGS_HIST,USGS_HIST,,1,1,methods_unknown; assumed as N
+Inorganic nitrogen (nitrate and nitrite),ug/l,ug/l,R10BUNKER USGS_HIST,USGS_HIST,,1,1,methods_unknown
 Inorganic nitrogen (nitrate and nitrite),ug/l,ug/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1,1,EPA 353.2
 Inorganic nitrogen (nitrate and nitrite),ug/l,ug/l,USGS CL048,"Nutrients, wf, Cd reduct, color",631,1,1,USGS_00631
 Inorganic nitrogen (nitrate and nitrite),ug/l,ug/l,USGS CL050,"Nutrients, LL, wf, Cd reduct",631,1,1,USGS_00631
-Inorganic nitrogen (nitrate and nitrite),ug/l,ug/l,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,-1.00E+06,-1.00E+06,methods_fail
-Inorganic nitrogen (nitrate and nitrite),ug/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,-1.00E+06,-1.00E+06,methods_fail
+Inorganic nitrogen (nitrate and nitrite),ug/l,ug/l,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,1,1,methods_WQX
+Inorganic nitrogen (nitrate and nitrite),ug/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1,1,methods_WQX
 Inorganic nitrogen (nitrate and nitrite),ug/l,,APHA 4500-NO3(F),4500 NO3 F  ~ Nitrate in Water- Automated Cadmium Reduction,,1,1,APHA 4500-NO3(F)
 Inorganic nitrogen (nitrate and nitrite),ug/l,,MDEDAT03_WQX NITR-01,Nitrogen in Water,,1,1,methods_WQX;  assumed is N based on method name
 Inorganic nitrogen (nitrate and nitrite),ug/l,,NA NA,,630,1,1,USGS_00630
@@ -155,15 +155,15 @@ Inorganic nitrogen (nitrate and nitrite),ug/l,,USGS CL049,"NO2+NO3, LIS, Cd redu
 Inorganic nitrogen (nitrate and nitrite),ug/l,,USGS CL050,"Nutrients, LL, wf, Cd reduct",631,1,1,USGS_00631
 Inorganic nitrogen (nitrate and nitrite),ug/l,,USGS CL081,"NO2+NO3, wu, ASF Cd-reduct(NWQL)",630,1,1,USGS_00630
 Inorganic nitrogen (nitrate and nitrite),ug/l,,USGS RED01,"NO3+NO2, wf, FCC,NaR, DA",631,1,1,USGS_00631
-Inorganic nitrogen (nitrate and nitrite),ug/l,,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,-1.00E+06,-1.00E+06,methods_fail
+Inorganic nitrogen (nitrate and nitrite),ug/l,,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,1,1,methods_WQX
 Inorganic nitrogen (nitrate and nitrite) as N,ug/l,,APHA 4500-NO3(G),,,1,1,APHA 4500-NO3(G)
-Inorganic nitrogen (nitrate and nitrite) as N,ug/l,,NA NA,,,-1.00E+06,-1.00E+06,methods_fail
+Inorganic nitrogen (nitrate and nitrite) as N,ug/l,,NA NA,,,-1000000,-1000000,methods_fail
 Nitrate,ug/l,ug/l,11NPSWRD_WQX USGS_UNSPEC,Unspecified USGS Lab Analytical Procedures at NWQL Following Standard Protocols,,1,1,methods_WQX
 Nitrate,ug/l,ug/l,USEPA 300,Inorganic Anions by Ion Chromatography,,1,1,EPA 300
 Nitrate,ug/l,ug/l,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,,1,1,EPA 300
 Nitrate,ug/l,ug/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1,1,EPA 353.2
-Nitrate,ug/l,,APHA 4500-P-E,4500 P E ~ Phosphorus in Water by Colorimetry- Ascorbic Acid Method,,-1.00E+06,-1.00E+06,methods_fail
-Nitrate,ug/l,,MDE_FIELDSERVICES_WQX MISC_CALC,Miscellaneous Calculations for Nutrients,,-1.00E+06,-1.00E+06,methods_fail
+Nitrate,ug/l,,APHA 4500-P-E,4500 P E ~ Phosphorus in Water by Colorimetry- Ascorbic Acid Method,,-1000000,-1000000,methods_fail
+Nitrate,ug/l,,MDE_FIELDSERVICES_WQX MISC_CALC,Miscellaneous Calculations for Nutrients,,-1000000,-1000000,methods_fail
 Nitrate,ug/l,,NA NA,,618,1,1,USGS_00618
 Nitrate,ug/l,,NA NA,,71851,0.226,0.226,USGS_71851; as NO3
 Nitrate,ug/l,,NA NA,,91003,0.226,0.226,"USGS_91003; as NO3; Nitrate, water, field, CHEMetrics cadmium reduction colorimetry test kit"
@@ -175,13 +175,13 @@ Nitrate + Nitrite,ug/l,ug/l,ASTM D7781,Nitrite-Nitrate in Water by Nitrate Reduc
 Nitrate + Nitrite,ug/l,ug/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1,1,EPA 353.2
 Nitrate as N,ug/l,,APHA 4500-NO3(G),,,1,1,APHA 4500-NO3(G)
 Nitrate as N,ug/l,,USEPA 300(A),,,1,1,EPA 300
-Nitrogen,ug/l,ug/l,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,1,1,
-Nitrogen,ug/l,ug/l,USEPA 300.0,300.0 ~ EPA; Determination of Inorganic Anions by Ion Chromatography,,1,1,
-Nitrogen,ug/l,ug/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,-1.00E+06,-1.00E+06,methods_fail
-Nitrogen,ug/l,,USEPA 351.1,Total Kjeldahl Nitrogen by Colorimetry,,-1.00E+06,-1.00E+06,methods_fail
-Inorganic nitrogen (nitrate and nitrite),umol,,11NPSWRD_WQX CACO_10107041A,Nitrate/Nitrite (Cadmium Reduction Method),,-1.00E+06,-1.00E+06,methods_fail
-Nitrate,umol,,11NPSWRD_WQX CACO_31107041BC,Total Nitrogen Nitrates/Nitrites Method,,-1.00E+06,-1.00E+06,methods_fail
-Nitrate,umol,,11NPSWRD_WQX NPS_LACHAT,Lachat AutoAnalyzer for Colorimetric Determination of Dissolved Inorganic Nutrients,,-1.00E+06,-1.00E+06,methods_fail
+Nitrogen,ug/l,ug/l,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,1,1,EPA 300
+Nitrogen,ug/l,ug/l,USEPA 300.0,300.0 ~ EPA; Determination of Inorganic Anions by Ion Chromatography,,1,1,EPA 300
+Nitrogen,ug/l,ug/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,-1000000,-1000000,methods_fail
+Nitrogen,ug/l,,USEPA 351.1,Total Kjeldahl Nitrogen by Colorimetry,,-1000000,-1000000,methods_fail
+Inorganic nitrogen (nitrate and nitrite),umol,,11NPSWRD_WQX CACO_10107041A,Nitrate/Nitrite (Cadmium Reduction Method),,-1000000,-1000000,units_fail
+Nitrate,umol,,11NPSWRD_WQX CACO_31107041BC,Total Nitrogen Nitrates/Nitrites Method,,-1000000,-1000000,units_fail
+Nitrate,umol,,11NPSWRD_WQX NPS_LACHAT,Lachat AutoAnalyzer for Colorimetric Determination of Dissolved Inorganic Nutrients,,-1000000,-1000000,units_fail
 Inorganic nitrogen (nitrate and nitrite),,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1000,1000,EPA 353.2
 Inorganic nitrogen (nitrate and nitrite),,mg/l as N,NA NA,,630,1000,1000,USGS_00630
 Inorganic nitrogen (nitrate and nitrite),,mg/l as N,NA NA,,631,1000,1000,USGS_00631
@@ -198,6 +198,6 @@ Inorganic nitrogen (nitrate and nitrite),,ug/l,USGS CL048,"Nutrients, wf, Cd red
 Inorganic nitrogen (nitrate and nitrite),,ug/l,USGS CL049,"NO2+NO3, LIS, Cd reduction ASF",631,1,1,USGS_00631
 Inorganic nitrogen (nitrate and nitrite),,ug/l,USGS CL050,"Nutrients, LL, wf, Cd reduct",631,1,1,USGS_00631
 Inorganic nitrogen (nitrate and nitrite),,ug/l,USGS CL081,"NO2+NO3, wu, ASF Cd-reduct(NWQL)",630,1,1,USGS_00630
-Inorganic nitrogen (nitrate and nitrite),,,USGS RED02,"NO3+NO2, wf, FCC,NaR, DA, LL",631,-1.00E+06,-1.00E+06,units_fail
-Inorganic nitrogen (nitrate and nitrite) as N,,,NA NA,,,-1.00E+06,-1.00E+06,units_fail
-Nitrate,,,NA NA,,,-1.00E+06,-1.00E+06,units_fail
+Inorganic nitrogen (nitrate and nitrite),,,USGS RED02,"NO3+NO2, wf, FCC,NaR, DA, LL",631,-1000000,-1000000,units_fail
+Inorganic nitrogen (nitrate and nitrite) as N,,,NA NA,,,-1000000,-1000000,units_fail
+Nitrate,,,NA NA,,,-1000000,-1000000,units_fail
