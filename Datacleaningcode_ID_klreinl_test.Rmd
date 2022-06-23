@@ -2115,6 +2115,7 @@ data_temp_temp_notes
 rm(data_temp_temp_notes)
 ```
 
+
 ```{r}
 abbrev <- "anc"
 lagos_name <- "ANC"
@@ -2141,7 +2142,7 @@ rm(data_temp_temp_notes)
 
 
 ```{r}
-data_pH_equilibrated<-data_pH_equilibrated %>% select(-URL)
+#data_pH_equilibrated<-data_pH_equilibrated %>% select(-URL)
 
 
 vars2process
@@ -2149,7 +2150,7 @@ data_all <- do.call("rbind", lapply(ls(pattern='^data_'),get))
 data_all$ResultMeasureValue<-data_all$Converted
 data_all$DetectionQuantitationLimitMeasure.MeasureValue<-data_all$Converted_dl
 data_all<-data_all %>% select(-Converted, -Converted_dl)
-write_csv(data_all, file = "secchi_chla_data.csv")
+write_csv(data_all, file = "all_data_june10.csv")
 
 # vals<-unique(data_all$MonitoringLocationIdentifier)
 # 
