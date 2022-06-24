@@ -52,6 +52,10 @@ dat <- dat %>% rename(sampledate = ActivityStartDate) %>%
 states_in_data<-unique(dat$State)
 length(unique(dat$State))
 
+#program specific changes
+temp <- dat %>% filter(OrganizationIdentifier=="SDWRAP")
+dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id) #per SD, delete all SDWRAP data
+
 
 #Add Activity data
 activities <- read_csv("big_data/activities.csv", 
@@ -155,6 +159,11 @@ dat <- dat %>% filter(CharacteristicName !="Depth")
 # dat <- dat %>% filter(CharacteristicName !="Oxygen, dissolved")
 
 #If program doesn't record sample depth but records epi sample...asign 0 source depth
+unique(dat$ActivityRelativeDepthName)
+bad_reldepths <- c("Near Bottom","Midwater","Bottom","BelowThermoclin","Above Halocline")
+dat <- dat %>% filter(!ActivityRelativeDepthName %in% bad_reldepths)
+unique(dat$ActivityRelativeDepthName)
+
 temp <- dat %>% filter(is.na(source_sampledepth)) %>% 
     filter(ActivityRelativeDepthName=="Surface" | 
                            ActivityRelativeDepthName == "Photic zone" |
@@ -216,6 +225,7 @@ dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
 dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "INFERRED"
 gc()
 
+#look at what is left with unassigned depths
 temp <- dat %>% group_by(State) %>% 
     summarize(depths = sum(!is.na(lagos_sampledepth)),
               no_depths = sum(is.na(lagos_sampledepth)),
@@ -224,282 +234,301 @@ temp <- dat %>% group_by(State) %>%
               sd_depth = round(sd(lagos_sampledepth,na.rm=TRUE),2)) %>% 
     filter(no_depths>0)
 
-#program specific changes
-temp <- dat %>% filter(OrganizationIdentifier=="SDWRAP")
-dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id) #per SD, delete all SDWRAP data
-
-
-
-
-
-
-temp <- dat %>% filter(OrganizationFormalName=="Georgia DNR Environmental Protection Division") %>% 
-    filter(is.na(lagos_sampledepth))
-unique(temp$CharacteristicName)
-unique(temp$ActivityConductingOrganizationText)
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "EPI_COMPOSITE"
-
-temp <- dat %>% filter(OrganizationFormalName=="Texas Commission on Environmental Quality") %>% 
-    filter(is.na(lagos_sampledepth))
-unique(temp$CharacteristicName)
-unique(temp$ActivityConductingOrganizationText)
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(OrganizationFormalName == "Utah Department Of Environmental Quality") %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "below thermo")))
-dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id)
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(OrganizationFormalName == "Utah Department Of Environmental Quality") 
-unique(temp$ActivityConductingOrganizationText)
-temp <- temp %>% filter(ActivityConductingOrganizationText== "Division of Water Quality")
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0.2
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(OrganizationFormalName == "Orlando Streets Drainage Stormwater Utility Bureau(Florida)")
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>%  
-    filter(OrganizationFormalName == "Arkansas Department of Environmental Quality")
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(OrganizationFormalName == "Nebraska Department of Environment and Energy")
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(OrganizationFormalName == "DENR") %>% 
-    filter(sampledate >= ymd("2007-12-31"))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "EPI_INT"
-
-
-temp <- dat %>% group_by(OrganizationFormalName) %>% 
-    summarize(depths = sum(!is.na(lagos_sampledepth)),no_depths = sum(is.na(lagos_sampledepth))) %>% 
-    filter(no_depths>99)
-write_csv(temp,"no_depth_info.csv")
-
-
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(OrganizationFormalName == "McGlynn Laboratories, Inc (Florida)")
-
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(OrganizationFormalName == "National Park Service Water Resources Division")
-
-unique(temp$SampleCollectionEquipmentName)
-
-
-temp <- dat %>% group_by(OrganizationFormalName) %>% 
-    summarize(depths = sum(!is.na(lagos_sampledepth)),no_depths = sum(is.na(lagos_sampledepth))) %>% 
-    filter(no_depths>99)
-write_csv(temp,"no_depth_info.csv")
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(OrganizationFormalName=="DENR")
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) 
-temp <- temp %>% group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,CharacteristicName) %>% 
-    mutate(n=length(unique(ResultMeasureValue))) %>% 
-    ungroup() %>% 
-    filter(n >1) %>% 
-    select(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,CharacteristicName,Obs_Id,n,ResultMeasureValue) %>% 
-    arrange(OrganizationIdentifier,MonitoringLocationIdentifier,CharacteristicName,sampledate)
-    
-
-
-
-
-
-
-
-
-
-
-
-
-temp <- dat %>% filter(OrganizationFormalName=="Utah Department Of Environmental Quality") %>% 
-    filter(is.na(lagos_sampledepth)) 
-
-%>% 
-    filter(ActivityTypeCode=="Sample-Integrated Vertical Profile") %>% 
-    filter(!is.na(ActivityBottomDepthHeightMeasure.MeasureValue))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- temp$ActivityBottomDepthHeightMeasure.MeasureValue
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "INTEGRATED"
-
-
-
-
-
-
-
-#########################################################
-
-
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "at the surf")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "loch surf")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "lake surf")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "pond surf")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "surface water grab sample")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "at surface")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(ProjectIdentifier, ~str_detect(tolower(.), "surface")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "3 ft below")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 3*0.3048
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(tolower(ResultCommentText)=="surface")
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(tolower(ResultCommentText)=="surface sample")
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(tolower(ActivityCommentText)=="surface sample")
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(tolower(ActivityCommentText)=="surface")
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "1 ft below")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 1*0.3048
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "1m below")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 1
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "station 2 surface")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "30ft below")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 30*0.3048
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "branch, surface")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "dam,surface")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "above thermocline")))
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "photic")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "EPI_INT"
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "epilimnion")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "EPI_INT"
-
-#######################
-#Excludes
-
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>%  
-    filter(if_any(everything(), ~str_detect(tolower(.), "bottom")))
-dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id)
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "subsurface")))
-dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id)
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "below thermocline")))
-dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id)
-
-
+####code to deal with remaining samples that don't have assigned depths
 temp <- dat %>% filter(is.na(lagos_sampledepth))
-temp2 <- dat %>% group_by(OrganizationFormalName) %>% 
-    summarize(depth=sum(!is.na(lagos_sampledepth)),no_depth=sum(is.na(lagos_sampledepth)))
-write_csv(temp2, "uknown_depths_program.csv")
-
-
-#assign grabs with grab equipment as inferred 0 depth
-temp <- dat %>% filter(is.na(lagos_sampledepth))
-equip <- unique(temp$SampleCollectionEquipmentName)
-equip_to_keep <- c("Water Bottle",
-                   "Open-Mouth Bottle","Grab sample","Bucket")
-equip <- equip[which(!equip %in% equip_to_keep)]
-equip
-temp <- temp %>% filter(!SampleCollectionEquipmentName %in% equip_to_keep)
 dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id)
 
-temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "grab")))
-dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "INFERRED"
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# temp <- dat %>% filter(OrganizationFormalName=="Georgia DNR Environmental Protection Division") %>% 
+#     filter(is.na(lagos_sampledepth))
+# unique(temp$CharacteristicName)
+# unique(temp$ActivityConductingOrganizationText)
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "EPI_COMPOSITE"
+# 
+# temp <- dat %>% filter(OrganizationFormalName=="Texas Commission on Environmental Quality") %>% 
+#     filter(is.na(lagos_sampledepth))
+# unique(temp$CharacteristicName)
+# unique(temp$ActivityConductingOrganizationText)
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(OrganizationFormalName == "Utah Department Of Environmental Quality") %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "below thermo")))
+# dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id)
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(OrganizationFormalName == "Utah Department Of Environmental Quality") 
+# unique(temp$ActivityConductingOrganizationText)
+# temp <- temp %>% filter(ActivityConductingOrganizationText== "Division of Water Quality")
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0.2
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(OrganizationFormalName == "Orlando Streets Drainage Stormwater Utility Bureau(Florida)")
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>%  
+#     filter(OrganizationFormalName == "Arkansas Department of Environmental Quality")
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(OrganizationFormalName == "Nebraska Department of Environment and Energy")
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# 
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(OrganizationFormalName == "DENR") %>% 
+#     filter(sampledate >= ymd("2007-12-31"))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "EPI_INT"
+# 
+# 
+# temp <- dat %>% group_by(OrganizationFormalName) %>% 
+#     summarize(depths = sum(!is.na(lagos_sampledepth)),no_depths = sum(is.na(lagos_sampledepth))) %>% 
+#     filter(no_depths>99)
+# write_csv(temp,"no_depth_info.csv")
+# 
+# 
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(OrganizationFormalName == "McGlynn Laboratories, Inc (Florida)")
+# 
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(OrganizationFormalName == "National Park Service Water Resources Division")
+# 
+# unique(temp$SampleCollectionEquipmentName)
+# 
+# 
+# temp <- dat %>% group_by(OrganizationFormalName) %>% 
+#     summarize(depths = sum(!is.na(lagos_sampledepth)),no_depths = sum(is.na(lagos_sampledepth))) %>% 
+#     filter(no_depths>99)
+# write_csv(temp,"no_depth_info.csv")
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(OrganizationFormalName=="DENR")
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) 
+# temp <- temp %>% group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,CharacteristicName) %>% 
+#     mutate(n=length(unique(ResultMeasureValue))) %>% 
+#     ungroup() %>% 
+#     filter(n >1) %>% 
+#     select(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,CharacteristicName,Obs_Id,n,ResultMeasureValue) %>% 
+#     arrange(OrganizationIdentifier,MonitoringLocationIdentifier,CharacteristicName,sampledate)
+#     
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# temp <- dat %>% filter(OrganizationFormalName=="Utah Department Of Environmental Quality") %>% 
+#     filter(is.na(lagos_sampledepth)) 
+# 
+# %>% 
+#     filter(ActivityTypeCode=="Sample-Integrated Vertical Profile") %>% 
+#     filter(!is.na(ActivityBottomDepthHeightMeasure.MeasureValue))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- temp$ActivityBottomDepthHeightMeasure.MeasureValue
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "INTEGRATED"
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# #########################################################
+# 
+# 
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "at the surf")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "loch surf")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "lake surf")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "pond surf")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "surface water grab sample")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "at surface")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(ProjectIdentifier, ~str_detect(tolower(.), "surface")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "3 ft below")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 3*0.3048
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(tolower(ResultCommentText)=="surface")
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(tolower(ResultCommentText)=="surface sample")
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(tolower(ActivityCommentText)=="surface sample")
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(tolower(ActivityCommentText)=="surface")
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "1 ft below")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 1*0.3048
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "1m below")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 1
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "station 2 surface")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "30ft below")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 30*0.3048
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "branch, surface")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "dam,surface")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "above thermocline")))
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "photic")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "EPI_INT"
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "epilimnion")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "EPI_INT"
+# 
+# #######################
+# #Excludes
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>%  
+#     filter(if_any(everything(), ~str_detect(tolower(.), "bottom")))
+# dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id)
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "subsurface")))
+# dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id)
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "below thermocline")))
+# dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id)
+# 
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth))
+# temp2 <- dat %>% group_by(OrganizationFormalName) %>% 
+#     summarize(depth=sum(!is.na(lagos_sampledepth)),no_depth=sum(is.na(lagos_sampledepth)))
+# write_csv(temp2, "uknown_depths_program.csv")
+# 
+# 
+# #assign grabs with grab equipment as inferred 0 depth
+# temp <- dat %>% filter(is.na(lagos_sampledepth))
+# equip <- unique(temp$SampleCollectionEquipmentName)
+# equip_to_keep <- c("Water Bottle",
+#                    "Open-Mouth Bottle","Grab sample","Bucket")
+# equip <- equip[which(!equip %in% equip_to_keep)]
+# equip
+# temp <- temp %>% filter(!SampleCollectionEquipmentName %in% equip_to_keep)
+# dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id)
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+#     filter(if_any(everything(), ~str_detect(tolower(.), "grab")))
+# dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+# dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "INFERRED"
+# 
+# temp <- dat %>% filter(is.na(lagos_sampledepth))
+# 
+# temp <- dat %>% group_by(OrganizationFormalName) %>% 
+#     summarize(depths = sum(!is.na(lagos_sampledepth)),no_depths = sum(is.na(lagos_sampledepth))) %>% 
+#     filter(no_depths>99)
+# 
+# write_csv(temp,"no_depth.csv")
 
-temp <- dat %>% filter(is.na(lagos_sampledepth))
-
-temp <- dat %>% group_by(OrganizationFormalName) %>% 
-    summarize(depths = sum(!is.na(lagos_sampledepth)),no_depths = sum(is.na(lagos_sampledepth))) %>% 
-    filter(no_depths>99)
-
-write_csv(temp,"no_depth.csv")
-
-#remove repeated samples by randomly selecting one sample
+#remove repeated samples by randomly selecting one sample but prioritizing specified samples
 dat <- dat %>% ungroup()
 dat <- as.data.frame(dat)
-dat <- dat %>% group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,lagos_sampledepth,CharacteristicName) %>% slice_sample(n=1) %>% 
+dat <- dat %>% group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,lagos_sampledepth,CharacteristicName) %>% 
+    mutate(event_id = paste0(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,lagos_sampledepth,CharacteristicName)) %>% 
     ungroup()
+temp <- dat %>% filter(lagos_sampleposition == "SPECIFIED") %>%  
+    group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,lagos_sampledepth,CharacteristicName) %>% 
+    slice_sample(n=1) %>% ungroup()
+temp2 <- dat %>% filter(lagos_sampleposition != "SPECIFIED") %>%  
+    group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,lagos_sampledepth,CharacteristicName) %>% 
+    slice_sample(n=1) %>% ungroup()
+temp2 <- temp2 %>% filter(!event_id %in% temp$event_id)
+dat <- rbind(temp,temp2)
+rm(temp)
+rm(temp2)
+gc()
+
 
 #check to see if any odd variable units that should be excluded
 unique(dat$ResultSampleFractionText)
@@ -517,6 +546,48 @@ dat <- dat %>% mutate(CharacteristicName = case_when(CharacteristicName=='pH, eq
 dat <- dat %>% mutate(CharacteristicName = case_when(CharacteristicName=='Phosphorus, soluable reactive orthophosphate' ~'Phosphorus, soluble reactive orthophosphate',TRUE ~ as.character(CharacteristicName)))
 dat <- dat %>% mutate(CharacteristicName = case_when(CharacteristicName=='Nitrogen, total dissolved Kjeldahl' ~'Nitrogen, dissolved Kjeldahl',TRUE ~ as.character(CharacteristicName)))
 dat <- dat %>% mutate(CharacteristicName = case_when(CharacteristicName=='Mercury, dissolved' ~'Mercury, total dissolved',TRUE ~ as.character(CharacteristicName)))
+
+
+#ratio analysis
+dat <- dat %>% group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,lagos_sampledepth) %>% 
+    mutate(event_id = paste0(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,lagos_sampledepth)) %>% 
+    ungroup()
+
+s.ratio = (1+1*1/5)/(1-1*1/5)
+s.ratio.l = (1-1*1/5)/(1+1*1/5)
+flagdata <- NULL
+#tp/SRP
+temp2 <- temp %>% filter(CharacteristicName == "Phosphorus, total" | CharacteristicName == "Phosphorus, soluble reactive orthophosphate") %>% 
+    select(event_id,CharacteristicName,ResultMeasureValue,Obs_Id)
+temp3 <- temp2 %>% 
+    pivot_wider(names_from = CharacteristicName,values_from = ResultMeasureValue,id_cols = event_id) %>% 
+    drop_na() %>% 
+    mutate(ratio = `Phosphorus, soluble reactive orthophosphate`/`Phosphorus, total`) %>% 
+    filter(ratio >s.ratio) %>% 
+    mutate(flag = "RATIO")
+
+temp2 <- temp2 %>% left_join(temp3 %>% select(event_id,flag)) %>% 
+    filter(!is.na(flag))
+flagdata <- temp2$Obs_Id
+
+temp2 <- dat %>% filter(CharacteristicName == "Phosphorus, total" | CharacteristicName == "Phosphorus, total dissolved") %>% 
+    select(event_id,CharacteristicName,ResultMeasureValue,Obs_Id)
+unique(temp2$CharacteristicName)
+temp3 <- temp2 %>% 
+    pivot_wider(names_from = CharacteristicName,values_from = ResultMeasureValue,id_cols = event_id) %>% 
+    drop_na() %>% 
+    mutate(ratio = `Phosphorus, total dissolved`/`Phosphorus, total`) %>% 
+    filter(ratio >s.ratio) %>% 
+    mutate(flag = "RATIO")
+
+temp2 <- temp2 %>% left_join(temp3 %>% select(event_id,flag)) %>% 
+    filter(!is.na(flag))
+flagdata <- temp2$Obs_Id
+
+
+mutate()
+
+
 
 
 variables <- read_csv("lagos_variable.csv")
