@@ -53,6 +53,9 @@ data$lagos_variableid[which(data$lagos_variablename == "Nitrogen, nitrite (NO2)"
 data$lagos_variablename[which(data$source_parameter == "NITRATE_NITRITE_N")] <- "Nitrogen, nitrite (NO2) + nitrate (NO3)"
 data$lagos_variableid[which(data$lagos_variablename == "Nitrogen, nitrite (NO2) + nitrate (NO3)")] <- 18
 
+data$lagos_variablename[which(data$source_parameter == "NITRATE_N")] <- "Nitrogen, nitrite (NO2) + nitrate (NO3)"
+data$lagos_variableid[which(data$lagos_variablename == "Nitrogen, nitrite (NO2) + nitrate (NO3)")] <- 18
+
 data$lagos_variablename[which(data$source_parameter == "AMMONIA_N"|
                           data$source_parameter == "AMMONIA")] <- "Nitrogen, NH4"
 data$lagos_variableid[which(data$lagos_variablename == "Nitrogen, NH4")] <- 19
@@ -100,13 +103,12 @@ data$lagos_variableid[which(data$lagos_variablename == "Calcium, dissolved")] <-
 data$lagos_variablename[which(data$source_parameter == "MAGNESIUM")] <- "Magnesium, dissolved"
 data$lagos_variableid[which(data$lagos_variablename == "Magnesium, dissolved")] <- 14
 
-data$lagos_variablename[which(data$source_parameter == "E_COLI")] <- "E.coli-MPN"
+data$lagos_variablename[which(data$source_parameter == "E_COLI")] <- "E. coli-MPN"
 data$lagos_variableid[which(data$lagos_variablename == "E.coli-MPN")] <- 51
 
 
 clean_data<-subset(data, source_parameter != 'BATCH_ID')
 clean_data<-subset(clean_data, source_parameter != 'CYLSPER')
-clean_data<-subset(clean_data, source_parameter != 'NITRATE_N')
 clean_data<-subset(clean_data, source_parameter != '')
 
 unique((clean_data$source_parameter))
@@ -114,13 +116,17 @@ unique((clean_data$lagos_variablename))
 unique((clean_data$lagos_variableid))
 
 
-merged_data<-merge(clean_data,table,by="lagos_variablename",all.x=T)
+merged_data<-merge(clean_data,table,by="lagos_variablename")
 merged_data$datavalue_unit<-merged_data$unitsabbreviation
 merged_data$lagos_variableid<-merged_data$variableid_lagos
 
+conversions <- conversions %>% select(lagos_variablename,Conversion_factor)
+convert<-merge(merged_data,conversions,by=c("lagos_variablename"))
 
-convert<-merge(merged_data,conversions,by=c("lagos_variablename","datavalue_unit","source_unit"), all.x=T)
 convert$datavalue_conversion<-as.numeric(convert$Conversion_factor)
+temp <- convert %>% filter(!is.na(source_value)) %>% 
+    filter(is.na(as.numeric(source_value)))
+
 convert$datavalue<-c(as.numeric(convert$source_value)*convert$datavalue_conversion)
 
 convert$detectionlimitvalue_conversion<-as.numeric(convert$Conversion_factor)
@@ -138,6 +144,8 @@ convert$source_activityid<-convert$UID
 convert<-convert[complete.cases(convert$source_sampledepth)>-0.00001,]
 convert$source_methodqualifier<-ifelse(convert$lagos_variablename =="Chlorophyll a",
                                        "unknown", NA)
+
+convert <- convert %>% mutate(datavalue = ifelse(lagos_variablename == "Nitrogen, total" & source_unit =="ug/L",datavalue/1000,datavalue))
 
 
 

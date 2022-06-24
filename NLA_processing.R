@@ -194,7 +194,8 @@ Discrete_data07<-rbind(dat07_chem1,
                        dat07_chem6,
                        dat07_chem7)
 Discrete_data07$DEPTH<-c("")
-Discrete_data07<-rbind(Discrete_data07$DEPTH,dat07_chem8)
+
+Discrete_data07<-rbind(Discrete_data07,dat07_chem8)
 
 Discrete_data07 <- Discrete_data07[, c('UID','SAMPLE_UNITS','SAMPLE_RESULT','SAMPLE_FLAG','SAMPLE_QA_FLAG','SAMPLE_LAB_FLAG',
                                     'SAMPLE_TYPE','SAMPLE_MDL','SAMPLE_NAME','DEPTH','SITE_ID','VISIT_NO')]
