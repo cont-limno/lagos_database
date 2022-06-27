@@ -8,3 +8,4 @@ alldata.csv
 big_data/
 *.rds
 secchi_chla_data.csv
+.RDataTmp
