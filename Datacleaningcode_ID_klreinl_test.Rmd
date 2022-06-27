@@ -1065,7 +1065,7 @@ source("unit_conversions.R")
 ```{r mercury-dissolved}
 
 abbrev <- "dMe"
-lagos_name <- "Mercury, dissolved"
+lagos_name <- "Mercury, total dissolved"
 lagos_unit <- "ng/l"
 dataset_name <-"Mercury_dissolved"
 
@@ -1543,9 +1543,9 @@ rm(data_temp_temp_notes)
 ```{r pH}
 
 abbrev <- "pH"
-lagos_name <- "pH, equilibrated"
+lagos_name <- "pH, field or lab"
 lagos_unit <- "pH"
-dataset_name <-"pH_equilibrated"
+dataset_name <-"pH"
 
 vars2process
 params<-c("pH")
@@ -1697,7 +1697,7 @@ source("unit_conversions.R")
 abbrev <- "tCarbon"
 lagos_name <- "Carbon, total organic"
 lagos_unit <- "mg/l"
-dataset_name <-"Carbon_total_organic"
+dataset_name <-"TOC"
 
 vars2process
 params<-c("Carbon", "Organic carbon", "Total carbon")
@@ -1735,7 +1735,7 @@ source("unit_conversions.R")
 abbrev <- "tdCarbon"
 lagos_name <- "Carbon, dissolved organic"
 lagos_unit <- "mg/l"
-dataset_name <-"Carbon_dissolved_organic"
+dataset_name <-"TOC"
 
 vars2process
 params<-c("Carbon", "Organic carbon", "Total carbon")
@@ -1909,7 +1909,7 @@ source("unit_conversions.R")
 
 ```{r dissolved-inorganic-phosphorus}
 abbrev <- "dip"
-lagos_name <- "Phosphorus, soluable reactive orthophosphate"
+lagos_name <- "Phosphorus, soluble reactive orthophosphate"
 lagos_unit <- "ug/l"
 dataset_name <-"dip"
 
@@ -2041,7 +2041,7 @@ rm(data_temp_temp_notes)
 
 ```{r TDKN-kjeldahl-dissolved}
 abbrev <- "kn"
-lagos_name <- "Nitrogen, total dissolved Kjeldahl"
+lagos_name <- "Nitrogen, dissolved Kjeldahl"
 lagos_unit <- "ug/l"
 dataset_name <-"dkn"
 
@@ -2057,6 +2057,7 @@ unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
 temp<-non_numerics()
+#all ND's can be converted to NAS
 
 source("unit_conversions.R")
 data_temp_temp_notes
@@ -2119,6 +2120,19 @@ unique(data_temp$ResultSampleFractionText)
 ###create dataset to check for non numeric objects in dataset
 temp<-non_numerics()
 
+temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>%  
+  filter(is.na(DetectionQuantitationLimitMeasure.MeasureValue)) #grab values with "<" from result measure value and NA in detection limit
+
+vals <- gsub("[^0-9.-]", "", temp2$ResultMeasureValue) #extract only values from result measure value
+
+data_temp$DetectionQuantitationLimitMeasure.MeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals #place values in the detectionlim col
+
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Less Than"
+
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- NA
+
+temp <- non_numerics()
+
 source("unit_conversions.R")
 ```
 
@@ -2141,7 +2155,7 @@ unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
 temp<-non_numerics()
-
+#no nonnumerics
 source("unit_conversions.R")
 rm(data_temp_temp_notes)
 
@@ -2168,6 +2182,21 @@ unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
 temp<-non_numerics()
+
+temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>%  
+  filter(is.na(DetectionQuantitationLimitMeasure.MeasureValue)) #grab values with "<" from result measure value and NA in detection limit
+
+vals <- gsub("[^0-9.-]", "", temp2$ResultMeasureValue) #extract only values from result measure value
+
+data_temp$DetectionQuantitationLimitMeasure.MeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals #place values in the detectionlim col
+
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Less Than"
+
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- NA
+
+temp <- non_numerics()
+
+ #all NDs - can be converted to NAS
 
 source("unit_conversions.R")
 
@@ -2233,6 +2262,18 @@ unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
 temp<- non_numerics() #checks for non numeric values in result measure value - if NA's not losing any other data - can change #391 NA's - can change
+temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>%  
+  filter(is.na(DetectionQuantitationLimitMeasure.MeasureValue)) #grab values with "<" from result measure value and NA in detection limit
+
+vals <- gsub("[^0-9.-]", "", temp2$ResultMeasureValue) #extract only values from result measure value
+
+data_temp$DetectionQuantitationLimitMeasure.MeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals #place values in the detectionlim col
+
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Less Than"
+
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- NA
+
+temp <- non_numerics()
 
 unique(temp$ResultMeasureValue)
 
@@ -2258,6 +2299,19 @@ data_temp<-data[data$CharacteristicName%in%params,] #want to match all records t
 ###create dataset to check for non numeric objects in dataset
 temp <- non_numerics()
 
+temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>%  
+  filter(is.na(DetectionQuantitationLimitMeasure.MeasureValue)) #grab values with "<" from result measure value and NA in detection limit
+
+vals <- gsub("[^0-9.-]", "", temp2$ResultMeasureValue) #extract only values from result measure value
+
+data_temp$DetectionQuantitationLimitMeasure.MeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals #place values in the detectionlim col
+
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Less Than"
+
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- NA
+
+temp <- non_numerics()
+
 source("unit_conversions.R")
 data_temp_temp_notes
 rm(data_temp_temp_notes)
@@ -2278,6 +2332,19 @@ vars2process #check if any new varables to inlcude
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
 
 ###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>%  
+  filter(is.na(DetectionQuantitationLimitMeasure.MeasureValue)) #grab values with "<" from result measure value and NA in detection limit
+
+vals <- gsub("[^0-9.-]", "", temp2$ResultMeasureValue) #extract only values from result measure value
+
+data_temp$DetectionQuantitationLimitMeasure.MeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals #place values in the detectionlim col
+
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Less Than"
+
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- NA
+
 temp <- non_numerics()
 
 source("unit_conversions.R")
@@ -2302,17 +2369,29 @@ data_temp<-data[data$CharacteristicName%in%params,] #want to match all records t
 ###create dataset to check for non numeric objects in dataset
 temp <- non_numerics()
 
+temp2 <- temp %>% filter(grepl("<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>%  
+  filter(is.na(DetectionQuantitationLimitMeasure.MeasureValue)) #grab values with "<" from result measure value and NA in detection limit
+
+vals <- gsub("[^0-9.-]", "", temp2$ResultMeasureValue) #extract only values from result measure value
+
+data_temp$DetectionQuantitationLimitMeasure.MeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals #place values in the detectionlim col
+
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Less Than"
+
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- NA
+
+temp <- non_numerics()
+
 source("unit_conversions.R")
 data_temp_temp_notes
 rm(data_temp_temp_notes)
 ```
 
-
 ```{r}
-abbrev <- "Inorganiccarbon"
+abbrev <- "IC"
 lagos_name <- "Carbon, total inorganic"
 lagos_unit <- "mg/l"
-dataset_name <-"Inorganic_carbon"
+dataset_name <-"TIC"
 
 vars2process
 params<-c("Inorganic carbon")
@@ -2320,6 +2399,33 @@ vars2process<-vars2process[! vars2process %in% params] #remove grab samples from
 vars2process #check if any new varables to inlcude
 
 data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Total")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+source("unit_conversions.R")
+data_temp_temp_notes
+rm(data_temp_temp_notes)
+```
+
+```{r}
+abbrev <- "IC"
+lagos_name <- "Carbon, dissolved inorganic"
+lagos_unit <- "mg/l"
+dataset_name <-"DIC"
+
+vars2process
+params<-c("Inorganic carbon")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Dissolved" | ResultSampleFractionText=="Filterable")
+unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
 temp <- non_numerics()
@@ -2345,7 +2451,7 @@ data_temp<-data[data$CharacteristicName%in%params,] #want to match all records t
 
 ###create dataset to check for non numeric objects in dataset
 temp <- non_numerics()
-
+#Can be converted to NAs
 source("unit_conversions.R")
 data_temp_temp_notes
 rm(data_temp_temp_notes)
