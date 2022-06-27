@@ -1,4 +1,4 @@
-﻿CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
 Nitrogen,mg/l,mg/l,21NEV1_WQX 0050,NV Method 0050 Undefined,,-1000000,-1000000,methods_fail
 Nitrogen,mg/l,mg/l,ASTM D3590(B),D3590 B  ~ TKN by AutoAnalyzer,,-1000000,-1000000,methods_fail
 Nitrogen,mg/l,mg/l,AZDEQ_SW CALCULATION,CALCULATION,,-1000000,-1000000,methods_fail; calculated
