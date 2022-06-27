@@ -26,7 +26,7 @@ if(file.exists(paste0("conversion_files/",abbrev,"_Methods_Conversion.csv"))==FA
     
 }
 
-conversions <- read.csv(file = paste0("conversion_files/",abbrev,"_Methods_Conversion.csv")) # read in list of conversion factors
+conversions <- read.csv(file = paste0("conversion_files/",abbrev,"_Methods_Conversion.csv"), fileEncoding = 'UTF-8-BOM') # read in list of conversion factors
 conversions[conversions == ""] <- NA #assign NA to blank values
 check_methods<-merge(conversions,methods_table, by=c("CharacteristicName",
                                                      "ResultMeasure.MeasureUnitCode",

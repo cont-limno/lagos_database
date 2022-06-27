@@ -1,0 +1,24 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+Inorganic carbon,mg/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,methods_WQX
+Inorganic carbon,mg/l,,APHA 4500-CO2(C),4500 CO2 C  ~ Carbon Dioxide in Water by Titration,,1,1,
+Inorganic carbon,mg/l,,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,-1000000,-1000000,methods_fail; TOC
+Inorganic carbon,mg/l,,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,-1000000,-1000000,methods_fail; TOC
+Inorganic carbon,mg/l,mg/l,APHA 5310-D,5310 D ~ Total Organic Carbon in Water- Wet-Oxidation Method,,-1000000,-1000000,methods_fail; org C
+Inorganic carbon,mg/l,,ASTM D6317,Carbon (all forms) in Water,,1,1,ASTM D6317
+Inorganic carbon,mg/l,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1,1,methods_unknown
+Inorganic carbon,mg/l,mg/l,NA NA,,691,1,1,"USGS_00691; Dissolved inorganic carbon (DIC), water, filtered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (NWQL)"
+Inorganic carbon,mg/l,,NA NA,,685,1,1,"USGS_00685; Inorganic carbon, water, unfiltered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (USGS-NYL)"
+Inorganic carbon,mg/l,,NA NA,,691,1,1,"USGS_00691; Dissolved inorganic carbon (DIC), water, filtered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (NWQL)"
+Inorganic carbon,mg/l,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,,1,1,methods_unknown
+Inorganic carbon,mg/l,,R10BUNKER USGS_UNKN,USGS_UNKN,,1,1,methods_unknown
+Inorganic carbon,mg/l,,R10MIDNITE DUSDA-23C,Dissolved Inorganic Carbon,,1,1,methods_unknown
+Inorganic carbon,mg/l,,USEPA 415.2,Low Level Total Organic Carbon in Water,,-1000000,-1000000,methods_fail; TOC
+Inorganic carbon,mg/l,,USEPA 440(W),440 W  ~ Determination of Carbon and Nitrogen,,-1000000,-1000000,methods_fail; particulate
+Inorganic carbon,mg/l,mg/l,USEPA 9060,Total Organic Carbon in Water and Waste,,-1000000,-1000000,methods_fail; TOC
+Inorganic carbon,mg/l,mg/l,USGS 00127,PIC,688,-1000000,-1000000,"methods_fail; Carbon, inorganic, suspended (Total Particulate Inorganic Carbon (PIC))"
+Inorganic carbon,mg/l,,USGS 00127,PIC,688,-1000000,-1000000,methods_fail; particulate
+Inorganic carbon,mg/l,,USGS COMB8,"Inorg carbon, wf, OI/Dohrmann",685,1,1,"USGS_00685; Inorganic carbon, water, unfiltered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (USGS-NYL)"
+Inorganic carbon,mg/l,,USGS COMB8,"Inorg carbon, wf, OI/Dohrmann",691,1,1,"USGS_00691; Inorganic carbon, water, filtered, milligrams per liter"
+Inorganic carbon,mg/l,mg/l,USGS IR005,"Inorg carbon, wu, IR (USGS-NYL)",685,1,1,methods_unknown
+Inorganic carbon,mg/l,,USGS IR005,"Inorg carbon, wu, IR (USGS-NYL)",685,1,1,"USGS_00685; Inorganic carbon, water, unfiltered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (USGS-NYL)"
+Inorganic carbon,mg/l,,USGS IR006,"DIC, wf, IR (NWQL)",691,1,1,"USGS_00691; Dissolved inorganic carbon (DIC), water, filtered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (NWQL)"

@@ -1,142 +1,248 @@
-CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Depth,%,,MNPCA LEG_P00005,"X-SEC. LOC., VERTICAL (PERCENT OF TOTAL DEPTH)",,-1000000,-1000000,units_fail
-Depth,ft,,NA NA,,64,-1000000,-1000000,"methods_fail; Mean depth of stream, feet"
-Depth,ft,,NA NA,,72001,-1000000,-1000000,"methods_fail; Depth of hole, feet below land surface datum"
-Depth,ft,,NA NA,,72008,-1000000,-1000000,"methods_fail; Depth of well, feet below land surface datum"
-Depth,ft,,NA NA,,81903,0.3048,0.3048,"USGS_81903; Depth to bottom at sample location, feet"
-Depth,ft,,USGS 0,,81903,0.3048,0.3048,"USGS_81903; Depth to bottom at sample location, feet"
-Depth,ft,,USGS 4,,81903,0.3048,0.3048,"USGS_81903; Depth to bottom at sample location, feet"
-Depth,ft,,USGS A,,81903,0.3048,0.3048,"USGS_81903; Depth to bottom at sample location, feet"
-Depth,ft,,USGS I,,81903,0.3048,0.3048,"USGS_81903; Depth to bottom at sample location, feet"
-Depth,ft,,NA NA,,82016,0.3048,0.3048,"USGS_82016; Maximum depth of lake, feet"
-Depth,ft,ft,1119USBR_WQX 20,Zebra/Quagga Mussel APHA 10200G Modified,,-1000000,-1000000,methods_fail; plankton sample
-Depth,ft,ft,OREGONDEQ MOM grab,Field methods for DEQ Water sampling,,0.3048,0.3048,methods_unknown
-Depth,ft,,NA NA,,,0.3048,0.3048,methods_unknown
-Depth,ft,,SDDENR_WQX UNKOWN,UNKOWN,,0.3048,0.3048,methods_WQX
-Depth,ft,,SDWRAP WRAPFLD,,,0.3048,0.3048,methods_unknown
-Depth,ft,,11113300 TAPE MEASURE,"TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,0.3048,0.3048,methods_unknown
-Depth,ft,,11113300 WEIGHTED TAPE MEAS.,WEIGHTED TAPE MEASURE,,0.3048,0.3048,methods_unknown
-Depth,ft,,21MICH MDEQ-EPA,,,0.3048,0.3048,methods_unknown
-Depth,ft,,IL_EPA FIELD,,,0.3048,0.3048,methods_unknown
-Depth of water column,ft,,NA NA,,72199,0.3048,0.3048,"USGS_72199; Water depth, water surface to bottom, feet"
-"Depth, bottom",ft,ft,NA NA,,,0.3048,0.3048,methods_unknown
-"Depth, bottom",ft,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,0.3048,0.3048,methods_WQX
-"Depth, bottom",ft,,21FLALTA_WQX EPA100.1,Sample Depth,,0.3048,0.3048,methods_WQX
-"Depth, bottom",ft,,21FLHILL_WQX DEPTHO,Depth by chain or rope,,0.3048,0.3048,methods_WQX
-"Depth, bottom",ft,,21FLHILL_WQX DEPTHPD,Water Depth by Pressure Transducer,,0.3048,0.3048,methods_WQX
-"Depth, bottom",ft,,21NC01WQ UNKNOWN,,,0.3048,0.3048,methods_unknown
-"Depth, bottom",ft,,21NC02WQ WQS SOP,,,0.3048,0.3048,methods_unknown
-"Depth, bottom",ft,,NA NA,,,0.3048,0.3048,methods_unknown
-"Depth, bottom",ft,,OREGONDEQ Not Available,Not Available,,0.3048,0.3048,methods_unknown
-"Depth, bottom",ft,,R10BUNKER FLOW-USGS,FLOW-USGS,,0.3048,0.3048,methods_unknown
-"Depth, bottom",ft,,SDDENR_WQX UNKOWN,UNKOWN,,0.3048,0.3048,methods_WQX
-"Depth, bottom",ft,ft,SDDENR_WQX field,UNKOWN,,0.3048,0.3048,methods_WQX
-"Depth, bottom",ft,m,SDDENR_WQX field,UNKOWN,,0.3048,1,methods_WQX
-"Depth, bottom",ft,,11NPSWRD_WQX NPS_UNSPECIFIED,Unknown or Unspecified Procedure,,0.3048,0.3048,methods_WQX
-"Depth, bottom",ft,,IL_EPA FIELD,,,0.3048,0.3048,methods_unknown
-"Depth, bottom",ft,,IL_EPA_WQX FIELD,MEASURED IN FIELD,,0.3048,0.3048,methods_WQX
-"Depth, bottom",ft,,SDDENR_WQX UNKNOWN,UNKNOWN,,0.3048,0.3048,methods_WQX
-"Depth, data-logger (non-ported)",ft,,NA NA,,,-1000000,-1000000,methods_fail; data logger
-"Depth, data-logger (ported)",ft,,CHEROKEE CN_QAPP,,,-1000000,-1000000,methods_fail; data logger
-Depth,in,,11113300 TAPE MEASURE,"TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,0.0254,0.0254,methods_unknown
-Depth,m,,NA NA,,82903,1,1,"USGS_82903; Depth to bottom from water surface, at sampling location, meters  "
-Depth,m,,NA NA,,85310,1,1,"USGS_85310; Depth of lake, maximum, meters"
-Depth,m,,USGS B,,85310,1,1,"USGS_85310; Depth of lake, maximum, meters"
-Depth,m,,USGS D,,85310,1,1,"USGS_85310; Depth of lake, maximum, meters"
-Depth,m,m,1119USBR_WQX 10,"Depth, Secchi disk depth",,-1000000,-1000000,methods_fail; secchi
-Depth,m,m,21FLORAN_WQX EPD100.1,"Depth, Secchi disk depth",,-1000000,-1000000,methods_fail; secchi
-Depth,m,,21FLORAN_WQX EPD100.1,"Depth, Secchi disk depth",,-1000000,-1000000,methods_fail; secchi
-Depth,m,,21FLSUW_WQX FT 1700,Field Measurement of Light Penetration (Secchi Depth and Transparency),,-1000000,-1000000,methods_fail; secchi
-Depth,m,,21FLTPA_WQX FT1700,"Depth, Secchi disk depth",,-1000000,-1000000,methods_fail; secchi
-Depth,m,,ASTM D5413(B),D5413 B  ~ Water Levels Using Recording Devices,,-1000000,-1000000,methods_fail; water level
-Depth,m,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,methods_fail
-Depth,m,m,21FLMANA GENERIC,,,1,1,methods_unknown
-Depth,m,m,21FLMANA_WQX GENERIC,General Listing of Field and Lab Analytical Procedures for Manatee County,,1,1,methods_WQX
-Depth,m,m,21FLSFWM WQ-1,,,1,1,methods_unknown
-Depth,m,m,21FLVEMD SOP-2,,,1,1,methods_unknown
-Depth,m,m,NA NA,,,1,1,methods_unknown
-Depth,m,m,OREGONDEQ MOM grab,Field methods for DEQ Water sampling,,1,1,methods_unknown
-Depth,m,m,SDWRAP WRAPFLD,,,1,1,methods_unknown
-Depth,m,,21ARIZ_WQX FIELD,FIELD PARAMETERS,,1,1,methods_WQX
-Depth,m,,21COL001 HISTORIC,,,1,1,methods_unknown
-Depth,m,,21FLCOLL_WQX LKTRAFF,Lake Trafford,,1,1,methods_WQX
-Depth,m,,21FLLCPC_WQX DEP-SOP-001/01,DEP STANDARD OPERATING PROCEDURES FOR FIELD ACTIVITIES,,1,1,methods_WQX
-Depth,m,,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,1,1,methods_WQX
-Depth,m,,21FLLCPC_WQX SJRWMDWQM,WATER QUALITY MANUAL FOR VOLUNTEERS IN THE ST. JOHNS RIVER WATER MANAGEMENT DISTRICT,,1,1,methods_WQX
-Depth,m,,21FLMANA GENERIC,,,1,1,methods_unknown
-Depth,m,,21FLMANA_WQX GENERIC,General Listing of Field and Lab Analytical Procedures for Manatee County,,1,1,methods_WQX
-Depth,m,,21FLPDEM FT 1000,,,1,1,methods_unknown
-Depth,m,,21FLPDEM HYDROLAB 001,,,1,1,methods_unknown
-Depth,m,,21FLPDEM_WQX FT 1000,Field Measurements and Observations,,1,1,methods_WQX
-Depth,m,,21FLSFWM WQ-1,,,1,1,methods_unknown
-Depth,m,,21FLSFWM_WQX SFWMD-FSQM,SFWMD-FSQM,,1,1,methods_WQX
-Depth,m,,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,1,1,methods_WQX
-Depth,m,,21FLSJWM OTHER/UNKNOWN,,,1,1,methods_unknown
-Depth,m,,21FLSJWM_WQX OTHER/UNKNOWN,Other or Unknown Procedure,,1,1,methods_WQX
-Depth,m,,21FLSUW_WQX OTHER/UNKNOWN,Other of Unknown Procedure,,1,1,methods_WQX
-Depth,m,,21FLSWFD_WQX FT-1000,FDEP General Field Procedures,,1,1,methods_WQX
-Depth,m,,21FLVEMD SOP-2,,,1,1,methods_unknown
-Depth,m,,21SC60WQ_WQX Depth,Depth in m,,1,1,methods_WQX
-Depth,m,,AZDEQ_SW FIELD,FIELD,,1,1,methods_unknown
-Depth,m,,AZDEQ_SW UNKNOWN,UNKNOWN,,1,1,methods_unknown
-Depth,m,,NA NA,,,1,1,methods_unknown
-Depth,m,,OREGONDEQ MOMs,Field methods for DEQ Water sampling,,1,1,methods_unknown
-Depth,m,,OREGONDEQ Not Available,Not Available,,1,1,methods_unknown
-Depth,m,,SDDENR_WQX UNKOWN,UNKOWN,,1,1,methods_WQX
-Depth,m,,SDWRAP WRAPFLD,,,1,1,methods_unknown
-Depth,m,,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,methods_WQX
-Depth,m,,11113300 TAPE MEASURE,"TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,1,1,methods_unknown
-Depth,m,,11113300 WEIGHTED TAPE MEAS.,WEIGHTED TAPE MEASURE,,1,1,methods_unknown
-Depth,m,,11NPSWRD_WQX NPS_UNSPECIFIED,Unknown or Unspecified Procedure,,1,1,methods_WQX
-Depth,m,,21FLBRA FT 1700,,,1,1,methods_unknown
-Depth,m,,21FLSUW FT 1700,,,1,1,methods_unknown
-Depth,m,,MNPCA DEPTH BOTTOM,"Depth, bottom",,1,1,methods_unknown
-Depth,m,,MNPCA FLD,"Field measurement/observation, generic method",,1,1,methods_unknown
-Depth,m,,YSI 120.1,Direct Measurement Method,,1,1,methods_unknown
-"Depth, bottom",m,m,21FLORAN_WQX EPD100.1,"Depth, Secchi disk depth",,-1000000,-1000000,methods_fail; secchi
-"Depth, bottom",m,,21FLCEN_WQX FT 1700,Secchi disk depth,,-1000000,-1000000,methods_fail; secchi
-"Depth, bottom",m,,21FLLEON_WQX FT_1700,Sechi Disk Depth,,-1000000,-1000000,methods_fail; secchi
-"Depth, bottom",m,,21FLORAN_WQX EPD100.1,"Depth, Secchi disk depth",,-1000000,-1000000,methods_fail; secchi
-"Depth, bottom",m,,USEPA 170.1,Temperature,,1,1,methods_unknown
-"Depth, bottom",m,m,21FLORAN EPA100.1,,,1,1,methods_unknown
-"Depth, bottom",m,m,21FLORAN EPD100.1,,,1,1,methods_unknown
-"Depth, bottom",m,m,21FLORL_WQX EPA100.1,Sample Depth,,1,1,methods_WQX
-"Depth, bottom",m,m,21IOWA_WQX Unknown,Unknown,,1,1,methods_WQX
-"Depth, bottom",m,m,OREGONDEQ MOM grab,Field methods for DEQ Water sampling,,1,1,methods_unknown
-"Depth, bottom",m,m,USEPA 120.1,,,1,1,methods_unknown
-"Depth, bottom",m,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1,1,methods_WQX
-"Depth, bottom",m,,21COL001 HISTORIC,,,1,1,methods_unknown
-"Depth, bottom",m,,21FLCEN_WQX HISTORICAL,Standard Operation Procedure,,1,1,methods_WQX
-"Depth, bottom",m,,21FLCEN_WQX SOP-ANALY,Standard Analytical Procedure,,1,1,methods_WQX
-"Depth, bottom",m,,21FLCOLL_WQX FIELD READINGS,Measurements/readings obtained in the field,,1,1,methods_WQX
-"Depth, bottom",m,,21FLCOLL_WQX LKTRAFF,Lake Trafford,,1,1,methods_WQX
-"Depth, bottom",m,,21FLGFWF STATION OBS,,,1,1,methods_unknown
-"Depth, bottom",m,,21FLGW_WQX 900456,QA Plan #900456,,1,1,methods_WQX
-"Depth, bottom",m,,21FLHILL_WQX DEPTHPD,Water Depth by Pressure Transducer,,1,1,methods_WQX
-"Depth, bottom",m,,21FLLCPC_WQX DEP-SOP-001/01,DEP STANDARD OPERATING PROCEDURES FOR FIELD ACTIVITIES,,1,1,methods_WQX
-"Depth, bottom",m,,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,1,1,methods_WQX
-"Depth, bottom",m,,21FLLCPC_WQX SJRWMDWQM,WATER QUALITY MANUAL FOR VOLUNTEERS IN THE ST. JOHNS RIVER WATER MANAGEMENT DISTRICT,,1,1,methods_WQX
-"Depth, bottom",m,,21FLLEON FT_1700,,,1,1,methods_unknown
-"Depth, bottom",m,,21FLSJWM OTHER/UNKNOWN,,,1,1,methods_unknown
-"Depth, bottom",m,,21FLSJWM_WQX OTHER/UNKNOWN,Other or Unknown Procedure,,1,1,methods_WQX
-"Depth, bottom",m,,21FLSUW_WQX NOT REPORTED,Method not reported,,1,1,methods_WQX
-"Depth, bottom",m,,21FLSUW_WQX OTHER/UNKNOWN,Other of Unknown Procedure,,1,1,methods_WQX
-"Depth, bottom",m,,21FLSWFD_WQX FT-1000,FDEP General Field Procedures,,1,1,methods_WQX
-"Depth, bottom",m,,21FLTPA_WQX SOP-2,To be updated,,1,1,methods_WQX
-"Depth, bottom",m,,21FLVEMD_WQX 21FLVEMD,SOP-1 VCEH Lab Surface Water SOP,,1,1,methods_WQX
-"Depth, bottom",m,,21FLVEMD_WQX SOP-2,Field/Lab SOP IRLWQMN,,1,1,methods_WQX
-"Depth, bottom",m,,21IOWA_WQX Unknown,Unknown,,1,1,methods_WQX
-"Depth, bottom",m,,21KY MAXIMUM DEPTH,,,1,1,methods_unknown
-"Depth, bottom",m,,FWCLOCAL STATION OBS,,,1,1,methods_unknown
-"Depth, bottom",m,,MDDNR obs13,eventTOTAL_DEPTH,,1,1,methods_unknown
-"Depth, bottom",m,,NA NA,,,1,1,methods_unknown
-"Depth, bottom",m,,SDDENR_WQX UNKOWN,UNKOWN,,1,1,methods_WQX
-"Depth, bottom",m,,SDWRAP WRAPFLD,,,1,1,methods_unknown
-"Depth, bottom",m,,11113300 TAPE MEASURE,"TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,1,1,methods_unknown
-"Depth, bottom",m,,11113300 WEIGHTED TAPE MEAS.,WEIGHTED TAPE MEASURE,,1,1,methods_unknown
-"Depth, bottom",m,,11NPSWRD_WQX GLKN_HL_DS4X,Multiprobe Field Analysis,,1,1,methods_WQX
-"Depth, bottom",m,,11NPSWRD_WQX NPS_HYDRLAB_MS,Hydrolab MiniSonde Data Logger Probes,,-1000000,-1000000,methods_fail; data logger
-"Depth, data-logger (non-ported)",m,,NA NA,,,-1000000,-1000000,methods_fail; data logger
-"Depth, data-logger (ported)",m,,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,-1000000,-1000000,methods_fail; data logger
-Depth,m/sec,,NA NA,,,-1000000,-1000000,units_fail
-Depth,mg,,21FLSUW_WQX FS 2100,Surface Water Sampling,,-1000000,-1000000,units_fail
+"CharacteristicName","ResultMeasure.MeasureUnitCode","DetectionQuantitationLimitMeasure.MeasureUnitCode","Method_Id","ResultAnalyticalMethod.MethodName","USGSPCode","Conversion","Conversion_dl","Notes"
+"Aluminum","mg/kg","mg/kg","AZDEQ_SW EPA 6010B","EPA 6010B",,,,
+"Aluminum","mg/kg",,"21OHIO_WQX USEPA 200.7","USEPA 200.7",,,,
+"Aluminum","mg/kg",,"AZDEQ_SW EPA 6010B","EPA 6010B",,,,
+"Aluminum","mg/kg",,"KAWNATON_WQX 6010","Hydrogen Cyanide by Visible Absorption",,,,
+"Aluminum","mg/kg",,"KAWNATON_WQX 6010B","Inductively Coupled Plasma AES",,,,
+"Aluminum","mg/kg",,"NA NA",,,,,
+"Aluminum","mg/kg",,"TCEQMAIN N/A Calculation","N/A Calculation",,,,
+"Aluminum","mg/l","mg/l","21FLORAN EPA200.7",,,,,
+"Aluminum","mg/l","mg/l","21FLPDEM EPA 200.7",,,,,
+"Aluminum","mg/l","mg/l","21FLPDEM EPA 6010",,,,,
+"Aluminum","mg/l","mg/l","APHA 3111-D",,,,,
+"Aluminum","mg/l","mg/l","APHA 3113-B","3113 B ~ Metals in Water by GFAA",,,,
+"Aluminum","mg/l","mg/l","AZDEQ_SW EPA 200.7","EPA 200.7",,,,
+"Aluminum","mg/l","mg/l","AZDEQ_SW EPA 6010B","EPA 6010B",,,,
+"Aluminum","mg/l","mg/l","AZDEQ_SW EPA 6010C","EPA 6010C",,,,
+"Aluminum","mg/l","mg/l","KAWNATON_WQX 10215","Aluminum Chromazural S Method",,,,
+"Aluminum","mg/l","mg/l","MDEQ_WQ_WQX ICAP-SCAN-MDEQ-WQ","Metals Scan via Inductively Coupled Argon Plasma Spectroscopy",,,,
+"Aluminum","mg/l","mg/l","R10MIDNITE 7040","Antimony",,,,
+"Aluminum","mg/l","mg/l","USEPA 200","Metals by Atomic Absorption",,,,
+"Aluminum","mg/l","mg/l","USEPA 200.7","Metals in Water by ICP-AES",,,,
+"Aluminum","mg/l","mg/l","USEPA 200.7(W)","200.7 W  ~ Metals in Water by ICP-AES",,,,
+"Aluminum","mg/l","mg/l","USEPA 200.7(W)",,,,,
+"Aluminum","mg/l","mg/l","USEPA 200.7_M","200.7 M ~ ICP-AES For Trace Element Analysis",,,,
+"Aluminum","mg/l","mg/l","USEPA 200.8","Metals in Waters by ICP/MS",,,,
+"Aluminum","mg/l","mg/l","USEPA 200.8(W)","200.8 W  ~ Metals in Waters by ICP/MS",,,,
+"Aluminum","mg/l","mg/l","USEPA 200.8(W)",,,,,
+"Aluminum","mg/l",,"21AWIC ADEM_HISTORICAL","Unkn Lab Proc",,,,
+"Aluminum","mg/l",,"AZDEQ_SW EPA 200.7","EPA 200.7",,,,
+"Aluminum","mg/l",,"HACH 10215","Aluminum Chromazurol S Method",,,,
+"Aluminum","mg/l",,"HACH 10217","Cadmium, Cadion Method",,,,
+"Aluminum","mg/l",,"KAWNATON_WQX 10215","Aluminum Chromazural S Method",,,,
+"Aluminum","mg/l",,"KAWNATON_WQX 200.7","Metals in Water by ICP-AES",,,,
+"Aluminum","mg/l",,"KAWNATON_WQX 200.8","Metals in Waters by ICP/MS",,,,
+"Aluminum","mg/l",,"KAWNATON_WQX 208.1","Barium by FLAA",,,,
+"Aluminum","mg/l",,"NA NA",,,,,
+"Aluminum","mg/l",,"USACOEND 6010A","ICP Metals in Water",,,,
+"Aluminum","mg/l",,"USEPA 200.7","Metals in Water by ICP-AES",,,,
+"Aluminum","mg/l",,"USEPA 200.7(W)","200.7 W  ~ Metals in Water by ICP-AES",,,,
+"Aluminum","mg/l",,"USEPA 200.7(W)",,,,,
+"Aluminum","mg/l",,"USEPA 200.7_M","200.7 M ~ ICP-AES For Trace Element Analysis",,,,
+"Aluminum","mg/l",,"USEPA 200.8","Metals in Waters by ICP/MS",,,,
+"Aluminum","mg/l",,"USEPA 202.1","Aluminum by FLAA",,,,
+"Aluminum","mg/l",,"USEPA 202.2","Aluminum by GFAA",,,,
+"Aluminum","mg/l",,"USEPA 6010A",,,,,
+"Aluminum","mg/l",,"USEPA 6010B","6010 B ~ Inductively Coupled Plasma AES",,,,
+"Aluminum","ug/l","ug/l","21FLPOLK PCNRD HACH8326",,,,,
+"Aluminum","ug/l","ug/l","21NC01WQ UNKNOWN",,,,,
+"Aluminum","ug/l","ug/l","APHA 3111-D","3111 D ~ Metals in Water by FLAA- Direct Nitrous Oxide-Acetylene Flame",,,,
+"Aluminum","ug/l","ug/l","APHA 3111-D",,,,,
+"Aluminum","ug/l","ug/l","APHA 3113-B","3113 B ~ Metals in Water by GFAA",,,,
+"Aluminum","ug/l","ug/l","AZDEQ_SW EPA 200.7","EPA 200.7",,,,
+"Aluminum","ug/l","ug/l","AZDEQ_SW EPA 200.8","EPA 200.8",,,,
+"Aluminum","ug/l","ug/l","AZDEQ_SW EPA 6010B","EPA 6010B",,,,
+"Aluminum","ug/l","ug/l","INSTOR_WQX 200.7","200.7",,,,
+"Aluminum","ug/l","ug/l","INSTOR_WQX 200.8","200.8",,,,
+"Aluminum","ug/l","ug/l","R10BUNKER IN-CLP-LOW","IN-CLP-LOW",,,,
+"Aluminum","ug/l","ug/l","R10MIDNITE 7040","Antimony",,,,
+"Aluminum","ug/l","ug/l","USEPA 200.7","Metals in Water by ICP-AES",,,,
+"Aluminum","ug/l","ug/l","USEPA 200.7(W)","200.7 W  ~ Metals in Water by ICP-AES",,,,
+"Aluminum","ug/l","ug/l","USEPA 200.7(W)",,,,,
+"Aluminum","ug/l","ug/l","USEPA 200.7_M","200.7 M ~ ICP-AES For Trace Element Analysis",,,,
+"Aluminum","ug/l","ug/l","USEPA 200.8","Metals in Waters by ICP/MS",,,,
+"Aluminum","ug/l","ug/l","USEPA 200.8(W)","200.8 W  ~ Metals in Waters by ICP/MS",,,,
+"Aluminum","ug/l","ug/l","USEPA 200.8(W)",,,,,
+"Aluminum","ug/l","ug/l","USEPA 202.1",,,,,
+"Aluminum","ug/l","ug/l","USEPA 202.2","Aluminum by GFAA",,,,
+"Aluminum","ug/l","ug/l","USEPA 202.2",,,,,
+"Aluminum","ug/l","ug/l","USEPA 6010A","6010 A ~ ICP Spectroscopy",,,,
+"Aluminum","ug/l","ug/l","USEPA 6010A",,,,,
+"Aluminum","ug/l","ug/l","USEPA 6010B","6010 B ~ Inductively Coupled Plasma AES",,,,
+"Aluminum","ug/l",,"11NPSWRD_WQX NPS_LEGACY","Unspecified Standard Grab Sample Procedure",,,,
+"Aluminum","ug/l",,"21AWIC ADEM_HISTORICAL","Unkn Lab Proc",,,,
+"Aluminum","ug/l",,"21IND_WQX 200.8","200.8",,,,
+"Aluminum","ug/l",,"21NC01WQ UNKNOWN",,,,,
+"Aluminum","ug/l",,"21OHIO_WQX USEPA 200.7","USEPA 200.7",,,,
+"Aluminum","ug/l",,"APHA 3111-D",,,,,
+"Aluminum","ug/l",,"APHA 3113-B","3113 B ~ Metals in Water by GFAA",,,,
+"Aluminum","ug/l",,"APHA 3120","Metals in Water by ICP",,,,
+"Aluminum","ug/l",,"IL_EPA LAB",,,,,
+"Aluminum","ug/l",,"INSTOR_WQX 200.7","200.7",,,,
+"Aluminum","ug/l",,"INSTOR_WQX 200.8","200.8",,,,
+"Aluminum","ug/l",,"MNPCA LEG_P01105","ALUMINUM, TOTAL (UG/L AS AL)",,,,
+"Aluminum","ug/l",,"MNPCA LEG_UNKNOWN","Legacy STORET migration; analytical procedure not specified",,,,
+"Aluminum","ug/l",,"NA NA",,,,,
+"Aluminum","ug/l",,"R10BUNKER IN-CLP-LOW","IN-CLP-LOW",,,,
+"Aluminum","ug/l",,"SPIRITLK I4471","I4471",,,,
+"Aluminum","ug/l",,"TCEQMAIN N/A Calculation","N/A Calculation",,,,
+"Aluminum","ug/l",,"USDOI/USGS I-4471-97","Metals in Water by Inductively Coupled Plasma/Optical Emission Spectrometry",,,,
+"Aluminum","ug/l",,"USEPA 1638","Trace Elements in Water by ICP/MS",,,,
+"Aluminum","ug/l",,"USEPA 200.15","Metals in Water by Nebulization and ICP-AES",,,,
+"Aluminum","ug/l",,"USEPA 200.7","Metals in Water by ICP-AES",,,,
+"Aluminum","ug/l",,"USEPA 200.7(W)","200.7 W  ~ Metals in Water by ICP-AES",,,,
+"Aluminum","ug/l",,"USEPA 200.7(W)",,,,,
+"Aluminum","ug/l",,"USEPA 200.7_M","200.7 M ~ ICP-AES For Trace Element Analysis",,,,
+"Aluminum","ug/l",,"USEPA 200.8","Metals in Waters by ICP/MS",,,,
+"Aluminum","ug/l",,"USEPA 200.8(W)","200.8 W  ~ Metals in Waters by ICP/MS",,,,
+"Aluminum","ug/l",,"USEPA 202.1","Aluminum by FLAA",,,,
+"Aluminum","ug/l",,"USEPA 202.2","Aluminum by GFAA",,,,
+"Aluminum","ug/l",,"USEPA 6010A","6010 A ~ ICP Spectroscopy",,,,
+"Aluminum","ug/l",,"USEPA 6010B","6010 B ~ Inductively Coupled Plasma AES",,,,
+"Aluminum","ug/l",,"USEPA 6010C","6010 C ~ Inductively Coupled Plasma - Atomic Emission Spectroscopy (ICP-AES)",,,,
+"Aluminum","ug/l",,"USEPA 6020","Inductively Coupled Plasma - Mass Spec.",,,,
+"Aluminum","ug/l",,"USEPA 6020A","6020 A ~ ICP-MS",,,,
+"Aluminum","ug/l",,"USEPA 6020B","6020 B ~ Inductively Coupled Plasma - Mass Spectrometry, part of Test Methods for Evaluating Solid Waste",,,,
+"Aluminum","ug/l",,"USEPA 7020","Aluminum by FLAA",,,,
+"Aluminum","ug/l",,"UTAHDWQ_WQX GENERIC METHOD","Used for all methods where historical methodology may not be available.",,,,
+"Depth","%",,"MNPCA LEG_P00005","X-SEC. LOC., VERTICAL (PERCENT OF TOTAL DEPTH)",,-1e+06,-1e+06,"units_fail"
+"Depth","ft","ft","1119USBR_WQX 20","Zebra/Quagga Mussel APHA 10200G Modified",,-1e+06,-1e+06,"methods_fail; plankton sample"
+"Depth","ft","ft","OREGONDEQ MOM grab","Field methods for DEQ Water sampling",,0.3048,0.3048,"methods_unknown"
+"Depth","ft",,"11113300 TAPE MEASURE","TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,0.3048,0.3048,"methods_unknown"
+"Depth","ft",,"11113300 WEIGHTED TAPE MEAS.","WEIGHTED TAPE MEASURE",,0.3048,0.3048,"methods_unknown"
+"Depth","ft",,"21MICH MDEQ-EPA",,,0.3048,0.3048,"methods_unknown"
+"Depth","ft",,"IL_EPA FIELD",,,0.3048,0.3048,"methods_unknown"
+"Depth","ft",,"NA NA",,64,-1e+06,-1e+06,"methods_fail; Mean depth of stream, feet"
+"Depth","ft",,"NA NA",,72001,-1e+06,-1e+06,"methods_fail; Depth of hole, feet below land surface datum"
+"Depth","ft",,"NA NA",,72008,-1e+06,-1e+06,"methods_fail; Depth of well, feet below land surface datum"
+"Depth","ft",,"NA NA",,81903,0.3048,0.3048,"USGS_81903; Depth to bottom at sample location, feet"
+"Depth","ft",,"NA NA",,82016,0.3048,0.3048,"USGS_82016; Maximum depth of lake, feet"
+"Depth","ft",,"NA NA",,,0.3048,0.3048,"methods_unknown"
+"Depth","ft",,"SDDENR_WQX UNKOWN","UNKOWN",,0.3048,0.3048,"methods_WQX"
+"Depth","ft",,"SDWRAP WRAPFLD",,,0.3048,0.3048,"methods_unknown"
+"Depth","ft",,"USGS 0",,81903,0.3048,0.3048,"USGS_81903; Depth to bottom at sample location, feet"
+"Depth","ft",,"USGS 4",,81903,0.3048,0.3048,"USGS_81903; Depth to bottom at sample location, feet"
+"Depth","ft",,"USGS A",,81903,0.3048,0.3048,"USGS_81903; Depth to bottom at sample location, feet"
+"Depth","ft",,"USGS I",,81903,0.3048,0.3048,"USGS_81903; Depth to bottom at sample location, feet"
+"Depth","in",,"11113300 TAPE MEASURE","TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,0.0254,0.0254,"methods_unknown"
+"Depth","m","m","1119USBR_WQX 10","Depth, Secchi disk depth",,-1e+06,-1e+06,"methods_fail; secchi"
+"Depth","m","m","21FLMANA GENERIC",,,1,1,"methods_unknown"
+"Depth","m","m","21FLMANA_WQX GENERIC","General Listing of Field and Lab Analytical Procedures for Manatee County",,1,1,"methods_WQX"
+"Depth","m","m","21FLORAN_WQX EPD100.1","Depth, Secchi disk depth",,-1e+06,-1e+06,"methods_fail; secchi"
+"Depth","m","m","21FLSFWM WQ-1",,,1,1,"methods_unknown"
+"Depth","m","m","21FLVEMD SOP-2",,,1,1,"methods_unknown"
+"Depth","m","m","NA NA",,,1,1,"methods_unknown"
+"Depth","m","m","OREGONDEQ MOM grab","Field methods for DEQ Water sampling",,1,1,"methods_unknown"
+"Depth","m","m","SDWRAP WRAPFLD",,,1,1,"methods_unknown"
+"Depth","m",,"11113300 TAPE MEASURE","TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,1,1,"methods_unknown"
+"Depth","m",,"11113300 WEIGHTED TAPE MEAS.","WEIGHTED TAPE MEASURE",,1,1,"methods_unknown"
+"Depth","m",,"11NPSWRD_WQX NPS_UNSPECIFIED","Unknown or Unspecified Procedure",,1,1,"methods_WQX"
+"Depth","m",,"21ARIZ_WQX FIELD","FIELD PARAMETERS",,1,1,"methods_WQX"
+"Depth","m",,"21COL001 HISTORIC",,,1,1,"methods_unknown"
+"Depth","m",,"21FLBRA FT 1700",,,1,1,"methods_unknown"
+"Depth","m",,"21FLCOLL_WQX LKTRAFF","Lake Trafford",,1,1,"methods_WQX"
+"Depth","m",,"21FLLCPC_WQX DEP-SOP-001/01","DEP STANDARD OPERATING PROCEDURES FOR FIELD ACTIVITIES",,1,1,"methods_WQX"
+"Depth","m",,"21FLLCPC_WQX LCQSM","LAKE COUNTY QUALITY SYSTEMS MANUAL",,1,1,"methods_WQX"
+"Depth","m",,"21FLLCPC_WQX SJRWMDWQM","WATER QUALITY MANUAL FOR VOLUNTEERS IN THE ST. JOHNS RIVER WATER MANAGEMENT DISTRICT",,1,1,"methods_WQX"
+"Depth","m",,"21FLMANA GENERIC",,,1,1,"methods_unknown"
+"Depth","m",,"21FLMANA_WQX GENERIC","General Listing of Field and Lab Analytical Procedures for Manatee County",,1,1,"methods_WQX"
+"Depth","m",,"21FLORAN_WQX EPD100.1","Depth, Secchi disk depth",,-1e+06,-1e+06,"methods_fail; secchi"
+"Depth","m",,"21FLPDEM FT 1000",,,1,1,"methods_unknown"
+"Depth","m",,"21FLPDEM HYDROLAB 001",,,1,1,"methods_unknown"
+"Depth","m",,"21FLPDEM_WQX FT 1000","Field Measurements and Observations",,1,1,"methods_WQX"
+"Depth","m",,"21FLSFWM WQ-1",,,1,1,"methods_unknown"
+"Depth","m",,"21FLSFWM_WQX SFWMD-FSQM","SFWMD-FSQM",,1,1,"methods_WQX"
+"Depth","m",,"21FLSFWM_WQX WQ-1","Laboratory Procedures for Water Quality Chemical Analysis",,1,1,"methods_WQX"
+"Depth","m",,"21FLSJWM OTHER/UNKNOWN",,,1,1,"methods_unknown"
+"Depth","m",,"21FLSJWM_WQX OTHER/UNKNOWN","Other or Unknown Procedure",,1,1,"methods_WQX"
+"Depth","m",,"21FLSUW FT 1700",,,1,1,"methods_unknown"
+"Depth","m",,"21FLSUW_WQX FT 1700","Field Measurement of Light Penetration (Secchi Depth and Transparency)",,-1e+06,-1e+06,"methods_fail; secchi"
+"Depth","m",,"21FLSUW_WQX OTHER/UNKNOWN","Other of Unknown Procedure",,1,1,"methods_WQX"
+"Depth","m",,"21FLSWFD_WQX FT-1000","FDEP General Field Procedures",,1,1,"methods_WQX"
+"Depth","m",,"21FLTPA_WQX FT1700","Depth, Secchi disk depth",,-1e+06,-1e+06,"methods_fail; secchi"
+"Depth","m",,"21FLVEMD SOP-2",,,1,1,"methods_unknown"
+"Depth","m",,"21SC60WQ_WQX Depth","Depth in m",,1,1,"methods_WQX"
+"Depth","m",,"ASTM D5413(B)","D5413 B  ~ Water Levels Using Recording Devices",,-1e+06,-1e+06,"methods_fail; water level"
+"Depth","m",,"AZDEQ_SW FIELD","FIELD",,1,1,"methods_unknown"
+"Depth","m",,"AZDEQ_SW UNKNOWN","UNKNOWN",,1,1,"methods_unknown"
+"Depth","m",,"MNPCA DEPTH BOTTOM","Depth, bottom",,1,1,"methods_unknown"
+"Depth","m",,"MNPCA FLD","Field measurement/observation, generic method",,1,1,"methods_unknown"
+"Depth","m",,"NA NA",,82903,1,1,"USGS_82903; Depth to bottom from water surface, at sampling location, meters  "
+"Depth","m",,"NA NA",,85310,1,1,"USGS_85310; Depth of lake, maximum, meters"
+"Depth","m",,"NA NA",,,1,1,"methods_unknown"
+"Depth","m",,"OREGONDEQ MOMs","Field methods for DEQ Water sampling",,1,1,"methods_unknown"
+"Depth","m",,"OREGONDEQ Not Available","Not Available",,1,1,"methods_unknown"
+"Depth","m",,"SDDENR_WQX UNKOWN","UNKOWN",,1,1,"methods_WQX"
+"Depth","m",,"SDWRAP WRAPFLD",,,1,1,"methods_unknown"
+"Depth","m",,"TCEQMAIN N/A Calculation","N/A Calculation",,-1e+06,-1e+06,"methods_fail"
+"Depth","m",,"USGS B",,85310,1,1,"USGS_85310; Depth of lake, maximum, meters"
+"Depth","m",,"USGS D",,85310,1,1,"USGS_85310; Depth of lake, maximum, meters"
+"Depth","m",,"UTAHDWQ_WQX FIELD MEASURES","Field Measurements performed by Utah DWQ",,1,1,"methods_WQX"
+"Depth","m",,"YSI 120.1","Direct Measurement Method",,1,1,"methods_unknown"
+"Depth","m/sec",,"NA NA",,,-1e+06,-1e+06,"units_fail"
+"Depth","mg",,"21FLSUW_WQX FS 2100","Surface Water Sampling",,-1e+06,-1e+06,"units_fail"
+"Depth of water column","ft",,"NA NA",,72199,0.3048,0.3048,"USGS_72199; Water depth, water surface to bottom, feet"
+"Depth, bottom","ft","ft","NA NA",,,0.3048,0.3048,"methods_unknown"
+"Depth, bottom","ft","ft","SDDENR_WQX field","UNKOWN",,0.3048,0.3048,"methods_WQX"
+"Depth, bottom","ft","m","SDDENR_WQX field","UNKOWN",,0.3048,1,"methods_WQX"
+"Depth, bottom","ft",,"11NPSWRD_WQX NPS_Unspecified","Unknown or Unspecified Procedure",,0.3048,0.3048,"methods_WQX"
+"Depth, bottom","ft",,"11NPSWRD_WQX NPS_UNSPECIFIED","Unknown or Unspecified Procedure",,0.3048,0.3048,"methods_WQX"
+"Depth, bottom","ft",,"21FLALTA_WQX EPA100.1","Sample Depth",,0.3048,0.3048,"methods_WQX"
+"Depth, bottom","ft",,"21FLHILL_WQX DEPTHO","Depth by chain or rope",,0.3048,0.3048,"methods_WQX"
+"Depth, bottom","ft",,"21FLHILL_WQX DEPTHPD","Water Depth by Pressure Transducer",,0.3048,0.3048,"methods_WQX"
+"Depth, bottom","ft",,"21NC01WQ UNKNOWN",,,0.3048,0.3048,"methods_unknown"
+"Depth, bottom","ft",,"21NC02WQ WQS SOP",,,0.3048,0.3048,"methods_unknown"
+"Depth, bottom","ft",,"IL_EPA FIELD",,,0.3048,0.3048,"methods_unknown"
+"Depth, bottom","ft",,"IL_EPA_WQX FIELD","MEASURED IN FIELD",,0.3048,0.3048,"methods_WQX"
+"Depth, bottom","ft",,"NA NA",,,0.3048,0.3048,"methods_unknown"
+"Depth, bottom","ft",,"OREGONDEQ Not Available","Not Available",,0.3048,0.3048,"methods_unknown"
+"Depth, bottom","ft",,"R10BUNKER FLOW-USGS","FLOW-USGS",,0.3048,0.3048,"methods_unknown"
+"Depth, bottom","ft",,"SDDENR_WQX UNKNOWN","UNKNOWN",,0.3048,0.3048,"methods_WQX"
+"Depth, bottom","ft",,"SDDENR_WQX UNKOWN","UNKOWN",,0.3048,0.3048,"methods_WQX"
+"Depth, bottom","m","m","21FLORAN EPA100.1",,,1,1,"methods_unknown"
+"Depth, bottom","m","m","21FLORAN EPD100.1",,,1,1,"methods_unknown"
+"Depth, bottom","m","m","21FLORAN_WQX EPD100.1","Depth, Secchi disk depth",,-1e+06,-1e+06,"methods_fail; secchi"
+"Depth, bottom","m","m","21FLORL_WQX EPA100.1","Sample Depth",,1,1,"methods_WQX"
+"Depth, bottom","m","m","21IOWA_WQX Unknown","Unknown",,1,1,"methods_WQX"
+"Depth, bottom","m","m","OREGONDEQ MOM grab","Field methods for DEQ Water sampling",,1,1,"methods_unknown"
+"Depth, bottom","m","m","USEPA 120.1",,,1,1,"methods_unknown"
+"Depth, bottom","m",,"11113300 TAPE MEASURE","TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,1,1,"methods_unknown"
+"Depth, bottom","m",,"11113300 WEIGHTED TAPE MEAS.","WEIGHTED TAPE MEASURE",,1,1,"methods_unknown"
+"Depth, bottom","m",,"11NPSWRD_WQX GLKN_HL_DS4X","Multiprobe Field Analysis",,1,1,"methods_WQX"
+"Depth, bottom","m",,"11NPSWRD_WQX NPS_HYDRLAB_MS","Hydrolab MiniSonde Data Logger Probes",,-1e+06,-1e+06,"methods_fail; data logger"
+"Depth, bottom","m",,"11NPSWRD_WQX NPS_Unspecified","Unknown or Unspecified Procedure",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21COL001 HISTORIC",,,1,1,"methods_unknown"
+"Depth, bottom","m",,"21FLCEN_WQX FT 1700","Secchi disk depth",,-1e+06,-1e+06,"methods_fail; secchi"
+"Depth, bottom","m",,"21FLCEN_WQX HISTORICAL","Standard Operation Procedure",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21FLCEN_WQX SOP-ANALY","Standard Analytical Procedure",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21FLCOLL_WQX FIELD READINGS","Measurements/readings obtained in the field",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21FLCOLL_WQX LKTRAFF","Lake Trafford",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21FLGFWF STATION OBS",,,1,1,"methods_unknown"
+"Depth, bottom","m",,"21FLGW_WQX 900456","QA Plan #900456",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21FLHILL_WQX DEPTHPD","Water Depth by Pressure Transducer",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21FLLCPC_WQX DEP-SOP-001/01","DEP STANDARD OPERATING PROCEDURES FOR FIELD ACTIVITIES",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21FLLCPC_WQX LCQSM","LAKE COUNTY QUALITY SYSTEMS MANUAL",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21FLLCPC_WQX SJRWMDWQM","WATER QUALITY MANUAL FOR VOLUNTEERS IN THE ST. JOHNS RIVER WATER MANAGEMENT DISTRICT",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21FLLEON FT_1700",,,1,1,"methods_unknown"
+"Depth, bottom","m",,"21FLLEON_WQX FT_1700","Sechi Disk Depth",,-1e+06,-1e+06,"methods_fail; secchi"
+"Depth, bottom","m",,"21FLORAN_WQX EPD100.1","Depth, Secchi disk depth",,-1e+06,-1e+06,"methods_fail; secchi"
+"Depth, bottom","m",,"21FLSJWM OTHER/UNKNOWN",,,1,1,"methods_unknown"
+"Depth, bottom","m",,"21FLSJWM_WQX OTHER/UNKNOWN","Other or Unknown Procedure",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21FLSUW_WQX NOT REPORTED","Method not reported",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21FLSUW_WQX OTHER/UNKNOWN","Other of Unknown Procedure",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21FLSWFD_WQX FT-1000","FDEP General Field Procedures",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21FLTPA_WQX SOP-2","To be updated",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21FLVEMD_WQX 21FLVEMD","SOP-1 VCEH Lab Surface Water SOP",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21FLVEMD_WQX SOP-2","Field/Lab SOP IRLWQMN",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21IOWA_WQX Unknown","Unknown",,1,1,"methods_WQX"
+"Depth, bottom","m",,"21KY MAXIMUM DEPTH",,,1,1,"methods_unknown"
+"Depth, bottom","m",,"FWCLOCAL STATION OBS",,,1,1,"methods_unknown"
+"Depth, bottom","m",,"MDDNR obs13","eventTOTAL_DEPTH",,1,1,"methods_unknown"
+"Depth, bottom","m",,"NA NA",,,1,1,"methods_unknown"
+"Depth, bottom","m",,"SDDENR_WQX UNKOWN","UNKOWN",,1,1,"methods_WQX"
+"Depth, bottom","m",,"SDWRAP WRAPFLD",,,1,1,"methods_unknown"
+"Depth, bottom","m",,"USEPA 170.1","Temperature",,1,1,"methods_unknown"
+"Depth, data-logger (non-ported)","ft",,"NA NA",,,-1e+06,-1e+06,"methods_fail; data logger"
+"Depth, data-logger (non-ported)","m",,"NA NA",,,-1e+06,-1e+06,"methods_fail; data logger"
+"Depth, data-logger (ported)","ft",,"CHEROKEE CN_QAPP",,,-1e+06,-1e+06,"methods_fail; data logger"
+"Depth, data-logger (ported)","m",,"UTAHDWQ_WQX FIELD MEASURES","Field Measurements performed by Utah DWQ",,-1e+06,-1e+06,"methods_fail; data logger"
