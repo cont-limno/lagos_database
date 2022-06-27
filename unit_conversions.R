@@ -3,7 +3,7 @@ data_temp<-data_temp %>% mutate(ResultMeasureValue = as.numeric(ResultMeasureVal
 #check detection limits
 unique(data_temp$DetectionQuantitationLimitMeasure.MeasureValue[is.na(as.numeric(data_temp$DetectionQuantitationLimitMeasure.MeasureValue))])
 #no non NA values, convert to numeric
-data_temp<-data_temp %>% mutate(DetectionQuantitationLimitMeasure.MeasureValue = as.numeric(ResultMeasureValue)) # non numeric values become NA
+data_temp<-data_temp %>% mutate(DetectionQuantitationLimitMeasure.MeasureValue = as.numeric(DetectionQuantitationLimitMeasure.MeasureValue)) # non numeric values become NA
 #remaining values don't contain enough info to proceed so convert to numeric
 temp1 <- data_temp %>% filter(!is.na(ResultMeasureValue))
 temp2 <- data_temp %>% filter(is.na(ResultMeasureValue)) %>% 
