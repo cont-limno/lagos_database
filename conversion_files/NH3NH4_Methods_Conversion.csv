@@ -1,4 +1,4 @@
-﻿CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
+CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
 Ammonia,mg/l,,NA NA,,,1000,1000,methods_fail
 Ammonium,mg/l,mg/l,APHA 4110-C,4110 C ~ Single Column Ion Chromatography,,1000,1000,methods_fail
 Ammonia and ammonium,mg/l NH4,,NA NA,,71846,-1000000,-1000000,methods_fail; calculated
