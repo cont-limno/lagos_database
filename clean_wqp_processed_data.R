@@ -553,46 +553,129 @@ dat <- dat %>% group_by(sampledate,MonitoringLocationIdentifier,OrganizationIden
     mutate(event_id = paste0(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,lagos_sampledepth)) %>% 
     ungroup()
 
+ratio <- function(var_less,var_more){
+    temp2 <- dat %>% filter(CharacteristicName == var_more | CharacteristicName == var_less) %>% 
+        select(event_id,CharacteristicName,ResultMeasureValue,Obs_Id)
+    print(unique(temp2$CharacteristicName))
+    
+    temp3 <- temp2 %>% 
+        pivot_wider(names_from = CharacteristicName,values_from = ResultMeasureValue,id_cols = event_id) %>% 
+        drop_na() %>% 
+        mutate(ratio = (!!as.name(var_less))/(!!as.name(var_more))) %>% 
+        filter(ratio >s.ratio) %>% 
+        mutate(flag = "RATIO")
+    
+    temp2 <- temp2 %>% left_join(temp3 %>% select(event_id,flag)) %>% 
+        filter(!is.na(flag))
+    
+    if(is.null(flagdata)) {
+        flagdata <- temp2$Obs_Id
+    } else {
+        flagdata <- c(flagdata,temp2$Obs_Id)
+    }
+    return(flagdata)
+}
+
 s.ratio = (1+1*1/5)/(1-1*1/5)
 s.ratio.l = (1-1*1/5)/(1+1*1/5)
 flagdata <- NULL
+
+#tp/tdp
+flagdata <- ratio("Phosphorus, total dissolved","Phosphorus, total")
 #tp/SRP
-temp2 <- temp %>% filter(CharacteristicName == "Phosphorus, total" | CharacteristicName == "Phosphorus, soluble reactive orthophosphate") %>% 
-    select(event_id,CharacteristicName,ResultMeasureValue,Obs_Id)
-temp3 <- temp2 %>% 
-    pivot_wider(names_from = CharacteristicName,values_from = ResultMeasureValue,id_cols = event_id) %>% 
-    drop_na() %>% 
-    mutate(ratio = `Phosphorus, soluble reactive orthophosphate`/`Phosphorus, total`) %>% 
-    filter(ratio >s.ratio) %>% 
-    mutate(flag = "RATIO")
+flagdata <- ratio("Phosphorus, soluble reactive orthophosphate","Phosphorus, total")
+#tdp/srp
+flagdata <- ratio("Phosphorus, soluble reactive orthophosphate","Phosphorus, total dissolved")
+#tdn/tn
+flagdata <- ratio("Nitrogen, total dissolved","Nitrogen, total")
+#tkn/tn
+flagdata <- ratio("Nitrogen, total Kjeldahl","Nitrogen, total")
+#dkn/tn
+flagdata <- ratio("Nitrogen, dissolved Kjeldahl","Nitrogen, total")
+#dkn/tn
+flagdata <- ratio("Nitrogen, dissolved Kjeldahl","Nitrogen, total dissolved")
+#dkn/tkn
+flagdata <- ratio("Nitrogen, dissolved Kjeldahl","Nitrogen, total Kjeldahl")
+#ton/tn
+flagdata <- ratio("Nitrogen, total organic","Nitrogen, total")
+#no2no3/tn
+flagdata <- ratio("Nitrogen, nitrite (NO2) + nitrate (NO3)","Nitrogen, total")
+#nh4/tn
+flagdata <- ratio("Nitrogen, NH4","Nitrogen, total")
+#no2/tn
+flagdata <- ratio("Nitrogen, nitrite (NO2)","Nitrogen, total")
+#no2no3/tdn
+flagdata <- ratio("Nitrogen, nitrite (NO2) + nitrate (NO3)","Nitrogen, total dissolved")
+#nh4/tdn
+flagdata <- ratio("Nitrogen, NH4","Nitrogen, total dissolved")
+#no2/tdn
+flagdata <- ratio("Nitrogen, nitrite (NO2)","Nitrogen, total dissolved")
+#nh4/tdn
+flagdata <- ratio("Nitrogen, NH4","Nitrogen, total Kjeldahl")
+#nh4/tdn
+flagdata <- ratio("Nitrogen, NH4","Nitrogen, dissolved Kjeldahl")
+#doc/toc
+flagdata <- ratio("Carbon, dissolved organic","Carbon, total organic")
+#dic/tic
+flagdata <- ratio("Carbon, dissolved inorganic","Carbon, total inorganic")
+#atrazine
+flagdata <- ratio("Atrazine, dissolved","Atrazine, total")
+#arsenic
+flagdata <- ratio("Arsenic, dissolved","Arsenic, total")
+#aluminum
+flagdata <- ratio("Aluminum, dissolved","Aluminum, total")
+#selenium
+flagdata <- ratio("Selenium, dissolved","Selenium, total")
+#mercury
+flagdata <- ratio("Mercury, total dissolved","Mercury, total")
+#methylmercury
+flagdata <- ratio("Methylmercury, dissolved","Methylmercury")
 
-temp2 <- temp2 %>% left_join(temp3 %>% select(event_id,flag)) %>% 
-    filter(!is.na(flag))
-flagdata <- temp2$Obs_Id
-
-temp2 <- dat %>% filter(CharacteristicName == "Phosphorus, total" | CharacteristicName == "Phosphorus, total dissolved") %>% 
-    select(event_id,CharacteristicName,ResultMeasureValue,Obs_Id)
-unique(temp2$CharacteristicName)
-temp3 <- temp2 %>% 
-    pivot_wider(names_from = CharacteristicName,values_from = ResultMeasureValue,id_cols = event_id) %>% 
-    drop_na() %>% 
-    mutate(ratio = `Phosphorus, total dissolved`/`Phosphorus, total`) %>% 
-    filter(ratio >s.ratio) %>% 
-    mutate(flag = "RATIO")
-
-temp2 <- temp2 %>% left_join(temp3 %>% select(event_id,flag)) %>% 
-    filter(!is.na(flag))
-flagdata <- temp2$Obs_Id
-
-
-mutate()
-
-
+flagdata <- unique(flagdata)
+ratio.data <- dat %>% filter(Obs_Id %in% flagdata) %>% 
+    select(OrganizationFormalName,MonitoringLocationIdentifier,CharacteristicName,sampledate,ResultMeasureValue,lagos_sampledepth) %>% 
+    pivot_wider(names_from = CharacteristicName,values_from = ResultMeasureValue,id_cols = c(OrganizationFormalName,MonitoringLocationIdentifier,sampledate,lagos_sampledepth))
+write_csv(ratio.data,"flagged_ratios.csv")
 
 
 variables <- read_csv("lagos_variable.csv")
 dat <- dat %>% select(-variableid_lagos,-limit_low,-limit_high,-variableshortname)
 dat <- dat %>% left_join(variables %>% select(variablename,variableid_lagos,limit_low,limit_high,variableshortname), by = c("CharacteristicName" = "variablename"))
+
+#remove egregious values
+temp <- dat %>% select(Obs_Id,CharacteristicName,ResultMeasureValue,neon_zoneid) %>% 
+    filter(ResultMeasureValue >0) %>% 
+    group_by(neon_zoneid,CharacteristicName) %>% 
+    mutate(n = sum(!is.na(ResultMeasureValue)),
+           upper = ifelse(sum(!is.na(ResultMeasureValue))>=50,adjboxStats(log(ResultMeasureValue+1),coef = 10)$fence[2],NA)) %>% 
+    ungroup() %>% 
+    drop_na(upper) %>% 
+    mutate(exclude = ifelse(log(ResultMeasureValue+1) <= upper,0,1)) %>% 
+    mutate(upper = exp(upper)-1) %>%
+    filter(exclude == 1) %>% 
+    select(Obs_Id,exclude)
+
+dat <- dat %>% left_join(temp)
+dat <- dat %>% mutate(exclude = ifelse(is.na(exclude),2,exclude))
+
+
+##filter egregios values and write to data file
+egreg_dat <- dat %>% filter(ResultMeasureValue < limit_low | ResultMeasureValue > limit_high) %>% 
+    select(Obs_Id,lagoslakeid,sampledate, ActivityConductingOrganizationText,OrganizationFormalName,
+           CharacteristicName,source_parameter,ResultMeasureValue,source_value,source_unit,
+           Conversion,DetectionQuantitationLimitMeasure.MeasureValue,
+           ResultAnalyticalMethod.MethodIdentifierContext,ResultAnalyticalMethod.MethodIdentifier,
+           MethodDescriptionText,ActivityCommentText,wqp_monitoringlocationname)
+
+dat <- dat %>% filter(!Obs_Id %in% egreg_dat$Obs_Id
+
+lake_dat <- read_csv("lake_information.csv")
+dat <- dat %>% 
+    mutate(lagoslakeid = as.numeric(lagoslakeid)) %>% 
+    left_join(lake_dat)
+rm(lake_dat)
+
+
 
 #pre egreggious values plots
 options(scipen=999)
@@ -609,6 +692,10 @@ for(i in 1:nrow(variables)) {
     } else {next()}
 }
 dev.off()
+
+
+
+
 
 options(scipen=999)
 pdf(file="graphics/histograms_pre_less1.pdf",width=8.5,height=11)
@@ -659,15 +746,12 @@ for(i in 1:nrow(variables)) {
 }
 dev.off()
 
-#filter egregios values and write to data file
-egreg_dat <- dat %>% filter(ResultMeasureValue < limit_low | ResultMeasureValue > limit_high) %>% 
-    select(Obs_Id,lagoslakeid,ActivityStartDate, ActivityConductingOrganizationText,OrganizationFormalName,
-               CharacteristicName,source_parameter,ResultMeasureValue,source_value,source_unit,
-               Conversion,DetectionQuantitationLimitMeasure.MeasureValue,
-           ResultAnalyticalMethod.MethodIdentifierContext,ResultAnalyticalMethod.MethodIdentifier,
-               MethodDescriptionText,ActivityCommentText,wqp_monitoringlocationname)
 
-dat <- dat %>% filter(!Obs_Id %in% egreg_dat$Obs_Id)
+
+
+
+
+
 
 write_csv(egreg_dat,"excluded_values.csv")
 rm(egreg_dat)
@@ -680,8 +764,15 @@ par(mfrow=c(3,2),mar=c(4,10,4,4))
 
 for(i in 1:nrow(variables)) {
     temp <- (as.numeric(dat$ResultMeasureValue))[which(dat$CharacteristicName==variables$variablename[i])]
+    pcolor <- dat$exclude[which(dat$CharacteristicName==variables$variablename[i])]
     if(length(temp)>25) {
-        adjbox(x = (temp) ,main=paste(variables$variablename[i],variables$unitsabbreviation[i],sep=" - "),notch=TRUE,las=1)
+        boxplot(x = (temp) ,main=paste(variables$variablename[i],variables$unitsabbreviation[i],sep=" - "),notch=TRUE,las=1)
+        stripchart(temp[which(pcolor==1)],              # Data
+                   method = "jitter", # Random noise
+                   pch = 19,          # Pch symbols
+                   col = "red",           # Color of the symbol
+                   vertical = TRUE,   # Vertical mode
+                   add = TRUE)        # Add it over
         abline(h=variables$limit_high[i],col="red")
         abline(h=variables$limit_low[i],col="blue")
         mtext(side=3,adj=0.1,paste("n=",length(temp))) 
