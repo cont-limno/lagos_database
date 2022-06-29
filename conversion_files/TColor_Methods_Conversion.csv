@@ -4,6 +4,9 @@ Color,AU/cm,,NA NA,,70516,-1000000,-1000000,units_fail
 Color,PCU,PCU,USGS CC003,"Color, wf, visual comparison",80,1,1,USGS_00080
 Color,PCU,,NA NA,,80,1,1,USGS_00080
 Color,PCU,,USGS CC003,"Color, wf, visual comparison",80,1,1,USGS_00080
+Color,,AU/cm,NA NA,,70516,-1000000,-1000000,units_fail
+Color,,PCU,NA NA,,80,1,1,
+Color,,PCU,USGS CC003,"Color, wf, visual comparison",80,1,1,
 True color,%,%,APHA 2120-B,,,-1000000,-1000000,units_fail
 True color,ADMI value,ADMI value,USEPA 110.1,Color by Calculating ADMI Values,,-1000000,-1000000,units_fail
 True color,ADMI value,,21NC01WQ CLR_PH76,,,-1000000,-1000000,units_fail
@@ -81,5 +84,19 @@ True color,PCU,,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,1,1,EPA 110.2
 True color,PCU,,USEPA 110.2,,,1,1,EPA 110.2
 True color,PCU,,USEPA 110.3,Color by Spectrophotometric Analysis,,1,1,EPA 110.2
 True color,uS/cm,,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,-1000000,-1000000,units_fail
+True color,,ADMI value,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,-1000000,-1000000,units_fail
+True color,,mg/l,KAWNATON_WQX 8025,"Color, APHA Platinum-Cobalt",,-1000000,-1000000,units_fail
+True color,,None,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,-1000000,-1000000,units_fail
+True color,,PCU,21FLHILL_WQX COLOR345C,COLOR 345 C,,1,1,
+True color,,PCU,21FLPDEM SM 2120 B,,,1,1,
+True color,,PCU,21FLPDEM_WQX SM 2120 B,"Color, True",,1,1,
+True color,,PCU,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,1,
+True color,,PCU,APHA 2120-B,,,1,1,
+True color,,PCU,APHA 2120-C,2120 C ~ Color in Water by Spectrophotometry,,1,1,
+True color,,PCU,APHA 2120-C,,,1,1,
+True color,,PCU,MNPCA LEG_UNKNOWN,Legacy STORET migration; analytical procedure not specified,,1,1,
+True color,,PCU,NCASI TB_253,Measurement of Water Color,,1,1,
+True color,,PCU,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,1,1,
+True color,,PCU,USEPA 110.2,,,1,1,
 True color,,,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,-1000000,-1000000,units_fail
 True color,,,NA NA,,,-1000000,-1000000,unitsmethods_fail
