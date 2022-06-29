@@ -17,6 +17,8 @@ Dissolved oxygen (DO),mg/l,mg/l,11NPSWRD_WQX CACO_DO_WINK_75,DO by Winkler Titra
 Dissolved oxygen (DO),mg/l,mg/l,11NPSWRD_WQX CACO_DO_YSIWINK,DO by YSI or Winkler Titration,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,mg/l,11NPSWRD_WQX CACO_WINK_DO,DO by Winkler Titration,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,mg/l,11NPSWRD_WQX NPS_HYDROLA_H2O,Hydrolab H2O,,1,1,methods_WQX
+Dissolved oxygen (DO),mg/l,mg/l,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,-1000000,-1000000,units_fail
+Dissolved oxygen (DO),mg/l,mg/l,11NPSWRD_WQX NPS_UNSPECIFIED,Unknown or Unspecified Procedure,,-1000000,-1000000,units_fail
 Dissolved oxygen (DO),mg/l,mg/l,11NPSWRD_WQX NPS_YSI6820,YSI 6820 Multi-parameter Water Quality Sonde,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,mg/l,11NPSWRD_WQX NPS_YSIDOUNKNOW,YSI Unknown Model DO Meter,,1,1,methods_WQX
 Dissolved oxygen (DO),mg/l,mg/l,11NPSWRD_WQX SFAN_SOP_5,Field Methods for Measurement of Core Parameters,,1,1,methods_WQX
@@ -65,6 +67,7 @@ Dissolved oxygen (DO),mg/l,mg/l,USEPA 360.1,Dissolved Oxygen Using an ISE,,1,1,E
 Dissolved oxygen (DO),mg/l,mg/l,USEPA 360.1,,,1,1,EPA 360.1
 Dissolved oxygen (DO),mg/l,mg/l,USEPA 360.2,Dissolved Oxygen by Winkler Technique,,1,1,EPA 360.2
 Dissolved oxygen (DO),mg/l,mg/l,USEPA 360.2,,,1,1,EPA 360.2
+Dissolved oxygen (DO),mg/l,mg/l,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,
 Dissolved oxygen (DO),mg/l,mg/l,YSI 120.1,Direct Measurement Method,,1,1,YSI 120.1
 Dissolved oxygen (DO),mg/l,None,APHA 4500-O-G,4500 O G ~ Total Dissolved Oxygen by Membrane Electrode Method,,1,1,APHA 4500-O G
 Dissolved oxygen (DO),mg/l,ug/l,USEPA 360.1,,,1,1,EPA 360.1
@@ -293,6 +296,20 @@ Dissolved oxygen (DO),ug/l,,NA NA,,,-1000000,-1000000,units_fail
 Dissolved oxygen (DO),umho/cm,,NA NA,,,-1000000,-1000000,units_fail
 Dissolved oxygen (DO),uS/cm,,NA NA,,,-1000000,-1000000,units_fail
 Dissolved oxygen (DO),uS/cm,,USEPA 1002-8-2009,Dissolved Oxygen (DO) Measurement by Optical Probe,,-1000000,-1000000,units_fail
+Dissolved oxygen (DO),,%,21ARIZ_WQX FIELD,FIELD PARAMETERS,,-1000000,-1000000,units_fail
+Dissolved oxygen (DO),,mg/l,21ARIZ_WQX FIELD,FIELD PARAMETERS,,1,1,
+Dissolved oxygen (DO),,mg/l,21FLMCGL SOP-1,,,1,1,
+Dissolved oxygen (DO),,mg/l,21IOWA_WQX Unknown,Unknown,,1,1,
+Dissolved oxygen (DO),,mg/l,21NC02WQ WQS SOP,,,1,1,
+Dissolved oxygen (DO),,mg/l,APHA 4500-O-G,4500 O G ~ Total Dissolved Oxygen by Membrane Electrode Method,,1,1,
+Dissolved oxygen (DO),,mg/l,MNPCA DO WINKLER,"Dissolved Oxygen, Iodometric Method with Azide Modification",,1,1,
+Dissolved oxygen (DO),,mg/l,MNPCA FLD,"Field measurement/observation, generic method",,1,1,
+Dissolved oxygen (DO),,mg/l,NA NA,,,1,1,
+Dissolved oxygen (DO),,mg/l,SDWRAP WRAPFLD,,,1,1,
+Dissolved oxygen (DO),,mg/l,USEPA 360.1,Dissolved Oxygen Using an ISE,,1,1,
+Dissolved oxygen (DO),,None,APHA 4500-O-G,4500 O G ~ Total Dissolved Oxygen by Membrane Electrode Method,,-1000000,-1000000,units_fail
+Dissolved oxygen (DO),,None,MNPCA DO WINKLER,"Dissolved Oxygen, Iodometric Method with Azide Modification",,-1000000,-1000000,units_fail
+Dissolved oxygen (DO),,None,MNPCA FLD,"Field measurement/observation, generic method",,-1000000,-1000000,units_fail
 Dissolved oxygen (DO),,,APHA 4500-O-G,,,-1000000,-1000000,units_fail
 Oxygen,% saturatn,,NA NA,,301,-1000000,-1000000,units_fail
 Oxygen,% saturatn,,USGS 3,,301,-1000000,-1000000,units_fail
@@ -326,3 +343,9 @@ Oxygen,None,,NA NA,,,-1000000,-1000000,units_fail
 Oxygen,None,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,units_fail
 Oxygen,nu,,NA NA,,,-1000000,-1000000,units_fail
 Oxygen,nu,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,units_fail
+Oxygen,,% saturatn,NA NA,,301,-1000000,-1000000,units_fail
+Oxygen,,% saturatn,USGS G0019,No information exists for method,301,-1000000,-1000000,units_fail
+Oxygen,,mg/l,NA NA,,300,1,1,
+Oxygen,,mg/l,USGS G0017,No information exists for method,300,1,1,
+Oxygen,,mg/l,USGS LUMIN,"Diss oxygen, luminescence sensor",300,1,1,
+Oxygen,,mg/l,USGS MEMBR,"Diss oxygen, membrane electrode",300,1,1,

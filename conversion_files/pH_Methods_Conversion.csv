@@ -8,8 +8,10 @@ pH,mS/cm,,NA NA,,,-1000000,-1000000,units_fail
 pH,mV,,11NPSWRD_WQX NPS_INSITU_AT600,Field Measurements by In-Situ Aqua TROLL 600,,-1000000,-1000000,units_fail
 pH,ng,,NA NA,,,-1000000,-1000000,units_fail
 pH,None,mg/l,PIIC_WQX PIIC_QAPP,PIIC_QAPP,,1,1,methods_WQX
+pH,None,None,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1,1,
 pH,None,None,21ARIZ FIELD,,,1,1,methods_unknown
 pH,None,None,21ARIZ UNKNOWN,,,1,1,methods_unknown
+pH,None,None,21DELAWQ_WQX YSI 6-Series,YSI 6-Series Multi-Parameter Sonde,,1,1,
 pH,None,None,21FLLCPC_WQX SM4500H+B,pH,,1,1,APHA 4500-H B 
 pH,None,None,21FLMANA GENERIC,,,1,1,methods_unknown
 pH,None,None,21FLMANA_WQX GENERIC,General Listing of Field and Lab Analytical Procedures for Manatee County,,1,1,methods_WQX
@@ -54,6 +56,7 @@ pH,None,None,SDWRAP WRAPFLD,,,1,1,methods_unknown
 pH,None,None,USDOI/USGS I-2587-85,"pH of Water Samples, Automated",,1,1,"USGS I-2587-85;  pH of Water Samples, Automated"
 pH,None,None,USEPA 150.1,pH,,1,1,EPA 150.1
 pH,None,None,USEPA 150.1,,,1,1,EPA 150.1
+pH,None,None,UTAHDWQ_WQX GENERIC METHOD,Used for all methods where historical methodology may not be available.,,1,1,
 pH,None,Normal,USEPA 150.1,pH,,1,1,EPA 150.1
 pH,None,ppm,APHA 4500-H+B,"4500 H+B ~ pH in Water by Potentiometry, pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode",,1,-1000000,APHA 4500-H B 
 pH,None,,11NPSWRD_WQX CACO_ALKPH_TITR,Kettle Pond Monitoring - pH and Alkalinity Titrations,,1,1,methods_WQX
@@ -335,6 +338,13 @@ pH,std units,,USGS PAPER,"pH, field, litmus or test strips",400,1,1,USGS_00400
 pH,std units,,USGS PROBE,"pH, field, electrometric",400,1,1,USGS_00400
 pH,ug/l,ug/l,USEPA 150.1,pH,,-1000000,-1000000,units_fail
 pH,ug/l,,NA NA,,,-1000000,-1000000,units_fail
+pH,,None,21ARIZ_WQX SM 4500 H-B,PH IN WATER,,1,1,
+pH,,None,APHA 4500-H+B,"4500 H+B ~ pH in Water by Potentiometry, pH Value in Water by Potentiometry Using a Standard Hydrogen Electrode",,1,1,
+pH,,None,NA NA,,,1,1,
+pH,,std units,NA NA,,400,1,1,
+pH,,std units,NA NA,,403,1,1,
+pH,,std units,USGS EL003,"pH, wu, field, electrometry",400,1,1,
+pH,,std units,USGS EL006,"pH, lab, auto glass electrode",403,1,1,
 pH,,,21GAEPD_WQX FIELD/NS,Field procedure or Not Specified,,1,1,methods_WQX
 pH,,,APHA 4500-H,,,1,1,APHA 4500-H
 pH,,,NA NA,,,1,1,methods_unknown
