@@ -859,7 +859,7 @@ lagos_name <- "Depth"
 lagos_unit <- "m"
 dataset_name <-"depth"
 
-params<-c("Depth", "Depth, bottom", "Depth of water column", "Depth, data-logger (non-ported)")
+params<-c("Depth", "Depth, bottom", "Depth of water column", "Depth, data-logger (non-ported)", "Depth, data-logger (ported)")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -879,7 +879,7 @@ lagos_name <- "Secchi"
 lagos_unit <- "m"
 dataset_name <-"secchi"
 
-params<-c("Depth, Secchi disk depth","Depth, Secchi disk depth (choice list)","Water transparency, Secchi disc") #values for secchi
+params<-c("Depth, Secchi disk depth","Depth, Secchi disk depth (choice list)","Water transparency, Secchi disc", "Transparency, Secchi tube with disk", "Horizontal Secchi Disk") #values for secchi
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #che
 
@@ -1548,7 +1548,7 @@ lagos_unit <- "pH"
 dataset_name <-"pH"
 
 vars2process
-params<-c("pH")
+params<-c("pH", "pH, lab")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
@@ -2144,7 +2144,7 @@ lagos_unit <- "ug/l"
 dataset_name <-"NH3NH4"
 
 vars2process
-params<-c("Ammonium", "Ammonia", "Ammonia-nitrogen as N", "Ammonia and ammonium", "Ammonia-nitrogen", "Ammonia as NH3")
+params<-c("Ammonium", "Ammonia", "Ammonia-nitrogen as N", "Ammonia and ammonium", "Ammonia-nitrogen", "Ammonia as NH3", "Ammonium as N", "Ammonium as NH4")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process
 
@@ -2290,7 +2290,7 @@ lagos_unit <- "ug/l"
 dataset_name <-"Microcystin"
 
 vars2process
-params<-c("Microcystin", "Microcystin RR", "Microcystin LF", "Microcystins and nodularins", "Microcystis", "Microcystin LR", "Microcystin LA", "Microcystins", "Microcystin YR", "Microcystin WR", "Microcystin-HtyR", "Microcystin HtYR", "Total microcystins plus nodularins", "Microcystin-HilR", "Microcystin dRR", "Microcystin HiLR", "Microcystin LY", "Dissolved microcystins plus nodularins", "Microcystin dLR", "Microcystin LW")
+params<-c("Microcystin", "Microcystin RR", "Microcystin LF", "Microcystins and nodularins", "Microcystis", "Microcystin LR", "Microcystin LA", "Microcystins", "Microcystin YR", "Microcystin WR", "Microcystin-HtyR", "Microcystin HtYR", "Total microcystins plus nodularins", "Microcystin-HilR", "Microcystin dRR", "Microcystin HiLR", "Microcystin LY", "Dissolved microcystins plus nodularins", "Microcystin dLR", "Microcystin LW", "Microcystin/nodularin genes mcyE/ndaf")
 vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
 vars2process #check if any new varables to inlcude
 
