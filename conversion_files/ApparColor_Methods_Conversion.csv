@@ -34,6 +34,15 @@ Apparent color,PCU,,NA NA,,81,1,1,USGS_00081
 Apparent color,PCU,,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,1,1,EPA 110.2
 Apparent color,PCU,,USEPA 110.2,,,1,1,EPA 110.2
 Apparent color,pt,pt,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,1,APHA 2120-B
+Apparent color,,mg/l,KAWNATON_WQX 8025,"Color, APHA Platinum-Cobalt",,-1000000,-1000000,
+Apparent color,,None,MNPCA LEG_P00080,COLOR (PLATINUM-COBALT UNITS),,-1000000,-1000000,
+Apparent color,,PCU,21FLMANA COLOR,,,1,1,
+Apparent color,,PCU,21FLMANA GENERIC,,,1,1,
+Apparent color,,PCU,APHA 2120-B,2120 B ~ Color in Water by Visual Comparison,,1,1,
+Apparent color,,PCU,APHA 2120-B,,,1,1,
+Apparent color,,PCU,MNPCA LEG_P00080,COLOR (PLATINUM-COBALT UNITS),,1,1,
+Apparent color,,PCU,NA NA,,81,1,1,
+Apparent color,,PCU,USEPA 110.2,Color Analysis Using Platinum/Cobalt,,1,1,
 Color,PCU,PCU,USGS CC003,"Color, wf, visual comparison",80,-1000000,-1000000,methods_fail; True color of filtered water by visual comparison with standards (EPA method 110.2; DODEC program) 
 Color,PCU,,NA NA,,80,-1000000,-1000000,methods_fail; True color of filtered water by visual comparison with standards (EPA method 110.2; DODEC program) 
 Color,PCU,,USGS CC003,"Color, wf, visual comparison",80,-1000000,-1000000,methods_fail; True color of filtered water by visual comparison with standards (EPA method 110.2; DODEC program) 
