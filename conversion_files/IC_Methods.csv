@@ -1,0 +1,10 @@
+CharacteristicName,ResultMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,DetectionQuantitationLimitMeasure.MeasureUnitCode,USGSPCode
+Inorganic carbon,mg/l,"NA NA",NA,NA,685
+Inorganic carbon,mg/l,USEPA 415.2,Low Level Total Organic Carbon in Water,NA,NA
+Inorganic carbon,mg/l,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,NA,NA
+Inorganic carbon,mg/l,USGS COMB8,"Inorg carbon, wf, OI/Dohrmann",NA,685
+Inorganic carbon,mg/l,USGS IR005,"Inorg carbon, wu, IR (USGS-NYL)",mg/l,685
+Inorganic carbon,mg/l,USGS IR005,"Inorg carbon, wu, IR (USGS-NYL)",NA,685
+Inorganic carbon,mg/l,USEPA 440(W),440 W  ~ Determination of Carbon and Nitrogen,NA,NA
+Inorganic carbon,mg/l,R10MIDNITE DUSDA-23C,Dissolved Inorganic Carbon,NA,NA
+Inorganic carbon,NA,USGS IR005,"Inorg carbon, wu, IR (USGS-NYL)",mg/l,685

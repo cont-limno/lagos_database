@@ -2405,6 +2405,7 @@ unique(data_temp$ResultSampleFractionText)
 
 ###create dataset to check for non numeric objects in dataset
 temp <- non_numerics()
+#no non numerics to convert
 
 source("unit_conversions.R")
 data_temp_temp_notes
