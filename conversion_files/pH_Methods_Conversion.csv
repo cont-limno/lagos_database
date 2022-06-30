@@ -352,3 +352,4 @@ pH,,,USDOI/USGS I1586,Water pH,,1,1,USGS I-1586
 pH,,,USEPA 150.1,pH,,1,1,EPA 150.1
 pH,,,USEPA 150.1,,,1,1,EPA 150.1
 pH,,,USEPA 9040A,9040 A ~ pH in Water by Electrometric Measurement,,1,1,EPA 9040 A
+"pH, lab",None,,NA NA,,,1,1,

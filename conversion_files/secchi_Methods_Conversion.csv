@@ -255,4 +255,7 @@ CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasu
 "Depth, Secchi disk depth (choice list)",,m,NA NA,,,-1.00E+06,-1.00E+06,units_fail
 "Depth, Secchi disk depth (choice list)",,,21FLGFWF STATION OBS,,,-1.00E+06,-1.00E+06,units_fail
 "Depth, Secchi disk depth (choice list)",,,NA NA,,,-1.00E+06,-1.00E+06,units_fail
+Horizontal Secchi Disk,ft,,NA NA,,,0.0348,0.0348,
+"Transparency, Secchi tube with disk",cm,,NA NA,,,1.00E-02,1.00E-02,
+"Transparency, Secchi tube with disk",m,,NA NA,,,1.00E+00,1.00E+00,
 "Water transparency, Secchi disc",in,,NA NA,,72187,0.0254,0.0254,"USGS_72187; Transparency, water, in situ, Secchi disc observed with viewscope, inches"
