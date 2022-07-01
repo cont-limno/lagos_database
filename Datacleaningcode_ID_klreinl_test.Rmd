@@ -2470,9 +2470,11 @@ data_all$ResultMeasureValue<-data_all$Converted
 data_all$DetectionQuantitationLimitMeasure.MeasureValue<-data_all$Converted_dl
 data_all<-data_all %>% select(-Converted, -Converted_dl)
 gc()
-#rm(data)
 
-write_csv(data_all, file = "all_data_june29.csv")
+rm(list = setdiff(ls(), "data_all"))
+saveRDS(data_all, "limnoUS.rds")
+
+write_csv(data_all, file = "all_data_june30.csv")
 
 # vals<-unique(data_all$MonitoringLocationIdentifier)
 # 
