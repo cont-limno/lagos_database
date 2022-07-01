@@ -43,11 +43,10 @@ con <- dbConnect(drv, dbname = "lagos_us_limno",
 
 data_dir <- "~/Lottig Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/"
 #list files
-dat <- read_csv(paste0(data_dir,"alldata.csv"), col_types = cols(.default = "c",ResultMeasureValue=col_double()))
+dat <- read_rds(file = paste0(data_dir,"limnous.rds"))
 
 #assign sampledate
-dat <- dat %>% rename(sampledate = ActivityStartDate) %>% 
-    mutate(sampledate = ymd(sampledate))
+dat <- dat %>% rename(sampledate = ActivityStartDate)
 
 states_in_data<-unique(dat$State)
 length(unique(dat$State))
@@ -55,7 +54,10 @@ length(unique(dat$State))
 #program specific changes
 temp <- dat %>% filter(OrganizationIdentifier=="SDWRAP")
 dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id) #per SD, delete all SDWRAP data
-
+#remove hypersaline lakes
+dat <- dat %>% filter(lagoslakeid!=455356)
+dat <- dat %>% filter(lagoslakeid!=455786)
+dat <- dat %>% filter(lagoslakeid!=483334)
 
 #Add Activity data
 activities <- read_csv("big_data/activities.csv", 
@@ -71,7 +73,8 @@ dat <- dat %>% left_join(activities)
 
 temp <- dat %>% group_by(State) %>% 
     summarize(n=sum(!is.na(ActivityRelativeDepthName)))
-
+rm(activities)
+gc()
 #check to make sure no weird sample fractions and activity types made it in
 #make sure these get excluded 
 
@@ -80,32 +83,32 @@ temp <- dat %>% group_by(State) %>%
 unique(dat$ActivityDepthAltitudeReferencePointText)
 
 depth_reference_locations <- unique(dat$ActivityDepthAltitudeReferencePointText)
-types_to_keep <- c("SURFACE","WATER SURFACE","Surface","WATER SURF","Water Surface","From Surface")
+types_to_keep <- c("SURFACE","WATER SURFACE","Surface","WATER SURF","Water Surface","From Surface","EPI","Land surface")
 depth_reference_locations <- depth_reference_locations[which(!depth_reference_locations %in% types_to_keep)] 
 depth_reference_locations
-temp<- dat %>% filter(is.na(ActivityDepthAltitudeReferencePointText))
-temp2 <- dat %>% filter(ActivityDepthAltitudeReferencePointText %in% types_to_keep)
-dat <- rbind(temp,temp2)
+temp<- dat %>% select(Obs_Id,ActivityDepthAltitudeReferencePointText) %>%  filter(is.na(ActivityDepthAltitudeReferencePointText))
+temp2 <- dat %>% select(Obs_Id,ActivityDepthAltitudeReferencePointText) %>% filter(ActivityDepthAltitudeReferencePointText %in% types_to_keep)
+temp3 <- rbind(temp,temp2)
+dat <- dat %>% filter(Obs_Id %in% temp3$Obs_Id)
 rm(temp)
 rm(temp2)
-
-
+rm(temp3)
+gc()
 
 
 #assign known depths that are specified
-dat <- dat %>% mutate_at(c('ActivityDepthHeightMeasure.MeasureValue',
-                           'ResultDepthHeightMeasure.MeasureValue',
-                           'ActivityBottomDepthHeightMeasure.MeasureValue',
-                           'ActivityTopDepthHeightMeasure.MeasureValue')
-                         ,as.numeric)
+# dat <- dat %>% mutate_at(c('ActivityDepthHeightMeasure.MeasureValue',
+#                            'ResultDepthHeightMeasure.MeasureValue',
+#                            'ActivityBottomDepthHeightMeasure.MeasureValue',
+#                            'ActivityTopDepthHeightMeasure.MeasureValue')
+#                          ,as.numeric)
 dat$source_sampledepth <- dat$ActivityDepthHeightMeasure.MeasureValue
 temp <- dat %>% filter(is.na(source_sampledepth)) %>% 
     filter(!is.na(ResultDepthHeightMeasure.MeasureValue))
 dat$source_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- temp$ResultDepthHeightMeasure.MeasureValue
 
 #transfer reported depth values that show up as parameters to depth of sample
-temp<- dat %>% filter(CharacteristicName=="Depth") %>% 
-    filter(source_parameter=="Depth") %>% 
+temp<- dat %>% filter(source_parameter=="Depth") %>% 
     select(ResultMeasureValue,OrganizationFormalName,ActivityIdentifier,MonitoringLocationIdentifier,sampledate) %>% 
     distinct() %>% 
     group_by(OrganizationFormalName,ActivityIdentifier,MonitoringLocationIdentifier,sampledate) %>% 
@@ -118,6 +121,8 @@ temp<- dat %>% filter(CharacteristicName=="Depth") %>%
 dat <- dat %>% left_join(temp)
 dat <- dat %>% 
     mutate(source_sampledepth = ifelse(is.na(source_sampledepth),reported_depth,source_sampledepth))
+rm(temp)
+gc()
 # temp<- dat %>% filter(is.na(source_sampledepth))
 
 #extract profile data
@@ -125,6 +130,7 @@ unique(dat$source_parameter)
 meter_vars <-c("Conductivity",
                "Specific conductance",
                "Dissolved oxygen (DO)",
+               "Oxygen",
                "pH",
                "Salinity",
                "Turbidity",
@@ -156,22 +162,36 @@ rm(temp)
 
 #exclude variables
 dat <- dat %>% filter(CharacteristicName !="Depth")
+gc()
 # dat <- dat %>% filter(CharacteristicName !="Oxygen, dissolved")
 
 #If program doesn't record sample depth but records epi sample...asign 0 source depth
-unique(dat$ActivityRelativeDepthName)
-bad_reldepths <- c("Near Bottom","Midwater","Bottom","BelowThermoclin","Above Halocline")
+good.depths <- unique(dat$ActivityRelativeDepthName)
+bad_reldepths <- c("Near Bottom","Midwater","Bottom","BelowThermoclin","Above Halocline","Other","Below Halocline")
+good.depths <- good.depths[which(!good.depths %in% bad_reldepths)]
+good.depths
 dat <- dat %>% filter(!ActivityRelativeDepthName %in% bad_reldepths)
 unique(dat$ActivityRelativeDepthName)
-
+rm(good.depths)
+rm(bad_reldepths)
+gc()
 temp <- dat %>% filter(is.na(source_sampledepth)) %>% 
     filter(ActivityRelativeDepthName=="Surface" | 
                            ActivityRelativeDepthName == "Photic zone" |
                            ActivityRelativeDepthName == "AboveThermoclin")
 unique(temp$ActivityRelativeDepthName)
 dat$source_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
-rm(activities)
 gc()
+unique(dat$ActivityDepthAltitudeReferencePointText)
+temp <- dat %>% filter(is.na(source_sampledepth)) %>% 
+    filter(ActivityDepthAltitudeReferencePointText=="WATER SURFACE" | 
+               ActivityDepthAltitudeReferencePointText == "SURFACE" |
+               ActivityDepthAltitudeReferencePointText == "EPI" |
+               ActivityDepthAltitudeReferencePointText == "Water Surface" |
+               ActivityDepthAltitudeReferencePointText == "Surface" |
+               ActivityDepthAltitudeReferencePointText == "WATER SURF")
+dat$source_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+
 #assign depth type to samples with known assigned sample depths
 dat$source_sampleposition <- ifelse(is.na(dat$source_sampledepth),"UNKNOWN","SPECIFIED")
 dat$lagos_sampledepth <- dat$source_sampledepth
@@ -192,6 +212,7 @@ temp <- temp %>% group_by(sampledate,MonitoringLocationIdentifier,OrganizationId
     arrange(OrganizationIdentifier,MonitoringLocationIdentifier,CharacteristicName,sampledate)
 dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id)
 rm(temp)
+gc()
 
 #infer unknown depths based on observed depths within a sampling program
 dat <- dat %>% mutate(combined_name = paste(OrganizationFormalName,ActivityConductingOrganizationText))
@@ -208,9 +229,21 @@ temp2 <- temp %>% filter(depth_75 <=2) %>%
     filter(sd_depth <=2) %>% 
     filter(proport_depth<=90) %>% 
     rename(lagos_sampledepth = depth_75)
-sum(temp2$no_depths)
-#need to integrate inferred into this code TODO!!!!!
 dat <- coalesce_join(dat,temp2 %>% select(combined_name,lagos_sampledepth),by="combined_name")
+
+temp <- dat %>% group_by(combined_name) %>% 
+    summarize(depths = sum(!is.na(lagos_sampledepth)),
+              no_depths = sum(is.na(lagos_sampledepth)),
+              proport_depth = round(sum(is.na(lagos_sampledepth))/(sum(!is.na(lagos_sampledepth))+sum(is.na(lagos_sampledepth)))*100,2),
+              depth_75 = round(quantile(lagos_sampledepth,na.rm=TRUE,probs=0.75),1),
+              sd_depth = round(sd(lagos_sampledepth,na.rm=TRUE),2)) %>% 
+    filter(no_depths >0)
+temp2 <- temp %>% filter(depth_75 <=2) %>% 
+    filter(sd_depth ==0) %>% 
+    rename(lagos_sampledepth = depth_75)
+dat <- coalesce_join(dat,temp2 %>% select(combined_name,lagos_sampledepth),by="combined_name")
+gc()
+
 
 #assign grabs with grab equipment as inferred 0 depth
 temp <- dat %>% filter(is.na(lagos_sampledepth))
@@ -225,18 +258,31 @@ dat$lagos_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
 dat$lagos_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "INFERRED"
 gc()
 
+
+
+
+
+temp <- dat %>% filter(is.na(lagos_sampledepth)) %>% 
+    group_by(combined_name) %>% 
+    summarize(n=n())
+
+
+
 #look at what is left with unassigned depths
 temp <- dat %>% group_by(State) %>% 
     summarize(depths = sum(!is.na(lagos_sampledepth)),
               no_depths = sum(is.na(lagos_sampledepth)),
               proport_depth = round(sum(is.na(lagos_sampledepth))/(sum(!is.na(lagos_sampledepth))+sum(is.na(lagos_sampledepth)))*100,0),
               depth_75 = round(quantile(lagos_sampledepth,na.rm=TRUE,probs=0.75),1),
-              sd_depth = round(sd(lagos_sampledepth,na.rm=TRUE),2)) %>% 
-    filter(no_depths>0)
+              sd_depth = round(sd(lagos_sampledepth,na.rm=TRUE),2)) 
+write_csv(temp,"statesummary.csv")
 
 ####code to deal with remaining samples that don't have assigned depths
 temp <- dat %>% filter(is.na(lagos_sampledepth))
 dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id)
+rm(temp)
+rm(temp2)
+gc()
 
 # 
 # 
@@ -517,12 +563,15 @@ dat <- as.data.frame(dat)
 dat <- dat %>% group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,lagos_sampledepth,CharacteristicName) %>% 
     mutate(event_id = paste0(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,lagos_sampledepth,CharacteristicName)) %>% 
     ungroup()
+gc()
 temp <- dat %>% filter(lagos_sampleposition == "SPECIFIED") %>%  
     group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,lagos_sampledepth,CharacteristicName) %>% 
     slice_sample(n=1) %>% ungroup()
+gc()
 temp2 <- dat %>% filter(lagos_sampleposition != "SPECIFIED") %>%  
     group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,lagos_sampledepth,CharacteristicName) %>% 
     slice_sample(n=1) %>% ungroup()
+gc()
 temp2 <- temp2 %>% filter(!event_id %in% temp$event_id)
 dat <- rbind(temp,temp2)
 rm(temp)
@@ -542,10 +591,92 @@ unique(dat$source_unit)
 #     left_join(units)
 
 #temporary fix of ph label
-dat <- dat %>% mutate(CharacteristicName = case_when(CharacteristicName=='pH, equilibrated' ~'pH, field or lab',TRUE ~ as.character(CharacteristicName)))
-dat <- dat %>% mutate(CharacteristicName = case_when(CharacteristicName=='Phosphorus, soluable reactive orthophosphate' ~'Phosphorus, soluble reactive orthophosphate',TRUE ~ as.character(CharacteristicName)))
-dat <- dat %>% mutate(CharacteristicName = case_when(CharacteristicName=='Nitrogen, total dissolved Kjeldahl' ~'Nitrogen, dissolved Kjeldahl',TRUE ~ as.character(CharacteristicName)))
-dat <- dat %>% mutate(CharacteristicName = case_when(CharacteristicName=='Mercury, dissolved' ~'Mercury, total dissolved',TRUE ~ as.character(CharacteristicName)))
+# dat <- dat %>% mutate(CharacteristicName = case_when(CharacteristicName=='pH, equilibrated' ~'pH, field or lab',TRUE ~ as.character(CharacteristicName)))
+# dat <- dat %>% mutate(CharacteristicName = case_when(CharacteristicName=='Phosphorus, soluable reactive orthophosphate' ~'Phosphorus, soluble reactive orthophosphate',TRUE ~ as.character(CharacteristicName)))
+# dat <- dat %>% mutate(CharacteristicName = case_when(CharacteristicName=='Nitrogen, total dissolved Kjeldahl' ~'Nitrogen, dissolved Kjeldahl',TRUE ~ as.character(CharacteristicName)))
+# dat <- dat %>% mutate(CharacteristicName = case_when(CharacteristicName=='Mercury, dissolved' ~'Mercury, total dissolved',TRUE ~ as.character(CharacteristicName)))
+
+variables <- read_csv("lagos_variable.csv")
+dat <- dat %>% select(-variableid_lagos,-limit_low,-limit_high,-variableshortname)
+dat <- dat %>% left_join(variables %>% select(variablename,variableid_lagos,limit_low,limit_high,variableshortname), by = c("CharacteristicName" = "variablename"))
+
+##filter egregios values and write to data file
+egreg_dat <- dat %>% filter(ResultMeasureValue < limit_low | ResultMeasureValue > limit_high) %>% 
+    select(Obs_Id,lagoslakeid,sampledate, ActivityConductingOrganizationText,OrganizationFormalName,
+           CharacteristicName,source_parameter,ResultMeasureValue,source_value,source_unit,
+           Conversion,DetectionQuantitationLimitMeasure.MeasureValue,
+           Method_Id,
+           MethodDescriptionText,ActivityCommentText,wqp_monitoringlocationname)
+write_csv(egreg_dat,"egregious_values.csv")
+
+dat <- dat %>% filter(!Obs_Id %in% egreg_dat$Obs_Id)
+rm(egreg_dat)
+gc()
+
+lake_dat <- read_csv("lake_info.csv")
+dat <- dat %>% 
+    mutate(lagoslakeid = as.numeric(lagoslakeid)) %>% 
+    left_join(lake_dat)
+rm(lake_dat)
+gc()
+
+temp <- dat %>% select(Obs_Id,CharacteristicName,ResultMeasureValue,neon_zoneid,lagoslakeid) %>% 
+    filter(ResultMeasureValue >0) %>%
+    drop_na(ResultMeasureValue) %>% 
+    group_by(neon_zoneid,lagoslakeid,CharacteristicName) %>% 
+    summarize(ResultMeasureValue = quantile(ResultMeasureValue,probs=0.75)) %>% 
+    ungroup() %>% 
+    group_by(neon_zoneid,CharacteristicName) %>% 
+    summarize(upper = ifelse(sum(!is.na(ResultMeasureValue))>=10,quantile((ResultMeasureValue),probs=0.95),NA)) #%>% 
+ 
+
+temp2 <- dat %>% select(Obs_Id,CharacteristicName,ResultMeasureValue,neon_zoneid) %>% 
+    left_join(temp) %>% 
+    mutate(dif = ResultMeasureValue-upper) %>% 
+    filter(dif>0) %>% 
+    mutate(upperval = upper*10) %>% 
+    filter(ResultMeasureValue>upperval) %>% 
+    mutate(exclude = "red") %>% 
+    select(Obs_Id,exclude)
+
+   # ungroup() %>% 
+    # drop_na(upper) %>% 
+    # mutate(exclude = ifelse(log10(ResultMeasureValue+1) > upper,"red","black")) %>% 
+    # # mutate(upper = exp(upper)-1) %>%
+    # filter(exclude == "red") #%>% 
+    # select(Obs_Id,exclude)
+
+
+dat <- dat %>% select(-exclude)
+dat <- dat %>% left_join(temp2)
+dat <- dat %>% mutate(exclude = ifelse(is.na(exclude),"black",exclude))
+temp <- dat %>% filter(exclue)
+
+for(i in 1:nrow(variables)){
+    var.name <- variables$variablename[i]
+    temp <- dat %>% filter(CharacteristicName==var.name)
+    if(nrow(temp)>0) {
+        p<- ggplot(data = temp,aes(x="",y=ResultMeasureValue,colour=exclude)) + 
+            geom_jitter(height=0,alpha=0.5) +
+            facet_wrap(vars(neon_zoneid),scales = "free_y") +
+            theme_bw() +
+            scale_color_identity() +
+            labs(x=var.name)
+        ggsave(plot = p,filename = paste0("graphics/jpg/",var.name,".jpg"),width=11,height=8.5)
+    }
+}
+
+saveRDS(dat,"initial_process.rds")
+
+
+
+
+
+
+
+
+
+
 
 
 #ratio analysis
@@ -638,9 +769,29 @@ ratio.data <- dat %>% filter(Obs_Id %in% flagdata) %>%
 write_csv(ratio.data,"flagged_ratios.csv")
 
 
-variables <- read_csv("lagos_variable.csv")
-dat <- dat %>% select(-variableid_lagos,-limit_low,-limit_high,-variableshortname)
-dat <- dat %>% left_join(variables %>% select(variablename,variableid_lagos,limit_low,limit_high,variableshortname), by = c("CharacteristicName" = "variablename"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #remove egregious values
 temp <- dat %>% select(Obs_Id,CharacteristicName,ResultMeasureValue,neon_zoneid) %>% 
