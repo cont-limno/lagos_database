@@ -620,24 +620,33 @@ dat <- dat %>%
 rm(lake_dat)
 gc()
 
-temp <- dat %>% select(Obs_Id,CharacteristicName,ResultMeasureValue,neon_zoneid,lagoslakeid) %>% 
-    filter(ResultMeasureValue >0) %>%
-    drop_na(ResultMeasureValue) %>% 
-    group_by(neon_zoneid,lagoslakeid,CharacteristicName) %>% 
-    summarize(ResultMeasureValue = quantile(ResultMeasureValue,probs=0.75)) %>% 
-    ungroup() %>% 
-    group_by(neon_zoneid,CharacteristicName) %>% 
-    summarize(upper = ifelse(sum(!is.na(ResultMeasureValue))>=10,quantile((ResultMeasureValue),probs=0.95),NA)) #%>% 
- 
+# temp <- dat %>% select(Obs_Id,CharacteristicName,ResultMeasureValue,neon_zoneid,lagoslakeid) %>% 
+#     filter(ResultMeasureValue >0) %>%
+#     drop_na(ResultMeasureValue) %>% 
+#     group_by(neon_zoneid,lagoslakeid,CharacteristicName) %>% 
+#     summarize(ResultMeasureValue = quantile(ResultMeasureValue,probs=0.75)) %>% 
+#     ungroup() %>% 
+#     group_by(neon_zoneid,CharacteristicName) %>% 
+#     summarize(upper = ifelse(sum(!is.na(ResultMeasureValue))>=10,quantile((ResultMeasureValue),probs=0.95),NA)) #%>% 
+#  
 
-temp2 <- dat %>% select(Obs_Id,CharacteristicName,ResultMeasureValue,neon_zoneid) %>% 
-    left_join(temp) %>% 
-    mutate(dif = ResultMeasureValue-upper) %>% 
-    filter(dif>0) %>% 
-    mutate(upperval = upper*10) %>% 
-    filter(ResultMeasureValue>upperval) %>% 
-    mutate(exclude = "red") %>% 
+temp <- dat %>% select(Obs_Id,CharacteristicName,ResultMeasureValue,neon_zoneid) %>% 
+    filter(ResultMeasureValue >0) %>% 
+    group_by(CharacteristicName, neon_zoneid) %>% 
+    mutate(outlier = ident.outlier(ResultMeasureValue)) %>% 
+    ungroup() %>% 
+    mutate(exclude = ifelse(ResultMeasureValue>outlier,"red","black")) %>% 
+    mutate(exclude = ifelse(is.na(exclude),"black",exclude)) %>% 
     select(Obs_Id,exclude)
+# 
+# temp2 <- dat %>% select(Obs_Id,CharacteristicName,ResultMeasureValue,neon_zoneid) %>% 
+#     left_join(temp) %>% 
+#     mutate(dif = ResultMeasureValue-upper) %>% 
+#     filter(dif>0) %>% 
+#     mutate(upperval = upper*10) %>% 
+#     filter(ResultMeasureValue>upperval) %>% 
+#     mutate(exclude = "red") %>% 
+#     select(Obs_Id,exclude)
 
    # ungroup() %>% 
     # drop_na(upper) %>% 
@@ -648,15 +657,15 @@ temp2 <- dat %>% select(Obs_Id,CharacteristicName,ResultMeasureValue,neon_zoneid
 
 
 dat <- dat %>% select(-exclude)
-dat <- dat %>% left_join(temp2)
+dat <- dat %>% left_join(temp)
 dat <- dat %>% mutate(exclude = ifelse(is.na(exclude),"black",exclude))
-temp <- dat %>% filter(exclue)
+# temp <- dat %>% filter(exclue)
 
 for(i in 1:nrow(variables)){
     var.name <- variables$variablename[i]
-    temp <- dat %>% filter(CharacteristicName==var.name)
+    temp <- dat %>% filter(CharacteristicName==var.name) %>% filter(ResultMeasureValue>0)
     if(nrow(temp)>0) {
-        p<- ggplot(data = temp,aes(x="",y=ResultMeasureValue,colour=exclude)) + 
+        p<- ggplot(data = temp,aes(x="",y=ResultMeasureValue+1,colour=exclude)) + 
             geom_jitter(height=0,alpha=0.5) +
             facet_wrap(vars(neon_zoneid),scales = "free_y") +
             theme_bw() +
