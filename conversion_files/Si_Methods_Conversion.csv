@@ -21,7 +21,7 @@ Silica,mg/l,mg/l,USDOI/USGS I2700,Silica in Water by Colorimetry,,1,1,USGS I-270
 Silica,mg/l,mg/l,USDOI/USGS I2700,,,1,1,USGS I-2700-85
 Silica,mg/l,mg/l,USEPA 200.7,Metals in Water by ICP-AES,,1,1,EPA 200.7; Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Silica,mg/l,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1,1,EPA 200.7; Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
-Silica,mg/l,mg/l,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,
+Silica,mg/l,mg/l,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,EPA 200.8
 Silica,mg/l,mg/l,USEPA 370.1,Dissolved Silica by Colorimetry,,1,1,EPA 370.1
 Silica,mg/l,mg/l,USEPA 370.1,,,1,1,EPA 370.1
 Silica,mg/l,mg/l,USGS CL064,"Silica, wf, ASF molybdate blue",955,1,1,USGS_00955; Reported as silica oxide (SiO2)
@@ -31,7 +31,7 @@ Silica,mg/l,mg/l,USGS PLA04,"Elements, water/wastes, ICP-AES",955,1,1,USGS_00955
 Silica,mg/l,mg/l,USGS PLA09,"Metals, LL, wf, ICP-AES",955,1,1,USGS_00955; Reported as silica oxide (SiO2)
 Silica,mg/l,mg/l,USGS PLA11,"Metals, wf, ICP-AES (NWQL)",955,1,1,USGS_00955; Reported as silica oxide (SiO2)
 Silica,mg/l,mg/l,USGS PLA24,"Metals, wf, ICP-AES (NRP & CO)",955,1,1,USGS_00955; Reported as silica oxide (SiO2)
-Silica,mg/l,mg/l,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,-1000000,-1000000,
+Silica,mg/l,mg/l,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,1,1,methods_WQX
 Silica,mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1,1,methods_WQX
 Silica,mg/l,,21ARIZ UNKNOWN,,,1,1,methods_unknown
 Silica,mg/l,,21ARIZ_WQX EPA 200.7,METALS,,1,1,EPA 200.7; Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
@@ -51,14 +51,14 @@ Silica,mg/l,,NA NA,,,1,1,methods_unknown
 Silica,mg/l,,OREGONDEQ Not Available,Not Available,,1,1,methods_unknown
 Silica,mg/l,,SPIRITLK CL151,CL151,,1,1,methods_unknown
 Silica,mg/l,,SPIRITLK LC3121,LC3121,,1,1,methods_unknown
-Silica,mg/l,,USDOI/USGS I-2601-90,"Phosphorus, Orthophosphate in Water by Colorimetry",,-1.00E+06,-1.00E+06,methods_fail
+Silica,mg/l,,USDOI/USGS I-2601-90,"Phosphorus, Orthophosphate in Water by Colorimetry",,-1000000,-1000000,methods_fail
 Silica,mg/l,,USDOI/USGS I-2700-85,"Silica, Colorimetric, Dissolved",,1,1,USGS I-2700-85
 Silica,mg/l,,USDOI/USGS I2700,Silica in Water by Colorimetry,,1,1,USGS I-2700-85
 Silica,mg/l,,USEPA 200.7,Metals in Water by ICP-AES,,1,1,EPA 200.7; Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Silica,mg/l,,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1,1,EPA 200.7; Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Silica,mg/l,,USEPA 200.8,Metals in Waters by ICP/MS,,1,1,EPA 200.8
 Silica,mg/l,,USEPA 370.1,Dissolved Silica by Colorimetry,,1,1,EPA 370.1
-Silica,mg/l,,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1,1,EPA 370.1
+Silica,mg/l,,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1,1,EPA 6010-B
 Silica,mg/l,,USGS CL064,"Silica, wf, ASF molybdate blue",955,1,1,USGS_00955; Reported as silica oxide (SiO2)
 Silica,mg/l,,USGS CL151,"Silica, wf, DA",955,1,1,USGS_00955; Reported as silica oxide (SiO2)
 Silica,mg/l,,USGS MOLY6,"Silica, sal wf,molybdate blue AD",955,1,1,USGS_00955; Reported as silica oxide (SiO2)
@@ -69,33 +69,33 @@ Silica,mg/l,,USGS PLA09,"Metals, LL, wf, ICP-AES",955,1,1,USGS_00955; Reported a
 Silica,mg/l,,USGS PLA11,"Metals, wf, ICP-AES (NWQL)",955,1,1,USGS_00955; Reported as silica oxide (SiO2)
 Silica,mg/l,,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,1,1,methods_WQX
 Silica,ug/l,ug/l,USEPA 200.7,Metals in Water by ICP-AES,,0.001,0.001,EPA 200.7; Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
-Silica,ug/l,,APHA 4500-SI(C),4500 SI C  ~ Silica in Water by Gravimetric Analysis,,1,1,APHA 4500-SI-C
+Silica,ug/l,,APHA 4500-SI(C),4500 SI C  ~ Silica in Water by Gravimetric Analysis,,0.001,0.001,APHA 4500-SI-C
 Silica,ug/l,,NA NA,,,0.001,0.001,methods_unknown
 Silica,ug/l,,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,0.001,0.001,EPA 6010-B
-Silica,,mg/l,21FLSFWM WQ-1,,,-1000000,-1000000,
-Silica,,mg/l,21FLSFWM_WQX SFWMDSOP3120.1,SFWMDSOP3120.1,,-1000000,-1000000,
-Silica,,mg/l,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,-1000000,-1000000,
-Silica,,mg/l,21IOWA_WQX HACH 8185,HACH 8185,,-1000000,-1000000,
-Silica,,mg/l,APHA 4500-SI(C),4500 SI C  ~ Silica in Water by Gravimetric Analysis,,1,1,
-Silica,,mg/l,APHA 4500-SI(D),4500 SI D  ~ Silica in Water by Spectrophotometry- Molybdosilicate Method,,1,1,
-Silica,,mg/l,APHA 4500-SI(F),4500 SI F  ~ Silica in Water by Automated Colorimetry,,1,1,
-Silica,,mg/l,APHA 4500-SIO2 C,4500 SIO2 C ~ Silica by Molybdosilicate Method,,1,1,
-Silica,,mg/l,APHA 4500-SIO2(F),4500 SIO2 F  ~ Silica by Flow Injection Analysis for Molybdate-Reactive Silicate,,1,1,
-Silica,,mg/l,APHA_SM20ED 4500-SIO2-C,4500 SIO2 C ~ Silica Molybdosilicate Method,,1,1,
-Silica,,mg/l,MNPCA LEG_P00955,"SILICA, DISSOLVED (MG/L AS SI02)",,1,1,
-Silica,,mg/l,NA NA,,955,1,1,
-Silica,,mg/l,USEPA 370.1,Dissolved Silica by Colorimetry,,1,1,
-Silica,,mg/l,USEPA 370.1,,,1,1,
+Silica,,mg/l,21FLSFWM WQ-1,,,1,1,methods_unknown
+Silica,,mg/l,21FLSFWM_WQX SFWMDSOP3120.1,SFWMDSOP3120.1,,1,1,methods_WQX
+Silica,,mg/l,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,1,1,methods_WQX
+Silica,,mg/l,21IOWA_WQX HACH 8185,HACH 8185,,1,1,HACH 8185
+Silica,,mg/l,APHA 4500-SI(C),4500 SI C  ~ Silica in Water by Gravimetric Analysis,,1,1,APHA 4500-SI-C
+Silica,,mg/l,APHA 4500-SI(D),4500 SI D  ~ Silica in Water by Spectrophotometry- Molybdosilicate Method,,1,1,APHA 4500-SI-D
+Silica,,mg/l,APHA 4500-SI(F),4500 SI F  ~ Silica in Water by Automated Colorimetry,,1,1,APHA 4500-SI-F
+Silica,,mg/l,APHA 4500-SIO2 C,4500 SIO2 C ~ Silica by Molybdosilicate Method,,1,1,APHA 4500-SIO2-C
+Silica,,mg/l,APHA 4500-SIO2(F),4500 SIO2 F  ~ Silica by Flow Injection Analysis for Molybdate-Reactive Silicate,,1,1,APHA 4500-SIO2-F
+Silica,,mg/l,APHA_SM20ED 4500-SIO2-C,4500 SIO2 C ~ Silica Molybdosilicate Method,,1,1,APHA 4500-SIO2-C
+Silica,,mg/l,MNPCA LEG_P00955,"SILICA, DISSOLVED (MG/L AS SI02)",,1,1,USGS_00955; Reported as silica oxide (SiO2)
+Silica,,mg/l,NA NA,,955,1,1,USGS_00955; Reported as silica oxide (SiO2)
+Silica,,mg/l,USEPA 370.1,Dissolved Silica by Colorimetry,,1,1,EPA 370.1
+Silica,,mg/l,USEPA 370.1,,,1,1,EPA 370.1
 Silica,,mg/l,USGS CL064,"Silica, wf, ASF molybdate blue",955,1,1,USGS_00955; Reported as silica oxide (SiO2)
-Silica,,mg/l,USGS CL151,"Silica, wf, DA",955,1,1,
-Silica,,mg/l,USGS MOLY1,"Silica, wf, molybdate blue color",955,1,1,
-Silica,,mg/l,USGS PL125,"Elements, wf, ICP/OES (USGS-NYL)",955,1,1,
-Silica,,mg/l,USGS PLA09,"Metals, LL, wf, ICP-AES",955,1,1,
-Silica,,mg/l,USGS PLA11,"Metals, wf, ICP-AES (NWQL)",955,1,1,
-Silica,,ug/l,APHA 4500-SI(C),4500 SI C  ~ Silica in Water by Gravimetric Analysis,,1,1,
+Silica,,mg/l,USGS CL151,"Silica, wf, DA",955,1,1,USGS_00955; Reported as silica oxide (SiO2)
+Silica,,mg/l,USGS MOLY1,"Silica, wf, molybdate blue color",955,1,1,USGS_00955; Reported as silica oxide (SiO2)
+Silica,,mg/l,USGS PL125,"Elements, wf, ICP/OES (USGS-NYL)",955,1,1,USGS_00955; Reported as silica oxide (SiO2)
+Silica,,mg/l,USGS PLA09,"Metals, LL, wf, ICP-AES",955,1,1,USGS_00955; Reported as silica oxide (SiO2)
+Silica,,mg/l,USGS PLA11,"Metals, wf, ICP-AES (NWQL)",955,1,1,USGS_00955; Reported as silica oxide (SiO2)
+Silica,,ug/l,APHA 4500-SI(C),4500 SI C  ~ Silica in Water by Gravimetric Analysis,,1,1,APHA 4500-SI-C
 Silicate,mg/l,mg/l,USEPA 370.1,Dissolved Silica by Colorimetry,,1,1,EPA 370.1
 Silicate,mg/l,,USEPA 370.1,Dissolved Silica by Colorimetry,,1,1,EPA 370.1
-Silicate,,mg/l,USEPA 370.1,Dissolved Silica by Colorimetry,,1,1,
+Silicate,,mg/l,USEPA 370.1,Dissolved Silica by Colorimetry,,1,1,EPA 370.1
 Silicon,mg/l,mg/l,USEPA 200.7,Metals in Water by ICP-AES,,2.139,2.139,EPA 200.7; Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Silicon,mg/l,,NA NA,,,2.139,2.139,methods_unknown
 Silicon,mg/l,,OREGONDEQ Not Available,Not Available,,2.139,2.139,methods_unknown
