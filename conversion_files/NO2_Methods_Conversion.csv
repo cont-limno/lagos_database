@@ -1,36 +1,36 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
 Nitrite,mg/l,mg/l,11NPSWRD_WQX BLCA_DZ001,"Nitrite, filtered water, discrete analyzer, diazotization and colorimetry",,1000,1000,methods_WQX
-Nitrite,mg/l,mg/l,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,-1000000,-1000000,
-Nitrite,mg/l,mg/l,11NPSWRD_WQX NPS_MISSING,Procedure not Required when Result Entered into National Database,,-1000000,-1000000,
-Nitrite,mg/l,mg/l,11NPSWRD_WQX USGS_CL041,"Nutrients, wf, colorimetric",,-1000000,-1000000,
-Nitrite,mg/l,mg/l,11NPSWRD_WQX USGS_I-2540,Nitrite-Nitrogen in Water by Colorimetry,,-1000000,-1000000,
-Nitrite,mg/l,mg/l,21FLMCGL SOP-1,,,-1000000,-1000000,methods_fail
-Nitrite,mg/l,mg/l,21FLSFWM_WQX SM4500NO3F,SM4500NO3F,,1000,1000,APHA 4500-NO2(F)
-Nitrite,mg/l,mg/l,21FLSFWM_WQX SM4500PF/NO3F,SM4500PF/NO3F,,1000,1000,APHA 4500-NO2(F)
+Nitrite,mg/l,mg/l,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1000,1000,methods_WQX
+Nitrite,mg/l,mg/l,11NPSWRD_WQX NPS_MISSING,Procedure not Required when Result Entered into National Database,,1000,1000,methods_WQX
+Nitrite,mg/l,mg/l,11NPSWRD_WQX USGS_CL041,"Nutrients, wf, colorimetric",,1000,1000,methods_WQX
+Nitrite,mg/l,mg/l,11NPSWRD_WQX USGS_I-2540,Nitrite-Nitrogen in Water by Colorimetry,,1000,1000,USGS I-2540
+Nitrite,mg/l,mg/l,21FLMCGL SOP-1,,,-1000000,-1000000,methods_unknown
+Nitrite,mg/l,mg/l,21FLSFWM_WQX SM4500NO3F,SM4500NO3F,,1000,1000,APHA 4500-NO2-F
+Nitrite,mg/l,mg/l,21FLSFWM_WQX SM4500PF/NO3F,SM4500PF/NO3F,,1000,1000,APHA 4500-NO2-F
 Nitrite,mg/l,mg/l,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,1000,1000,methods_WQX
-Nitrite,mg/l,mg/l,APHA 4500-NO2(B),4500 NO2 B  ~ Nitrite in Water by Colorimetry,,1000,1000,APHA 4500-NO2(B)
+Nitrite,mg/l,mg/l,APHA 4500-NO2(B),4500 NO2 B  ~ Nitrite in Water by Colorimetry,,1000,1000,APHA 4500-NO2-B
 Nitrite,mg/l,mg/l,CEDEN 124,EPA 353.2,,1000,1000,EPA 353.2
-Nitrite,mg/l,mg/l,CEDEN 4061,SM 4500-NO2 B v20,,1000,1000,APHA 4500-NO2(B)
-Nitrite,mg/l,mg/l,CEDEN 96,SM 4500-NO2 B,,1000,1000,APHA 4500-NO2(B)
+Nitrite,mg/l,mg/l,CEDEN 4061,SM 4500-NO2 B v20,,1000,1000,APHA 4500-NO2-B
+Nitrite,mg/l,mg/l,CEDEN 96,SM 4500-NO2 B,,1000,1000,APHA 4500-NO2-B
 Nitrite,mg/l,mg/l,R10BUNKER I2542,I2542,,1000,1000,USGS I-2542
 Nitrite,mg/l,mg/l,USDOI/USGS I-2542,"Nitrogen, nitrite, dissolved, colorimetric, ASF, low ionic-strength",,1000,1000,USGS I-2542
-Nitrite,mg/l,mg/l,USEPA 300,Inorganic Anions by Ion Chromatography,,1000,1000,EPA 300
-Nitrite,mg/l,mg/l,USEPA 300.0,300.0 ~ EPA; Determination of Inorganic Anions by Ion Chromatography,,1000,1000,
+Nitrite,mg/l,mg/l,USEPA 300,Inorganic Anions by Ion Chromatography,,1000,1000,EPA 300.0
+Nitrite,mg/l,mg/l,USEPA 300.0,300.0 ~ EPA; Determination of Inorganic Anions by Ion Chromatography,,1000,1000,EPA 300.0
 Nitrite,mg/l,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1000,1000,EPA 353.2
 Nitrite,mg/l,mg/l,USEPA 354.1,Nitrite Nitrogen by Spectophotometry,,1000,1000,EPA 354.1
 Nitrite,mg/l,mg/l,USEPA 354.1,,,1000,1000,EPA 354.1
-Nitrite,mg/l,mg/l,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,-1000000,-1000000,
+Nitrite,mg/l,mg/l,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,-1000000,-1000000,methods_unknown
 Nitrite,mg/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1000,1000,methods_WQX
 Nitrite,mg/l,,11NPSWRD_WQX NPS_MISSING,Procedure not Required when Result Entered into National Database,,1000,1000,methods_WQX
 Nitrite,mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1000,1000,methods_WQX
-Nitrite,mg/l,,21COL001 HISTORIC,,,-1000000,-1000000,methods_fail
+Nitrite,mg/l,,21COL001 HISTORIC,,,-1000000,-1000000,methods_unknown
 Nitrite,mg/l,,BL 818-87T,818-87T ~ Total Nitrogen (BRAN AND LUEBBE METHOD 1987),,-1000000,-1000000,methods_fail
 Nitrite,mg/l,,CEDEN 124,EPA 353.2,,1000,1000,EPA 353.2
 Nitrite,mg/l,,CEDEN 204,EPA 354.1,,1000,1000,EPA 354.1
 Nitrite,mg/l,,CEDEN 273,Hach Method 8507,,1000,1000,HACH 8507
 Nitrite,mg/l,,CEDEN 307,USGS I-2540-90,,1000,1000,USGS I-2540-90
-Nitrite,mg/l,,CEDEN 4061,SM 4500-NO2 B v20,,1000,1000,APHA 4500-NO2(B)
-Nitrite,mg/l,,CEDEN 96,SM 4500-NO2 B,,1000,1000,APHA 4500-NO2(B)
+Nitrite,mg/l,,CEDEN 4061,SM 4500-NO2 B v20,,1000,1000,APHA 4500-NO2-B
+Nitrite,mg/l,,CEDEN 96,SM 4500-NO2 B,,1000,1000,APHA 4500-NO2-B
 Nitrite,mg/l,,HACH 10207,"Nitrite, Diazotization Method",,1000,1000,HACH 10207
 Nitrite,mg/l,,HACH 8507,Nitrite in Water,,1000,1000,HACH 8507
 Nitrite,mg/l,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1000,1000,methods_WQX
@@ -39,47 +39,47 @@ Nitrite,mg/l,,R10BUNKER USGS_HIST,USGS_HIST,,1000,1000,methods_unknown
 Nitrite,mg/l,,USDOI/USGS I-2540-90,Nitrite-Nitrogen in Water by Colorimetry,,1000,1000,USGS I-2540-90
 Nitrite,mg/l,,USDOI/USGS I-2542,"Nitrogen, nitrite, dissolved, colorimetric, ASF, low ionic-strength",,1000,1000,USGS I-2542
 Nitrite,mg/l,,USDOI/USGS I-4540-85,"Nitrogen, nitrite, total, in water by colorimetric, diazotization, automated-segmented flow",,1000,1000,USGS I-4540-85
-Nitrite,mg/l,,USEPA 300,Inorganic Anions by Ion Chromatography,,1000,1000,EPA 300
+Nitrite,mg/l,,USEPA 300,Inorganic Anions by Ion Chromatography,,1000,1000,EPA 300.0
 Nitrite,mg/l,,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,1000,1000,methods_WQX
-Nitrite,mg/l as N,mg/l as N,USGS 00049,"Nutrients, wf, NaR, colorimetric",613,1000,1000,USGS-00613
-Nitrite,mg/l as N,mg/l as N,USGS 49,"Nutrients, wf, NaR, colorimetric",613,1000,1000,USGS-00613
-Nitrite,mg/l as N,mg/l as N,USGS CL041,"Nutrients, wf, colorimetric",613,1000,1000,"USGS-00613; Nutrients, water filtered, colorimetric"
-Nitrite,mg/l as N,mg/l as N,USGS CL043,"Nutrients, LL, color",613,1000,1000,USGS-00613
-Nitrite,mg/l as N,mg/l as N,USGS DZ001,"Nitrite, wf, DA, diazo",613,1000,1000,"USGS-00613; Nitrite, filtered water, discrete analyzer, diazotization and colorimetry (formerly Mcode 00049)"
-Nitrite,mg/l as N,,NA NA,,613,1000,1000,USGS-00613
-Nitrite,mg/l as N,,USGS CL040,"Nitrite, wf, ASF diazotization",613,1000,1000,USGS-00613; Nitrite in filtered water by automated segmented flow (ASF) diazotization colorimetry
-Nitrite,mg/l as N,,USGS CL041,"Nutrients, wf, colorimetric",613,1000,1000,"USGS-00613; Nutrients, water filtered, colorimetric"
-Nitrite,mg/l as N,,USGS CL042,"Nitrite, LIS, ASF diazotization",613,1000,1000,"USGS-00613; Nitrite in low ionic strength (LIS) water, by automated segmented flow (ASF) diazotization colorimetry"
-Nitrite,mg/l as N,,USGS CL043,"Nutrients, LL, color",613,1000,1000,USGS-00613
-Nitrite,mg/l as N,,USGS DZ001,"Nitrite, wf, DA, diazo",613,1000,1000,"USGS-00613; Nitrite, filtered water, discrete analyzer, diazotization and colorimetry (formerly Mcode 00049)"
-Nitrite,mg/l as N,,USGS IC005,"Nitrite, wf, IC",613,1000,1000,USGS-00613
+Nitrite,mg/l as N,mg/l as N,USGS 00049,"Nutrients, wf, NaR, colorimetric",613,1000,1000,USGS_00613
+Nitrite,mg/l as N,mg/l as N,USGS 49,"Nutrients, wf, NaR, colorimetric",613,1000,1000,USGS_00613
+Nitrite,mg/l as N,mg/l as N,USGS CL041,"Nutrients, wf, colorimetric",613,1000,1000,"USGS_00613; Nutrients, water filtered, colorimetric"
+Nitrite,mg/l as N,mg/l as N,USGS CL043,"Nutrients, LL, color",613,1000,1000,USGS_00613
+Nitrite,mg/l as N,mg/l as N,USGS DZ001,"Nitrite, wf, DA, diazo",613,1000,1000,"USGS_00613; Nitrite, filtered water, discrete analyzer, diazotization and colorimetry (formerly Mcode 00049)"
+Nitrite,mg/l as N,,NA NA,,613,1000,1000,USGS_00613
+Nitrite,mg/l as N,,USGS CL040,"Nitrite, wf, ASF diazotization",613,1000,1000,USGS_00613; Nitrite in filtered water by automated segmented flow (ASF) diazotization colorimetry
+Nitrite,mg/l as N,,USGS CL041,"Nutrients, wf, colorimetric",613,1000,1000,"USGS_00613; Nutrients, water filtered, colorimetric"
+Nitrite,mg/l as N,,USGS CL042,"Nitrite, LIS, ASF diazotization",613,1000,1000,"USGS_00613; Nitrite in low ionic strength (LIS) water, by automated segmented flow (ASF) diazotization colorimetry"
+Nitrite,mg/l as N,,USGS CL043,"Nutrients, LL, color",613,1000,1000,USGS_00613
+Nitrite,mg/l as N,,USGS DZ001,"Nitrite, wf, DA, diazo",613,1000,1000,"USGS_00613; Nitrite, filtered water, discrete analyzer, diazotization and colorimetry (formerly Mcode 00049)"
+Nitrite,mg/l as N,,USGS IC005,"Nitrite, wf, IC",613,1000,1000,USGS_00613
 Nitrite,mg/l asNO2,,NA NA,,71856,304,304,"USGS_71856; Nitrite, water, filtered, milligrams per liter as nitrite"
-Nitrite,ug/l,ug/l,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,,1,1,EPA 300
-Nitrite,ug/l,,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,,1,1,EPA 300
-Nitrite,,mg/l,21FLMCGL SOP-1,,,-1000000,-1000000,
-Nitrite,,mg/l,21FLSFWM_WQX SM4500NO3F,SM4500NO3F,,-1000000,-1000000,
-Nitrite,,mg/l,21FLSFWM_WQX SM4500PF/NO3F,SM4500PF/NO3F,,-1000000,-1000000,
-Nitrite,,mg/l,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,-1000000,-1000000,
-Nitrite,,mg/l,MNPCA LEG_UNKNOWN,Legacy STORET migration; analytical procedure not specified,,-1000000,-1000000,
-Nitrite,,mg/l,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,-1000000,-1000000,
-Nitrite,,mg/l,USDOI/USGS I-2540-90,Nitrite-Nitrogen in Water by Colorimetry,,1000,1000,
-Nitrite,,mg/l,USEPA 300,Inorganic Anions by Ion Chromatography,,1000,1000,
+Nitrite,ug/l,ug/l,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,,1,1,EPA 300.0
+Nitrite,ug/l,,USEPA 300.0,Determination of Inorganic Anions by Ion Chromatography,,1,1,EPA 300.0
+Nitrite,,mg/l,21FLMCGL SOP-1,,,-1000000,-1000000,methods_unknown
+Nitrite,,mg/l,21FLSFWM_WQX SM4500NO3F,SM4500NO3F,,-1000000,-1000000,methods_fail
+Nitrite,,mg/l,21FLSFWM_WQX SM4500PF/NO3F,SM4500PF/NO3F,,-1000000,-1000000,methods_fail
+Nitrite,,mg/l,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,1000,1000,methods_WQX
+Nitrite,,mg/l,MNPCA LEG_UNKNOWN,Legacy STORET migration; analytical procedure not specified,,-1000000,-1000000,methods_unknown
+Nitrite,,mg/l,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1000,1000,methods_WQX
+Nitrite,,mg/l,USDOI/USGS I-2540-90,Nitrite-Nitrogen in Water by Colorimetry,,1000,1000,USGS I-2540-90
+Nitrite,,mg/l,USEPA 300,Inorganic Anions by Ion Chromatography,,1000,1000,EPA 300.0
 Nitrite,,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,1000,1000,EPA 353.2
-Nitrite,,mg/l,USEPA 354.1,Nitrite Nitrogen by Spectophotometry,,1000,1000,
-Nitrite,,mg/l,USEPA 354.1,,,1000,1000,
-Nitrite,,mg/l as N,NA NA,,613,1000,1000,USGS-00613
-Nitrite,,mg/l as N,USGS 00049,"Nutrients, wf, NaR, colorimetric",613,1000,1000,
-Nitrite,,mg/l as N,USGS 49,"Nutrients, wf, NaR, colorimetric",613,1000,1000,
-Nitrite,,mg/l as N,USGS CL040,"Nitrite, wf, ASF diazotization",613,1000,1000,USGS-00613; Nitrite in filtered water by automated segmented flow (ASF) diazotization colorimetry
-Nitrite,,mg/l as N,USGS CL041,"Nutrients, wf, colorimetric",613,1000,1000,"USGS-00613; Nutrients, water filtered, colorimetric"
-Nitrite,,mg/l as N,USGS CL042,"Nitrite, LIS, ASF diazotization",613,1000,1000,"USGS-00613; Nitrite in low ionic strength (LIS) water, by automated segmented flow (ASF) diazotization colorimetry"
-Nitrite,,mg/l as N,USGS CL043,"Nutrients, LL, color",613,1000,1000,
-Nitrite,,mg/l as N,USGS DZ001,"Nitrite, wf, DA, diazo",613,1000,1000,
-Nitrite,,mg/l as N,USGS IC005,"Nitrite, wf, IC",613,1000,1000,
-Nitrite,,mg/l asNO2,NA NA,,71856,1000,1000,
-Nitrite,,ug/l,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,1000,1000,
-Nitrite,,,NA NA,,,-1000000,-1000000,methods_fail
+Nitrite,,mg/l,USEPA 354.1,Nitrite Nitrogen by Spectophotometry,,1000,1000,EPA 345.1
+Nitrite,,mg/l,USEPA 354.1,,,1000,1000,EPA 345.1
+Nitrite,,mg/l as N,NA NA,,613,1000,1000,USGS_00613
+Nitrite,,mg/l as N,USGS 00049,"Nutrients, wf, NaR, colorimetric",613,1000,1000,USGS_00613
+Nitrite,,mg/l as N,USGS 49,"Nutrients, wf, NaR, colorimetric",613,1000,1000,USGS_00613
+Nitrite,,mg/l as N,USGS CL040,"Nitrite, wf, ASF diazotization",613,1000,1000,USGS_00613; Nitrite in filtered water by automated segmented flow (ASF) diazotization colorimetry
+Nitrite,,mg/l as N,USGS CL041,"Nutrients, wf, colorimetric",613,1000,1000,"USGS_00613; Nutrients, water filtered, colorimetric"
+Nitrite,,mg/l as N,USGS CL042,"Nitrite, LIS, ASF diazotization",613,1000,1000,"USGS_00613; Nitrite in low ionic strength (LIS) water, by automated segmented flow (ASF) diazotization colorimetry"
+Nitrite,,mg/l as N,USGS CL043,"Nutrients, LL, color",613,1000,1000,USGS_00613
+Nitrite,,mg/l as N,USGS DZ001,"Nitrite, wf, DA, diazo",613,1000,1000,USGS_00613
+Nitrite,,mg/l as N,USGS IC005,"Nitrite, wf, IC",613,1000,1000,USGS_00613
+Nitrite,,mg/l asNO2,NA NA,,71856,304,304,"USGS_71856; Nitrite, water, filtered, milligrams per liter as nitrite"
+Nitrite,,ug/l,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,1,1,EPA 300-A
+Nitrite,,,NA NA,,,-1000000,-1000000,units_fail
 Nitrite as N,mg/l,mg/l,21FLSFWM WQ-1,,,1000,1000,methods_unknown
 Nitrite as N,mg/l,mg/l,USEPA 353.2,,,1000,1000,EPA 353.2
 Nitrite as N,mg/l,,21FLSFWM WQ-1,,,1000,1000,methods_unknown
-Nitrite as N,,mg/l,21FLSFWM WQ-1,,,1000,1000,
+Nitrite as N,,mg/l,21FLSFWM WQ-1,,,1000,1000,methods_unknown
