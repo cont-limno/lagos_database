@@ -1,12 +1,12 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
 Mercury,mg/kg,mg/kg,AZDEQ_SW EPA 6010B,EPA 6010B,,-1000000,-1000000,units_fail
-Mercury,mg/kg,mg/kg,AZDEQ_SW EPA 7471A,EPA 7471A,,-1000000,-1000000,unitsmethods_fail
-Mercury,mg/kg,mg/kg,AZDEQ_SW EPA 7473,EPA 7473,,-1000000,-1000000,unitsmethods_fail
-Mercury,mg/kg,mg/kg,AZDEQ_SW EPA 7474,EPA 7474,,-1000000,-1000000,unitsmethods_fail
+Mercury,mg/kg,mg/kg,AZDEQ_SW EPA 7471A,EPA 7471A,,-1000000,-1000000,units_fail
+Mercury,mg/kg,mg/kg,AZDEQ_SW EPA 7473,EPA 7473,,-1000000,-1000000,units_fail
+Mercury,mg/kg,mg/kg,AZDEQ_SW EPA 7474,EPA 7474,,-1000000,-1000000,units_fail
 Mercury,mg/kg,,21OHIO_WQX USEPA 245.1,USEPA 245.1,,-1000000,-1000000,units_fail
-Mercury,mg/kg,,AZDEQ_SW EPA 7471A,EPA 7471A,,-1000000,-1000000,unitsmethods_fail
-Mercury,mg/kg,,KAWNATON_WQX 7471A,Mercury in Solid or Semisolid Waste,,-1000000,-1000000,unitsmethods_fail
-Mercury,mg/kg,,USEPA 7471A,7471 A ~ Mercury in Solid or Semisolid Waste,,-1000000,-1000000,unitsmethods_fail
+Mercury,mg/kg,,AZDEQ_SW EPA 7471A,EPA 7471A,,-1000000,-1000000,units_fail
+Mercury,mg/kg,,KAWNATON_WQX 7471A,Mercury in Solid or Semisolid Waste,,-1000000,-1000000,units_fail
+Mercury,mg/kg,,USEPA 7471A,7471 A ~ Mercury in Solid or Semisolid Waste,,-1000000,-1000000,units_fail
 Mercury,mg/l,mg/l,21FLORAN EPA200.7,,,1000000,1000000,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
 Mercury,mg/l,mg/l,APHA 3112-B,3112 B ~ Mercury in Water by CVAA,,1000000,1000000,APHA 3112-B
 Mercury,mg/l,mg/l,AZDEQ_SW EPA 245.1,EPA 245.1,,1000000,1000000,EPA 245.1; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
@@ -14,19 +14,19 @@ Mercury,mg/l,mg/l,AZDEQ_SW EPA 245.7,EPA 245.7,,1000000,1000000,EPA 245.7; Mercu
 Mercury,mg/l,mg/l,AZDEQ_SW SW846,SW846,,1000000,1000000,methods_unknown
 Mercury,mg/l,mg/l,CHEROKEE_WQX CN_QAPP,CN_QAPP,,1000000,1000000,methods_WQX
 Mercury,mg/l,mg/l,USEPA 200.7(W),,,1000000,1000000,EPA 200.7; Determination of Metals and Trace Elements in Water and Wastes by Inductively Coupled Plasma-Atomic Emission Spectrometry
-Mercury,mg/l,mg/l,USEPA 200.8,Metals in Waters by ICP/MS,,1000000,1000000,
-Mercury,mg/l,mg/l,USEPA 245.1,Mercury in Water by CVAA,,1000000,1000000,
+Mercury,mg/l,mg/l,USEPA 200.8,Metals in Waters by ICP/MS,,1000000,1000000,EPA 200.8
+Mercury,mg/l,mg/l,USEPA 245.1,Mercury in Water by CVAA,,1000000,1000000,EPA 245.1; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
 Mercury,mg/l,mg/l,USEPA 245.1,,,1000000,1000000,EPA 245.1; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
-Mercury,mg/l,mg/l,USEPA 245.2,Mercury by CVAA,,1000000,1000000,
+Mercury,mg/l,mg/l,USEPA 245.2,Mercury by CVAA,,1000000,1000000,EPA 245.2; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
 Mercury,mg/l,mg/l,USEPA 245.2,,,1000000,1000000,EPA 245.2; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
-Mercury,mg/l,mg/l,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1000000,1000000,EPA 7470 A
+Mercury,mg/l,mg/l,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1000000,1000000,EPA 7470-A
 Mercury,mg/l,,21ARIZ_WQX EPA 245.1,TOTAL MERCURY,,1000000,1000000,EPA 245.1; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
 Mercury,mg/l,,21ARIZ_WQX EPA 245.7,MERCURY IN WATER BY COLD VAPOR ATOMIC FLOURESCENCE SPECTROM,,1000000,1000000,EPA 245.7; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
 Mercury,mg/l,,KAWNATON_WQX 245.1,Mercury in Water by CVAA,,1000000,1000000,EPA 245.1; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
 Mercury,mg/l,,NA NA,,,1000000,1000000,methods_unknown
 Mercury,mg/l,,USEPA 245.1,Mercury in Water by CVAA,,1000000,1000000,EPA 245.1; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
 Mercury,mg/l,,USEPA 245.1,,,1000000,1000000,EPA 245.1; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
-Mercury,mg/l,,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1000000,1000000,EPA 7470 A
+Mercury,mg/l,,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1000000,1000000,EPA 7470-A
 Mercury,mg/l,,USEPA 7471A,7471 A ~ Mercury in Solid or Semisolid Waste,,-1000000,-1000000,methods_fail
 Mercury,ng/g,ng/g,AZDEQ_SW EPA 1631,EPA 1631,,-1000000,-1000000,units_fail
 Mercury,ng/g,ng/g,AZDEQ_SW EPA 1631 APP,EPA 1631 APP,,-1000000,-1000000,units_fail
@@ -40,9 +40,9 @@ Mercury,ng/l,ng/l,NA NA,,50286,1,1,"USGS_50286; Mercury, water, unfiltered, nano
 Mercury,ng/l,ng/l,USEPA 1631,"Mercury in Water by Oxidation, Purge and Trap, and CVAFS",,1,1,"EPA 1631; Mercury in Water by Oxidation, Purge and Trap, and CVAFS"
 Mercury,ng/l,ng/l,USEPA 1631,,,1,1,"EPA 1631; Mercury in Water by Oxidation, Purge and Trap, and CVAFS"
 Mercury,ng/l,ng/l,USEPA 1631E,"1631E ~ Mercury in Water by Oxidation, Purge and Trap, and CVAFS",,1,1,"EPA 1631 E; Mercury in Water by Oxidation, Purge and Trap, and CVAFS"
-Mercury,ng/l,ng/l,USEPA 245.1,Mercury in Water by CVAA,,1,1,
+Mercury,ng/l,ng/l,USEPA 245.1,Mercury in Water by CVAA,,1,1,EPA 245.1; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
 Mercury,ng/l,ng/l,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,,1,1,EPA 245.7; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
-Mercury,ng/l,ng/l,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1,1,EPA 7470 A
+Mercury,ng/l,ng/l,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1,1,EPA 7470-A
 Mercury,ng/l,ng/l,USGS CV004,"Mercury, w, oxidation P&T CVAFS",50286,1,1,"USGS_50286; Mercury, water, unfiltered, nanograms per liter"
 Mercury,ng/l,ng/l,USGS CV023,"Mercury, water, CVAFD,dichromate",50286,1,1,"USGS_50286; Mercury, water, unfiltered, nanograms per liter"
 Mercury,ng/l,ng/l,USGS CV031,"Mercury, w, P&T,CV-AFS(WI-TALWT)",50286,1,1,"USGS_50286; Mercury, water, unfiltered, nanograms per liter"
@@ -56,12 +56,12 @@ Mercury,ng/l,,NA NA,,50286,1,1,"USGS_50286; Mercury, water, unfiltered, nanogram
 Mercury,ng/l,,USEPA 1631,"Mercury in Water by Oxidation, Purge and Trap, and CVAFS",,1,1,"EPA 1631; Mercury in Water by Oxidation, Purge and Trap, and CVAFS"
 Mercury,ng/l,,USEPA 1631E,"1631E ~ Mercury in Water by Oxidation, Purge and Trap, and CVAFS",,1,1,"EPA 1631; Mercury in Water by Oxidation, Purge and Trap, and CVAFS"
 Mercury,ng/l,,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,,1,1,EPA 245.7; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
-Mercury,ppm,ppm,UTAHDWQ_WQX GENERIC METHOD,Used for all methods where historical methodology may not be available.,,1000000,1000000,
+Mercury,ppm,ppm,UTAHDWQ_WQX GENERIC METHOD,Used for all methods where historical methodology may not be available.,,1000000,1000000,methods_WQX
 Mercury,ppm,,UTAHDWQ_WQX GENERIC METHOD,Used for all methods where historical methodology may not be available.,,1000000,1000000,methods_WQX
-Mercury,ug/g,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,unitsmethods_fail
-Mercury,ug/kg,,NA NA,,62978,-1000000,-1000000,unitsmethods_fail
+Mercury,ug/g,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,units_fail
+Mercury,ug/kg,,NA NA,,62978,-1000000,-1000000,units_fail
 Mercury,ug/l,ng/l,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,,1000,1,EPA 245.7; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
-Mercury,ug/l,ug/l,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1000,1000,
+Mercury,ug/l,ug/l,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1000,1000,methods_WQX
 Mercury,ug/l,ug/l,21ARIZ SW846,,,1000,1000,methods_unknown
 Mercury,ug/l,ug/l,21FLSFWM WQ-1,,,1000,1000,methods_unknown
 Mercury,ug/l,ug/l,21NC01WQ UNKNOWN,,,1000,1000,methods_unknown
@@ -72,10 +72,10 @@ Mercury,ug/l,ug/l,AZDEQ_SW EPA 245.1,EPA 245.1,,1000,1000,EPA 245.1; Mercury in 
 Mercury,ug/l,ug/l,AZDEQ_SW SM 3112 B,SM 3112 B,,1000,1000,APHA 3112-B
 Mercury,ug/l,ug/l,AZDEQ_SW SW846,SW846,,1000,1000,methods_unknown
 Mercury,ug/l,ug/l,LADEQWPD UK_LAB,,,1000,1000,methods_unknown
-Mercury,ug/l,ug/l,PIIC_WQX PIIC_QAPP,PIIC_QAPP,,1000,1000,
+Mercury,ug/l,ug/l,PIIC_WQX PIIC_QAPP,PIIC_QAPP,,1000,1000,methods_unknown
 Mercury,ug/l,ug/l,R10BUNKER IN-CLP-LOW,IN-CLP-LOW,,1000,1000,methods_unknown
-Mercury,ug/l,ug/l,TURTLEMT GS_UNKNOWN,GS_UNKNOWN,,1000,1000,
-Mercury,ug/l,ug/l,USEPA 1631,"Mercury in Water by Oxidation, Purge and Trap, and CVAFS",,1000,1000,
+Mercury,ug/l,ug/l,TURTLEMT GS_UNKNOWN,GS_UNKNOWN,,1000,1000,methods_unknown
+Mercury,ug/l,ug/l,USEPA 1631,"Mercury in Water by Oxidation, Purge and Trap, and CVAFS",,1000,1000,EPA 1631
 Mercury,ug/l,ug/l,USEPA 1631,,,1000,1000,"EPA 1631; Mercury in Water by Oxidation, Purge and Trap, and CVAFS"
 Mercury,ug/l,ug/l,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1000,1000,EPA 200.8
 Mercury,ug/l,ug/l,USEPA 200.8(W),,,1000,1000,EPA 200.8
@@ -84,9 +84,9 @@ Mercury,ug/l,ug/l,USEPA 245.1,,,1000,1000,EPA 245.1; Mercury in Water by Cold Va
 Mercury,ug/l,ug/l,USEPA 245.2,Mercury by CVAA,,1000,1000,EPA 245.2; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
 Mercury,ug/l,ug/l,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,,1000,1000,EPA 245.7; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
 Mercury,ug/l,ug/l,USEPA 300.1,Determination of Inorganic Anions in Drinking Water by Ion Chromatography,,-1000000,-1000000,methods_fail
-Mercury,ug/l,ug/l,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1000,1000,EPA 7470 A
-Mercury,ug/l,ug/l,USEPA 7470A,,,1000,1000,EPA 7470 A
-Mercury,ug/l,ug/l,UTAHDWQ_WQX GENERIC METHOD,Used for all methods where historical methodology may not be available.,,1000,1000,
+Mercury,ug/l,ug/l,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1000,1000,EPA 7470-A
+Mercury,ug/l,ug/l,USEPA 7470A,,,1000,1000,EPA 7470-A
+Mercury,ug/l,ug/l,UTAHDWQ_WQX GENERIC METHOD,Used for all methods where historical methodology may not be available.,,1000,1000,methods_WQX
 Mercury,ug/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1000,1000,methods_WQX
 Mercury,ug/l,,21ARIZ UNKNOWN,,,1000,1000,methods_unknown
 Mercury,ug/l,,21ARIZ_WQX EPA 1631,"MERCURY IN WATER BY OXIDATION, PURGE AND TRAP, AND CVAFS",,1000,1000,"EPA 1631; Mercury in Water by Oxidation, Purge and Trap, and CVAFS"
@@ -109,58 +109,58 @@ Mercury,ug/l,,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1000,1000,EP
 Mercury,ug/l,,USEPA 245.1,Mercury in Water by CVAA,,1000,1000,EPA 245.1; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
 Mercury,ug/l,,USEPA 245.1,,,1000,1000,EPA 245.1; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
 Mercury,ug/l,,USEPA 245.2,Mercury by CVAA,,1000,1000,EPA 245.2; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
-Mercury,ug/l,,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1000,1000,EPA 7470 A
-Mercury,ug/l,,USEPA 7470A,,,1000,1000,EPA 7470 A
-Mercury,,mg/kg,NA NA,,,-1000000,-1000000,
-Mercury,,mg/l,21ARIZ_WQX EPA 245.1,TOTAL MERCURY,,1000000,1000000,
-Mercury,,mg/l,21ARIZ_WQX EPA 245.7,MERCURY IN WATER BY COLD VAPOR ATOMIC FLOURESCENCE SPECTROM,,1000000,1000000,
-Mercury,,mg/l,21ARIZ_WQX FIELD,FIELD PARAMETERS,,1000000,1000000,
-Mercury,,mg/l,21ARIZ_WQX SM 3112 B,STANDARD METHOD COLD VAPOR ATOMIC ABSORPTION SPECTRO METRIC,,1000000,1000000,
-Mercury,,mg/l,APHA 3112-B,3112 B ~ Mercury in Water by CVAA,,1000000,1000000,
-Mercury,,mg/l,APHA 3112-B,,,1000000,1000000,
-Mercury,,mg/l,KAWNATON_WQX 200.8,Metals in Waters by ICP/MS,,1000000,1000000,
-Mercury,,mg/l,KAWNATON_WQX 245.1,Mercury in Water by CVAA,,1000000,1000000,
-Mercury,,mg/l,KAWNATON_WQX 2541,Formaldehyde by GC/FID,,-1000000,-1000000,
-Mercury,,mg/l,KAWNATON_WQX 7471A,Mercury in Solid or Semisolid Waste,,1000000,1000000,
-Mercury,,mg/l,NA NA,,,1000000,1000000,
-Mercury,,mg/l,USEPA 200.8,Metals in Waters by ICP/MS,,1000000,1000000,
-Mercury,,mg/l,USEPA 245.1,Mercury in Water by CVAA,,1000000,1000000,
-Mercury,,mg/l,USEPA 245.1,,,1000000,1000000,
-Mercury,,mg/l,USEPA 245.2,Mercury by CVAA,,1000000,1000000,
-Mercury,,mg/l,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1000000,1000000,
-Mercury,,mg/l,USEPA 7470A,,,1000000,1000000,
-Mercury,,ng/l,NA NA,,50286,1000000,1000000,
-Mercury,,ng/l,USEPA 1631,"Mercury in Water by Oxidation, Purge and Trap, and CVAFS",,1000000,1000000,
-Mercury,,ng/l,USEPA 1631E,"1631E ~ Mercury in Water by Oxidation, Purge and Trap, and CVAFS",,1000000,1000000,
-Mercury,,ng/l,USEPA 245.1,Mercury in Water by CVAA,,1000000,1000000,
-Mercury,,ng/l,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,,1000000,1000000,
-Mercury,,ng/l,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1000000,1000000,
-Mercury,,ng/l,USGS CV004,"Mercury, w, oxidation P&T CVAFS",50286,1000000,1000000,
-Mercury,,None,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1000000,1000000,
-Mercury,,ug/l,21ARIZ EPA 245.1/7470,,,1000000,1000000,
-Mercury,,ug/l,21ARIZ SW846,,,1000000,1000000,
-Mercury,,ug/l,21ARIZ UNKNOWN,,,1000000,1000000,
-Mercury,,ug/l,21ARIZ_WQX EPA 245.1,TOTAL MERCURY,,1000000,1000000,
-Mercury,,ug/l,21ARIZ_WQX EPA 245.1/7470,EPA 245.1/7470,,1000000,1000000,
-Mercury,,ug/l,21ARIZ_WQX EPA 245.7,MERCURY IN WATER BY COLD VAPOR ATOMIC FLOURESCENCE SPECTROM,,1000000,1000000,
-Mercury,,ug/l,21ARIZ_WQX SM 3112 B,STANDARD METHOD COLD VAPOR ATOMIC ABSORPTION SPECTRO METRIC,,1000000,1000000,
-Mercury,,ug/l,21AWIC ADEM_HISTORICAL,Unkn Lab Proc,,-1000000,-1000000,
-Mercury,,ug/l,21COL001 HISTORIC,,,-1000000,-1000000,
-Mercury,,ug/l,21FLSFWM WQ-1,,,1000000,1000000,
-Mercury,,ug/l,21NC01WQ UNKNOWN,,,1000000,1000000,
-Mercury,,ug/l,APHA 3112-B,,,1000000,1000000,
-Mercury,,ug/l,MNPCA LEG_P71900,"MERCURY, TOTAL  (UG/L AS HG)",,1000000,1000000,
-Mercury,,ug/l,MNPCA LEG_UNKNOWN,Legacy STORET migration; analytical procedure not specified,,-1000000,-1000000,
-Mercury,,ug/l,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,-1000000,-1000000,
-Mercury,,ug/l,NA NA,,,1000000,1000000,
-Mercury,,ug/l,USEPA 1631E,"1631E ~ Mercury in Water by Oxidation, Purge and Trap, and CVAFS",,1000000,1000000,
-Mercury,,ug/l,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1000000,1000000,
-Mercury,,ug/l,USEPA 200.8(W),,,1000000,1000000,
-Mercury,,ug/l,USEPA 245.1,Mercury in Water by CVAA,,1000000,1000000,
-Mercury,,ug/l,USEPA 245.1,,,1000000,1000000,
-Mercury,,ug/l,USEPA 245.2,,,1000000,1000000,
-Mercury,,ug/l,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,,1000000,1000000,
-Mercury,,ug/l,USEPA 272.2,,,1000000,1000000,
-Mercury,,ug/l,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1000000,1000000,
-Mercury,,ug/l,USEPA 7470A,,,1000000,1000000,
+Mercury,ug/l,,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1000,1000,EPA 7470-A
+Mercury,ug/l,,USEPA 7470A,,,1000,1000,EPA 7470-A
+Mercury,,mg/kg,NA NA,,,-1000000,-1000000,units_fail
+Mercury,,mg/l,21ARIZ_WQX EPA 245.1,TOTAL MERCURY,,1000000,1000000,EPA 245.1; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
+Mercury,,mg/l,21ARIZ_WQX EPA 245.7,MERCURY IN WATER BY COLD VAPOR ATOMIC FLOURESCENCE SPECTROM,,1000000,1000000,EPA 245.7; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
+Mercury,,mg/l,21ARIZ_WQX FIELD,FIELD PARAMETERS,,1000000,1000000,methods_unknown
+Mercury,,mg/l,21ARIZ_WQX SM 3112 B,STANDARD METHOD COLD VAPOR ATOMIC ABSORPTION SPECTRO METRIC,,1000000,1000000,APHA 3112-B
+Mercury,,mg/l,APHA 3112-B,3112 B ~ Mercury in Water by CVAA,,1000000,1000000,APHA 3112-B
+Mercury,,mg/l,APHA 3112-B,,,1000000,1000000,APHA 3112-B
+Mercury,,mg/l,KAWNATON_WQX 200.8,Metals in Waters by ICP/MS,,1000000,1000000, EPA 200.8
+Mercury,,mg/l,KAWNATON_WQX 245.1,Mercury in Water by CVAA,,1000000,1000000,EPA 245.1; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
+Mercury,,mg/l,KAWNATON_WQX 2541,Formaldehyde by GC/FID,,-1000000,-1000000,methods_fail
+Mercury,,mg/l,KAWNATON_WQX 7471A,Mercury in Solid or Semisolid Waste,,-1000000,-1000000,methods_fail
+Mercury,,mg/l,NA NA,,,1000000,1000000,methods_unknown
+Mercury,,mg/l,USEPA 200.8,Metals in Waters by ICP/MS,,1000000,1000000,EPA 200.8
+Mercury,,mg/l,USEPA 245.1,Mercury in Water by CVAA,,1000000,1000000,EPA 245.1; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
+Mercury,,mg/l,USEPA 245.1,,,1000000,1000000,EPA 245.1; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
+Mercury,,mg/l,USEPA 245.2,Mercury by CVAA,,1000000,1000000,EPA 245.2; Mercury in Water by Cold Vapor Atomic Fluorescence Spectrometry
+Mercury,,mg/l,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1000000,1000000,EPA 7470-A
+Mercury,,mg/l,USEPA 7470A,,,1000000,1000000,EPA 7470-A
+Mercury,,ng/l,NA NA,,50286,1,1,"USGS_50286; Mercury, water, unfiltered, nanograms per liter"
+Mercury,,ng/l,USEPA 1631,"Mercury in Water by Oxidation, Purge and Trap, and CVAFS",,1,1,EPA 1631
+Mercury,,ng/l,USEPA 1631E,"1631E ~ Mercury in Water by Oxidation, Purge and Trap, and CVAFS",,1,1,EPA 1631-E
+Mercury,,ng/l,USEPA 245.1,Mercury in Water by CVAA,,1,1,EPA 245.1
+Mercury,,ng/l,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,,1,1,EPA 245.7
+Mercury,,ng/l,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1,1,EPA 7470-A
+Mercury,,ng/l,USGS CV004,"Mercury, w, oxidation P&T CVAFS",50286,1,1,"USGS_50286; Mercury, water, unfiltered, nanograms per liter"
+Mercury,,None,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,-1000000,-1000000,units_fail
+Mercury,,ug/l,21ARIZ EPA 245.1/7470,,,1000,1000,EPA 245.1
+Mercury,,ug/l,21ARIZ SW846,,,1000,1000,methods_unknown
+Mercury,,ug/l,21ARIZ UNKNOWN,,,1000,1000,methods_unknown
+Mercury,,ug/l,21ARIZ_WQX EPA 245.1,TOTAL MERCURY,,1000,1000,EPA 245.1
+Mercury,,ug/l,21ARIZ_WQX EPA 245.1/7470,EPA 245.1/7470,,1000,1000,EPA 245.1
+Mercury,,ug/l,21ARIZ_WQX EPA 245.7,MERCURY IN WATER BY COLD VAPOR ATOMIC FLOURESCENCE SPECTROM,,1000,1000,EPA 245.7
+Mercury,,ug/l,21ARIZ_WQX SM 3112 B,STANDARD METHOD COLD VAPOR ATOMIC ABSORPTION SPECTRO METRIC,,1000,1000,APHA 3112-B
+Mercury,,ug/l,21AWIC ADEM_HISTORICAL,Unkn Lab Proc,,1000,1000,methods_unknown
+Mercury,,ug/l,21COL001 HISTORIC,,,1000,1000,methods_unknown
+Mercury,,ug/l,21FLSFWM WQ-1,,,1000,1000,methods_unknown
+Mercury,,ug/l,21NC01WQ UNKNOWN,,,1000,1000,methods_unknown
+Mercury,,ug/l,APHA 3112-B,,,1000,1000,methods_unknown
+Mercury,,ug/l,MNPCA LEG_P71900,"MERCURY, TOTAL  (UG/L AS HG)",,1000,1000,"USGS_71900; Mercury, water, unfiltered, recoverable, micrograms per liter"
+Mercury,,ug/l,MNPCA LEG_UNKNOWN,Legacy STORET migration; analytical procedure not specified,,1000,1000,methods_unknown
+Mercury,,ug/l,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1000,1000,methods_WQX
+Mercury,,ug/l,NA NA,,,1000,1000,methods_unknown
+Mercury,,ug/l,USEPA 1631E,"1631E ~ Mercury in Water by Oxidation, Purge and Trap, and CVAFS",,1000,1000,EPA 1631-E
+Mercury,,ug/l,USEPA 200.8(W),200.8 W  ~ Metals in Waters by ICP/MS,,1000,1000,EPA 200.8
+Mercury,,ug/l,USEPA 200.8(W),,,1000,1000,EPA 200.8
+Mercury,,ug/l,USEPA 245.1,Mercury in Water by CVAA,,1000,1000,EPA 245.1
+Mercury,,ug/l,USEPA 245.1,,,1000,1000,EPA 245.2
+Mercury,,ug/l,USEPA 245.2,,,1000,1000,EPA 245.2
+Mercury,,ug/l,USEPA 245.7,Mercury in water by cold-vapor atomic fluorescence spectrometry,,1000,1000,EPA 245.7
+Mercury,,ug/l,USEPA 272.2,,,1000,1000,EPA 272.2
+Mercury,,ug/l,USEPA 7470A,7470 A ~ Mercury in Liquid Wastes by CVAA,,1000,1000,EPA 7470-A
+Mercury,,ug/l,USEPA 7470A,,,1000,1000,EPA 7470-A
 Mercury,,,USEPA 245.1,,,-1000000,-1000000,units_fail

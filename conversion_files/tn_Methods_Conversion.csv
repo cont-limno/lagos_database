@@ -1,17 +1,17 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Nitrogen,mg/l,mg/l,11NPSWRD_WQX CRLA_CCAL_TN,CCAL Total Nitrogen Procedure,,1000,1000,
-Nitrogen,mg/l,mg/l,11NPSWRD_WQX PINN_CHEM_N,Nitrogen in the Field with CHEMetrics Kit,,1000,1000,
+Nitrogen,mg/l,mg/l,11NPSWRD_WQX CRLA_CCAL_TN,CCAL Total Nitrogen Procedure,,1000,1000,methods_WQX
+Nitrogen,mg/l,mg/l,11NPSWRD_WQX PINN_CHEM_N,Nitrogen in the Field with CHEMetrics Kit,,1000,1000,methods_WQX
 Nitrogen,mg/l,mg/l,21NEV1_WQX 0050,NV Method 0050 Undefined,,-1000000,-1000000,methods_fail
 Nitrogen,mg/l,mg/l,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,1000,1000,APHA 4500-N-C
 Nitrogen,mg/l,mg/l,ASTM D3590(B),D3590 B  ~ TKN by AutoAnalyzer,,-1000000,-1000000,methods_fail
 Nitrogen,mg/l,mg/l,AZDEQ_SW CALCULATION,CALCULATION,,-1000000,-1000000,methods_fail; calculated
 Nitrogen,mg/l,mg/l,HACH 10242,"Nitrogen, Kjeldahl - Simplified Spectrophotometric Measurement of Total Kjeldahl Nitrogen in Water and Wastewater",,-1000000,-1000000,methods_fail
 Nitrogen,mg/l,mg/l,OREGONDEQ Calculated,Calculated analytes,,-1000000,-1000000,methods_fail; calculated
-Nitrogen,mg/l,mg/l,REDLAKE_WQX RL-02,Total Nitrogen,,1000,1000,
-Nitrogen,mg/l,mg/l,REDLAKE_WQX RL-07,Lachat 20-107-04-1B,,1000,1000,
+Nitrogen,mg/l,mg/l,REDLAKE_WQX RL-02,Total Nitrogen,,1000,1000,methods_WQX
+Nitrogen,mg/l,mg/l,REDLAKE_WQX RL-07,Lachat 20-107-04-1B,,1000,1000,methods_WQX
 Nitrogen,mg/l,mg/l,SOKAOGON_WQX calculation,calculation for Nitrogen,,-1000000,-1000000,methods_fail; calculated
 Nitrogen,mg/l,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,-1000000,-1000000,methods_fail
-Nitrogen,mg/l,mg/l,USEPA 353.2_M,353.2 M ~ Nitrate and Nitrite by Colorimetry,,-1000000,-1000000,
+Nitrogen,mg/l,mg/l,USEPA 353.2_M,353.2 M ~ Nitrate and Nitrite by Colorimetry,,-1000000,-1000000,methods_fail
 Nitrogen,mg/l,,11NPSWRD_WQX CRLA_CCAL_TN,CCAL Total Nitrogen Procedure,,1000,1000,methods_WQX
 Nitrogen,mg/l,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,-1000000,-1000000,methods_fail
 Nitrogen,mg/l,,1VTDECWQ VTDEC-101,"Total Nitrogen in Water - Persulfate Digestion (Ebina, 1983)",,1000,1000,methods_unknown
@@ -64,13 +64,13 @@ Nitrogen,ug/l,,NA NA,,,-1000000,-1000000,methods_fail
 Nitrogen,ug/l,,USEPA 351.1,Total Kjeldahl Nitrogen by Colorimetry,,-1000000,-1000000,methods_fail
 Nitrogen,umol,,11NPSWRD_WQX CACO_10107043B,Total Nitrogen Inline Persulfate Digestion,,-1000000,-1000000,units_fail
 Nitrogen,umol,,11NPSWRD_WQX CACO_31107041BC,Total Nitrogen Nitrates/Nitrites Method,,-1000000,-1000000,units_fail
-Nitrogen,,mg/l,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,1000,1000,
-Nitrogen,,mg/l,HACH 10208,"Nitrogen, Total Persulfate Digestion Method",,1000,1000,
-Nitrogen,,mg/l,HACH 10242,"Nitrogen, Kjeldahl - Simplified Spectrophotometric Measurement of Total Kjeldahl Nitrogen in Water and Wastewater",,-1000000,-1000000,
-Nitrogen,,mg/l,KAWNATON_WQX 10208,"Nitrogen, Total Persulfate Digestion Method",,1000,1000,
-Nitrogen,,mg/l,USDOI/USGS I-4650-03,"Nitrogen and Phosphorus, Total, Whole-water, Alkaline Persulfate Digest",,1000,1000,
-Nitrogen,,ug/l,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,-1000000,-1000000,
-Nitrogen,,ug/l,ASTM D5176,Nitrogen in Water by Pyrolysis Detection,,-1000000,-1000000,
+Nitrogen,,mg/l,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,1000,1000,APHA 4500-N-C
+Nitrogen,,mg/l,HACH 10208,"Nitrogen, Total Persulfate Digestion Method",,-1000000,-1000000,HACH 10208
+Nitrogen,,mg/l,HACH 10242,"Nitrogen, Kjeldahl - Simplified Spectrophotometric Measurement of Total Kjeldahl Nitrogen in Water and Wastewater",,-1000000,-1000000,methods_fail
+Nitrogen,,mg/l,KAWNATON_WQX 10208,"Nitrogen, Total Persulfate Digestion Method",,1000,1000,methods_WQX
+Nitrogen,,mg/l,USDOI/USGS I-4650-03,"Nitrogen and Phosphorus, Total, Whole-water, Alkaline Persulfate Digest",,1000,1000,USGS I-4650-03
+Nitrogen,,ug/l,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,1,1,APHA 4500-N-C
+Nitrogen,,ug/l,ASTM D5176,Nitrogen in Water by Pyrolysis Detection,,-1000000,-1000000,methods_fail
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,21COL001_WQX TOT-N_CALC_WQX,Total Nitrogen calculated from sum of TKN and NO3/NO2-N analyses,,-1000000,-1000000,methods_fail; calculated
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,21FLACEP_WQX NTOT,Total Nitrogen,,1000,1000,methods_WQX
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,-1000000,-1000000,methods_fail
@@ -79,7 +79,7 @@ Nitrogen,,ug/l,ASTM D5176,Nitrogen in Water by Pyrolysis Detection,,-1000000,-10
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,1000,1000,APHA 4500-N-C
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,ASTM D5176,Nitrogen in Water by Pyrolysis Detection,,1000,1000,ASTM-D5176
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,AZDEQ_SW EPA 353.2,EPA 353.2,,-1000000,-1000000,methods_fail
-"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,NA NA,,600,1000,1000,USGS_00600
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,NA NA,,600,-1000000,-1000000,methods_fail
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,NA NA,,602,1000,1000,USGS_00602
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,NA NA,,62854,1000,1000,USGS_62854
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,R10BUNKER USGS_UNKN,USGS_UNKN,,-1000000,-1000000,methods_fail
@@ -95,7 +95,7 @@ Nitrogen,,ug/l,ASTM D5176,Nitrogen in Water by Pyrolysis Detection,,-1000000,-10
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,mg/l,USGS PYRO1,"Total-N, wf, PCL (NWQL)",602,1000,1000,USGS_00602
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,,21ARIZ_WQX EPA 353.2,NITRITE PLUS NITRATE,,-1000000,-1000000,methods_fail
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,,ASTM D5176,Nitrogen in Water by Pyrolysis Detection,,1000,1000,ASTM-D5176
-"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,,NA NA,,600,1000,1000,USGS_00600
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,,NA NA,,600,-1000000,-1000000,methods_fail
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,,NA NA,,602,1000,1000,USGS_00602
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,,NA NA,,62854,1000,1000,USGS_62854
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l,,NA NA,,62855,1000,1000,USGS_62855
@@ -113,18 +113,18 @@ Nitrogen,,ug/l,ASTM D5176,Nitrogen in Water by Pyrolysis Detection,,-1000000,-10
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l NO3,,NA NA,,71887,-1000000,-1000000,methods_fail
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",mg/l NO3,,USGS G0083,"Total nitrogen, wu, calculated",71887,-1000000,-1000000,methods_fail; calculated
 "Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",ug/l,ug/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,-1000000,-1000000,methods_fail
-"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,21FLACEP_WQX NTOT,Total Nitrogen,,1000,1000,
-"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,NA NA,,600,1000,1000,
-"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USEPA 351.2,Total Kjeldahl Nitrogen by Colorimetry,,-1000000,-1000000,
-"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,-1000000,-1000000,
-"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USGS AKP01,"Nutrients, wu, WCA,persulfate,CF",62855,-1000000,-1000000,
-"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USGS CAL12,"Total N, sum of TKN + NOx",600,-1000000,-1000000,
-"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USGS CL063,"Nutrients, wf, FCC,persulfate,CF",62854,-1000000,-1000000,
-"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USGS CL153,"Nutrients, brines, colorimetry",62854,-1000000,-1000000,
-"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USGS CL153,"Nutrients, brines, colorimetry",62855,-1000000,-1000000,
-"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USGS PYRO1,"Total-N, wf, PCL (NWQL)",602,-1000000,-1000000,
-"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USGS PYRO2,"Total-N, wf, PCL (NWQL)",602,-1000000,-1000000,
-"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l NO3,NA NA,,71887,-1000000,-1000000,
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,21FLACEP_WQX NTOT,Total Nitrogen,,1000,1000,methods_WQX
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,NA NA,,600,-1000000,-1000000,methods_fail
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USEPA 351.2,Total Kjeldahl Nitrogen by Colorimetry,,-1000000,-1000000,methods_fail
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,-1000000,-1000000,methods_fail
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USGS AKP01,"Nutrients, wu, WCA,persulfate,CF",62855,-1000000,-1000000,USGS_62855
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USGS CAL12,"Total N, sum of TKN + NOx",600,-1000000,-1000000,methods_fail
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USGS CL063,"Nutrients, wf, FCC,persulfate,CF",62854,-1000000,-1000000,methods_fail
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USGS CL153,"Nutrients, brines, colorimetry",62854,-1000000,-1000000,methods_fail
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USGS CL153,"Nutrients, brines, colorimetry",62855,-1000000,-1000000,methods_fail
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USGS PYRO1,"Total-N, wf, PCL (NWQL)",602,-1000000,-1000000,USGS_00602
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l,USGS PYRO2,"Total-N, wf, PCL (NWQL)",602,-1000000,-1000000,USGS_00602
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",,mg/l NO3,NA NA,,71887,-1000000,-1000000,methods_fail
 Nutrient-nitrogen,mg/l,mg/l,21FLORAN EPA200.7,,,-1000000,-1000000,methods_fail
 Nutrient-nitrogen,mg/l,mg/l,21FLORAN EPA365.1,,,-1000000,-1000000,methods_fail; total_p
 Nutrient-nitrogen,mg/l,mg/l,21IOWA_WQX SEC_DERIV_UV,Second Derivative Spectroscopy,,-1000000,-1000000,methods_fail
@@ -132,11 +132,11 @@ Nutrient-nitrogen,mg/l,mg/l,AOAC 973.48,Total Nitrogen in Water,,-1000000,-10000
 Nutrient-nitrogen,mg/l,mg/l,AOAC 973.48,,,-1000000,-1000000,methods_fail; tkn
 Nutrient-nitrogen,mg/l,mg/l,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,1000,1000,APHA 4500-N-C
 Nutrient-nitrogen,mg/l,mg/l,APHA 4500-NO3(F),4500 NO3 F  ~ Nitrate in Water- Automated Cadmium Reduction,,-1000000,-1000000,methods_fail
-Nutrient-nitrogen,mg/l,mg/l,APHA 4500-P-J,4500 P J ~ Persulfate Method for Simultaneous Determination of Total Nitrogen and Total Phosphorus,,1000,1000,
+Nutrient-nitrogen,mg/l,mg/l,APHA 4500-P-J,4500 P J ~ Persulfate Method for Simultaneous Determination of Total Nitrogen and Total Phosphorus,,1000,1000,APHA 4500-P-J
 Nutrient-nitrogen,mg/l,mg/l,USEPA 351.2,,,-1000000,-1000000,methods_fail; total_p
 Nutrient-nitrogen,mg/l,mg/l,USEPA 353.2,,,-1000000,-1000000,methods_fail; total_p
 Nutrient-nitrogen,mg/l,mg/l,USEPA 354.1,,,-1000000,-1000000,methods_fail; total_p
-Nutrient-nitrogen,mg/l,mg/l,USEPA 440(W),440 W  ~ Determination of Carbon and Nitrogen,,-1000000,-1000000,
+Nutrient-nitrogen,mg/l,mg/l,USEPA 440(W),440 W  ~ Determination of Carbon and Nitrogen,,-1000000,-1000000,methods_fail
 Nutrient-nitrogen,mg/l,,21NDHDWQ UNKOWN,,,-1000000,-1000000,methods_fail
 Nutrient-nitrogen,mg/l,,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,1000,1000,APHA 4500-N-C
 Nutrient-nitrogen,mg/l,,APHA 4500-NO3(E),4500 NO3 E  ~ Nitrate in Water- Cadmium Reduction,,-1000000,-1000000,methods_fail
@@ -155,15 +155,15 @@ Nutrient-nitrogen,ug/l,mg/l,21FLERDI ALKPERDIG,,,-1000000,-1000000,methods_fail
 Nutrient-nitrogen,ug/l,ug/l,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,1,1,APHA 4500-N-C
 Nutrient-nitrogen,ug/l,,21FLKWAT LAKEWATCH_V,,,-1000000,-1000000,methods_fail
 Nutrient-nitrogen,ug/l,,APHA 4500-NO3(F),,,-1000000,-1000000,methods_fail
-Nutrient-nitrogen,,mg/l,21IOWA_WQX SEC_DERIV_UV,Second Derivative Spectroscopy,,-1000000,-1000000,
-Nutrient-nitrogen,,mg/l,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,1000,1000,
-Nutrient-nitrogen,,mg/l,APHA 4500-NO3(E),4500 NO3 E  ~ Nitrate in Water- Cadmium Reduction,,-1000000,-1000000,
-Nutrient-nitrogen,,mg/l,APHA 4500-NO3(F),4500 NO3 F  ~ Nitrate in Water- Automated Cadmium Reduction,,-1000000,-1000000,
-Nutrient-nitrogen,,mg/l,MNPCA AWRESRCH NT031,"Nitrogen, Total, by Oxidizing Organic and Ammonium Nitrogen to Nitrate and then Measuring Nitrate",,1000,1000,
-Nutrient-nitrogen,,mg/l,MNPCA TN SEC-DER SPEC,Nitrate and Organic N Analyses with Second-Derivative Spectroscopy,,-1000000,-1000000,
-Nutrient-nitrogen,,None,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,1000,1000,
-Nutrient-nitrogen,,ug/l,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,1000,1000,
-"Total Nitrogen, mixed forms",mg/l,mg/l,INSTOR_WQX SM4500P-J,SM4500P-J,,-1000000,-1000000,APHA 4500-P-J
+Nutrient-nitrogen,,mg/l,21IOWA_WQX SEC_DERIV_UV,Second Derivative Spectroscopy,,-1000000,-1000000,methods_fail
+Nutrient-nitrogen,,mg/l,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,1000,1000,APHA 4500-N-C
+Nutrient-nitrogen,,mg/l,APHA 4500-NO3(E),4500 NO3 E  ~ Nitrate in Water- Cadmium Reduction,,-1000000,-1000000,methods_fail
+Nutrient-nitrogen,,mg/l,APHA 4500-NO3(F),4500 NO3 F  ~ Nitrate in Water- Automated Cadmium Reduction,,-1000000,-1000000,methods_fail
+Nutrient-nitrogen,,mg/l,MNPCA AWRESRCH NT031,"Nitrogen, Total, by Oxidizing Organic and Ammonium Nitrogen to Nitrate and then Measuring Nitrate",,1000,1000,methods_unknown
+Nutrient-nitrogen,,mg/l,MNPCA TN SEC-DER SPEC,Nitrate and Organic N Analyses with Second-Derivative Spectroscopy,,-1000000,-1000000,methods_fail
+Nutrient-nitrogen,,None,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,1000,1000,APHA 4500-N-C
+Nutrient-nitrogen,,ug/l,APHA 4500-N-C,4500 N C ~ Persufate Method for Total Nitrogen,,1000,1000,APHA 4500-N-C
+"Total Nitrogen, mixed forms",mg/l,mg/l,INSTOR_WQX SM4500P-J,SM4500P-J,,1000,1000,APHA 4500-P-J
 "Total Nitrogen, mixed forms",mg/l,mg/l,USEPA 353.2,Nitrate-Nitrite Nitrogen by Colorimetry,,-1000000,-1000000,methods_fail; total_p
 "Total Nitrogen, mixed forms",mg/l,,APHA 4500-NO3(C),4500 NO3 C  ~ Nitrate in Water by Ion Chromatography,,-1000000,-1000000,methods_fail
 "Total Nitrogen, mixed forms",mg/l,,NA NA,,,-1000000,-1000000,methods_fail

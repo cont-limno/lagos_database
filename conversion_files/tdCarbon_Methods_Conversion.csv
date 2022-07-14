@@ -1,107 +1,107 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
-Carbon,mg/l,,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,-1000000,-1000000,
-Carbon,mg/l,,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,-1000000,-1000000,
-Carbon,mg/l,,USEPA 415.1,Total Organic Carbon by Combustion,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,21FLSFWM WQ-1,,,1,1,
-Organic carbon,mg/l,mg/l,21FLSFWM_WQX SM5310B,SM5310B,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,21FLSJWM_WQX OTHER/UNKNOWN,Other or Unknown Procedure,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,APHA 5310-C,,,1,1,
-Organic carbon,mg/l,mg/l,APHA 5310-D,5310 D ~ Total Organic Carbon in Water- Wet-Oxidation Method,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,APHA_SM20ED 5310-B,5310 B ~ Total Organic Carbon by High-Temperature Combustion Method,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,AZDEQ_SW EPA 415.1,EPA 415.1,,-1000000,-1000000,total organic carbon
-Organic carbon,mg/l,mg/l,AZDEQ_SW EPA 415.2,EPA 415.2,,-1000000,-1000000,total organic carbon
-Organic carbon,mg/l,mg/l,AZDEQ_SW SM 5210B,SM 5210B,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,AZDEQ_SW SM 5220 C,SM 5220 C,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,AZDEQ_SW SM 5310 B,SM 5310 B,,1,1,
-Organic carbon,mg/l,mg/l,AZDEQ_SW SM 5310 C,SM 5310 C,,1,1,
-Organic carbon,mg/l,mg/l,AZDEQ_SW UNKNOWN,UNKNOWN,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,AZDEQ_SW WALKLEY BLACK,WALKLEY BLACK,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,CEDEN 165,EPA 415.1M,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,NA NA,,681,1,1,
-Organic carbon,mg/l,mg/l,USEPA 120.1,Conductance,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,USEPA 150.1,pH,,1,1,
-Organic carbon,mg/l,mg/l,USEPA 170.1,Temperature,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,USEPA 415.1,Total Organic Carbon by Combustion,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,USEPA 415.1,,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,USEPA 415.2,Low Level Total Organic Carbon in Water,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,USEPA 9060,Total Organic Carbon in Water and Waste,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,USEPA 9060AM,9060 AM ~ Total Volatile Organic Carbon,,-1000000,-1000000,
-Organic carbon,mg/l,mg/l,USGS 00121,"DOC, CO2 formation & detection",681,1,1,
-Organic carbon,mg/l,mg/l,USGS 121,"DOC, CO2 formation & detection",681,1,1,
-Organic carbon,mg/l,mg/l,USGS COMB4,"Organic-C, combustion-IR method",681,1,1,
-Organic carbon,mg/l,mg/l,USGS OX002,"DOC, persulfate oxidation & IR",681,1,1,
-Organic carbon,mg/l,mg/l,USGS OX006,"DOC,0.45um cap,acid,persulfateIR",681,1,1,
-Organic carbon,mg/l,mg/l,USGS OX007,"DOC, 0.45u silver, persulfate IR",681,1,1,
-Organic carbon,mg/l,mg/l,USGS OX008,"DOC, 0.7um GFF,acid,persulfateIR",681,1,1,
-Organic carbon,mg/l,mg/l,USGS OX023,"DOC, UV/persulfate/IR (USGS-NYL)",681,1,1,
-Organic carbon,mg/l,mg/l,USGS OX024,"DOC, persulfate oxid, IR (COWSC)",681,1,1,
-Organic carbon,mg/l,mg/l,USGS OX026,"DOC, wu, persulfate (SM5310C;CO)",681,1,1,
-Organic carbon,mg/l,mg/l,USGS OX033,"DOC, UV/persulfate (NYWSC; ALSC)",681,1,1,
-Organic carbon,mg/l,ug/l,AZDEQ_SW SM 5310 C,SM 5310 C,,-1000000,-1000000,total organic carbon
-Organic carbon,mg/l,,11113300 UNKNOWN,EXACT FIELD OR LAB METHOD IS UNKNOWN,,-1000000,-1000000,
-Organic carbon,mg/l,,1119USBR P681,,,1,1,
-Organic carbon,mg/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,
-Organic carbon,mg/l,,21ARIZ_WQX EPA 3510C/8081A,ORGANOCHLORINE PESTICIDES,,-1000000,-1000000,
-Organic carbon,mg/l,,21ARIZ_WQX EPA 415.1,TOTAL ORGANIC CARBON,,-1000000,-1000000,
-Organic carbon,mg/l,,21ARIZ_WQX EPA 415.2,TOTAL ORGANIC CARBON,,-1000000,-1000000,
-Organic carbon,mg/l,,21ARIZ_WQX SM 5210B,"BIOCHEMICAL OXYGEN DEMAND, 5-DAY",,-1000000,-1000000,
-Organic carbon,mg/l,,21ARIZ_WQX SM 5220 C,STANDARD METHOD 5220 C,,1,1,
-Organic carbon,mg/l,,21ARIZ_WQX SM 5310 B,DISSOLVED CARBON ANALYSIS,,1,1,
-Organic carbon,mg/l,,21ARIZ_WQX SM 5310 C,TOTAL CARBON ANALYSIS,,-1000000,-1000000,
-Organic carbon,mg/l,,21ARIZ_WQX SM 5310 D,WET OXIDATION METHOD,,-1000000,-1000000,
-Organic carbon,mg/l,,21FLSFWM WQ-1,,,1,1,
+Carbon,mg/l,,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Carbon,mg/l,,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Carbon,mg/l,,USEPA 415.1,Total Organic Carbon by Combustion,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,mg/l,mg/l,21FLSFWM WQ-1,,,1,1,methods_unknown
+Organic carbon,mg/l,mg/l,21FLSFWM_WQX SM5310B,SM5310B,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,mg/l,21FLSFWM_WQX WQ-1,Laboratory Procedures for Water Quality Chemical Analysis,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,mg/l,21FLSJWM_WQX OTHER/UNKNOWN,Other or Unknown Procedure,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,mg/l,APHA 10200-H,10200 H ~ Chlorophyll a-b-c Determination,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,mg/l,APHA 2540-D,2540 D ~ Total Suspended Solids in Water,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,mg/l,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,mg/l,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,mg/l,APHA 5310-C,,,1,1,APHA 5310-C
+Organic carbon,mg/l,mg/l,APHA 5310-D,5310 D ~ Total Organic Carbon in Water- Wet-Oxidation Method,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,mg/l,APHA_SM20ED 5310-B,5310 B ~ Total Organic Carbon by High-Temperature Combustion Method,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,mg/l,AZDEQ_SW EPA 415.1,EPA 415.1,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,mg/l,mg/l,AZDEQ_SW EPA 415.2,EPA 415.2,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,mg/l,mg/l,AZDEQ_SW SM 5210B,SM 5210B,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,mg/l,AZDEQ_SW SM 5220 C,SM 5220 C,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,mg/l,AZDEQ_SW SM 5310 B,SM 5310 B,,1,1,APHA 5310-B
+Organic carbon,mg/l,mg/l,AZDEQ_SW SM 5310 C,SM 5310 C,,1,1,APHA 5310-C
+Organic carbon,mg/l,mg/l,AZDEQ_SW UNKNOWN,UNKNOWN,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,mg/l,AZDEQ_SW WALKLEY BLACK,WALKLEY BLACK,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,mg/l,CEDEN 165,EPA 415.1M,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,mg/l,mg/l,NA NA,,681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,mg/l,USEPA 120.1,Conductance,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,mg/l,USEPA 150.1,pH,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,mg/l,USEPA 170.1,Temperature,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,mg/l,USEPA 300(A),300 A  ~ Inorganic Anions by Ion Chromatography,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,mg/l,USEPA 415.1,Total Organic Carbon by Combustion,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,mg/l,mg/l,USEPA 415.1,,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,mg/l,mg/l,USEPA 415.2,Low Level Total Organic Carbon in Water,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,mg/l,mg/l,USEPA 9060,Total Organic Carbon in Water and Waste,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,mg/l,USEPA 9060AM,9060 AM ~ Total Volatile Organic Carbon,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,mg/l,USGS 00121,"DOC, CO2 formation & detection",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,mg/l,USGS 121,"DOC, CO2 formation & detection",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,mg/l,USGS COMB4,"Organic-C, combustion-IR method",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,mg/l,USGS OX002,"DOC, persulfate oxidation & IR",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,mg/l,USGS OX006,"DOC,0.45um cap,acid,persulfateIR",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,mg/l,USGS OX007,"DOC, 0.45u silver, persulfate IR",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,mg/l,USGS OX008,"DOC, 0.7um GFF,acid,persulfateIR",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,mg/l,USGS OX023,"DOC, UV/persulfate/IR (USGS-NYL)",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,mg/l,USGS OX024,"DOC, persulfate oxid, IR (COWSC)",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,mg/l,USGS OX026,"DOC, wu, persulfate (SM5310C;CO)",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,mg/l,USGS OX033,"DOC, UV/persulfate (NYWSC; ALSC)",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,ug/l,AZDEQ_SW SM 5310 C,SM 5310 C,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,,11113300 UNKNOWN,EXACT FIELD OR LAB METHOD IS UNKNOWN,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,,1119USBR P681,,,1,1,methods_unknown
+Organic carbon,mg/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,methods_unknown
+Organic carbon,mg/l,,21ARIZ_WQX EPA 3510C/8081A,ORGANOCHLORINE PESTICIDES,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,,21ARIZ_WQX EPA 415.1,TOTAL ORGANIC CARBON,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,mg/l,,21ARIZ_WQX EPA 415.2,TOTAL ORGANIC CARBON,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,mg/l,,21ARIZ_WQX SM 5210B,"BIOCHEMICAL OXYGEN DEMAND, 5-DAY",,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,,21ARIZ_WQX SM 5220 C,STANDARD METHOD 5220 C,,-1000000,-1000000,methods_fail; COD
+Organic carbon,mg/l,,21ARIZ_WQX SM 5310 B,DISSOLVED CARBON ANALYSIS,,1,1,APHA 5310-B
+Organic carbon,mg/l,,21ARIZ_WQX SM 5310 C,TOTAL CARBON ANALYSIS,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,,21ARIZ_WQX SM 5310 D,WET OXIDATION METHOD,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,,21FLSFWM WQ-1,,,1,1,methods_unknown
 Organic carbon,mg/l,,AOAC 973.47,Organic Carbon in Water,,1,1,"AOAC 973.47-1973, Organic carbon in water. Infrared analyzer met"
-Organic carbon,mg/l,,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,-1000000,-1000000,
-Organic carbon,mg/l,,APHA 5310-B,,,-1000000,-1000000,
-Organic carbon,mg/l,,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,-1000000,-1000000,
-Organic carbon,mg/l,,APHA 5310-C,,,-1000000,-1000000,
-Organic carbon,mg/l,,APHA_SM20ED 5310-B,5310 B ~ Total Organic Carbon by High-Temperature Combustion Method,,-1000000,-1000000,
-Organic carbon,mg/l,,AZDEQ_SW EPA 415.1,EPA 415.1,,-1000000,-1000000,total organic carbon
-Organic carbon,mg/l,,AZDEQ_SW SM 5310 C,SM 5310 C,,-1000000,-1000000,
-Organic carbon,mg/l,,CEDEN 126,SM 5310 C,,-1000000,-1000000,
-Organic carbon,mg/l,,CEDEN 165,EPA 415.1M,,-1000000,-1000000,
-Organic carbon,mg/l,,CEDEN 207,SM 5310 B,,-1000000,-1000000,
-Organic carbon,mg/l,,CEDEN 272,UCSC SOP UCSCLM-011,,-1000000,-1000000,
-Organic carbon,mg/l,,CEDEN 5262,METH011.00,,-1000000,-1000000,
-Organic carbon,mg/l,,CEDEN 62,EPA 415.1,,-1000000,-1000000,
-Organic carbon,mg/l,,COE/ISU_WQX APHA 5310 C,TOC - Persulfate-Ultraviolet or Heated-Persulfate Oxidation Method,,-1000000,-1000000,
-Organic carbon,mg/l,,MNPCA LEG_P00681,"CARBON, DISSOLVED ORGANIC (MG/L AS C)",,-1000000,-1000000,
-Organic carbon,mg/l,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,-1000000,-1000000,
-Organic carbon,mg/l,,NA NA,,681,1,1,
-Organic carbon,mg/l,,NA NA,,,1,1,
-Organic carbon,mg/l,,OREGONDEQ Not Available,Not Available,,-1000000,-1000000,
-Organic carbon,mg/l,,R10BUNKER USGS_UNKN,USGS_UNKN,,1,1,
-Organic carbon,mg/l,,SOKAOGON_WQX Unknown,Unknown - STORET DATA,,-1000000,-1000000,
-Organic carbon,mg/l,,USEPA 415.1,Total Organic Carbon by Combustion,,-1000000,-1000000,
-Organic carbon,mg/l,,USEPA 415.1,,,-1000000,-1000000,
-Organic carbon,mg/l,,USEPA 415.2,Low Level Total Organic Carbon in Water,,-1000000,-1000000,
-Organic carbon,mg/l,,USEPA 507,Nitrogen and Phosphorus Pesticides,,-1000000,-1000000,
-Organic carbon,mg/l,,USEPA 9060,Total Organic Carbon in Water and Waste,,-1000000,-1000000,
-Organic carbon,mg/l,,USGS 00123,"DOC, EPA method",681,1,1,
-Organic carbon,mg/l,,USGS CMB15,"DOC, wf, 0.45 um cap, combust IR",681,1,1,
-Organic carbon,mg/l,,USGS CMB16,"DOC, wf, 0.7 um GFF, combust IR",681,1,1,
-Organic carbon,mg/l,,USGS COMB4,"Organic-C, combustion-IR method",681,1,1,
-Organic carbon,mg/l,,USGS OX002,"DOC, persulfate oxidation & IR",681,1,1,
-Organic carbon,mg/l,,USGS OX006,"DOC,0.45um cap,acid,persulfateIR",681,1,1,
-Organic carbon,mg/l,,USGS OX007,"DOC, 0.45u silver, persulfate IR",681,1,1,
-Organic carbon,mg/l,,USGS OX008,"DOC, 0.7um GFF,acid,persulfateIR",681,1,1,
-Organic carbon,mg/l,,USGS OX023,"DOC, UV/persulfate/IR (USGS-NYL)",681,1,1,
-Organic carbon,ppm,,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,-1000000,-1000000,
-Organic carbon,,mg/l,21ARIZ_WQX EPA 415.1,TOTAL ORGANIC CARBON,,-1000000,-1000000,
-Organic carbon,,mg/l,21ARIZ_WQX SM 5310 B,DISSOLVED CARBON ANALYSIS,,1,1,
-Organic carbon,,mg/l,21ARIZ_WQX SM 5310 C,TOTAL CARBON ANALYSIS,,-1000000,-1000000,
-Organic carbon,,mg/l,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,-1000000,-1000000,
-Organic carbon,,mg/l,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,-1000000,-1000000,
-Organic carbon,,mg/l,MNPCA LEG_P00681,"CARBON, DISSOLVED ORGANIC (MG/L AS C)",,1,1,
-Organic carbon,,mg/l,NA NA,,681,-1000000,-1000000,
-Organic carbon,,mg/l,USEPA 415.2,Low Level Total Organic Carbon in Water,,-1000000,-1000000,
-Organic carbon,,mg/l,USGS COMB4,"Organic-C, combustion-IR method",681,1,1,
-Organic carbon,,mg/l,USGS OX006,"DOC,0.45um cap,acid,persulfateIR",681,1,1,
-Organic carbon,,mg/l,USGS OX007,"DOC, 0.45u silver, persulfate IR",681,1,1,
+Organic carbon,mg/l,,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,,APHA 5310-B,,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,,APHA 5310-C,,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,,APHA_SM20ED 5310-B,5310 B ~ Total Organic Carbon by High-Temperature Combustion Method,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,,AZDEQ_SW EPA 415.1,EPA 415.1,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,mg/l,,AZDEQ_SW SM 5310 C,SM 5310 C,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,,CEDEN 126,SM 5310 C,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,,CEDEN 165,EPA 415.1M,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,mg/l,,CEDEN 207,SM 5310 B,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,,CEDEN 272,UCSC SOP UCSCLM-011,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,,CEDEN 5262,METH011.00,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,,CEDEN 62,EPA 415.1,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,mg/l,,COE/ISU_WQX APHA 5310 C,TOC - Persulfate-Ultraviolet or Heated-Persulfate Oxidation Method,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,mg/l,,MNPCA LEG_P00681,"CARBON, DISSOLVED ORGANIC (MG/L AS C)",,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,,NA NA,,681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,,NA NA,,,1,1,methods_unknown
+Organic carbon,mg/l,,OREGONDEQ Not Available,Not Available,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,,R10BUNKER USGS_UNKN,USGS_UNKN,,1,1,methods_unknown
+Organic carbon,mg/l,,SOKAOGON_WQX Unknown,Unknown - STORET DATA,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,,USEPA 415.1,Total Organic Carbon by Combustion,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,mg/l,,USEPA 415.1,,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,mg/l,,USEPA 415.2,Low Level Total Organic Carbon in Water,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,mg/l,,USEPA 507,Nitrogen and Phosphorus Pesticides,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,,USEPA 9060,Total Organic Carbon in Water and Waste,,-1000000,-1000000,methods_fail
+Organic carbon,mg/l,,USGS 00123,"DOC, EPA method",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,,USGS CMB15,"DOC, wf, 0.45 um cap, combust IR",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,,USGS CMB16,"DOC, wf, 0.7 um GFF, combust IR",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,,USGS COMB4,"Organic-C, combustion-IR method",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,,USGS OX002,"DOC, persulfate oxidation & IR",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,,USGS OX006,"DOC,0.45um cap,acid,persulfateIR",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,,USGS OX007,"DOC, 0.45u silver, persulfate IR",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,,USGS OX008,"DOC, 0.7um GFF,acid,persulfateIR",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,mg/l,,USGS OX023,"DOC, UV/persulfate/IR (USGS-NYL)",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,ppm,,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,,mg/l,21ARIZ_WQX EPA 415.1,TOTAL ORGANIC CARBON,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,,mg/l,21ARIZ_WQX SM 5310 B,DISSOLVED CARBON ANALYSIS,,1,1,APHA 5310-B
+Organic carbon,,mg/l,21ARIZ_WQX SM 5310 C,TOTAL CARBON ANALYSIS,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,,mg/l,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,,mg/l,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,-1000000,-1000000,methods_fail; APHA 5310 TOC
+Organic carbon,,mg/l,MNPCA LEG_P00681,"CARBON, DISSOLVED ORGANIC (MG/L AS C)",,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,,mg/l,NA NA,,681,-1000000,-1000000,methods_fail
+Organic carbon,,mg/l,USEPA 415.2,Low Level Total Organic Carbon in Water,,-1000000,-1000000,methods_fail; EPA 415
+Organic carbon,,mg/l,USGS COMB4,"Organic-C, combustion-IR method",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,,mg/l,USGS OX006,"DOC,0.45um cap,acid,persulfateIR",681,1,1,USGS_00681; organic carbon dissolved
+Organic carbon,,mg/l,USGS OX007,"DOC, 0.45u silver, persulfate IR",681,1,1,USGS_00681; organic carbon dissolved
