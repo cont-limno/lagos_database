@@ -137,8 +137,8 @@ Specific conductance,umho/cm,umho/cm,SDWRAP WRAPFLD,,,1,1,methods_unknown
 Specific conductance,umho/cm,umho/cm,USEPA 110.2,,,-1000000,-1000000,methods_fail
 Specific conductance,umho/cm,umho/cm,USEPA 120.1,Conductance,,1,1,EPA 120.1
 Specific conductance,umho/cm,umho/cm,USEPA 120.1,,,1,1,EPA 120.1
-Specific conductance,umho/cm,umho/cm,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,
-Specific conductance,umho/cm,umho/cm,UTAHDWQ_WQX GENERIC METHOD,Used for all methods where historical methodology may not be available.,,1,1,
+Specific conductance,umho/cm,umho/cm,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,methods_WQX
+Specific conductance,umho/cm,umho/cm,UTAHDWQ_WQX GENERIC METHOD,Used for all methods where historical methodology may not be available.,,1,1,methods_WQX
 Specific conductance,umho/cm,uS/cm,USEPA 120.1,,,1,1,EPA 120.1
 Specific conductance,umho/cm,,11NPSWRD_WQX NPS_NURE_LASCS,Los Alamos Procedure to Determine Specific Conductance Values in the Field from Samples,,1,1,methods_WQX
 Specific conductance,umho/cm,,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1,1,methods_WQX
@@ -410,11 +410,11 @@ Specific conductance,uS/cm @25C,,USGS SC005,"SC, lab, manual (USGS-NYL)",90095,1
 Specific conductance,uS/cm @25C,,USGS SC006,"SC, lab, auto (USGS-NYL)",90095,1,1,USGS_90095
 Specific conductance,uS/cm @25C,,USGS WHT01,"Spec. cond., lab, bridge (NWQL)",90095,1,1,USGS_90095
 Specific conductance,uS/cm @25C,,USGS WHT03,"Specific cond, lab, autom bridge",90095,1,1,USGS_90095
-Specific conductance,,mS/cm,NA NA,,,1,1,
-Specific conductance,,uS/cm,MNPCA FLD,"Field measurement/observation, generic method",,1,1,
-Specific conductance,,uS/cm,MNPCA LEG_P00095,SPECIFIC CONDUCTANCE (UMHOS/CM @ 25C),,1,1,
-Specific conductance,,uS/cm @25C,NA NA,,95,1,1,
-Specific conductance,,uS/cm @25C,NA NA,,90095,1,1,
-Specific conductance,,uS/cm @25C,USGS SC001,Specific conductance sensor,95,1,1,
-Specific conductance,,uS/cm @25C,USGS WHT03,"Specific cond, lab, autom bridge",90095,1,1,
+Specific conductance,,mS/cm,NA NA,,,1,1,methods_unknown
+Specific conductance,,uS/cm,MNPCA FLD,"Field measurement/observation, generic method",,1,1,methods_unknown
+Specific conductance,,uS/cm,MNPCA LEG_P00095,SPECIFIC CONDUCTANCE (UMHOS/CM @ 25C),,1,1,methods_unknown
+Specific conductance,,uS/cm @25C,NA NA,,95,1,1,methods_unknown
+Specific conductance,,uS/cm @25C,NA NA,,90095,1,1,methods_unknown
+Specific conductance,,uS/cm @25C,USGS SC001,Specific conductance sensor,95,1,1,USGS
+Specific conductance,,uS/cm @25C,USGS WHT03,"Specific cond, lab, autom bridge",90095,1,1,USGS
 Specific conductance,,,APHA 2510,Conductivity in Water,,-1000000,-1000000,units_fail

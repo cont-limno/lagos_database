@@ -1,22 +1,22 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
 Dissolved microcystins plus nodularins,ug/l,ug/l,USGS IMM07,"Diss MC/NOD, ELISA (Kansas IMND)",89012,1,1,"USGS_89012; Dissolved microcystins plus nodularins, water, filtered, ADDA specific enzyme-linked immunosorbent assay, recoverable, micrograms per liter"
 Dissolved microcystins plus nodularins,ug/l,,NA NA,,89012,1,1,"USGS_89012; Dissolved microcystins plus nodularins, water, filtered, ADDA specific enzyme-linked immunosorbent assay, recoverable, micrograms per liter"
-Dissolved microcystins plus nodularins,,ug/l,NA NA,,89012,1,1,
-Dissolved microcystins plus nodularins,,ug/l,USGS IMM07,"Diss MC/NOD, ELISA (Kansas IMND)",89012,1,1,
-Dissolved microcystins plus nodularins,,ug/l,USGS IMM31,"Dis MC/NOD,fz/thw ELISA (IMNDDM)",89012,1,1,
+Dissolved microcystins plus nodularins,,ug/l,NA NA,,89012,1,1,"USGS_89012; Dissolved microcystins plus nodularins, water, filtered, ADDA specific enzyme-linked immunosorbent assay, recoverable, micrograms per liter"
+Dissolved microcystins plus nodularins,,ug/l,USGS IMM07,"Diss MC/NOD, ELISA (Kansas IMND)",89012,1,1,"USGS_89012; Dissolved microcystins plus nodularins, water, filtered, ADDA specific enzyme-linked immunosorbent assay, recoverable, micrograms per liter"
+Dissolved microcystins plus nodularins,,ug/l,USGS IMM31,"Dis MC/NOD,fz/thw ELISA (IMNDDM)",89012,1,1,"USGS_89012; Dissolved microcystins plus nodularins, water, filtered, ADDA specific enzyme-linked immunosorbent assay, recoverable, micrograms per liter"
 Microcystin,ng/ml,ng/ml,11113300 MICROCYSTIN,MICROCYSTIN SAMPLE ANALYSIS,,1,1,methods_unknown
 Microcystin,ng/ml,,11113300 MICROCYSTIN,MICROCYSTIN SAMPLE ANALYSIS,,1,1,methods_unknown
-Microcystin,ppb,ppb,ABRAXIS LLC 520011,"Microcystins and Nodularins by Immunoassay, Microtiter Plate",,1,1,
-Microcystin,ppb,ppb,ABRAXIS LLC 520012,"Microcystins in water by Immunoassay, Coated Tube",,1,1,
-Microcystin,ppb,ppb,COEOMAHA_WQX ELISA1,Immunoassay - Microcystins (Total=cells lysed; Dissolved= not lysed),,1,1,
-Microcystin,ppb,ppb,NA NA,,,1,1,
+Microcystin,ppb,ppb,ABRAXIS LLC 520011,"Microcystins and Nodularins by Immunoassay, Microtiter Plate",,1,1,methods_unknown
+Microcystin,ppb,ppb,ABRAXIS LLC 520012,"Microcystins in water by Immunoassay, Coated Tube",,1,1,methods_unknown
+Microcystin,ppb,ppb,COEOMAHA_WQX ELISA1,Immunoassay - Microcystins (Total=cells lysed; Dissolved= not lysed),,1,1,methods_unknown
+Microcystin,ppb,ppb,NA NA,,,1,1,methods_unknown
 Microcystin,ppb,,21NEB001_WQX ELISA,Abraxis enzyme-linked immuno-sorbent assay,,1,1,methods_WQX
 Microcystin,ppb,,ABRAXIS LLC 520011,"Microcystins and Nodularins by Immunoassay, Microtiter Plate",,1,1,methods_unknown
 Microcystin,ppb,,ABRAXIS LLC 520012,"Microcystins in water by Immunoassay, Coated Tube",,1,1,methods_unknown
 Microcystin,ppb,,COEOMAHA_WQX ELISA1,Immunoassay - Microcystins (Total=cells lysed; Dissolved= not lysed),,1,1,methods_WQX
 Microcystin,ppb,,EPA_R7_WQX 2338.04,Microcystin LR,,1,1,methods_WQX
 Microcystin,ppb,,NA NA,,,-1.00E+06,-1.00E+06,methods_fail
-Microcystin,ug/l,ppb,ABRAXIS LLC 520011,"Microcystins and Nodularins by Immunoassay, Microtiter Plate",,1,1,
+Microcystin,ug/l,ppb,ABRAXIS LLC 520011,"Microcystins and Nodularins by Immunoassay, Microtiter Plate",,1,1,methods_unknown
 Microcystin,ug/l,ppb,EPA_R7_WQX 2338.04,Microcystin LR,,1,1,methods_WQX
 Microcystin,ug/l,ug/l,21FLSFWM WQ-1,,,1,1,methods_unknown
 Microcystin,ug/l,ug/l,21FLSFWM_WQX SFWMD 3170,SFWMD 3170,,1,1,methods_WQX
@@ -45,32 +45,32 @@ Microcystin,ug/l,,NA NA,,65211,1,1,"USGS_65211; Dissolved microcystin, water, fi
 Microcystin,ug/l,,NA NA,,,-1.00E+06,-1.00E+06,methods_fail
 Microcystin,ug/l,,USEPA 546,Microcystins and Nodularins by Adda Enzyme-Linked Immunosorbent Assay,,1,1,EPA 546
 Microcystin,ug/l,,WIDNR_WQX LCGC_21_634,ALGALTOXINS IN WATER BY HPLC/MS/MS,,1,1,methods_WQX
-Microcystin,,None,ABRAXIS LLC 520011,"Microcystins and Nodularins by Immunoassay, Microtiter Plate",,1,1,
-Microcystin,,ppb,21NEB001_WQX ELISA,Abraxis enzyme-linked immuno-sorbent assay,,1,1,
-Microcystin,,ppb,ABRAXIS LLC 520011,"Microcystins and Nodularins by Immunoassay, Microtiter Plate",,1,1,
-Microcystin,,ppb,COEOMAHA_WQX ELISA1,Immunoassay - Microcystins (Total=cells lysed; Dissolved= not lysed),,1,1,
-Microcystin,,ppb,EPA_R7_WQX 2338.04,Microcystin LR,,1,1,
-Microcystin,,ug/l,21ARIZ_WQX FIELD,FIELD PARAMETERS,,1,1,
-Microcystin,,ug/l,21FLSFWM WQ-1,,,1,1,
-Microcystin,,ug/l,21IOWA_WQX TOT MICROCYSTIN,Microcystins ELISA (Microtiter Plate),,1,1,
-Microcystin,,ug/l,21NEB001_WQX ELISA,Abraxis enzyme-linked immuno-sorbent assay,,1,1,
-Microcystin,,ug/l,ABRAXIS LLC 520011,"Microcystins and Nodularins by Immunoassay, Microtiter Plate",,1,1,
-Microcystin,,ug/l,EPA_R7_WQX 2338.04,Microcystin LR,,1,1,
-Microcystin,,ug/l,MDEQ_WQ_WQX MICRO-ELISA-MDEQ-WQ,Microcystins by ELISA - Total,,1,1,
-Microcystin,,ug/l,MTVOLWQM_WQX 546M-MTVOLWQM,Determination of Total Microcystins and Nodularin in Water by ELISA - Modified,,1,1,
-Microcystin,,ug/l,NA NA,,65209,1,1,
-Microcystin,,ug/l,NA NA,,65210,1,1,
-Microcystin,,ug/l,NA NA,,65211,1,1,
+Microcystin,,None,ABRAXIS LLC 520011,"Microcystins and Nodularins by Immunoassay, Microtiter Plate",,1,1,methods_unknown
+Microcystin,,ppb,21NEB001_WQX ELISA,Abraxis enzyme-linked immuno-sorbent assay,,1,1,methods_unknown
+Microcystin,,ppb,ABRAXIS LLC 520011,"Microcystins and Nodularins by Immunoassay, Microtiter Plate",,1,1,methods_unknown
+Microcystin,,ppb,COEOMAHA_WQX ELISA1,Immunoassay - Microcystins (Total=cells lysed; Dissolved= not lysed),,1,1,methods_unknown
+Microcystin,,ppb,EPA_R7_WQX 2338.04,Microcystin LR,,1,1,methods_unknown
+Microcystin,,ug/l,21ARIZ_WQX FIELD,FIELD PARAMETERS,,1,1,methods_unknown
+Microcystin,,ug/l,21FLSFWM WQ-1,,,1,1,methods_unknown
+Microcystin,,ug/l,21IOWA_WQX TOT MICROCYSTIN,Microcystins ELISA (Microtiter Plate),,1,1,methods_unknown
+Microcystin,,ug/l,21NEB001_WQX ELISA,Abraxis enzyme-linked immuno-sorbent assay,,1,1,methods_unknown
+Microcystin,,ug/l,ABRAXIS LLC 520011,"Microcystins and Nodularins by Immunoassay, Microtiter Plate",,1,1,methods_unknown
+Microcystin,,ug/l,EPA_R7_WQX 2338.04,Microcystin LR,,1,1,methods_unknown
+Microcystin,,ug/l,MDEQ_WQ_WQX MICRO-ELISA-MDEQ-WQ,Microcystins by ELISA - Total,,1,1,methods_unknown
+Microcystin,,ug/l,MTVOLWQM_WQX 546M-MTVOLWQM,Determination of Total Microcystins and Nodularin in Water by ELISA - Modified,,1,1,methods_unknown
+Microcystin,,ug/l,NA NA,,65209,1,1,USGSPcode 65209
+Microcystin,,ug/l,NA NA,,65210,1,1,USGSPcode 65210
+Microcystin,,ug/l,NA NA,,65211,1,1,USGSPcode 65211
 Microcystin-HilR,ug/l,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,EPA 544
 Microcystin-HilR,ug/l,ug/l,MTVOLWQM_WQX 544M-MTVOLWQM,Determination of Microcystins and Nodularin in Drinking Water by LC/MS/MS - Modified,,1,1,EPA 544
-Microcystin-HilR,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,
-Microcystin-HtyR,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,
+Microcystin-HilR,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,methods_unknown
+Microcystin-HtyR,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,methods_unknown
 Microcystin dLR,ug/l,ug/l,MTVOLWQM_WQX 544M-MTVOLWQM,Determination of Microcystins and Nodularin in Drinking Water by LC/MS/MS - Modified,,1,1,EPA 544
-Microcystin dLR,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,
-Microcystin dRR,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,
-Microcystin dRR,,ug/l,MTVOLWQM_WQX 544M-MTVOLWQM,Determination of Microcystins and Nodularin in Drinking Water by LC/MS/MS - Modified,,1,1,
-Microcystin HiLR,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",52165,1,1,
-Microcystin HtYR,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",52161,1,1,
+Microcystin dLR,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,methods_unknown
+Microcystin dRR,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,methods_unknown
+Microcystin dRR,,ug/l,MTVOLWQM_WQX 544M-MTVOLWQM,Determination of Microcystins and Nodularin in Drinking Water by LC/MS/MS - Modified,,1,1,methods_unknown
+Microcystin HiLR,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",52165,1,1,USGS LCM73
+Microcystin HtYR,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",52161,1,1,USGS LCM73
 Microcystin LA,ppb,ppb,CAHFS DTOX-02-670,"Microcystin LA, Microcystin RR, and Microcystin YR Analysis",,1,1,methods_unknown
 Microcystin LA,ppb,ppb,POMO989_WQX MICROCYSTIN,MICROCYSTIN,,1,1,methods_WQX
 Microcystin LA,ug/l,ug/l,CEDEN 4041,"Mekebri, et al., 2009",,1,1,methods_unknown
@@ -80,17 +80,17 @@ Microcystin LA,ug/l,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",65188,1,1,"U
 Microcystin LA,ug/l,,CEDEN 4041,"Mekebri, et al., 2009",,1,1,methods_unknown
 Microcystin LA,ug/l,,CEDEN 5341,LC/MS/MS,,1,1,methods_unknown
 Microcystin LA,ug/l,,USEPA 8321,Non-Volatile Compounds by HPLC,,-1.00E+06,-1.00E+06,methods_fail
-Microcystin LA,,ppb,CAHFS DTOX-02-670,"Microcystin LA, Microcystin RR, and Microcystin YR Analysis",,1,1,
-Microcystin LA,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,
-Microcystin LA,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",65188,1,1,
+Microcystin LA,,ppb,CAHFS DTOX-02-670,"Microcystin LA, Microcystin RR, and Microcystin YR Analysis",,1,1,methods_unknown
+Microcystin LA,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,methods_unknown
+Microcystin LA,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",65188,1,1,USGS LCM73
 Microcystin LF,ug/l,ug/l,USEPA 8321,Non-Volatile Compounds by HPLC,,-1.00E+06,-1.00E+06,methods_fail
 Microcystin LF,ug/l,,USEPA 8321,Non-Volatile Compounds by HPLC,,-1.00E+06,-1.00E+06,methods_fail
-Microcystin LF,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,
-Microcystin LF,,ug/l,MTVOLWQM_WQX 544M-MTVOLWQM,Determination of Microcystins and Nodularin in Drinking Water by LC/MS/MS - Modified,,1,1,
-Microcystin LF,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",65186,1,1,
+Microcystin LF,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,methods_unknown
+Microcystin LF,,ug/l,MTVOLWQM_WQX 544M-MTVOLWQM,Determination of Microcystins and Nodularin in Drinking Water by LC/MS/MS - Modified,,1,1,methods_unknown
+Microcystin LF,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",65186,1,1,USGS LCM73
 Microcystin LR,ng/l,ng/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,0.001,0.001,EPA 544
 Microcystin LR,ppb,ppb,CAHFS DTOX-02-670,"Microcystin LA, Microcystin RR, and Microcystin YR Analysis",,1,1,methods_unknown
-Microcystin LR,ppb,ppb,EPA_R7_WQX ELISA,Abraxis enzyme-linked immuno-sorbent assay,,-1000000,-1000000,
+Microcystin LR,ppb,ppb,EPA_R7_WQX ELISA,Abraxis enzyme-linked immuno-sorbent assay,,-1000000,-1000000,methods_fail
 Microcystin LR,ppb,ppb,POMO989_WQX MICROCYSTIN,MICROCYSTIN,,1,1,methods_WQX
 Microcystin LR,ppb,,EPA_R7_WQX ELISA,Abraxis enzyme-linked immuno-sorbent assay,,1,1,methods_WQX
 Microcystin LR,ug/l,ug/l,INSTOR_WQX 546,546,,1,1,EPA 546
@@ -107,23 +107,23 @@ Microcystin LR,ug/l,,EPA_R7_WQX 2338.04,Microcystin LR,,1,1,methods_WQX
 Microcystin LR,ug/l,,EPA_R7_WQX ELISA,Abraxis enzyme-linked immuno-sorbent assay,,1,1,methods_WQX
 Microcystin LR,ug/l,,USEPA 8321,Non-Volatile Compounds by HPLC,,-1.00E+06,-1.00E+06,methods_fail
 Microcystin LR,ug/l,,USGS LM107,"Tot MC/NOD, wu, LC/MS (SUNY-ESF)",54240,1,1,"USGS_54240; Total microcystins plus nodularins, water, unfiltered, micrograms per liter"
-Microcystin LR,,ng/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,-1000000,-1000000,
-Microcystin LR,,ppb,CAHFS DTOX-02-670,"Microcystin LA, Microcystin RR, and Microcystin YR Analysis",,1,1,
-Microcystin LR,,ug/l,EPA_R7_WQX 2338.04,Microcystin LR,,1,1,
-Microcystin LR,,ug/l,EPA_R7_WQX ELISA,Abraxis enzyme-linked immuno-sorbent assay,,1,1,
-Microcystin LR,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,
-Microcystin LR,,ug/l,NA NA,,63685,1,1,
-Microcystin LR,,ug/l,NA NA,,,1,1,
-Microcystin LR,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",63685,1,1,
-Microcystin LR,,ug/l,USGS LM107,"Tot MC/NOD, wu, LC/MS (SUNY-ESF)",54240,1,1,
-Microcystin LW,,ug/l,MTVOLWQM_WQX 544M-MTVOLWQM,Determination of Microcystins and Nodularin in Drinking Water by LC/MS/MS - Modified,,1,1,
-Microcystin LW,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",65185,1,1,
+Microcystin LR,,ng/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,-1000000,-1000000,methods_fail
+Microcystin LR,,ppb,CAHFS DTOX-02-670,"Microcystin LA, Microcystin RR, and Microcystin YR Analysis",,1,1,methods_unknown
+Microcystin LR,,ug/l,EPA_R7_WQX 2338.04,Microcystin LR,,1,1,methods_unknown
+Microcystin LR,,ug/l,EPA_R7_WQX ELISA,Abraxis enzyme-linked immuno-sorbent assay,,1,1,methods_unknown
+Microcystin LR,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,methods_unknown
+Microcystin LR,,ug/l,NA NA,,63685,1,1,methods_unknown
+Microcystin LR,,ug/l,NA NA,,,1,1,methods_unknown
+Microcystin LR,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",63685,1,1,USGS LCM73
+Microcystin LR,,ug/l,USGS LM107,"Tot MC/NOD, wu, LC/MS (SUNY-ESF)",54240,1,1,USGS LM107
+Microcystin LW,,ug/l,MTVOLWQM_WQX 544M-MTVOLWQM,Determination of Microcystins and Nodularin in Drinking Water by LC/MS/MS - Modified,,1,1,methods_unknown
+Microcystin LW,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",65185,1,1,USGS LCM73
 Microcystin LY,ug/l,ug/l,USEPA 8321,Non-Volatile Compounds by HPLC,,-1.00E+06,-1.00E+06,methods_fail
 Microcystin LY,ug/l,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",52163,1,1,"USGS_52163; Microcystin LY, water, filtered, recoverable, micrograms per liter"
 Microcystin LY,ug/l,,USEPA 8321,Non-Volatile Compounds by HPLC,,-1.00E+06,-1.00E+06,methods_fail
-Microcystin LY,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,
-Microcystin LY,,ug/l,MTVOLWQM_WQX 544M-MTVOLWQM,Determination of Microcystins and Nodularin in Drinking Water by LC/MS/MS - Modified,,1.00E+00,1.00E+00,
-Microcystin LY,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",52163,1,1,
+Microcystin LY,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,methods_unknown
+Microcystin LY,,ug/l,MTVOLWQM_WQX 544M-MTVOLWQM,Determination of Microcystins and Nodularin in Drinking Water by LC/MS/MS - Modified,,1.00E+00,1.00E+00,methods_unknown
+Microcystin LY,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",52163,1,1,USGS LCM73
 Microcystin RR,ng/l,ng/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,0.001,0.001,EPA 544
 Microcystin RR,ppb,ppb,CAHFS DTOX-02-670,"Microcystin LA, Microcystin RR, and Microcystin YR Analysis",,1,1,methods_unknown
 Microcystin RR,ppb,ppb,POMO989_WQX MICROCYSTIN,MICROCYSTIN,,1,1,methods_WQX
@@ -131,13 +131,13 @@ Microcystin RR,ug/l,ug/l,MTVOLWQM_WQX 544M-MTVOLWQM,Determination of Microcystin
 Microcystin RR,ug/l,ug/l,USEPA 8321,Non-Volatile Compounds by HPLC,,-1.00E+06,-1.00E+06,methods_fail
 Microcystin RR,ug/l,,CEDEN 4041,"Mekebri, et al., 2009",,1,1,methods_unknown
 Microcystin RR,ug/l,,USEPA 8321,Non-Volatile Compounds by HPLC,,-1.00E+06,-1.00E+06,methods_fail
-Microcystin RR,,ng/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,
-Microcystin RR,,ppb,CAHFS DTOX-02-670,"Microcystin LA, Microcystin RR, and Microcystin YR Analysis",,1.00E+00,1.00E+00,
-Microcystin RR,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,
-Microcystin RR,,ug/l,NA NA,,64048,1.00E+00,1,
-Microcystin RR,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",64048,1,1,
+Microcystin RR,,ng/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,methods_unknown
+Microcystin RR,,ppb,CAHFS DTOX-02-670,"Microcystin LA, Microcystin RR, and Microcystin YR Analysis",,1.00E+00,1.00E+00,methods_unknown
+Microcystin RR,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,methods_unknown
+Microcystin RR,,ug/l,NA NA,,64048,1.00E+00,1,USGSPcode 64048
+Microcystin RR,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",64048,1,1,USGS LCM73
 Microcystin WR,ug/l,ug/l,MTVOLWQM_WQX 544M-MTVOLWQM,Determination of Microcystins and Nodularin in Drinking Water by LC/MS/MS - Modified,,1,1,EPA 544
-Microcystin WR,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",52162,1,1,
+Microcystin WR,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",52162,1,1,USGS LCM73
 Microcystin YR,ng/l,ng/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,0.001,0.001,EPA 544
 Microcystin YR,ppb,ppb,CAHFS DTOX-02-670,"Microcystin LA, Microcystin RR, and Microcystin YR Analysis",,1,1,methods_unknown
 Microcystin YR,ppb,ppb,POMO989_WQX MICROCYSTIN,MICROCYSTIN,,1,1,methods_WQX
@@ -147,17 +147,17 @@ Microcystin YR,ug/l,ug/l,USEPA 8321,Non-Volatile Compounds by HPLC,,-1.00E+06,-1
 Microcystin YR,ug/l,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",65187,1,1,"USGS_65187; Microcystin YR, water, filtered, recoverable, micrograms per liter"
 Microcystin YR,ug/l,,CEDEN 4041,"Mekebri, et al., 2009",,1,1,methods_unknown
 Microcystin YR,ug/l,,USEPA 8321,Non-Volatile Compounds by HPLC,,-1.00E+06,-1.00E+06,methods_fail
-Microcystin YR,,ng/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,
-Microcystin YR,,ppb,CAHFS DTOX-02-670,"Microcystin LA, Microcystin RR, and Microcystin YR Analysis",,1,1,
-Microcystin YR,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,
-Microcystin YR,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",65187,1,1,
+Microcystin YR,,ng/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,methods_unknown
+Microcystin YR,,ppb,CAHFS DTOX-02-670,"Microcystin LA, Microcystin RR, and Microcystin YR Analysis",,1,1,methods_unknown
+Microcystin YR,,ug/l,MDEQ_WQ_WQX 544M-MDEQ-WQ,Determination of Microcystins by LC/MS/MS - Modified,,1,1,methods_unknown
+Microcystin YR,,ug/l,USGS LCM73,"Algal toxins, LC/MS (KS LCTX)",65187,1,1,methods_unknown
 Microcystins,ppb,ppb,ABRAXIS LLC 520011,"Microcystins and Nodularins by Immunoassay, Microtiter Plate",,1,1,methods_unknown
 Microcystins,ppb,ppb,POMO989_WQX MICROCYSTIN,MICROCYSTIN,,1,1,methods_WQX
 Microcystins,ug/l,ug/l,OREGONDEQ DEQ Microcystin,DEQ Microcystin,,1,1,methods_unknown
 Microcystins,ug/l,ug/l,USEPA 546,Microcystins and Nodularins by Adda Enzyme-Linked Immunosorbent Assay,,1,1,EPA 546
 Microcystins and nodularins,ug/l,ug/l,21FLSFWM_WQX SFWMD 3170,SFWMD 3170,,1,1,methods_WQX
 Microcystis,cp/100 mL,,USGS BAC67,"Microsystis 16S rRNA genes, QPCR",51755,-1.00E+06,-1.00E+06,"unitsmethods_fail; Microcystis 16S gene, water, DNA based, recoverable, copies per 100 milliliters"
-Microcystis,,cp/100 mL,USGS BAC67,"Microsystis 16S rRNA genes, QPCR",51755,-1.00E+06,-1.00E+06,
+Microcystis,,cp/100 mL,USGS BAC67,"Microsystis 16S rRNA genes, QPCR",51755,-1.00E+06,-1.00E+06,"unitsmethods_fail; Microcystis 16S gene, water, DNA based, recoverable, copies per 100 milliliters"
 Total microcystins plus nodularins,ug/l,ug/l,NA NA,,89011,1,1,"USGS_89011; Total microcystins plus nodularins, water, filtered, recoverable, totalgranod,wu,saes elisaper liter"
 Total microcystins plus nodularins,ug/l,ug/l,USGS IMM06,"Total MC/NOD, ELISA (KansasIMNT)",89011,1,1,"USGS_89011; Total microcystins plus nodularins, water, filtered, recoverable, totalgranod,wu,saes elisaper liter"
 Total microcystins plus nodularins,ug/l,ug/l,USGS IMM26,"MC/NOD,wu,SAES ELISA(OGRL IMNT2)",89011,1,1,"USGS_89011; Total microcystins plus nodularins, water, filtered, recoverable, totalgranod,wu,saes elisaper liter"
@@ -165,8 +165,8 @@ Total microcystins plus nodularins,ug/l,ug/l,USGS IMM30,"Tot MC/NOD,fz/thw ELISA
 Total microcystins plus nodularins,ug/l,ug/l,USGS IMM34,"Tot MC/NOD, fz/thw <0.45u, ELISA",89011,1,1,"USGS_89011; Total microcystins plus nodularins, water, filtered, recoverable, totalgrathw <0.45u, elisaper liter"
 Total microcystins plus nodularins,ug/l,,NA NA,,89011,1,1,"USGS_89011; Total microcystins plus nodularins, water, filtered, recoverable, totalgranod,wu,saes elisaper liter"
 Total microcystins plus nodularins,ug/l,,USGS IMM06,"Total MC/NOD, ELISA (KansasIMNT)",89011,1,1,"USGS_89011; Total microcystins plus nodularins, water, filtered, recoverable, totalgranod, elisa per liter"
-Total microcystins plus nodularins,,ug/l,NA NA,,89011,1,1,
-Total microcystins plus nodularins,,ug/l,USGS IMM06,"Total MC/NOD, ELISA (KansasIMNT)",89011,1,1,
-Total microcystins plus nodularins,,ug/l,USGS IMM26,"MC/NOD,wu,SAES ELISA(OGRL IMNT2)",89011,1,1,
-Total microcystins plus nodularins,,ug/l,USGS IMM30,"Tot MC/NOD,fz/thw ELISA (IMNTDM)",89011,1,1,
-Total microcystins plus nodularins,,ug/l,USGS IMM34,"Tot MC/NOD, fz/thw <0.45u, ELISA",89011,1,1,
+Total microcystins plus nodularins,,ug/l,NA NA,,89011,1,1,"USGS_89011; Total microcystins plus nodularins, water, filtered, recoverable, totalgranod, elisa per liter"
+Total microcystins plus nodularins,,ug/l,USGS IMM06,"Total MC/NOD, ELISA (KansasIMNT)",89011,1,1,"USGS_89011; Total microcystins plus nodularins, water, filtered, recoverable, totalgranod, elisa per liter"
+Total microcystins plus nodularins,,ug/l,USGS IMM26,"MC/NOD,wu,SAES ELISA(OGRL IMNT2)",89011,1,1,"USGS_89011; Total microcystins plus nodularins, water, filtered, recoverable, totalgranod, elisa per liter"
+Total microcystins plus nodularins,,ug/l,USGS IMM30,"Tot MC/NOD,fz/thw ELISA (IMNTDM)",89011,1,1,"USGS_89011; Total microcystins plus nodularins, water, filtered, recoverable, totalgranod, elisa per liter"
+Total microcystins plus nodularins,,ug/l,USGS IMM34,"Tot MC/NOD, fz/thw <0.45u, ELISA",89011,1,1,"USGS_89011; Total microcystins plus nodularins, water, filtered, recoverable, totalgranod, elisa per liter"

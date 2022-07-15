@@ -297,16 +297,16 @@ Dissolved oxygen (DO),umho/cm,,NA NA,,,-1000000,-1000000,units_fail
 Dissolved oxygen (DO),uS/cm,,NA NA,,,-1000000,-1000000,units_fail
 Dissolved oxygen (DO),uS/cm,,USEPA 1002-8-2009,Dissolved Oxygen (DO) Measurement by Optical Probe,,-1000000,-1000000,units_fail
 Dissolved oxygen (DO),,%,21ARIZ_WQX FIELD,FIELD PARAMETERS,,-1000000,-1000000,units_fail
-Dissolved oxygen (DO),,mg/l,21ARIZ_WQX FIELD,FIELD PARAMETERS,,1,1,
-Dissolved oxygen (DO),,mg/l,21FLMCGL SOP-1,,,1,1,
-Dissolved oxygen (DO),,mg/l,21IOWA_WQX Unknown,Unknown,,1,1,
-Dissolved oxygen (DO),,mg/l,21NC02WQ WQS SOP,,,1,1,
-Dissolved oxygen (DO),,mg/l,APHA 4500-O-G,4500 O G ~ Total Dissolved Oxygen by Membrane Electrode Method,,1,1,
-Dissolved oxygen (DO),,mg/l,MNPCA DO WINKLER,"Dissolved Oxygen, Iodometric Method with Azide Modification",,1,1,
-Dissolved oxygen (DO),,mg/l,MNPCA FLD,"Field measurement/observation, generic method",,1,1,
-Dissolved oxygen (DO),,mg/l,NA NA,,,1,1,
-Dissolved oxygen (DO),,mg/l,SDWRAP WRAPFLD,,,1,1,
-Dissolved oxygen (DO),,mg/l,USEPA 360.1,Dissolved Oxygen Using an ISE,,1,1,
+Dissolved oxygen (DO),,mg/l,21ARIZ_WQX FIELD,FIELD PARAMETERS,,1,1,methods_WQX
+Dissolved oxygen (DO),,mg/l,21FLMCGL SOP-1,,,1,1,methods_unknown
+Dissolved oxygen (DO),,mg/l,21IOWA_WQX Unknown,Unknown,,1,1,methods_unknown
+Dissolved oxygen (DO),,mg/l,21NC02WQ WQS SOP,,,1,1,methods_unknown
+Dissolved oxygen (DO),,mg/l,APHA 4500-O-G,4500 O G ~ Total Dissolved Oxygen by Membrane Electrode Method,,1,1,methods_unknown
+Dissolved oxygen (DO),,mg/l,MNPCA DO WINKLER,"Dissolved Oxygen, Iodometric Method with Azide Modification",,1,1,methods_unknown
+Dissolved oxygen (DO),,mg/l,MNPCA FLD,"Field measurement/observation, generic method",,1,1,methods_unknown
+Dissolved oxygen (DO),,mg/l,NA NA,,,1,1,methods_unknown
+Dissolved oxygen (DO),,mg/l,SDWRAP WRAPFLD,,,1,1,methods_unknown
+Dissolved oxygen (DO),,mg/l,USEPA 360.1,Dissolved Oxygen Using an ISE,,1,1,USEPA 360.1
 Dissolved oxygen (DO),,None,APHA 4500-O-G,4500 O G ~ Total Dissolved Oxygen by Membrane Electrode Method,,-1000000,-1000000,units_fail
 Dissolved oxygen (DO),,None,MNPCA DO WINKLER,"Dissolved Oxygen, Iodometric Method with Azide Modification",,-1000000,-1000000,units_fail
 Dissolved oxygen (DO),,None,MNPCA FLD,"Field measurement/observation, generic method",,-1000000,-1000000,units_fail
@@ -345,7 +345,7 @@ Oxygen,nu,,NA NA,,,-1000000,-1000000,units_fail
 Oxygen,nu,,TCEQMAIN N/A Calculation,N/A Calculation,,-1000000,-1000000,units_fail
 Oxygen,,% saturatn,NA NA,,301,-1000000,-1000000,units_fail
 Oxygen,,% saturatn,USGS G0019,No information exists for method,301,-1000000,-1000000,units_fail
-Oxygen,,mg/l,NA NA,,300,1,1,
-Oxygen,,mg/l,USGS G0017,No information exists for method,300,1,1,
-Oxygen,,mg/l,USGS LUMIN,"Diss oxygen, luminescence sensor",300,1,1,
-Oxygen,,mg/l,USGS MEMBR,"Diss oxygen, membrane electrode",300,1,1,
+Oxygen,,mg/l,NA NA,,300,1,1,methods_unknown
+Oxygen,,mg/l,USGS G0017,No information exists for method,300,1,1,methods_unknown
+Oxygen,,mg/l,USGS LUMIN,"Diss oxygen, luminescence sensor",300,1,1,methods_unknown
+Oxygen,,mg/l,USGS MEMBR,"Diss oxygen, membrane electrode",300,1,1,methods_unknown

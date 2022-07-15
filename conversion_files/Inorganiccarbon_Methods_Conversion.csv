@@ -1,6 +1,6 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
 Inorganic carbon,mg/l,,11NPSWRD_WQX NPS_LEGACY,Unspecified Standard Grab Sample Procedure,,1,1,methods_WQX
-Inorganic carbon,mg/l,,APHA 4500-CO2(C),4500 CO2 C  ~ Carbon Dioxide in Water by Titration,,1,1,
+Inorganic carbon,mg/l,,APHA 4500-CO2(C),4500 CO2 C  ~ Carbon Dioxide in Water by Titration,,1,1,APHA 4500-CO2(C)
 Inorganic carbon,mg/l,,APHA 5310-B,5310 B ~ Total Organic Carbon by Combustion-Infrared Method,,-1000000,-1000000,methods_fail; TOC
 Inorganic carbon,mg/l,,APHA 5310-C,5310 C ~ Total Organic Carbon in Water- Ultraviolet Oxidation Method,,-1000000,-1000000,methods_fail; TOC
 Inorganic carbon,mg/l,mg/l,APHA 5310-D,5310 D ~ Total Organic Carbon in Water- Wet-Oxidation Method,,-1000000,-1000000,methods_fail; org C

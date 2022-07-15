@@ -28,7 +28,7 @@ Depth,m,m,21FLVEMD SOP-2,,,1,1,methods_unknown
 Depth,m,m,NA NA,,,1,1,methods_unknown
 Depth,m,m,OREGONDEQ MOM grab,Field methods for DEQ Water sampling,,1,1,methods_unknown
 Depth,m,m,SDWRAP WRAPFLD,,,1,1,methods_unknown
-Depth,m,m,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,
+Depth,m,m,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,1,methods_unknown
 Depth,m,,11113300 TAPE MEASURE,"TAPE MEASURE FOR WIDTH, DEPTH, DISTANCE, LENGTH",,1,1,methods_unknown
 Depth,m,,11113300 WEIGHTED TAPE MEAS.,WEIGHTED TAPE MEASURE,,1,1,methods_unknown
 Depth,m,,11NPSWRD_WQX NPS_UNSPECIFIED,Unknown or Unspecified Procedure,,1,1,methods_WQX

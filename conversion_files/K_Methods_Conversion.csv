@@ -6,7 +6,7 @@ Potassium,mg/kg,,KAWNATON_WQX 6010B,Inductively Coupled Plasma AES,,-1.00E+06,-1
 Potassium,mg/l,mg/l,11NPSWRD_WQX CRLA_CCAL_303A,SM 15th Ed Method 303A Flame Atomic Absorption with Perkins-Elmer 5000 Spectrophotometer,,1,1,APHA 303A
 Potassium,mg/l,mg/l,11NPSWRD_WQX CUPN_OLDCATIONS,Cation analysis from 7-10-2002 through 9-30-2004 (not approved),,1,1,methods_WQX
 Potassium,mg/l,mg/l,11NPSWRD_WQX NPS_SM15_303A,SM 15th Ed Method 303A Flame Atomic Absorption Spectroscopy,,1,1,APHA 303A
-Potassium,mg/l,mg/l,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,-1.00E+06,-1.00E+06,
+Potassium,mg/l,mg/l,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,-1.00E+06,-1.00E+06,methods_fail
 Potassium,mg/l,mg/l,21ARIZ UNKNOWN,,,1,1,methods_unknown
 Potassium,mg/l,mg/l,21FLGW_WQX 900456,QA Plan #900456,,1,1,methods_WQX
 Potassium,mg/l,mg/l,21FLLCPC_WQX LCQSM,LAKE COUNTY QUALITY SYSTEMS MANUAL,,1,1,methods_WQX
@@ -30,8 +30,8 @@ Potassium,mg/l,mg/l,INSTOR_WQX 200.7,200.7,,1,1,EPA 200.7
 Potassium,mg/l,mg/l,INSTOR_WQX SM3111B,SM3111B,,1,1,APHA 3111-B
 Potassium,mg/l,mg/l,MDEQ_WQ_WQX ICAP-SCAN-MDEQ-WQ,Metals Scan via Inductively Coupled Argon Plasma Spectroscopy,,1,1,methods_WQX
 Potassium,mg/l,mg/l,NA NA,,935,1,1,USGS_00935
-Potassium,mg/l,mg/l,NA NA,,,-1.00E+06,-1.00E+06,
-Potassium,mg/l,mg/l,SPIRITLK LC3121,LC3121,,-1.00E+06,-1.00E+06,
+Potassium,mg/l,mg/l,NA NA,,,-1.00E+06,-1.00E+06,methods_fail
+Potassium,mg/l,mg/l,SPIRITLK LC3121,LC3121,,-1.00E+06,-1.00E+06,methods_fail
 Potassium,mg/l,mg/l,USDOI/USGS I1630(W),I1630 W  ~ Potassium in Water by FLAA,,1,1,USGS I-1630
 Potassium,mg/l,mg/l,USEPA 200,Metals by Atomic Absorption,,1,1,EPA 200
 Potassium,mg/l,mg/l,USEPA 200.7,Metals in Water by ICP-AES,,1,1,EPA 200.7
@@ -56,8 +56,8 @@ Potassium,mg/l,mg/l,USGS PLA03,"Elements, wf, ICP-AES w/o digest",935,1,1,USGS_0
 Potassium,mg/l,mg/l,USGS PLA18,"Elements, wf, ICP-AES (DODEC)",935,1,1,USGS_00935
 Potassium,mg/l,mg/l,USGS PLO02,"Potassium, LL, wf, by ICP-OES",935,1,1,USGS_00935
 Potassium,mg/l,mg/l,USGS PLO03,"Potassium, wf, by ICP-OES",935,1,1,USGS_00935
-Potassium,mg/l,mg/l,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,-1.00E+06,-1.00E+06,
-Potassium,mg/l,mg/l,UTAHDWQ_WQX UNKNOWN,UNKNOWN,,-1.00E+06,-1.00E+06,
+Potassium,mg/l,mg/l,UTAHDWQ_WQX GENERIC METHOD2,Used for half of methods where historical methodology may not be available.,,-1.00E+06,-1.00E+06,methods_fail
+Potassium,mg/l,mg/l,UTAHDWQ_WQX UNKNOWN,UNKNOWN,,-1.00E+06,-1.00E+06,methods_fail
 Potassium,mg/l,ug/l,USEPA 6010B,,,1,0.001,EPA 6010-B
 Potassium,mg/l,,11NPSWRD_WQX CACO_CATIONS,"Cations, Atomic Absorption Spectrometry",,1,1,methods_WQX
 Potassium,mg/l,,11NPSWRD_WQX CRLA_FES_K,Potassium by Flame Emission Spectroscopy,,1,1,methods_WQX
@@ -138,7 +138,7 @@ Potassium,ueq/L,,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,0.03909,0.
 Potassium,ug/l,ug/l,AZDEQ_SW EPA 200.8,EPA 200.8,,0.001,0.001,EPA 200.8
 Potassium,ug/l,ug/l,NA NA,,82034,0.001,0.001,USGS_82034
 Potassium,ug/l,ug/l,USEPA 200.7,Metals in Water by ICP-AES,,0.001,0.001,EPA 200.7
-Potassium,ug/l,ug/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,0.001,0.001,
+Potassium,ug/l,ug/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,0.001,0.001,EPA 200.7
 Potassium,ug/l,ug/l,USEPA 200.8,Metals in Waters by ICP/MS,,0.001,0.001,EPA 200.8
 Potassium,ug/l,ug/l,USEPA 215.2,Calcium by EDTA Titrimetric Analysis,,-1.00E+06,-1.00E+06,methods_fail
 Potassium,ug/l,ug/l,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,0.001,0.001,EPA 6010-B
@@ -157,36 +157,36 @@ Potassium,ug/l,,USEPA 200.8,Metals in Waters by ICP/MS,,0.001,0.001,EPA 200.8
 Potassium,ug/l,,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,0.001,0.001,EPA 6010-B
 Potassium,ug/l,,USEPA 6010C,6010 C ~ Inductively Coupled Plasma - Atomic Emission Spectroscopy (ICP-AES),,0.001,0.001,EPA 6010-C
 Potassium,ug/l,,USEPA 6020,Inductively Coupled Plasma - Mass Spec.,,0.001,0.001,EPA 6020
-Potassium,,mg/kg,NA NA,,,-1.00E+06,-1.00E+06,
-Potassium,,mg/l,21ARIZ UNKNOWN,,,1,1,
-Potassium,,mg/l,21ARIZ_WQX EPA 200.7,METALS,,1,1,
-Potassium,,mg/l,21FLGW_WQX 900456,QA Plan #900456,,1,1,
-Potassium,,mg/l,21FLSFWM WQ-1,,,1,1,
-Potassium,,mg/l,21GAEPD_WQX FIELD/NS,Field procedure or Not Specified,,1,1,
-Potassium,,mg/l,APHA 3111-B,3111 B ~ Metals in Water by FLAA- Direct Air-Acetylene Flame,,1,1,
-Potassium,,mg/l,APHA 3113-B,3113 B ~ Metals in Water by GFAA,,1,1,
-Potassium,,mg/l,MDEQ_WQ_WQX ICAP-SCAN-MDEQ-WQ,Metals Scan via Inductively Coupled Argon Plasma Spectroscopy,,1,1,
-Potassium,,mg/l,MNPCA LEG_P00935,"POTASSIUM, DISSOLVED (MG/L AS K)",,1,1,
-Potassium,,mg/l,NA NA,,935,1,1,
-Potassium,,mg/l,NA NA,,,-1000000,-1000000,
-Potassium,,mg/l,USEPA 200.7,Metals in Water by ICP-AES,,1,1,
-Potassium,,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1,1,
-Potassium,,mg/l,USEPA 200.7(W),,,1,1,
-Potassium,,mg/l,USEPA 200.7_M,200.7 M ~ ICP-AES For Trace Element Analysis,,1,1,
-Potassium,,mg/l,USEPA 258.1,,,1,1,
-Potassium,,mg/l,USEPA 6010A,6010 A ~ ICP Spectroscopy,,1,1,
-Potassium,,mg/l,USEPA 6010A,,,1,1,
-Potassium,,mg/l,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1,1,
-Potassium,,mg/l,USEPA 6010C,6010 C ~ Inductively Coupled Plasma - Atomic Emission Spectroscopy (ICP-AES),,1,1,
-Potassium,,mg/l,USEPA 6020,Inductively Coupled Plasma - Mass Spec.,,1,1,
-Potassium,,mg/l,USEPA 6020A,6020 A ~ ICP-MS,,1,1,
-Potassium,,mg/l,USEPA 6020B,"6020 B ~ Inductively Coupled Plasma - Mass Spectrometry, part of Test Methods for Evaluating Solid Waste",,1,1,
-Potassium,,mg/l,USGS AA030,"Potassium, wf, direct AAS (NWQL)",935,1,1,
-Potassium,,mg/l,USGS AA031,"Potassium, LL, wf, direct AAS",935,1,1,
-Potassium,,mg/l,USGS PLA03,"Elements, wf, ICP-AES w/o digest",935,1,1,
-Potassium,,mg/l,USGS PLA18,"Elements, wf, ICP-AES (DODEC)",935,1,1,
-Potassium,,mg/l,USGS PLO02,"Potassium, LL, wf, by ICP-OES",935,1,1,
-Potassium,,mg/l,USGS PLO03,"Potassium, wf, by ICP-OES",935,1,1,
-Potassium,,ug/l,APHA 3113-B,3113 B ~ Metals in Water by GFAA,,0.001,0.001,
-Potassium,,ug/l,USEPA 200.7,Metals in Water by ICP-AES,,0.001,0.001,
-Potassium,,ug/l,USEPA 6010C,6010 C ~ Inductively Coupled Plasma - Atomic Emission Spectroscopy (ICP-AES),,0.001,0.001,
+Potassium,,mg/kg,NA NA,,,-1.00E+06,-1.00E+06,units_fail
+Potassium,,mg/l,21ARIZ UNKNOWN,,,1,1,methods_unknown
+Potassium,,mg/l,21ARIZ_WQX EPA 200.7,METALS,,1,1,EPA 200.7
+Potassium,,mg/l,21FLGW_WQX 900456,QA Plan #900456,,1,1,methods_WQX
+Potassium,,mg/l,21FLSFWM WQ-1,,,1,1,methods_unknown
+Potassium,,mg/l,21GAEPD_WQX FIELD/NS,Field procedure or Not Specified,,1,1,methods_WQX
+Potassium,,mg/l,APHA 3111-B,3111 B ~ Metals in Water by FLAA- Direct Air-Acetylene Flame,,1,1,APHA 3111-B
+Potassium,,mg/l,APHA 3113-B,3113 B ~ Metals in Water by GFAA,,1,1,APHA 3113-B
+Potassium,,mg/l,MDEQ_WQ_WQX ICAP-SCAN-MDEQ-WQ,Metals Scan via Inductively Coupled Argon Plasma Spectroscopy,,1,1,methods_WQX
+Potassium,,mg/l,MNPCA LEG_P00935,"POTASSIUM, DISSOLVED (MG/L AS K)",,1,1,methods_unknown
+Potassium,,mg/l,NA NA,,935,1,1,methods_unknown
+Potassium,,mg/l,NA NA,,,-1000000,-1000000,methods_fail
+Potassium,,mg/l,USEPA 200.7,Metals in Water by ICP-AES,,1,1,EPA 200.7
+Potassium,,mg/l,USEPA 200.7(W),200.7 W  ~ Metals in Water by ICP-AES,,1,1,EPA 200.7
+Potassium,,mg/l,USEPA 200.7(W),,,1,1,EPA 200.7
+Potassium,,mg/l,USEPA 200.7_M,200.7 M ~ ICP-AES For Trace Element Analysis,,1,1,EPA 200.7
+Potassium,,mg/l,USEPA 258.1,,,1,1,EPA 258.1
+Potassium,,mg/l,USEPA 6010A,6010 A ~ ICP Spectroscopy,,1,1,EPA 6010A
+Potassium,,mg/l,USEPA 6010A,,,1,1,EPA 6010A
+Potassium,,mg/l,USEPA 6010B,6010 B ~ Inductively Coupled Plasma AES,,1,1,EPA 6010B
+Potassium,,mg/l,USEPA 6010C,6010 C ~ Inductively Coupled Plasma - Atomic Emission Spectroscopy (ICP-AES),,1,1,EPA 6010C
+Potassium,,mg/l,USEPA 6020,Inductively Coupled Plasma - Mass Spec.,,1,1,EPA 6020
+Potassium,,mg/l,USEPA 6020A,6020 A ~ ICP-MS,,1,1,EPA 6020A
+Potassium,,mg/l,USEPA 6020B,"6020 B ~ Inductively Coupled Plasma - Mass Spectrometry, part of Test Methods for Evaluating Solid Waste",,1,1,EPA 6020B
+Potassium,,mg/l,USGS AA030,"Potassium, wf, direct AAS (NWQL)",935,1,1,GS AA030
+Potassium,,mg/l,USGS AA031,"Potassium, LL, wf, direct AAS",935,1,1,GS AA031
+Potassium,,mg/l,USGS PLA03,"Elements, wf, ICP-AES w/o digest",935,1,1,GS PLA03
+Potassium,,mg/l,USGS PLA18,"Elements, wf, ICP-AES (DODEC)",935,1,1,GS PLA18
+Potassium,,mg/l,USGS PLO02,"Potassium, LL, wf, by ICP-OES",935,1,1,GS PLO02
+Potassium,,mg/l,USGS PLO03,"Potassium, wf, by ICP-OES",935,1,1,GS PLO03
+Potassium,,ug/l,APHA 3113-B,3113 B ~ Metals in Water by GFAA,,0.001,0.001,APHA 3113-B
+Potassium,,ug/l,USEPA 200.7,Metals in Water by ICP-AES,,0.001,0.001,EPA 200.7
+Potassium,,ug/l,USEPA 6010C,6010 C ~ Inductively Coupled Plasma - Atomic Emission Spectroscopy (ICP-AES),,0.001,0.001,EPA 6010C
