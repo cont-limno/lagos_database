@@ -76,7 +76,7 @@ Depth,m,,UTAHDWQ_WQX FIELD MEASURES,Field Measurements performed by Utah DWQ,,1,
 Depth,m,,YSI 120.1,Direct Measurement Method,,1,1,methods_unknown
 Depth,m/sec,,NA NA,,,-1.00E+06,-1.00E+06,units_fail
 Depth,mg,,21FLSUW_WQX FS 2100,Surface Water Sampling,,-1.00E+06,-1.00E+06,units_fail
-Depth,,ft,NA NA,,81903,0.3048,0.3048,depth
+Depth,,ft,NA NA,,81903,0.3048,0.3048,"USGS_81903; Depth to bottom at sample location, feet"
 Depth of water column,ft,,NA NA,,72199,0.3048,0.3048,"USGS_72199; Water depth, water surface to bottom, feet"
 "Depth, bottom",ft,ft,NA NA,,,0.3048,0.3048,methods_unknown
 "Depth, bottom",ft,ft,SDDENR_WQX field,UNKOWN,,0.3048,0.3048,methods_WQX

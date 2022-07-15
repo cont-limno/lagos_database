@@ -55,7 +55,7 @@ Conductivity,uS/cm,,KAWNATON_WQX 120.1,Conductance,,1,1,EPA 120.1
 Conductivity,uS/cm,,NA NA,,,1,1,methods_unknown
 Conductivity,uS/cm,,USEPA 120.1,Conductance,,1,1,EPA 120.1
 Conductivity,uW/cm2,,NA NA,,,-1000000,-1000000,units_fail
-Conductivity,,umho/cm,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,-1000000,-1000000,units_fail
+Conductivity,,umho/cm,APHA 2510B,2510 B ~ Conductivity - Laboratory Method,,1,1,APHA 2150-B
 Specific conductance,deg C,,NA NA,,,-1000000,-1000000,units_fail
 Specific conductance,mg/l,,21FLCEN_WQX FT 1200,Conductivity,,-1000000,-1000000,units_fail
 Specific conductance,mg/l,,21FLCEN_WQX FT_1200,FIELD MEASUREMENT OF SPECIFIC CONDUCTANCE,,-1000000,-1000000,units_fail
@@ -410,11 +410,11 @@ Specific conductance,uS/cm @25C,,USGS SC005,"SC, lab, manual (USGS-NYL)",90095,1
 Specific conductance,uS/cm @25C,,USGS SC006,"SC, lab, auto (USGS-NYL)",90095,1,1,USGS_90095
 Specific conductance,uS/cm @25C,,USGS WHT01,"Spec. cond., lab, bridge (NWQL)",90095,1,1,USGS_90095
 Specific conductance,uS/cm @25C,,USGS WHT03,"Specific cond, lab, autom bridge",90095,1,1,USGS_90095
-Specific conductance,,mS/cm,NA NA,,,1,1,methods_unknown
+Specific conductance,,mS/cm,NA NA,,,1000,1000,methods_unknown
 Specific conductance,,uS/cm,MNPCA FLD,"Field measurement/observation, generic method",,1,1,methods_unknown
 Specific conductance,,uS/cm,MNPCA LEG_P00095,SPECIFIC CONDUCTANCE (UMHOS/CM @ 25C),,1,1,methods_unknown
-Specific conductance,,uS/cm @25C,NA NA,,95,1,1,methods_unknown
-Specific conductance,,uS/cm @25C,NA NA,,90095,1,1,methods_unknown
-Specific conductance,,uS/cm @25C,USGS SC001,Specific conductance sensor,95,1,1,USGS
-Specific conductance,,uS/cm @25C,USGS WHT03,"Specific cond, lab, autom bridge",90095,1,1,USGS
+Specific conductance,,uS/cm @25C,NA NA,,95,1,1,USGS_00095
+Specific conductance,,uS/cm @25C,NA NA,,90095,1,1,USGS_90095
+Specific conductance,,uS/cm @25C,USGS SC001,Specific conductance sensor,95,1,1,USGS_00095
+Specific conductance,,uS/cm @25C,USGS WHT03,"Specific cond, lab, autom bridge",90095,1,1,USGS_90095
 Specific conductance,,,APHA 2510,Conductivity in Water,,-1000000,-1000000,units_fail
