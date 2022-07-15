@@ -50,7 +50,7 @@ Kjeldahl nitrogen,mg/l,mg/l,APHA 4500-NOR(B),4500 NOR B  ~ Total Kjeldahl Nitrog
 Kjeldahl nitrogen,mg/l,mg/l,APHA 4500-NOR(C),4500 NOR C  ~ Total Kjeldahl Nitrogen in Water,,1000,1000,APHA 4500-NOR(C)
 Kjeldahl nitrogen,mg/l,mg/l,APHA 4500-NOR(C),,,1000,1000,APHA 4500-NOR(C)
 Kjeldahl nitrogen,mg/l,mg/l,APHA 4500-NORG D,4500 NORG D ~ Block Digestion and Flow Injection Analysis,,1000,1000,APHA 4500-NOR(D)
-Kjeldahl nitrogen,mg/l,mg/l,APHA_SM20ED 4500-N-C,4500 N C ~ Persulfate Method for Total Nitrogen,,1000,1000,APHA_SM20ED 4500-N-C
+Kjeldahl nitrogen,mg/l,mg/l,APHA_SM20ED 4500-N-C,4500 N C ~ Persulfate Method for Total Nitrogen,,1000,1000,APHA 4500-N-C
 Kjeldahl nitrogen,mg/l,mg/l,ASTM D3590(B),D3590 B  ~ TKN by AutoAnalyzer,,1000,1000,ASTM D3590(B)
 Kjeldahl nitrogen,mg/l,mg/l,AZDEQ_SW EPA 130.2,EPA 130.2,,-1000000,-1000000,"methods_fail; Hardness, Total (mg/L as CaCO3)(Titrimetric, EDTA)"
 Kjeldahl nitrogen,mg/l,mg/l,AZDEQ_SW EPA 351.1,EPA 351.1,,1000,1000,EPA 351.1
@@ -77,7 +77,7 @@ Kjeldahl nitrogen,mg/l,mg/l,LADEQWPD_WQX SM4500-NH3-C,Same as SM4500-NH3-C,,-100
 Kjeldahl nitrogen,mg/l,mg/l,LAKELAND PAI-DK0,,,1000,1000,methods_unknown
 Kjeldahl nitrogen,mg/l,mg/l,NA NA,,,1000,1000,methods_unknown
 Kjeldahl nitrogen,mg/l,mg/l,R10BUNKER I2610,I2610,,-1000000,-1000000,methods_fail
-Kjeldahl nitrogen,mg/l,mg/l,R10BUNKER I4515,I4515,,1000,1000,USGS I-4515-91
+Kjeldahl nitrogen,mg/l,mg/l,R10BUNKER I4515,I4515,,1000,1000,USGS I-4515
 Kjeldahl nitrogen,mg/l,mg/l,R10BUNKER USGS_HIST,USGS_HIST,,1000,1000,methods_unknown
 Kjeldahl nitrogen,mg/l,mg/l,USDOI/USGS I4552,Ammonia Plus Organic Nitrogen in Water,,1000,1000,USGS I-4552
 Kjeldahl nitrogen,mg/l,mg/l,USEPA 350.1,Ammonia Nitrogen by Colorimetry,,-1000000,-1000000,methods_fail
@@ -144,9 +144,9 @@ Kjeldahl nitrogen,mg/l,,APHA 4500-NOR(C),,,1000,1000,APHA 4500-NOR(C)
 Kjeldahl nitrogen,mg/l,,APHA 4500-NORG E,4500 NORG E ~ Total Kjeldahl Nitrogen in Water,,1000,1000,APHA 4500-NOR(E)
 Kjeldahl nitrogen,mg/l,,APHA 4500-P-J,4500 P J ~ Persulfate Method for Simultaneous Determination of Total Nitrogen and Total Phosphorus,,-1000000,-1000000,methods_fail
 Kjeldahl nitrogen,mg/l,,APHA_SM20ED 4500-N-C,4500 N C ~ Persulfate Method for Total Nitrogen,,-1000000,-1000000,methods_fail
-Kjeldahl nitrogen,mg/l,,ARMYCORPS 4500-NorgC,"TKN, colorimetry, Hach 8038",,1000,1000,HACH 8028
+Kjeldahl nitrogen,mg/l,,ARMYCORPS 4500-NorgC,"TKN, colorimetry, Hach 8038",,1000,1000,APHA 4500-NORG-G
 Kjeldahl nitrogen,mg/l,,ARMYCORPS 4500NorgC,"TKN, colorimetry, Hach8038",,1000,1000,APHA 4500-NOR(C)
-Kjeldahl nitrogen,mg/l,,ASTM D3590(A),D3590 A  ~ TKN by Ion Selective Electrode,,1000,1000,HACH 8028
+Kjeldahl nitrogen,mg/l,,ASTM D3590(A),D3590 A  ~ TKN by Ion Selective Electrode,,1000,1000,ASTM D3590(A)
 Kjeldahl nitrogen,mg/l,,AZDEQ_SW EPA 170.1,EPA 170.1,,-1000000,-1000000,methods_fail; Temperature (Thermometric)
 Kjeldahl nitrogen,mg/l,,AZDEQ_SW EPA 351.1,EPA 351.1,,1000,1000,EPA 351.1
 Kjeldahl nitrogen,mg/l,,AZDEQ_SW EPA 351.3,EPA 351.3,,1000,1000,EPA 351.3
@@ -174,7 +174,7 @@ Kjeldahl nitrogen,mg/l,,MNPCA UNKNOWN,Analytical procedure not specified,,1000,1
 Kjeldahl nitrogen,mg/l,,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,1000,1000,methods_WQX
 Kjeldahl nitrogen,mg/l,,NA NA,,,1000,1000,methods_unknown
 Kjeldahl nitrogen,mg/l,,ONEIDA_WQX UNKNOWN,UNKNOWN,,1000,1000,methods_WQX
-Kjeldahl nitrogen,mg/l,,R10BUNKER I4515,I4515,,1000,1000,USGS I-4515-91
+Kjeldahl nitrogen,mg/l,,R10BUNKER I4515,I4515,,1000,1000,USGS I-4515
 Kjeldahl nitrogen,mg/l,,SDDENR_WQX 351.2,UNKOWN,,1000,1000,EPA 351.2
 Kjeldahl nitrogen,mg/l,,USDOI/USGS I-2515-91,"Ammonium plus organic nitrogen, dissolved",,1000,1000,USGS I-2515-91
 Kjeldahl nitrogen,mg/l,,USDOI/USGS I-4515-91,"Ammonium plus organic nitrogen, total",,1000,1000,USGS I-4515-91
@@ -250,12 +250,12 @@ Kjeldahl nitrogen,,mg/l,APHA 4500-NH3(G),4500 NH3 G  ~ Ammonia in Water Using Au
 Kjeldahl nitrogen,,mg/l,APHA 4500-NH3(G),,,-1000000,-1000000,methods_fail
 Kjeldahl nitrogen,,mg/l,APHA 4500-NOR(B),4500 NOR B  ~ Total Kjeldahl Nitrogen in Water,,1000,1000,APHA 4500-NOR(B)
 Kjeldahl nitrogen,,mg/l,APHA 4500-NOR(C),4500 NOR C  ~ Total Kjeldahl Nitrogen in Water,,1000,1000,APHA 4500-NOR(C)
-Kjeldahl nitrogen,,mg/l,APHA 4500-NORG E,4500 NORG E ~ Total Kjeldahl Nitrogen in Water,,1000,1000,APHA 4500-NORG E
-Kjeldahl nitrogen,,mg/l,ASTM D3590(A),D3590 A  ~ TKN by Ion Selective Electrode,,1000,1000,methods_unknown
+Kjeldahl nitrogen,,mg/l,APHA 4500-NORG E,4500 NORG E ~ Total Kjeldahl Nitrogen in Water,,1000,1000,APHA 4500-NORG-E
+Kjeldahl nitrogen,,mg/l,ASTM D3590(A),D3590 A  ~ TKN by Ion Selective Electrode,,1000,1000,ASTM D3590(A)
 Kjeldahl nitrogen,,mg/l,LACHAT 10-107-06-2-E,10-107-06-2 E ~ Kjeldahl nitrogen- Mercury catalyst,,1000,1000,methods_unknown
 Kjeldahl nitrogen,,mg/l,MNPCA APHA 420A&417G,Total Kjeldahl Nitrogen in Water,,1000,1000,methods_unknown
-Kjeldahl nitrogen,,mg/l,MNPCA LEG_P00625,"NITROGEN, KJELDAHL, TOTAL, (MG/L AS N)",,1000,1000,methods_unknown
-Kjeldahl nitrogen,,mg/l,MNPCA LEG_P00629,"NITROGEN, ORGANIC KJELDAHL, TOTAL (MG/L AS N)",,1000,1000,methods_unknown
+Kjeldahl nitrogen,,mg/l,MNPCA LEG_P00625,"NITROGEN, KJELDAHL, TOTAL, (MG/L AS N)",,1000,1000,USGS_00625
+Kjeldahl nitrogen,,mg/l,MNPCA LEG_P00629,"NITROGEN, ORGANIC KJELDAHL, TOTAL (MG/L AS N)",,1000,1000,USGS_00629
 Kjeldahl nitrogen,,mg/l,MNPCA LEG_UNKNOWN,Legacy STORET migration; analytical procedure not specified,,-1000000,-1000000,methods_fail
 Kjeldahl nitrogen,,mg/l,MONT_DEQ_WQX HISTORIC-MONT-DEQ,Historic Procedure,,-1000000,-1000000,methods_fail
 Kjeldahl nitrogen,,mg/l,NA NA,,,-1000000,-1000000,methods_fail
@@ -271,21 +271,21 @@ Kjeldahl nitrogen,,mg/l,USEPA 351.4,Total Kjeldahl Nitrogen Using an ISE,,1000,1
 Kjeldahl nitrogen,,mg/l,USEPA 351.4,,,-1000000,-1000000,methods_fail
 Kjeldahl nitrogen,,mg/l,USEPA 353.3,Nitrate-Nitrite Nitrogen by Cd Reduction,,-1000000,-1000000,methods_fail
 Kjeldahl nitrogen,,mg/l,USEPA 353.3,,,-1000000,-1000000,methods_fail
-Kjeldahl nitrogen,,mg/l as N,NA NA,,623,1000,1000,methods_unknown
-Kjeldahl nitrogen,,mg/l as N,NA NA,,625,1000,1000,methods_unknown
-Kjeldahl nitrogen,,mg/l as N,NA NA,,635,1000,1000,methods_unknown
-Kjeldahl nitrogen,,mg/l as N,USGS CL051,"NH3+org-N, wf, ASF block digest",623,1000,1000,USGS CL051
-Kjeldahl nitrogen,,mg/l as N,USGS CL061,"Phosphorus, wf,microkjeldahl ASF",623,1000,1000,USGS CL061
-Kjeldahl nitrogen,,mg/l as N,USGS CL083,"NH3+org-N, wu, ASF block digest",625,1000,1000,USGS CL083
-Kjeldahl nitrogen,,mg/l as N,USGS KJ001,"NH3+org-N, wu, Kjeldahl",625,1000,1000,USGS KJ001
-Kjeldahl nitrogen,,mg/l as N,USGS KJ002,"NH3+org-N, wf, FCC, Kjeldahl, CF",623,1000,1000,USGS KJ002
-Kjeldahl nitrogen,,mg/l as N,USGS KJ006,"NH3+org-N, wu, microkjeldahl ASF",625,1000,1000,USGS KJ006
-Kjeldahl nitrogen,,mg/l as N,USGS KJ008,"NH3+org-N, wu, WCA, Kjeldahl, CF",625,1000,1000,USGS KJ008
-Kjeldahl nitrogen,,None,APHA 4500-NORG E,4500 NORG E ~ Total Kjeldahl Nitrogen in Water,,1000,1000,APHA 4500-NORG E
-Kjeldahl nitrogen,,None,MNPCA LEG_P00625,"NITROGEN, KJELDAHL, TOTAL, (MG/L AS N)",,1000,1000,methods_unknown
-Kjeldahl nitrogen,,None,USEPA 351.2,Total Kjeldahl Nitrogen by Colorimetry,,1000,1000,EPA 351.2
-Kjeldahl nitrogen,,ug/l,APHA 4500-NOR(B),4500 NOR B  ~ Total Kjeldahl Nitrogen in Water,,1000,1000,APHA 4500-NOR(B)
-Kjeldahl nitrogen,,ug/l,USEPA 351.3(A),351.3 A  ~ Total Kjeldahl Nitrogen by Titration,,1000,1000,EPA 351.3
+Kjeldahl nitrogen,,mg/l as N,NA NA,,623,1000,1000,USGS_00623
+Kjeldahl nitrogen,,mg/l as N,NA NA,,625,1000,1000,USGS_00625
+Kjeldahl nitrogen,,mg/l as N,NA NA,,635,1000,1000,USGS_00625
+Kjeldahl nitrogen,,mg/l as N,USGS CL051,"NH3+org-N, wf, ASF block digest",623,1000,1000,USGS_00623
+Kjeldahl nitrogen,,mg/l as N,USGS CL061,"Phosphorus, wf,microkjeldahl ASF",623,1000,1000,USGS_00623
+Kjeldahl nitrogen,,mg/l as N,USGS CL083,"NH3+org-N, wu, ASF block digest",625,1000,1000,USGS_00625
+Kjeldahl nitrogen,,mg/l as N,USGS KJ001,"NH3+org-N, wu, Kjeldahl",625,1000,1000,USGS_00625
+Kjeldahl nitrogen,,mg/l as N,USGS KJ002,"NH3+org-N, wf, FCC, Kjeldahl, CF",623,1000,1000,USGS_00623
+Kjeldahl nitrogen,,mg/l as N,USGS KJ006,"NH3+org-N, wu, microkjeldahl ASF",625,1000,1000,USGS_00625
+Kjeldahl nitrogen,,mg/l as N,USGS KJ008,"NH3+org-N, wu, WCA, Kjeldahl, CF",625,1000,1000,USGS_00625
+Kjeldahl nitrogen,,None,APHA 4500-NORG E,4500 NORG E ~ Total Kjeldahl Nitrogen in Water,,-1000000,-1000000,units_fail
+Kjeldahl nitrogen,,None,MNPCA LEG_P00625,"NITROGEN, KJELDAHL, TOTAL, (MG/L AS N)",,-1000000,-1000000,units_fail
+Kjeldahl nitrogen,,None,USEPA 351.2,Total Kjeldahl Nitrogen by Colorimetry,,-1000000,-1000000,units_fail
+Kjeldahl nitrogen,,ug/l,APHA 4500-NOR(B),4500 NOR B  ~ Total Kjeldahl Nitrogen in Water,,1,1,APHA 4500-NOR(B)
+Kjeldahl nitrogen,,ug/l,USEPA 351.3(A),351.3 A  ~ Total Kjeldahl Nitrogen by Titration,,1,1,EPA 351.3
 Kjeldahl nitrogen,,,NA NA,,,-1000000,-1000000,units_fail
 Total Kjeldahl nitrogen,mg/l,mg/l,APHA 4500-NORG D,4500 NORG D ~ Block Digestion and Flow Injection Analysis,,1000,1000,APHA 4500-NOR(D)
 Total Kjeldahl nitrogen,mg/l,mg/l,HACH 10242,"Nitrogen, Kjeldahl - Simplified Spectrophotometric Measurement of Total Kjeldahl Nitrogen in Water and Wastewater",,1000,1000,HACH 10242

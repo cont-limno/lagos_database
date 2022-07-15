@@ -19,6 +19,6 @@ Inorganic carbon,mg/l,mg/l,USGS 00127,PIC,688,-1000000,-1000000,"methods_fail; C
 Inorganic carbon,mg/l,,USGS 00127,PIC,688,-1000000,-1000000,methods_fail; particulate
 Inorganic carbon,mg/l,,USGS COMB8,"Inorg carbon, wf, OI/Dohrmann",685,1,1,"USGS_00685; Inorganic carbon, water, unfiltered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (USGS-NYL)"
 Inorganic carbon,mg/l,,USGS COMB8,"Inorg carbon, wf, OI/Dohrmann",691,1,1,"USGS_00691; Inorganic carbon, water, filtered, milligrams per liter"
-Inorganic carbon,mg/l,mg/l,USGS IR005,"Inorg carbon, wu, IR (USGS-NYL)",685,1,1,methods_unknown
+Inorganic carbon,mg/l,mg/l,USGS IR005,"Inorg carbon, wu, IR (USGS-NYL)",685,1,1,"USGS_00685; Inorganic carbon, water, unfiltered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (USGS-NYL)"
 Inorganic carbon,mg/l,,USGS IR005,"Inorg carbon, wu, IR (USGS-NYL)",685,1,1,"USGS_00685; Inorganic carbon, water, unfiltered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (USGS-NYL)"
 Inorganic carbon,mg/l,,USGS IR006,"DIC, wf, IR (NWQL)",691,1,1,"USGS_00691; Dissolved inorganic carbon (DIC), water, filtered, acidified, purged with nitrogen, carbon dioxide detected by infrared spectroscopy (NWQL)"
