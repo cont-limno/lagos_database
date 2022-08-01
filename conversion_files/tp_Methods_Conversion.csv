@@ -355,14 +355,24 @@ Phosphorus,,mg/l,USEPA 365.3,,,1000,1000,EPA 365.3
 Phosphorus,,mg/l,USEPA 365.4,Total Phosphorus After Block Digestion,,1000,1000,EPA 365.4
 Phosphorus,,mg/l,USEPA 365.4,,,1000,1000,EPA 365.4
 Phosphorus,,mg/l as P,NA NA,,665,1000,1000,USGS_00665
+Phosphorus,,mg/l as P,NA NA,,666,1000,1000,
 Phosphorus,,mg/l as P,USGS AKP01,"Nutrients, wu, WCA,persulfate,CF",665,1000,1000,USGS_00665
 Phosphorus,,mg/l as P,USGS CL001,"ASF, colorimetric",665,1000,1000,USGS_00665
+Phosphorus,,mg/l as P,USGS CL019,"P, wf, FCA, persulfate CF color",666,1000,1000,
+Phosphorus,,mg/l as P,USGS CL020,"P, wf, FCC, persulfate CF color",666,1000,1000,
 Phosphorus,,mg/l as P,USGS CL021,"P, wu, WCA, persulfate CF color",665,1000,1000,USGS_00665
 Phosphorus,,mg/l as P,USGS CL024,"Phosphorus, total, colorimetric",665,1000,1000,USGS_00665
+Phosphorus,,mg/l as P,USGS CL052,"Phosphorus, wf, auto phosphomoly",666,1000,1000,
+Phosphorus,,mg/l as P,USGS CL059,"Phosphorus, LIS, ASF phosphomol",666,1000,1000,
+Phosphorus,,mg/l as P,USGS CL060,"Phosphorus, LIS, ASF phosphomol",666,1000,1000,
+Phosphorus,,mg/l as P,USGS CL061,"Phosphorus, wf,microkjeldahl ASF",666,1000,1000,
+Phosphorus,,mg/l as P,USGS CL063,"Nutrients, wf, FCC,persulfate,CF",666,1000,1000,
 Phosphorus,,mg/l as P,USGS CL084,"Phosphorus, wu, ASF phosphomolyb",665,1000,1000,USGS_00665
 Phosphorus,,mg/l as P,USGS CL090,"Phosphorus, LIS wu, ASF molybate",665,1000,1000,USGS_00665
 Phosphorus,,mg/l as P,USGS CL106,"Phosphorus, LL, wu,auto ascorbic",665,1000,1000,USGS_00665
 Phosphorus,,mg/l as P,USGS CL153,"Nutrients, brines, colorimetry",665,1000,1000,USGS_00665
+Phosphorus,,mg/l as P,USGS KJ004,"P, wf, FCA, Kjeldahl, CF",666,1000,1000,
+Phosphorus,,mg/l as P,USGS KJ005,"P, wf, FCC, Kjeldahl, CF",666,1000,1000,
 Phosphorus,,mg/l as P,USGS KJ009,"Phosphorus, wu, microKJ ASF, H+",665,1000,1000,USGS_00665
 Phosphorus,,mg/l as P,USGS KJ010,"Phosphorus, wu, microKJ ASF, Hg",665,1000,1000,USGS_00665
 Phosphorus,,mg/l as P,USGS KJ011,"Phosphorus, wu, microKJ ASF,disc",665,1000,1000,USGS_00665

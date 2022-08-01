@@ -1348,6 +1348,33 @@ source("unit_conversions.R")
 
 ```
 
+```{r atrazine-total}
+
+abbrev <- "Atrazine"
+lagos_name <- "Atrazine, total"
+lagos_unit <- "ug/l"
+dataset_name <-"Atrazine_total"
+
+vars2process
+params<-c("Atrazine")
+vars2process<-vars2process[! vars2process %in% params] #remove grab samples from list
+vars2process #check if any new varables to inlcude
+
+data_temp<-data[data$CharacteristicName%in%params,] #want to match all records to the vector we created above 
+unique(data_temp$ResultSampleFractionText)
+data_temp <- data_temp %>% filter(ResultSampleFractionText=="Total")
+unique(data_temp$ResultSampleFractionText)
+
+###create dataset to check for non numeric objects in dataset
+temp <- non_numerics()
+
+#0 non numerics
+
+source("unit_conversions.R")
+
+```
+
+
 ```{r ecoli #/100ml}
 
 abbrev <- "Ecoli"
@@ -2464,17 +2491,17 @@ rm(data_temp_temp_notes)
 
 ```{r}
 
-vars2process
-data_all <- do.call("rbind", lapply(ls(pattern='^data_'),get))
-data_all$ResultMeasureValue<-data_all$Converted
-data_all$DetectionQuantitationLimitMeasure.MeasureValue<-data_all$Converted_dl
-data_all<-data_all %>% select(-Converted, -Converted_dl)
-gc()
-
-rm(list = setdiff(ls(), "data_all"))
-saveRDS(data_all, "limnoUS.rds")
-
-write_csv(data_all, file = "all_data_june30.csv")
+# vars2process
+# data_all <- do.call("rbind", lapply(ls(pattern='^data_'),get))
+# data_all$ResultMeasureValue<-data_all$Converted
+# data_all$DetectionQuantitationLimitMeasure.MeasureValue<-data_all$Converted_dl
+# data_all<-data_all %>% select(-Converted, -Converted_dl)
+# gc()
+# 
+# rm(list = setdiff(ls(), "data_all"))
+# saveRDS(data_all, "limnoUS.rds")
+# 
+# write_csv(data_all, file = "all_data_june30.csv")
 
 # vals<-unique(data_all$MonitoringLocationIdentifier)
 # 

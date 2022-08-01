@@ -1,15 +1,50 @@
 CharacteristicName,ResultMeasure.MeasureUnitCode,DetectionQuantitationLimitMeasure.MeasureUnitCode,Method_Id,ResultAnalyticalMethod.MethodName,USGSPCode,Conversion,Conversion_dl,Notes
 Atrazine,% recovery,,11NPSWRD_WQX NPS_1694P,"EPA/NPS-EC PPCPs in Water by Liquid Chromatography-Mass Spectrometry Using EPA 1694, Positive Mode",,-1.00E+06,-1.00E+06,units_fail
 Atrazine,% recovery,,11NPSWRD_WQX NPS_M8321,EPA/NPS-EC Pesticides in Water by Liquid Chromatography-Mass Spectrometry Using Modified EPA 8321A,,-1.00E+06,-1.00E+06,units_fail
+Atrazine,mg/l,,KAWNATON_WQX 619,Triazine Pesticides in Wastewater,,-1.00E+06,-1.00E+06,
 Atrazine,ng/l,ng/l,11NPSWRD_WQX NPS_1694P,"EPA/NPS-EC PPCPs in Water by Liquid Chromatography-Mass Spectrometry Using EPA 1694, Positive Mode",,0.001,0.001,methods_WQX
 Atrazine,ng/l,ng/l,11NPSWRD_WQX NPS_M8321,EPA/NPS-EC Pesticides in Water by Liquid Chromatography-Mass Spectrometry Using Modified EPA 8321A,,0.001,0.001,methods_WQX
+Atrazine,ng/l,ng/l,21FLCEN_WQX EPA 8270,EPA 8270,,0.001,0.001,
+Atrazine,ng/l,ng/l,21FLCEN_WQX EPA 8270D,EPA 8270D,,0.001,0.001,
+Atrazine,ng/l,ng/l,21FLFTM_WQX EPA 8270D,EPA 8270D,,0.001,0.001,
+Atrazine,ng/l,ng/l,21FLGW_WQX EPA 8270,EPA 8270,,0.001,0.001,
+Atrazine,ng/l,ng/l,21FLPNS_WQX EPA 8270,EPA 8270,,0.001,0.001,
+Atrazine,ng/l,ng/l,21FLPNS_WQX EPA 8270D,EPA 8270D,,0.001,0.001,
+Atrazine,ng/l,ng/l,21FLTLHR_WQX EPA 8270,EPA 8270,,0.001,0.001,
+Atrazine,ng/l,ng/l,21FLTPA_WQX EPA 8270,EPA 8270,,0.001,0.001,
+Atrazine,ng/l,ng/l,21FLTPA_WQX EPA 8270D,EPA 8270D,,0.001,0.001,
+Atrazine,ng/l,ng/l,21FLWPB_WQX EPA 8270,EPA 8270,,0.001,0.001,
+Atrazine,ng/l,ng/l,21FLWPB_WQX EPA 8270D,EPA 8270D,,0.001,0.001,
+Atrazine,ng/l,ng/l,21FLWQA_WQX EPA 8270,EPA 8270,,0.001,0.001,
+Atrazine,ng/l,ng/l,21FLWQA_WQX EPA 8270D,EPA 8270D,,0.001,0.001,
+Atrazine,ng/l,ng/l,USEPA 1694,"Pharmaceuticals and personal care products in water, soil, sediment, and biosolids by HPLC/MS/MS",,0.001,0.001,
 Atrazine,ng/l,ng/l,USGS GM038,"Current-use pesticides, wf,GC/MS",65065,0.001,0.001,"USGS_65065; Atrazine, water, filtered, recoverable, nanograms per liter"
 Atrazine,ng/l,ng/l,USGS LCM56,"Pharma, wf, LC/MS/MS (Sch 2440)",65065,0.001,0.001,"USGS_65065; Atrazine, water, filtered, recoverable, nanograms per liter; Current-use pesticides in filtered water by HLB extraction, recoverable by gas chromatography and mass spectrometry"
 Atrazine,ng/l,ng/l,USGS LCM60,"Pesticides, wf, dir inj LC/MS/MS",65065,0.001,0.001,"USGS_65065; Atrazine, water, filtered, recoverable, nanograms per liter; Current-use pesticides in filtered water by HLB extraction, recoverable by gas chromatography and mass spectrometry"
 Atrazine,ng/l,,11NPSWRD_WQX NPS_1694P,"EPA/NPS-EC PPCPs in Water by Liquid Chromatography-Mass Spectrometry Using EPA 1694, Positive Mode",,0.001,0.001,methods_WQX
 Atrazine,ng/l,,11NPSWRD_WQX NPS_M8321,EPA/NPS-EC Pesticides in Water by Liquid Chromatography-Mass Spectrometry Using Modified EPA 8321A,,0.001,0.001,methods_WQX
+Atrazine,ng/l,,21FLA_WQX EPA 8270,EPA 8270,,0.001,0.001,
+Atrazine,ng/l,,MNDA_PESTICIDE MDA PEST GCMSMS,Polar Pesticides and Metabolites in Water by Gas Chromatography/Mass Spectrometry/Mass Spectrometry,,0.001,0.001,
 Atrazine,ng/l,,USGS LCM56,"Pharma, wf, LC/MS/MS (Sch 2440)",65065,0.001,0.001,"USGS_65065; Atrazine, water, filtered, recoverable, nanograms per liter; Current-use pesticides in filtered water by HLB extraction, recoverable by gas chromatography and mass spectrometry"
 Atrazine,ng/l,,USGS LCM60,"Pesticides, wf, dir inj LC/MS/MS",65065,0.001,0.001,"USGS_65065; Atrazine, water, filtered, recoverable, nanograms per liter; Current-use pesticides in filtered water by HLB extraction, recoverable by gas chromatography and mass spectrometry"
+Atrazine,ppb,,EPA_R7_WQX 2338.04,Microcystin LR,,-1000000,-1000000,methods_fail
+Atrazine,ug,,KAWNATON_WQX 619,Triazine Pesticides in Wastewater,,-1000000,-1000000,units_fail
+Atrazine,ug/l,ppb,21IOWA UHLIMA,,,1,1,
+Atrazine,ug/l,ppb,21IOWA_WQX UHLIMA,Immunoassay for triazine herbicides,,1,1,
+Atrazine,ug/l,ug/l,11NPSWRD_WQX CUPN_ATRAZINE,Immunoassay,,1,1,
+Atrazine,ug/l,ug/l,11NPSWRD_WQX NPS_Unspecified,Unknown or Unspecified Procedure,,1,1,
+Atrazine,ug/l,ug/l,21FLSFWM WQ-1,,,1,1,
+Atrazine,ug/l,ug/l,CEDEN 25,EPA 619M,,1,1,
+Atrazine,ug/l,ug/l,USEPA 507,Nitrogen and Phosphorus Pesticides,,1,1,
+Atrazine,ug/l,ug/l,USEPA 507,,,1,1,
+Atrazine,ug/l,ug/l,USEPA 525.1,Organics in Water by Gas Chromatography,,1,1,
+Atrazine,ug/l,ug/l,USEPA 525.2,Organics in Water by Gas Chromatography,,1,1,
+Atrazine,ug/l,ug/l,USEPA 525.2,,,1,1,
+Atrazine,ug/l,ug/l,USEPA 608,Organochlorine Pesticides and PCBs by GC,,1,1,
+Atrazine,ug/l,ug/l,USEPA 619,,,1,1,
+Atrazine,ug/l,ug/l,USEPA 8141,Organophosphorus Compounds by Gas Chromatography: Capillary Column Technique,,1,1,
+Atrazine,ug/l,ug/l,USEPA 8141A(W),8141 A W  ~ Organophosphorus Compounds in Water,,1,1,
+Atrazine,ug/l,ug/l,USEPA 8270B(W),,,1,1,
 Atrazine,ug/l,ug/l,USGS GCM15,"Pest, herbs, wf, spe, GCMS-SIM",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
 Atrazine,ug/l,ug/l,USGS GCM35,"Pest, high use, SPE, GCMS-SIM",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
 Atrazine,ug/l,ug/l,USGS GCM36,"Pest, hi use, SPE, fld, GCMS-SIM",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
@@ -17,11 +52,34 @@ Atrazine,ug/l,ug/l,USGS LCM14,"Pesticides, wf, SPE, HPLC/MS",39632,1,1,"USGS_396
 Atrazine,ug/l,ug/l,USGS LCM29,"Pest, polar, wf, spe, HPLC-MS",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
 Atrazine,ug/l,ug/l,USGS LCM44,"Triazines & Phenylureas,SPE,LCMS",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
 Atrazine,ug/l,ug/l,USGS LCM82,"Atrazine, wf, LC/MS (OGRL LCAZ)",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
+Atrazine,ug/l,ug/l,UTAHDWQ_WQX 525.2DEQ,Semivolalitiles for DEQ,,1,1,
 Atrazine,ug/l,,11NPSWRD_WQX USGS_GCM35,"Pest, high use, SPE, GCMS-SIM",,1,1,methods_WQX
+Atrazine,ug/l,,21NEB001_WQX ELISA,Abraxis enzyme-linked immuno-sorbent assay,,1,1,
+Atrazine,ug/l,,CEDEN 25,EPA 619M,,1,1,
+Atrazine,ug/l,,COEOMAHA_WQX 507,Neutral Extractable Pesticides,,1,1,
+Atrazine,ug/l,,COEOMAHA_WQX ELISA,Immuno Assay - Pesticide Scan,,1,1,
+Atrazine,ug/l,,EPA_R7_WQX Procedure is unknown,Procedure is unknown,,1,1,
+Atrazine,ug/l,,EPA_R7_WQX SVOC W LCMS.1C,EPA Region 7 RLAB Method 3280.1C,,1,1,
+Atrazine,ug/l,,IL_EPA LAB,,,1,1,
+Atrazine,ug/l,,INSTOR_WQX 525.2,525.2,,1,1,
+Atrazine,ug/l,,KAWNATON_WQX 619,Triazine Pesticides in Wastewater,,1,1,
+Atrazine,ug/l,,KAWNATON_WQX 8141A(W),Organophosphorus Compounds in Water,,1,1,
+Atrazine,ug/l,,MNDA_PESTICIDE ELISA PEST,Enzyme-linked immunosorbent assay for pesticides,,1,1,
+Atrazine,ug/l,,MNDA_PESTICIDE MDA GCMS,Pesticides in Water by Gas Chromatography/Mass Spectrometry,,1,1,
+Atrazine,ug/l,,MNDA_PESTICIDE USEPA 8270 MOD,"USEPA 8270 Modified, Pesticides in Water by GC/MS",,1,1,
 Atrazine,ug/l,,NA NA,,39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
+Atrazine,ug/l,,NA NA,,65150,1,1,
 Atrazine,ug/l,,NA NA,,99775,1,1,"USGS_99775; Atrazine, water, filtered, immunoassay, unadjusted, recoverable, micrograms per liter; Unpublished immunoassay method for atrazine in filtered water"
+Atrazine,ug/l,,NA NA,,,1,1,
+Atrazine,ug/l,,SPIRITLK O1126,O1126,,1,1,
+Atrazine,ug/l,,TCEQMAIN N/A Calculation,N/A Calculation,,1,1,
 Atrazine,ug/l,,USEPA 200.8,Metals in Waters by ICP/MS,,-1.00E+06,-1.00E+06,methods_fail
+Atrazine,ug/l,,USEPA 507,Nitrogen and Phosphorus Pesticides,,1,1,
+Atrazine,ug/l,,USEPA 608,Organochlorine Pesticides and PCBs by GC,,1,1,
 Atrazine,ug/l,,USEPA 619,Triazine Pesticides in Wastewater,,1,1,EPA 619
+Atrazine,ug/l,,USEPA 625,Base/Neutral and Acid Organics in Wastewater,,1,1,
+Atrazine,ug/l,,USEPA 8141A(W),8141 A W  ~ Organophosphorus Compounds in Water,,1,1,
+Atrazine,ug/l,,USEPA 8270C,8270 C ~ Semivolatile Organic Compounds by CGC/MS,,1,1,
 Atrazine,ug/l,,USGS B,,39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
 Atrazine,ug/l,,USGS GCM15,"Pest, herbs, wf, spe, GCMS-SIM",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
 Atrazine,ug/l,,USGS GCM35,"Pest, high use, SPE, GCMS-SIM",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
@@ -30,9 +88,29 @@ Atrazine,ug/l,,USGS GCM45,"Triazines&CAAs, Sch GCR, SPEGCMS",39632,1,1,"USGS_396
 Atrazine,ug/l,,USGS H,,39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
 Atrazine,ug/l,,USGS IMM01,"Atrazine, wf, by immunoassay",99775,1,1,"USGS_99775; Atrazine, water, filtered, immunoassay, unadjusted, recoverable, micrograms per liter; Unpublished immunoassay method for atrazine in filtered water"
 Atrazine,ug/l,,USGS LCM29,"Pest, polar, wf, spe, HPLC-MS",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
+Atrazine,,mg/l,KAWNATON_WQX 619,Triazine Pesticides in Wastewater,,1000,1000,
+Atrazine,,mg/l,KAWNATON_WQX 8141,Organophosphorus Compounds by Gas Chromatography:,,1000,1000,
+Atrazine,,mg/l,KAWNATON_WQX 8141A(S),Organophosphorus Compounds in Soil by GC,,1000,1000,
+Atrazine,,ng/l,MNDA_PESTICIDE MDA PEST GCMSMS,Polar Pesticides and Metabolites in Water by Gas Chromatography/Mass Spectrometry/Mass Spectrometry,,0.001,0.001,
 Atrazine,,ng/l,USGS GM038,"Current-use pesticides, wf,GC/MS",65065,0.001,0.001,"USGS_65065; Atrazine, water, filtered, recoverable, nanograms per liter; Current-use pesticides in filtered water by HLB extraction, recoverable by gas chromatography and mass spectrometry"
 Atrazine,,ng/l,USGS LCM56,"Pharma, wf, LC/MS/MS (Sch 2440)",65065,0.001,0.001,"USGS_65065; Atrazine, water, filtered, recoverable, nanograms per liter; Current-use pesticides in filtered water by HLB extraction, recoverable by gas chromatography and mass spectrometry"
+Atrazine,,ppb,EPA_R7_WQX 2338.04,Microcystin LR,,1,1,
+Atrazine,,ug/l,21NEB001_WQX ELISA,Abraxis enzyme-linked immuno-sorbent assay,,1,1,
+Atrazine,,ug/l,EPA_R7_WQX SVOC W LCMS.1C,EPA Region 7 RLAB Method 3280.1C,,1,1,
+Atrazine,,ug/l,MNDA_PESTICIDE ELISA PEST,Enzyme-linked immunosorbent assay for pesticides,,1,1,
+Atrazine,,ug/l,MNDA_PESTICIDE MDA GCMS,Pesticides in Water by Gas Chromatography/Mass Spectrometry,,1,1,
+Atrazine,,ug/l,MNDA_PESTICIDE USEPA 8270 MOD,"USEPA 8270 Modified, Pesticides in Water by GC/MS",,1,1,
+Atrazine,,ug/l,NA NA,,,1,1,
+Atrazine,,ug/l,SDWRAP 525.2,,,1,1,
+Atrazine,,ug/l,USEPA 507,Nitrogen and Phosphorus Pesticides,,1,1,
+Atrazine,,ug/l,USEPA 507,,,1,1,
+Atrazine,,ug/l,USEPA 508,Chlorinated Pesticides in Water by GC,,1,1,
+Atrazine,,ug/l,USEPA 525.2,Organics in Water by Gas Chromatography,,1,1,
+Atrazine,,ug/l,USEPA 525.2,,,1,1,
+Atrazine,,ug/l,USEPA 608,Organochlorine Pesticides and PCBs by GC,,1,1,
 Atrazine,,ug/l,USEPA 619,Triazine Pesticides in Wastewater,,1,1,EPA 619
+Atrazine,,ug/l,USEPA 625,Base/Neutral and Acid Organics in Wastewater,,1,1,
+Atrazine,,ug/l,USEPA 8270B(W),,,1,1,
 Atrazine,,ug/l,USGS GCM15,"Pest, herbs, wf, spe, GCMS-SIM",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
 Atrazine,,ug/l,USGS GCM35,"Pest, high use, SPE, GCMS-SIM",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"
 Atrazine,,ug/l,USGS GCM36,"Pest, hi use, SPE, fld, GCMS-SIM",39632,1,1,"USGS_39632; Atrazine, water, filtered, recoverable, micrograms per liter"

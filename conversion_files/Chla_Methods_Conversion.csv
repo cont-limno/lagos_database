@@ -213,7 +213,7 @@ Chlorophyll a,,ug/l,USGS FL008,"Chlorophyll a,phyto,fluorometric",70953,1,1,"USG
 Chlorophyll a,,ug/l,USGS FL021,"Chlorophyll a,fluorometric,uncor",32217,1,1,USGS_32217
 Chlorophyll a,,ug/l,USGS LC025,"Chlorophyll, phytoplankton, HPLC",70953,1,1,"USGS_70953; Fluorometric, Chlorophyll A, Phytoplankton"
 Chlorophyll a,,,21FLMANA GENERIC,,,-1000000,-1000000,units_fail
-Chlorophyll a - Phytoplankton (suspended),ug/l,ug/l,INSTOR_WQX 445.0,445,,1,1,EPA 445.0
+Chlorophyll a - Phytoplankton (suspended),ug/l,ug/l,INSTOR_WQX 445.0,445.0,,1,1,
 Chlorophyll a - Phytoplankton (suspended),ug/l,,21ARIZ_WQX SM 10200 H,STANDARD METHOD FOR 10200 H,,1,1,APHA 10200-H
 Chlorophyll a - Phytoplankton (suspended),ug/l,,SPIRITLK LC3152,LC3152,,1,1,methods_unknown
 Chlorophyll a - Phytoplankton (suspended),ug/l,,USEPA 445,In-Vitro Determination of Chlorophyll,,1,1,EPA 445.0
