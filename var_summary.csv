@@ -1,0 +1,2069 @@
+State,CharacteristicName,n
+AL,Alkalinity,5990
+AL,"Aluminum, dissolved",21
+AL,"Aluminum, total",98
+AL,ANC,NA
+AL,"Arsenic, dissolved",32
+AL,"Arsenic, total",27
+AL,"Atrazine, dissolved",NA
+AL,"Calcium, dissolved",221
+AL,"Carbon, dissolved organic",90
+AL,"Carbon, total inorganic",NA
+AL,"Carbon, total organic",1817
+AL,"Chloride, dissolved",222
+AL,Chlorophyll a,5204
+AL,"Color, apparent",39
+AL,"Color, true",84
+AL,Conductivity,104062
+AL,Depth,3719
+AL,E. coli,NA
+AL,E. coli-CFU,51
+AL,E. coli-MPN,1061
+AL,"Magnesium, dissolved",221
+AL,"Mercury, dissolved",12
+AL,"Mercury, total",31
+AL,"Methylmercury, dissolved",NA
+AL,Microcystin,NA
+AL,"Nitrogen, NH4",145
+AL,"Nitrogen, nitrite (NO2)",11
+AL,"Nitrogen, nitrite (NO2) + nitrate (NO3)",141
+AL,"Nitrogen, total",5
+AL,"Nitrogen, total dissolved",NA
+AL,"Nitrogen, total dissolved Kjeldahl",124
+AL,"Nitrogen, total Kjeldahl",362
+AL,"Oxygen, dissolved",103575
+AL,"pH, equilibrated",102965
+AL,"Phosphorus, soluable reactive orthophosphate",776
+AL,"Phosphorus, total",1868
+AL,"Phosphorus, total dissolved",NA
+AL,Potassium,221
+AL,Salinity,1041
+AL,Secchi,5463
+AL,"Selenium, dissolved",7
+AL,"Selenium, total",17
+AL,"Silica, dissolved",220
+AL,Sodium,221
+AL,"Solids, total suspended",104
+AL,"Sulfate, dissolved",224
+AL,Turbidity,9296
+AR,Alkalinity,7183
+AR,"Aluminum, dissolved",545
+AR,"Aluminum, total",NA
+AR,ANC,NA
+AR,"Arsenic, dissolved",978
+AR,"Arsenic, total",650
+AR,"Atrazine, dissolved",44
+AR,"Calcium, dissolved",6158
+AR,"Carbon, dissolved organic",3544
+AR,"Carbon, total inorganic",NA
+AR,"Carbon, total organic",5355
+AR,"Chloride, dissolved",6357
+AR,Chlorophyll a,5728
+AR,"Color, apparent",NA
+AR,"Color, true",3675
+AR,Conductivity,85783
+AR,Depth,334
+AR,E. coli,NA
+AR,E. coli-CFU,291
+AR,E. coli-MPN,NA
+AR,"Magnesium, dissolved",6160
+AR,"Mercury, dissolved",NA
+AR,"Mercury, total",NA
+AR,"Methylmercury, dissolved",NA
+AR,Microcystin,NA
+AR,"Nitrogen, NH4",3165
+AR,"Nitrogen, nitrite (NO2)",1600
+AR,"Nitrogen, nitrite (NO2) + nitrate (NO3)",3335
+AR,"Nitrogen, total",700
+AR,"Nitrogen, total dissolved",6
+AR,"Nitrogen, total dissolved Kjeldahl",89
+AR,"Nitrogen, total Kjeldahl",5170
+AR,"Oxygen, dissolved",80972
+AR,"pH, equilibrated",85328
+AR,"Phosphorus, soluable reactive orthophosphate",1659
+AR,"Phosphorus, total",7557
+AR,"Phosphorus, total dissolved",NA
+AR,Potassium,2843
+AR,Salinity,NA
+AR,Secchi,12306
+AR,"Selenium, dissolved",NA
+AR,"Selenium, total",4
+AR,"Silica, dissolved",2606
+AR,Sodium,2847
+AR,"Solids, total suspended",4131
+AR,"Sulfate, dissolved",5801
+AR,Turbidity,7167
+AZ,Alkalinity,2990
+AZ,"Aluminum, dissolved",102
+AZ,"Aluminum, total",177
+AZ,ANC,NA
+AZ,"Arsenic, dissolved",605
+AZ,"Arsenic, total",1860
+AZ,"Atrazine, dissolved",NA
+AZ,"Calcium, dissolved",635
+AZ,"Carbon, dissolved organic",551
+AZ,"Carbon, total inorganic",NA
+AZ,"Carbon, total organic",2495
+AZ,"Chloride, dissolved",62
+AZ,Chlorophyll a,3463
+AZ,"Color, apparent",NA
+AZ,"Color, true",NA
+AZ,Conductivity,35374
+AZ,Depth,304
+AZ,E. coli,18
+AZ,E. coli-CFU,1540
+AZ,E. coli-MPN,1837
+AZ,"Magnesium, dissolved",633
+AZ,"Mercury, dissolved",322
+AZ,"Mercury, total",668
+AZ,"Methylmercury, dissolved",2
+AZ,Microcystin,31
+AZ,"Nitrogen, NH4",6
+AZ,"Nitrogen, nitrite (NO2)",5
+AZ,"Nitrogen, nitrite (NO2) + nitrate (NO3)",78
+AZ,"Nitrogen, total",11
+AZ,"Nitrogen, total dissolved",69
+AZ,"Nitrogen, total dissolved Kjeldahl",2
+AZ,"Nitrogen, total Kjeldahl",4409
+AZ,"Oxygen, dissolved",30123
+AZ,"pH, equilibrated",35000
+AZ,"Phosphorus, soluable reactive orthophosphate",120
+AZ,"Phosphorus, total",3665
+AZ,"Phosphorus, total dissolved",NA
+AZ,Potassium,2397
+AZ,Salinity,NA
+AZ,Secchi,7791
+AZ,"Selenium, dissolved",224
+AZ,"Selenium, total",174
+AZ,"Silica, dissolved",54
+AZ,Sodium,2394
+AZ,"Solids, total suspended",2832
+AZ,"Sulfate, dissolved",63
+AZ,Turbidity,9949
+CA,Alkalinity,2920
+CA,"Aluminum, dissolved",235
+CA,"Aluminum, total",13
+CA,ANC,53
+CA,"Arsenic, dissolved",186
+CA,"Arsenic, total",102
+CA,"Atrazine, dissolved",1
+CA,"Calcium, dissolved",1425
+CA,"Carbon, dissolved organic",383
+CA,"Carbon, total inorganic",NA
+CA,"Carbon, total organic",508
+CA,"Chloride, dissolved",1971
+CA,Chlorophyll a,3089
+CA,"Color, apparent",5
+CA,"Color, true",13
+CA,Conductivity,20544
+CA,Depth,576
+CA,E. coli,NA
+CA,E. coli-CFU,2
+CA,E. coli-MPN,216
+CA,"Magnesium, dissolved",1396
+CA,"Mercury, dissolved",532
+CA,"Mercury, total",1828
+CA,"Methylmercury, dissolved",87
+CA,Microcystin,624
+CA,"Nitrogen, NH4",1369
+CA,"Nitrogen, nitrite (NO2)",461
+CA,"Nitrogen, nitrite (NO2) + nitrate (NO3)",1401
+CA,"Nitrogen, total",1193
+CA,"Nitrogen, total dissolved",154
+CA,"Nitrogen, total dissolved Kjeldahl",539
+CA,"Nitrogen, total Kjeldahl",2011
+CA,"Oxygen, dissolved",18659
+CA,"pH, equilibrated",19690
+CA,"Phosphorus, soluable reactive orthophosphate",2703
+CA,"Phosphorus, total",4780
+CA,"Phosphorus, total dissolved",NA
+CA,Potassium,1447
+CA,Salinity,1407
+CA,Secchi,2136
+CA,"Selenium, dissolved",116
+CA,"Selenium, total",214
+CA,"Silica, dissolved",1211
+CA,Sodium,1420
+CA,"Solids, total suspended",404
+CA,"Sulfate, dissolved",1595
+CA,Turbidity,4070
+CO,Alkalinity,8109
+CO,"Aluminum, dissolved",1660
+CO,"Aluminum, total",172
+CO,ANC,19
+CO,"Arsenic, dissolved",1433
+CO,"Arsenic, total",515
+CO,"Atrazine, dissolved",NA
+CO,"Calcium, dissolved",6864
+CO,"Carbon, dissolved organic",2874
+CO,"Carbon, total inorganic",133
+CO,"Carbon, total organic",2060
+CO,"Chloride, dissolved",4744
+CO,Chlorophyll a,4302
+CO,"Color, apparent",NA
+CO,"Color, true",596
+CO,Conductivity,91670
+CO,Depth,26419
+CO,E. coli,153
+CO,E. coli-CFU,27
+CO,E. coli-MPN,10
+CO,"Magnesium, dissolved",6859
+CO,"Mercury, dissolved",74
+CO,"Mercury, total",265
+CO,"Methylmercury, dissolved",51
+CO,Microcystin,1
+CO,"Nitrogen, NH4",3945
+CO,"Nitrogen, nitrite (NO2)",2369
+CO,"Nitrogen, nitrite (NO2) + nitrate (NO3)",5630
+CO,"Nitrogen, total",2172
+CO,"Nitrogen, total dissolved",514
+CO,"Nitrogen, total dissolved Kjeldahl",744
+CO,"Nitrogen, total Kjeldahl",4724
+CO,"Oxygen, dissolved",91795
+CO,"pH, equilibrated",91057
+CO,"Phosphorus, soluable reactive orthophosphate",5025
+CO,"Phosphorus, total",8171
+CO,"Phosphorus, total dissolved",55
+CO,Potassium,5992
+CO,Salinity,NA
+CO,Secchi,7209
+CO,"Selenium, dissolved",1939
+CO,"Selenium, total",637
+CO,"Silica, dissolved",4182
+CO,Sodium,6397
+CO,"Solids, total suspended",561
+CO,"Sulfate, dissolved",5003
+CO,Turbidity,2356
+CT,Alkalinity,607
+CT,"Aluminum, dissolved",6
+CT,"Aluminum, total",NA
+CT,ANC,NA
+CT,"Arsenic, dissolved",1
+CT,"Arsenic, total",NA
+CT,"Atrazine, dissolved",NA
+CT,"Calcium, dissolved",196
+CT,"Carbon, dissolved organic",NA
+CT,"Carbon, total inorganic",NA
+CT,"Carbon, total organic",332
+CT,"Chloride, dissolved",310
+CT,Chlorophyll a,156
+CT,"Color, apparent",NA
+CT,"Color, true",184
+CT,Conductivity,1510
+CT,Depth,NA
+CT,E. coli,NA
+CT,E. coli-CFU,NA
+CT,E. coli-MPN,502
+CT,"Magnesium, dissolved",196
+CT,"Mercury, dissolved",NA
+CT,"Mercury, total",NA
+CT,"Methylmercury, dissolved",NA
+CT,Microcystin,NA
+CT,"Nitrogen, NH4",359
+CT,"Nitrogen, nitrite (NO2)",24
+CT,"Nitrogen, nitrite (NO2) + nitrate (NO3)",47
+CT,"Nitrogen, total",425
+CT,"Nitrogen, total dissolved",44
+CT,"Nitrogen, total dissolved Kjeldahl",70
+CT,"Nitrogen, total Kjeldahl",770
+CT,"Oxygen, dissolved",1364
+CT,"pH, equilibrated",1415
+CT,"Phosphorus, soluable reactive orthophosphate",189
+CT,"Phosphorus, total",893
+CT,"Phosphorus, total dissolved",NA
+CT,Potassium,7
+CT,Salinity,NA
+CT,Secchi,262
+CT,"Selenium, dissolved",NA
+CT,"Selenium, total",NA
+CT,"Silica, dissolved",163
+CT,Sodium,7
+CT,"Solids, total suspended",290
+CT,"Sulfate, dissolved",235
+CT,Turbidity,217
+DE,Alkalinity,2965
+DE,"Aluminum, dissolved",NA
+DE,"Aluminum, total",NA
+DE,ANC,NA
+DE,"Arsenic, dissolved",47
+DE,"Arsenic, total",1
+DE,"Atrazine, dissolved",NA
+DE,"Calcium, dissolved",530
+DE,"Carbon, dissolved organic",NA
+DE,"Carbon, total inorganic",NA
+DE,"Carbon, total organic",4978
+DE,"Chloride, dissolved",531
+DE,Chlorophyll a,3617
+DE,"Color, apparent",NA
+DE,"Color, true",NA
+DE,Conductivity,3860
+DE,Depth,NA
+DE,E. coli,NA
+DE,E. coli-CFU,NA
+DE,E. coli-MPN,NA
+DE,"Magnesium, dissolved",530
+DE,"Mercury, dissolved",NA
+DE,"Mercury, total",NA
+DE,"Methylmercury, dissolved",NA
+DE,Microcystin,NA
+DE,"Nitrogen, NH4",286
+DE,"Nitrogen, nitrite (NO2)",NA
+DE,"Nitrogen, nitrite (NO2) + nitrate (NO3)",361
+DE,"Nitrogen, total",2796
+DE,"Nitrogen, total dissolved",312
+DE,"Nitrogen, total dissolved Kjeldahl",43
+DE,"Nitrogen, total Kjeldahl",930
+DE,"Oxygen, dissolved",5090
+DE,"pH, equilibrated",3864
+DE,"Phosphorus, soluable reactive orthophosphate",2672
+DE,"Phosphorus, total",3535
+DE,"Phosphorus, total dissolved",NA
+DE,Potassium,529
+DE,Salinity,1514
+DE,Secchi,3624
+DE,"Selenium, dissolved",NA
+DE,"Selenium, total",NA
+DE,"Silica, dissolved",28
+DE,Sodium,531
+DE,"Solids, total suspended",NA
+DE,"Sulfate, dissolved",497
+DE,Turbidity,3772
+FL,Alkalinity,66242
+FL,"Aluminum, dissolved",2663
+FL,"Aluminum, total",20693
+FL,ANC,NA
+FL,"Arsenic, dissolved",1611
+FL,"Arsenic, total",20186
+FL,"Atrazine, dissolved",7
+FL,"Calcium, dissolved",12622
+FL,"Carbon, dissolved organic",850
+FL,"Carbon, total inorganic",330
+FL,"Carbon, total organic",34335
+FL,"Chloride, dissolved",23706
+FL,Chlorophyll a,293870
+FL,"Color, apparent",8279
+FL,"Color, true",77178
+FL,Conductivity,187870
+FL,Depth,112588
+FL,E. coli,2397
+FL,E. coli-CFU,825
+FL,E. coli-MPN,3124
+FL,"Magnesium, dissolved",12069
+FL,"Mercury, dissolved",1
+FL,"Mercury, total",2065
+FL,"Methylmercury, dissolved",NA
+FL,Microcystin,132
+FL,"Nitrogen, NH4",23589
+FL,"Nitrogen, nitrite (NO2)",7129
+FL,"Nitrogen, nitrite (NO2) + nitrate (NO3)",20753
+FL,"Nitrogen, total",4534
+FL,"Nitrogen, total dissolved",27
+FL,"Nitrogen, total dissolved Kjeldahl",9939
+FL,"Nitrogen, total Kjeldahl",92564
+FL,"Oxygen, dissolved",185868
+FL,"pH, equilibrated",188485
+FL,"Phosphorus, soluable reactive orthophosphate",45887
+FL,"Phosphorus, total",53265
+FL,"Phosphorus, total dissolved",NA
+FL,Potassium,40492
+FL,Salinity,55986
+FL,Secchi,255967
+FL,"Selenium, dissolved",1546
+FL,"Selenium, total",17208
+FL,"Silica, dissolved",12640
+FL,Sodium,41436
+FL,"Solids, total suspended",78120
+FL,"Sulfate, dissolved",6000
+FL,Turbidity,95001
+GA,Alkalinity,10363
+GA,"Aluminum, dissolved",3
+GA,"Aluminum, total",4
+GA,ANC,NA
+GA,"Arsenic, dissolved",2
+GA,"Arsenic, total",9
+GA,"Atrazine, dissolved",NA
+GA,"Calcium, dissolved",73
+GA,"Carbon, dissolved organic",454
+GA,"Carbon, total inorganic",NA
+GA,"Carbon, total organic",9958
+GA,"Chloride, dissolved",90
+GA,Chlorophyll a,7394
+GA,"Color, apparent",NA
+GA,"Color, true",486
+GA,Conductivity,111742
+GA,Depth,939
+GA,E. coli,103
+GA,E. coli-CFU,2
+GA,E. coli-MPN,486
+GA,"Magnesium, dissolved",93
+GA,"Mercury, dissolved",NA
+GA,"Mercury, total",11
+GA,"Methylmercury, dissolved",NA
+GA,Microcystin,NA
+GA,"Nitrogen, NH4",1584
+GA,"Nitrogen, nitrite (NO2)",151
+GA,"Nitrogen, nitrite (NO2) + nitrate (NO3)",4676
+GA,"Nitrogen, total",258
+GA,"Nitrogen, total dissolved",99
+GA,"Nitrogen, total dissolved Kjeldahl",109
+GA,"Nitrogen, total Kjeldahl",5578
+GA,"Oxygen, dissolved",111460
+GA,"pH, equilibrated",113714
+GA,"Phosphorus, soluable reactive orthophosphate",1037
+GA,"Phosphorus, total",5566
+GA,"Phosphorus, total dissolved",NA
+GA,Potassium,42
+GA,Salinity,2
+GA,Secchi,5964
+GA,"Selenium, dissolved",3
+GA,"Selenium, total",NA
+GA,"Silica, dissolved",140
+GA,Sodium,46
+GA,"Solids, total suspended",141
+GA,"Sulfate, dissolved",400
+GA,Turbidity,10155
+IA,Alkalinity,5069
+IA,"Aluminum, dissolved",NA
+IA,"Aluminum, total",NA
+IA,ANC,NA
+IA,"Arsenic, dissolved",1
+IA,"Arsenic, total",7
+IA,"Atrazine, dissolved",44
+IA,"Calcium, dissolved",32
+IA,"Carbon, dissolved organic",6
+IA,"Carbon, total inorganic",NA
+IA,"Carbon, total organic",1751
+IA,"Chloride, dissolved",26
+IA,Chlorophyll a,8575
+IA,"Color, apparent",NA
+IA,"Color, true",11
+IA,Conductivity,8841
+IA,Depth,6472
+IA,E. coli,2883
+IA,E. coli-CFU,9
+IA,E. coli-MPN,6300
+IA,"Magnesium, dissolved",32
+IA,"Mercury, dissolved",NA
+IA,"Mercury, total",NA
+IA,"Methylmercury, dissolved",NA
+IA,Microcystin,4169
+IA,"Nitrogen, NH4",1501
+IA,"Nitrogen, nitrite (NO2)",82
+IA,"Nitrogen, nitrite (NO2) + nitrate (NO3)",900
+IA,"Nitrogen, total",NA
+IA,"Nitrogen, total dissolved",NA
+IA,"Nitrogen, total dissolved Kjeldahl",142
+IA,"Nitrogen, total Kjeldahl",4984
+IA,"Oxygen, dissolved",15161
+IA,"pH, equilibrated",14335
+IA,"Phosphorus, soluable reactive orthophosphate",2857
+IA,"Phosphorus, total",7911
+IA,"Phosphorus, total dissolved",NA
+IA,Potassium,26
+IA,Salinity,29
+IA,Secchi,7751
+IA,"Selenium, dissolved",NA
+IA,"Selenium, total",NA
+IA,"Silica, dissolved",2874
+IA,Sodium,32
+IA,"Solids, total suspended",4272
+IA,"Sulfate, dissolved",26
+IA,Turbidity,13763
+ID,Alkalinity,928
+ID,"Aluminum, dissolved",20
+ID,"Aluminum, total",20
+ID,ANC,NA
+ID,"Arsenic, dissolved",394
+ID,"Arsenic, total",583
+ID,"Atrazine, dissolved",5
+ID,"Calcium, dissolved",1847
+ID,"Carbon, dissolved organic",648
+ID,"Carbon, total inorganic",39
+ID,"Carbon, total organic",2381
+ID,"Chloride, dissolved",857
+ID,Chlorophyll a,2963
+ID,"Color, apparent",NA
+ID,"Color, true",47
+ID,Conductivity,37076
+ID,Depth,867
+ID,E. coli,280
+ID,E. coli-CFU,2
+ID,E. coli-MPN,NA
+ID,"Magnesium, dissolved",1837
+ID,"Mercury, dissolved",34
+ID,"Mercury, total",123
+ID,"Methylmercury, dissolved",11
+ID,Microcystin,NA
+ID,"Nitrogen, NH4",2250
+ID,"Nitrogen, nitrite (NO2)",792
+ID,"Nitrogen, nitrite (NO2) + nitrate (NO3)",3304
+ID,"Nitrogen, total",901
+ID,"Nitrogen, total dissolved",25
+ID,"Nitrogen, total dissolved Kjeldahl",21
+ID,"Nitrogen, total Kjeldahl",3280
+ID,"Oxygen, dissolved",38183
+ID,"pH, equilibrated",35958
+ID,"Phosphorus, soluable reactive orthophosphate",3774
+ID,"Phosphorus, total",4067
+ID,"Phosphorus, total dissolved",NA
+ID,Potassium,1493
+ID,Salinity,12
+ID,Secchi,2000
+ID,"Selenium, dissolved",13
+ID,"Selenium, total",134
+ID,"Silica, dissolved",1431
+ID,Sodium,1552
+ID,"Solids, total suspended",1786
+ID,"Sulfate, dissolved",818
+ID,Turbidity,8998
+IN,Alkalinity,49
+IN,"Aluminum, dissolved",26
+IN,"Aluminum, total",NA
+IN,ANC,NA
+IN,"Arsenic, dissolved",16
+IN,"Arsenic, total",4
+IN,"Atrazine, dissolved",NA
+IN,"Calcium, dissolved",52
+IN,"Carbon, dissolved organic",64
+IN,"Carbon, total inorganic",3
+IN,"Carbon, total organic",15
+IN,"Chloride, dissolved",54
+IN,Chlorophyll a,143
+IN,"Color, apparent",NA
+IN,"Color, true",NA
+IN,Conductivity,234
+IN,Depth,NA
+IN,E. coli,NA
+IN,E. coli-CFU,NA
+IN,E. coli-MPN,NA
+IN,"Magnesium, dissolved",52
+IN,"Mercury, dissolved",42
+IN,"Mercury, total",1
+IN,"Methylmercury, dissolved",16
+IN,Microcystin,NA
+IN,"Nitrogen, NH4",44
+IN,"Nitrogen, nitrite (NO2)",43
+IN,"Nitrogen, nitrite (NO2) + nitrate (NO3)",48
+IN,"Nitrogen, total",43
+IN,"Nitrogen, total dissolved",2
+IN,"Nitrogen, total dissolved Kjeldahl",15
+IN,"Nitrogen, total Kjeldahl",21
+IN,"Oxygen, dissolved",238
+IN,"pH, equilibrated",243
+IN,"Phosphorus, soluable reactive orthophosphate",34
+IN,"Phosphorus, total",62
+IN,"Phosphorus, total dissolved",NA
+IN,Potassium,52
+IN,Salinity,NA
+IN,Secchi,1059
+IN,"Selenium, dissolved",1
+IN,"Selenium, total",NA
+IN,"Silica, dissolved",43
+IN,Sodium,52
+IN,"Solids, total suspended",4
+IN,"Sulfate, dissolved",92
+IN,Turbidity,11
+KS,Alkalinity,2177
+KS,"Aluminum, dissolved",10
+KS,"Aluminum, total",1174
+KS,ANC,NA
+KS,"Arsenic, dissolved",12
+KS,"Arsenic, total",52
+KS,"Atrazine, dissolved",70
+KS,"Calcium, dissolved",417
+KS,"Carbon, dissolved organic",179
+KS,"Carbon, total inorganic",NA
+KS,"Carbon, total organic",1369
+KS,"Chloride, dissolved",440
+KS,Chlorophyll a,3352
+KS,"Color, apparent",NA
+KS,"Color, true",NA
+KS,Conductivity,3602
+KS,Depth,619
+KS,E. coli,129
+KS,E. coli-CFU,48
+KS,E. coli-MPN,148
+KS,"Magnesium, dissolved",416
+KS,"Mercury, dissolved",1
+KS,"Mercury, total",60
+KS,"Methylmercury, dissolved",NA
+KS,Microcystin,380
+KS,"Nitrogen, NH4",349
+KS,"Nitrogen, nitrite (NO2)",172
+KS,"Nitrogen, nitrite (NO2) + nitrate (NO3)",761
+KS,"Nitrogen, total",145
+KS,"Nitrogen, total dissolved",82
+KS,"Nitrogen, total dissolved Kjeldahl",133
+KS,"Nitrogen, total Kjeldahl",1786
+KS,"Oxygen, dissolved",6203
+KS,"pH, equilibrated",1964
+KS,"Phosphorus, soluable reactive orthophosphate",1010
+KS,"Phosphorus, total",2420
+KS,"Phosphorus, total dissolved",NA
+KS,Potassium,1960
+KS,Salinity,NA
+KS,Secchi,1298
+KS,"Selenium, dissolved",4
+KS,"Selenium, total",375
+KS,"Silica, dissolved",428
+KS,Sodium,1989
+KS,"Solids, total suspended",2720
+KS,"Sulfate, dissolved",435
+KS,Turbidity,2067
+KY,Alkalinity,1340
+KY,"Aluminum, dissolved",223
+KY,"Aluminum, total",996
+KY,ANC,NA
+KY,"Arsenic, dissolved",70
+KY,"Arsenic, total",217
+KY,"Atrazine, dissolved",NA
+KY,"Calcium, dissolved",88
+KY,"Carbon, dissolved organic",NA
+KY,"Carbon, total inorganic",NA
+KY,"Carbon, total organic",1296
+KY,"Chloride, dissolved",NA
+KY,Chlorophyll a,2053
+KY,"Color, apparent",NA
+KY,"Color, true",NA
+KY,Conductivity,28087
+KY,Depth,1147
+KY,E. coli,NA
+KY,E. coli-CFU,NA
+KY,E. coli-MPN,NA
+KY,"Magnesium, dissolved",88
+KY,"Mercury, dissolved",NA
+KY,"Mercury, total",2
+KY,"Methylmercury, dissolved",NA
+KY,Microcystin,NA
+KY,"Nitrogen, NH4",13
+KY,"Nitrogen, nitrite (NO2)",16
+KY,"Nitrogen, nitrite (NO2) + nitrate (NO3)",18
+KY,"Nitrogen, total",23
+KY,"Nitrogen, total dissolved",NA
+KY,"Nitrogen, total dissolved Kjeldahl",NA
+KY,"Nitrogen, total Kjeldahl",1128
+KY,"Oxygen, dissolved",27960
+KY,"pH, equilibrated",27616
+KY,"Phosphorus, soluable reactive orthophosphate",1350
+KY,"Phosphorus, total",1354
+KY,"Phosphorus, total dissolved",45
+KY,Potassium,1084
+KY,Salinity,NA
+KY,Secchi,1165
+KY,"Selenium, dissolved",70
+KY,"Selenium, total",217
+KY,"Silica, dissolved",NA
+KY,Sodium,1083
+KY,"Solids, total suspended",2171
+KY,"Sulfate, dissolved",NA
+KY,Turbidity,1503
+LA,Alkalinity,4351
+LA,"Aluminum, dissolved",15
+LA,"Aluminum, total",NA
+LA,ANC,NA
+LA,"Arsenic, dissolved",1051
+LA,"Arsenic, total",2368
+LA,"Atrazine, dissolved",217
+LA,"Calcium, dissolved",1943
+LA,"Carbon, dissolved organic",224
+LA,"Carbon, total inorganic",NA
+LA,"Carbon, total organic",1956
+LA,"Chloride, dissolved",1698
+LA,Chlorophyll a,1353
+LA,"Color, apparent",9
+LA,"Color, true",2422
+LA,Conductivity,9087
+LA,Depth,329
+LA,E. coli,NA
+LA,E. coli-CFU,NA
+LA,E. coli-MPN,37
+LA,"Magnesium, dissolved",1942
+LA,"Mercury, dissolved",217
+LA,"Mercury, total",1468
+LA,"Methylmercury, dissolved",NA
+LA,Microcystin,33
+LA,"Nitrogen, NH4",697
+LA,"Nitrogen, nitrite (NO2)",314
+LA,"Nitrogen, nitrite (NO2) + nitrate (NO3)",519
+LA,"Nitrogen, total",287
+LA,"Nitrogen, total dissolved",125
+LA,"Nitrogen, total dissolved Kjeldahl",1359
+LA,"Nitrogen, total Kjeldahl",2671
+LA,"Oxygen, dissolved",7480
+LA,"pH, equilibrated",8471
+LA,"Phosphorus, soluable reactive orthophosphate",1460
+LA,"Phosphorus, total",4644
+LA,"Phosphorus, total dissolved",NA
+LA,Potassium,1710
+LA,Salinity,3584
+LA,Secchi,505
+LA,"Selenium, dissolved",165
+LA,"Selenium, total",170
+LA,"Silica, dissolved",1123
+LA,Sodium,1926
+LA,"Solids, total suspended",3760
+LA,"Sulfate, dissolved",1678
+LA,Turbidity,2653
+MA,Alkalinity,230
+MA,"Aluminum, dissolved",21
+MA,"Aluminum, total",NA
+MA,ANC,NA
+MA,"Arsenic, dissolved",2
+MA,"Arsenic, total",NA
+MA,"Atrazine, dissolved",NA
+MA,"Calcium, dissolved",219
+MA,"Carbon, dissolved organic",139
+MA,"Carbon, total inorganic",NA
+MA,"Carbon, total organic",121
+MA,"Chloride, dissolved",288
+MA,Chlorophyll a,242
+MA,"Color, apparent",56
+MA,"Color, true",130
+MA,Conductivity,2901
+MA,Depth,NA
+MA,E. coli,NA
+MA,E. coli-CFU,32
+MA,E. coli-MPN,6
+MA,"Magnesium, dissolved",218
+MA,"Mercury, dissolved",11
+MA,"Mercury, total",57
+MA,"Methylmercury, dissolved",11
+MA,Microcystin,NA
+MA,"Nitrogen, NH4",91
+MA,"Nitrogen, nitrite (NO2)",31
+MA,"Nitrogen, nitrite (NO2) + nitrate (NO3)",168
+MA,"Nitrogen, total",7
+MA,"Nitrogen, total dissolved",13
+MA,"Nitrogen, total dissolved Kjeldahl",73
+MA,"Nitrogen, total Kjeldahl",271
+MA,"Oxygen, dissolved",2465
+MA,"pH, equilibrated",2755
+MA,"Phosphorus, soluable reactive orthophosphate",78
+MA,"Phosphorus, total",125
+MA,"Phosphorus, total dissolved",NA
+MA,Potassium,287
+MA,Salinity,NA
+MA,Secchi,633
+MA,"Selenium, dissolved",1
+MA,"Selenium, total",NA
+MA,"Silica, dissolved",125
+MA,Sodium,286
+MA,"Solids, total suspended",NA
+MA,"Sulfate, dissolved",287
+MA,Turbidity,114
+MD,Alkalinity,5
+MD,"Aluminum, dissolved",NA
+MD,"Aluminum, total",NA
+MD,ANC,NA
+MD,"Arsenic, dissolved",NA
+MD,"Arsenic, total",NA
+MD,"Atrazine, dissolved",3
+MD,"Calcium, dissolved",4
+MD,"Carbon, dissolved organic",4
+MD,"Carbon, total inorganic",NA
+MD,"Carbon, total organic",1
+MD,"Chloride, dissolved",354
+MD,Chlorophyll a,725
+MD,"Color, apparent",NA
+MD,"Color, true",NA
+MD,Conductivity,9400
+MD,Depth,10
+MD,E. coli,NA
+MD,E. coli-CFU,NA
+MD,E. coli-MPN,108
+MD,"Magnesium, dissolved",4
+MD,"Mercury, dissolved",NA
+MD,"Mercury, total",NA
+MD,"Methylmercury, dissolved",NA
+MD,Microcystin,NA
+MD,"Nitrogen, NH4",1833
+MD,"Nitrogen, nitrite (NO2)",855
+MD,"Nitrogen, nitrite (NO2) + nitrate (NO3)",2975
+MD,"Nitrogen, total",5
+MD,"Nitrogen, total dissolved",NA
+MD,"Nitrogen, total dissolved Kjeldahl",NA
+MD,"Nitrogen, total Kjeldahl",5
+MD,"Oxygen, dissolved",9405
+MD,"pH, equilibrated",9406
+MD,"Phosphorus, soluable reactive orthophosphate",3453
+MD,"Phosphorus, total",944
+MD,"Phosphorus, total dissolved",71
+MD,Potassium,4
+MD,Salinity,8735
+MD,Secchi,842
+MD,"Selenium, dissolved",NA
+MD,"Selenium, total",1
+MD,"Silica, dissolved",4
+MD,Sodium,4
+MD,"Solids, total suspended",NA
+MD,"Sulfate, dissolved",173
+MD,Turbidity,5837
+ME,Alkalinity,422
+ME,"Aluminum, dissolved",NA
+ME,"Aluminum, total",NA
+ME,ANC,NA
+ME,"Arsenic, dissolved",NA
+ME,"Arsenic, total",NA
+ME,"Atrazine, dissolved",NA
+ME,"Calcium, dissolved",NA
+ME,"Carbon, dissolved organic",NA
+ME,"Carbon, total inorganic",NA
+ME,"Carbon, total organic",NA
+ME,"Chloride, dissolved",315
+ME,Chlorophyll a,930
+ME,"Color, apparent",NA
+ME,"Color, true",415
+ME,Conductivity,743
+ME,Depth,NA
+ME,E. coli,NA
+ME,E. coli-CFU,NA
+ME,E. coli-MPN,NA
+ME,"Magnesium, dissolved",NA
+ME,"Mercury, dissolved",NA
+ME,"Mercury, total",NA
+ME,"Methylmercury, dissolved",NA
+ME,Microcystin,NA
+ME,"Nitrogen, NH4",NA
+ME,"Nitrogen, nitrite (NO2)",NA
+ME,"Nitrogen, nitrite (NO2) + nitrate (NO3)",NA
+ME,"Nitrogen, total",430
+ME,"Nitrogen, total dissolved",NA
+ME,"Nitrogen, total dissolved Kjeldahl",NA
+ME,"Nitrogen, total Kjeldahl",431
+ME,"Oxygen, dissolved",513
+ME,"pH, equilibrated",444
+ME,"Phosphorus, soluable reactive orthophosphate",NA
+ME,"Phosphorus, total",1489
+ME,"Phosphorus, total dissolved",NA
+ME,Potassium,NA
+ME,Salinity,NA
+ME,Secchi,2276
+ME,"Selenium, dissolved",NA
+ME,"Selenium, total",NA
+ME,"Silica, dissolved",318
+ME,Sodium,NA
+ME,"Solids, total suspended",85
+ME,"Sulfate, dissolved",317
+ME,Turbidity,79
+MI,Alkalinity,NA
+MI,"Aluminum, dissolved",NA
+MI,"Aluminum, total",NA
+MI,ANC,NA
+MI,"Arsenic, dissolved",NA
+MI,"Arsenic, total",NA
+MI,"Atrazine, dissolved",NA
+MI,"Calcium, dissolved",NA
+MI,"Carbon, dissolved organic",NA
+MI,"Carbon, total inorganic",NA
+MI,"Carbon, total organic",NA
+MI,"Chloride, dissolved",NA
+MI,Chlorophyll a,NA
+MI,"Color, apparent",NA
+MI,"Color, true",NA
+MI,Conductivity,2
+MI,Depth,NA
+MI,E. coli,NA
+MI,E. coli-CFU,NA
+MI,E. coli-MPN,NA
+MI,"Magnesium, dissolved",NA
+MI,"Mercury, dissolved",NA
+MI,"Mercury, total",NA
+MI,"Methylmercury, dissolved",NA
+MI,Microcystin,NA
+MI,"Nitrogen, NH4",NA
+MI,"Nitrogen, nitrite (NO2)",NA
+MI,"Nitrogen, nitrite (NO2) + nitrate (NO3)",NA
+MI,"Nitrogen, total",NA
+MI,"Nitrogen, total dissolved",NA
+MI,"Nitrogen, total dissolved Kjeldahl",NA
+MI,"Nitrogen, total Kjeldahl",NA
+MI,"Oxygen, dissolved",2
+MI,"pH, equilibrated",2
+MI,"Phosphorus, soluable reactive orthophosphate",NA
+MI,"Phosphorus, total",NA
+MI,"Phosphorus, total dissolved",NA
+MI,Potassium,NA
+MI,Salinity,NA
+MI,Secchi,NA
+MI,"Selenium, dissolved",NA
+MI,"Selenium, total",NA
+MI,"Silica, dissolved",NA
+MI,Sodium,NA
+MI,"Solids, total suspended",NA
+MI,"Sulfate, dissolved",NA
+MI,Turbidity,NA
+MN,Alkalinity,6
+MN,"Aluminum, dissolved",NA
+MN,"Aluminum, total",NA
+MN,ANC,NA
+MN,"Arsenic, dissolved",NA
+MN,"Arsenic, total",NA
+MN,"Atrazine, dissolved",NA
+MN,"Calcium, dissolved",83
+MN,"Carbon, dissolved organic",NA
+MN,"Carbon, total inorganic",NA
+MN,"Carbon, total organic",NA
+MN,"Chloride, dissolved",33
+MN,Chlorophyll a,765
+MN,"Color, apparent",NA
+MN,"Color, true",NA
+MN,Conductivity,3572
+MN,Depth,1
+MN,E. coli,NA
+MN,E. coli-CFU,NA
+MN,E. coli-MPN,NA
+MN,"Magnesium, dissolved",83
+MN,"Mercury, dissolved",4
+MN,"Mercury, total",15
+MN,"Methylmercury, dissolved",NA
+MN,Microcystin,NA
+MN,"Nitrogen, NH4",1
+MN,"Nitrogen, nitrite (NO2)",NA
+MN,"Nitrogen, nitrite (NO2) + nitrate (NO3)",37
+MN,"Nitrogen, total",NA
+MN,"Nitrogen, total dissolved",NA
+MN,"Nitrogen, total dissolved Kjeldahl",1
+MN,"Nitrogen, total Kjeldahl",20
+MN,"Oxygen, dissolved",4439
+MN,"pH, equilibrated",3834
+MN,"Phosphorus, soluable reactive orthophosphate",12
+MN,"Phosphorus, total",763
+MN,"Phosphorus, total dissolved",NA
+MN,Potassium,91
+MN,Salinity,NA
+MN,Secchi,1126
+MN,"Selenium, dissolved",NA
+MN,"Selenium, total",NA
+MN,"Silica, dissolved",30
+MN,Sodium,89
+MN,"Solids, total suspended",NA
+MN,"Sulfate, dissolved",1
+MN,Turbidity,NA
+MO,Alkalinity,2046
+MO,"Aluminum, dissolved",56
+MO,"Aluminum, total",NA
+MO,ANC,NA
+MO,"Arsenic, dissolved",41
+MO,"Arsenic, total",157
+MO,"Atrazine, dissolved",70
+MO,"Calcium, dissolved",981
+MO,"Carbon, dissolved organic",5
+MO,"Carbon, total inorganic",NA
+MO,"Carbon, total organic",83
+MO,"Chloride, dissolved",544
+MO,Chlorophyll a,650
+MO,"Color, apparent",NA
+MO,"Color, true",929
+MO,Conductivity,16554
+MO,Depth,NA
+MO,E. coli,NA
+MO,E. coli-CFU,166
+MO,E. coli-MPN,NA
+MO,"Magnesium, dissolved",980
+MO,"Mercury, dissolved",9
+MO,"Mercury, total",NA
+MO,"Methylmercury, dissolved",NA
+MO,Microcystin,2
+MO,"Nitrogen, NH4",130
+MO,"Nitrogen, nitrite (NO2)",124
+MO,"Nitrogen, nitrite (NO2) + nitrate (NO3)",183
+MO,"Nitrogen, total",219
+MO,"Nitrogen, total dissolved",NA
+MO,"Nitrogen, total dissolved Kjeldahl",12
+MO,"Nitrogen, total Kjeldahl",727
+MO,"Oxygen, dissolved",15656
+MO,"pH, equilibrated",16416
+MO,"Phosphorus, soluable reactive orthophosphate",113
+MO,"Phosphorus, total",1444
+MO,"Phosphorus, total dissolved",NA
+MO,Potassium,227
+MO,Salinity,NA
+MO,Secchi,2770
+MO,"Selenium, dissolved",30
+MO,"Selenium, total",NA
+MO,"Silica, dissolved",85
+MO,Sodium,227
+MO,"Solids, total suspended",NA
+MO,"Sulfate, dissolved",473
+MO,Turbidity,1137
+MS,Alkalinity,3002
+MS,"Aluminum, dissolved",NA
+MS,"Aluminum, total",6
+MS,ANC,NA
+MS,"Arsenic, dissolved",NA
+MS,"Arsenic, total",8
+MS,"Atrazine, dissolved",4
+MS,"Calcium, dissolved",5
+MS,"Carbon, dissolved organic",NA
+MS,"Carbon, total inorganic",NA
+MS,"Carbon, total organic",3624
+MS,"Chloride, dissolved",5
+MS,Chlorophyll a,1561
+MS,"Color, apparent",NA
+MS,"Color, true",4
+MS,Conductivity,24533
+MS,Depth,1073
+MS,E. coli,NA
+MS,E. coli-CFU,38
+MS,E. coli-MPN,NA
+MS,"Magnesium, dissolved",5
+MS,"Mercury, dissolved",NA
+MS,"Mercury, total",NA
+MS,"Methylmercury, dissolved",NA
+MS,Microcystin,NA
+MS,"Nitrogen, NH4",NA
+MS,"Nitrogen, nitrite (NO2)",NA
+MS,"Nitrogen, nitrite (NO2) + nitrate (NO3)",21
+MS,"Nitrogen, total",NA
+MS,"Nitrogen, total dissolved",NA
+MS,"Nitrogen, total dissolved Kjeldahl",NA
+MS,"Nitrogen, total Kjeldahl",3714
+MS,"Oxygen, dissolved",24886
+MS,"pH, equilibrated",25149
+MS,"Phosphorus, soluable reactive orthophosphate",23
+MS,"Phosphorus, total",3144
+MS,"Phosphorus, total dissolved",NA
+MS,Potassium,11
+MS,Salinity,NA
+MS,Secchi,2546
+MS,"Selenium, dissolved",NA
+MS,"Selenium, total",NA
+MS,"Silica, dissolved",4
+MS,Sodium,11
+MS,"Solids, total suspended",2878
+MS,"Sulfate, dissolved",5
+MS,Turbidity,3332
+MT,Alkalinity,3039
+MT,"Aluminum, dissolved",365
+MT,"Aluminum, total",75
+MT,ANC,NA
+MT,"Arsenic, dissolved",466
+MT,"Arsenic, total",338
+MT,"Atrazine, dissolved",NA
+MT,"Calcium, dissolved",1176
+MT,"Carbon, dissolved organic",165
+MT,"Carbon, total inorganic",265
+MT,"Carbon, total organic",1976
+MT,"Chloride, dissolved",855
+MT,Chlorophyll a,2766
+MT,"Color, apparent",NA
+MT,"Color, true",178
+MT,Conductivity,52666
+MT,Depth,603
+MT,E. coli,1
+MT,E. coli-CFU,23
+MT,E. coli-MPN,27
+MT,"Magnesium, dissolved",1165
+MT,"Mercury, dissolved",60
+MT,"Mercury, total",105
+MT,"Methylmercury, dissolved",13
+MT,Microcystin,253
+MT,"Nitrogen, NH4",696
+MT,"Nitrogen, nitrite (NO2)",632
+MT,"Nitrogen, nitrite (NO2) + nitrate (NO3)",1815
+MT,"Nitrogen, total",1752
+MT,"Nitrogen, total dissolved",13
+MT,"Nitrogen, total dissolved Kjeldahl",16
+MT,"Nitrogen, total Kjeldahl",1822
+MT,"Oxygen, dissolved",57601
+MT,"pH, equilibrated",55615
+MT,"Phosphorus, soluable reactive orthophosphate",4505
+MT,"Phosphorus, total",3765
+MT,"Phosphorus, total dissolved",6
+MT,Potassium,1003
+MT,Salinity,12
+MT,Secchi,1905
+MT,"Selenium, dissolved",496
+MT,"Selenium, total",202
+MT,"Silica, dissolved",2157
+MT,Sodium,1157
+MT,"Solids, total suspended",242
+MT,"Sulfate, dissolved",1226
+MT,Turbidity,16200
+NC,Alkalinity,6343
+NC,"Aluminum, dissolved",11
+NC,"Aluminum, total",776
+NC,ANC,NA
+NC,"Arsenic, dissolved",18
+NC,"Arsenic, total",3181
+NC,"Atrazine, dissolved",25
+NC,"Calcium, dissolved",1794
+NC,"Carbon, dissolved organic",283
+NC,"Carbon, total inorganic",NA
+NC,"Carbon, total organic",3464
+NC,"Chloride, dissolved",1504
+NC,Chlorophyll a,22036
+NC,"Color, apparent",NA
+NC,"Color, true",975
+NC,Conductivity,126003
+NC,Depth,416
+NC,E. coli,NA
+NC,E. coli-CFU,NA
+NC,E. coli-MPN,47
+NC,"Magnesium, dissolved",1794
+NC,"Mercury, dissolved",58
+NC,"Mercury, total",3489
+NC,"Methylmercury, dissolved",NA
+NC,Microcystin,NA
+NC,"Nitrogen, NH4",2588
+NC,"Nitrogen, nitrite (NO2)",973
+NC,"Nitrogen, nitrite (NO2) + nitrate (NO3)",1941
+NC,"Nitrogen, total",NA
+NC,"Nitrogen, total dissolved",NA
+NC,"Nitrogen, total dissolved Kjeldahl",138
+NC,"Nitrogen, total Kjeldahl",15843
+NC,"Oxygen, dissolved",125177
+NC,"pH, equilibrated",112835
+NC,"Phosphorus, soluable reactive orthophosphate",2238
+NC,"Phosphorus, total",16196
+NC,"Phosphorus, total dissolved",NA
+NC,Potassium,1532
+NC,Salinity,304
+NC,Secchi,9678
+NC,"Selenium, dissolved",2
+NC,"Selenium, total",230
+NC,"Silica, dissolved",1469
+NC,Sodium,1561
+NC,"Solids, total suspended",8694
+NC,"Sulfate, dissolved",1639
+NC,Turbidity,14060
+ND,Alkalinity,14071
+ND,"Aluminum, dissolved",188
+ND,"Aluminum, total",80
+ND,ANC,NA
+ND,"Arsenic, dissolved",1863
+ND,"Arsenic, total",911
+ND,"Atrazine, dissolved",23
+ND,"Calcium, dissolved",4283
+ND,"Carbon, dissolved organic",46
+ND,"Carbon, total inorganic",2
+ND,"Carbon, total organic",2246
+ND,"Chloride, dissolved",15037
+ND,Chlorophyll a,7008
+ND,"Color, apparent",NA
+ND,"Color, true",569
+ND,Conductivity,106444
+ND,Depth,5417
+ND,E. coli,26
+ND,E. coli-CFU,NA
+ND,E. coli-MPN,296
+ND,"Magnesium, dissolved",4243
+ND,"Mercury, dissolved",182
+ND,"Mercury, total",210
+ND,"Methylmercury, dissolved",14
+ND,Microcystin,433
+ND,"Nitrogen, NH4",3042
+ND,"Nitrogen, nitrite (NO2)",1166
+ND,"Nitrogen, nitrite (NO2) + nitrate (NO3)",3098
+ND,"Nitrogen, total",397
+ND,"Nitrogen, total dissolved",519
+ND,"Nitrogen, total dissolved Kjeldahl",538
+ND,"Nitrogen, total Kjeldahl",7452
+ND,"Oxygen, dissolved",117140
+ND,"pH, equilibrated",101652
+ND,"Phosphorus, soluable reactive orthophosphate",12220
+ND,"Phosphorus, total",13737
+ND,"Phosphorus, total dissolved",NA
+ND,Potassium,8391
+ND,Salinity,830
+ND,Secchi,7624
+ND,"Selenium, dissolved",715
+ND,"Selenium, total",593
+ND,"Silica, dissolved",2396
+ND,Sodium,8727
+ND,"Solids, total suspended",843
+ND,"Sulfate, dissolved",13323
+ND,Turbidity,17568
+NE,Alkalinity,3948
+NE,"Aluminum, dissolved",185
+NE,"Aluminum, total",14
+NE,ANC,NA
+NE,"Arsenic, dissolved",254
+NE,"Arsenic, total",22
+NE,"Atrazine, dissolved",19
+NE,"Calcium, dissolved",377
+NE,"Carbon, dissolved organic",1
+NE,"Carbon, total inorganic",NA
+NE,"Carbon, total organic",287
+NE,"Chloride, dissolved",205
+NE,Chlorophyll a,2850
+NE,"Color, apparent",NA
+NE,"Color, true",NA
+NE,Conductivity,51659
+NE,Depth,4204
+NE,E. coli,6473
+NE,E. coli-CFU,413
+NE,E. coli-MPN,3
+NE,"Magnesium, dissolved",334
+NE,"Mercury, dissolved",240
+NE,"Mercury, total",232
+NE,"Methylmercury, dissolved",NA
+NE,Microcystin,6007
+NE,"Nitrogen, NH4",164
+NE,"Nitrogen, nitrite (NO2)",40
+NE,"Nitrogen, nitrite (NO2) + nitrate (NO3)",61
+NE,"Nitrogen, total",10
+NE,"Nitrogen, total dissolved",3
+NE,"Nitrogen, total dissolved Kjeldahl",NA
+NE,"Nitrogen, total Kjeldahl",3248
+NE,"Oxygen, dissolved",51665
+NE,"pH, equilibrated",51750
+NE,"Phosphorus, soluable reactive orthophosphate",2925
+NE,"Phosphorus, total",3209
+NE,"Phosphorus, total dissolved",NA
+NE,Potassium,179
+NE,Salinity,NA
+NE,Secchi,5408
+NE,"Selenium, dissolved",152
+NE,"Selenium, total",239
+NE,"Silica, dissolved",298
+NE,Sodium,313
+NE,"Solids, total suspended",23
+NE,"Sulfate, dissolved",358
+NE,Turbidity,24956
+NH,Alkalinity,2
+NH,"Aluminum, dissolved",NA
+NH,"Aluminum, total",NA
+NH,ANC,NA
+NH,"Arsenic, dissolved",NA
+NH,"Arsenic, total",NA
+NH,"Atrazine, dissolved",NA
+NH,"Calcium, dissolved",NA
+NH,"Carbon, dissolved organic",NA
+NH,"Carbon, total inorganic",NA
+NH,"Carbon, total organic",26
+NH,"Chloride, dissolved",2
+NH,Chlorophyll a,216
+NH,"Color, apparent",NA
+NH,"Color, true",595
+NH,Conductivity,634
+NH,Depth,NA
+NH,E. coli,NA
+NH,E. coli-CFU,NA
+NH,E. coli-MPN,NA
+NH,"Magnesium, dissolved",NA
+NH,"Mercury, dissolved",NA
+NH,"Mercury, total",NA
+NH,"Methylmercury, dissolved",NA
+NH,Microcystin,NA
+NH,"Nitrogen, NH4",NA
+NH,"Nitrogen, nitrite (NO2)",NA
+NH,"Nitrogen, nitrite (NO2) + nitrate (NO3)",NA
+NH,"Nitrogen, total",571
+NH,"Nitrogen, total dissolved",NA
+NH,"Nitrogen, total dissolved Kjeldahl",NA
+NH,"Nitrogen, total Kjeldahl",582
+NH,"Oxygen, dissolved",843
+NH,"pH, equilibrated",728
+NH,"Phosphorus, soluable reactive orthophosphate",138
+NH,"Phosphorus, total",644
+NH,"Phosphorus, total dissolved",NA
+NH,Potassium,NA
+NH,Salinity,NA
+NH,Secchi,1650
+NH,"Selenium, dissolved",NA
+NH,"Selenium, total",NA
+NH,"Silica, dissolved",323
+NH,Sodium,NA
+NH,"Solids, total suspended",NA
+NH,"Sulfate, dissolved",2
+NH,Turbidity,106
+NJ,Alkalinity,133
+NJ,"Aluminum, dissolved",21
+NJ,"Aluminum, total",NA
+NJ,ANC,NA
+NJ,"Arsenic, dissolved",55
+NJ,"Arsenic, total",17
+NJ,"Atrazine, dissolved",4
+NJ,"Calcium, dissolved",58
+NJ,"Carbon, dissolved organic",86
+NJ,"Carbon, total inorganic",NA
+NJ,"Carbon, total organic",44
+NJ,"Chloride, dissolved",59
+NJ,Chlorophyll a,624
+NJ,"Color, apparent",NA
+NJ,"Color, true",NA
+NJ,Conductivity,2588
+NJ,Depth,821
+NJ,E. coli,NA
+NJ,E. coli-CFU,NA
+NJ,E. coli-MPN,NA
+NJ,"Magnesium, dissolved",62
+NJ,"Mercury, dissolved",NA
+NJ,"Mercury, total",40
+NJ,"Methylmercury, dissolved",24
+NJ,Microcystin,8
+NJ,"Nitrogen, NH4",90
+NJ,"Nitrogen, nitrite (NO2)",9
+NJ,"Nitrogen, nitrite (NO2) + nitrate (NO3)",64
+NJ,"Nitrogen, total",1
+NJ,"Nitrogen, total dissolved",NA
+NJ,"Nitrogen, total dissolved Kjeldahl",54
+NJ,"Nitrogen, total Kjeldahl",128
+NJ,"Oxygen, dissolved",2592
+NJ,"pH, equilibrated",2590
+NJ,"Phosphorus, soluable reactive orthophosphate",26
+NJ,"Phosphorus, total",475
+NJ,"Phosphorus, total dissolved",NA
+NJ,Potassium,58
+NJ,Salinity,NA
+NJ,Secchi,691
+NJ,"Selenium, dissolved",4
+NJ,"Selenium, total",2
+NJ,"Silica, dissolved",54
+NJ,Sodium,58
+NJ,"Solids, total suspended",NA
+NJ,"Sulfate, dissolved",96
+NJ,Turbidity,7
+NM,Alkalinity,365
+NM,"Aluminum, dissolved",42
+NM,"Aluminum, total",98
+NM,ANC,NA
+NM,"Arsenic, dissolved",140
+NM,"Arsenic, total",92
+NM,"Atrazine, dissolved",NA
+NM,"Calcium, dissolved",283
+NM,"Carbon, dissolved organic",27
+NM,"Carbon, total inorganic",2
+NM,"Carbon, total organic",143
+NM,"Chloride, dissolved",168
+NM,Chlorophyll a,267
+NM,"Color, apparent",1
+NM,"Color, true",2
+NM,Conductivity,7839
+NM,Depth,324
+NM,E. coli,NA
+NM,E. coli-CFU,45
+NM,E. coli-MPN,35
+NM,"Magnesium, dissolved",280
+NM,"Mercury, dissolved",30
+NM,"Mercury, total",24
+NM,"Methylmercury, dissolved",NA
+NM,Microcystin,NA
+NM,"Nitrogen, NH4",30
+NM,"Nitrogen, nitrite (NO2)",9
+NM,"Nitrogen, nitrite (NO2) + nitrate (NO3)",123
+NM,"Nitrogen, total",32
+NM,"Nitrogen, total dissolved",7
+NM,"Nitrogen, total dissolved Kjeldahl",47
+NM,"Nitrogen, total Kjeldahl",307
+NM,"Oxygen, dissolved",5189
+NM,"pH, equilibrated",7577
+NM,"Phosphorus, soluable reactive orthophosphate",196
+NM,"Phosphorus, total",287
+NM,"Phosphorus, total dissolved",NA
+NM,Potassium,236
+NM,Salinity,3496
+NM,Secchi,376
+NM,"Selenium, dissolved",36
+NM,"Selenium, total",46
+NM,"Silica, dissolved",163
+NM,Sodium,260
+NM,"Solids, total suspended",310
+NM,"Sulfate, dissolved",164
+NM,Turbidity,895
+NV,Alkalinity,4092
+NV,"Aluminum, dissolved",35
+NV,"Aluminum, total",NA
+NV,ANC,NA
+NV,"Arsenic, dissolved",1501
+NV,"Arsenic, total",1336
+NV,"Atrazine, dissolved",NA
+NV,"Calcium, dissolved",1925
+NV,"Carbon, dissolved organic",83
+NV,"Carbon, total inorganic",5
+NV,"Carbon, total organic",209
+NV,"Chloride, dissolved",1586
+NV,Chlorophyll a,1518
+NV,"Color, apparent",NA
+NV,"Color, true",2285
+NV,Conductivity,14578
+NV,Depth,124
+NV,E. coli,52
+NV,E. coli-CFU,3
+NV,E. coli-MPN,280
+NV,"Magnesium, dissolved",1906
+NV,"Mercury, dissolved",129
+NV,"Mercury, total",246
+NV,"Methylmercury, dissolved",94
+NV,Microcystin,NA
+NV,"Nitrogen, NH4",300
+NV,"Nitrogen, nitrite (NO2)",93
+NV,"Nitrogen, nitrite (NO2) + nitrate (NO3)",1188
+NV,"Nitrogen, total",36
+NV,"Nitrogen, total dissolved",2
+NV,"Nitrogen, total dissolved Kjeldahl",92
+NV,"Nitrogen, total Kjeldahl",425
+NV,"Oxygen, dissolved",10991
+NV,"pH, equilibrated",13135
+NV,"Phosphorus, soluable reactive orthophosphate",857
+NV,"Phosphorus, total",3350
+NV,"Phosphorus, total dissolved",NA
+NV,Potassium,764
+NV,Salinity,NA
+NV,Secchi,60
+NV,"Selenium, dissolved",552
+NV,"Selenium, total",509
+NV,"Silica, dissolved",630
+NV,Sodium,2806
+NV,"Solids, total suspended",343
+NV,"Sulfate, dissolved",734
+NV,Turbidity,2881
+OH,Alkalinity,37
+OH,"Aluminum, dissolved",NA
+OH,"Aluminum, total",NA
+OH,ANC,NA
+OH,"Arsenic, dissolved",NA
+OH,"Arsenic, total",NA
+OH,"Atrazine, dissolved",NA
+OH,"Calcium, dissolved",NA
+OH,"Carbon, dissolved organic",NA
+OH,"Carbon, total inorganic",NA
+OH,"Carbon, total organic",37
+OH,"Chloride, dissolved",NA
+OH,Chlorophyll a,97
+OH,"Color, apparent",NA
+OH,"Color, true",NA
+OH,Conductivity,61
+OH,Depth,61
+OH,E. coli,NA
+OH,E. coli-CFU,NA
+OH,E. coli-MPN,NA
+OH,"Magnesium, dissolved",NA
+OH,"Mercury, dissolved",NA
+OH,"Mercury, total",NA
+OH,"Methylmercury, dissolved",NA
+OH,Microcystin,57
+OH,"Nitrogen, NH4",31
+OH,"Nitrogen, nitrite (NO2)",29
+OH,"Nitrogen, nitrite (NO2) + nitrate (NO3)",22
+OH,"Nitrogen, total",61
+OH,"Nitrogen, total dissolved",NA
+OH,"Nitrogen, total dissolved Kjeldahl",NA
+OH,"Nitrogen, total Kjeldahl",NA
+OH,"Oxygen, dissolved",41
+OH,"pH, equilibrated",61
+OH,"Phosphorus, soluable reactive orthophosphate",13
+OH,"Phosphorus, total",61
+OH,"Phosphorus, total dissolved",NA
+OH,Potassium,NA
+OH,Salinity,NA
+OH,Secchi,61
+OH,"Selenium, dissolved",NA
+OH,"Selenium, total",NA
+OH,"Silica, dissolved",NA
+OH,Sodium,NA
+OH,"Solids, total suspended",NA
+OH,"Sulfate, dissolved",NA
+OH,Turbidity,46
+OK,Alkalinity,2691
+OK,"Aluminum, dissolved",44
+OK,"Aluminum, total",495
+OK,ANC,NA
+OK,"Arsenic, dissolved",79
+OK,"Arsenic, total",239
+OK,"Atrazine, dissolved",71
+OK,"Calcium, dissolved",998
+OK,"Carbon, dissolved organic",43
+OK,"Carbon, total inorganic",NA
+OK,"Carbon, total organic",70
+OK,"Chloride, dissolved",1652
+OK,Chlorophyll a,1711
+OK,"Color, apparent",481
+OK,"Color, true",608
+OK,Conductivity,24432
+OK,Depth,265
+OK,E. coli,108
+OK,E. coli-CFU,31
+OK,E. coli-MPN,572
+OK,"Magnesium, dissolved",1003
+OK,"Mercury, dissolved",48
+OK,"Mercury, total",8
+OK,"Methylmercury, dissolved",NA
+OK,Microcystin,NA
+OK,"Nitrogen, NH4",182
+OK,"Nitrogen, nitrite (NO2)",441
+OK,"Nitrogen, nitrite (NO2) + nitrate (NO3)",725
+OK,"Nitrogen, total",1422
+OK,"Nitrogen, total dissolved",51
+OK,"Nitrogen, total dissolved Kjeldahl",104
+OK,"Nitrogen, total Kjeldahl",1549
+OK,"Oxygen, dissolved",23661
+OK,"pH, equilibrated",23467
+OK,"Phosphorus, soluable reactive orthophosphate",229
+OK,"Phosphorus, total",2426
+OK,"Phosphorus, total dissolved",NA
+OK,Potassium,1203
+OK,Salinity,4617
+OK,Secchi,1223
+OK,"Selenium, dissolved",40
+OK,"Selenium, total",72
+OK,"Silica, dissolved",410
+OK,Sodium,1202
+OK,"Solids, total suspended",807
+OK,"Sulfate, dissolved",1638
+OK,Turbidity,8736
+OR,Alkalinity,3059
+OR,"Aluminum, dissolved",129
+OR,"Aluminum, total",NA
+OR,ANC,NA
+OR,"Arsenic, dissolved",79
+OR,"Arsenic, total",233
+OR,"Atrazine, dissolved",NA
+OR,"Calcium, dissolved",1322
+OR,"Carbon, dissolved organic",87
+OR,"Carbon, total inorganic",NA
+OR,"Carbon, total organic",1173
+OR,"Chloride, dissolved",708
+OR,Chlorophyll a,8817
+OR,"Color, apparent",NA
+OR,"Color, true",130
+OR,Conductivity,346463
+OR,Depth,3608
+OR,E. coli,230
+OR,E. coli-CFU,14
+OR,E. coli-MPN,109
+OR,"Magnesium, dissolved",1310
+OR,"Mercury, dissolved",20
+OR,"Mercury, total",125
+OR,"Methylmercury, dissolved",8
+OR,Microcystin,24
+OR,"Nitrogen, NH4",2533
+OR,"Nitrogen, nitrite (NO2)",29
+OR,"Nitrogen, nitrite (NO2) + nitrate (NO3)",1665
+OR,"Nitrogen, total",1613
+OR,"Nitrogen, total dissolved",64
+OR,"Nitrogen, total dissolved Kjeldahl",400
+OR,"Nitrogen, total Kjeldahl",2036
+OR,"Oxygen, dissolved",29593
+OR,"pH, equilibrated",19040
+OR,"Phosphorus, soluable reactive orthophosphate",3785
+OR,"Phosphorus, total",4056
+OR,"Phosphorus, total dissolved",13
+OR,Potassium,1767
+OR,Salinity,72
+OR,Secchi,18923
+OR,"Selenium, dissolved",9
+OR,"Selenium, total",136
+OR,"Silica, dissolved",1343
+OR,Sodium,1789
+OR,"Solids, total suspended",779
+OR,"Sulfate, dissolved",656
+OR,Turbidity,3723
+RI,Alkalinity,NA
+RI,"Aluminum, dissolved",NA
+RI,"Aluminum, total",NA
+RI,ANC,NA
+RI,"Arsenic, dissolved",NA
+RI,"Arsenic, total",NA
+RI,"Atrazine, dissolved",NA
+RI,"Calcium, dissolved",72
+RI,"Carbon, dissolved organic",71
+RI,"Carbon, total inorganic",NA
+RI,"Carbon, total organic",NA
+RI,"Chloride, dissolved",72
+RI,Chlorophyll a,71
+RI,"Color, apparent",NA
+RI,"Color, true",NA
+RI,Conductivity,90
+RI,Depth,NA
+RI,E. coli,NA
+RI,E. coli-CFU,NA
+RI,E. coli-MPN,NA
+RI,"Magnesium, dissolved",72
+RI,"Mercury, dissolved",NA
+RI,"Mercury, total",NA
+RI,"Methylmercury, dissolved",NA
+RI,Microcystin,NA
+RI,"Nitrogen, NH4",NA
+RI,"Nitrogen, nitrite (NO2)",NA
+RI,"Nitrogen, nitrite (NO2) + nitrate (NO3)",NA
+RI,"Nitrogen, total",NA
+RI,"Nitrogen, total dissolved",NA
+RI,"Nitrogen, total dissolved Kjeldahl",NA
+RI,"Nitrogen, total Kjeldahl",68
+RI,"Oxygen, dissolved",79
+RI,"pH, equilibrated",97
+RI,"Phosphorus, soluable reactive orthophosphate",NA
+RI,"Phosphorus, total",63
+RI,"Phosphorus, total dissolved",NA
+RI,Potassium,71
+RI,Salinity,NA
+RI,Secchi,366
+RI,"Selenium, dissolved",NA
+RI,"Selenium, total",NA
+RI,"Silica, dissolved",70
+RI,Sodium,72
+RI,"Solids, total suspended",NA
+RI,"Sulfate, dissolved",72
+RI,Turbidity,NA
+SC,Alkalinity,15562
+SC,"Aluminum, dissolved",NA
+SC,"Aluminum, total",1
+SC,ANC,NA
+SC,"Arsenic, dissolved",NA
+SC,"Arsenic, total",469
+SC,"Atrazine, dissolved",2
+SC,"Calcium, dissolved",109
+SC,"Carbon, dissolved organic",109
+SC,"Carbon, total inorganic",NA
+SC,"Carbon, total organic",2206
+SC,"Chloride, dissolved",97
+SC,Chlorophyll a,5320
+SC,"Color, apparent",NA
+SC,"Color, true",5522
+SC,Conductivity,35784
+SC,Depth,9135
+SC,E. coli,3320
+SC,E. coli-CFU,10
+SC,E. coli-MPN,42
+SC,"Magnesium, dissolved",109
+SC,"Mercury, dissolved",NA
+SC,"Mercury, total",247
+SC,"Methylmercury, dissolved",NA
+SC,Microcystin,18
+SC,"Nitrogen, NH4",59
+SC,"Nitrogen, nitrite (NO2)",9
+SC,"Nitrogen, nitrite (NO2) + nitrate (NO3)",130
+SC,"Nitrogen, total",95
+SC,"Nitrogen, total dissolved",88
+SC,"Nitrogen, total dissolved Kjeldahl",1
+SC,"Nitrogen, total Kjeldahl",13473
+SC,"Oxygen, dissolved",49605
+SC,"pH, equilibrated",37520
+SC,"Phosphorus, soluable reactive orthophosphate",21
+SC,"Phosphorus, total",4696
+SC,"Phosphorus, total dissolved",NA
+SC,Potassium,4216
+SC,Salinity,154
+SC,Secchi,8021
+SC,"Selenium, dissolved",NA
+SC,"Selenium, total",494
+SC,"Silica, dissolved",105
+SC,Sodium,4413
+SC,"Solids, total suspended",500
+SC,"Sulfate, dissolved",97
+SC,Turbidity,18825
+SD,Alkalinity,11216
+SD,"Aluminum, dissolved",37
+SD,"Aluminum, total",177
+SD,ANC,NA
+SD,"Arsenic, dissolved",307
+SD,"Arsenic, total",296
+SD,"Atrazine, dissolved",16
+SD,"Calcium, dissolved",614
+SD,"Carbon, dissolved organic",37
+SD,"Carbon, total inorganic",NA
+SD,"Carbon, total organic",1761
+SD,"Chloride, dissolved",898
+SD,Chlorophyll a,13410
+SD,"Color, apparent",NA
+SD,"Color, true",18
+SD,Conductivity,77866
+SD,Depth,17707
+SD,E. coli,1137
+SD,E. coli-CFU,252
+SD,E. coli-MPN,42
+SD,"Magnesium, dissolved",614
+SD,"Mercury, dissolved",53
+SD,"Mercury, total",53
+SD,"Methylmercury, dissolved",NA
+SD,Microcystin,923
+SD,"Nitrogen, NH4",471
+SD,"Nitrogen, nitrite (NO2)",260
+SD,"Nitrogen, nitrite (NO2) + nitrate (NO3)",279
+SD,"Nitrogen, total",11
+SD,"Nitrogen, total dissolved",NA
+SD,"Nitrogen, total dissolved Kjeldahl",58
+SD,"Nitrogen, total Kjeldahl",17309
+SD,"Oxygen, dissolved",87776
+SD,"pH, equilibrated",74974
+SD,"Phosphorus, soluable reactive orthophosphate",18081
+SD,"Phosphorus, total",12659
+SD,"Phosphorus, total dissolved",NA
+SD,Potassium,736
+SD,Salinity,NA
+SD,Secchi,14454
+SD,"Selenium, dissolved",86
+SD,"Selenium, total",195
+SD,"Silica, dissolved",467
+SD,Sodium,762
+SD,"Solids, total suspended",11487
+SD,"Sulfate, dissolved",1881
+SD,Turbidity,33656
+TN,Alkalinity,2869
+TN,"Aluminum, dissolved",190
+TN,"Aluminum, total",2903
+TN,ANC,NA
+TN,"Arsenic, dissolved",92
+TN,"Arsenic, total",891
+TN,"Atrazine, dissolved",NA
+TN,"Calcium, dissolved",177
+TN,"Carbon, dissolved organic",NA
+TN,"Carbon, total inorganic",NA
+TN,"Carbon, total organic",2526
+TN,"Chloride, dissolved",7
+TN,Chlorophyll a,4705
+TN,"Color, apparent",359
+TN,"Color, true",319
+TN,Conductivity,38368
+TN,Depth,2684
+TN,E. coli,NA
+TN,E. coli-CFU,222
+TN,E. coli-MPN,314
+TN,"Magnesium, dissolved",177
+TN,"Mercury, dissolved",1
+TN,"Mercury, total",320
+TN,"Methylmercury, dissolved",NA
+TN,Microcystin,NA
+TN,"Nitrogen, NH4",4
+TN,"Nitrogen, nitrite (NO2)",NA
+TN,"Nitrogen, nitrite (NO2) + nitrate (NO3)",1
+TN,"Nitrogen, total",NA
+TN,"Nitrogen, total dissolved",NA
+TN,"Nitrogen, total dissolved Kjeldahl",NA
+TN,"Nitrogen, total Kjeldahl",2349
+TN,"Oxygen, dissolved",38404
+TN,"pH, equilibrated",38503
+TN,"Phosphorus, soluable reactive orthophosphate",2550
+TN,"Phosphorus, total",2630
+TN,"Phosphorus, total dissolved",NA
+TN,Potassium,2329
+TN,Salinity,NA
+TN,Secchi,2880
+TN,"Selenium, dissolved",104
+TN,"Selenium, total",697
+TN,"Silica, dissolved",7
+TN,Sodium,2341
+TN,"Solids, total suspended",4803
+TN,"Sulfate, dissolved",7
+TN,Turbidity,2523
+TX,Alkalinity,15328
+TX,"Aluminum, dissolved",151
+TX,"Aluminum, total",5
+TX,ANC,NA
+TX,"Arsenic, dissolved",920
+TX,"Arsenic, total",294
+TX,"Atrazine, dissolved",725
+TX,"Calcium, dissolved",14633
+TX,"Carbon, dissolved organic",769
+TX,"Carbon, total inorganic",18
+TX,"Carbon, total organic",2498
+TX,"Chloride, dissolved",14529
+TX,Chlorophyll a,3508
+TX,"Color, apparent",11
+TX,"Color, true",842
+TX,Conductivity,157729
+TX,Depth,6411
+TX,E. coli,6
+TX,E. coli-CFU,107
+TX,E. coli-MPN,283
+TX,"Magnesium, dissolved",14669
+TX,"Mercury, dissolved",222
+TX,"Mercury, total",10
+TX,"Methylmercury, dissolved",NA
+TX,Microcystin,75
+TX,"Nitrogen, NH4",7163
+TX,"Nitrogen, nitrite (NO2)",5602
+TX,"Nitrogen, nitrite (NO2) + nitrate (NO3)",6186
+TX,"Nitrogen, total",6265
+TX,"Nitrogen, total dissolved",464
+TX,"Nitrogen, total dissolved Kjeldahl",4824
+TX,"Nitrogen, total Kjeldahl",10588
+TX,"Oxygen, dissolved",143443
+TX,"pH, equilibrated",157077
+TX,"Phosphorus, soluable reactive orthophosphate",8445
+TX,"Phosphorus, total",20734
+TX,"Phosphorus, total dissolved",NA
+TX,Potassium,14551
+TX,Salinity,88
+TX,Secchi,19189
+TX,"Selenium, dissolved",297
+TX,"Selenium, total",260
+TX,"Silica, dissolved",14478
+TX,Sodium,14873
+TX,"Solids, total suspended",313
+TX,"Sulfate, dissolved",14580
+TX,Turbidity,1743
+UT,Alkalinity,351
+UT,"Aluminum, dissolved",727
+UT,"Aluminum, total",252
+UT,ANC,NA
+UT,"Arsenic, dissolved",2784
+UT,"Arsenic, total",725
+UT,"Atrazine, dissolved",NA
+UT,"Calcium, dissolved",13400
+UT,"Carbon, dissolved organic",140
+UT,"Carbon, total inorganic",NA
+UT,"Carbon, total organic",4891
+UT,"Chloride, dissolved",6156
+UT,Chlorophyll a,9755
+UT,"Color, apparent",NA
+UT,"Color, true",19
+UT,Conductivity,130267
+UT,Depth,4615
+UT,E. coli,808
+UT,E. coli-CFU,NA
+UT,E. coli-MPN,NA
+UT,"Magnesium, dissolved",12910
+UT,"Mercury, dissolved",197
+UT,"Mercury, total",264
+UT,"Methylmercury, dissolved",51
+UT,Microcystin,NA
+UT,"Nitrogen, NH4",1296
+UT,"Nitrogen, nitrite (NO2)",259
+UT,"Nitrogen, nitrite (NO2) + nitrate (NO3)",5447
+UT,"Nitrogen, total",2568
+UT,"Nitrogen, total dissolved",5145
+UT,"Nitrogen, total dissolved Kjeldahl",84
+UT,"Nitrogen, total Kjeldahl",6797
+UT,"Oxygen, dissolved",108385
+UT,"pH, equilibrated",128471
+UT,"Phosphorus, soluable reactive orthophosphate",14631
+UT,"Phosphorus, total",20542
+UT,"Phosphorus, total dissolved",NA
+UT,Potassium,9897
+UT,Salinity,8386
+UT,Secchi,29069
+UT,"Selenium, dissolved",1255
+UT,"Selenium, total",276
+UT,"Silica, dissolved",2284
+UT,Sodium,11149
+UT,"Solids, total suspended",5282
+UT,"Sulfate, dissolved",5936
+UT,Turbidity,19613
+VA,Alkalinity,1241
+VA,"Aluminum, dissolved",73
+VA,"Aluminum, total",56
+VA,ANC,NA
+VA,"Arsenic, dissolved",70
+VA,"Arsenic, total",83
+VA,"Atrazine, dissolved",7
+VA,"Calcium, dissolved",255
+VA,"Carbon, dissolved organic",121
+VA,"Carbon, total inorganic",NA
+VA,"Carbon, total organic",484
+VA,"Chloride, dissolved",503
+VA,Chlorophyll a,18982
+VA,"Color, apparent",NA
+VA,"Color, true",166
+VA,Conductivity,67775
+VA,Depth,62
+VA,E. coli,NA
+VA,E. coli-CFU,5602
+VA,E. coli-MPN,3113
+VA,"Magnesium, dissolved",255
+VA,"Mercury, dissolved",50
+VA,"Mercury, total",86
+VA,"Methylmercury, dissolved",NA
+VA,Microcystin,NA
+VA,"Nitrogen, NH4",1298
+VA,"Nitrogen, nitrite (NO2)",70
+VA,"Nitrogen, nitrite (NO2) + nitrate (NO3)",715
+VA,"Nitrogen, total",10405
+VA,"Nitrogen, total dissolved",125
+VA,"Nitrogen, total dissolved Kjeldahl",118
+VA,"Nitrogen, total Kjeldahl",3071
+VA,"Oxygen, dissolved",79052
+VA,"pH, equilibrated",70292
+VA,"Phosphorus, soluable reactive orthophosphate",1069
+VA,"Phosphorus, total",13638
+VA,"Phosphorus, total dissolved",NA
+VA,Potassium,287
+VA,Salinity,1435
+VA,Secchi,10324
+VA,"Selenium, dissolved",70
+VA,"Selenium, total",56
+VA,"Silica, dissolved",634
+VA,Sodium,273
+VA,"Solids, total suspended",1677
+VA,"Sulfate, dissolved",227
+VA,Turbidity,1212
+VT,Alkalinity,1
+VT,"Aluminum, dissolved",NA
+VT,"Aluminum, total",NA
+VT,ANC,NA
+VT,"Arsenic, dissolved",NA
+VT,"Arsenic, total",NA
+VT,"Atrazine, dissolved",1
+VT,"Calcium, dissolved",1
+VT,"Carbon, dissolved organic",1
+VT,"Carbon, total inorganic",NA
+VT,"Carbon, total organic",NA
+VT,"Chloride, dissolved",1
+VT,Chlorophyll a,NA
+VT,"Color, apparent",NA
+VT,"Color, true",NA
+VT,Conductivity,25
+VT,Depth,NA
+VT,E. coli,NA
+VT,E. coli-CFU,NA
+VT,E. coli-MPN,NA
+VT,"Magnesium, dissolved",1
+VT,"Mercury, dissolved",NA
+VT,"Mercury, total",NA
+VT,"Methylmercury, dissolved",NA
+VT,Microcystin,NA
+VT,"Nitrogen, NH4",16
+VT,"Nitrogen, nitrite (NO2)",24
+VT,"Nitrogen, nitrite (NO2) + nitrate (NO3)",37
+VT,"Nitrogen, total",NA
+VT,"Nitrogen, total dissolved",12
+VT,"Nitrogen, total dissolved Kjeldahl",17
+VT,"Nitrogen, total Kjeldahl",NA
+VT,"Oxygen, dissolved",14
+VT,"pH, equilibrated",24
+VT,"Phosphorus, soluable reactive orthophosphate",42
+VT,"Phosphorus, total",16
+VT,"Phosphorus, total dissolved",NA
+VT,Potassium,1
+VT,Salinity,NA
+VT,Secchi,1053
+VT,"Selenium, dissolved",NA
+VT,"Selenium, total",NA
+VT,"Silica, dissolved",1
+VT,Sodium,1
+VT,"Solids, total suspended",NA
+VT,"Sulfate, dissolved",1
+VT,Turbidity,NA
+WA,Alkalinity,1226
+WA,"Aluminum, dissolved",112
+WA,"Aluminum, total",99
+WA,ANC,NA
+WA,"Arsenic, dissolved",127
+WA,"Arsenic, total",136
+WA,"Atrazine, dissolved",NA
+WA,"Calcium, dissolved",890
+WA,"Carbon, dissolved organic",67
+WA,"Carbon, total inorganic",2
+WA,"Carbon, total organic",576
+WA,"Chloride, dissolved",737
+WA,Chlorophyll a,906
+WA,"Color, apparent",NA
+WA,"Color, true",294
+WA,Conductivity,30540
+WA,Depth,308
+WA,E. coli,270
+WA,E. coli-CFU,NA
+WA,E. coli-MPN,4
+WA,"Magnesium, dissolved",868
+WA,"Mercury, dissolved",107
+WA,"Mercury, total",139
+WA,"Methylmercury, dissolved",NA
+WA,Microcystin,NA
+WA,"Nitrogen, NH4",324
+WA,"Nitrogen, nitrite (NO2)",230
+WA,"Nitrogen, nitrite (NO2) + nitrate (NO3)",746
+WA,"Nitrogen, total",1708
+WA,"Nitrogen, total dissolved",309
+WA,"Nitrogen, total dissolved Kjeldahl",7
+WA,"Nitrogen, total Kjeldahl",2283
+WA,"Oxygen, dissolved",30751
+WA,"pH, equilibrated",31366
+WA,"Phosphorus, soluable reactive orthophosphate",2768
+WA,"Phosphorus, total",3459
+WA,"Phosphorus, total dissolved",NA
+WA,Potassium,874
+WA,Salinity,14137
+WA,Secchi,831
+WA,"Selenium, dissolved",114
+WA,"Selenium, total",189
+WA,"Silica, dissolved",1040
+WA,Sodium,924
+WA,"Solids, total suspended",704
+WA,"Sulfate, dissolved",756
+WA,Turbidity,16321
+WI,Alkalinity,NA
+WI,"Aluminum, dissolved",NA
+WI,"Aluminum, total",NA
+WI,ANC,NA
+WI,"Arsenic, dissolved",NA
+WI,"Arsenic, total",NA
+WI,"Atrazine, dissolved",NA
+WI,"Calcium, dissolved",NA
+WI,"Carbon, dissolved organic",NA
+WI,"Carbon, total inorganic",NA
+WI,"Carbon, total organic",NA
+WI,"Chloride, dissolved",NA
+WI,Chlorophyll a,NA
+WI,"Color, apparent",NA
+WI,"Color, true",NA
+WI,Conductivity,1
+WI,Depth,NA
+WI,E. coli,NA
+WI,E. coli-CFU,NA
+WI,E. coli-MPN,NA
+WI,"Magnesium, dissolved",NA
+WI,"Mercury, dissolved",NA
+WI,"Mercury, total",NA
+WI,"Methylmercury, dissolved",NA
+WI,Microcystin,NA
+WI,"Nitrogen, NH4",NA
+WI,"Nitrogen, nitrite (NO2)",NA
+WI,"Nitrogen, nitrite (NO2) + nitrate (NO3)",NA
+WI,"Nitrogen, total",NA
+WI,"Nitrogen, total dissolved",NA
+WI,"Nitrogen, total dissolved Kjeldahl",NA
+WI,"Nitrogen, total Kjeldahl",1
+WI,"Oxygen, dissolved",1
+WI,"pH, equilibrated",1
+WI,"Phosphorus, soluable reactive orthophosphate",1
+WI,"Phosphorus, total",1
+WI,"Phosphorus, total dissolved",NA
+WI,Potassium,NA
+WI,Salinity,NA
+WI,Secchi,1
+WI,"Selenium, dissolved",NA
+WI,"Selenium, total",NA
+WI,"Silica, dissolved",NA
+WI,Sodium,NA
+WI,"Solids, total suspended",NA
+WI,"Sulfate, dissolved",NA
+WI,Turbidity,NA
+WY,Alkalinity,649
+WY,"Aluminum, dissolved",13
+WY,"Aluminum, total",5
+WY,ANC,7
+WY,"Arsenic, dissolved",43
+WY,"Arsenic, total",87
+WY,"Atrazine, dissolved",NA
+WY,"Calcium, dissolved",401
+WY,"Carbon, dissolved organic",30
+WY,"Carbon, total inorganic",NA
+WY,"Carbon, total organic",356
+WY,"Chloride, dissolved",324
+WY,Chlorophyll a,409
+WY,"Color, apparent",NA
+WY,"Color, true",252
+WY,Conductivity,7692
+WY,Depth,145
+WY,E. coli,10
+WY,E. coli-CFU,NA
+WY,E. coli-MPN,NA
+WY,"Magnesium, dissolved",402
+WY,"Mercury, dissolved",8
+WY,"Mercury, total",9
+WY,"Methylmercury, dissolved",2
+WY,Microcystin,NA
+WY,"Nitrogen, NH4",96
+WY,"Nitrogen, nitrite (NO2)",2
+WY,"Nitrogen, nitrite (NO2) + nitrate (NO3)",415
+WY,"Nitrogen, total",122
+WY,"Nitrogen, total dissolved",166
+WY,"Nitrogen, total dissolved Kjeldahl",33
+WY,"Nitrogen, total Kjeldahl",409
+WY,"Oxygen, dissolved",3721
+WY,"pH, equilibrated",7405
+WY,"Phosphorus, soluable reactive orthophosphate",952
+WY,"Phosphorus, total",800
+WY,"Phosphorus, total dissolved",NA
+WY,Potassium,652
+WY,Salinity,28
+WY,Secchi,1121
+WY,"Selenium, dissolved",57
+WY,"Selenium, total",160
+WY,"Silica, dissolved",493
+WY,Sodium,672
+WY,"Solids, total suspended",147
+WY,"Sulfate, dissolved",326
+WY,Turbidity,1273

@@ -12,11 +12,11 @@ variableid_lagos,variablename,limit_low,limit_high,variableunitsid,variableshort
 6,"Carbon, dissolved organic",-10,300,10,doc_mgl,milligrams per liter,Concentration,mgL
 5,"Carbon, total inorganic",-10,1000,10,tic_mgl,milligrams per liter,Concentration,mgL
 7,"Carbon, total organic",-10,500,10,toc_mgl,milligrams per liter,Concentration,mgL
-8,"Chloride, dissolved",-10,10000,10,cl_mgl,milligrams per liter,Concentration,mgL
-9,Chlorophyll a,-1000,200000,11,chla_ugl,micrograms per liter,Concentration,ugL
+8,"Chloride, dissolved",-10,20000,10,cl_mgl,milligrams per liter,Concentration,mgL
+9,Chlorophyll a,-1000,20000,11,chla_ugl,micrograms per liter,Concentration,ugL
 11,"Color, apparent",0,2000,9,colora_pcu,platinum cobalt units,Color,PCU
 12,"Color, true",0,2000,9,colort_pcu,platinum cobalt units,Color,PCU
-13,Conductivity,0,1000000,17,spcond_uscm,microsiemens per cm,Electrical Conductivity,uscm
+13,Conductivity,0,100000,17,spcond_uscm,microsiemens per cm,Electrical Conductivity,uscm
 54,Depth,0,1000,,,,,
 49,E. coli,0,30000,31,ecoli_n100ml,number per 100 ml,Concentration,n100ml
 52,E. coli-CFU,0,30000,31,ecoli_cfu100ml,number per 100 ml,Concentration,n100ml

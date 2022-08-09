@@ -30,14 +30,59 @@ coalesce_join <- function(x, y,
     dplyr::bind_cols(joined, coalesced)[cols]
 }
 
+ident.outlier <- function(x){
+    # x <- temp$ResultMeasureValue
+    if(length(x)>=3) {
+        dat.gap <- data.frame(x = sort(unique(x),decreasing = TRUE))
+        xrange <- quantile(x,probs=0.99,na.rm=T)
+        xrange.9 <- quantile(x,probs=0.90,na.rm=T)
+        dat.gap <- dat.gap %>% mutate(gap = c(0,diff(x)) *-1) %>% 
+            arrange(desc(gap)) %>% 
+            filter(x>xrange.9) %>%
+            filter(gap > 1.5*xrange)
+        # dat.gap$size[1] <- 1
+        # dat.gap$size[2] <- dat.gap$gap[2]/dat.gap$gap[1]
+        # dat.gap$size[3] <- dat.gap$gap[3]/dat.gap$gap[1]
+        # dat.gap <- dat.gap %>% filter(size >0.75)
+        # dat.gap <- dat.gap %>% filter(gap >1.5*xrange)
+        if(nrow(dat.gap>=1)){
+            thresh <- min(dat.gap$x)
+        } else {
+            thresh=max(x,na.rm=T)+1
+        }
+    } else {thresh=max(x,na.rm=T)+1}
+    return(thresh)
+}
 
+ratio <- function(var_less,var_more){
+    temp2 <- dat %>% filter(CharacteristicName == var_more | CharacteristicName == var_less) %>% 
+        select(event_id,CharacteristicName,ResultMeasureValue,Obs_Id)
+    print(unique(temp2$CharacteristicName))
+    
+    temp3 <- temp2 %>% 
+        pivot_wider(names_from = CharacteristicName,values_from = ResultMeasureValue,id_cols = event_id) %>% 
+        drop_na() %>% 
+        mutate(ratio = (!!as.name(var_less))/(!!as.name(var_more))) %>% 
+        filter(ratio >s.ratio) %>% 
+        mutate(flag = "RATIO")
+    
+    temp2 <- temp2 %>% left_join(temp3 %>% select(event_id,flag)) %>% 
+        filter(!is.na(flag))
+    
+    if(is.null(flagdata)) {
+        flagdata <- temp2$Obs_Id
+    } else {
+        flagdata <- c(flagdata,temp2$Obs_Id)
+    }
+    return(flagdata)
+}
 #info for connecting to postgres DB
 
-dbDisconnect(con)
-drv <- dbDriver("PostgreSQL")
-con <- dbConnect(drv, dbname = "lagos_us_limno",
-                 host = '144.92.62.199', port = 5432,
-                 user = "postgres", password = 'SparklingRusty')
+# dbDisconnect(con)
+# drv <- dbDriver("PostgreSQL")
+# con <- dbConnect(drv, dbname = "lagos_us_limno",
+#                  host = '144.92.62.199', port = 5432,
+#                  user = "postgres", password = 'SparklingRusty')
 
 #read in the datafiles
 
@@ -45,20 +90,37 @@ data_dir <- "~/Lottig Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NE
 #list files
 dat <- read_rds(file = paste0(data_dir,"limnous.rds"))
 
-#assign sampledate
-dat <- dat %>% rename(sampledate = ActivityStartDate)
 
-states_in_data<-unique(dat$State)
-length(unique(dat$State))
 
 #program specific changes
 temp <- dat %>% filter(OrganizationIdentifier=="SDWRAP")
 dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id) #per SD, delete all SDWRAP data
 #remove hypersaline lakes
-dat <- dat %>% filter(lagoslakeid!=455356)
-dat <- dat %>% filter(lagoslakeid!=455786)
-dat <- dat %>% filter(lagoslakeid!=483334)
+great.salt <- c(455519,455679,455700,455786,455881,455996,456134,456189,456262,456377,455356)
+dat <- dat %>% filter(!lagoslakeid %in% great.salt)
 
+temp <- dat %>% filter(CharacteristicName=="Conductivity") %>% 
+    # filter(source_unit=="mho/cm") %>% 
+    filter(source_unit=="mS/cm") %>% 
+    filter(ResultMeasureValue>1000)
+dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id)
+temp <- dat %>% filter(CharacteristicName=="Conductivity") %>% 
+    # filter(source_unit=="mho/cm") %>% 
+    filter(source_unit=="mho/cm") 
+dat <- dat %>% filter(!Obs_Id %in% temp$Obs_Id)
+gc()
+
+
+temp <- out.file %>%
+    filter(if_any(everything(), ~str_detect(tolower(.), "x-sec location horizontal")))
+
+out.file <- out.file %>% filter(!sample_id %in% temp$sample_id)
+
+#assign sampledate
+dat <- dat %>% rename(sampledate = ActivityStartDate)
+
+states_in_data<-unique(dat$State)
+length(unique(dat$State))
 #Add Activity data
 activities <- read_csv("big_data/activities.csv", 
                        col_types = cols(ActivityStartDate = col_date(format = "%Y-%m-%d"), 
@@ -121,9 +183,9 @@ temp<- dat %>% filter(source_parameter=="Depth") %>%
 dat <- dat %>% left_join(temp)
 dat <- dat %>% 
     mutate(source_sampledepth = ifelse(is.na(source_sampledepth),reported_depth,source_sampledepth))
+dat <- dat %>% filter(CharacteristicName !="Depth")
 rm(temp)
 gc()
-# temp<- dat %>% filter(is.na(source_sampledepth))
 
 #extract profile data
 unique(dat$source_parameter)
@@ -137,13 +199,15 @@ meter_vars <-c("Conductivity",
                "Turbidity Field",
                "Depth")
 
-dat_profile <- dat %>% filter(source_parameter %in% meter_vars)
+dat_profile <- dat %>% 
+    select(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,CharacteristicName,source_sampledepth,Obs_Id,source_parameter) %>% 
+    filter(source_parameter %in% meter_vars)
 
 dat_profile_keep <- dat_profile %>% 
     filter(!is.na(source_sampledepth)) %>% 
     group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,CharacteristicName) %>% 
     arrange(source_sampledepth, .by_group = TRUE) %>% 
-    slice_head()
+    slice(1)
 
 dat_profile <- dat_profile %>% filter(!Obs_Id %in% dat_profile_keep$Obs_Id)
 dat <- dat %>% filter(!Obs_Id %in% dat_profile$Obs_Id)
@@ -151,6 +215,7 @@ rm(dat_profile)
 rm(dat_profile_keep)
 gc()
 
+dat$source_sampleposition <- NA
 temp <- dat %>% filter(is.na(source_sampledepth)) %>% 
     filter(!is.na(ActivityBottomDepthHeightMeasure.MeasureValue))
 dat$source_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- temp$ActivityBottomDepthHeightMeasure.MeasureValue
@@ -161,7 +226,6 @@ temp <- dat %>% filter(is.na(source_sampledepth))
 rm(temp)
 
 #exclude variables
-dat <- dat %>% filter(CharacteristicName !="Depth")
 gc()
 # dat <- dat %>% filter(CharacteristicName !="Oxygen, dissolved")
 
@@ -181,19 +245,22 @@ temp <- dat %>% filter(is.na(source_sampledepth)) %>%
                            ActivityRelativeDepthName == "AboveThermoclin")
 unique(temp$ActivityRelativeDepthName)
 dat$source_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+dat$source_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "INFERRED"
 gc()
-unique(dat$ActivityDepthAltitudeReferencePointText)
+
+good.depths <- unique(dat$ActivityDepthAltitudeReferencePointText)[!is.na(unique(dat$ActivityDepthAltitudeReferencePointText))]
+good.depths 
+
 temp <- dat %>% filter(is.na(source_sampledepth)) %>% 
-    filter(ActivityDepthAltitudeReferencePointText=="WATER SURFACE" | 
-               ActivityDepthAltitudeReferencePointText == "SURFACE" |
-               ActivityDepthAltitudeReferencePointText == "EPI" |
-               ActivityDepthAltitudeReferencePointText == "Water Surface" |
-               ActivityDepthAltitudeReferencePointText == "Surface" |
-               ActivityDepthAltitudeReferencePointText == "WATER SURF")
+    filter(ActivityDepthAltitudeReferencePointText %in% good.depths)
 dat$source_sampledepth[which(dat$Obs_Id %in% temp$Obs_Id)] <- 0
+dat$source_sampleposition[which(dat$Obs_Id %in% temp$Obs_Id)] <- "INFERRED"
+
 
 #assign depth type to samples with known assigned sample depths
-dat$source_sampleposition <- ifelse(is.na(dat$source_sampledepth),"UNKNOWN","SPECIFIED")
+dat$source_sampleposition <- ifelse(is.na(dat$source_sampledepth),"UNKNOWN",dat$source_sampleposition)
+dat$source_sampleposition <- ifelse(is.na(dat$source_sampleposition),"SPECIFIED",dat$source_sampleposition)
+unique(dat$source_sampleposition)
 dat$lagos_sampledepth <- dat$source_sampledepth
 dat$lagos_sampleposition <- dat$source_sampleposition
 
@@ -238,10 +305,12 @@ temp <- dat %>% group_by(combined_name) %>%
               depth_75 = round(quantile(lagos_sampledepth,na.rm=TRUE,probs=0.75),1),
               sd_depth = round(sd(lagos_sampledepth,na.rm=TRUE),2)) %>% 
     filter(no_depths >0)
-temp2 <- temp %>% filter(depth_75 <=2) %>% 
+temp2 <- temp %>% filter(depth_75 ==0) %>% 
     filter(sd_depth ==0) %>% 
     rename(lagos_sampledepth = depth_75)
 dat <- coalesce_join(dat,temp2 %>% select(combined_name,lagos_sampledepth),by="combined_name")
+rm(temp)
+rm(temp2)
 gc()
 
 
@@ -620,15 +689,6 @@ dat <- dat %>%
 rm(lake_dat)
 gc()
 
-# temp <- dat %>% select(Obs_Id,CharacteristicName,ResultMeasureValue,neon_zoneid,lagoslakeid) %>% 
-#     filter(ResultMeasureValue >0) %>%
-#     drop_na(ResultMeasureValue) %>% 
-#     group_by(neon_zoneid,lagoslakeid,CharacteristicName) %>% 
-#     summarize(ResultMeasureValue = quantile(ResultMeasureValue,probs=0.75)) %>% 
-#     ungroup() %>% 
-#     group_by(neon_zoneid,CharacteristicName) %>% 
-#     summarize(upper = ifelse(sum(!is.na(ResultMeasureValue))>=10,quantile((ResultMeasureValue),probs=0.95),NA)) #%>% 
-#  
 
 temp <- dat %>% select(Obs_Id,CharacteristicName,ResultMeasureValue,neon_zoneid) %>% 
     filter(ResultMeasureValue >0) %>% 
@@ -638,34 +698,19 @@ temp <- dat %>% select(Obs_Id,CharacteristicName,ResultMeasureValue,neon_zoneid)
     mutate(exclude = ifelse(ResultMeasureValue>outlier,"red","black")) %>% 
     mutate(exclude = ifelse(is.na(exclude),"black",exclude)) %>% 
     select(Obs_Id,exclude)
-# 
-# temp2 <- dat %>% select(Obs_Id,CharacteristicName,ResultMeasureValue,neon_zoneid) %>% 
-#     left_join(temp) %>% 
-#     mutate(dif = ResultMeasureValue-upper) %>% 
-#     filter(dif>0) %>% 
-#     mutate(upperval = upper*10) %>% 
-#     filter(ResultMeasureValue>upperval) %>% 
-#     mutate(exclude = "red") %>% 
-#     select(Obs_Id,exclude)
-
-   # ungroup() %>% 
-    # drop_na(upper) %>% 
-    # mutate(exclude = ifelse(log10(ResultMeasureValue+1) > upper,"red","black")) %>% 
-    # # mutate(upper = exp(upper)-1) %>%
-    # filter(exclude == "red") #%>% 
-    # select(Obs_Id,exclude)
-
 
 dat <- dat %>% select(-exclude)
 dat <- dat %>% left_join(temp)
 dat <- dat %>% mutate(exclude = ifelse(is.na(exclude),"black",exclude))
 # temp <- dat %>% filter(exclue)
+rm(temp)
+gc()
 
 for(i in 1:nrow(variables)){
     var.name <- variables$variablename[i]
     temp <- dat %>% filter(CharacteristicName==var.name) %>% filter(ResultMeasureValue>0)
     if(nrow(temp)>0) {
-        p<- ggplot(data = temp,aes(x="",y=ResultMeasureValue+1,colour=exclude)) + 
+        p<- ggplot(data = temp,aes(x="",y=ResultMeasureValue,colour=exclude)) + 
             geom_jitter(height=0,alpha=0.5) +
             facet_wrap(vars(neon_zoneid),scales = "free_y") +
             theme_bw() +
@@ -677,8 +722,18 @@ for(i in 1:nrow(variables)){
 
 saveRDS(dat,"initial_process.rds")
 
+outlier_dat <- dat %>% filter(exclude=="red") %>% 
+    select(Obs_Id,lagoslakeid,sampledate, ActivityConductingOrganizationText,OrganizationFormalName,
+           CharacteristicName,source_parameter,ResultMeasureValue,source_value,source_unit,
+           Conversion,DetectionQuantitationLimitMeasure.MeasureValue,
+           Method_Id,
+           MethodDescriptionText,ActivityCommentText,wqp_monitoringlocationname)
+write_csv(outlier_dat,"outlier_values.csv")
 
-
+dat <- dat %>% filter(!Obs_Id %in% outlier_dat$Obs_Id)
+rm(outlier_dat)
+gc()
+dat <- dat %>% select(-exclude)
 
 
 
@@ -692,29 +747,6 @@ saveRDS(dat,"initial_process.rds")
 dat <- dat %>% group_by(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,lagos_sampledepth) %>% 
     mutate(event_id = paste0(sampledate,MonitoringLocationIdentifier,OrganizationIdentifier,lagos_sampledepth)) %>% 
     ungroup()
-
-ratio <- function(var_less,var_more){
-    temp2 <- dat %>% filter(CharacteristicName == var_more | CharacteristicName == var_less) %>% 
-        select(event_id,CharacteristicName,ResultMeasureValue,Obs_Id)
-    print(unique(temp2$CharacteristicName))
-    
-    temp3 <- temp2 %>% 
-        pivot_wider(names_from = CharacteristicName,values_from = ResultMeasureValue,id_cols = event_id) %>% 
-        drop_na() %>% 
-        mutate(ratio = (!!as.name(var_less))/(!!as.name(var_more))) %>% 
-        filter(ratio >s.ratio) %>% 
-        mutate(flag = "RATIO")
-    
-    temp2 <- temp2 %>% left_join(temp3 %>% select(event_id,flag)) %>% 
-        filter(!is.na(flag))
-    
-    if(is.null(flagdata)) {
-        flagdata <- temp2$Obs_Id
-    } else {
-        flagdata <- c(flagdata,temp2$Obs_Id)
-    }
-    return(flagdata)
-}
 
 s.ratio = (1+1*1/5)/(1-1*1/5)
 s.ratio.l = (1-1*1/5)/(1+1*1/5)
@@ -773,556 +805,79 @@ flagdata <- ratio("Methylmercury, dissolved","Methylmercury")
 
 flagdata <- unique(flagdata)
 ratio.data <- dat %>% filter(Obs_Id %in% flagdata) %>% 
-    select(OrganizationFormalName,MonitoringLocationIdentifier,CharacteristicName,sampledate,ResultMeasureValue,lagos_sampledepth) %>% 
-    pivot_wider(names_from = CharacteristicName,values_from = ResultMeasureValue,id_cols = c(OrganizationFormalName,MonitoringLocationIdentifier,sampledate,lagos_sampledepth))
-write_csv(ratio.data,"flagged_ratios.csv")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#remove egregious values
-temp <- dat %>% select(Obs_Id,CharacteristicName,ResultMeasureValue,neon_zoneid) %>% 
-    filter(ResultMeasureValue >0) %>% 
-    group_by(neon_zoneid,CharacteristicName) %>% 
-    mutate(n = sum(!is.na(ResultMeasureValue)),
-           upper = ifelse(sum(!is.na(ResultMeasureValue))>=50,adjboxStats(log(ResultMeasureValue+1),coef = 10)$fence[2],NA)) %>% 
-    ungroup() %>% 
-    drop_na(upper) %>% 
-    mutate(exclude = ifelse(log(ResultMeasureValue+1) <= upper,0,1)) %>% 
-    mutate(upper = exp(upper)-1) %>%
-    filter(exclude == 1) %>% 
-    select(Obs_Id,exclude)
-
-dat <- dat %>% left_join(temp)
-dat <- dat %>% mutate(exclude = ifelse(is.na(exclude),2,exclude))
-
-
-##filter egregios values and write to data file
-egreg_dat <- dat %>% filter(ResultMeasureValue < limit_low | ResultMeasureValue > limit_high) %>% 
     select(Obs_Id,lagoslakeid,sampledate, ActivityConductingOrganizationText,OrganizationFormalName,
            CharacteristicName,source_parameter,ResultMeasureValue,source_value,source_unit,
            Conversion,DetectionQuantitationLimitMeasure.MeasureValue,
-           ResultAnalyticalMethod.MethodIdentifierContext,ResultAnalyticalMethod.MethodIdentifier,
+           Method_Id,
            MethodDescriptionText,ActivityCommentText,wqp_monitoringlocationname)
 
-dat <- dat %>% filter(!Obs_Id %in% egreg_dat$Obs_Id
+write_csv(ratio.data,"ratio_values.csv")
 
-lake_dat <- read_csv("lake_information.csv")
+dat <- dat %>% filter(!Obs_Id %in% ratio.data$Obs_Id)
+rm(ratio.data)
+gc()
+dat <- dat %>% select(-event_id)
+
+
+
 dat <- dat %>% 
-    mutate(lagoslakeid = as.numeric(lagoslakeid)) %>% 
-    left_join(lake_dat)
-rm(lake_dat)
-
-
-
-#pre egreggious values plots
-options(scipen=999)
-pdf(file="graphics/histograms_pre.pdf",width=8.5,height=11)
-par(mfrow=c(3,2),mar=c(4,10,4,4))
-
-for(i in 1:nrow(variables)) {
-    temp <- (as.numeric(dat$ResultMeasureValue))[which(dat$CharacteristicName==variables$variablename[i])]
-    if(length(temp)>25) {
-        adjbox(x = temp ,main=paste(variables$variablename[i],variables$unitsabbreviation[i],sep=" - "),notch=TRUE,las=1)
-        abline(h=variables$limit_high[i],col="red")
-        abline(h=variables$limit_low[i],col="blue")
-        mtext(side=3,adj=0.1,paste("n=",length(temp))) 
-    } else {next()}
-}
-dev.off()
-
-
-
-
-
-options(scipen=999)
-pdf(file="graphics/histograms_pre_less1.pdf",width=8.5,height=11)
-par(mfrow=c(3,2),mar=c(4,10,4,4))
-
-for(i in 1:nrow(variables)) {
-    temp <- (as.numeric(dat$ResultMeasureValue))[which(dat$CharacteristicName==variables$variablename[i])]
-    temp <- temp[which(temp<1)]
-    if(length(temp)>25) {
-        adjbox(x = temp ,main=paste(variables$variablename[i],variables$unitsabbreviation[i],sep=" - "),notch=TRUE,las=1)
-        abline(h=variables$limit_high[i],col="red")
-        abline(h=variables$limit_low[i],col="blue")
-        mtext(side=3,adj=0.1,paste("n=",length(temp))) 
-    } else {next()}
-}
-dev.off()
-
-options(scipen=999)
-pdf(file="graphics/density_pre.pdf",width=8.5,height=11)
-par(mfrow=c(3,2),mar=c(4,10,4,4))
-
-for(i in 1:nrow(variables)) {
-    temp <- (as.numeric(dat$ResultMeasureValue))[which(dat$CharacteristicName==variables$variablename[i])]
-    if(length(temp)>25) {
-        d <-density(x = temp)
-        plot(d,main=paste(variables$variablename[i],variables$unitsabbreviation[i],sep=" - "),notch=TRUE,las=1)
-        abline(v=variables$limit_high[i],col="red")
-        abline(v=variables$limit_low[i],col="blue")
-        mtext(side=3,adj=0.1,paste("n=",length(temp))) 
-    } else {next()}
-}
-dev.off()
-
-options(scipen=999)
-pdf(file="graphics/density_pre_less1.pdf",width=8.5,height=11)
-par(mfrow=c(3,2),mar=c(4,10,4,4))
-
-for(i in 1:nrow(variables)) {
-    temp <- (as.numeric(dat$ResultMeasureValue))[which(dat$CharacteristicName==variables$variablename[i])]
-    temp <- temp[which(temp<1)]
-    if(length(temp)>25) {
-        d <-density(x = temp)
-        plot(d,main=paste(variables$variablename[i],variables$unitsabbreviation[i],sep=" - "),notch=TRUE,las=1)
-        abline(v=variables$limit_high[i],col="red")
-        abline(v=variables$limit_low[i],col="blue")
-        mtext(side=3,adj=0.1,paste("n=",length(temp))) 
-    } else {next()}
-}
-dev.off()
-
-
-
-
-
-
-
-
-write_csv(egreg_dat,"excluded_values.csv")
-rm(egreg_dat)
-
-
-#plot data after removing egregious values
-options(scipen=999)
-pdf(file="graphics/histograms_post.pdf",width=8.5,height=11)
-par(mfrow=c(3,2),mar=c(4,10,4,4))
-
-for(i in 1:nrow(variables)) {
-    temp <- (as.numeric(dat$ResultMeasureValue))[which(dat$CharacteristicName==variables$variablename[i])]
-    pcolor <- dat$exclude[which(dat$CharacteristicName==variables$variablename[i])]
-    if(length(temp)>25) {
-        boxplot(x = (temp) ,main=paste(variables$variablename[i],variables$unitsabbreviation[i],sep=" - "),notch=TRUE,las=1)
-        stripchart(temp[which(pcolor==1)],              # Data
-                   method = "jitter", # Random noise
-                   pch = 19,          # Pch symbols
-                   col = "red",           # Color of the symbol
-                   vertical = TRUE,   # Vertical mode
-                   add = TRUE)        # Add it over
-        abline(h=variables$limit_high[i],col="red")
-        abline(h=variables$limit_low[i],col="blue")
-        mtext(side=3,adj=0.1,paste("n=",length(temp))) 
-    } else {next()}
-}
-dev.off()
-
-options(scipen=999)
-pdf(file="graphics/density_post.pdf",width=8.5,height=11)
-par(mfrow=c(3,2),mar=c(4,10,4,4))
-
-for(i in 1:nrow(variables)) {
-    temp <- (as.numeric(dat$ResultMeasureValue))[which(dat$CharacteristicName==variables$variablename[i])]
-    if(length(temp)>25) {
-        d <-density(x = log10(temp),na.rm = T)
-        plot(d,main=paste(variables$variablename[i],variables$unitsabbreviation[i],sep=" - "),notch=TRUE,las=1)
-        # abline(v=variables$limit_high[i],col="red")
-        # abline(v=variables$limit_low[i],col="blue")
-        mtext(side=3,adj=0.1,paste("n=",length(temp))) 
-    } else {next()}
-}
-dev.off()
-
-options(scipen=999)
-pdf(file="graphics/density_post_less1.pdf",width=8.5,height=11)
-par(mfrow=c(3,2),mar=c(4,10,4,4))
-
-for(i in 1:nrow(variables)) {
-    temp <- (as.numeric(dat$ResultMeasureValue))[which(dat$CharacteristicName==variables$variablename[i])]
-    temp <- temp[which(temp<1)]
-    if(length(temp)>25) {
-        d <-density(x = log10(temp),na.rm=T)
-        plot(d,main=paste(variables$variablename[i],variables$unitsabbreviation[i],sep=" - "),notch=TRUE,las=1)
-        abline(v=variables$limit_high[i],col="red")
-        abline(v=variables$limit_low[i],col="blue")
-        mtext(side=3,adj=0.1,paste("n=",length(temp))) 
-    } else {next()}
-}
-dev.off()
-
-#rename columns to fit LAGOS Schema
-dat2 <- dat %>% 
-    # rename(sampledepth_m_legacy = ActivityDepthHeightMeasure.MeasureValue) %>% #depth at which the sample was taken
-    # rename(alt_sampledepth =ResultDepthHeightMeasure.MeasureValue) %>% #depth at which the result was derived from
-    rename(datavalue = ResultMeasureValue) %>% 
-    rename(source_qualifier = DetectionQuantitationLimitTypeName) %>% 
-    rename(source_labmethodid = Method_Id) %>% 
-    rename(source_labmethodname = ResultAnalyticalMethod.MethodName) %>% 
-    rename(source_labmethoddescription = MethodDescriptionText) %>% 
-    rename(source_samplesiteid = MonitoringLocationIdentifier)
-
-
-
-
-
-
-
-
-#program depth assignments based on published SOPs
-
-temp <- dat2 %>% filter(OrganizationFormalName=="Florida LAKEWATCH") %>% 
-    filter(is.na(lagos_sampledepth))
-dat2$lagos_sampledepth[which(dat2$Obs_Id %in% temp$Obs_Id)] <- 0.3
-dat2$lagos_sampleposition[which(dat2$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-
-
-
-write.csv(temp,"potential_surface.csv")
-
-ia_temp <- dat2 %>% filter(OrganizationFormalName == "Iowa DNR Surface Water Monitoring Data") %>%
-    filter(is.na(lagos_sampledepth)) %>% 
-    select(OrganizationFormalName,ProjectIdentifier,SampleCollectionMethod.MethodName,SampleCollectionEquipmentName) %>% 
-    distinct()
-write_csv(ia_temp,"IA_data_methods.csv")
-
-
-temp2 <- temp %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "below")))
-temp2 <- temp %>% filter(is.na(lagos_sampledepth)) %>% 
-    filter(if_any(everything(), ~str_detect(tolower(.), "bottom")))
-
-temp <- dat2 %>% filter(is.na(lagos_sampledepth)) %>% 
-    group_by(OrganizationFormalName,ProjectIdentifier) %>% 
-    summarise(n=n())
-write_csv(temp,"unknown_depth_programs.csv")
-
-
-
-temp <- dat2 %>% filter(datavalue <= 0) %>% filter(is.na(detectionlimit_legacy))
-write_csv(temp,"noncensored_zero.csv")
-temp <- dat2 %>% filter(is.na(datavalue))
-
-write_csv(temp_do,"do_data.csv")
-
-#Assign sample types based on equipment used
-sample_equip <- data.frame(equip=unique(tolower(c(unique(dat2$SampleCollectionEquipmentName),
-                  unique(dat2$SampleCollectionMethod.MethodIdentifier),
-                  unique(dat2$SampleCollectionMethod.MethodName),
-                  unique(dat2$SampleCollectionMethod.MethodIdentifierContext)))))
-
-sample_exclude <- read_csv("sample_equip_exclude.csv")
-
-sample_equip <- sample_equip %>% filter(!equip %in% sample_exclude$equip)
-sample_equip <- sample_equip$equip
-
-#filter out known grab methods
-grab_equip = tolower(c("Grab sample","Bucket","Open-Mouth Bottle","Sampler, frame-type, Teflon bottle","Syringe",
-               "Water Bottle","Secchi Disk","Horizontal Secchi Disk","GRAB-001","Stainless Bucket","Water Bottle",
-               "Grab","NPS_GRAB","SECCHI_DISK","HORIZONTAL_DISK","MIDN_UVA_SPGRAB","Grab Sample Collected With A Stainless Bucket",
-               "SRBC Standard Grab Sample Method","Grab","Grab Sample Collected With A Water Bottle",
-               "Grab sample  (dip)","Water Grab Sampling","Grab sample collection",
-               "Unspecified Standard Grab Sample Procedure","USGS parameter code 82398", "GRAB", "glac grab sample for coliforms",
-               "grab sample (water bottle)","grab water sample for water bacteriology","water grab sample","water  quality grab sampling.",
-               "standard grab method","thompson spring grab sample","standard grab","grab sampling","standard grab sampler","open-top bailer","petite ponar grab",
-               "benthic grab (other)","phytoplankton-water bottle","grab-01","ga grab","grab-1","direct grab","intermediate grab","tdecwrgrab","grab-dtsc",
-               "grab-sampler","water_grab","grba_grab","crla_gs_gr","klmn_grab","wq-grab","blcacure_grab","standard uhl sampling procedure - grab samples",
-               "water sampling, grab","surface water grab sample","ground water grab sample","grab water sample","bio-chem lab standard grab sample procedure", 
-               "grab sample-grabber bottle","adem sops-2000 series-surface water","black canyon np and curecanti nra grab sample collection procedure",
-               "water quality grab sample method","water quality grab sampling","standard grab sample procedure","absentee shawnee grab",
-               "grab sample.  submerge and fill a water sampling vessel, or sample directly into the sample bottle provided by the an...",
-               "grab water sample taken from a reservoir by using a bottle","grab water sample taken from a lake by using a bottle","grab-using sampler",
-               "grab-direct to sample container","abs_grab","cupn_grab","glac_grab1","grab water sample taken from a reservoir by using a water bottle",
-               "fdep sop surface water sample","water samples taken from a reservoir by using a water bottle and composited" ,
-               "water samples taken from a lake by a water bottle and composited","water samples taken from a reservoir by using a bottle and composited",
-               "water samples taken from a lake by using bottles and composited"))
-sample_equip <- sample_equip[! sample_equip %in% grab_equip] #remove grab samples from list
-
-#filter out integrated sampling equipment
-int_equip <- tolower(c("2meterMPCA","Integrated water sampler","double-valve bailer","gravity core","push core",
-                       "comp-vertdis-sampler","comp-int vert/pump","comp-vert","single vertical","multiple verticals",
-                       "sample-composite vertical profile","lake depth integrated water sample","wqcd vertically integrating lake sampling procedure",
-                       "water samples taken from vertical profile of a lake by using a van dorn bottle and composited",
-                       "water samples taken from a lake by using an integrated verticle tube and composited","composite-vertical-discrete-sampler",
-                       "lake surface 2m depth-integrated sampling. lower a 2-meter-long, 2-inch-diameter pvc pipe vertically into the water, ...",
-                       "integrated water sampler","composite-discrete vertical","composite-integrated vertical/submersible pump & hose",
-                       "flbs integrated vertical water sample","integrated water sample","flbs chlorophyll-a integrated depths sample",
-                       "water samples taken from a reservoir by using an integrated verticle tube and composited",
-                       "sop for the collection of lake or non-wadable wetland water samples using 6-foot depth integrated column sampler." ))
-sample_equip <- sample_equip[! sample_equip %in% int_equip] #remove integrated samples from list
-
-#filter out known approaches for depth distributed sampling
-depth_equip <- tolower(c("Van Dorn Bottle","Peristaltic pump","Pump/Submersible","Submersible gear pump",
-                         "Probe/Sensor","Van Dorn sampler","Pump/Non-Submersible","Suction lift peristaltic pump",
-                         "Van Dorn bottle","multiprobesonde","Multi-Probe Sonde","Sonde","sonde01","Kemmerer Bottle",
-                         "weighted-bottle sampler","kemmerer bottle","van dorn sampler","submersible centrifugal pump",
-                         "suction pump","van dorn bottle","probe/sensor","niskin bottle","probe/sensor","gas reciprocating pump",
-                         "pump/non-submersible","bladder pump","van_dorn","probe","ysi 556","multi-probe_2_wqx","sonde01",
-                         "ysi 6600","multi parameter","wqprobe/sensor","field measurements using a multi-probe meter","direct field measurements using intrumentation",
-                         "flbs chlorophyll-a sampling at depth","van dorn grab sample","niskin bottle water sample","thompson van dorn lake sample",
-                         "wqcd lake sampling procedure using a van dorn bottle",
-                         "lake depth point sampling.  lake water is sampled at a discrete depth in the water column using a vertical kemmerer- ...",
-                         "submersible pump","weighted bottle","van dorn water sample","in situ measurement with probe",
-                         "split grab water sample taken from a reservoir by using a van dorn bottle","crater lake long term monitoring-water sample at depth" ,
-                         "glac water samples at 10-meters depth by geotech 1.66-inch bladder pump","grab water sample taken from a lake by using a van dorn bottle",
-                         "in situ measurement with probe","multi probe sonde","pump/bladder" ,"crater lake limnology and water quality samples at depth",
-                         "water samples taken from a lake by a van dorn bottle and composited" ,"water samples taken from a reservoir by using a van dorn bottle and composited",
-                         "grab water sample taken from a reservoir by using a van dorn bottle"
-                         ))
-
-sample_equip <- sample_equip[! sample_equip %in% depth_equip] #remove depth specific samples from list
-
-
-sample_equip #see the equipment
-#if grabs still exist, add to list and remove again
-
-#assign grab samples to appropriate observations
-dat2$sampletype_legacy<-''
-
-dat2$sampletype_legacy[which(dat2$sampletype_legacy=="" & tolower(dat2$SampleCollectionEquipmentName) %in% depth_equip)] <- "DEPTH"
-dat2$sampletype_legacy[which(dat2$sampletype_legacy=="" & tolower(dat2$SampleCollectionMethod.MethodIdentifier) %in% depth_equip)] <- "DEPTH"
-dat2$sampletype_legacy[which(dat2$sampletype_legacy=="" & tolower(dat2$SampleCollectionMethod.MethodName) %in% depth_equip)] <- "DEPTH"
-dat2$sampletype_legacy[which(dat2$sampletype_legacy=="" & tolower(dat2$SampleCollectionMethod.MethodIdentifierContext) %in% depth_equip)] <- "DEPTH"
-
-dat2$sampletype_legacy[which(tolower(dat2$SampleCollectionEquipmentName) %in% int_equip)] <- "INTEGRATED"
-dat2$sampletype_legacy[which(tolower(dat2$SampleCollectionMethod.MethodIdentifier) %in% int_equip)] <- "INTEGRATED"
-dat2$sampletype_legacy[which(tolower(dat2$SampleCollectionMethod.MethodName) %in% int_equip)] <- "INTEGRATED"
-dat2$sampletype_legacy[which(tolower(dat2$SampleCollectionMethod.MethodIdentifierContext) %in% int_equip)] <- "INTEGRATED"
-
-dat2$sampletype_legacy[which(tolower(dat2$SampleCollectionEquipmentName) %in% grab_equip)] <- "GRAB"
-dat2$sampletype_legacy[which(tolower(dat2$SampleCollectionMethod.MethodIdentifier) %in% grab_equip)] <- "GRAB"
-dat2$sampletype_legacy[which(tolower(dat2$SampleCollectionMethod.MethodName) %in% grab_equip)] <- "GRAB"
-dat2$sampletype_legacy[which(tolower(dat2$SampleCollectionMethod.MethodIdentifierContext) %in% grab_equip)] <- "GRAB"
-
-
-#One off assignments
-
-dat2$sampletype_legacy[which(dat2$OrganizationIdentifier == "TCEQMAIN")] <- "GRAB" #per SOP manual samples are collected as just below surface
-dat2$sampletype_legacy[which(dat2$sampletype_legacy=="" & dat2$ActivityTypeCode=="Sample-Integrated Vertical Profile")] <- "INTEGRATED"
-dat2$sampletype_legacy[which(dat2$OrganizationIdentifier == "21GAEPD_WQX" & is.na(dat2$sampledepth_m_lagos))] <- "INTEGRATED" #per GA SOP, integrated Photozone samples
-dat2$sampletype_legacy[which(tolower(dat2$ActivityCommentText)=="integrated" & is.na(dat2$sampledepth_m_lagos))] <- "INTEGRATED"
-dat2$sampletype_legacy[which(tolower(dat2$source_labmethodname)=="unspecified standard grab sample procedure" & is.na(dat2$sampledepth_m_lagos))] <- "GRAB"
-dat2$sampletype_legacy[which(tolower(dat2$ProjectIdentifier)=="hepgrab" & is.na(dat2$sampledepth_m_lagos))] <- "GRAB"
-
-temp <- dat2 %>% filter(is.na(sampledepth_m_lagos)) %>% 
-    filter(grepl("collected by grab",tolower(ActivityCommentText))) %>% 
-    filter(sampletype_legacy=="")
-dat2$sampletype_legacy[which(dat2$Obs_Id %in% temp$Obs_Id)] <- "GRAB"  
-
-temp <- dat2 %>% filter(is.na(sampledepth_m_lagos)) %>% 
-    filter(grepl("grab sample",tolower(source_labmethodname))) %>% 
-    filter(sampletype_legacy=="")
-dat2$sampletype_legacy[which(dat2$Obs_Id %in% temp$Obs_Id)] <- "GRAB" 
-
-# temp<- dat2 %>% filter(is.na(sampledepth_m_lagos)) %>%
-#      filter(sampletype_legacy=="")
-# temp <- as.data.frame(temp)
-# sink("uniquevals.txt")
-# for(i in 1:ncol(temp)) {
-#     print(names(temp[i]))
-#     print(unique(tolower(temp[[i]])))
-# }
-# sink()
-
-#assign all remaining to unknown
-dat2$sampletype_legacy[which(dat2$sampletype_legacy=="")] <- "UNKNOWN"
-#all legacy sample type assigments made, transfer to sampletype lagos and any assignments now are lagos assigned
-dat2$sampletype_lagos <- dat2$sampletype_legacy
-
-
-#remove sensor like values without depth because no known knowlege
-temp3 <- dat2 %>% filter(sampletype_legacy=="UNKNOWN") %>% 
-    filter(is.na(sampledepth_m_lagos)) %>% 
-    filter(CharacteristicName=="pH, equilibrated") %>% 
-    group_by(source_samplesiteid,sampledate) %>% 
-    mutate(n=n()) %>% 
-    ungroup() %>% 
-    filter(n>1)
-dat2 <- dat2 %>% filter(!Obs_Id %in% temp3$Obs_Id )
-rm(temp3)
-temp3 <- dat2 %>% filter(sampletype_legacy=="UNKNOWN") %>% 
-    filter(is.na(sampledepth_m_lagos)) %>% 
-    filter(CharacteristicName=="pH, equilibrated")
-dat2$sampledepth_m_lagos[which(dat2$Obs_Id %in% temp3$Obs_Id)] <- 0
-dat2$sampleposition_lagos[which(dat2$Obs_Id %in% temp3$Obs_Id)] <- "SPECIFIED"
-rm(temp3)
-
-temp3 <- dat2 %>% filter(sampletype_legacy=="UNKNOWN") %>% 
-    filter(is.na(sampledepth_m_lagos)) %>% 
-    filter(CharacteristicName=="Oxygen, dissolved") %>% 
-    group_by(source_samplesiteid,sampledate) %>% 
-    mutate(n=n()) %>% 
-    ungroup() %>% 
-    filter(n>1)
-dat2 <- dat2 %>% filter(!Obs_Id %in% temp3$Obs_Id )
-rm(temp3)
-temp3 <- dat2 %>% filter(sampletype_legacy=="UNKNOWN") %>% 
-    filter(is.na(sampledepth_m_lagos)) %>% 
-    filter(CharacteristicName=="Oxygen, dissolved")
-dat2$sampledepth_m_lagos[which(dat2$Obs_Id %in% temp3$Obs_Id)] <- 0
-dat2$sampleposition_lagos[which(dat2$Obs_Id %in% temp3$Obs_Id)] <- "SPECIFIED"
-rm(temp3)
-
-temp3 <- dat2 %>% filter(sampletype_legacy=="UNKNOWN") %>% 
-    filter(is.na(sampledepth_m_lagos)) %>% 
-    filter(CharacteristicName=="Conductivity") %>% 
-    group_by(source_samplesiteid,sampledate) %>% 
-    mutate(n=n()) %>% 
-    ungroup() %>% 
-    filter(n>1)
-dat2 <- dat2 %>% filter(!Obs_Id %in% temp3$Obs_Id )
-rm(temp3)
-temp3 <- dat2 %>% filter(sampletype_legacy=="UNKNOWN") %>% 
-    filter(is.na(sampledepth_m_lagos)) %>% 
-    filter(CharacteristicName=="Conductivity")
-dat2$sampledepth_m_lagos[which(dat2$Obs_Id %in% temp3$Obs_Id)] <- 0
-dat2$sampleposition_lagos[which(dat2$Obs_Id %in% temp3$Obs_Id)] <- "SPECIFIED"
-rm(temp3)
-
-temp3 <- dat2 %>% filter(sampletype_legacy=="UNKNOWN") %>% 
-    filter(is.na(sampledepth_m_lagos)) %>% 
-    filter(CharacteristicName=="Turbidity") %>% 
-    group_by(source_samplesiteid,sampledate) %>% 
-    mutate(n=n()) %>% 
-    ungroup() %>% 
-    filter(n>1)
-dat2 <- dat2 %>% filter(!Obs_Id %in% temp3$Obs_Id )
-rm(temp3)
-temp3 <- dat2 %>% filter(sampletype_legacy=="UNKNOWN") %>% 
-    filter(is.na(sampledepth_m_lagos)) %>% 
-    filter(CharacteristicName=="Turbidity")
-dat2$sampledepth_m_lagos[which(dat2$Obs_Id %in% temp3$Obs_Id)] <- 0
-dat2$sampleposition_lagos[which(dat2$Obs_Id %in% temp3$Obs_Id)] <- "SPECIFIED"
-rm(temp3)
-
-################### QAQC WHILE PROCESSING
-
-#examine unknown depth location samples
-#basic checks to see how much data exists, what the programs, see if there is anything we need to really figure out
-temp <- dat2 %>% filter(sampletype_legacy=="UNKNOWN") %>% filter(is.na(sampledepth_m_lagos)) # %>% filter(CharacteristicName == "Chlorophyll a")
-
-#look at programs
-temp_table <- table(temp$OrganizationFormalName)
-unknown_depths <- as.data.frame(temp_table) 
-temp_table2 <- table(temp$CharacteristicName)
-samples <- as.data.frame(temp_table2)
-
-#look at approaches for programs with lots of samples
-temp2 <- temp %>% filter(OrganizationFormalName=="Seminole  County (Florida)")
-unique(temp2$CharacteristicName)
-
-sample_equip_temp <- c(unique(temp2$SampleCollectionEquipmentName),
-                  unique(temp2$SampleCollectionMethod.MethodIdentifier),
-                  unique(temp2$SampleCollectionMethod.MethodName),
-                  unique(temp2$SampleCollectionMethod.MethodIdentifierContext))
-sample_equip_temp
-
-unique(temp2$ResultCommentText)
-
-################# END QAQC ############################
-
-dat3 <- dat2 %>% filter(sampletype_legacy=="UNKNOWN" & is.na(sampledepth_m_lagos))
-write_csv(dat3,"unknownlocations.csv")
-rm(dat3)
-
-#remove observations with unknown sample type and unknown depth
-dat2 <- dat2 %>% filter(paste0(sampledepth_m_lagos,sampletype_legacy)!="NAUNKNOWN")
-
-#if more than 1 observation was made with a depth gear, drop the data
-#if only 1 observation was made, assumme it was a surface sample
-temp <- dat2 %>% 
-    filter(is.na(sampledepth_m_lagos)) %>% 
-    filter(sampletype_lagos=="DEPTH") %>% 
-    group_by(CharacteristicName,source_samplesiteid,sampledate) %>% 
-    mutate(n=n()) %>% 
-    ungroup() %>% 
-    filter(n>1)
-dat2 <- dat2 %>% filter(!Obs_Id %in% temp$Obs_Id)
-
-temp <- dat2 %>% 
-    filter(is.na(sampledepth_m_lagos)) %>% 
-    filter(sampletype_lagos=="DEPTH")
-dat2$sampledepth_m_lagos[which(dat2$Obs_Id %in% temp$Obs_Id)] <- 0
-dat2$sampleposition_lagos[which(dat2$Obs_Id %in% temp$Obs_Id)] <- "SPECIFIED"
-
-
-
-
+    rename(sample_id = Obs_Id,
+           sample_date = sampledate,
+           parameter_id = variableid_lagos,
+           parameter_name = CharacteristicName,
+           parameter_value = ResultMeasureValue,
+           parameter_detectionlimit_value = DetectionQuantitationLimitMeasure.MeasureValue,
+           sample_depth_flag = lagos_sampleposition,
+           sample_depth_m = lagos_sampledepth,
+           source_id = OrganizationIdentifier,
+           source_name = OrganizationFormalName,
+           source_activityid = ActivityIdentifier,
+           source_activityorg_name = ActivityConductingOrganizationText,
+           source_sample_siteid = MonitoringLocationIdentifier,
+           source_parameter_name = source_parameter,
+           source_parameter_value = source_value,
+           source_parameter_units = source_unit,
+           parameter_conversionfactor = Conversion,
+           source_detectionlimit_value = detectionlimit_legacy,
+           source_detectionlimit_unit = detectionlimit_unit_legacy,
+           parameter_detectionlimit_conversionfactor = Conversion_dl,
+           source_detectionlimit_condition = ResultDetectionConditionText,
+           source_detectionlimit_type = DetectionQuantitationLimitTypeName,
+           source_value_qualifiercode = MeasureQualifierCode,
+           source_labmethod_description = MethodDescriptionText,
+           source_labmethod_id = Method_Id,
+           source_labmethod_name = ResultAnalyticalMethod.MethodName,
+           wqp_parameter_usgspcode = USGSPCode)
+           
 
 ############Start creating colums
 
-dat2 <- dat2 %>% unite('source_comments', 
+dat <- dat %>% unite('source_comments', 
                        ActivityCommentText, 
                        ResultCommentText,
-                       ResultLaboratoryCommentText,
-                       MeasureQualifierCode,
-                       ResultDetectionConditionText, sep = '$', remove = FALSE) %>%
-mutate(comments_legacy = str_replace_all(source_comments,'NA','')) %>%
-mutate(comments_legacy = str_replace_all(source_comments,'\\$',' '))
-
-
-# obs <- data.frame(table(dat2$CharacteristicName))
-# write_csv(obs,"data_summary.csv")
-# 
-# temp <- dat2 %>% 
-#     filter(is.na(sampledepth_m_lagos)) %>% 
-#     filter(sampletype_lagos=="GRAB")
-# 
-# table(temp$OrganizationFormalName)
-
-
-################ QAQC #################
-
-#parameter Mapping
-params_maps<- dat2 %>% select(CharacteristicName, source_parameter) %>% distinct()
-params_maps
-temp <- dat2 %>% filter(ResultSampleFractionText ==   "Non-Filterable (Particle)")
-################## End QAQC
-
-
-
-
-
+                       ResultLaboratoryCommentText, sep = '#', remove = FALSE) %>%
+mutate(source_comments = str_replace_all(source_comments,'#NA',''),
+       source_comments = str_replace_all(source_comments,'NA#',''),
+       source_comments = ifelse(source_comments=="NA",'',source_comments))
 
 #Deal with classifying chlorophyll
-dat2$source_methodqualifier = NA #this is where we have identified corrected vs uncorrected
-temp <- dat2 %>% filter(CharacteristicName=="Chlorophyll a")
-unique(temp$source_parameter)
+dat$source_methodqualifier = NA #this is where we have identified corrected vs uncorrected
+temp <- dat %>% filter(parameter_name=="Chlorophyll a")
+unique(temp$source_parameter_name)
 unique(temp$USGSPCode)
-dat2 <- dat2 %>% mutate(source_methodqualifier = ifelse(source_parameter=="Chlorophyll a, corrected for pheophytin","corrected",source_methodqualifier))
-dat2 <- dat2 %>% mutate(source_methodqualifier = ifelse(source_parameter=="Chlorophyll a, uncorrected for pheophytin","uncorrected",source_methodqualifier))
+dat <- dat %>% mutate(source_methodqualifier = ifelse(source_parameter_name=="Chlorophyll a, corrected for pheophytin","corrected",source_methodqualifier))
+dat <- dat %>% mutate(source_methodqualifier = ifelse(source_parameter_name=="Chlorophyll a, free of pheophytin","corrected",source_methodqualifier))
+dat <- dat %>% mutate(source_methodqualifier = ifelse(source_parameter_name=="Chlorophyll a, uncorrected for pheophytin","uncorrected",source_methodqualifier))
+
 #deal with usgs pcodes
-dat2 <- dat2 %>% mutate(source_methodqualifier = ifelse(is.na(source_methodqualifier) & USGSPCode==32209,"corrected",source_methodqualifier))
-dat2 <- dat2 %>% mutate(source_methodqualifier = ifelse(is.na(source_methodqualifier) & USGSPCode==70953,"uncorrected",source_methodqualifier))
-dat2 <- dat2 %>% mutate(source_methodqualifier = ifelse(is.na(source_methodqualifier) & USGSPCode==32217,"uncorrected",source_methodqualifier))
-dat2 <- dat2 %>% mutate(source_methodqualifier = ifelse(is.na(source_methodqualifier) & USGSPCode==32230,"uncorrected",source_methodqualifier))
-dat2 <- dat2 %>% mutate(source_methodqualifier = ifelse(is.na(source_methodqualifier) & USGSPCode==32234,"uncorrected",source_methodqualifier))
+dat <- dat %>% mutate(source_methodqualifier = ifelse(is.na(source_methodqualifier) & USGSPCode==32209,"corrected",source_methodqualifier))
+dat <- dat %>% mutate(source_methodqualifier = ifelse(is.na(source_methodqualifier) & USGSPCode==70953,"uncorrected",source_methodqualifier))
+dat <- dat %>% mutate(source_methodqualifier = ifelse(is.na(source_methodqualifier) & USGSPCode==32217,"uncorrected",source_methodqualifier))
+dat <- dat %>% mutate(source_methodqualifier = ifelse(is.na(source_methodqualifier) & USGSPCode==32230,"uncorrected",source_methodqualifier))
+dat <- dat %>% mutate(source_methodqualifier = ifelse(is.na(source_methodqualifier) & USGSPCode==32234,"uncorrected",source_methodqualifier))
 
 #look at what is left
-temp <- dat2 %>% filter(source_parameter=="Chlorophyll a" & is.na(source_methodqualifier))
+temp <- dat %>% filter(parameter_name=="Chlorophyll a" & is.na(source_methodqualifier))
 unique(temp$source_labmethodinfo)
 unique(temp$source_labmethodname)
 unique(temp$ResultAnalyticalMethod.MethodIdentifier)
@@ -1332,12 +887,47 @@ unique(temp$ResultAnalyticalMethod.MethodIdentifierContext)
 #USEPA Method 445 provides equations for both corrected and uncorrected
 
 #assign indeterminate to unknown
-dat2 <- dat2 %>% mutate(source_methodqualifier = ifelse(is.na(source_methodqualifier) & source_parameter=="Chlorophyll a","unknown",source_methodqualifier))
+dat <- dat %>% mutate(source_methodqualifier = ifelse(is.na(source_methodqualifier) & parameter_name=="Chlorophyll a","unknown",source_methodqualifier))
 
 #check to make sure all chlorophylls have been assigned
-temp <- dat2 %>% filter(source_parameter=="Chlorophyll a" & is.na(source_methodqualifier))
+temp <- dat %>% filter(parameter_name=="Chlorophyll a" & is.na(source_methodqualifier))
+
+dat <- dat %>% rename(source_labmethod_qualifier = source_labmethodqualifier)
 
 
+out.file <- dat %>% select(sample_id,
+                           lagoslakeid,
+                           sample_date,
+                           parameter_id,
+                           parameter_name,
+                           parameter_value,
+                           parameter_detectionlimit_value,
+                           sample_depth_m,
+                           sample_depth_flag,
+                           source_id,
+                           source_name,
+                           source_activityorg_name,
+                           source_sample_siteid,
+                           source_comments,
+                           source_parameter_name,
+                           wqp_parameter_usgspcode,
+                           source_parameter_value,
+                           source_parameter_units,
+                           source_value_qualifiercode,
+                           parameter_conversionfactor,
+                           source_detectionlimit_value,
+                           source_detectionlimit_unit,
+                           parameter_detectionlimit_conversionfactor,
+                           source_detectionlimit_condition,
+                           source_detectionlimit_type,
+                           source_labmethod_description,
+                           source_labmethod_id,
+                           source_labmethod_name,
+                           source_labmethod_qualifier
+                           )
+
+
+saveRDS(out.file,"limno_export.rds")
 
 
 
