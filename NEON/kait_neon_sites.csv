@@ -1,0 +1,12 @@
+field_domain_id,field_site_id,field_site_name,field_site_type,field_site_subtype,field_latitude,field_longitude,lagoslakeid
+D03,BARC,Lake Barco NEON,Core Aquatic,Lake,29.67598,-82.0084,186598
+D05,CRAM,Crampton Lake NEON,Core Aquatic,Lake,46.20968,-89.4737,96686
+D05,LIRO,Little Rock Lake NEON,Gradient Aquatic,Lake,45.99827,-89.7048,495
+D09,PRLA,Prairie Lake NEON,Gradient Aquatic,Lake,47.15972,-99.1187,353276
+D03,SUGG,Lake Suggs NEON,Core Aquatic,Lake,29.68778,-82.0177,188788
+D18,TOOK,Toolik Lake NEON,Gradient Aquatic,Lake,68.63069,-149.611,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
