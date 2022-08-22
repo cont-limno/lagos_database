@@ -1,5 +1,5 @@
 source_parameter,source_unit,datavalue_unit,datavalue_conversion
-ANC,milliequivalentsPerLiter,ueqL,50.05
+ANC,milliequivalentsPerLiter,ueqL,1
 Ca,milligramsPerLiter,mgL,1
 Cl,milligramsPerLiter,mgL,1
 DIC,milligramsPerLiter,mgL,1
