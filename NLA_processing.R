@@ -6,7 +6,8 @@ library(data.table)
 dat07_siteinfo<-read.csv("./NLA/nla2007_sampledlakeinformation_20091113.csv")
 dat07_profile<-read.csv("./NLA/nla2007_profile_20091008.csv")
 dat07_secchi<-read.csv("./NLA/nla2007_secchi_20091008.csv")
-dat07_chem<-read.csv("./NLA/nla2007_chemical_conditionestimates_20091123 (1).csv")
+dat07_chem<-read.csv("./NLA/nla2007_waterquality_20091123.csv")
+
 
 dat07_site<-
     dat07_siteinfo %>%
@@ -186,6 +187,11 @@ dat07_chem8$SAMPLE_MDL<-c('')
 dat07_chem8$UID<-c('')
 dat07_chem8$DEPTH<-c(0)
 
+
+#ADD NEW PARAMTERS HERE
+
+
+#Add new dataset to the bind below
 Discrete_data07<-rbind(dat07_chem1,
                        dat07_chem2,
                        dat07_chem3,
