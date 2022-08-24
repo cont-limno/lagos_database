@@ -8,6 +8,9 @@ dat07_profile<-read.csv("./NLA/nla2007_profile_20091008.csv")
 dat07_secchi<-read.csv("./NLA/nla2007_secchi_20091008.csv")
 dat07_chem<-read.csv("./NLA/nla2007_waterquality_20091123.csv")
 
+dat07_chem$COND_FLAG<-c(if(dat07_chem$COND_RL_ALERT=="Y" & dat07_chem$COND_RL_ALERT==""),"TEST")
+
+
 
 dat07_site<-
     dat07_siteinfo %>%
@@ -82,6 +85,8 @@ setnames(Profile_data07, names1)
 ###########
 #chem data
 
+#UPDATE FLAG COLUMN
+
 dat07_chem1 <-
     dat07_chem %>%
     select(c('SITE_ID',"VISIT_NO","PTL"))
@@ -89,7 +94,7 @@ names(dat07_chem1)[names(dat07_chem1) == "PTL"] <- "SAMPLE_RESULT"
 dat07_chem1$SAMPLE_NAME<-c('PTL')
 dat07_chem1$SAMPLE_TYPE<-c('INTEGRATED')
 dat07_chem1$SAMPLE_UNITS<-c('ug/L')
-dat07_chem1$SAMPLE_FLAG<-c('')
+dat07_chem1$SAMPLE_FLAG<-dat07_chem$PTL_FLAG
 dat07_chem1$SAMPLE_QA_FLAG<-c('')
 dat07_chem1$SAMPLE_LAB_FLAG<-c('')
 dat07_chem1$SAMPLE_MDL<-c('')
