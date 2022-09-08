@@ -5,6 +5,7 @@ data<-read.csv("PreFinal_NLA_data.csv")
 table<-read.csv("./NLA/lagos_variable.csv")
 conversions<-read.csv("./NLA/conversions.csv")
 unique((data$source_parameter))
+unique(data$lagos_variablename)
 
 data$lagos_variablename[which(data$source_parameter == "ANC")] <- "Alkalinity"
 data$lagos_variableid[which(data$lagos_variablename == "Alkalinity")] <- 1
@@ -14,22 +15,24 @@ data$lagos_variablename[which(data$source_parameter == "COND_FIELD"|
                               data$source_parameter == "COND")] <- "Conductivity"
 data$lagos_variableid[which(data$lagos_variablename == "Conductivity")] <- 13
 
-data$lagos_variablename[which(data$source_parameter == "OXYGEN"|
-                              data$source_parameter == "DO_FIELD")] <- "Oxygen, dissolved"
-data$lagos_variableid[which(data$lagos_variablename == "Oxygen, dissolved")] <- 23
+# data$lagos_variablename[which(data$source_parameter == "OXYGEN"|
+#                               data$source_parameter == "DO_FIELD")] <- "Oxygen, dissolved"
+# data$lagos_variableid[which(data$lagos_variablename == "Oxygen, dissolved")] <- 23
 
 data$lagos_variablename[which(data$source_parameter == "POTASSIUM")] <- "Potassium"
+data$lagos_variablename[which(data$source_parameter == "K")] <- "Potassium"
 data$lagos_variableid[which(data$lagos_variablename == "Potassium")] <- 29
 
 data$lagos_variablename[which(data$source_parameter == "SODIUM")] <- "Sodium"
+data$lagos_variablename[which(data$source_parameter == "NA")] <- "Sodium"
 data$lagos_variableid[which(data$lagos_variablename == "Sodium")] <- 32
 
 data$lagos_variablename[which(data$source_parameter == "TSS")] <- "Solids, total suspended"
 data$lagos_variableid[which(data$lagos_variablename == "Solids, total suspended")] <- 33
 
-data$lagos_variablename[which(data$source_parameter == "TEMP_FIELD"|
-                              data$source_parameter == "TEMPERATURE")] <- "Temperature"
-data$lagos_variableid[which(data$lagos_variablename == "Temperature")] <- 35
+# data$lagos_variablename[which(data$source_parameter == "TEMP_FIELD"|
+#                               data$source_parameter == "TEMPERATURE")] <- "Temperature"
+# data$lagos_variableid[which(data$lagos_variablename == "Temperature")] <- 35
 
 data$lagos_variablename[which(data$source_parameter == "TURB")] <- "Turbidity"
 data$lagos_variableid[which(data$lagos_variablename == "Turbidity")] <- 36
@@ -48,16 +51,19 @@ data$lagos_variablename[which(data$source_parameter == "TKN")] <- "Nitrogen, tot
 data$lagos_variableid[which(data$lagos_variablename == "Nitrogen, total Kjeldahl")] <- 16
 
 data$lagos_variablename[which(data$source_parameter == "NITRITE_N")] <- "Nitrogen, nitrite (NO2)"
+data$lagos_variablename[which(data$source_parameter == "NO2")] <- "Nitrogen, nitrite (NO2)"
 data$lagos_variableid[which(data$lagos_variablename == "Nitrogen, nitrite (NO2)")] <- 17
 
 data$lagos_variablename[which(data$source_parameter == "NITRATE_NITRITE_N")] <- "Nitrogen, nitrite (NO2) + nitrate (NO3)"
+data$lagos_variablename[which(data$source_parameter == "NO3NO2")] <- "Nitrogen, nitrite (NO2) + nitrate (NO3)"
 data$lagos_variableid[which(data$lagos_variablename == "Nitrogen, nitrite (NO2) + nitrate (NO3)")] <- 18
 
-data$lagos_variablename[which(data$source_parameter == "NITRATE_N")] <- "Nitrogen, nitrite (NO2) + nitrate (NO3)"
-data$lagos_variableid[which(data$lagos_variablename == "Nitrogen, nitrite (NO2) + nitrate (NO3)")] <- 18
+# data$lagos_variablename[which(data$source_parameter == "NITRATE_N")] <- "Nitrogen, nitrite (NO2) + nitrate (NO3)"
+# data$lagos_variableid[which(data$lagos_variablename == "Nitrogen, nitrite (NO2) + nitrate (NO3)")] <- 18
 
 data$lagos_variablename[which(data$source_parameter == "AMMONIA_N"|
-                          data$source_parameter == "AMMONIA")] <- "Nitrogen, NH4"
+                          data$source_parameter == "AMMONIA" |
+                              data$source_parameter == "NH4" )] <- "Nitrogen, NH4"
 data$lagos_variableid[which(data$lagos_variablename == "Nitrogen, NH4")] <- 19
 
 data$lagos_variablename[which(data$source_parameter == "NTL")] <- "Nitrogen, total"
@@ -89,18 +95,22 @@ data$lagos_variablename[which(data$source_parameter == "PH"|
 data$lagos_variableid[which(data$lagos_variablename == "pH, field or closed")] <- 25
 
 data$lagos_variablename[which(data$source_parameter == "SULFATE")] <- "Sulfate, dissolved"
+data$lagos_variablename[which(data$source_parameter == "SO4")] <- "Sulfate, dissolved"
 data$lagos_variableid[which(data$lagos_variablename == "Sulfate, dissolved")] <- 34
 
 data$lagos_variablename[which(data$source_parameter == "CHLORIDE")] <- "Chloride, dissolved"
 data$lagos_variableid[which(data$lagos_variablename == "Chloride, dissolved")] <- 8
 
 data$lagos_variablename[which(data$source_parameter == "SILICA")] <- "Silica, dissolved"
+data$lagos_variablename[which(data$source_parameter == "SIO2")] <- "Silica, dissolved"
 data$lagos_variableid[which(data$lagos_variablename == "Silica, dissolved")] <- 31
 
 data$lagos_variablename[which(data$source_parameter == "CALCIUM")] <- "Calcium, dissolved"
+data$lagos_variablename[which(data$source_parameter == "CA")] <- "Calcium, dissolved"
 data$lagos_variableid[which(data$lagos_variablename == "Calcium, dissolved")] <- 3
 
 data$lagos_variablename[which(data$source_parameter == "MAGNESIUM")] <- "Magnesium, dissolved"
+data$lagos_variablename[which(data$source_parameter == "MG")] <- "Magnesium, dissolved"
 data$lagos_variableid[which(data$lagos_variablename == "Magnesium, dissolved")] <- 14
 
 data$lagos_variablename[which(data$source_parameter == "E_COLI")] <- "E. coli-MPN"
@@ -109,11 +119,14 @@ data$lagos_variableid[which(data$lagos_variablename == "E.coli-MPN")] <- 51
 
 clean_data<-subset(data, source_parameter != 'BATCH_ID')
 clean_data<-subset(clean_data, source_parameter != 'CYLSPER')
+clean_data<-subset(clean_data, source_parameter != 'NITRATE_N')
 clean_data<-subset(clean_data, source_parameter != '')
 
 unique((clean_data$source_parameter))
 unique((clean_data$lagos_variablename))
 unique((clean_data$lagos_variableid))
+
+temp <- clean_data %>% filter(is.na(lagos_variablename))
 
 
 merged_data<-merge(clean_data,table,by="lagos_variablename")
@@ -122,7 +135,8 @@ merged_data$lagos_variableid<-merged_data$variableid_lagos
 
 conversions <- conversions %>% select(lagos_variablename,Conversion_factor)
 convert<-merge(merged_data,conversions,by=c("lagos_variablename"))
-
+temp <- convert %>% select(lagos_variablename,source_parameter,source_unit) %>% 
+    distinct()
 convert$datavalue_conversion<-as.numeric(convert$Conversion_factor)
 temp <- convert %>% filter(!is.na(source_value)) %>% 
     filter(is.na(as.numeric(source_value)))
