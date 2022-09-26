@@ -1,13 +1,15 @@
 library(tidyverse)
 library(lubridate)
-dat <- read_csv("Final_NLA_data.csv")
+dat <- read_csv("Final_NLA_Data.csv") %>% select(-lagoslakeid)
+NLA_link <- read_csv("NLA/NLA_LakeLink_FINAL_26SE22.csv") %>% distinct(SITE_ID,lagoslakeid) %>% drop_na(lagoslakeid)
 
-nla_sites <- dat %>% select(source_samplesiteid,LAT_DD,LON_DD) %>% 
-    distinct() %>% 
-    group_by(source_samplesiteid) %>% 
-    mutate(n=n())
+# nla_sites <- dat %>% select(source_samplesiteid,LAT_DD,LON_DD) %>% 
+#     distinct() %>% 
+#     group_by(source_samplesiteid) %>% 
+#     mutate(n=n())
 
 dat <- dat %>% 
+    left_join(NLA_link) %>% 
     rename(sample_id = obs_id,
            sample_date = sampledate,
            parameter_id = lagos_variableid,
@@ -84,8 +86,14 @@ out.file <- dat %>% select(sample_id,
 out.file <- out.file %>% 
     mutate(parameter_value = ifelse(parameter_name=="Alkalinity",parameter_value * 0.05005,parameter_value),
            sample_depth_flag = ifelse(is.na(sample_depth_m),"INTEGRATED",sample_depth_flag),
-           sample_depth_m = ifelse(is.na(sample_depth_m),2,sample_depth_m)) %>% 
-    select(-lagoslakeid)
+           sample_depth_m = ifelse(is.na(sample_depth_m),2,sample_depth_m)) 
+
+temp <- out.file %>% filter(is.na(lagoslakeid)) %>% 
+    select(source_sample_siteid) %>% 
+    distinct()
+write_csv(temp,"missing_NLA.csv")
+
+
 
 # load in lagos lakeid linking
 # join data and add lagos lake id
@@ -93,7 +101,9 @@ out.file <- out.file %>%
 # 
 #use script below to organize data and save rds
 
-out.file <- out.file %>% select(sample_id,
+out.file <- out.file %>% 
+    drop_na(lagoslakeid) %>% 
+    select(sample_id,
                                 lagoslakeid,
                                 sample_date,
                                 parameter_id,
