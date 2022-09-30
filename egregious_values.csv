@@ -4,14 +4,13 @@ WA-23628,460912,1975-04-22,NA,USGS Washington Water Science Center,"Phosphorus, 
 WA-72750,461235,1975-04-30,NA,USGS Washington Water Science Center,"Nitrogen, total Kjeldahl",Kjeldahl nitrogen,59000,59,mg/l as N,1000,NA,"NA NA",NA,NA,"WANNACUT LAKE NEAR OROVILLE, WA"
 WA-78736,460912,1975-05-28,NA,USGS Washington Water Science Center,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,7501.219999999999,23.0,mg/l asPO4,326.14,NA,"NA NA",NA,NA,"UPPER GOOSE LAKE NEAR OTHELLO, WA"
 WA-72057,461235,1975-06-05,NA,USGS Washington Water Science Center,"Nitrogen, total Kjeldahl",Kjeldahl nitrogen,56000,56,mg/l as N,1000,NA,"NA NA",NA,NA,"WANNACUT LAKE NEAR OROVILLE, WA"
-WA-63636,460912,1975-08-20,NA,USGS Washington Water Science Center,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,6700,6.70,mg/l as P,1000,NA,"NA NA",NA,NA,"UPPER GOOSE LAKE NEAR OTHELLO, WA"
+WA-63634,460912,1975-08-20,NA,USGS Washington Water Science Center,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,6848.94,21.0,mg/l asPO4,326.14,NA,"NA NA",NA,NA,"UPPER GOOSE LAKE NEAR OTHELLO, WA"
 WA-43554,461235,1975-08-29,NA,USGS Washington Water Science Center,"Nitrogen, total Kjeldahl",Kjeldahl nitrogen,53000,53,mg/l as N,1000,NA,"NA NA",NA,NA,"WANNACUT LAKE NEAR OROVILLE, WA"
 WA-177103,465311,1975-09-08,NA,U.S. Army Corps of Engineers Walla Walla District,"Oxygen, dissolved",Dissolved oxygen (DO),73,73,mg/l,1,NA,"NA NA",NA,NA,NA
-WA-18437,460912,1975-09-16,NA,USGS Washington Water Science Center,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,5218.24,16.0,mg/l asPO4,326.14,NA,"NA NA",NA,NA,"UPPER GOOSE LAKE NEAR OTHELLO, WA"
+WA-24425,460912,1975-09-16,NA,USGS Washington Water Science Center,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,5200,5.20,mg/l as P,1000,NA,"NA NA",NA,NA,"UPPER GOOSE LAKE NEAR OTHELLO, WA"
 WA-94930,461235,1975-09-24,NA,USGS Washington Water Science Center,"Magnesium, dissolved",Magnesium,1400,1400,mg/l,1,NA,"NA NA",NA,NA,"WANNACUT LAKE NEAR OROVILLE, WA"
 WA-83762,461235,1975-09-24,NA,USGS Washington Water Science Center,"Nitrogen, total Kjeldahl",Kjeldahl nitrogen,54000,54,mg/l as N,1000,NA,"NA NA",NA,NA,"WANNACUT LAKE NEAR OROVILLE, WA"
 TX-368271,438780,1976-09-01,NA,USGS Texas Water Science Center,"Oxygen, dissolved",Oxygen,57,57,mg/l,1,NA,"NA NA",NA,NA,"Town (Lady Bird) Lk Site EC at Austin, TX"
-NC-779457,157614,1977-07-06,NA,NCDENR-DWQ,"Oxygen, dissolved",Dissolved oxygen (DO),30,30,mg/l,1,NA,21NC01WQ UNKNOWN,NA,X-sec location horizontal: 50.0% from R bank facing upstream¶3 sampling points in cross section,BADIN LAKE AT BADIN INACT 820720
 NC-619504,164465,1977-08-17,NA,NCDENR-DWQ,"Oxygen, dissolved",Dissolved oxygen (DO),30,30,mg/l,1,NA,21NC01WQ UNKNOWN,NA,NA,LAKE NORMAN AT MOUTH REEDS CRK ARM CLEAN LAKES
 SD-112623,355465,1978-05-08,NA,USGS South Dakota Water Science Center,"Phosphorus, total",Phosphorus,71750.8,220,mg/l PO4,326.14,NA,"NA NA",NA,NA,123N53W11CCC R
 TX-120759,428419,1978-06-15,NA,USGS Texas Water Science Center,"Oxygen, dissolved",Oxygen,114,114,mg/l,1,NA,"NA NA",NA,NA,"Lk Granbury Site FC nr Granbury, TX"
@@ -20,9 +19,6 @@ WA-150051,465713,1978-07-14,NA,U.S. Army Corps of Engineers Walla Walla District
 WA-194961,465713,1978-07-14,NA,U.S. Army Corps of Engineers Walla Walla District,Turbidity,Turbidity,-9.99,-9.99,NTU,1,NA,APHA 2130,NA,NA,NA
 NC-816290,150590,1978-08-15,NA,NCDENR-DWQ,"Oxygen, dissolved",Dissolved oxygen (DO),30,30,mg/l,1,NA,21NC01WQ UNKNOWN,NA,NA,KERR LAKE AT BUOY M NR HENDERSON INACT 820715
 WA-173249,465713,1978-09-13,NA,U.S. Army Corps of Engineers Walla Walla District,Conductivity,Specific conductance,-9990,-9.99,mS/cm,1000,NA,"NA NA",NA,NA,NA
-NC-831336,158065,1979-07-26,NA,NCDENR-DWQ,"Mercury, total",Mercury,110000,110,ug/l,1000,NA,21NC01WQ UNKNOWN,NA,X-sec location horizontal: 50.0% from R bank facing upstream,LAKE TILLERY DNS HWY73 NR PORTER INACT 790726
-NC-718117,158065,1979-07-26,NA,NCDENR-DWQ,"Mercury, total",Mercury,99000,99,ug/l,1000,NA,21NC01WQ UNKNOWN,NA,X-sec location horizontal: 50.0% from R bank facing upstream,LAKE TILLERY DNS CEDAR CRK NR AQUADALE INA 820721
-NC-807141,164465,1979-08-14,NA,NCDENR-DWQ,"Oxygen, dissolved",Dissolved oxygen (DO),27,27,mg/l,1,NA,21NC01WQ UNKNOWN,NA,X-sec location horizontal: 50.0% from R bank facing upstream,LAKE NORMAN AT COWANS FORD DAM CLEAN LAKES
 WA-149296,465713,1979-08-29,NA,U.S. Army Corps of Engineers Walla Walla District,Conductivity,Specific conductance,-9990,-9.99,mS/cm,1000,NA,"NA NA",NA,NA,NA
 WA-195049,465713,1979-08-29,NA,U.S. Army Corps of Engineers Walla Walla District,"pH, field or lab",pH,-9.99,-9.99,None,1,NA,APHA 4500-H,NA,NA,NA
 WA-189469,465713,1979-08-29,NA,U.S. Army Corps of Engineers Walla Walla District,Turbidity,Turbidity,-9.99,-9.99,NTU,1,NA,APHA 2130,NA,NA,NA
@@ -52,7 +48,6 @@ NC-849215,156501,1984-09-18,NA,NCDENR-DWQ,"Solids, total suspended",Total solids
 OK-139673,393211,1985-04-24,U.S. Geological Survey-Water Resources Discipline,USGS Oklahoma Water Science Center,"Aluminum, dissolved",Aluminum,2500,2500,ug/l,1,NA,"NA NA",NA,NA,"McAlester Coal Pond 3, Site  6"
 OK-200511,393211,1986-04-09,U.S. Geological Survey-Water Resources Discipline,USGS Oklahoma Water Science Center,"Aluminum, dissolved",Aluminum,4000,4000,ug/l,1,NA,"NA NA",NA,NA,"McAlester Coal Pond 3, Site  2"
 WA-149880,465713,1986-08-12,NA,U.S. Army Corps of Engineers Walla Walla District,Conductivity,Specific conductance,-9990,-9.99,mS/cm,1000,NA,"NA NA",NA,NA,NA
-NC-692441,160915,1987-04-21,NA,NCDENR-DWQ,Salinity,Salinity,230,230,ppth,1,NA,21NC01WQ UNKNOWN,NA,X-sec location horizontal: 50.0% from R bank facing upstream,CATAWBA CRK AT SR 2302 AT SC STATE LINE
 FL-3215395,184266,1988-03-02,NA,Orange County Environmental Protection (Florida),"Oxygen, dissolved",Dissolved oxygen (DO),110,110,mg/l,1,0.01,USEPA 360.2,NA,NA,Apopka (Two Story Pump.)
 CO-687625,450248,1988-03-30,U.S. Geological Survey-Water Resources Discipline,USGS Colorado Water Science Center,"Nitrogen, nitrite (NO2) + nitrate (NO3)",Inorganic nitrogen (nitrate and nitrite),18000,18,mg/l as N,1000,NA,USGS CL045,"USGS OF 93-125, p 157",NA,"GARNET MESA RESERVOIR AT DAM, NEAR DELTA, COLO"
 MN-5263000,4141,1988-06-28,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),26,26,mg/l,1,NA,MNPCA DO WINKLER,NA,NA,BLUE (NORTH BAY)
@@ -60,10 +55,7 @@ MN-5263309,4141,1988-06-28,NA,Minnesota Pollution Control Agency - Ambient Surfa
 MN-5090662,594,1988-06-28,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),25.7,25.7,mg/l,1,NA,MNPCA DO WINKLER,NA,NA,BIRCH
 ND-328782,314256,1988-07-21,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,"Oxygen, dissolved",Oxygen,25.3,25.3,mg/l,1,NA,"NA NA",NA,NA,DEVILS LAKE MINNEWAUKAN FLATS (TH6B)
 FL-3800143,192520,1989-02-01,NA,Orange County Environmental Protection (Florida),"Solids, total suspended",Total solids,19137,19137,mg/l,1,1,USEPA 160.3,NA,NA,Formosa
-NC-683191,160915,1989-06-07,NA,NCDENR-DWQ,"Oxygen, dissolved",Dissolved oxygen (DO),26.4,26.4,mg/l,1,NA,21NC01WQ UNKNOWN,NA,X-sec location horizontal: 7.0% from R bank facing upstream,CATAWBA RIV AT POWERLINE CROSSING AT S BELMONT X REF C421000
-FL-2976572,192520,1989-07-31,NA,Orange County Environmental Protection (Florida),"Solids, total suspended",Total solids,20143,20143,mg/l,1,1,USEPA 160.3,NA,NA,Formosa
 SD-578332,666,1989-08-01,U.S. Corps of Engineers,USGS South Dakota Water Science Center,Chlorophyll a,Chlorophyll a,193000,193000,ug/l,1,NA,"NA NA",NA,NA,127N48W26BBC R
-FL-4074887,192520,1989-10-30,NA,Orange County Environmental Protection (Florida),"Solids, total suspended",Total solids,20549,20549,mg/l,1,1,USEPA 160.3,NA,NA,Formosa
 FL-3433738,192520,1990-08-02,NA,Orange County Environmental Protection (Florida),"Solids, total suspended",Total solids,21757,21757,mg/l,1,1,USEPA 160.3,NA,NA,Formosa
 MN-2132849,3590,1990-08-08,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),34.1,34.1,mg/l,1,NA,MNPCA DO WINKLER,NA,NA,RIVER (L&D 2 POOL)
 MN-2715275,3482,1990-09-04,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,54000,54,mg/l,1000,NA,MNPCA LEG_P00671,NA,NA,COMO
@@ -73,6 +65,7 @@ SD-444582,344386,1991-02-11,U.S. Geological Survey-Water Resources Discipline,US
 FL-3199599,196849,1991-04-17,NA,South Florida Water Management District,"Solids, total suspended",Total dissolved solids,20453.9,20453.9,mg/l,1,NA,21FLSFWM WQ-1,NA,NA,"L.OKEE-CNTRL, 6.0 STATUTE MILES DUE WESTOF BOUY C#5 ADJACEN"
 UT-143312,456169,1991-06-19,NA,Utah Department Of Environmental Quality,"Oxygen, dissolved",Dissolved oxygen (DO),77,77.0,mg/l,1,NA,UTAHDWQ_WQX FIELD MEASURES,NA,NA,UTAH LAKE 1 MI EAST OF PELICAN POINT
 WI-1611860,4790,1991-06-19,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),27.7,27.7,mg/l,1,NA,"NA NA",NA,NA,PUCKAWAY LAKE - DEEP HOLE
+FL-2395204,192520,1991-07-23,NA,Orange County Environmental Protection (Florida),"Solids, total suspended",Total solids,23679,23679,mg/l,1,1,USEPA 160.3,NA,NA,Formosa
 NC-816016,152391,1991-08-12,NA,NCDENR-DWQ,"Oxygen, dissolved",Dissolved oxygen (DO),28.1,28.1,mg/l,1,NA,21NC01WQ UNKNOWN,NA,NA,LAKE CRABTREE IN UPS END NR MORRISVILLE
 WI-1531640,4928,1991-08-13,U.S. Geological Survey-Water Resources Discipline,USGS Wisconsin Water Science Center,"Oxygen, dissolved",Oxygen,27.3,27.3,mg/l,1,NA,"NA NA",NA,NA,"LOST LAKE NEAR BEAVER DAM, WI"
 WI-1537168,4928,1991-08-13,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),27.3,27.3,mg/l,1,NA,ASTM D888(B),https://www.nemi.gov/methods/method_summary/9814/,NA,Lost Lake - Deepest Spot
@@ -80,7 +73,6 @@ WI-1565320,5036,1991-08-14,U.S. Geological Survey-Water Resources Discipline,USG
 WI-1371733,4244,1991-08-21,WIDNR_WQX,Wisconsin Department of Natural Resources,"pH, field or lab",pH,495,495,None,1,NA,"NA NA",NA,NA,BROWNS LAKE - DEEP HOLE
 ND-301505,314996,1991-09-18,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,Sodium,Sodium,23000,23000,mg/l,1,NA,USGS AA035,"USGS TWRI 5-A1/1989, p 425",NA,"EAST STUMP LAKE NR PEKIN, ND"
 ND-301508,314996,1991-09-18,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,"Sulfate, dissolved",Sulfate,45000,45000,mg/l,1,NA,USGS IC022,"Standard Methods (22d ed), 2012, p 4-5 - 4-7",NA,"EAST STUMP LAKE NR PEKIN, ND"
-FL-3667494,192520,1992-04-22,NA,Orange County Environmental Protection (Florida),"Solids, total suspended",Total solids,25307,25307,mg/l,1,1,USEPA 160.3,NA,NA,Formosa
 WI-195957,48446,1992-05-14,NA,Lac Du Flambeau Band of Lake Superior Chippewa Indians Water Program (Tribal),"Aluminum, total",Aluminum,15000,15000,ug/l,1,5,USEPA 202.2,https://www.nemi.gov/methods/method_summary/5268/,NA,Zee Lake Central
 WI-202387,48446,1992-05-14,NA,Lac Du Flambeau Band of Lake Superior Chippewa Indians Water Program (Tribal),"Aluminum, total",Aluminum,17000,17000,ug/l,1,5,USEPA 202.2,https://www.nemi.gov/methods/method_summary/5268/,NA,Zee Lake Central
 WI-195508,48446,1992-05-14,NA,Lac Du Flambeau Band of Lake Superior Chippewa Indians Water Program (Tribal),"Aluminum, total",Aluminum,51000,51000,ug/l,1,5,USEPA 202.2,https://www.nemi.gov/methods/method_summary/5268/,NA,Zee Lake Central
@@ -90,14 +82,14 @@ WI-1441064,5286,1992-06-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"
 WI-1441447,5286,1992-06-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"Phosphorus, total",Phosphate-phosphorus,490000,490.,mg/kg,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,LAKE RIPLEY - DEEP HOLE
 WI-1435934,5286,1992-06-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"Phosphorus, total",Phosphate-phosphorus,500000,500.,mg/kg,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,LAKE RIPLEY - DEEP HOLE
 WI-1440239,5286,1992-06-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"Phosphorus, total",Phosphate-phosphorus,180000,180.,mg/kg,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,LAKE RIPLEY - DEEP HOLE
-WI-1435929,5286,1992-06-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"Phosphorus, total",Phosphate-phosphorus,420000,420.,mg/kg,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,LAKE RIPLEY - DEEP HOLE
+WI-1436069,5286,1992-06-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"Phosphorus, total",Phosphate-phosphorus,280000,280.,mg/kg,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,LAKE RIPLEY - DEEP HOLE
 WI-1440936,5286,1992-06-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"Phosphorus, total",Phosphate-phosphorus,400000,400.,mg/kg,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,LAKE RIPLEY - DEEP HOLE
 WI-1439405,5286,1992-06-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"Phosphorus, total",Phosphate-phosphorus,560000,560.,mg/kg,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,LAKE RIPLEY - DEEP HOLE
 WI-1441104,5286,1992-06-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"Phosphorus, total",Phosphate-phosphorus,510000,510.,mg/kg,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,LAKE RIPLEY - DEEP HOLE
 WI-1440289,5286,1992-06-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"Phosphorus, total",Phosphate-phosphorus,380000,380.,mg/kg,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,LAKE RIPLEY - DEEP HOLE
 WI-1436053,5286,1992-06-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"Phosphorus, total",Phosphate-phosphorus,160000,160.,mg/kg,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,LAKE RIPLEY - DEEP HOLE
 WI-1436081,5119,1992-06-13,WIDNR_WQX,Wisconsin Department of Natural Resources,"Phosphorus, total",Phosphate-phosphorus,310000,310.,mg/kg,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,Rock Lake - Deep Hole
-WI-1436024,5119,1992-06-13,WIDNR_WQX,Wisconsin Department of Natural Resources,"Phosphorus, total",Phosphate-phosphorus,740000,740.,mg/kg,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,Rock Lake - Deep Hole
+WI-1441008,5119,1992-06-13,WIDNR_WQX,Wisconsin Department of Natural Resources,"Phosphorus, total",Phosphate-phosphorus,770000,770.,mg/kg,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,Rock Lake - Deep Hole
 WI-1438595,5119,1992-06-13,WIDNR_WQX,Wisconsin Department of Natural Resources,"Phosphorus, total",Phosphate-phosphorus,700000,700.,mg/kg,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,Rock Lake - Deep Hole
 WI-201947,48446,1992-07-08,NA,Lac Du Flambeau Band of Lake Superior Chippewa Indians Water Program (Tribal),"Aluminum, total",Aluminum,16000,16000,ug/l,1,5,USEPA 202.2,https://www.nemi.gov/methods/method_summary/5268/,NA,Zee Lake Central
 WI-185513,48446,1992-07-08,NA,Lac Du Flambeau Band of Lake Superior Chippewa Indians Water Program (Tribal),"Aluminum, total",Aluminum,12000,12000,ug/l,1,5,USEPA 202.2,https://www.nemi.gov/methods/method_summary/5268/,NA,Zee Lake Central
@@ -106,17 +98,15 @@ WI-196446,48446,1992-09-22,NA,Lac Du Flambeau Band of Lake Superior Chippewa Ind
 WI-195111,48446,1992-09-22,NA,Lac Du Flambeau Band of Lake Superior Chippewa Indians Water Program (Tribal),"Aluminum, total",Aluminum,11000,11000,ug/l,1,5,USEPA 202.2,https://www.nemi.gov/methods/method_summary/5268/,NA,Zee Lake Central
 WI-166422,48446,1992-09-22,NA,Lac Du Flambeau Band of Lake Superior Chippewa Indians Water Program (Tribal),"Aluminum, total",Aluminum,23000,23000,ug/l,1,5,USEPA 202.2,https://www.nemi.gov/methods/method_summary/5268/,NA,Zee Lake Central
 FL-3510929,192520,1992-10-14,NA,Orange County Environmental Protection (Florida),"Solids, total suspended",Total solids,26574,26574,mg/l,1,1,USEPA 160.3,NA,NA,Formosa
-WI-213879,48446,1993-01-12,NA,Lac Du Flambeau Band of Lake Superior Chippewa Indians Water Program (Tribal),"Aluminum, total",Aluminum,15000,15000,ug/l,1,5,USEPA 202.2,https://www.nemi.gov/methods/method_summary/5268/,NA,Zee Lake Central
+FL-3907481,192520,1993-01-13,NA,Orange County Environmental Protection (Florida),"Solids, total suspended",Total solids,27304,27304,mg/l,1,1,USEPA 160.3,NA,NA,Formosa
 SD-431154,344386,1993-02-17,U.S. Geological Survey-Water Resources Discipline,USGS South Dakota Water Science Center,"Nitrogen, NH4",Ammonia and ammonium,22000,22.0,mg/l as N,1000,NA,USGS CL035,"USGS OF 93-125, p 125",BOTTLES OK,"LAKE ANDES NEAR RAVINIA, SD"
 WI-117760,48446,1993-03-10,NA,Lac Du Flambeau Band of Lake Superior Chippewa Indians Water Program (Tribal),"Aluminum, total",Aluminum,24000,24000,ug/l,1,5,USEPA 202.2,https://www.nemi.gov/methods/method_summary/5268/,NA,Zee Lake Central
 ND-669035,314255,1993-03-16,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,"Silica, dissolved",Silica,110,110,mg/l,1,NA,"NA NA",NA,NA,"DRY LAKE NEAR PENN, ND"
 ND-881468,342609,1993-03-18,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,"Sulfate, dissolved",Sulfate,14400,14400,mg/l,1,NA,"NA NA",NA,NA,LAKE GEORGE
 ND-907034,342609,1993-03-18,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,"Sulfate, dissolved",Sulfate,14500,14500,mg/l,1,NA,"NA NA",NA,NA,LAKE GEORGE
 ND-897612,342609,1993-03-18,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,"Sulfate, dissolved",Sulfate,14600,14600,mg/l,1,NA,"NA NA",NA,NA,LAKE GEORGE
-FL-1836976,196849,1993-05-28,NA,South Florida Water Management District,"Nitrogen, NH4",Ammonia-nitrogen as N,11090,11.09,mg/l,1000,NA,21FLSFWM WQ-1,NA,NA,LAKE OKEECHOBEE TOWER WEST (#5)
-FL-3356968,196849,1993-05-28,NA,South Florida Water Management District,"Nitrogen, total Kjeldahl",Kjeldahl nitrogen,122140,122.14,mg/l,1000,NA,21FLSFWM WQ-1,NA,NA,LAKE OKEECHOBEE TOWER WEST (#5)
 FL-2973633,196849,1993-05-29,NA,South Florida Water Management District,"Nitrogen, total Kjeldahl",Kjeldahl nitrogen,71610,71.61,mg/l,1000,NA,21FLSFWM WQ-1,NA,NA,LAKE OKEECHOBEE TOWER WEST (#5)
-WI-170342,48446,1993-07-19,NA,Lac Du Flambeau Band of Lake Superior Chippewa Indians Water Program (Tribal),"Aluminum, total",Aluminum,13000,13000,ug/l,1,5,USEPA 202.2,https://www.nemi.gov/methods/method_summary/5268/,NA,Zee Lake Central
+WI-168210,48446,1993-07-19,NA,Lac Du Flambeau Band of Lake Superior Chippewa Indians Water Program (Tribal),"Aluminum, total",Aluminum,47000,47000,ug/l,1,5,USEPA 202.2,https://www.nemi.gov/methods/method_summary/5268/,NA,Zee Lake Central
 WI-1437224,5286,1993-07-27,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),25.2,25.2,mg/l,1,NA,"NA NA",NA,NA,LAKE RIPLEY - DEEP HOLE
 NC-607967,151700,1993-08-03,NA,NCDENR-DWQ,"Oxygen, dissolved",Dissolved oxygen (DO),28,28,mg/l,1,NA,21NC01WQ UNKNOWN,NA,NA,LAKE PHELPS AT WEST END NR ROPER CLEAN LAKES
 NC-660807,151700,1993-08-03,NA,NCDENR-DWQ,"Oxygen, dissolved",Dissolved oxygen (DO),27.8,27.8,mg/l,1,NA,21NC01WQ UNKNOWN,NA,NA,LAKE PHELPS AT CENTER NR CRESWELL CLN LAKES
@@ -133,15 +123,16 @@ NC-709393,156498,1993-08-11,NA,NCDENR-DWQ,"Oxygen, dissolved",Dissolved oxygen (
 NC-647816,154409,1993-08-12,NA,NCDENR-DWQ,"Oxygen, dissolved",Dissolved oxygen (DO),27.4,27.4,mg/l,1,NA,21NC01WQ UNKNOWN,NA,NA,LAKE TOWNSEND UPS SR 1001 NR GREENSBORO
 NC-791534,154409,1993-08-12,NA,NCDENR-DWQ,"Oxygen, dissolved",Dissolved oxygen (DO),27.3,27.3,mg/l,1,NA,21NC01WQ UNKNOWN,NA,NA,LAKE TOWNSEND UPS SR 2523 NR GREENSBORO
 NC-764006,154409,1993-08-12,NA,NCDENR-DWQ,"Oxygen, dissolved",Dissolved oxygen (DO),27.3,27.3,mg/l,1,NA,21NC01WQ UNKNOWN,NA,NA,LAKE TOWNSEND AT DAM NR GREENSBORO
-WI-214257,48446,1993-10-05,NA,Lac Du Flambeau Band of Lake Superior Chippewa Indians Water Program (Tribal),"Aluminum, total",Aluminum,14000,14000,ug/l,1,5,USEPA 202.2,https://www.nemi.gov/methods/method_summary/5268/,NA,Zee Lake Central
+FL-4044696,192520,1993-08-18,NA,Orange County Environmental Protection (Florida),"Solids, total suspended",Total solids,28469,28469,mg/l,1,1,USEPA 160.3,NA,NA,Formosa
+WI-217492,48446,1993-10-05,NA,Lac Du Flambeau Band of Lake Superior Chippewa Indians Water Program (Tribal),"Aluminum, total",Aluminum,13000,13000,ug/l,1,5,USEPA 202.2,https://www.nemi.gov/methods/method_summary/5268/,NA,Zee Lake Central
 SD-216665,356001,1993-10-19,NA,DENR,Secchi,"Depth, Secchi disk depth",-1.371,-1.371,m,1,NA,SDDENR_WQX UNKOWN,NA,NA,PELICANPL07
+FL-2323756,192520,1993-10-26,NA,Orange County Environmental Protection (Florida),"Solids, total suspended",Total solids,28753,28753,mg/l,1,1,USEPA 160.3,NA,NA,Formosa
 ND-812856,314996,1993-11-01,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,"Magnesium, dissolved",Magnesium,1630,1630,mg/l,1,NA,"NA NA",NA,NA,"EASTERN STUMP LAKE NR LAKOTA, ND"
 ND-898672,314996,1993-11-01,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,"Sulfate, dissolved",Sulfate,19000,19000,mg/l,1,NA,"NA NA",NA,NA,"EASTERN STUMP LAKE NR LAKOTA, ND"
 SD-384293,356001,1994-01-31,NA,DENR,Secchi,"Depth, Secchi disk depth",-1.219,-1.219,m,1,NA,SDDENR_WQX UNKOWN,NA,NA,PELICANPL07
 ND-817989,314996,1994-02-16,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,"Magnesium, dissolved",Magnesium,1720,1720,mg/l,1,NA,"NA NA",NA,NA,"EASTERN STUMP LAKE NR LAKOTA, ND"
 ND-910557,314996,1994-02-16,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,"Sulfate, dissolved",Sulfate,20700,20700,mg/l,1,NA,"NA NA",NA,NA,"EASTERN STUMP LAKE NR LAKOTA, ND"
 SD-230713,356001,1994-02-22,NA,DENR,Secchi,"Depth, Secchi disk depth",-2.346,-2.346,m,1,NA,SDDENR_WQX UNKOWN,NA,NA,PELICANPL07
-FL-2781131,192520,1994-04-19,NA,Orange County Environmental Protection (Florida),"Solids, total suspended",Total solids,29775,29775,mg/l,1,1,USEPA 160.3,NA,NA,Formosa
 ND-293245,314996,1994-05-09,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,"Magnesium, dissolved",Magnesium,1430,1430,mg/l,1,NA,"NA NA",NA,NA,"EASTERN STUMP LAKE NR LAKOTA, ND"
 ND-123020,314996,1994-05-09,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,"Sulfate, dissolved",Sulfate,16400,16400,mg/l,1,NA,"NA NA",NA,NA,"EASTERN STUMP LAKE NR LAKOTA, ND"
 SD-368205,356001,1994-06-20,NA,DENR,Secchi,"Depth, Secchi disk depth",-1.524,-1.524,m,1,NA,SDDENR_WQX UNKOWN,NA,NA,PELICANPL07
@@ -161,7 +152,6 @@ FL-2806129,184266,1995-04-24,NA,Orange County Environmental Protection (Florida)
 ND-362757,314996,1995-05-10,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,"Sulfate, dissolved",Sulfate,11000,11000,mg/l,1,NA,"NA NA",NA,NA,"EASTERN STUMP LAKE NR LAKOTA, ND"
 WI-2977159,5002,1995-06-07,WIDNR_WQX,Wisconsin Department of Natural Resources,"Nitrogen, nitrite (NO2) + nitrate (NO3)",Inorganic nitrogen (nitrate and nitrite),18500,18.5,mg/l,1000,NA,USEPA 353.2,https://www.nemi.gov/methods/method_summary/4702/,NA,SQUAW LAKE - DEEP HOLE
 WI-1595651,5036,1995-06-15,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),27,27,mg/l,1,NA,"NA NA",NA,NA,Little Green Lake - Deep Hole (central east)
-NC-722564,163043,1995-06-22,NA,NCDENR-DWQ,"Oxygen, dissolved",Dissolved oxygen (DO),27.2,27.2,mg/l,1,NA,21NC01WQ UNKNOWN,NA,X-sec location horizontal: 70.0% from R bank facing upstream,MOUNTAIN ISLAND LAKE ABOVE GAR CRK NR CROFT
 ND-296980,314996,1995-07-24,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,"Sulfate, dissolved",Sulfate,10300,10300,mg/l,1,NA,"NA NA",NA,NA,"EASTERN STUMP LAKE NR LAKOTA, ND"
 IN-115825,940,1995-08-21,NA,Indiana STORET,"Oxygen, dissolved",Dissolved oxygen (DO),32,32,mg/l,1,0.03,INSTOR_WQX SM4500-OG,NA,Sample Collector Initials not Recognized: WWJ.,WDE010-0011
 ND-147641,314996,1995-10-16,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,"Sulfate, dissolved",Sulfate,10700,10700,mg/l,1,NA,"NA NA",NA,NA,"EASTERN STUMP LAKE NR LAKOTA, ND"
@@ -169,7 +159,6 @@ WA-145324,467274,1995-11-01,NA,U.S. Army Corps of Engineers Walla Walla District
 ND-864438,314996,1996-02-20,U.S. Geological Survey-Water Resources Discipline,USGS North Dakota Water Science Center,"Sulfate, dissolved",Sulfate,12000,12000,mg/l,1,NA,"NA NA",NA,NA,"EASTERN STUMP LAKE NR LAKOTA, ND"
 WI-1682719,3333,1996-05-13,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),102,102,mg/l,1,NA,"NA NA",NA,NA,GILBERT LAKE - DEEP HOLE
 WI-1683823,3333,1996-06-20,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),68,68,mg/l,1,NA,"NA NA",NA,NA,GILBERT LAKE - DEEP HOLE
-KS-48141,372039,1996-07-09,NA,Kansas Department Of Health And Environment,"Aluminum, total",Aluminum,11000,11,mg/l,1000,NA,USEPA 200.7,https://www.nemi.gov/methods/method_summary/4690/,NA,MISSION LAKE
 ND-791964,342609,1996-07-19,NA,North Dakota Department Of Environmental Quality,"Sulfate, dissolved",Sulfate,11100,11100,mg/l,1,NA,APHA 4500-SO4(B),NA,NA,Lake George - Deepest
 ND-450032,342609,1996-07-19,NA,North Dakota Department Of Environmental Quality,"Sulfate, dissolved",Sulfate,14400,14400,mg/l,1,NA,APHA 4500-SO4(B),NA,NA,Lake George - Deepest
 ND-415164,342609,1996-07-19,NA,North Dakota Department Of Environmental Quality,"Sulfate, dissolved",Sulfate,14100,14100,mg/l,1,NA,APHA 4500-SO4(B),NA,NA,Lake George - Deepest
@@ -303,7 +292,8 @@ AZ-269938,454863,2000-03-02,NA,Arizona Department of Environmental Quality,Chlor
 AZ-215834,454863,2000-03-02,NA,Arizona Department of Environmental Quality,Chlorophyll a,Chlorophyll a,50000,50,mg/l,1000,1000,APHA 10200-H,NA,NA,VRBAR-FLAT
 AZ-204570,454702,2000-03-02,NA,Arizona Department of Environmental Quality,Chlorophyll a,Chlorophyll a,69700,69.7,mg/l,1000,1000,APHA 10200-H,NA,NA,MGALV-EAST
 SC-186208,162290,2000-03-02,NA,South Carolina Department of Health and Environmental Control,"Oxygen, dissolved",Dissolved oxygen (DO),1276,1276,mg/l,1,NA,APHA 4500-O-G,https://www.nemi.gov/methods/method_summary/9812/,NA,LK MURRAY AT MARKER 143
-AZ-18498,454702,2000-03-02,ARIZONA GAME AND FISH,AZDEQ_SW,Chlorophyll a,Chlorophyll a,69700,69.7,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,Approved status: DIANNA MARSH 12-APR-06 12:00:00--- SAMPLE TAKEN: Migrated,102562
+AZ-121899,454863,2000-03-02,ARIZONA GAME AND FISH,AZDEQ_SW,Chlorophyll a,Chlorophyll a,30400,30.4,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,Approved status: DIANNA MARSH 12-APR-06 12:00:00--- SAMPLE TAKEN: Migrated,100010
+AZ-70107,454863,2000-03-02,ARIZONA GAME AND FISH,AZDEQ_SW,Chlorophyll a,Chlorophyll a,50000,50,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,Approved status: DIANNA MARSH 12-APR-06 12:00:00--- SAMPLE TAKEN: Migrated,102536
 FL-1158619,203195,2000-03-08,21FLSWFD,Southwest Florida Water Management District,"Aluminum, total",Aluminum,392000,392,mg/l,1000,6,APHA 3113-B,https://www.nemi.gov/methods/method_summary/4698/,NA,Lake Maggiore 5
 FL-1011458,203195,2000-03-08,21FLSWFD,Southwest Florida Water Management District,"Aluminum, total",Aluminum,645000,645,mg/l,1000,6,APHA 3113-B,https://www.nemi.gov/methods/method_summary/4698/,NA,Lake Maggiore 3
 FL-686140,203195,2000-03-08,21FLSWFD,Southwest Florida Water Management District,"Aluminum, total",Aluminum,374000,374,mg/l,1000,6,APHA 3113-B,https://www.nemi.gov/methods/method_summary/4698/,NA,Lake Maggiore 2
@@ -321,7 +311,6 @@ FL-2301911,203195,2000-05-03,21FLSWFD,Southwest Florida Water Management Distric
 FL-1787376,203195,2000-05-03,21FLSWFD,Southwest Florida Water Management District,"Aluminum, total",Aluminum,593000,593,mg/l,1000,6,APHA 3113-B,https://www.nemi.gov/methods/method_summary/4698/,NA,Lake Maggiore 2
 FL-2205291,203195,2000-05-03,21FLSWFD,Southwest Florida Water Management District,"Aluminum, total",Aluminum,324000,324,mg/l,1000,6,APHA 3113-B,https://www.nemi.gov/methods/method_summary/4698/,NA,Lake Maggiore 4
 FL-1650236,203195,2000-05-03,21FLSWFD,Southwest Florida Water Management District,"Aluminum, total",Aluminum,315000,315,mg/l,1000,6,APHA 3113-B,https://www.nemi.gov/methods/method_summary/4698/,NA,Lake Maggiore 1
-AZ-267193,454950,2000-05-10,NA,Arizona Department of Environmental Quality,"Solids, total suspended",Total solids,8811,8811,mg/l,1,4,USEPA 160.3,NA,NA,CLPRL-B
 AZ-281323,454779,2000-05-22,NA,Arizona Department of Environmental Quality,Chlorophyll a,Chlorophyll a,34200,34.2,mg/l,1000,1000,APHA 10200-H,NA,NA,SRROO-B
 FL-1181330,203195,2000-06-07,21FLSWFD,Southwest Florida Water Management District,"Aluminum, total",Aluminum,253000,253,mg/l,1000,6,APHA 3113-B,https://www.nemi.gov/methods/method_summary/4698/,NA,Lake Maggiore 5
 FL-1391167,203195,2000-06-07,21FLSWFD,Southwest Florida Water Management District,"Aluminum, total",Aluminum,329000,329,mg/l,1000,6,APHA 3113-B,https://www.nemi.gov/methods/method_summary/4698/,NA,Lake Maggiore 3
@@ -339,7 +328,6 @@ FL-1384642,203195,2000-07-12,21FLSWFD,Southwest Florida Water Management Distric
 FL-1864526,203195,2000-07-12,21FLSWFD,Southwest Florida Water Management District,"Aluminum, total",Aluminum,172000,172,mg/l,1000,6,APHA 3113-B,https://www.nemi.gov/methods/method_summary/4698/,NA,Lake Maggiore 2
 FL-1337129,203195,2000-07-12,21FLSWFD,Southwest Florida Water Management District,"Aluminum, total",Aluminum,219000,219,mg/l,1000,6,APHA 3113-B,https://www.nemi.gov/methods/method_summary/4698/,NA,Lake Maggiore 4
 FL-1434076,203195,2000-07-12,21FLSWFD,Southwest Florida Water Management District,"Aluminum, total",Aluminum,154000,154,mg/l,1000,6,APHA 3113-B,https://www.nemi.gov/methods/method_summary/4698/,NA,Lake Maggiore 1
-AZ-3570,454643,2000-07-19,ARIZONA GAME AND FISH,AZDEQ_SW,Chlorophyll a,Chlorophyll a,21500,21.5,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,Approved status: DIANNA MARSH 12-APR-06 12:00:00--- SAMPLE TAKEN: Migrated,100000
 AZ-260610,454779,2000-07-27,NA,Arizona Department of Environmental Quality,Chlorophyll a,Chlorophyll a,55100,55.1,mg/l,1000,1000,APHA 10200-H,NA,NA,SRROO-B
 AZ-114002,454779,2000-07-27,ARIZONA GAME AND FISH,AZDEQ_SW,Chlorophyll a,Chlorophyll a,55100,55.1,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,Approved status: DIANNA MARSH 12-APR-06 12:00:00--- SAMPLE TAKEN: Migrated,100076
 WI-2971423,5002,2000-07-27,WIDNR_WQX,Wisconsin Department of Natural Resources,"Nitrogen, NH4",Ammonia,11300,11.3,mg/l,1000,NA,USEPA 350.1,https://www.nemi.gov/methods/method_summary/5405/,NA,SQUAW LAKE - DEEP HOLE
@@ -353,6 +341,7 @@ MN-2074607,2578,2000-08-08,NA,Minnesota Pollution Control Agency - Ambient Surfa
 MN-2073460,2578,2000-08-09,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),26.95,26.95,mg/l,1,NA,MNPCA FLD,NA,Site LS; some green algae,SHETEK
 FL-2758074,190852,2000-08-15,21FLLCPC,Lake County Water Resource Management,"Oxygen, dissolved",Dissolved oxygen (DO),248,248,mg/l,1,NA,21FLLCPC_WQX LCQSM,NA,NA,JOHNS LAKE WEST CENTER
 AZ-217134,454779,2000-08-22,NA,Arizona Department of Environmental Quality,Chlorophyll a,Chlorophyll a,202000,202,mg/l,1000,1000,APHA 10200-H,NA,NA,SRROO-B
+AZ-191921,454779,2000-08-22,ARIZONA GAME AND FISH,AZDEQ_SW,Chlorophyll a,"Chlorophyll a, corrected for pheophytin",68300,68.3,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,Approved status: DIANNA MARSH 12-APR-06 12:00:00--- SAMPLE TAKEN: Migrated,100076
 SD-114307,347732,2000-08-22,U.S. Geological Survey-Water Resources Discipline,USGS South Dakota Water Science Center,"Calcium, dissolved",Calcium,1160,1160,mg/l,1,NA,USGS PLA11,"USGS OF 93-125, p 101",NA,"OWENS BAY NEAR RAVINIA, SD"
 MI-1632712,2575,2000-08-24,NA,Michigan Department of Environmental Quality,"Oxygen, dissolved",Dissolved oxygen (DO),25.1,25.1,mg/l,1,NA,21MICH MDEQ-EPA,NA,NA,LAKE ALLEGAN - LA#1S - HEATON
 MI-1631411,2575,2000-08-24,NA,Michigan Department of Environmental Quality,"Oxygen, dissolved",Dissolved oxygen (DO),25.7,25.7,mg/l,1,NA,21MICH MDEQ-EPA,NA,NA,LAKE ALLEGAN - LA#2S - HEATON
@@ -448,7 +437,7 @@ IA-27525,5162,2002-07-09,NA,Des Moines River - Corp of Engineers (IOWA),"Oxygen,
 IA-27113,5162,2002-07-09,NA,Des Moines River - Corp of Engineers (IOWA),"Oxygen, dissolved",Dissolved oxygen (DO),27.18,27.18,mg/l,1,NA,COE/ISU APHA 4500-O C,NA,NA,Red Rock Reservoir - Surface Depth
 WI-1807763,2184,2002-07-17,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),32,32,mg/l,1,NA,"NA NA",NA,NA,Legend Lake - Blacksmith Deep Hole
 OR-862452,467967,2002-07-18,U.S. Geological Survey-Water Resources Discipline,USGS Oregon Water Science Center,"Oxygen, dissolved",Oxygen,103,103,mg/l,1,NA,USGS LUMIN,ASTM,NA,DETROIT LAKE BELOW KINNEY CREEK
-AZ-262948,454779,2002-07-19,NA,Arizona Department of Environmental Quality,Chlorophyll a,Chlorophyll a,22400,22.4,mg/l,1000,1000,APHA 10200-H,NA,NA,SRROO-WIND
+AZ-263021,454779,2002-07-19,NA,Arizona Department of Environmental Quality,Chlorophyll a,Chlorophyll a,22400,22.4,mg/l,1000,1000,APHA 10200-H,NA,NA,SRROO-WIND
 WI-178414,5150,2002-07-21,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),94,94,mg/l,1,NA,"NA NA",NA,NA,Anvil Lake - Deep Hole
 KS-20985,378457,2002-07-23,NA,Kansas Department Of Health And Environment,"Solids, total suspended",Total solids,5100,5100,mg/l,1,NA,21KAN001_WQX USGS I-1751-78,NA,NA,CONCANNON STATE FISHING LAKE
 WI-220281,5150,2002-08-10,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),94,94,mg/l,1,NA,"NA NA",NA,NA,Anvil Lake - Deep Hole
@@ -473,9 +462,11 @@ CA-114894,483334,2002-10-03,NA,California State Water Resources Control Board,"S
 AZ-271532,453820,2002-10-04,NA,Arizona Department of Environmental Quality,Chlorophyll a,Chlorophyll a,41600,41.6,mg/l,1000,1000,APHA 10200-H,NA,NA,LCBLC-A
 AZ-68911,453820,2002-10-04,ARIZONA GAME AND FISH,AZDEQ_SW,Chlorophyll a,Chlorophyll a,41600,41.6,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,Approved status: DIANNA MARSH 12-AUG-05 09:56:32--- SAMPLE TAKEN: Migrated,100014
 WI-192794,5150,2002-10-05,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),91,91,mg/l,1,NA,"NA NA",NA,NA,Anvil Lake - Deep Hole
-AZ-266236,454779,2002-10-08,NA,Arizona Department of Environmental Quality,Chlorophyll a,Chlorophyll a,47900,47.9,mg/l,1000,1000,APHA 10200-H,NA,NA,SRROO-A
+AZ-267108,454779,2002-10-08,NA,Arizona Department of Environmental Quality,Chlorophyll a,Chlorophyll a,47900,47.9,mg/l,1000,1000,APHA 10200-H,NA,NA,SRROO-A
 AZ-275815,454864,2002-10-08,NA,Arizona Department of Environmental Quality,Chlorophyll a,Chlorophyll a,43600,43.6,mg/l,1000,1000,APHA 10200-H,NA,NA,SRROO-C
 AZ-283263,454779,2002-10-08,NA,Arizona Department of Environmental Quality,Chlorophyll a,Chlorophyll a,64099.99999999999,64.1,mg/l,1000,1000,APHA 10200-H,NA,NA,SRROO-E
+AZ-92582,454779,2002-10-08,ARIZONA GAME AND FISH,AZDEQ_SW,Chlorophyll a,Chlorophyll a,47900,47.9,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,Approved status: DIANNA MARSH 12-APR-06 12:00:00--- SAMPLE TAKEN: Migrated,100075
+AZ-71059,454864,2002-10-08,ARIZONA GAME AND FISH,AZDEQ_SW,Chlorophyll a,Chlorophyll a,43600,43.6,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,Approved status: DIANNA MARSH 12-APR-06 12:00:00--- SAMPLE TAKEN: Migrated,100077
 AZ-119220,454779,2002-10-08,ARIZONA GAME AND FISH,AZDEQ_SW,Chlorophyll a,Chlorophyll a,64099.99999999999,64.1,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,Approved status: DIANNA MARSH 12-APR-06 12:00:00--- SAMPLE TAKEN: Migrated,100079
 WI-1794911,2184,2002-10-09,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),61,61,mg/l,1,NA,"NA NA",NA,NA,Legend Lake - Blacksmith Deep Hole
 AZ-273793,453820,2002-11-13,NA,Arizona Department of Environmental Quality,Chlorophyll a,Chlorophyll a,27800,27.8,mg/l,1000,1000,APHA 10200-H,NA,NA,LCBLC-A
@@ -510,6 +501,7 @@ NY-10488,129973,2003-06-04,NA,New York State Dec Division Of Water,Secchi,"Depth
 NY-10662,121436,2003-06-04,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-1.4,-1.40,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,POXABOGUE POND DEEP HOLE
 ND-556425,332619,2003-06-18,NA,US Army Corps of Engineers Omaha District,"pH, field or lab",pH,367,367,None,1,NA,"NA NA",NA,NA,GARLK1493DW
 NY-54286,6397,2003-07-01,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-1.85,-1.85,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,BURDEN 1ST LAKE
+NY-54118,6397,2003-07-01,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-1.15,-1.15,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,BURDEN LAKE SPRING BROOK COVE
 ND-747753,332619,2003-07-01,NA,US Army Corps of Engineers Omaha District,"pH, field or lab",pH,361,361,None,1,NA,"NA NA",NA,NA,GARLK1493DW
 NY-560690,79999,2003-07-03,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-1.45,-1.45,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,SMITH POND (CHATHAM) DEEP HOLE
 FL-1151632,197167,2003-07-07,NA,Orange County Environmental Protection (Florida),"Oxygen, dissolved",Dissolved oxygen (DO),700,700,mg/l,1,0.01,USEPA 360.2,NA,NA,Blanche
@@ -553,7 +545,6 @@ FL-2976320,196852,2003-11-03,NA,Florida Fish and Wildlife Conservation Commissio
 CA-114003,483334,2003-11-04,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,11200,11200,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS7
 CA-155064,483334,2003-11-05,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,11100,11100,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS9
 NY-54336,6397,2003-11-18,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-2.7,-2.7,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,BURDEN 2ND LAKE
-NY-54114,6397,2003-11-18,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-1.2,-1.2,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,BURDEN LAKE SPRING BROOK COVE
 NY-60649,6512,2003-11-18,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-2.5,-2.50,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,ROARING BROOK LAKE DEEP HOLE
 NY-560679,79999,2003-11-18,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-1.6,-1.6,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,SMITH POND (CHATHAM) DEEP HOLE
 NY-674173,31102,2003-11-18,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-1.3,-1.30,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,TWIN ISLAND LAKE DEEP HOLE
@@ -580,6 +571,7 @@ MN-687117,1646,2004-08-18,NA,Minnesota Pollution Control Agency - Ambient Surfac
 MN-692016,1646,2004-08-18,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Silica, dissolved",Silica,328,328,mg/l,1,NA,APHA 4500-SI(F),NA,NA,DIXON
 WI-380058,4369,2004-08-25,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),100.8,100.8,mg/l,1,NA,"NA NA",NA,NA,WINDFALL LAKE - SITE #2-UPPER
 MN-689715,1646,2004-09-08,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Silica, dissolved",Silica,273,273,mg/l,1,NA,APHA 4500-SI(F),NA,NA,DIXON
+MN-4808361,3345,2004-09-09,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, total",Phosphorus,51000,51,mg/l,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,CRYSTAL
 NY-65541,87394,2004-09-16,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-2,-2.0,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,BASHER KILL DEEP HOLE
 WI-150320,5150,2004-09-18,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),81.7,81.7,mg/l,1,NA,"NA NA",NA,NA,Anvil Lake - Deep Hole
 AZ-156609,454185,2004-09-20,U.S. FISH AND WILDLIFE SERVICES,AZDEQ_SW,"Nitrogen, total Kjeldahl",Kjeldahl nitrogen,242000,242,mg/l,1000,100,AZDEQ_SW EPA 351.1,NA,LOTS OF SEDIMENT IN THE SAMPLE.  RESULTS QUESTIONABLE. . Approved status: DIANNA MARSH 22-NOV-05 12:00:00--- SAMPLE TAKEN: Migrated,101350
@@ -593,13 +585,13 @@ MN-1980355,3006,2004-10-12,NA,Minnesota Pollution Control Agency - Ambient Surfa
 NC-60170,154413,2004-10-22,U.S. Geological Survey-Water Resources Discipline,USGS North Carolina Water Science Center,"Nitrogen, NH4",Ammonia and ammonium,10300,10.3,mg/l as N,1000,400,USGS CL037,"USGS OF 93-125, p 125",L-2990061 recvd 10/23/04,"UNIVERSITY LAKE AT INTAKES NR CHAPEL HILL, NC"
 MN-1782482,110327,2005-02-09,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,5130,5.13,mg/l,1000,NA,APHA 4500-P-E,https://www.nemi.gov/methods/method_summary/7436/,NA,SPRING
 FL-2749535,191619,2005-02-17,NA,Seminole  County (Florida),"Oxygen, dissolved",Dissolved oxygen (DO),93.1,93.1,mg/l,1,0.2,21FLSEM FT1500,NA,NA,Horseshoe Lake
-FL-1649154,189913,2005-03-28,21FLWQSP,"FDEP, Water Quality Standards and Special Projects (Florida)","Color, true",True color,2560,2560,PCU,1,10,USEPA 110.2,https://www.nemi.gov/methods/method_summary/5208/,032805_.25,MRN328NL
-FL-2574299,189776,2005-03-29,21FLWQSP,"FDEP, Water Quality Standards and Special Projects (Florida)","Color, true",True color,5120,5120,PCU,1,10,USEPA 110.2,https://www.nemi.gov/methods/method_summary/5208/,032905_.5,LAK370NL
+FL-1585714,189913,2005-03-28,21FLWQSP,"FDEP, Water Quality Standards and Special Projects (Florida)","Color, true",True color,2560,2560,PCU,1,10,USEPA 110.2,https://www.nemi.gov/methods/method_summary/5208/,032805_.25,MRN328NL
+FL-2394924,189776,2005-03-29,21FLWQSP,"FDEP, Water Quality Standards and Special Projects (Florida)","Color, true",True color,5120,5120,PCU,1,10,USEPA 110.2,https://www.nemi.gov/methods/method_summary/5208/,032905_.5,LAK370NL
 WI-2274641,612,2005-04-19,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),123,123,mg/l,1,NA,"NA NA",NA,NA,Sissabagama Lake - Deep Hole
 WI-1060309,4650,2005-05-08,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),131,131,mg/l,1,NA,"NA NA",NA,NA,LOWER PHANTOM LAKE - DEEP HOLE
 CA-115386,483334,2005-05-11,NA,California State Water Resources Control Board,"Chloride, dissolved",Chloride,20400,20400,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS2
 CA-97502,483334,2005-05-11,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,12400,12400,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS2
-CA-129588,483334,2005-05-11,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,11900,11900,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS7
+CA-152013,483334,2005-05-11,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,12300,12300,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS7
 CA-120016,483334,2005-05-11,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,12200,12200,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS9
 WI-2487349,5108,2005-05-16,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),81.3,81.3,mg/l,1,NA,"NA NA",NA,NA,Namekagon Lake - Deep Hole
 WI-188379,5150,2005-05-16,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),87.3,87.3,mg/l,1,NA,"NA NA",NA,NA,Anvil Lake - Deep Hole
@@ -656,7 +648,7 @@ FL-3012782,191470,2006-02-16,NA,Orlando Streets Drainage Stormwater Utility Bure
 FL-1322708,191955,2006-03-22,NA,Volusa County Environmental Health Lab (Florida),"Oxygen, dissolved",Dissolved oxygen (DO),81.9,81.9,mg/l,1,NA,USEPA 360.1,NA,NA,DC2  LAKE ASHBY
 ND-537620,311457,2006-03-28,NA,Turtle Mountain Environmental Office,"Oxygen, dissolved",Dissolved oxygen (DO),479,479,mg/l,1,NA,"NA NA",NA,NA,Jarvis Beach
 MT-140297,457982,2006-04-25,NA,Confederated Salish and Kootenai Tribes,Chlorophyll a,"Chlorophyll a, free of pheophytin",1100000,1.1,mg/ml,1000000,NA,APHA 10200-H,NA,NA,Flathead Lake Skidoo Bay
-CA-167543,483334,2006-05-03,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,12200,12200,mg/l,1,NA,CEDEN 16,NA,Sed Tox not collected,Salton Sea USGS2
+CA-158572,483334,2006-05-03,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,12900,12900,mg/l,1,NA,CEDEN 16,NA,Sed Tox not collected,Salton Sea USGS2
 CA-145300,483334,2006-05-03,NA,California State Water Resources Control Board,"Chloride, dissolved",Chloride,20100,20100,mg/l,1,NA,CEDEN 16,NA,Sed Tox not collected,Salton Sea USGS7
 CA-130290,483334,2006-05-03,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,12400,12400,mg/l,1,NA,CEDEN 16,NA,Sed Tox not collected,Salton Sea USGS7
 CA-135174,483334,2006-05-03,NA,California State Water Resources Control Board,"Chloride, dissolved",Chloride,20200,20200,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS9
@@ -686,7 +678,6 @@ MT-45151,457982,2006-07-19,NA,Confederated Salish and Kootenai Tribes,Chlorophyl
 MN-1254547,177,2006-07-20,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Phosphorus,5900,5.900,mg/l,1000,NA,APHA 4500-P-E,https://www.nemi.gov/methods/method_summary/7436/,NA,PEAVEY
 MN-3637639,3731,2006-07-24,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Nitrogen, total Kjeldahl",Kjeldahl nitrogen,108000,108,mg/l,1000,NA,USEPA 351.2,https://www.nemi.gov/methods/method_summary/9626/,NA,BOLFING
 WI-1797515,2184,2006-07-25,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),99,99,mg/l,1,NA,"NA NA",NA,NA,Legend Lake - Blacksmith Deep Hole
-AZ-58461,453872,2006-07-26,ARIZONA GAME AND FISH,AZDEQ_SW,Chlorophyll a,Chlorophyll a,60500,60.5,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,--- SAMPLE TAKEN: Migrated,100069
 IL-49361,6467,2006-07-27,NA,illinois epa,"Phosphorus, soluble reactive orthophosphate",Phosphorus,5540,5.54,mg/l,1000,100,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,Big Bend
 MN-1264985,177,2006-07-31,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6590,6.590,mg/l,1000,NA,APHA 4500-P-E,https://www.nemi.gov/methods/method_summary/7436/,NA,PEAVEY
 CO-163696,375983,2006-08-01,NA,Colorado Dept. of Public Health & Environment,Chlorophyll a,Chlorophyll a,26800,26.8,mg/l,1000,NA,21COL001 CHL_A,NA,LSD Lits+ ID INO-2006002910-001-A,BRUSH HOLLOW RESERVOIR NR DAM UPPER
@@ -700,7 +691,7 @@ MT-8505,457982,2006-08-22,NA,Confederated Salish and Kootenai Tribes,Chlorophyll
 IL-50743,6467,2006-08-22,NA,illinois epa,"Phosphorus, soluble reactive orthophosphate",Phosphorus,5500,5.5,mg/l,1000,5,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,Big Bend
 MN-4726931,140770,2006-08-22,NA,Minnesota Pollution Control Agency - Ambient Surface Water,Microcystin,Microcystin,9400,9400,ppb,1,NA,ABRAXIS LLC 520011,https://www.nemi.gov/methods/method_summary/9258/,NA,GOOSE (NORTH BAY)
 MN-1244345,1065,2006-08-22,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),25.6,25.6,mg/l,1,NA,MNPCA FLD,NA,NA,LANGDON
-MT-50527,457982,2006-08-23,NA,Confederated Salish and Kootenai Tribes,Chlorophyll a,"Chlorophyll a, free of pheophytin",1100000,1.1,mg/ml,1000000,NA,APHA 10200-H,NA,NA,Big Arm Bay
+MT-40866,457982,2006-08-23,NA,Confederated Salish and Kootenai Tribes,Chlorophyll a,"Chlorophyll a, free of pheophytin",1100000,1.1,mg/ml,1000000,NA,APHA 10200-H,NA,NA,Big Arm Bay
 MT-50671,457982,2006-08-23,NA,Confederated Salish and Kootenai Tribes,Chlorophyll a,"Chlorophyll a, free of pheophytin",1300000,1.3,mg/ml,1000000,NA,APHA 10200-H,NA,NA,Flathead Lake Ross Deep
 NY-59197,84234,2006-08-25,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-2.3,-2.3,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,ONDERDONK LAKE DEEP HOLE
 MN-3155739,3349,2006-08-26,NA,Minnesota Pollution Control Agency - Ambient Surface Water,Microcystin,Microcystin,9500,9500,ppb,1,NA,ABRAXIS LLC 520011,https://www.nemi.gov/methods/method_summary/9258/,NA,LONG
@@ -718,6 +709,7 @@ MT-33323,457982,2006-10-10,NA,Confederated Salish and Kootenai Tribes,Chlorophyl
 MT-79992,457982,2006-10-10,NA,Confederated Salish and Kootenai Tribes,Chlorophyll a,"Chlorophyll a, free of pheophytin",1100000,1.1,mg/ml,1000000,NA,APHA 10200-H,NA,NA,Flathead Lake Ross Deep
 WI-1797535,2184,2006-10-10,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),88.2,88.2,mg/l,1,NA,"NA NA",NA,NA,Legend Lake - Blacksmith Deep Hole
 MT-51967,457982,2006-10-11,NA,Confederated Salish and Kootenai Tribes,Chlorophyll a,"Chlorophyll a, free of pheophytin",1300000,1.3,mg/ml,1000000,NA,APHA 10200-H,NA,NA,Flathead Lake Skidoo Bay
+FL-3056106,219480,2006-10-12,NA,Biological Research Associates (Florida),"Solids, total suspended",Total dissolved solids,13000,13000,mg/l,1,5,USEPA 160.1,NA,NA,3738A - Little Bonable Lake - SW corner of lake
 IL-59571,6467,2006-10-25,NA,illinois epa,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6640,6.64,mg/l,1000,5,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,Big Bend
 AZ-40569,454753,2006-11-02,ARIZONA GAME AND FISH,AZDEQ_SW,Chlorophyll a,Chlorophyll a,24200,24.2,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,--- SAMPLE TAKEN: Migrated,101712
 FL-610599,233714,2006-11-29,NA,Choctawhatchee Basin Alliance (Florida),"Oxygen, dissolved",Dissolved oxygen (DO),80.5,80.5,mg/l,1,NA,"NA NA",NA,NA,Camp Creek Outlet
@@ -746,17 +738,15 @@ SC-221574,160163,2007-06-13,NA,South Carolina Department of Health and Environme
 MN-4893478,59714,2007-06-14,NA,Minnesota Pollution Control Agency - Ambient Surface Water,Chlorophyll a,"Chlorophyll a, corrected for pheophytin",84900,84900,ug/l,1,NA,APHA 10200-H,NA,NA,FOUNTAIN
 MN-4891896,59714,2007-06-14,NA,Minnesota Pollution Control Agency - Ambient Surface Water,Microcystin,Microcystin,10000,10000,ppb,1,NA,ABRAXIS LLC 520011,https://www.nemi.gov/methods/method_summary/9258/,NA,FOUNTAIN
 WI-1624199,5063,2007-06-17,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),28,28,mg/l,1,NA,"NA NA",NA,NA,WOOD LAKE - DEEP HOLE
+IN-32421,9174,2007-06-26,NA,Indiana Department Of Environmental Management,"Solids, total suspended",Total solids,21200,21200,mg/l,1,NA,21IND_WQX 160.3,NA,Mud Lake sampled on SE end.  Depth just over 1m est. Pictures 5 and 6.,LMJ110-0089
 IN-33277,9174,2007-06-26,NA,Indiana STORET,"Solids, total suspended",Total solids,21200,21200,mg/l,1,NA,INSTOR_WQX 160.3,NA,Mud Lake sampled on SE end.  Depth just over 1m est. Pictures 5 and 6.,LMJ110-0089
-ID-225190,460180,2007-06-27,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6000,6,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
-ID-235560,460180,2007-06-27,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6000,6,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 WI-1839113,4902,2007-07-07,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),90,90,mg/l,1,NA,"NA NA",NA,NA,BIG NEWTON LAKE - DEEP HOLE
 FL-3005144,188390,2007-07-10,NA,Seminole  County (Florida),Turbidity,Turbidity,-0.6,-0.6,NTU,1,0.1,21FLSEM FT1600,NA,NA,Lake Catherine
 FL-2693361,191627,2007-07-10,NA,Seminole  County (Florida),Turbidity,Turbidity,-0.5,-0.5,NTU,1,0.1,21FLSEM FT1600,NA,NA,Emerald Lake
 FL-2719984,187078,2007-07-10,NA,Seminole  County (Florida),Turbidity,Turbidity,-0.2,-0.2,NTU,1,0.1,21FLSEM FT1600,NA,NA,Spring Lake
 MN-1458797,177,2007-07-16,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6490,6.490,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
-ID-224023,459064,2007-07-24,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6000,6,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
-ID-192374,459064,2007-07-24,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6000,6,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 ID-205917,459064,2007-07-24,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,20000,20,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
+ID-197830,460180,2007-07-24,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,8000,8,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 ID-206541,460180,2007-07-24,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,15000,15,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 MN-5317063,3765,2007-07-25,NA,Minnesota Pollution Control Agency - Ambient Surface Water,Microcystin,Microcystin,38000,38000,ppb,1,NA,ABRAXIS LLC 520011,https://www.nemi.gov/methods/method_summary/9258/,NA,LITTLE ROCK
 MN-5316946,3765,2007-07-25,NA,Minnesota Pollution Control Agency - Ambient Surface Water,Microcystin,Microcystin,80000,80000,ppb,1,NA,ABRAXIS LLC 520011,https://www.nemi.gov/methods/method_summary/9258/,NA,LITTLE ROCK
@@ -765,15 +755,14 @@ MN-4727113,92022,2007-07-31,NA,Minnesota Pollution Control Agency - Ambient Surf
 WI-1843612,4902,2007-08-05,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),89.4,89.4,mg/l,1,NA,"NA NA",NA,NA,BIG NEWTON LAKE - DEEP HOLE
 WI-1624368,5063,2007-08-07,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),30,30,mg/l,1,NA,"NA NA",NA,NA,WOOD LAKE - DEEP HOLE
 MN-1614009,177,2007-08-13,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Phosphorus,8230,8.230,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
-ID-187919,460180,2007-08-21,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,18000,18,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
-ID-205582,460180,2007-08-21,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,82000,82,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
+ID-195916,459064,2007-08-21,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,9000,9,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
+ID-238354,460180,2007-08-21,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,79000,79,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 MN-1466006,177,2007-08-27,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7280,7.280,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
 MN-4784124,574,2007-08-30,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),25.59,25.59,mg/l,1,NA,MNPCA FLD,NA,NA,ALBERT LEA
 MN-1449889,110327,2007-08-30,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,5080,5.08,mg/l,1000,NA,ASTM D515(A),NA,NA,SPRING
 WI-1851721,4902,2007-09-03,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),78.7,78.7,mg/l,1,NA,"NA NA",NA,NA,BIG NEWTON LAKE - DEEP HOLE
 MN-1433211,177,2007-09-12,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6970,6.970,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
-ID-206320,459064,2007-09-18,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,11000,11,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
-ID-187461,459064,2007-09-18,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,8000,8,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
+ID-221336,459064,2007-09-18,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,8000,8,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 ID-199683,460180,2007-09-18,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,344000,344,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 MN-1295089,177,2007-09-24,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7490,7.490,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
 FL-3229612,184461,2007-10-02,NA,Biological Research Associates (Florida),E. coli-MPN,Escherichia coli,33000,33000,MPN/100ml,1,100,21FLBRA QUANTITRAY2000,NA,NA,2829A - Lake Lorraine - off of Griffin Rd
@@ -781,7 +770,7 @@ MN-1460579,177,2007-10-14,NA,Minnesota Pollution Control Agency - Ambient Surfac
 CA-154416,483334,2007-10-24,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,13100,13100,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS2
 CA-154917,483334,2007-10-24,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,13300,13300,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS7
 CA-178155,483334,2007-10-24,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,13600,13600,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS9
-ID-209830,459064,2007-12-06,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,9000,9,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
+ID-221134,459064,2007-12-06,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7000,7,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 FL-1770874,190393,2008-02-05,NA,Seminole  County (Florida),Turbidity,Turbidity,-1,-1,NTU,1,0.1,21FLSEM FT1600,NA,NA,Deforest Lake
 FL-1740315,190332,2008-02-05,NA,Seminole  County (Florida),Turbidity,Turbidity,-0.7,-0.7,NTU,1,0.1,21FLSEM FT1600,NA,NA,Lake Myrtle
 MN-3768134,1661,2008-02-05,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),34.97,34.97,mg/l,1,NA,MNPCA FLD,NA,NA,POKEGAMA
@@ -790,22 +779,21 @@ FL-2893402,188390,2008-03-04,NA,Seminole  County (Florida),Turbidity,Turbidity,-
 FL-3452797,189459,2008-03-04,NA,Seminole  County (Florida),Turbidity,Turbidity,-0.2,-0.2,NTU,1,0.1,21FLSEM FT1600,NA,NA,Kiwanis Lake
 ID-217621,459064,2008-03-18,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,16000,16,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 ID-222230,459064,2008-03-18,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,10000,10,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
-FL-882234,235932,2008-03-25,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,16360,1.636E+04,mg/l,1,2400,USEPA 160.1,https://www.nemi.gov/methods/method_summary/5212/,NA,Draper Lake (WBID 959D)
-FL-951829,231774,2008-04-16,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total suspended solids,17800,1.78E+04,mg/l,1,2400,USEPA 160.1,https://www.nemi.gov/methods/method_summary/5212/,NA,Grass Lake-Direct Runoff to Choctawhatchee Bay
+ID-196576,460180,2008-03-18,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,24000,24,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
+ID-196992,460180,2008-03-18,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,18000,18,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 SC-191563,159309,2008-04-17,NA,South Carolina Department of Health and Environmental Control,"Oxygen, dissolved",Dissolved oxygen (DO),835,835,mg/l,1,NA,APHA 4500-O-G,https://www.nemi.gov/methods/method_summary/9812/,NA,LK ROBINSON IN FOREBAY EQUIDISTANT FROM DAM AND SHORELINES  FROM PRIVATE ACCESS
 CA-108929,483334,2008-04-22,NA,California State Water Resources Control Board,"Chloride, dissolved",Chloride,21800,21800,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS2
 CA-114334,483334,2008-04-22,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,13700,13700,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS2
 CA-166558,483334,2008-04-22,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,11900,11900,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS7
 CA-180096,483334,2008-04-22,NA,California State Water Resources Control Board,"Chloride, dissolved",Chloride,20900,20900,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS9
 CA-143772,483334,2008-04-22,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,12400,12400,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS9
+MN-1183255,177,2008-04-29,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6820,6.820,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
 FL-764821,235932,2008-05-06,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total suspended solids,14500,1.45E+04,mg/l,1,1200,USEPA 160.1,https://www.nemi.gov/methods/method_summary/5212/,NA,Draper Lake (WBID 959D)
 MN-1321047,96068,2008-05-06,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),26.44,26.44,mg/l,1,NA,MNPCA FLD,NA,NA,DUTCH
 FL-1766720,184813,2008-05-08,NA,Seminole  County (Florida),Turbidity,Turbidity,-0.2,-0.2,NTU,1,0.1,21FLSEM FT1600,NA,NA,Cub Lake
-MN-1311298,177,2008-05-12,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7790,7.790,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
 WI-168981,5150,2008-05-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),103.4,103.4,mg/l,1,NA,"NA NA",NA,NA,Anvil Lake - Deep Hole
 WI-169573,2885,2008-05-19,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),99,99,mg/l,1,NA,"NA NA",NA,NA,Lower Gresham Lake - Max Depth
 ID-203577,459064,2008-05-20,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6000,6,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
-ID-203792,460180,2008-05-20,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,11000,11,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 ID-218708,460180,2008-05-20,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,8000,8,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 WI-1845574,4902,2008-05-26,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),39,39,mg/l,1,NA,"NA NA",NA,NA,BIG NEWTON LAKE - DEEP HOLE
 MN-1506594,177,2008-06-09,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Phosphorus,15700,15.700,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
@@ -818,7 +806,7 @@ MN-4789018,574,2008-06-19,NA,Minnesota Pollution Control Agency - Ambient Surfac
 WI-119115,5150,2008-06-22,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),93.7,93.7,mg/l,1,NA,"NA NA",NA,NA,Anvil Lake - Deep Hole
 FL-931128,234801,2008-06-23,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total suspended solids,5760,5.76E+03,mg/l,1,600,USEPA 160.1,https://www.nemi.gov/methods/method_summary/5212/,NA,Western Lake south lobe S. of SR30A
 WI-167873,2885,2008-06-23,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),99,99,mg/l,1,NA,"NA NA",NA,NA,Lower Gresham Lake - Max Depth
-MN-1337406,177,2008-06-24,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,7340,7.340,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
+MN-1251336,177,2008-06-24,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7460,7.460,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
 WI-149618,5465,2008-06-24,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),79,79,mg/l,1,NA,"NA NA",NA,NA,ALMA LAKE - DEEP HOLE
 WI-2322987,4947,2008-06-25,NA,Lac Courte Oreilles (Tribal),"Oxygen, dissolved",Dissolved oxygen (DO),1069,1069,mg/l,1,NA,"NA NA",NA,NA,Lac Courte Oreilles - Musky Bay
 WI-1684186,4591,2008-06-26,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),124,124,mg/l,1,NA,"NA NA",NA,NA,Silver Lake - Deep Hole South Basin (Near Wautoma)
@@ -828,7 +816,6 @@ WI-795229,1806,2008-06-30,WIDNR_WQX,Wisconsin Department of Natural Resources,"O
 FL-2977901,187195,2008-07-07,NA,Seminole  County (Florida),Turbidity,Turbidity,-4.9,-4.9,NTU,1,0.1,21FLSEM FT1600,NA,NA,Lake Silver
 FL-3464803,191501,2008-07-07,NA,Seminole  County (Florida),Turbidity,Turbidity,-5.3,-5.3,NTU,1,0.1,21FLSEM FT1600,NA,NA,Tuskawilla Lake
 MN-1227136,177,2008-07-07,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,7360,7.360,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
-MT-65973,319086,2008-07-08,MTDEQ,MDEQ_WQ_WQX - Montana DEQ WQPB,"Solids, total suspended",Total dissolved solids,8310,8310,mg/l,1,1,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,"5013-W(TSS) - TSS & TDS.  Water samples collected at: 0, 1, 2 m. - BEAN LAKE Lake Site Depth: 2.9 m",Bean Lake at mid-lake
 MN-1989398,25348,2008-07-08,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),116.9,116.9,mg/l,1,NA,MNPCA FLD,NA,NA,BASS
 FL-3060156,190393,2008-07-17,NA,Seminole  County (Florida),Turbidity,Turbidity,-4.7,-4.7,NTU,1,0.1,21FLSEM FT1600,NA,NA,Deforest Lake
 FL-3274274,192505,2008-07-17,NA,Seminole  County (Florida),Turbidity,Turbidity,-1.3,-1.3,NTU,1,0.1,21FLSEM FT1600,NA,NA,Yankee Lake
@@ -844,8 +831,11 @@ WI-166177,4635,2008-07-28,WIDNR_WQX,Wisconsin Department of Natural Resources,"O
 WI-1635483,5063,2008-07-29,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),26,26,mg/l,1,NA,"NA NA",NA,NA,WOOD LAKE - DEEP HOLE
 FL-3183913,188107,2008-07-31,NA,Seminole  County (Florida),Turbidity,Turbidity,-4.3,-4.3,NTU,1,0.1,21FLSEM FT1600,NA,NA,Mirror Lake
 FL-2363718,191437,2008-07-31,NA,Seminole  County (Florida),Turbidity,Turbidity,-3.2,-3.2,NTU,1,0.1,21FLSEM FT1600,NA,NA,Lake Marion
-MN-1320009,177,2008-08-04,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7080,7.080,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
+MN-1324640,177,2008-08-04,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,7050,7.050,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
 WI-314786,4785,2008-08-04,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),98.5,98.5,mg/l,1,NA,"NA NA",NA,NA,BERRY LAKE - DEEP HOLE
+FL-929117,231774,2008-08-06,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total suspended solids,23100,2.31E+04,mg/l,1,3000,USEPA 160.1,https://www.nemi.gov/methods/method_summary/5212/,The pH of the aliquot used to measure the color is 8.0 units.  This value does not represent the field pH.,Grass Lake-Direct Runoff to Choctawhatchee Bay
+FL-2125035,235932,2008-08-11,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,20000,2.00E+04,mg/l,1,3000,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Draper Lake (WBID 959D)
+FL-2170978,234801,2008-08-11,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,6650,6.65E+03,mg/l,1,600,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Western Lake south lobe S. of SR30A
 FL-1868312,188190,2008-08-13,NA,Seminole  County (Florida),Turbidity,Turbidity,-1.1,-1.1,NTU,1,0.1,21FLSEM FT1600,NA,NA,Lake Alma
 FL-1536548,191500,2008-08-13,NA,Seminole  County (Florida),Turbidity,Turbidity,-3.9,-3.9,NTU,1,0.1,21FLSEM FT1600,NA,NA,Lake Florence
 FL-2241295,188251,2008-08-13,NA,Seminole  County (Florida),Turbidity,Turbidity,-4,-4,NTU,1,0.1,21FLSEM FT1600,NA,NA,Garden Lake
@@ -859,7 +849,6 @@ WI-853728,4387,2008-08-18,WIDNR_WQX,Wisconsin Department of Natural Resources,"O
 WI-853711,1806,2008-08-18,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),145.2,145.2,mg/l,1,NA,"NA NA",NA,NA,Wind Lake (Round) - Deep Hole
 NY-567156,258786,2008-08-19,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-2.1,-2.1,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,OLD FORGE POND CENTER
 ID-209919,459064,2008-08-19,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7000,7,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
-ID-210853,459064,2008-08-19,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6000,6,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 ID-198587,460180,2008-08-19,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7000,7,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 ID-211310,460180,2008-08-19,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,14000,14,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 WI-1845582,4902,2008-08-21,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),83.6,83.6,mg/l,1,NA,"NA NA",NA,NA,BIG NEWTON LAKE - DEEP HOLE
@@ -873,12 +862,13 @@ MN-1318059,177,2008-09-03,NA,Minnesota Pollution Control Agency - Ambient Surfac
 FL-2678359,189281,2008-09-04,NA,Seminole  County (Florida),Turbidity,Turbidity,-3.2,-3.2,NTU,1,0.1,21FLSEM FT1600,NA,NA,Fairy lake
 FL-2084761,191460,2008-09-04,NA,Seminole  County (Florida),Turbidity,Turbidity,-4,-4,NTU,1,0.1,21FLSEM FT1600,NA,NA,Kewanee
 MN-1317751,177,2008-09-16,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,7950,7.950,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
+MT-82383,319086,2008-09-17,MTDEQ,MDEQ_WQ_WQX - Montana DEQ WQPB,"Solids, total suspended",Total dissolved solids,9990,9990,mg/l,1,1,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,"5051-W - Samples collected at 0, 1, and 2 m. - BEAN LAKE Lake Site Depth: 2.6 m",Bean Lake at mid-lake
 WI-169308,5150,2008-09-21,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),108.4,108.4,mg/l,1,NA,"NA NA",NA,NA,Anvil Lake - Deep Hole
 NY-567146,258786,2008-09-23,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-2.2,-2.2,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,OLD FORGE POND CENTER
 AZ-90970,454779,2008-09-23,ARIZONA DEPT OF ENVIRONMENTAL QUALITY,AZDEQ_SW,"Oxygen, dissolved",Dissolved oxygen (DO),650,650,mg/l,1,0.2,AZDEQ_SW FIELD,NA,DISSOLVED OYGEN PROBE MALFUNCTION NO DATA. GOLDEN ALGAE TEST RESULT ABSENT. TEST AMERICA SILVER TOTAL AND DISSOLVED FRACTION NON-DETECT. . Approved status: MEGHAN SMART 15-MAR-10 12:00:00--- SAMPLE TAKEN: Migrated,100076
 MN-2153285,122961,2008-09-24,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),27.2,27.2,mg/l,1,NA,MNPCA FLD,NA,NA,JENSEN
 FL-2215135,188388,2008-09-25,NA,Seminole  County (Florida),Turbidity,Turbidity,-3.1,-3.1,NTU,1,0.1,21FLSEM FT1600,NA,NA,Lake Mills
-MN-1182280,177,2008-09-29,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,5740,5.740,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
+MN-1352589,177,2008-09-29,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6780,6.780,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
 FL-2401326,184813,2008-09-30,NA,Seminole  County (Florida),Turbidity,Turbidity,-3,-3,NTU,1,0.1,21FLSEM FT1600,NA,NA,Cub Lake
 FL-3031100,189459,2008-09-30,NA,Seminole  County (Florida),Turbidity,Turbidity,-1.1,-1.1,NTU,1,0.1,21FLSEM FT1600,NA,NA,Kiwanis Lake
 FL-2422137,189299,2008-10-01,NA,Seminole  County (Florida),Turbidity,Turbidity,-3.3,-3.3,NTU,1,0.1,21FLSEM FT1600,NA,NA,East Crystal Lake
@@ -886,7 +876,6 @@ FL-1152126,185962,2008-10-08,NA,Seminole  County (Florida),Turbidity,Turbidity,-
 FL-2761296,184850,2008-10-08,NA,Seminole  County (Florida),Turbidity,Turbidity,-3.7,-3.7,NTU,1,0.1,21FLSEM FT1600,NA,NA,Lake Markham
 FL-2982752,188156,2008-10-08,NA,Seminole  County (Florida),Turbidity,Turbidity,-3.6,-3.6,NTU,1,0.1,21FLSEM FT1600,NA,NA,Sylvan Lake
 FL-2768637,191357,2008-10-08,NA,Seminole  County (Florida),Turbidity,Turbidity,-3.9,-3.9,NTU,1,0.1,21FLSEM FT1600,NA,NA,Wekiva (sand) Lake
-FL-953192,231774,2008-10-13,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total suspended solids,25900,25900,mg/l,1,3000,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Grass Lake-Direct Runoff to Choctawhatchee Bay
 MN-1502365,177,2008-10-14,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7350,7.350,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
 FL-806441,233674,2008-10-21,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total suspended solids,7280,7280,mg/l,1,600,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Alligator Lake S/Cr30A
 FL-747912,234801,2008-10-21,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total suspended solids,10300,10300,mg/l,1,600,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Western Lake south lobe S. of SR30A
@@ -902,18 +891,18 @@ FL-3395528,188390,2008-11-12,NA,Seminole  County (Florida),Turbidity,Turbidity,-
 FL-1668349,190473,2008-11-12,NA,Seminole  County (Florida),Turbidity,Turbidity,-0.5,-0.5,NTU,1,0.1,21FLSEM FT1600,NA,NA,Lake Hayes
 FL-1571584,189459,2008-11-12,NA,Seminole  County (Florida),Turbidity,Turbidity,-0.9,-0.9,NTU,1,0.1,21FLSEM FT1600,NA,NA,Kiwanis Lake
 FL-3426883,191619,2008-11-12,NA,Seminole  County (Florida),Turbidity,Turbidity,-1.5,-1.5,NTU,1,0.1,21FLSEM FT1600,NA,NA,Horseshoe Lake
-FL-2409617,235932,2008-11-24,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,17000,1.70E+04,mg/l,1,2400,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Draper Lake (WBID 959D)
+FL-2306523,233674,2008-11-24,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,6530,6.53E+03,mg/l,1,600,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Alligator Lake S/Cr30A
 FL-2074764,234801,2008-11-24,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,9870,9.87E+03,mg/l,1,600,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Western Lake south lobe S. of SR30A
 FL-2511375,191460,2008-12-04,NA,Seminole  County (Florida),Turbidity,Turbidity,-0.5,-0.5,NTU,1,0.1,21FLSEM FT1600,NA,NA,Kewanee
+FL-1842941,231774,2008-12-08,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,25700,2.57E+04,mg/l,1,3000,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Grass Lake-Direct Runoff to Choctawhatchee Bay
 FL-2772310,191355,2008-12-10,NA,Seminole  County (Florida),Turbidity,Turbidity,-2,-2,NTU,1,0.1,21FLSEM FT1600,NA,NA,Bear Lake
 FL-2804721,190343,2008-12-10,NA,Seminole  County (Florida),Turbidity,Turbidity,-1.3,-1.3,NTU,1,0.1,21FLSEM FT1600,NA,NA,Prairie Lake
 FL-2781250,190331,2008-12-10,NA,Seminole  County (Florida),Turbidity,Turbidity,-2.4,-2.4,NTU,1,0.1,21FLSEM FT1600,NA,NA,Lake Seminary
 FL-2003047,187078,2008-12-10,NA,Seminole  County (Florida),Turbidity,Turbidity,-1,-1,NTU,1,0.1,21FLSEM FT1600,NA,NA,Spring Lake
-FL-1462677,234801,2008-12-15,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,9080,9.08E+03,mg/l,1,2400,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Western Lake south lobe S. of SR30A
-FL-1285189,235932,2008-12-16,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,12000,1.20E+04,mg/l,1,1200,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Draper Lake (WBID 959D)
 FL-3571766,189292,2008-12-18,NA,Seminole  County (Florida),Turbidity,Turbidity,-3.1,-3.1,NTU,1,0.1,21FLSEM FT1600,NA,NA,Lake Howell
 WI-888601,4900,2009-01-08,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),30.8,30.8,mg/l,1,NA,"NA NA",NA,NA,LAKE REDSTONE - NEAR MOURNING DOVE CT (MIDDLE SITE)
 FL-1720580,235932,2009-01-13,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,10500,1.05E+04,mg/l,1,600,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Draper Lake (WBID 959D)
+FL-1871138,234801,2009-01-13,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,9080,9.08E+03,mg/l,1,600,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Western Lake south lobe S. of SR30A
 FL-1741044,190332,2009-01-26,NA,Seminole  County (Florida),Turbidity,Turbidity,-0.2,-0.2,NTU,1,0.1,21FLSEM FT1600,NA,NA,Lake Myrtle
 FL-2679234,192505,2009-01-26,NA,Seminole  County (Florida),Turbidity,Turbidity,-0.2,-0.2,NTU,1,0.1,21FLSEM FT1600,NA,NA,Yankee Lake
 FL-2962231,188187,2009-01-28,NA,Seminole  County (Florida),Turbidity,Turbidity,-0.1,-0.1,NTU,1,0.1,21FLSEM FT1600,NA,NA,Lake Mobile
@@ -927,12 +916,13 @@ FL-1006787,188390,2009-02-25,21FLSEM,Seminole  County (Florida),Turbidity,Turbid
 FL-755324,189459,2009-02-25,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-0.6,-0.6,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Kiwanis Lake
 FL-2730855,191619,2009-02-25,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-1.3,-1.3,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Horseshoe Lake
 FL-1524300,191355,2009-03-11,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-1.2,-1.2,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Bear Lake
-ID-231301,460180,2009-04-07,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,12000,12,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
+ID-238418,459064,2009-04-07,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,14000,14,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 ID-223023,460180,2009-04-07,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,8000,8,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 NJ-69919,141941,2009-04-13,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,27250,27.25,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,Lower Sylvan Lake - 1
 NJ-70129,141941,2009-04-13,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,26850,26.85,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,Lower Sylvan Lake - 2
 NJ-69638,141941,2009-04-13,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,27540,27.54,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,Lower Sylvan Lake - 3
 NJ-94192,450,2009-04-22,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,47610,47.61,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,North Hudson Park Lake - 1
+ID-234278,460180,2009-04-29,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,11000,11,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 CA-138357,483334,2009-04-29,NA,California State Water Resources Control Board,"Chloride, dissolved",Chloride,20600,20600,mg/l,1,NA,CEDEN 16,NA,field crew incorrectly loaded as 728SSDS02 changed station ID,Salton Sea USGS2
 CA-162986,483334,2009-04-29,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,13100,13100,mg/l,1,NA,CEDEN 16,NA,field crew incorrectly loaded as 728SSDS02 changed station ID,Salton Sea USGS2
 CA-105608,483334,2009-04-29,NA,California State Water Resources Control Board,"Chloride, dissolved",Chloride,20500,20500,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS7
@@ -945,7 +935,8 @@ MN-1687187,110327,2009-05-12,NA,Minnesota Pollution Control Agency - Ambient Sur
 MN-1221169,177,2009-05-18,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,8119.999999999999,8.12,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
 NJ-10635,4437,2009-05-19,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,20930,20.93,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,Panther Lake - 2
 FL-1690619,190473,2009-05-26,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-0.6,-0.6,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Lake Hayes
-ID-208671,460180,2009-05-26,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7300,7.3,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
+ID-199607,460180,2009-05-26,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,10000,10,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
+ID-240186,459064,2009-05-27,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6100,6.1,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 NJ-42753,2243,2009-06-03,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,55950,55.95,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,Rainbow Lakes - 1
 FL-914348,186063,2009-06-04,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-1,-1,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Red Bug Lake
 FL-1851784,192594,2009-06-04,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-0.8,-0.8,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Lake Tony
@@ -987,7 +978,6 @@ NY-671270,122534,2009-07-13,NA,New York State Dec Division Of Water,Secchi,"Dept
 MN-1668617,177,2009-07-13,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,6750,6.75,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
 NJ-39739,1945,2009-07-15,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,22670,22.67,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,Allamuchy Pond - 2
 NJ-35289,1945,2009-07-15,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,51890,51.89,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,Allamuchy Pond - 2
-MN-5062616,2269,2009-07-16,NA,Minnesota Pollution Control Agency - Ambient Surface Water,Chlorophyll a,"Chlorophyll a, corrected for pheophytin",36100,36100,ug/l,1,NA,APHA 10200-H,NA,NA,ROBERDS
 NJ-45907,4184,2009-07-16,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,57640,57.64,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,George Lake - 1
 WI-1851059,4902,2009-07-19,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),86.4,86.4,mg/l,1,NA,"NA NA",NA,NA,BIG NEWTON LAKE - DEEP HOLE
 NJ-1558,3136,2009-07-20,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,200530,200.53,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,Amwell Lake - 1
@@ -999,6 +989,7 @@ FL-1284035,189299,2009-07-21,21FLSEM,Seminole  County (Florida),Turbidity,Turbid
 FL-1642623,190332,2009-07-21,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-1.9,-1.9,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Lake Myrtle
 FL-1807329,192505,2009-07-21,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-2.3,-2.3,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Yankee Lake
 NY-4309,97651,2009-07-21,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-1.5,-1.5,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,FREEPORT RESERVOIR WEST OUTLET
+ID-201225,459064,2009-07-21,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,8000,8,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 ID-215416,460180,2009-07-21,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6000,6,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 FL-2323787,188106,2009-07-23,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-2.5,-2.5,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Lake Asher
 FL-1725946,184813,2009-07-23,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-2.2,-2.2,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Cub Lake
@@ -1038,8 +1029,7 @@ FL-1787913,191501,2009-08-25,21FLSEM,Seminole  County (Florida),Turbidity,Turbid
 ID-234394,459064,2009-08-25,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,11000,11,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 ID-189808,459064,2009-08-25,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,8900,8.9,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 ID-216606,459064,2009-08-25,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,8700,8.7,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
-ID-206095,460180,2009-08-25,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,10000,10,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
-ID-205264,460180,2009-08-25,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,101000,101,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
+ID-216133,460180,2009-08-25,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,60000,60,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 NJ-43153,2243,2009-08-26,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,28030,28.03,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,Rainbow Lakes - 1
 NJ-80865,3460,2009-08-27,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,26150,26.15,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,Upper Greenwood Lake - 1
 NJ-79732,3460,2009-08-27,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,26450,26.45,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,Upper Greenwood Lake - 2
@@ -1073,7 +1063,6 @@ NJ-39995,1945,2009-09-30,New Jersey Department of Environmental Protection,NJDEP
 NJ-37428,1945,2009-09-30,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,23050,23.05,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,Allamuchy Pond - 2
 NJ-2420,3136,2009-10-01,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,26950,26.95,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,Amwell Lake - 1
 MN-1629362,177,2009-10-05,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,7400,7.400,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
-ID-189110,459064,2009-10-07,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6100,6.1,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 ID-230361,460180,2009-10-07,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6700,6.7,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 NJ-14234,3124,2009-10-07,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,35350,35.35,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,Lake Tamarack - 1
 NJ-23696,3124,2009-10-07,New Jersey Department of Environmental Protection,NJDEP Bureau of Freshwater and Biological Monitoring,Chlorophyll a,Chlorophyll a,27290,27.29,ppm,1000,NA,USEPA 445.0,https://www.nemi.gov/methods/method_summary/7222/,NA,Lake Tamarack - 2
@@ -1129,12 +1118,12 @@ WI-2413014,4947,2010-03-01,NA,Lac Courte Oreilles (Tribal),"Oxygen, dissolved",D
 FL-1943654,191619,2010-03-02,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-1.5,-1.5,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Horseshoe Lake
 FL-1137763,188390,2010-03-09,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-1.4,-1.4,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Lake Catherine
 FL-2015700,189459,2010-03-09,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-1.1,-1.1,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Kiwanis Lake
+ID-223135,459064,2010-03-09,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7800,7.8,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 FL-1534934,207560,2010-03-10,LAKELAND,"City of Lakeland, Lakeland Florida",Chlorophyll a,"Chlorophyll a, corrected for pheophytin",71200,71.2,mg/l,1000,3,APHA 10200-H,NA,NA,Lake Holloway
 FL-2081722,189281,2010-03-25,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-4,-4,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Fairy Lake
 FL-1222921,188388,2010-03-25,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-3.7,-3.7,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Lake Mills
 FL-1095721,190343,2010-03-25,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-4,-4,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Prairie Lake
 FL-1554907,190331,2010-03-25,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-4.3,-4.3,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Lake Seminary
-ID-195184,459064,2010-04-06,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,5400,5.4,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 FL-1752804,192560,2010-04-13,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-1.9,-1.9,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Amory Lake
 FL-2015854,190393,2010-04-13,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-1.9,-1.9,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Deforest Lake
 FL-1405038,189299,2010-04-13,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-1.9,-1.9,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,East Crystal Lake
@@ -1154,7 +1143,6 @@ CA-122887,483334,2010-05-04,NA,California State Water Resources Control Board,"C
 CA-156614,483334,2010-05-04,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,13400,13400,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS7
 CA-148889,483334,2010-05-04,NA,California State Water Resources Control Board,"Chloride, dissolved",Chloride,22000,22000,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS9
 CA-121172,483334,2010-05-04,NA,California State Water Resources Control Board,"Sulfate, dissolved",Sulfate,13500,13500,mg/l,1,NA,CEDEN 16,NA,NA,Salton Sea USGS9
-ID-196261,459064,2010-05-05,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,5100,5.1,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 FL-881148,190343,2010-05-11,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-2.1,-2.1,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Prairie Lake
 FL-1727741,190331,2010-05-11,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-2.3,-2.3,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Lake Seminary
 FL-819665,187078,2010-05-11,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-1.2,-1.2,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Spring Lake at Altamonte Springs
@@ -1185,9 +1173,8 @@ FL-1347666,188106,2010-07-15,21FLSEM,Seminole  County (Florida),Turbidity,Turbid
 FL-1231682,188107,2010-07-15,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-7.2,-7.2,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Mirror Lake
 FL-714228,184850,2010-07-19,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-5.2,-5.2,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Lake Markham
 FL-835144,192505,2010-07-19,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-5.9,-5.9,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Yankee Lake
-ID-236814,460180,2010-07-20,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6600,6.6,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
+ID-200227,460180,2010-07-20,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,5300,5.3,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 ID-190176,459064,2010-07-21,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,5600,5.6,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
-ID-200283,459064,2010-07-21,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,8700,8.7,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 FL-1752493,184813,2010-07-22,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-6.2,-6.2,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Cub Lake
 FL-1942917,188187,2010-07-22,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-3.4,-3.4,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Lake Mobile
 FL-1923018,191355,2010-07-26,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-7.9,-7.9,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Bear Lake
@@ -1205,7 +1192,6 @@ FL-1800080,190331,2010-08-05,21FLSEM,Seminole  County (Florida),Turbidity,Turbid
 ND-489504,316751,2010-08-11,NA,North Dakota Department Of Environmental Quality,"Oxygen, dissolved",Dissolved oxygen (DO),25.3,25.3,mg/l,1,NA,"NA NA",NA,NA,Homme Dam - Deepest
 FL-1277226,189292,2010-08-12,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-0.1,-0.1,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Lake Howell
 FL-801532,191460,2010-08-12,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-2.4,-2.4,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Kewanee
-ID-223241,460180,2010-08-17,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,43000,43,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 FL-1660875,188388,2010-08-23,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-2.9,-2.9,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Lake Mills
 FL-1172120,191501,2010-08-24,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-2,-2,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Tuskawilla Lake
 NY-59309,77874,2010-08-24,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-1.79,-1.79,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,FAWN LAKE DEEP HOLE
@@ -1217,9 +1203,9 @@ NY-24818,68549,2010-08-25,NA,New York State Dec Division Of Water,Secchi,"Depth,
 FL-1443264,191619,2010-08-26,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-1.2,-1.2,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Horseshoe Lake
 WI-362323,5404,2010-09-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),86.2,86.2,mg/l,1,NA,"NA NA",NA,NA,Kentuck Lake - Site 1-Center
 FL-2306111,190473,2010-09-14,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-0.3,-0.3,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Lake Hayes
-FL-1983062,207560,2010-09-14,LAKELAND,"City of Lakeland, Lakeland Florida",Chlorophyll a,"Chlorophyll a, corrected for pheophytin",24800,24.8,mg/l,1000,3,APHA 10200-H,NA,NA,Lake Holloway
 NE-187580,361755,2010-09-23,NA,US Army Corps of Engineers Omaha District,Turbidity,Turbidity,3000,3000,NTU,1,NA,"NA NA",NA,NA,PAWLKML1
-ID-197175,459064,2010-09-29,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,5200,5.2,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
+ID-192311,460180,2010-09-28,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,5600,5.6,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
+ID-190314,460180,2010-09-28,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6400,6.4,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 AZ-64854,454392,2010-10-07,ARIZONA GAME AND FISH,AZDEQ_SW,Chlorophyll a,Chlorophyll a,75500,75.5,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,ALGAL TURBIDITY--- SAMPLE TAKEN: Migrated,100036
 FL-868479,192560,2010-10-12,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-0.9,-0.9,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Amory Lake
 FL-1358009,189299,2010-10-12,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-0.8,-0.8,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,East Crystal Lake
@@ -1240,12 +1226,12 @@ FL-1780021,190343,2010-11-22,21FLSEM,Seminole  County (Florida),Turbidity,Turbid
 FL-1782664,188390,2010-11-30,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-0.4,-0.4,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Lake Catherine
 FL-1723643,189459,2010-11-30,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-0.2,-0.2,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Kiwanis Lake
 FL-1195239,191619,2010-11-30,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-0.6,-0.6,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Horseshoe Lake
-ID-205134,459064,2010-11-30,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6000,6,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 FL-2169795,188388,2010-12-07,21FLSEM,Seminole  County (Florida),Turbidity,Turbidity,-0.3,-0.3,NTU,1,0.1,21FLSEM_WQX FT1600,NA,NA,Lake Mills
 MI-1431451,41892,2011-02-03,NA,"Bay Mills Indian Community, Michigan (Tribal)",Turbidity,Turbidity,2585,2585,NTU,1,0,USEPA 180.1,https://www.nemi.gov/methods/method_summary/5217/,NA,South Pond
+ID-188720,459064,2011-02-28,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7400,7.4,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
+ID-230818,459064,2011-02-28,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,20000,20,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 AZ-37453,454758,2011-04-04,"TEMPE, CITY OF",AZDEQ_SW,"Oxygen, dissolved",Dissolved oxygen (DO),25.8,25.8,mg/l,1,NA,AZDEQ_SW FIELD,NA,--- SAMPLE TAKEN: Migrated,104917
-ID-225815,459064,2011-04-12,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6400,6.4,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
-ID-196584,460180,2011-04-13,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,5800,5.8,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
+ID-187991,460180,2011-04-13,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,9700,9.7,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 MN-1356792,177,2011-04-25,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,6630,6.630,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
 MN-2436462,72,2011-05-03,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),27,27.0,mg/l,1,NA,MNPCA FLD,NA,NA,WINKLER
 WI-3159014,4300,2011-05-05,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),27,27,mg/l,1,NA,"NA NA",NA,NA,EAST ALASKA LAKE - DEEP HOLE
@@ -1260,7 +1246,6 @@ CA-144647,483334,2011-05-11,NA,California State Water Resources Control Board,"S
 WI-2288313,612,2011-05-11,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),92.2,92.2,mg/l,1,NA,"NA NA",NA,NA,Sissabagama Lake - Deep Hole
 GA-218326,236203,2011-05-23,NA,Georgia DNR Environmental Protection Division,"Oxygen, dissolved",Dissolved oxygen (DO),25.48,25.48,mg/l,1,NA,USEPA 1002-8-2009,NA,NA,"Carters Lake (CR1) - Upper Lake, Coosawattee Arm"
 MN-1659338,177,2011-05-23,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,6990,6.990,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
-ID-204261,460180,2011-05-25,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,8600,8.6,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 ID-186528,460180,2011-05-25,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7900,7.9,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 SD-535353,352211,2011-05-31,NA,DENR,"Oxygen, dissolved",Dissolved oxygen (DO),30.17,30.17,mg/l,1,NA,SDDENR_WQX UNKOWN,NA,NA,SWLAZZZ1205B
 SD-591488,352211,2011-05-31,NA,DENR,"Oxygen, dissolved",Dissolved oxygen (DO),30.18,30.18,mg/l,1,NA,SDDENR_WQX UNKOWN,NA,NA,SWLAZZZ1205C
@@ -1279,9 +1264,8 @@ NY-73625,15643,2011-07-06,NA,New York State Dec Division Of Water,Secchi,"Depth,
 IL-300558,6851,2011-07-06,NA,illinois epa,"Phosphorus, soluble reactive orthophosphate",Phosphorus,11600,11.6,mg/l,1000,25,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,Sam Parr
 WI-2233090,612,2011-07-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),89.5,89.5,mg/l,1,NA,"NA NA",NA,NA,Sissabagama Lake - Deep Hole
 MN-1604879,177,2011-07-18,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,6270,6.270,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
-ID-195428,459064,2011-07-19,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,8000,8,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
+ID-208218,459064,2011-07-19,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,8000,8,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 ID-189667,460180,2011-07-19,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7000,7,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
-ID-224826,460180,2011-07-19,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,9000,9,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 MN-3141453,3316,2011-07-19,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,149000,149,mg/l,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,CLEAR
 MN-3156919,3316,2011-07-19,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, total",Phosphorus,252000,252,mg/l,1000,NA,USEPA 365.1,https://www.nemi.gov/methods/method_summary/4823/,NA,CLEAR
 MN-1337188,3542,2011-07-20,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),86.3,86.30,mg/l,1,NA,MNPCA FLD,NA,NA,HIAWATHA
@@ -1294,6 +1278,7 @@ WI-799026,5380,2011-08-10,WIDNR_WQX,Wisconsin Department of Natural Resources,"O
 IL-300605,6851,2011-08-11,NA,illinois epa,"Phosphorus, soluble reactive orthophosphate",Phosphorus,12100,12.1,mg/l,1000,25,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,Sam Parr
 MN-1332707,3006,2011-08-15,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),432,432.00,mg/l,1,NA,MNPCA FLD,NA,pH probe may be off in its measurements,MINNETONKA (CARSONS BAY)
 MN-1481708,177,2011-08-15,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,7240,7.240,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,pH probe may be off in its measurements,PEAVEY
+ID-239589,460180,2011-08-17,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6700,6.7,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 WI-806489,5211,2011-08-22,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),85,85,mg/l,1,NA,"NA NA",NA,NA,Ward Lake - Deep Hole
 WI-2235454,612,2011-08-22,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),55.7,55.7,mg/l,1,NA,"NA NA",NA,NA,Sissabagama Lake - Deep Hole
 WI-1778518,2184,2011-08-23,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),86.5,86.5,mg/l,1,NA,"NA NA",NA,NA,Legend Lake - Main Channel Deep Hole
@@ -1304,6 +1289,8 @@ WI-1892777,4854,2011-09-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"
 WI-2231961,612,2011-09-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),70.8,70.8,mg/l,1,NA,"NA NA",NA,NA,Sissabagama Lake - Deep Hole
 AZ-64643,454392,2011-09-13,ARIZONA GAME AND FISH,AZDEQ_SW,Chlorophyll a,Chlorophyll a,31200,31.2,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,"POST WALLOW, APHANIZOMENON BLOOM, GREEN COLOR--- SAMPLE TAKEN: Migrated",100036
 AZ-110241,454698,2011-09-13,ARIZONA GAME AND FISH,AZDEQ_SW,Chlorophyll a,Chlorophyll a,57200,57.2,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,POST WALLOW LOW WATER OLIVE BROWN--- SAMPLE TAKEN: Migrated,100993
+ID-186907,459064,2011-09-14,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,6000,6,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
+ID-220132,460180,2011-09-14,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,15000,15,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 WI-1895682,5385,2011-09-18,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),71.8,71.8,mg/l,1,NA,"NA NA",NA,NA,Hemlock Lake - Deep Hole
 MN-1476568,177,2011-09-19,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,7190,7.190,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,pH probe not working,PEAVEY
 MN-1356731,765,2011-09-20,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Nitrogen, total",Nutrient-nitrogen,982000,982,mg/l,1000,NA,APHA 4500-N-C,NA,NA,POWDERHORN
@@ -1312,19 +1299,20 @@ MN-936809,1180,2011-09-27,NA,Minnesota Pollution Control Agency - Ambient Surfac
 MN-1474169,177,2011-10-03,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,7220,7.220,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
 MN-1621052,177,2011-10-17,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,6580,6.580,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
 MN-1625514,177,2011-10-31,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,7250,7.250,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PEAVEY
+ID-189939,460180,2011-11-29,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,15000,15,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 ID-235547,460180,2011-11-29,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,14000,14,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 FL-1119004,230494,2011-12-12,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,5740,5.74E+03,mg/l,1,250,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Lake Wimico SW (also 21FLGW)
-VA-419776,147585,2011-12-20,DEQ,VIRGINIA DEPARTMENT OF ENVIRONMENTAL QUALITY,Chlorophyll a,"Chlorophyll a, uncorrected for pheophytin",47500,47500,ug/l,1,NA,USEPA 445,https://www.nemi.gov/methods/method_summary/7222/,"BLUE GREEN ALGAE BLOOM AT UPPER END OF POND, PARTIALLY WITH BLUISH-WHITE PATCHES  WHERE DECAY STARTING FROM COLD TEMPERATURES","Pond at N. Lakefront & Woodlake, Henrico"
+VA-228005,147585,2011-12-20,DEQ,VIRGINIA DEPARTMENT OF ENVIRONMENTAL QUALITY,Chlorophyll a,"Chlorophyll a, corrected for pheophytin",31900,31900,ug/l,1,NA,USEPA 445,https://www.nemi.gov/methods/method_summary/7222/,"BLUE GREEN ALGAE BLOOM AT UPPER END OF POND, PARTIALLY WITH BLUISH-WHITE PATCHES  WHERE DECAY STARTING FROM COLD TEMPERATURES","Pond at N. Lakefront & Woodlake, Henrico"
 VA-116340,147585,2011-12-20,DEQ,VIRGINIA DEPARTMENT OF ENVIRONMENTAL QUALITY,"Nitrogen, total Kjeldahl",Kjeldahl nitrogen,476000,476,mg/l,1000,NA,USEPA 351.2,https://www.nemi.gov/methods/method_summary/9626/,"BLUE GREEN ALGAE BLOOM AT UPPER END OF POND, PARTIALLY WITH BLUISH-WHITE PATCHES  WHERE DECAY STARTING FROM COLD TEMPERATURES","Pond at N. Lakefront & Woodlake, Henrico"
 WI-196357,5043,2012-01-30,NA,Lac Du Flambeau Band of Lake Superior Chippewa Indians Water Program (Tribal),Turbidity,Turbidity,-0.1,-0.1,NTU,1,NA,"NA NA",NA,NA,WildRiceLake_Deep
 MN-1791779,14815,2012-01-30,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),58.4,58.40,mg/l,1,NA,MNPCA FLD,NA,NA,LORING (S. BAY)
 MN-1809230,678,2012-02-01,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),86.8,86.80,mg/l,1,NA,MNPCA FLD,NA,NA,LAKE OF THE ISLES
 MN-3106378,2347,2012-02-15,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),28.77,28.77,mg/l,1,NA,MNPCA FLD,NA,NA,GERVAIS
-ID-189661,460180,2012-03-21,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,19000,19,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
+ID-205018,460180,2012-03-21,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,20000,20,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 WI-2226746,612,2012-04-17,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),61.6,61.6,mg/l,1,NA,"NA NA",NA,NA,Sissabagama Lake - Deep Hole
 FL-1111898,189767,2012-04-18,21FLGW,FL Dept. of Environmental Protection,"Nitrogen, total Kjeldahl",Kjeldahl nitrogen,280000,280,mg/l,1000,50000,USEPA 351.2,https://www.nemi.gov/methods/method_summary/9626/,NA,Z3-LL-6016 NEWNANS LAKE
 ID-187285,459064,2012-05-01,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,8200,8.2,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
-ID-210073,459064,2012-05-01,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,8200,8.2,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
+ID-202278,460180,2012-05-01,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7000,7,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 WI-1899157,5009,2012-05-07,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),126.3,126.3,mg/l,1,NA,"NA NA",NA,NA,Chetek Lake - Deep Hole
 WI-1879280,5009,2012-05-14,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),122.3,122.3,mg/l,1,NA,"NA NA",NA,NA,Chetek Lake - Deep Hole
 WI-2235168,612,2012-05-14,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),101.7,101.7,mg/l,1,NA,"NA NA",NA,NA,Sissabagama Lake - Deep Hole
@@ -1332,8 +1320,6 @@ WI-1896708,5009,2012-05-22,WIDNR_WQX,Wisconsin Department of Natural Resources,"
 WI-846529,5211,2012-05-25,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),70,70,mg/l,1,NA,"NA NA",NA,NA,Ward Lake - Deep Hole
 WI-1878093,5009,2012-05-28,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),156.6,156.6,mg/l,1,NA,"NA NA",NA,NA,Chetek Lake - Deep Hole
 ID-187031,459064,2012-06-13,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7700,7.7,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
-ID-210862,459064,2012-06-13,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7900,7.9,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
-ID-209854,460180,2012-06-13,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,12000,12,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 CA-114218,481205,2012-06-14,NA,California State Water Resources Control Board,"Calcium, dissolved",Calcium,1030,1030,mg/l,1,NA,CEDEN 15,NA,NA,unnamed NLA12 Lake 179
 CA-137190,481205,2012-06-14,NA,California State Water Resources Control Board,"Magnesium, dissolved",Magnesium,2460,2460,mg/l,1,NA,CEDEN 15,NA,NA,unnamed NLA12 Lake 179
 WI-2232304,612,2012-06-18,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),80.7,80.7,mg/l,1,NA,"NA NA",NA,NA,Sissabagama Lake - Deep Hole
@@ -1360,20 +1346,20 @@ ID-211826,460180,2012-08-15,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive
 WI-797908,5211,2012-08-27,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),44,44,mg/l,1,NA,"NA NA",NA,NA,Ward Lake - Deep Hole
 AZ-181532,454185,2012-09-09,U.S. FISH AND WILDLIFE SERVICES,AZDEQ_SW,Chlorophyll a,Chlorophyll a,24000,24,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,CLEAR/SUNNY--- SAMPLE TAKEN: Migrated,101350
 WI-2235635,612,2012-09-10,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),71.4,71.4,mg/l,1,NA,"NA NA",NA,NA,Sissabagama Lake - Deep Hole
+ID-217212,459064,2012-09-19,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,5400,5.4,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 ID-199121,460180,2012-09-19,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,15000,15,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 ID-223100,460180,2012-09-19,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,276000,276,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 NY-287564,88685,2012-09-20,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-2.6,-2.6,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,FRANCIS POND DEEP HOLE
 AZ-69406,453764,2012-09-30,U.S. FOREST SERVICE,AZDEQ_SW,"Oxygen, dissolved",Dissolved oxygen (DO),82.7,82.7,mg/l,1,NA,AZDEQ_SW UNKNOWN,NA,--- SAMPLE TAKEN: Migrated,100027
 MN-1362139,110327,2012-10-22,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),26.41,26.41,mg/l,1,NA,MNPCA FLD,NA,NA,SPRING
 ID-192959,459064,2012-10-23,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7300,7.3,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
-ID-189602,460180,2012-10-23,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,7000,7,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 AZ-117848,454392,2012-11-06,ARIZONA GAME AND FISH,AZDEQ_SW,Chlorophyll a,Chlorophyll a,610000,610,mg/l,1000,1000,AZDEQ_SW SM 10200 H,NA,EXTREME ALGAE BLOM--- SAMPLE TAKEN: Migrated,100036
+ID-223584,459064,2012-11-27,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,14000,14,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
 ID-186413,459064,2012-11-27,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,13000,13,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,"Coeur d' Alene Lake - 0.6 miles north, northeast of Browns Point (USGS site 472500116450000)"
+ID-195349,460180,2012-11-27,NA,Coeur D'Alene Tribe,"Phosphorus, soluble reactive orthophosphate",Phosphorus,9000,9,ug/l,1000,NA,USEPA 365.4,https://www.nemi.gov/methods/method_summary/5313/,NA,Chatcolet Lake - 0.4 miles northwest of Rocky Point (USGS site 472120116451000)
 WI-2377913,3413,2013-02-08,NA,Lac Courte Oreilles (Tribal),"Oxygen, dissolved",Dissolved oxygen (DO),39.1,39.1,mg/l,1,NA,"NA NA",NA,NA,Green Lake
 MN-1796109,110327,2013-02-26,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,5200,5.20,mg/l,1000,NA,APHA 4500-P-E,https://www.nemi.gov/methods/method_summary/7436/,NA,SPRING
-FL-1795035,231774,2013-03-18,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,6620,6.62E+03,mg/l,1,250,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Grass Lake-Direct Runoff to Choctawhatchee Bay
 FL-1351857,231774,2013-03-18,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,5420,5.42E+03,mg/l,1,100,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Grass Lake (Upper)
-FL-1776093,192818,2013-04-15,21FLCEN,"Fl  Dept. of Environmental Protection, Central District","Solids, total suspended",Total dissolved solids,5170,5.17E+03,mg/l,1,100,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Salt Lake @  SW quad
 MN-2409260,139770,2013-05-06,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),34.6,34.60,mg/l,1,NA,MNPCA FLD,NA,NA,MCKNIGHT (OAKRIDGE)
 MN-2411811,78404,2013-05-06,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),38,38.00,mg/l,1,NA,MNPCA FLD,NA,NA,GRACE
 MN-1430181,38846,2013-05-06,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,95330,95.330,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PARKERS
@@ -1386,6 +1372,7 @@ WI-1898160,5176,2013-05-15,WIDNR_WQX,Wisconsin Department of Natural Resources,"
 MN-1575400,38846,2013-05-20,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,8920,8.920,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PARKERS
 MN-1594457,38846,2013-05-20,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,22090,22.090,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PARKERS
 MN-1396273,38846,2013-05-20,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,352840,352.840,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PARKERS
+FL-2224367,231774,2013-05-21,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,11500,1.15E+04,mg/l,1,250,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Grass Lake (Upper)
 MN-1403262,23185,2013-05-28,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,32100,32.100,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,POMERLEAU
 MN-1433176,38846,2013-06-03,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,5880,5.880,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PARKERS
 MN-1591008,38846,2013-06-03,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,29130,29.130,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PARKERS
@@ -1401,7 +1388,6 @@ WI-6541,4326,2013-06-25,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxy
 WI-859350,5211,2013-06-30,Self-Help Citizen Lake Monitoring Network,North American Lake Management Society,"Oxygen, dissolved",Dissolved oxygen (DO),33,33,ppm,1,NA,"NA NA",NA,Old MLID=6947. Site=deep hole  7154728722 wolf_nb@yahoo.com,"Ward Lake, Polk County, WI, USA"
 NY-60829,56156,2013-07-02,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-1.4,-1.4,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,PALMER LAKE DEEP HOLE
 MN-1567379,38846,2013-07-02,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,488480,488.480,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PARKERS
-KS-50544,377804,2013-07-08,NA,Kansas Department Of Health And Environment,"Aluminum, total",Aluminum,11000,11,mg/l,1000,NA,USEPA 200.7,https://www.nemi.gov/methods/method_summary/4690/,NA,MINGENBACK LAKE
 MN-1435888,23185,2013-07-08,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,26780,26.780,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,POMERLEAU
 MN-3440809,3140,2013-07-09,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Oxygen, dissolved",Dissolved oxygen (DO),116.5,116.50,mg/l,1,NA,MNPCA FLD,NA,NA,TANNERS
 NY-59774,118205,2013-07-15,NA,New York State Dec Division Of Water,Secchi,"Depth, Secchi disk depth",-1,-1,m,1,NA,21NYDECA_WQX SECCHI,NA,NA,ANN LEE POND TMDL
@@ -1459,7 +1445,6 @@ UT-402701,450461,2013-09-24,Bureau of Reclamation,Utah Department Of Environment
 UT-542980,450461,2013-09-25,Bureau of Reclamation,Utah Department Of Environmental Quality,Turbidity,Turbidity,-1,-1,NTU,1,NA,UTAHDWQ_WQX FIELD TURBIDITY,NA,NA,FLAMING GORGE RES NR CEDAR SPRINGS BOAT RAMP
 MN-1559778,23185,2013-09-30,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,13930,13.930,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,POMERLEAU
 FL-822299,235932,2013-10-01,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,15300,1.53E+04,mg/l,1,830,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Draper Lake (WBID 959D)
-FL-1327493,233340,2013-10-14,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,10500,1.05E+04,mg/l,1,500,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,POWELL LAKE N HWY 98
 MN-1665134,23185,2013-10-15,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,22760,22.760,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,POMERLEAU
 MN-1589957,38846,2013-10-15,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,11970,11.970,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PARKERS
 MN-1147638,38846,2013-10-15,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,118270,118.270,mg/l,1000,NA,USEPA 365.3,https://www.nemi.gov/methods/method_summary/5255/,NA,PARKERS
@@ -1471,7 +1456,11 @@ FL-2075872,196859,2013-11-12,21FLCEN,"Fl  Dept. of Environmental Protection, Cen
 OK-198732,54034,2013-12-03,NA,Seneca Cayuga Tribe,"Oxygen, dissolved",Dissolved oxygen (DO),116.72,116.72000000,mg/l,1,NA,"NA NA",NA,NA,Grand Lake Site 12
 OK-211884,54034,2013-12-03,NA,Seneca Cayuga Tribe,"pH, field or lab",pH,22.567,22.56700000,None,1,NA,"NA NA",NA,NA,Grand Lake Site 13
 FL-1888980,221287,2013-12-10,21FLLEON,Leon County Public Works (Florida),"Oxygen, dissolved",Dissolved oxygen (DO),68.4,68.4,mg/l,1,NA,USEPA 360.1,https://www.nemi.gov/methods/method_summary/5252/,NA,Lake Miccosukee Center of Lake
+FL-2179429,231774,2013-12-16,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,20200,2.02E+04,mg/l,1,1200,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Grass Lake-Direct Runoff to Choctawhatchee Bay
+FL-1219475,231774,2013-12-16,21FLPNS,"FL Dept. of Environmental Protection, Northwest District","Solids, total suspended",Total dissolved solids,19300,1.93E+04,mg/l,1,1200,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Grass Lake (Upper)
 WI-1923899,5176,2014-01-12,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),57.3,57.3,mg/l,1,NA,"NA NA",NA,NA,Big Moon Lake at Deep Hole
+OK-29414,381133,2014-01-20,Kaw Nation,"Kaw Nation, Oklahoma","Nitrogen, total",Nitrogen,64200,64.2,mg/l,1000,NA,KAWNATON_WQX 10208,NA,NA,Sandy Beach
+OK-31786,381133,2014-01-21,Kaw Nation,"Kaw Nation, Oklahoma","Nitrogen, total",Nitrogen,59100,59.1,mg/l,1000,NA,KAWNATON_WQX 10208,NA,NA,Washunga Bay 2
 FL-913579,199817,2014-02-13,21FLCEN,"Fl  Dept. of Environmental Protection, Central District","pH, field or lab",pH,116.4,116.4,None,1,NA,21FLCEN_WQX FT_1100,NA,NA,Lake Kozart @ 210m NNE of Center
 WI-1923107,5176,2014-02-18,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),50,50,mg/l,1,NA,"NA NA",NA,NA,Big Moon Lake at Deep Hole
 FL-2231734,196854,2014-02-19,21FLCEN,"Fl  Dept. of Environmental Protection, Central District","Oxygen, dissolved",Dissolved oxygen (DO),99.67,99.67,mg/l,1,NA,21FLCEN_WQX FT_1500,NA,NA,Lake Nona @ 625m SW of center of lake
@@ -1561,14 +1550,13 @@ NH-99371,5996,2015-05-31,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi di
 NH-100473,5860,2015-06-04,NA,New Hampshire Department Of Environmental Services (BEACH),Secchi,"Depth, Secchi disk depth",-7.2,-7.2,m,1,NA,11113300 LLMP-SECCHI,NA,LOVELL-1 NORTH;,LOVELL LAKE-1 NORTH
 MN-1484914,110327,2015-06-04,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,5811,5.811,mg/l,1000,NA,APHA 4500-P-E,https://www.nemi.gov/methods/method_summary/7436/,NA,SPRING
 ME-9943,7480,2015-06-04,NA,Penobscot Indian Nation Department of Natural Resources (Tribal),"Color, apparent",Apparent color,-9,-9,PCU,1,NA,APHA 2120-C,https://www.nemi.gov/methods/method_summary/9731/,NA,South Branch Lake - Deep Hole
-ME-10467,7882,2015-06-04,NA,Penobscot Indian Nation Department of Natural Resources (Tribal),"Color, apparent",Apparent color,-9,-9,PCU,1,NA,APHA 2120-C,https://www.nemi.gov/methods/method_summary/9731/,NA,Upper Sysladobsis Lake - Deep Hole
+ME-12277,7882,2015-06-04,NA,Penobscot Indian Nation Department of Natural Resources (Tribal),"Color, apparent",Apparent color,-9,-9,PCU,1,NA,APHA 2120-C,https://www.nemi.gov/methods/method_summary/9731/,NA,Upper Sysladobsis Lake - Deep Hole
 NH-100164,5860,2015-06-04,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-7.2,-7.2,m,1,NA,U_NH01 LLMP-SECCHI,NA,LOVELL-1 NORTH;,LOVELL LAKE-1 NORTH
 NH-129437,5996,2015-06-04,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-4.94,-4.94,m,1,NA,U_NH01 LLMP-SECCHI,NA,SQUAM-9B SQUAWO;,SQUAM LAKE-9B SQUAW O
 NH-163037,5979,2015-06-05,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-7.1,-7.1,m,1,NA,U_NH01 LLMP-SECCHI,NA,LITTLE SQUAM-1 WEST;,LITTLE SQUAM LAKE-1 WEST
 WI-872179,3719,2015-06-09,WIDNR_WQX,Wisconsin Department of Natural Resources,"Nitrogen, nitrite (NO2) + nitrate (NO3)",Inorganic nitrogen (nitrate and nitrite),11800,11.8,mg/l,1000,NA,USEPA 353.2,https://www.nemi.gov/methods/method_summary/4702/,NA,Bakkens Pond - Center
 NH-98296,5743,2015-06-11,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-5.3,-5.3,m,1,NA,U_NH01 LLMP-SECCHI,NA,SILVER (MADISON)-4 EAST;,SILVER LAKE-MADISON-4 EAST
 NH-126033,5996,2015-06-14,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-4.6,-4.6,m,1,NA,U_NH01 LLMP-SECCHI,NA,SQUAM-9B SQUAWO;,SQUAM LAKE-9B SQUAW O
-FL-1832742,208611,2015-06-15,21FLFTM,"FL Dept. of Environmental Protection, South District","Solids, total suspended",Total dissolved solids,7530,7.53E+03,mg/l,1,250,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Sanibel Dune Lakes
 WI-1646960,1666,2015-06-15,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),96,96,mg/l,1,NA,"NA NA",NA,NA,Goose Lake - Deepest Point
 ID-231501,465183,2015-06-16,NA,Bureau of Reclamation,Turbidity,Turbidity,2189,2189.,NTU,1,1,USEPA 180.1,https://www.nemi.gov/methods/method_summary/5217/,NA,Soldiers Meadow Reservoir 100 meters abv Dam
 NH-37952,6270,2015-06-16,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-3.7,-3.7,m,1,NA,U_NH01 LLMP-SECCHI,NA,BABOOSIC-4 WASHER COVE;,BABOOSIC LAKE-4 WASHER COVE
@@ -1608,6 +1596,7 @@ NY-67759,89515,2015-07-14,NA,New York State Dec Division Of Water,Secchi,"Depth,
 ME-69,5614,2015-07-14,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-9.3,-9.3,m,1,NA,U_NH01 LLMP-SECCHI,NA,GREAT EAST-3 MMANN;,GREAT EAST LAKE-3 MANN
 MN-1761198,110327,2015-07-15,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,5272,5.272,mg/l,1000,NA,APHA 4500-P-E,https://www.nemi.gov/methods/method_summary/7436/,NA,SPRING
 NH-98121,6027,2015-07-17,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-4,-4,m,1,NA,U_NH01 LLMP-SECCHI,NA,CONWAY-PAIGE BROOK;,CONWAY LAKE - PAIGE BROOK
+NH-293,5636,2015-07-17,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-10.9,-10.9,m,1,NA,U_NH01 LLMP-SECCHI,NA,"WINNI, ALTON BAY-25 ALTON;",LAKE WINNIPESAUKEE-ALTON BAY-STATION 25
 NH-99059,5996,2015-07-19,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-10.3,-10.3,m,1,NA,U_NH01 LLMP-SECCHI,NA,SQUAM-11 KENT ISLAND;,SQUAM LAKE-11 KENT ISLAND
 NH-37654,6270,2015-07-20,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-3.5,-3.5,m,1,NA,U_NH01 LLMP-SECCHI,NA,BABOOSIC-4 WASHER COVE;,BABOOSIC LAKE-4 WASHER COVE
 WI-43636,5368,2015-07-20,WIDNR_WQX,Wisconsin Department of Natural Resources,"Oxygen, dissolved",Dissolved oxygen (DO),75.7,75.7,mg/l,1,NA,"NA NA",NA,NA,Wildcat Lake - Deep Hole
@@ -1633,7 +1622,6 @@ NH-99937,5860,2015-07-31,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi di
 NH-164136,5979,2015-07-31,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-8.4,-8.4,m,1,NA,U_NH01 LLMP-SECCHI,NA,LITTLE SQUAM-1 WEST;,LITTLE SQUAM LAKE-1 WEST
 NH-98932,5996,2015-08-02,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-10.2,-10.2,m,1,NA,U_NH01 LLMP-SECCHI,NA,SQUAM-10 SANDWICH BAY;,SQUAM LAKE-10 SANDWICH
 NH-99288,5996,2015-08-02,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-10.2,-10.2,m,1,NA,U_NH01 LLMP-SECCHI,NA,SQUAM-11 KENT ISLAND;,SQUAM LAKE-11 KENT ISLAND
-NH-100273,5636,2015-08-03,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-9.75,-9.75,m,1,NA,U_NH01 LLMP-SECCHI,NA,"WINNI, WINTER HARBOR-10 MUSEUM;",LAKE WINNIPESAUKEE-WINTER HARBOR-10 MUSEUM
 NH-143325,5996,2015-08-04,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-4.6,-4.6,m,1,NA,U_NH01 LLMP-SECCHI,NA,SQUAM-9B SQUAWO;,SQUAM LAKE-9B SQUAW O
 MN-1367542,110327,2015-08-05,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,6561,6.561,mg/l,1000,NA,APHA 4500-P-E,https://www.nemi.gov/methods/method_summary/7436/,NA,SPRING
 ME-56,5614,2015-08-05,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-9.7,-9.7,m,1,NA,U_NH01 LLMP-SECCHI,NA,GREAT EAST-3 MMANN;,GREAT EAST LAKE-3 MANN
@@ -1677,9 +1665,10 @@ NH-97684,5743,2015-09-18,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi di
 NH-97597,5996,2015-09-18,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-4.85,-4.85,m,1,NA,U_NH01 LLMP-SECCHI,NA,SQUAM-9B SQUAWO;,SQUAM LAKE-9B SQUAW O
 NH-64755,6270,2015-09-21,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-3.5,-3.5,m,1,NA,U_NH01 LLMP-SECCHI,NA,BABOOSIC-4 WASHER COVE;,BABOOSIC LAKE-4 WASHER COVE
 NH-99607,5743,2015-09-21,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-5.6,-5.6,m,1,NA,U_NH01 LLMP-SECCHI,NA,SILVER (MADISON)-4 EAST;,SILVER LAKE-MADISON-4 EAST
-ME-28,5614,2015-09-24,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-10.2,-10.2,m,1,NA,U_NH01 LLMP-SECCHI,NA,GREAT EAST-3 MMANN;,GREAT EAST LAKE-3 MANN
+ME-734,5614,2015-09-24,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-10.5,-10.5,m,1,NA,U_NH01 LLMP-SECCHI,NA,GREAT EAST-3 MMANN;,GREAT EAST LAKE-3 MANN
 NH-62832,6270,2015-09-28,NA,UNIVERSITY OF NEW HAMPSHIRE,Secchi,"Depth, Secchi disk depth",-3.5,-3.5,m,1,NA,U_NH01 LLMP-SECCHI,NA,BABOOSIC-4 WASHER COVE;,BABOOSIC LAKE-4 WASHER COVE
 CA-130215,476148,2015-09-29,NA,"Big Valley Band of Pomo Indians of the Big Valley Rancheria, California","Oxygen, dissolved",Dissolved oxygen (DO),147.6,147.6,mg/l,1,NA,"NA NA",NA,NA,Tule Boat Launch (The Point)
+FL-2064844,208611,2015-10-22,21FLFTM,"FL Dept. of Environmental Protection, South District","Solids, total suspended",Total dissolved solids,11000,1.10E+04,mg/l,1,250,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Sanibel Dune Lakes
 MN-1393731,110327,2015-10-29,NA,Minnesota Pollution Control Agency - Ambient Surface Water,"Phosphorus, soluble reactive orthophosphate",Orthophosphate,6018,6.018,mg/l,1000,NA,APHA 4500-P-E,https://www.nemi.gov/methods/method_summary/7436/,NA,SPRING
 OK-180057,54034,2015-12-15,NA,Seneca Cayuga Tribe,"Solids, total suspended",Total dissolved solids,106970,106.97000000,g/l,1000,NA,"NA NA",NA,NA,Grand Lake Site 12
 OK-204125,54034,2015-12-15,NA,Seneca Cayuga Tribe,"Solids, total suspended",Total dissolved solids,106680,106.68000000,g/l,1000,NA,"NA NA",NA,NA,Grand Lake Site 12
@@ -1886,7 +1875,6 @@ OR-652374,472961,2017-10-10,NA,State of Oregon Dept. of Environmental Quality,Al
 OR-648511,472961,2017-10-10,NA,State of Oregon Dept. of Environmental Quality,Sodium,Sodium,18400,18400,mg/l,1,10.5,USEPA 200.8,https://www.nemi.gov/methods/method_summary/4665/,NA,Abert Lake
 OR-652029,472961,2017-10-10,NA,State of Oregon Dept. of Environmental Quality,"Solids, total suspended",Total solids,52700,52700,mg/l,1,80,APHA 2540-B,https://www.nemi.gov/methods/method_summary/9816/,NA,Abert Lake
 NC-114522,157613,2017-10-11,NA,North Carolina Department of Environmental Resources NCDENR-DWQ WQX,"Oxygen, dissolved",Dissolved oxygen (DO),139,139,mg/l,1,NA,21NC03WQ WSSSOP,NA,NA,TOWN CRK AT SR 2168 NR DUKE
-FL-443615,208611,2017-10-16,FDEP SOUTH REGIONAL OPERATIONS CENTER,"FL Dept. of Environmental Protection, South District","Solids, total suspended",Total dissolved solids,5380,5380,mg/l,1,100,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,Sanibel Dune Lakes
 NV-54242,457037,2017-10-17,NA,"Pyramid Lake Paiute Tribe of the Pyramid Lake Reservation, Nevada","Solids, total suspended",Total dissolved solids,5248.3,5248.3,mg/l,1,0.01,"NA NA",NA,NA,Pyramid Lake Station 96
 NV-137428,457037,2017-10-17,NA,"Pyramid Lake Paiute Tribe of the Pyramid Lake Reservation, Nevada","Solids, total suspended",Total dissolved solids,5256.4,5256.4,mg/l,1,0.01,"NA NA",NA,NA,Pyramid Lake Station 96
 NV-53318,457037,2017-10-17,NA,"Pyramid Lake Paiute Tribe of the Pyramid Lake Reservation, Nevada","Solids, total suspended",Total dissolved solids,5639.8,5639.8,mg/l,1,0.01,"NA NA",NA,NA,Pyramid Lake Station 96
@@ -1991,6 +1979,7 @@ NV-121079,457037,2018-10-16,NA,"Pyramid Lake Paiute Tribe of the Pyramid Lake Re
 NV-70079,457037,2018-10-16,NA,"Pyramid Lake Paiute Tribe of the Pyramid Lake Reservation, Nevada","Solids, total suspended",Total dissolved solids,5844.8,5844.8,mg/l,1,0.01,"NA NA",NA,NA,Pyramid Lake Station 96
 NV-134606,457037,2018-10-16,NA,"Pyramid Lake Paiute Tribe of the Pyramid Lake Reservation, Nevada","Solids, total suspended",Total dissolved solids,5892.3,5892.3,mg/l,1,0.01,"NA NA",NA,NA,Pyramid Lake Station 96
 NV-66415,457037,2018-10-16,NA,"Pyramid Lake Paiute Tribe of the Pyramid Lake Reservation, Nevada","Solids, total suspended",Total dissolved solids,5893,5893,mg/l,1,0.01,"NA NA",NA,NA,Pyramid Lake Station 96
+FL-1268778,193056,2018-11-13,CITY OF CAPE CORAL,City of Cape Coral,"Solids, total suspended",Total dissolved solids,5227,5227,mg/l,1,1.5,APHA 2540-C,https://www.nemi.gov/methods/method_summary/9818/,NA,"Lake Kennedy, center"
 NV-73449,457037,2018-12-19,NA,"Pyramid Lake Paiute Tribe of the Pyramid Lake Reservation, Nevada","Solids, total suspended",Total dissolved solids,5510.3,5510.3,mg/l,1,0.01,"NA NA",NA,NA,Pyramid Lake Station 96
 NV-129423,457037,2018-12-19,NA,"Pyramid Lake Paiute Tribe of the Pyramid Lake Reservation, Nevada","Solids, total suspended",Total dissolved solids,8381.56,8381.56,mg/l,1,0.01,"NA NA",NA,NA,Pyramid Lake Station 96
 NV-124116,457037,2018-12-19,NA,"Pyramid Lake Paiute Tribe of the Pyramid Lake Reservation, Nevada","Solids, total suspended",Total dissolved solids,5512.6,5512.6,mg/l,1,0.01,"NA NA",NA,NA,Pyramid Lake Station 96
@@ -2402,7 +2391,6 @@ FL-3586356,188104,1993-07-28,NA,Orange County Environmental Protection (Florida)
 FL-3511337,188104,1993-08-18,NA,Orange County Environmental Protection (Florida),"Aluminum, total",Aluminum,500000,500,mg/l,1000,100,USEPA 200.7(W),NA,NA,Lawne S
 FL-3952359,192592,1993-08-31,NA,Orange County Environmental Protection (Florida),"Aluminum, total",Aluminum,70000,70,mg/l,1000,100,USEPA 200.7(W),NA,NA,Waunatta
 FL-4063798,188104,1993-09-08,NA,Orange County Environmental Protection (Florida),"Aluminum, total",Aluminum,500000,500,mg/l,1000,100,USEPA 200.7(W),NA,NA,Lawne S
-SD-625677,353133,1993-09-16,NA,DENR,Chlorophyll a,"Chlorophyll a, corrected for pheophytin",-1332.29,-1332.290,ppb,1,NA,APHA 10200-H,NA,NA,SWLAZZZ2606
 FL-3893741,187094,1993-09-22,NA,Orange County Environmental Protection (Florida),"Aluminum, total",Aluminum,500000,500,mg/l,1000,100,USEPA 200.7(W),NA,NA,Killarney
 FL-3724126,189149,1993-11-01,NA,Orange County Environmental Protection (Florida),"Aluminum, total",Aluminum,500000,500,mg/l,1000,100,USEPA 200.7(W),NA,NA,Pearl (Howell Branch Basin)
 FL-3475481,192592,1993-11-01,NA,Orange County Environmental Protection (Florida),"Aluminum, total",Aluminum,50000,50,mg/l,1000,100,USEPA 200.7(W),NA,NA,Waunatta
@@ -2490,8 +2478,8 @@ FL-3774240,188104,1995-09-18,NA,Orange County Environmental Protection (Florida)
 FL-4072650,188104,1995-09-18,NA,Orange County Environmental Protection (Florida),"Mercury, total",Mercury,200000,0.2,mg/l,1000000,200,USEPA 200.7(W),NA,NA,Lawne S
 FL-3746417,188104,1995-09-18,NA,Orange County Environmental Protection (Florida),"Selenium, total",Selenium,5000,5,mg/l,1000,5,USEPA 200.7(W),NA,NA,Lawne S
 FL-3919199,190298,1995-09-18,NA,Orange County Environmental Protection (Florida),"Aluminum, total",Aluminum,1000000,1000,mg/l,1000,100,USEPA 200.7(W),NA,NA,Weston
-FL-3922119,190298,1995-09-18,NA,Orange County Environmental Protection (Florida),"Arsenic, total",Arsenic,5000,5,mg/l,1000,25,USEPA 200.7(W),NA,NA,Weston
-FL-3011757,190298,1995-09-18,NA,Orange County Environmental Protection (Florida),"Mercury, total",Mercury,200000,0.2,mg/l,1000000,200,USEPA 200.7(W),NA,NA,Weston
+FL-3365307,190298,1995-09-18,NA,Orange County Environmental Protection (Florida),"Arsenic, total",Arsenic,5000,5,mg/l,1000,25,USEPA 200.7(W),NA,NA,Weston
+FL-3523637,190298,1995-09-18,NA,Orange County Environmental Protection (Florida),"Mercury, total",Mercury,200000,0.2,mg/l,1000000,200,USEPA 200.7(W),NA,NA,Weston
 FL-4051845,190298,1995-09-18,NA,Orange County Environmental Protection (Florida),"Selenium, total",Selenium,5000,5,mg/l,1000,5,USEPA 200.7(W),NA,NA,Weston
 FL-3897316,184824,1995-09-18,NA,Orange County Environmental Protection (Florida),"Aluminum, total",Aluminum,1000000,1000,mg/l,1000,100,USEPA 200.7(W),NA,NA,Gandy
 FL-3658772,184824,1995-09-18,NA,Orange County Environmental Protection (Florida),"Arsenic, total",Arsenic,5000,5,mg/l,1000,25,USEPA 200.7(W),NA,NA,Gandy
@@ -3771,7 +3759,7 @@ FL-3894190,188121,1998-12-09,NA,Orange County Environmental Protection (Florida)
 FL-3602373,188121,1998-12-21,NA,Orange County Environmental Protection (Florida),"Aluminum, total",Aluminum,1000000,1000,mg/l,1000,100,USEPA 200.7(W),NA,NA,Orlando (aka. Wekiwa)
 FL-3343899,188121,1998-12-21,NA,Orange County Environmental Protection (Florida),"Arsenic, total",Arsenic,5000,5,mg/l,1000,25,USEPA 200.7(W),NA,NA,Orlando (aka. Wekiwa)
 FL-4074054,188121,1998-12-21,NA,Orange County Environmental Protection (Florida),"Mercury, total",Mercury,200000,0.2,mg/l,1000000,200,USEPA 200.7(W),NA,NA,Orlando (aka. Wekiwa)
-SD-488659,346238,1999-04-27,NA,DENR,"Selenium, total",Selenium,730,730,ug/l,1,NA,USEPA 200.8(W),https://www.nemi.gov/methods/method_summary/4665/,NA,FREEMANL01
+SD-507924,346238,1999-04-27,NA,DENR,"Selenium, total",Selenium,682,682,ug/l,1,NA,USEPA 200.8(W),https://www.nemi.gov/methods/method_summary/4665/,NA,FREEMANL01
 SD-515188,346238,1999-07-27,NA,DENR,"Selenium, total",Selenium,756,756,ug/l,1,NA,USEPA 200.8(W),https://www.nemi.gov/methods/method_summary/4665/,CATTAILS HOMOGENIZED ABOVE THE SURFACE AND ALSO THE ROOT.,FREEMANL0C
 SD-525747,346238,1999-09-20,NA,DENR,"Mercury, total",Mercury,111000,111,ug/l,1000,NA,USEPA 200.8(W),https://www.nemi.gov/methods/method_summary/4665/,NA,FREEMANL10
 CO-736126,361058,2000-07-12,NA,Chatfield Reservoir (Colorado),"Mercury, total dissolved",Mercury,152000,0.152,mg/l,1000000,NA,USEPA 245.1,NA,NA,Chatfield In-Reservoir Near Dam - Top
@@ -3793,7 +3781,7 @@ SD-627359,346238,2005-06-14,NA,DENR,"Selenium, total",Selenium,1110,1110,ug/l,1,
 FL-2722837,223042,2005-12-14,NA,"McGlynn Laboratories, Inc (Florida)","Color, true",True color,2334.36945,2334.36945,PCU,1,9.2,USEPA 110.2,NA,NA,Center of SE part of Lake
 IA-145668,5421,2006-03-28,U.S. Geological Survey-Water Resources Discipline,USGS Iowa Water Science Center,"Nitrogen, nitrite (NO2) + nitrate (NO3)",Inorganic nitrogen (nitrate and nitrite),13000,13.0,mg/l as N,1000,60,USGS CL048,"USGS OF 93-125, p 157",NA,"Little Storm Lake No 3 at Storm Lake, IA"
 FL-626712,221678,2006-05-02,U.S. Geological Survey-Water Resources Discipline,USGS Georgia Water Science Center,"Nitrogen, NH4",Ammonia and ammonium,17900,17.9,mg/l as N,1000,40,USGS CL037,"USGS OF 93-125, p 125","L-1280076 Received May 06,2006","SPC PRAIRIE POND NR PANACEA, FL"
-SD-488617,346238,2006-07-14,NA,DENR,"Selenium, total",Selenium,1160,1160,ug/l,1,0.5,USEPA 200.8,https://www.nemi.gov/methods/method_summary/4665/,NA,SWLAZZZ3907
+SD-489518,346238,2006-07-14,NA,DENR,"Selenium, total",Selenium,1010,1010,ug/l,1,0.5,USEPA 200.8,https://www.nemi.gov/methods/method_summary/4665/,NA,SWLAZZZ3907
 FL-1145104,221678,2006-08-01,U.S. Geological Survey-Water Resources Discipline,USGS Georgia Water Science Center,"Nitrogen, NH4",Ammonia and ammonium,16100.000000000002,16.1,mg/l as N,1000,10,USGS 00048,NA,"L-2190119 Received August 05,2006","SPC PRAIRIE POND NR PANACEA, FL"
 FL-1369736,223042,2006-11-06,21FLLEON,Leon County Public Works (Florida),"Solids, total suspended",Total dissolved solids,8300,8300,mg/l,1,5,USEPA 160.1,https://www.nemi.gov/methods/method_summary/5212/,NA,Lake Jackson South
 FL-2330723,223042,2006-11-06,NA,Leon County Public Works (Florida),"Solids, total suspended",Total dissolved solids,8300,8300,mg/l,1,5,USEPA 160.1,NA,NA,Lake Jackson South
@@ -3816,7 +3804,6 @@ ND-491814,339907,2008-09-03,NA,North Dakota Department Of Environmental Quality,
 ND-424064,339907,2008-09-03,NA,North Dakota Department Of Environmental Quality,"Sulfate, dissolved",Sulfate,15100,15100,mg/l,1,NA,APHA 4500-SO4(B),NA,NA,Long Lake
 ND-668212,339907,2008-09-18,NA,North Dakota Department Of Environmental Quality,"Sulfate, dissolved",Sulfate,17900,17900,mg/l,1,NA,APHA 4500-SO4(B),NA,NA,Long Lake
 ND-418785,339907,2008-10-02,NA,North Dakota Department Of Environmental Quality,"Sulfate, dissolved",Sulfate,23100,23100,mg/l,1,NA,APHA 4500-SO4(B),NA,NA,Long Lake
-SD-539333,342597,2009-08-31,NA,DENR,Chlorophyll a,Chlorophyll a,24856.03,24856.030,ppb,1,NA,APHA 10200-H,NA,NA,CITMONZ1608AA
 SD-241821,342597,2009-08-31,NA,DENR,"Nitrogen, total Kjeldahl",Kjeldahl nitrogen,116000,116,mg/l,1000,NA,USEPA 351.2,https://www.nemi.gov/methods/method_summary/9626/,NO SUBMITTER FORM RECEIVED WITH SAMPLE,CITMONZ1608AA
 AR-57375,293444,2010-10-20,NA,Arkansas Department of Environmental Quality,"Silica, dissolved",Silica,9860,9860,mg/l,1,NA,USEPA 200.8,https://www.nemi.gov/methods/method_summary/4665/,NA,Cox Creek Lake below AG&F Boat Ramp.
 AR-21113,50675,2010-11-08,NA,Arkansas Department of Environmental Quality,"Silica, dissolved",Silica,3570,3570,mg/l,1,NA,USEPA 200.8,https://www.nemi.gov/methods/method_summary/4665/,NA,Lake Austelle near Dam

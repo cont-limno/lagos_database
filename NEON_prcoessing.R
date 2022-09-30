@@ -85,68 +85,68 @@ secchi_raw<-secchi_raw[, c('source_activityid',"sampledate","source_samplesiteid
 secchi_raw$source_sampletype<-c("GRAB")
 
 
-#depth data
-profile_raw_temp<-read.csv("./NEON/NEON_depth-profiles/stackedFiles/dep_profileData.csv")
-names(profile_raw_temp)[names(profile_raw_temp) == "uid"] <- "source_activityid"
-names(profile_raw_temp)[names(profile_raw_temp) == "date"] <- "sampledate"
-names(profile_raw_temp)[names(profile_raw_temp) == "eventID"] <- "source_samplesiteid"
-names(profile_raw_temp)[names(profile_raw_temp) == "waterTemp"] <- "source_value"
-names(profile_raw_temp)[names(profile_raw_temp) == "sampleDepth"] <- "source_sampledepth"
-names(profile_raw_temp)[names(profile_raw_temp) == "dataQF"] <- "flag1"
-profile_raw_temp$source_parameter<-c("waterTemp")
-profile_raw_temp$source_unit<-c("celsius")
-profile_raw_temp$flag2<-c("")
-profile_raw_temp$flag3<-c("")
-
-profile_raw_temp<-profile_raw_temp[, c('source_activityid',"sampledate","source_samplesiteid",
-                                       "source_value","source_sampledepth","flag1","source_parameter",
-                                       "source_unit","flag2","flag3")]
-
-profile_raw_cond<-read.csv("./NEON/NEON_depth-profiles/stackedFiles/dep_profileData.csv")
-names(profile_raw_cond)[names(profile_raw_cond) == "uid"] <- "source_activityid"
-names(profile_raw_cond)[names(profile_raw_cond) == "date"] <- "sampledate"
-names(profile_raw_cond)[names(profile_raw_cond) == "eventID"] <- "source_samplesiteid"
-names(profile_raw_cond)[names(profile_raw_cond) == "specificConductance"] <- "source_value"
-names(profile_raw_cond)[names(profile_raw_cond) == "sampleDepth"] <- "source_sampledepth"
-names(profile_raw_cond)[names(profile_raw_cond) == "dataQF"] <- "flag1"
-profile_raw_cond$source_parameter<-c("specificConductance")
-profile_raw_cond$source_unit<-c("microsiemensPerCentimeter")
-profile_raw_cond$flag2<-c("")
-profile_raw_cond$flag3<-c("")
-
-profile_raw_cond<-profile_raw_cond[, c('source_activityid',"sampledate","source_samplesiteid",
-                                       "source_value","source_sampledepth","flag1","source_parameter",
-                                       "source_unit","flag2","flag3")]
-
-profile_raw_o2<-read.csv("./NEON/NEON_depth-profiles/stackedFiles/dep_profileData.csv")
-names(profile_raw_o2)[names(profile_raw_o2) == "uid"] <- "source_activityid"
-names(profile_raw_o2)[names(profile_raw_o2) == "date"] <- "sampledate"
-names(profile_raw_o2)[names(profile_raw_o2) == "eventID"] <- "source_samplesiteid"
-names(profile_raw_o2)[names(profile_raw_o2) == "dissolvedOxygen"] <- "source_value"
-names(profile_raw_o2)[names(profile_raw_o2) == "sampleDepth"] <- "source_sampledepth"
-names(profile_raw_o2)[names(profile_raw_o2) == "dataQF"] <- "flag1"
-profile_raw_o2$source_parameter<-c("dissolvedOxygen")
-profile_raw_o2$source_unit<-c("milligramsPerLiter")
-profile_raw_o2$flag2<-c("")
-profile_raw_o2$flag3<-c("")
-
-profile_raw_o2<-profile_raw_o2[, c('source_activityid',"sampledate","source_samplesiteid",
-                                       "source_value","source_sampledepth","flag1","source_parameter",
-                                       "source_unit","flag2","flag3")]
-
-profile_rbind<-rbind(profile_raw_temp,profile_raw_cond,profile_raw_o2)
-profile_rbind$source_sampletype<-c("DEPTH")
-profile_rbind$source_labmethodname<-c("")
-profile_rbind$source_detectionlimit_value<-c("")
+# #depth data
+# profile_raw_temp<-read.csv("./NEON/NEON_depth-profiles/stackedFiles/dep_profileData.csv")
+# names(profile_raw_temp)[names(profile_raw_temp) == "uid"] <- "source_activityid"
+# names(profile_raw_temp)[names(profile_raw_temp) == "date"] <- "sampledate"
+# names(profile_raw_temp)[names(profile_raw_temp) == "eventID"] <- "source_samplesiteid"
+# names(profile_raw_temp)[names(profile_raw_temp) == "waterTemp"] <- "source_value"
+# names(profile_raw_temp)[names(profile_raw_temp) == "sampleDepth"] <- "source_sampledepth"
+# names(profile_raw_temp)[names(profile_raw_temp) == "dataQF"] <- "flag1"
+# profile_raw_temp$source_parameter<-c("waterTemp")
+# profile_raw_temp$source_unit<-c("celsius")
+# profile_raw_temp$flag2<-c("")
+# profile_raw_temp$flag3<-c("")
+# 
+# profile_raw_temp<-profile_raw_temp[, c('source_activityid',"sampledate","source_samplesiteid",
+#                                        "source_value","source_sampledepth","flag1","source_parameter",
+#                                        "source_unit","flag2","flag3")]
+# 
+# profile_raw_cond<-read.csv("./NEON/NEON_depth-profiles/stackedFiles/dep_profileData.csv")
+# names(profile_raw_cond)[names(profile_raw_cond) == "uid"] <- "source_activityid"
+# names(profile_raw_cond)[names(profile_raw_cond) == "date"] <- "sampledate"
+# names(profile_raw_cond)[names(profile_raw_cond) == "eventID"] <- "source_samplesiteid"
+# names(profile_raw_cond)[names(profile_raw_cond) == "specificConductance"] <- "source_value"
+# names(profile_raw_cond)[names(profile_raw_cond) == "sampleDepth"] <- "source_sampledepth"
+# names(profile_raw_cond)[names(profile_raw_cond) == "dataQF"] <- "flag1"
+# profile_raw_cond$source_parameter<-c("specificConductance")
+# profile_raw_cond$source_unit<-c("microsiemensPerCentimeter")
+# profile_raw_cond$flag2<-c("")
+# profile_raw_cond$flag3<-c("")
+# 
+# profile_raw_cond<-profile_raw_cond[, c('source_activityid',"sampledate","source_samplesiteid",
+#                                        "source_value","source_sampledepth","flag1","source_parameter",
+#                                        "source_unit","flag2","flag3")]
+# 
+# profile_raw_o2<-read.csv("./NEON/NEON_depth-profiles/stackedFiles/dep_profileData.csv")
+# names(profile_raw_o2)[names(profile_raw_o2) == "uid"] <- "source_activityid"
+# names(profile_raw_o2)[names(profile_raw_o2) == "date"] <- "sampledate"
+# names(profile_raw_o2)[names(profile_raw_o2) == "eventID"] <- "source_samplesiteid"
+# names(profile_raw_o2)[names(profile_raw_o2) == "dissolvedOxygen"] <- "source_value"
+# names(profile_raw_o2)[names(profile_raw_o2) == "sampleDepth"] <- "source_sampledepth"
+# names(profile_raw_o2)[names(profile_raw_o2) == "dataQF"] <- "flag1"
+# profile_raw_o2$source_parameter<-c("dissolvedOxygen")
+# profile_raw_o2$source_unit<-c("milligramsPerLiter")
+# profile_raw_o2$flag2<-c("")
+# profile_raw_o2$flag3<-c("")
+# 
+# profile_raw_o2<-profile_raw_o2[, c('source_activityid',"sampledate","source_samplesiteid",
+#                                        "source_value","source_sampledepth","flag1","source_parameter",
+#                                        "source_unit","flag2","flag3")]
+# 
+# profile_rbind<-rbind(profile_raw_temp,profile_raw_cond,profile_raw_o2)
+# profile_rbind$source_sampletype<-c("DEPTH")
+# profile_rbind$source_labmethodname<-c("")
+# profile_rbind$source_detectionlimit_value<-c("")
 #################
 
 #Bind all data
 
-all_data<-rbind(profile_rbind,chem_data_raw1,secchi_raw,chla_raw1)
+all_data<-rbind(chem_data_raw1,secchi_raw,chla_raw1)
 
 ##adding columns
 
-all_data$source_sampleposition<-ifelse(is.na(all_data$source_sampledepth),"UNKNOWN","SPECIFIED")
+# all_data$source_sampleposition<-ifelse(is.na(all_data$source_sampledepth),"UNKNOWN","SPECIFIED")
 all_data$obs_id <- paste("NEON",seq.int(nrow(all_data)),sep='-')
 all_data$lagoslakeid <- c('')
 all_data$source_comments <- paste(all_data$flag1,all_data$flag2,all_data$flag3,sep='$')
@@ -198,6 +198,41 @@ final_check<- merge_data2[, c('valueid','obs_id','lagoslakeid', 'sampledate','la
                           'source_labmethoddescription', 'source_labmethodid', 'source_labmethodname', 'source_parameter',
                           'source_sampledepth', 'source_sampleposition', 'source_samplesiteid', 'source_sampletype',
                           'source_unit','source_value',  'source_methodqualifier')]
+
+
+select(sample_id,
+       lagoslakeid,
+       sample_date,
+       parameter_id,
+       parameter_name,
+       parameter_value,
+       parameter_detectionlimit_value,
+       sample_depth_m,
+       sample_depth_flag,
+       source_id,
+       source_name,
+       source_activityorg_name,
+       source_sample_siteid,
+       source_activityid,
+       source_comments,
+       source_parameter_name,
+       source_parameter_value,
+       source_parameter_unit,
+       source_value_qualifiercode,
+       parameter_conversionfactor,
+       source_detectionlimit_value,
+       source_detectionlimit_unit,
+       parameter_detectionlimit_conversionfactor,
+       source_detectionlimit_condition,
+       source_detectionlimit_type,
+       source_labmethod_usgspcode,
+       source_labmethod_description,
+       source_labmethod_id,
+       source_labmethod_name,
+       source_labmethod_qualifier,
+       source_sampletype
+)
+
 
 write.csv(final_check,"Final_NEON_data.csv")
 
