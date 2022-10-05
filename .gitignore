@@ -11,3 +11,4 @@ secchi_chla_data.csv
 .RDataTmp
 
 graphics/jpg/
+*.csv
