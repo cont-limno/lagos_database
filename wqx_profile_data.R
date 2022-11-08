@@ -89,8 +89,12 @@ ratio <- function(var_less,var_more){
 data_dir <- "~/Lottig Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/"
 #list files
 dat <- read_rds(file = paste0(data_dir,"limnous.rds"))
-# temp <- read_rds("/Users/noahlottig/Lottig Dropbox/Noah Lottig/CL_LAGOSUS_exports/LAGOSUS_LIMNO/US_NEW/WQX_Final.rds")
-
+temperature_data <- read_rds(file = paste0(data_dir,"temperature_data.rds"))
+temp_names <- names(temperature_data)
+dat <- dat %>% select(temp_names)
+dat <- rbind(dat,temperature_data)
+rm(temperature_data)
+gc()
 
 #program specific changes
 temp <- dat %>% filter(OrganizationIdentifier=="SDWRAP")
@@ -183,15 +187,105 @@ dat <- dat %>% filter(CharacteristicName !="Depth")
 rm(temp)
 gc()
 
+dat <- dat %>% filter(!is.na(source_sampledepth))
+gc()
 #extract profile data
 unique(dat$CharacteristicName)
 
-meter_vars <-c("Turbidity",
-               "pH, field or lab",
+meter_vars <-c("pH, field or lab",
                "Oxygen, dissolved",
                "Conductivity",
-               "pH",
-               "Salinity",
-               "Turbidity",
-               "Turbidity Field",
-               "Depth")
+               "Temperature, water",
+               "Chlorophyll a",
+               "Temperature, water, deg F")
+
+dat <- dat %>% filter(CharacteristicName %in% meter_vars)
+dat <- dat %>% 
+    mutate(CharacteristicName = ifelse(CharacteristicName == "Temperature, water, deg F","Temperature, water",CharacteristicName))
+dat <- dat %>% 
+    select(OrganizationIdentifier,
+           OrganizationFormalName,
+           ActivityIdentifier,
+           sampledate,
+           ActivityStartTime.Time,
+           source_sampledepth,
+           ProjectIdentifier,
+           ActivityConductingOrganizationText,
+           MonitoringLocationIdentifier,
+           ActivityCommentText,
+           CharacteristicName,
+           ResultMeasureValue,
+           ResultCommentText,
+           wqp_monitoringlocationname,
+           lagoslakeid)
+gc()
+unique(dat$CharacteristicName)
+
+dat <- dat %>% 
+    mutate(CharacteristicName = ifelse(CharacteristicName == "Temperature, water","wtemp",CharacteristicName),
+           CharacteristicName = ifelse(CharacteristicName == "Chlorophyll a","chla",CharacteristicName),
+           CharacteristicName = ifelse(CharacteristicName == "Conductivity","cond",CharacteristicName),
+           CharacteristicName = ifelse(CharacteristicName == "Oxygen, dissolved","oxygen",CharacteristicName),
+           CharacteristicName = ifelse(CharacteristicName == "pH, field or lab","ph",CharacteristicName))
+unique(dat$CharacteristicName)
+
+dat <- dat %>% distinct()
+
+temp <- dat %>% group_by(OrganizationFormalName,sampledate,ActivityStartTime.Time,source_sampledepth,MonitoringLocationIdentifier,CharacteristicName) %>% 
+    mutate(n=n()) %>% 
+    filter(n==1) %>% 
+    ungroup()
+
+temp <- temp %>% arrange(OrganizationFormalName,sampledate,ActivityStartTime.Time,source_sampledepth,MonitoringLocationIdentifier,CharacteristicName)
+
+temp <- temp %>% select(-ResultCommentText,-ActivityCommentText,-ActivityIdentifier) %>% 
+    pivot_wider(names_from = CharacteristicName,values_from = ResultMeasureValue)
+
+temp <- temp %>% group_by(OrganizationFormalName,sampledate,MonitoringLocationIdentifier) %>%
+    mutate(n= length(unique(source_sampledepth)))  %>% 
+    filter(n>1) %>% 
+    select(-n)
+
+temp <- temp %>% group_by(OrganizationFormalName,sampledate,MonitoringLocationIdentifier,source_sampledepth,ActivityStartTime.Time) %>%
+    mutate(obs = sum(is.na(c(wtemp,oxygen)))) %>% 
+        filter(obs!=2)
+    
+
+mutate(m_temp = mean(wtemp,na.rm=TRUE),
+           m_do = mean(oxygen,na.rm=TRUE)) %>% 
+    ungroup() %>% 
+    drop_na(m_temp) %>% drop_na(m_do) %>% 
+    select(-m_do,-m_temp)
+
+temp <- temp %>% select(lagoslakeid,
+                        ActivityIdentifier,
+                        sampledate,
+                        ActivityStartTime.Time,
+                        source_sampledepth,
+                        wtemp,
+                        oxygen,
+                        cond,
+                        ph,
+                        chla,
+                        turbidity,
+                        salinity,
+                        MonitoringLocationIdentifier,
+                        OrganizationIdentifier,
+                        OrganizationFormalName,
+                        ActivityConductingOrganizationText
+                        ) %>% 
+    arrange(lagoslakeid,sampledate,source_sampledepth,ActivityStartTime.Time)
+
+temp <- temp %>% group_by(MonitoringLocationIdentifier,OrganizationIdentifier, sampledate) %>% 
+    mutate(n= length(unique(source_sampledepth))) %>% 
+    filter(n>1) %>% 
+    select(-n)
+
+temp <- temp %>% arrange(lagoslakeid,
+                         MonitoringLocationIdentifier,
+                         sampledate,
+                         source_sampledepth)
+
+temp <- temp %>% group_by(MonitoringLocationIdentifier, OrganizationIdentifier,sampledate) %>% 
+    mutate(depths = length(unique(source_sampledepth))) %>% 
+    ungroup()
