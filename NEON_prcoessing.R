@@ -15,7 +15,7 @@ chem_data_raw<-read.csv("./NEON_chemandmethods_data.csv")
 
 
 names(chem_data_raw)[names(chem_data_raw) == "uid"] <- "source_activityid"
-names(chem_data_raw)[names(chem_data_raw) == "sampleID"] <- "source_samplesiteid"
+names(chem_data_raw)[names(chem_data_raw) == "namedLocation"] <- "source_samplesiteid"
 names(chem_data_raw)[names(chem_data_raw) == "collectDate"] <- "sampledate"
 names(chem_data_raw)[names(chem_data_raw) == "analyte"] <- "source_parameter"
 names(chem_data_raw)[names(chem_data_raw) == "analyteUnits"] <- "source_unit"
@@ -40,7 +40,7 @@ chem_data_raw1$source_sampletype<-c("INFERRED")
 chla_raw<-read.csv("./NEON/NEON_chem-peri-ses-phyto/stackedFiles/alg_algaeExternalLabDataPerSample.csv")
 
 names(chla_raw)[names(chla_raw) == "uid"] <- "source_activityid"
-names(chla_raw)[names(chla_raw) == "sampleID"] <- "source_samplesiteid"
+names(chla_raw)[names(chla_raw) == "namedLocation"] <- "source_samplesiteid"
 names(chla_raw)[names(chla_raw) == "collectDate"] <- "sampledate"
 names(chla_raw)[names(chla_raw) == "analyte"] <- "source_parameter"
 names(chla_raw)[names(chla_raw) == "plantAlgaeLabUnits"] <- "source_unit"
@@ -68,7 +68,7 @@ chla_raw1$source_sampletype<-c("INFERRED")
 secchi_raw<-read.csv("./NEON/NEON_depth-secchi/stackedFiles/dep_secchi.csv")
 names(secchi_raw)[names(secchi_raw) == "uid"] <- "source_activityid"
 names(secchi_raw)[names(secchi_raw) == "date"] <- "sampledate"
-names(secchi_raw)[names(secchi_raw) == "eventID"] <- "source_samplesiteid"
+names(secchi_raw)[names(secchi_raw) == "namedLocation"] <- "source_samplesiteid"
 names(secchi_raw)[names(secchi_raw) == "secchiMeanDepth"] <- "source_value"
 names(secchi_raw)[names(secchi_raw) == "remarks"] <- "flag1"
 names(secchi_raw)[names(secchi_raw) == "dataQF"] <- "flag2"
@@ -318,6 +318,8 @@ final_check$source_labmethod_description<-NA
 final_check$source_labmethod_name<-NA
 
 final_check$source_detectionlimit_value<-ifelse(final_check$source_detectionlimit_value == "", NA, final_check$source_detectionlimit_value)
+temp <- final_check %>% filter(grepl('buoy',source_sample_siteid)) 
+temp <- temp %>% mutate(source_sample_siteid = substr(source_sample_siteid,1,4))
 
 # nla<-read.csv("~/GitHub/lagos_database/nla_final.csv")
 # names(nla)
