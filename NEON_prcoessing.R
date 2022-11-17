@@ -320,6 +320,7 @@ final_check$source_labmethod_name<-NA
 final_check$source_detectionlimit_value<-ifelse(final_check$source_detectionlimit_value == "", NA, final_check$source_detectionlimit_value)
 temp <- final_check %>% filter(grepl('buoy',source_sample_siteid)) 
 temp <- temp %>% mutate(source_sample_siteid = substr(source_sample_siteid,1,4))
+final_check <- temp
 
 # nla<-read.csv("~/GitHub/lagos_database/nla_final.csv")
 # names(nla)
