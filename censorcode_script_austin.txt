@@ -1,0 +1,26 @@
+
+-- reset censorcode column before assigning 
+update limno.lagosvalues_new set "censorcode_flag_lagos" = NULL;
+
+
+update limno.lagosvalues_new set "censorcode_flag_lagos" = 'NC1' where (detectionlimit_legacy is not null) and (datavalue > detectionlimit_legacy) and (qualifier_legacy is NULL) and (qualifier_legacy_full_cleaned = '');
+
+update limno.lagosvalues_new set "censorcode_flag_lagos" = 'NC2' where (detectionlimit_legacy is not null) and (datavalue > detectionlimit_legacy) and ((qualifier_legacy is not NULL) or (qualifier_legacy_full_cleaned <> ''));
+
+update limno.lagosvalues_new set "censorcode_flag_lagos" = 'NC3' where (detectionlimit_legacy is null) and ((qualifier_legacy is not NULL) or (qualifier_legacy_full_cleaned <> ''));
+
+update limno.lagosvalues_new set "censorcode_flag_lagos" = 'NC4' where (detectionlimit_legacy is null) and (qualifier_legacy is NULL) and (qualifier_legacy_full_cleaned = '');
+
+
+update limno.lagosvalues_new set "censorcode_flag_lagos" = 'LE1' where (detectionlimit_legacy is not null) and (datavalue <= detectionlimit_legacy) and ((qualifier_legacy is not NULL) or (qualifier_legacy_full_cleaned <> ''));
+
+update limno.lagosvalues_new set "censorcode_flag_lagos" = 'LE2' where (detectionlimit_legacy is not null) and (datavalue <= detectionlimit_legacy) and (qualifier_legacy is NULL) and (qualifier_legacy_full_cleaned = '');
+
+update limno.lagosvalues_new set "censorcode_flag_lagos" = 'LE3' where (detectionlimit_legacy is null) and (qualifier_detect_info = '1') and ((qualifier_legacy is not null) or (qualifier_legacy_full_cleaned <> '')); 
+
+update limno.lagosvalues_new set "censorcode_flag_lagos" = 'LE4' where (detectionlimit_legacy is null) and (qualifier_detect_info = '1') and ((qualifier_legacy is null) and (qualifier_legacy_full_cleaned = '')); 
+
+
+
+
+select * from limno.lagosvalues_new where censorcode_flag_lagos is null -- should return no records

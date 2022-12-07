@@ -1,0 +1,72 @@
+library(tidyverse)
+library(dplyr)
+library(DBI)
+
+install.packages("RODBC")
+library(RODBC)
+
+
+install.packages('RPostgreSQL')
+library(RPostgreSQL)
+require('RPostgreSQL')
+
+#connect to the server where the data is stored
+drv <- dbDriver("[your driver's name]")
+con <- dbConnect(drv, dbname = "[your database's name]",
+                 host = "[your server's name]", port = "[your port number]",
+                 user = "[your username]", password = "[your password]")
+
+
+## Import required packages
+library(tidytext)
+library(tidyverse)
+library(splitstackshape)
+library(stringr)
+
+## grab full dataset from posrgres and arrange the table by valueid to ensure that qualifier information can be matched up later
+lagos_new <- dbGetQuery(con,'select * from limno.lagosvalues_new', stringsAsFactors = FALSE)
+lagos_new <- lagos_new %>% arrange(valueid_lagos)
+
+## Split qualifiers into multiple columns using the $ separator
+qualsep <- cSplit(lagos_new, "qualifier_legacy_full", sep="$", type.convert=FALSE)
+
+
+qualifier_search_table <- qualsep %>% select(valueid_lagos,qualifier_legacy_full_1, qualifier_legacy_full_2,qualifier_legacy_full_3,
+                                            qualifier_legacy_full_4,qualifier_legacy_full_5,qualifier_legacy_full_6)
+
+#identify most common phrases and codes that indicate reporting of below detection limit values
+dt_flags <- c('<',"bdl","BDL","U","flagged for lower reporting limit","Not Detected","below reporting limit")
+
+
+# if any of the qualifier sections match one of the values in dt_flags, mark a 1 in the qualifier tally column
+qualifier_search_table$q_1 <- NA
+qualifier_search_table$q_1 <- ifelse(qualifier_search_table$qualifier_legacy_full_1 %in% dt_flags,1,0)
+
+qualifier_search_table$q_2 <- NA
+qualifier_search_table$q_2 <- ifelse(qualifier_search_table$qualifier_legacy_full_2 %in% dt_flags,1,0)
+
+qualifier_search_table$q_3 <- NA
+qualifier_search_table$q_3 <- ifelse(qualifier_search_table$qualifier_legacy_full_3 %in% dt_flags,1,0)
+
+qualifier_search_table$q_4 <- NA
+qualifier_search_table$q_4 <- ifelse(qualifier_search_table$qualifier_legacy_full_4 %in% dt_flags,1,0)
+
+qualifier_search_table$q_5 <- NA
+qualifier_search_table$q_5 <- ifelse(qualifier_search_table$qualifier_legacy_full_5 %in% dt_flags,1,0)
+
+qualifier_search_table$q_6 <- NA
+qualifier_search_table$q_6 <- ifelse(qualifier_search_table$qualifier_legacy_full_6 %in% dt_flags,1,0)
+
+
+#add up all qualifier tally columns.
+qualifier_table_final <- qualifier_search_table %>% group_by(valueid_lagos) %>% 
+  mutate(qual_add = sum(q_1,q_2,q_3,q_4,q_5,q_6)) %>% 
+  ungroup() %>% 
+  filter(qual_add != 0) %>% 
+  mutate(qualifier_indicator = 1) %>% 
+  select(valueid_lagos, qualifier_indicator)
+
+
+# add table to postgres and join onto lagosvalues table using 'qualifier_detect_update' query in the database
+dbWriteTable(con, c("limno","comment_qual_bdl_table"), 
+             value = qualifier_table_final, append = FALSE, row.names = FALSE)
