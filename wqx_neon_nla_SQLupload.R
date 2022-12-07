@@ -296,7 +296,8 @@ wqx<-temp1 %>% filter(
 #Data may have same: source_sample_siteid but a diff sample_id – therefore we distinct on source_sample_id to get only unique values
 
 neon<-neon %>% distinct(source_sample_siteid, .keep_all = TRUE)
-nla<-nla %>% distinct(source_sample_siteid, .keep_all = TRUE)
+#nla<-nla %>% distinct(source_sample_siteid, .keep_all = TRUE)
+nla<-nla %>% select(lagoslakeid, source_sample_siteid) %>% distinct()
 wqx<-wqx %>% distinct(source_sample_siteid, .keep_all = TRUE)
 
 
@@ -309,32 +310,159 @@ nla_coords<-read.csv("~/GitHub/lagos_database/NLA/NLA_LakeLink_FINAL_26SE22.csv"
 
 #join gps coords to datasets
 
-temp<-left_join(nla, nla_coords, by = "lagoslakeid") #results in 5995 obs
-temp<-temp %>% distinct(source_sample_siteid, .keep_all = TRUE) #3209 obs - same as in nla dataset
+#temp<-left_join(nla, nla_coords, by = "lagoslakeid") #results in 5995 obs
+#temp<-temp %>% distinct(source_sample_siteid, .keep_all = TRUE) #3209 obs - same as in nla dataset - the number we want
 
-temp1<-nla_coords %>% rename(source_sample_siteid = SITE_ID)
-
-
-
-temp2<-temp1 %>% 
-    select(source_sample_siteid, INDEX_LAT, INDEX_LON) %>% 
-    left_join(nla, temp1, by = "source_sample_siteid") %>% 
-    distinct(source_sample_siteid, .keep_all = TRUE) #3377 obs - wrong
+temp1<-nla_coords %>% rename(source_sample_siteid = SITE_ID) %>%     
+    select(source_sample_siteid, INDEX_LAT, INDEX_LON) %>% distinct() %>% group_by(source_sample_siteid) %>% 
+    mutate(INDEX_LAT = mean(INDEX_LAT), INDEX_LON = mean(INDEX_LON)) %>% ungroup() %>% distinct()
 
 
-temp2<-temp1 %>% 
-    select(source_sample_siteid, INDEX_LAT, INDEX_LON) %>% 
-    right_join(nla, temp1, by = "source_sample_siteid") %>% 
-    distinct(source_sample_siteid, .keep_all = TRUE) #3209 obs - right
+temp2<-nla %>% left_join(temp1)
 
-temp2<-temp1 %>% 
-    select(source_sample_siteid, INDEX_LAT, INDEX_LON) %>% 
-    inner_join(nla, temp1, by = "source_sample_siteid") #3486 obs
+#works - now rejoin with nla
+nla<-nla %>% left_join(temp1)
 
 
 
+#JOIN GPS COORDS WITH WQX DATA
+
+#reduce datatable to vars we want from wqx_coords
+
+wqx_coords<- wqx_coords %>% select(MonitoringLocationIdentifier, LatitudeMeasure, LongitudeMeasure) %>% 
+    rename(source_sample_siteid = MonitoringLocationIdentifier)
+
+temp1<-wqx_coords %>%  select(source_sample_siteid, LatitudeMeasure, LongitudeMeasure) %>% distinct() %>% group_by(source_sample_siteid) %>% 
+    mutate(LatitudeMeasure = mean(LatitudeMeasure), LongitudeMeasure = mean(LongitudeMeasure)) %>% ungroup() %>% distinct()
 
 
-temp2<-left_join(nla, temp1, by = "source_sample_siteid")#3486 obs
-temp2<-temp2 %>% distinct(source_sample_siteid, .keep_all = TRUE) #3209 obs - same as in nla dataset
+temp2<-wqx %>% left_join(temp1) %>% select(lagoslakeid, source_sample_siteid, LatitudeMeasure, LongitudeMeasure)
+
+#works so join with wqx dataset
+
+wqx<-wqx %>% left_join(temp1 )%>% select(lagoslakeid, source_sample_siteid, LatitudeMeasure, LongitudeMeasure)
+
+
+# we need to assign lat lon values to neon manually
+#first keep only first part of name in source_sample_siteid
+#get lat lon for each of the source sample site ids from the internet
+#manually assign them
+
+# temp<-neon
+# 
+# 
+# temp$source_sample_siteid<- str_replace(temp$source_sample_siteid,"\\..*","")
+# unique(temp$source_sample_siteid)
+# 
+# 
+# temp<-temp %>%
+#     mutate(Lat = case_when(source_sample_siteid == "BARC" ~ '29.675982',
+#                            source_sample_siteid == "TOOK" ~ '68.630692',
+#                            source_sample_siteid == "CRAM" ~ '46.209675',
+#                            source_sample_siteid == "SUGG" ~ '29.68778',
+#                            source_sample_siteid == "PRLA" ~ '47.15909',
+#                            source_sample_siteid == "LIRO" ~ '45.998269',
+#                            TRUE ~ 'NA' ))
+# 
+# 
+# temp<-temp %>%
+#     mutate(Lon = case_when(source_sample_siteid == "BARC" ~ '-82.008414',
+#                            source_sample_siteid == "TOOK" ~ '-149.61064',
+#                            source_sample_siteid == "CRAM" ~ '-89.473688',
+#                            source_sample_siteid == "SUGG" ~ '-82.017745',
+#                            source_sample_siteid == "PRLA" ~ '-99.11388',
+#                            source_sample_siteid == "LIRO" ~ '-89.704767',
+#                            TRUE ~ 'NA' ))
+
+# 
+# neon$source_sample_siteid<- str_replace(neon$source_sample_siteid,"\\..*","")
+# unique(neon$source_sample_siteid)
+# 
+# 
+# neon<-neon %>%
+#     mutate(Lat = case_when(source_sample_siteid == "BARC" ~ '29.675982',
+#                            source_sample_siteid == "TOOK" ~ '68.630692',
+#                            source_sample_siteid == "CRAM" ~ '46.209675',
+#                            source_sample_siteid == "SUGG" ~ '29.68778',
+#                            source_sample_siteid == "PRLA" ~ '47.15909',
+#                            source_sample_siteid == "LIRO" ~ '45.998269',
+#                            TRUE ~ 'NA' ))
+# 
+# 
+# neon<-neon %>%
+#     mutate(Lon = case_when(source_sample_siteid == "BARC" ~ '-82.008414',
+#                            source_sample_siteid == "TOOK" ~ '-149.61064',
+#                            source_sample_siteid == "CRAM" ~ '-89.473688',
+#                            source_sample_siteid == "SUGG" ~ '-82.017745',
+#                            source_sample_siteid == "PRLA" ~ '-99.11388',
+#                            source_sample_siteid == "LIRO" ~ '-89.704767',
+#                            TRUE ~ 'NA' ))
+# 
+# #select only columns we want
+# 
+# neon<-neon %>% select(lagoslakeid, source_sample_siteid, Lat, Lon)
+
+
+#rename lat, lon columns in nla and wqx to keep everything uniform
+
+wqx<-wqx %>% rename(Lat = LatitudeMeasure, Lon = LongitudeMeasure)
+nla<-nla %>% rename(Lat = INDEX_LAT, Lon = INDEX_LON)
+
+
+names(nla)
+names(wqx)
+names(neon)
+
+#combine nla, wqx, neon
+
+# Us_final_lat_lon <- rbind(wqx, nla, neon)
+# write_csv(Us_final_lat_lon, "US_final_lat_lon.csv")
+
+
+#nov 30th
+updated_neon<-read.csv("~/GitHub/lagos_database/Final_NEON_data.csv") #updated neon data from NOAH - 11k obs
+
+updated_neon<-updated_neon %>% select(lagoslakeid, source_sample_siteid) %>% distinct() #6 unique sites
+
+#adding lat lons
+updated_neon<-updated_neon %>%
+    mutate(Lat = case_when(source_sample_siteid == "BARC" ~ '29.675982',
+                           source_sample_siteid == "TOOK" ~ '68.630692',
+                           source_sample_siteid == "CRAM" ~ '46.209675',
+                           source_sample_siteid == "SUGG" ~ '29.68778',
+                           source_sample_siteid == "PRLA" ~ '47.15909',
+                           source_sample_siteid == "LIRO" ~ '45.998269',
+                           TRUE ~ 'NA' ))
+
+
+updated_neon<-updated_neon %>%
+    mutate(Lon = case_when(source_sample_siteid == "BARC" ~ '-82.008414',
+                           source_sample_siteid == "TOOK" ~ '-149.61064',
+                           source_sample_siteid == "CRAM" ~ '-89.473688',
+                           source_sample_siteid == "SUGG" ~ '-82.017745',
+                           source_sample_siteid == "PRLA" ~ '-99.11388',
+                           source_sample_siteid == "LIRO" ~ '-89.704767',
+                           TRUE ~ 'NA' ))    
+
+updated_neon<-updated_neon %>%
+    mutate(lagoslakeid = case_when(source_sample_siteid == "BARC" ~ '186598',
+                           source_sample_siteid == "TOOK" ~ 'NA',
+                           source_sample_siteid == "CRAM" ~ '96686',
+                           source_sample_siteid == "SUGG" ~ '188788',
+                           source_sample_siteid == "PRLA" ~ '349775',
+                           source_sample_siteid == "LIRO" ~ '495',
+                           TRUE ~ 'NA' ))
+
+
+#links used to find lagos lakeid and lat lons
+# https://cont-limno.github.io/lagos-map/
+#https://portal.edirepository.org/nis/mapbrowse?packageid=edi.854.1 #lake_information file
+#https://www.neonscience.org/field-sites/prla #neon sites website
+
+updated_neon<-updated_neon %>% filter(source_sample_siteid != "TOOK") #dropped took - in alaska
+
+#join neon data to wqx and nla
+Us_final_lat_lon<-rbind(wqx, nla, updated_neon)
+#write csv
+write_csv(Us_final_lat_lon, "US_final_lat_lon.csv")
 
