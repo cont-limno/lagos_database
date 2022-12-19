@@ -166,9 +166,9 @@ wqx_final<-rbind(wqx1, wqx2, wqx3, wqx4)
 neon_final<-read.csv("~/GitHub/lagos_database/Final_NEON_data.csv") #updates dec 19th 2022
 nla_final <-read.csv("~/GitHub/lagos_database/nla_final.csv")
 
-wqx_neon<-rbind(wqx_final, neon_final) # did not work
-
-setdiff(wqx_final, neon_final)
+# wqx_neon<-rbind(wqx_final, neon_final) # did not work
+# 
+# setdiff(wqx_final, neon_final)
 #Error in `setdiff()`:
 #! `x` and `y` are not compatible.
 #Cols in `y` but not `x`: `source_parameter_unit`, `source_labmethod_usgspcode`.
@@ -180,13 +180,8 @@ setdiff(wqx_final, neon_final)
 wqx_final<-wqx_final %>% rename(source_parameter_unit = source_parameter_units)
 wqx_final<-wqx_final %>% rename(source_labmethod_usgspcode = wqp_parameter_usgspcode)
 
-#now try to rbind again - will try to rbind all 3 again since the errors were in wqx dataset names and neon and nla datatset column names seem consisitent
-
-wqx_neon_nla<-rbind(wqx_final, neon_final, nla_final) 
-
-#Neon missing lagos lakeiD - add these in manually
-
-wqx_neon_nla<-wqx_neon_nla %>%
+#fix neon lagoslakeids
+neon_final<-neon_final %>%
     mutate(lagoslakeid = case_when(source_sample_siteid == "BARC" ~ '186598',
                                    source_sample_siteid == "TOOK" ~ 'NA',
                                    source_sample_siteid == "CRAM" ~ '96686',
@@ -195,7 +190,17 @@ wqx_neon_nla<-wqx_neon_nla %>%
                                    source_sample_siteid == "LIRO" ~ '495',
                                    TRUE ~ 'NA' ))
 
-wqx_neon_nla<-wqx_neon_nla %>% filter(source_sample_siteid != "TOOK") #dropped took - in alaska
+neon_final<-neon_final %>% filter(source_sample_siteid != "TOOK") #dropped took - in alaska
+
+#now try to rbind again - will try to rbind all 3 again since the errors were in wqx dataset names and neon and nla datatset column names seem consisitent
+
+wqx_neon_nla<-rbind(wqx_final, neon_final, nla_final) 
+unique(wqx_neon_nla$lagoslakeid)
+
+str(wqx_neon_nla)
+#convert lagoslakeid to numeric
+wqx_neon_nla$lagoslakeid = as.numeric(as.character(wqx_neon_nla$lagoslakeid)) 
+str(wqx_neon_nla)
 
 
 #fixed - save RDS
@@ -491,7 +496,12 @@ US_final<-read_rds("wqx_us_final.rds")
 us_final_epi<-read_rds("wqx_us_epi_assignment.rds")
 us_lat_lon_final<-read.csv("~/GitHub/lagos_database/Us_final_lat_lon.csv")
 
+#create 1 dataset that includes epi and lat_lon
+US_final<-US_final %>% left_join(us_final_epi)
+temp<-US_final %>% left_join(us_lat_lon_final)
 
+str(us_lat_lon_final)
 
+str(US_final)
 
 
