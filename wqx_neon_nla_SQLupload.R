@@ -459,6 +459,8 @@ neon<-neon %>%
                            source_sample_siteid == "LIRO" ~ '-89.704767',
                            TRUE ~ 'NA' ))    
 
+neon<-neon %>% select(lagoslakeid, source_sample_siteid, Lat, Lon)
+
 # updated_neon<-updated_neon %>%
 #     mutate(lagoslakeid = case_when(source_sample_siteid == "BARC" ~ '186598',
 #                            source_sample_siteid == "TOOK" ~ 'NA',
@@ -475,7 +477,7 @@ neon<-neon %>%
 #https://www.neonscience.org/field-sites/prla #neon sites website
 
 #join neon data to wqx and nla
-Us_final_lat_lon<-rbind(wqx, nla, updated_neon)
+Us_final_lat_lon<-rbind(wqx, nla, neon)
 #write csv
 write_csv(Us_final_lat_lon, "US_final_lat_lon.csv")
 
