@@ -157,9 +157,13 @@ write_csv(wqx4, "wqx_final4.csv")
 ####################################################################################################################################################
 
 #building a final cleaned dataset (same as the one in postgres) 
+wqx1<- read.csv("~/GitHub/lagos_database/wqx_final1.csv") 
+wqx2<-read.csv("~/GitHub/lagos_database/wqx_final2.csv")
+wqx3<-read.csv("~/GitHub/lagos_database/wqx_final3.csv")
+wqx4<-read.csv("~/GitHub/lagos_database/wqx_final4.csv")
 
 wqx_final<-rbind(wqx1, wqx2, wqx3, wqx4)
-neon_final<-read.csv("~/GitHub/lagos_database/Final_NEON_data.csv")
+neon_final<-read.csv("~/GitHub/lagos_database/Final_NEON_data.csv") #updates dec 19th 2022
 nla_final <-read.csv("~/GitHub/lagos_database/nla_final.csv")
 
 wqx_neon<-rbind(wqx_final, neon_final) # did not work
@@ -180,10 +184,23 @@ wqx_final<-wqx_final %>% rename(source_labmethod_usgspcode = wqp_parameter_usgsp
 
 wqx_neon_nla<-rbind(wqx_final, neon_final, nla_final) 
 
+#Neon missing lagos lakeiD - add these in manually
+
+wqx_neon_nla<-wqx_neon_nla %>%
+    mutate(lagoslakeid = case_when(source_sample_siteid == "BARC" ~ '186598',
+                                   source_sample_siteid == "TOOK" ~ 'NA',
+                                   source_sample_siteid == "CRAM" ~ '96686',
+                                   source_sample_siteid == "SUGG" ~ '188788',
+                                   source_sample_siteid == "PRLA" ~ '349775',
+                                   source_sample_siteid == "LIRO" ~ '495',
+                                   TRUE ~ 'NA' ))
+
+wqx_neon_nla<-wqx_neon_nla %>% filter(source_sample_siteid != "TOOK") #dropped took - in alaska
+
+
+#fixed - save RDS
 
 saveRDS(wqx_neon_nla, file = "wqx_us_final.rds")
-
-
 
 
 ####################################################################################################################################################
@@ -206,7 +223,7 @@ epi_data<-wqx_neon_nla %>% select(
 secchi_data <- epi_data %>% filter(parameter_name == "Secchi")
 epi_data_nosecchi<- epi_data %>% filter(parameter_name != "Secchi")
 
-#split epi_data_nosecchi - 1 dataset for specified - 1 dataset for integragrated or inferred -- these are in sample type column
+#split epi_data_nosecchi - 1 dataset for specified - 1 dataset for integrated or inferred -- these are in sample type column
 
 epi_data_nosecchi_integ_infer<-epi_data_nosecchi %>% filter(source_sample_type == "integrated" | source_sample_type == "INFERRED")
 unique(epi_data_nosecchi_integ_infer$source_sample_type)
@@ -276,7 +293,7 @@ saveRDS(fulldata, file = "wqx_us_epi_assignment.rds")
 
 #subset data into wqx, neon, nla
 
-
+wqx_us_epi_assignment<-read_rds("wqx_us_epi_assignment.rds")
 neon<-wqx_us_epi_assignment %>% filter(str_detect(sample_id, "NEON")) #created neon dataset
 
 temp1<-wqx_us_epi_assignment %>% 
@@ -409,9 +426,9 @@ wqx<-wqx %>% rename(Lat = LatitudeMeasure, Lon = LongitudeMeasure)
 nla<-nla %>% rename(Lat = INDEX_LAT, Lon = INDEX_LON)
 
 
-names(nla)
-names(wqx)
-names(neon)
+# names(nla)
+# names(wqx)
+# names(neon)
 
 #combine nla, wqx, neon
 
@@ -420,14 +437,13 @@ names(neon)
 
 
 #nov 30th
-updated_neon<-read.csv("~/GitHub/lagos_database/Final_NEON_data.csv") #updated neon data from NOAH - 11k obs
-
-updated_neon<-updated_neon %>% select(lagoslakeid, source_sample_siteid) %>% distinct() #6 unique sites
+# updated_neon<-read.csv("~/GitHub/lagos_database/Final_NEON_data.csv") #updated neon data from NOAH - 11k obs
+# 
+# updated_neon<-updated_neon %>% select(lagoslakeid, source_sample_siteid) %>% distinct() #6 unique sites
 
 #adding lat lons
-updated_neon<-updated_neon %>%
+neon<-neon %>%
     mutate(Lat = case_when(source_sample_siteid == "BARC" ~ '29.675982',
-                           source_sample_siteid == "TOOK" ~ '68.630692',
                            source_sample_siteid == "CRAM" ~ '46.209675',
                            source_sample_siteid == "SUGG" ~ '29.68778',
                            source_sample_siteid == "PRLA" ~ '47.15909',
@@ -435,23 +451,22 @@ updated_neon<-updated_neon %>%
                            TRUE ~ 'NA' ))
 
 
-updated_neon<-updated_neon %>%
+neon<-neon %>%
     mutate(Lon = case_when(source_sample_siteid == "BARC" ~ '-82.008414',
-                           source_sample_siteid == "TOOK" ~ '-149.61064',
                            source_sample_siteid == "CRAM" ~ '-89.473688',
                            source_sample_siteid == "SUGG" ~ '-82.017745',
                            source_sample_siteid == "PRLA" ~ '-99.11388',
                            source_sample_siteid == "LIRO" ~ '-89.704767',
                            TRUE ~ 'NA' ))    
 
-updated_neon<-updated_neon %>%
-    mutate(lagoslakeid = case_when(source_sample_siteid == "BARC" ~ '186598',
-                           source_sample_siteid == "TOOK" ~ 'NA',
-                           source_sample_siteid == "CRAM" ~ '96686',
-                           source_sample_siteid == "SUGG" ~ '188788',
-                           source_sample_siteid == "PRLA" ~ '349775',
-                           source_sample_siteid == "LIRO" ~ '495',
-                           TRUE ~ 'NA' ))
+# updated_neon<-updated_neon %>%
+#     mutate(lagoslakeid = case_when(source_sample_siteid == "BARC" ~ '186598',
+#                            source_sample_siteid == "TOOK" ~ 'NA',
+#                            source_sample_siteid == "CRAM" ~ '96686',
+#                            source_sample_siteid == "SUGG" ~ '188788',
+#                            source_sample_siteid == "PRLA" ~ '349775',
+#                            source_sample_siteid == "LIRO" ~ '495',
+#                            TRUE ~ 'NA' ))
 
 
 #links used to find lagos lakeid and lat lons
@@ -459,10 +474,22 @@ updated_neon<-updated_neon %>%
 #https://portal.edirepository.org/nis/mapbrowse?packageid=edi.854.1 #lake_information file
 #https://www.neonscience.org/field-sites/prla #neon sites website
 
-updated_neon<-updated_neon %>% filter(source_sample_siteid != "TOOK") #dropped took - in alaska
-
 #join neon data to wqx and nla
 Us_final_lat_lon<-rbind(wqx, nla, updated_neon)
 #write csv
 write_csv(Us_final_lat_lon, "US_final_lat_lon.csv")
+
+
+
+####################################################################################################################################################
+#modifying austins scripts to create lagos US export _ DEC 12
+setwd("C:/Users/Arnab/Documents/GitHub/lagos_database")
+getwd()
+US_final<-read_rds("wqx_us_final.rds")
+us_final_epi<-read_rds("wqx_us_epi_assignment.rds")
+us_lat_lon_final<-read.csv("~/GitHub/lagos_database/Us_final_lat_lon.csv")
+
+
+
+
 
