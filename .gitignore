@@ -11,5 +11,4 @@ secchi_chla_data.csv
 .RDataTmp
 
 graphics/jpg/
-*.csv
 WQX_FINAL.tsv
