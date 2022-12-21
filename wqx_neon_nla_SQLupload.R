@@ -638,3 +638,14 @@ write_csv(epi_export, "epi_export.csv")
 # temp3<-temp2 %>% filter(!lagoslakeid %in%epi_export$lagoslakeid)   
 # temp3<-US_epi %>% filter(parameter_name == "Secchi")
 
+
+gc()
+
+lagos_variable<-read.csv("~/GitHub/lagos_database/lagos_variable.csv") %>% 
+    select(variableid_lagos, variableshortname) %>% 
+    rename(parameter_id = variableid_lagos)
+
+
+epi_export<-epi_export %>% left_join(lagos_variable) %>% 
+    select(-parameter_name)
+write_csv(epi_export, "epi_export.csv")
