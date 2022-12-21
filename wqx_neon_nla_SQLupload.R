@@ -498,10 +498,143 @@ us_lat_lon_final<-read.csv("~/GitHub/lagos_database/Us_final_lat_lon.csv")
 
 #create 1 dataset that includes epi and lat_lon
 US_final<-US_final %>% left_join(us_final_epi)
-temp<-US_final %>% left_join(us_lat_lon_final)
+US_final<-US_final %>% left_join(us_lat_lon_final)
 
-str(us_lat_lon_final)
 
-str(US_final)
+temp<-US_final %>% filter(sample_depth_m < 0)
+US_final<-US_final %>% filter(sample_depth_m > -99) %>% 
+    mutate(sample_depth_m = abs(sample_depth_m))
 
+
+# rm(us_final_epi)
+# rm(us_lat_lon_final)
+
+#check for duplicates
+US_final<-US_final %>% 
+    group_by(sample_date, source_sample_siteid, sample_depth_m, parameter_name) %>% 
+    slice_sample(n=1) %>%  ungroup() #randomly selecting value to keep. EG. might have 4 duplicates - will keep 1 at random - demoves duplicates
+
+gc()
+
+#eventID #will come back and do later 
+
+# eventidb_table <- US_final %>%  
+#     distinct(source_sample_siteid, sample_date, sample_depth_m)
+# 
+# eventidb_table$eventidb_beta <- seq.int(nrow(eventidb_table))
+# 
+# 
+# 
+# join_eventidb <- left_join(US_final, eventidb_table, by = c("sample_date","source_sample_siteid", "sample_depth_m"))
+# 
+# lagosvalues_eventidb <- join_eventidb %>% drop_na(eventidb_beta)  # same number of obs as US_final - has 1 extra column with numbers signifying the number of a times an obersvation comes up
+# 
+# lagosvalues_eventidb<-lagosvalues_eventidb %>% select(sample_id, eventidb_beta) 
+# US_final<-Us_final %>% left_join(lagosvalues_eventidb)
+
+#pulling in clusters
+
+clustersites<-read.csv("~/GitHub/lagos_database/siteclusters_7DEC22.csv") %>% 
+    select(lagoslakeid, source_sample_siteid, cl_name, clus_lat, clus_lon)
+
+US_final<-US_final %>% left_join(clustersites)
+
+US_epi<-US_final %>% filter(lagos_epi_assignment == 1)
+
+#create epi event id
+
+eventidb_table <- US_epi %>%  
+    distinct(source_sample_siteid, sample_date, sample_depth_m)
+
+eventidb_table$eventidb_beta <- seq.int(nrow(eventidb_table))
+
+
+
+US_epi <- left_join(US_epi, eventidb_table, by = c("sample_date","source_sample_siteid", "sample_depth_m"))
+
+gc()
+
+##select the shallowest event for a given parameter, location, date
+
+US_epi<-US_epi %>% group_by(parameter_name, source_sample_siteid, sample_date) %>% 
+    slice(which(sample_depth_m == min(sample_depth_m))) %>% ##select the record with the minumum depth in the group
+    ungroup()
+
+gc()    
+
+#pull out nla data
+
+NLA_epi_clusters<-US_epi %>% filter(str_detect(sample_id, "NLA")) %>% 
+    select(lagoslakeid, cl_name) %>% distinct()
+temp<-NLA_epi %>% group_by(lagoslakeid) %>% 
+    summarise(n=n()) %>% filter(n>1)
+
+#pull out neon and wqx data
+
+US_epi_clusters<-US_epi %>% filter(!lagoslakeid %in% NLA_epi_clusters$lagoslakeid) 
+
+
+#pull out neon
+NEON_epi_clusters<-US_epi_clusters %>% filter(str_detect(sample_id, "NEON")) %>% 
+    select(lagoslakeid, cl_name) %>% distinct()
+
+US_epi_clusters<-US_epi_clusters %>% filter(!lagoslakeid %in% NEON_epi_clusters$lagoslakeid) 
+
+
+NLA_NEON_clusters<-rbind(NLA_epi_clusters, NEON_epi_clusters)
+
+temp<-NLA_NEON_clusters %>% left_join(US_epi)
+
+US_epi<-US_epi %>% filter(!lagoslakeid %in% temp$lagoslakeid)
+US_epi<-rbind(US_epi, temp)
+
+rm(NLA_epi_clusters)
+rm(NEON_epi_clusters)
+rm(US_epi_clusters)
+rm(temp)
+
+gc()
+##identify primary site within each lake
+
+samples<-US_epi %>% group_by(source_sample_siteid, sample_date, lagoslakeid, cl_name) %>% 
+    summarise(total_samples_count = n(), 
+              primary_samples_count = sum(parameter_id == 6 | parameter_id == 27 | parameter_id == 9)) 
+
+
+# select best cluster sites to use (samplesiteid_lagos)
+primary_cluster_tbl <- samples %>% 
+    group_by(lagoslakeid, cl_name) %>% 
+    summarise(n = sum(primary_samples_count), n2 = mean(total_samples_count)) %>% #sum samples through time
+    ungroup() %>% 
+    group_by(lagoslakeid) %>% 
+    #arrange(desc(n, n2)) %>% 
+    filter(n == max(n)) %>% 
+    filter(n2 == max(n2)) %>% 
+    slice_sample(n=1) %>% 
+    select(-n, -n2) %>% distinct()
+
+
+US_epi<-US_epi %>% filter(cl_name %in% primary_cluster_tbl$cl_name)
+
+epi_export<-US_epi %>% group_by(lagoslakeid, sample_date, parameter_name) %>% 
+    slice_sample(n=1) %>% 
+    ungroup()
+
+#secchi work
+    
+temp<-epi_export %>% filter(parameter_name == "Secchi") %>% 
+    select(lagoslakeid, sample_date) %>% distinct() #what lake and what date we have secchi data for - this is what we want
+temp2<-US_epi %>% filter(parameter_name == "Secchi") #got all secchi data available
+temp3<-temp %>% left_join(temp2)    #identify all of the secchi data that comes from a lake and date. Lake could be sampled multiple times in a day 
+temp2<-temp2 %>% filter(!sample_id %in% temp3$sample_id) #deletes the secchi data for those lake date combinations
+temp2<- temp2 %>% group_by(lagoslakeid, sample_date) %>% 
+    slice_sample(n=1) %>% ungroup() #what we're left with is lake date combos that weren't in our existing dataset
+#temp2<-temp2 %>% left_join(US_epi %>% select(sample_id, eventidb_beta))  
+epi_export<-rbind(epi_export, temp2) #bind data we have with data we're missing 
+
+write_csv(epi_export, "epi_export.csv")
+
+# unique(temp2$lagos_epi_assignment)    
+# temp3<-temp2 %>% filter(!lagoslakeid %in%epi_export$lagoslakeid)   
+# temp3<-US_epi %>% filter(parameter_name == "Secchi")
 
