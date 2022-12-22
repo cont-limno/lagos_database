@@ -649,3 +649,8 @@ lagos_variable<-read.csv("~/GitHub/lagos_database/lagos_variable.csv") %>%
 epi_export<-epi_export %>% left_join(lagos_variable) %>% 
     select(-parameter_name)
 write_csv(epi_export, "epi_export.csv")
+saveRDS(epi_export, file = "epi_export.rds")
+        
+
+        
+
