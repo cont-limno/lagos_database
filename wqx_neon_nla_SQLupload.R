@@ -566,8 +566,19 @@ gc()
 
 NLA_epi_clusters<-US_epi %>% filter(str_detect(sample_id, "NLA")) %>% 
     select(lagoslakeid, cl_name) %>% distinct()
-temp<-NLA_epi %>% group_by(lagoslakeid) %>% 
-    summarise(n=n()) %>% filter(n>1)
+Mulitple_NLA_epi_clusters_in_same_lake<-NLA_epi_clusters %>% group_by(lagoslakeid) %>% 
+    summarise(n=n()) %>% filter(n>1) #NLA epi data with more than 1 clusters - send to kath to investigate
+write_csv(Mulitple_NLA_epi_clusters_in_same_lake, "Mulitple_NLA_epi_clusters_in_same_lake.csv")
+# Mulitple_NLA_epi_clusters_in_same_lake<-US_epi %>% filter(str_detect(sample_id, "NLA")) %>% 
+#     select(sample_id, lagoslakeid, sample_date, source_sample_siteid, Lat, Lon, cl_name, clus_lat, clus_lon) %>% distinct()
+# temp<-Mulitple_NLA_epi_clusters_in_same_lake %>% group_by(lagoslakeid) %>% 
+#     summarise(n=n()) %>% filter(n>1)
+# 
+# 
+# Mulitple_NLA_epi_clusters_in_same_lake<-US_epi %>% filter(str_detect(sample_id, "NLA")) %>% 
+#     select(lagoslakeid, sample_date, Lat, Lon, cl_name, clus_lat, clus_lon) %>% distinct()
+# temp<-Mulitple_NLA_epi_clusters_in_same_lake %>% group_by(lagoslakeid) %>% 
+#     summarise(n=n()) %>% filter(n>1)
 
 #pull out neon and wqx data
 
@@ -651,6 +662,7 @@ epi_export<-epi_export %>% left_join(lagos_variable) %>%
 write_csv(epi_export, "epi_export.csv")
 saveRDS(epi_export, file = "epi_export.rds")
         
-
+QAQC_epi_export<-epi_export %>% sample_n(100000)
+write_csv(QAQC_epi_export, "QAQC_epi_export.csv")
         
 
