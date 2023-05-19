@@ -1,4 +1,6 @@
 library(tidyverse)
+setwd("C:/Users/Arnab/Documents/GitHub/lagos_database")
+getwd()
 wqx_final<-readRDS("WQX_Final.rds")
 str(wqx_final)
 write_csv(wqx_final, "wqx_final.csv")
@@ -6,6 +8,8 @@ write_csv(wqx_final, "wqx_final.csv")
 
 neon_final<-readRDS("NEON_Final.rds")
 write.csv(neon_final, "neon_final.csv")
+
+temp<-epi_export_daily %>% filter(lagoslakeid == "196835")
 
 ###################################################################################################################################################
 
@@ -203,10 +207,38 @@ wqx_neon_nla$lagoslakeid = as.numeric(as.character(wqx_neon_nla$lagoslakeid))
 str(wqx_neon_nla)
 
 
+
+dat <- wqx_neon_nla %>%
+    
+    filter(parameter_name == "Nitrogen, total") %>%
+    
+    filter(source_id == "nla_wqx") %>%
+    
+    filter(source_parameter_unit == "ug/l") %>%
+    
+    filter(parameter_conversionfactor == 1000)
+
+
+
+dat <- dat %>%
+    
+    mutate(parameter_value = source_parameter_value,
+           
+           parameter_detectionlimit_value = source_detectionlimit_value,
+           
+           parameter_conversionfactor = 1,
+           
+           parameter_detectionlimit_conversionfactor = 1)
+
+
+
+wqx_neon_nla <- wqx_neon_nla %>% filter(!sample_id %in% dat$sample_id)
+
+wqx_neon_nla <- rbind(wqx_neon_nla,dat)
+
+
 #fixed - save RDS
-
 saveRDS(wqx_neon_nla, file = "wqx_us_final.rds")
-
 
 ####################################################################################################################################################
 
@@ -489,7 +521,7 @@ write_csv(Us_final_lat_lon, "US_final_lat_lon.csv")
 
 
 ####################################################################################################################################################
-#modifying austins scripts to create lagos US export _ DEC 12
+#modifying austins scripts to create lagos US epi export _ DEC 12
 setwd("C:/Users/Arnab/Documents/GitHub/lagos_database")
 getwd()
 US_final<-read_rds("wqx_us_final.rds")
@@ -506,69 +538,207 @@ US_final<-US_final %>% filter(sample_depth_m > -99) %>%
     mutate(sample_depth_m = abs(sample_depth_m))
 
 
-# rm(us_final_epi)
-# rm(us_lat_lon_final)
+rm(us_final_epi)
+rm(us_lat_lon_final)
+
+temp<-US_final %>% select(parameter_name, parameter_id) %>% 
+    distinct() %>% 
+    group_by(parameter_id) %>% 
+    mutate(n=n()) %>% 
+    filter(n>1) %>% 
+    ungroup()
+
+US_final<-US_final %>% 
+    mutate(parameter_name = if_else(parameter_name == "pH, field or closed", "pH, field or lab", parameter_name))
+
+US_final<-US_final %>% 
+    mutate(parameter_name = if_else(parameter_name == "Phosphorus, soluable reactive orthophosphate", "Phosphorus, soluble reactive orthophosphate", parameter_name))
+
+temp2<-US_final %>% 
+    filter(parameter_name == "Alkalinity, bicarbonate" & parameter_id == 2)
+
+US_final<-US_final %>% 
+    filter(!sample_id %in% temp2$sample_id)
+
+temp2<-temp2 %>% 
+    mutate(parameter_value = source_parameter_value) %>% 
+    mutate(parameter_id = 1) %>% 
+    mutate(parameter_name = "Alkalinity") %>% 
+    mutate(parameter_conversionfactor = 1) %>% 
+    mutate(parameter_detectionlimit_conversionfactor = 1) %>% 
+    mutate(parameter_detectionlimit_value = source_detectionlimit_value)
+
+US_final<-rbind(US_final, temp2)
+
+temp2<-US_final %>% 
+    filter(parameter_name == "ANC")
+
+US_final<-US_final %>% 
+    filter(!sample_id %in% temp2$sample_id)
+
+temp2<-temp2 %>% 
+    mutate(parameter_id = 1) %>% 
+    mutate(parameter_name = "Alkalinity")
+    
+
+US_final<-rbind(US_final, temp2)
+
+#remove NA's in NLA dataset
+temp2<-US_final %>% filter(str_detect(sample_id, "NLA")) %>% 
+    filter(is.na(parameter_value)) %>% 
+    filter(is.na(parameter_detectionlimit_value))
+US_final<-US_final %>% 
+    filter(!sample_id %in% temp2$sample_id)
+
+
+#EPI WORK STARTS HERE
 
 #check for duplicates
 US_final<-US_final %>% 
-    group_by(sample_date, source_sample_siteid, sample_depth_m, parameter_name) %>% 
+    group_by(sample_date, source_sample_siteid, sample_depth_m, parameter_name, source_id) %>% 
     slice_sample(n=1) %>%  ungroup() #randomly selecting value to keep. EG. might have 4 duplicates - will keep 1 at random - demoves duplicates
 
 gc()
 
-#eventID #will come back and do later 
-
-# eventidb_table <- US_final %>%  
-#     distinct(source_sample_siteid, sample_date, sample_depth_m)
-# 
-# eventidb_table$eventidb_beta <- seq.int(nrow(eventidb_table))
-# 
-# 
-# 
-# join_eventidb <- left_join(US_final, eventidb_table, by = c("sample_date","source_sample_siteid", "sample_depth_m"))
-# 
-# lagosvalues_eventidb <- join_eventidb %>% drop_na(eventidb_beta)  # same number of obs as US_final - has 1 extra column with numbers signifying the number of a times an obersvation comes up
-# 
-# lagosvalues_eventidb<-lagosvalues_eventidb %>% select(sample_id, eventidb_beta) 
-# US_final<-Us_final %>% left_join(lagosvalues_eventidb)
-
-#pulling in clusters
 
 clustersites<-read.csv("~/GitHub/lagos_database/siteclusters_7DEC22.csv") %>% 
     select(lagoslakeid, source_sample_siteid, cl_name, clus_lat, clus_lon)
 
 US_final<-US_final %>% left_join(clustersites)
 
-US_epi<-US_final %>% filter(lagos_epi_assignment == 1)
+#censorcodes of US_FINAL
 
-#create epi event id
+#Censorcodes - 
+str(US_final)
+temp<-US_final %>% 
+    filter(!is.na(parameter_value)) %>% 
+    filter(is.na(as.numeric(parameter_value))) #checked for non numerics
 
-eventidb_table <- US_epi %>%  
-    distinct(source_sample_siteid, sample_date, sample_depth_m)
-
-eventidb_table$eventidb_beta <- seq.int(nrow(eventidb_table))
+US_final<-US_final %>% mutate(parameter_value = as.numeric(parameter_value))
 
 
 
-US_epi <- left_join(US_epi, eventidb_table, by = c("sample_date","source_sample_siteid", "sample_depth_m"))
+LE5<-US_final %>% filter(is.na(parameter_value) & !is.na(parameter_detectionlimit_value))
+
+LE5<-LE5 %>% mutate(parameter_value = parameter_detectionlimit_value, censorcode = "LE5") %>% 
+    group_by(parameter_name) %>% 
+    mutate(upper = boxplot.stats(temp$parameter_detectionlimit_value, coef = 4)$stats[5]) %>% 
+    ungroup() %>% 
+    filter(parameter_detectionlimit_value <= upper)
+
+censorcode<-LE5
+
+LE6<-US_final %>% 
+    filter(!sample_id %in% censorcode$sample_id) %>% 
+    filter(parameter_value == 0 & is.na(parameter_detectionlimit_value) & is.na(source_detectionlimit_condition)) 
+LE6<-LE6 %>% mutate(censorcode = "LE6")
+censorcode<-rbind(censorcode, LE6)
+
+NC1<-US_final %>% 
+    filter(!sample_id %in% censorcode$sample_id) %>% 
+    filter(parameter_value > parameter_detectionlimit_value & !is.na(source_detectionlimit_condition))
+NC1<-NC1 %>% mutate(censorcode = "NC1")
+censorcode<-rbind(censorcode, NC1)
+
+NC2<-US_final %>% 
+    filter(!sample_id %in% censorcode$sample_id) %>% 
+    filter(parameter_value > parameter_detectionlimit_value & is.na(source_detectionlimit_condition))
+NC2<-NC2 %>% mutate(censorcode = "NC2")
+censorcode<-rbind(censorcode, NC2)
+
+NC3<-US_final %>% 
+    filter(!sample_id %in% censorcode$sample_id) %>% 
+    filter(is.na(parameter_detectionlimit_value) & !is.na(source_detectionlimit_condition))
+NC3<-NC3 %>% mutate(censorcode = "NC3")
+censorcode<-rbind(censorcode, NC3)
+
+NC4<-US_final %>% 
+    filter(!sample_id %in% censorcode$sample_id) %>% 
+    filter(is.na(parameter_detectionlimit_value) & is.na(source_detectionlimit_condition))
+NC4<-NC4 %>% mutate(censorcode = "NC4")
+censorcode<-rbind(censorcode, NC4)
+
+
+
+
+#have detectionlimit, datavalue < detectionlimit, with qualifier or comments
+
+LE1<-US_final %>% 
+    filter(!sample_id %in% censorcode$sample_id) %>% 
+    filter(parameter_detectionlimit_value >= parameter_value & !is.na(source_detectionlimit_condition))
+LE1<-LE1 %>% mutate(censorcode = "LE1")
+censorcode<-rbind(censorcode, LE1)
+
+#have detectionlimit, datavalue < detectionlimit, no qualifier or comments
+
+LE2<-US_final %>% 
+    filter(!sample_id %in% censorcode$sample_id) %>% 
+    filter(parameter_detectionlimit_value >= parameter_value & is.na(source_detectionlimit_condition))
+LE2<-LE2 %>% mutate(censorcode = "LE2")
+censorcode<-rbind(censorcode, LE2)
 
 gc()
 
+temp<-US_final %>% filter(!sample_id %in% censorcode$sample_id)
+
+temp<-censorcode %>% 
+    filter(parameter_name == "secchi_m") %>% 
+    select(censorcode) %>% 
+    distinct()
+
+censorcode<-censorcode %>% 
+    mutate(censorcode = if_else(parameter_name == "secchi_m" & censorcode == "LE6", "NC4", censorcode))
+
+US_final<-censorcode
+
+#censorcoded added
+
+
+names(US_final)
+#rename vars
+US_final<-US_final %>% rename(parameter_name = variableshortname)
+US_final<-US_final %>% rename(cluster_id = cl_name)
+US_final<-US_final %>% rename(cluster_lat_dd = clus_lat)
+US_final<-US_final %>% rename(cluster_lon_dd = clus_lon)
+US_final<-US_final %>% rename(source_samplesite_lat_dd = Lat)
+US_final<-US_final %>% rename(source_samplesite_lon_dd = Lon)
+
+saveRDS(US_final, "US_final_2023_03_13.rds")
+
+###############
+
+#US_epi checks
+
+US_epi<-US_final %>% filter(lagos_epi_assignment == 1)
+temp<-US_epi %>% filter(is.na(cl_name))
+US_epi<-US_epi %>% drop_na(cl_name)
+
+
 ##select the shallowest event for a given parameter, location, date
 
-US_epi<-US_epi %>% group_by(parameter_name, source_sample_siteid, sample_date) %>% 
-    slice(which(sample_depth_m == min(sample_depth_m))) %>% ##select the record with the minumum depth in the group
+US_epi<-US_epi %>% group_by(parameter_name, source_sample_siteid, sample_date, source_id) %>%
+    slice_min(sample_depth_m, with_ties = FALSE, n = 1) %>% 
     ungroup()
 
 gc()    
 
 #pull out nla data
 
-NLA_epi_clusters<-US_epi %>% filter(str_detect(sample_id, "NLA")) %>% 
-    select(lagoslakeid, cl_name) %>% distinct()
-Mulitple_NLA_epi_clusters_in_same_lake<-NLA_epi_clusters %>% group_by(lagoslakeid) %>% 
-    summarise(n=n()) %>% filter(n>1) #NLA epi data with more than 1 clusters - send to kath to investigate
-write_csv(Mulitple_NLA_epi_clusters_in_same_lake, "Mulitple_NLA_epi_clusters_in_same_lake.csv")
+NLA_epi_clusters<-US_epi %>% filter(str_detect(sample_id, "NLA"))
+US_epi <- US_epi %>% filter(!str_detect(sample_id, "NLA"))
+#%>% 
+    #select(lagoslakeid, cl_name) %>% distinct()
+#Multiple_NLA_epi_clusters_in_same_lake<-NLA_epi_clusters %>% group_by(lagoslakeid) %>% 
+    #summarise(n=n()) %>% filter(n>1) #NLA epi data with more than 1 clusters - send to kath to investigate
+
+#temp<-Multiple_NLA_epi_clusters_in_same_lake %>% right_join(US_epi)
+# %>%select(lagoslakeid, sample_id, sample_date, source_sample_siteid, Lat, Lon, cl_name, clus_lat, clus_lon) %>% distinct()
+
+#temp<-Multiple_NLA_epi_clusters_in_same_lake %>% 
+    #filter(lagoslakeid %in% US_epi)
+
+
+#write_csv(Mulitple_NLA_epi_clusters_in_same_lake, "Mulitple_NLA_epi_clusters_in_same_lake.csv")
 # Mulitple_NLA_epi_clusters_in_same_lake<-US_epi %>% filter(str_detect(sample_id, "NLA")) %>% 
 #     select(sample_id, lagoslakeid, sample_date, source_sample_siteid, Lat, Lon, cl_name, clus_lat, clus_lon) %>% distinct()
 # temp<-Mulitple_NLA_epi_clusters_in_same_lake %>% group_by(lagoslakeid) %>% 
@@ -582,60 +752,125 @@ write_csv(Mulitple_NLA_epi_clusters_in_same_lake, "Mulitple_NLA_epi_clusters_in_
 
 #pull out neon and wqx data
 
-US_epi_clusters<-US_epi %>% filter(!lagoslakeid %in% NLA_epi_clusters$lagoslakeid) 
+#US_epi_clusters<-US_epi %>% filter(!lagoslakeid %in% NLA_epi_clusters$lagoslakeid) 
 
 
 #pull out neon
-NEON_epi_clusters<-US_epi_clusters %>% filter(str_detect(sample_id, "NEON")) %>% 
-    select(lagoslakeid, cl_name) %>% distinct()
-
-US_epi_clusters<-US_epi_clusters %>% filter(!lagoslakeid %in% NEON_epi_clusters$lagoslakeid) 
+NEON_epi_clusters<-US_epi %>% filter(str_detect(sample_id, "NEON")) #%>% 
+US_epi <- US_epi %>% filter(!str_detect(sample_id, "NEON"))
 
 
-NLA_NEON_clusters<-rbind(NLA_epi_clusters, NEON_epi_clusters)
-
-temp<-NLA_NEON_clusters %>% left_join(US_epi)
-
-US_epi<-US_epi %>% filter(!lagoslakeid %in% temp$lagoslakeid)
-US_epi<-rbind(US_epi, temp)
-
-rm(NLA_epi_clusters)
-rm(NEON_epi_clusters)
-rm(US_epi_clusters)
-rm(temp)
+# US_epi_clusters<-US_epi_clusters %>% filter(!lagoslakeid %in% NEON_epi_clusters$lagoslakeid) 
+# 
+# 
+# NLA_NEON_clusters<-rbind(NLA_epi_clusters, NEON_epi_clusters)
+# 
+# temp<-NLA_NEON_clusters %>% left_join(US_epi)
+# 
+# US_epi<-US_epi %>% filter(!lagoslakeid %in% temp$lagoslakeid)
+# US_epi<-rbind(US_epi, temp)
+# 
+# rm(NLA_epi_clusters)
+# rm(NEON_epi_clusters)
+# rm(US_epi_clusters)
+# rm(temp)
 
 gc()
 ##identify primary site within each lake
+US_epi<-US_epi %>% group_by(lagoslakeid, sample_date, cl_name, parameter_name) %>% 
+    slice_sample(n = 1) %>% 
+    ungroup() #on a given day, cluster, and lake, we want to ensure that we only take 1 sample per parameter
+saveRDS(US_epi, "US_epi_before_bestcluster_selection.rds")
 
-samples<-US_epi %>% group_by(source_sample_siteid, sample_date, lagoslakeid, cl_name) %>% 
+samples<-US_epi %>% group_by(sample_date, lagoslakeid, cl_name) %>% 
     summarise(total_samples_count = n(), 
-              primary_samples_count = sum(parameter_id == 6 | parameter_id == 27 | parameter_id == 9)) 
+              primary_samples_count = sum(parameter_id == 6 | parameter_id == 27 | parameter_id == 9)) # in approx 20k lakes - they were sampled 1,536402 times for these 3 vars
 
+temp<-samples %>% group_by(lagoslakeid, sample_date, cl_name) %>% 
+    summarise(n=n()) %>% 
+    filter(n>1) %>% 
+    ungroup() # should return 0. It did
 
-# select best cluster sites to use (samplesiteid_lagos)
-primary_cluster_tbl <- samples %>% 
-    group_by(lagoslakeid, cl_name) %>% 
-    summarise(n = sum(primary_samples_count), n2 = mean(total_samples_count)) %>% #sum samples through time
-    ungroup() %>% 
-    group_by(lagoslakeid) %>% 
-    #arrange(desc(n, n2)) %>% 
-    filter(n == max(n)) %>% 
-    filter(n2 == max(n2)) %>% 
-    slice_sample(n=1) %>% 
-    select(-n, -n2) %>% distinct()
-
-
-US_epi<-US_epi %>% filter(cl_name %in% primary_cluster_tbl$cl_name)
-
-epi_export<-US_epi %>% group_by(lagoslakeid, sample_date, parameter_name) %>% 
-    slice_sample(n=1) %>% 
+#cluster selection by day to maximize the amount of data selected - diff cluster throughout time
+primary_cluster_tbl<-samples %>% 
+    group_by(lagoslakeid, sample_date) %>% 
+    slice_max(primary_samples_count, with_ties = TRUE) %>% #select the primary sites (cluster) with most data for TP, CHL, DOC 
+    slice_max(total_samples_count, with_ties = TRUE) %>% #select the site (cluster) that has the most TP, CHL, DOC and all other params
+    slice_sample(n=1) %>% #if still same amount of data in site(cluster) select one at random
     ungroup()
+
+primary_cluster_tbl<-primary_cluster_tbl %>% select(-primary_samples_count, -total_samples_count) %>% 
+    mutate(keep = 1)
+
+
+US_epi<-US_epi %>% left_join(primary_cluster_tbl) %>% 
+    filter(keep == 1) %>% 
+    select(-keep)
+
+# select best cluster sites to use (samplesiteid_lagos) - same cluster throughout time
+
+# primary_cluster_tbl <- samples %>% 
+#     group_by(lagoslakeid, cl_name) %>% 
+#     summarise(n = sum(primary_samples_count), n2 = mean(total_samples_count)) %>% #sum samples through time
+#     ungroup() %>% 
+#     group_by(lagoslakeid) %>% 
+#     #arrange(desc(n, n2)) %>% 
+#     slice_max(n, with_ties = TRUE) %>%
+#     slice_max(n2, with_ties = TRUE) %>% 
+#     slice_sample(n=1) %>% 
+#     select(-n, -n2) %>% distinct() %>% 
+#     mutate(keep = 1)
+# 
+# US_epi<-US_epi %>% left_join(primary_cluster_tbl) %>% 
+#     filter(keep == 1) %>% 
+#     select(-keep)
+
+gc()
+#cluster selection done
+
+#work on from here
+US_epi<-rbind(US_epi, NLA_epi_clusters, NEON_epi_clusters)
+
+temp<-US_epi %>% select(lagoslakeid, sample_date, parameter_name, source_sample_siteid) %>%  
+    group_by(lagoslakeid, sample_date, parameter_name, source_sample_siteid) %>% 
+    mutate(n=n()) %>% 
+    ungroup() %>% 
+    filter(n>1) #no repeat observations - what we wanted - on a given date on a sample site 
+
+US_epi_backup<-US_epi #create a backup so don't need to run from the top
+
+temp<-US_epi %>% group_by(lagoslakeid, sample_date, parameter_name) %>% 
+    mutate(n=n()) %>% 
+    ungroup() %>% 
+    filter(n>1) #check again without source_sample_siteid - 3000-4000 obs depending on cluster method selected- open and check - might be NLA or NEON - years all 2007, 2012, 2017 - most likely NLA
+
+US_epi<-US_epi %>% filter(!sample_id %in% temp$sample_id) 
+temp<-temp %>% arrange(lagoslakeid, sample_date, parameter_name) #check to see if same pattern (wqx_nla, and state program sample)
+temp<-temp %>% group_by(lagoslakeid, sample_date, parameter_name) %>% 
+    mutate(n=sum(source_id == "nla_wqx")) #double check to see if each group has NLA and pulling them out- would come out as value of 0. This was not the case 
+temp3<-temp %>% group_by(lagoslakeid, sample_date, parameter_name) %>% 
+    filter(source_id == 'nla_wqx') #double check for repliecates
+temp3<-temp3 %>% group_by(lagoslakeid, sample_date, parameter_name) %>% 
+    slice_sample(n=1) %>% 
+    select(-n)
+
+US_epi<-rbind(US_epi, temp3)
+
+temp<-US_epi %>% select(lagoslakeid, sample_date, parameter_name, source_id) %>% 
+    group_by(lagoslakeid, sample_date, parameter_name) %>% 
+    mutate(n=n()) %>% 
+    filter(n>1) %>% 
+    ungroup() #double check to see if we have any n>1 (replicate obs) - we shouldn't 
+
+
+epi_export<-US_epi
+gc()
 
 #secchi work
     
 temp<-epi_export %>% filter(parameter_name == "Secchi") %>% 
     select(lagoslakeid, sample_date) %>% distinct() #what lake and what date we have secchi data for - this is what we want
-temp2<-US_epi %>% filter(parameter_name == "Secchi") #got all secchi data available
+temp2<-US_final %>% filter(parameter_name == "Secchi") #got all secchi data available
 temp3<-temp %>% left_join(temp2)    #identify all of the secchi data that comes from a lake and date. Lake could be sampled multiple times in a day 
 temp2<-temp2 %>% filter(!sample_id %in% temp3$sample_id) #deletes the secchi data for those lake date combinations
 temp2<- temp2 %>% group_by(lagoslakeid, sample_date) %>% 
@@ -643,7 +878,18 @@ temp2<- temp2 %>% group_by(lagoslakeid, sample_date) %>%
 #temp2<-temp2 %>% left_join(US_epi %>% select(sample_id, eventidb_beta))  
 epi_export<-rbind(epi_export, temp2) #bind data we have with data we're missing 
 
-write_csv(epi_export, "epi_export.csv")
+temp<-epi_export %>% select(lagoslakeid, sample_date, parameter_name, source_id) %>% 
+    group_by(lagoslakeid, sample_date, parameter_name) %>% 
+    mutate(n=n()) %>% 
+    filter(n>1) %>% 
+    ungroup() #double check to see if we have any n>1 - we shouldn't 
+
+temp<-epi_export %>% select(source_id) %>% 
+    group_by(source_id) %>% 
+    mutate(n=n()) %>% 
+    distinct() %>% 
+    ungroup() #double check to see if the right amount of data is in NLA and NEON and others
+
 
 # unique(temp2$lagos_epi_assignment)    
 # temp3<-temp2 %>% filter(!lagoslakeid %in%epi_export$lagoslakeid)   
@@ -659,10 +905,569 @@ lagos_variable<-read.csv("~/GitHub/lagos_database/lagos_variable.csv") %>%
 
 epi_export<-epi_export %>% left_join(lagos_variable) %>% 
     select(-parameter_name)
+#write_csv(epi_export, "epi_export.csv")
+#saveRDS(epi_export, file = "epi_export.rds")
+        
+#QAQC_epi_export<-epi_export %>% sample_n(100000)
+#write_csv(QAQC_epi_export, "QAQC_epi_export.csv")
+#################################################################################################################################################
+
+#Censorcodes - 
+# temp<-epi_export %>% 
+#     filter(!is.na(parameter_value)) %>% 
+#     filter(is.na(as.numeric(parameter_value))) #checked for non numerics
+# 
+# epi_export<-epi_export %>% mutate(parameter_value = as.numeric(parameter_value))
+# 
+# 
+# 
+# LE5<-epi_export %>% filter(is.na(parameter_value) & !is.na(parameter_detectionlimit_value))
+# 
+# LE5<-LE5 %>% mutate(parameter_value = parameter_detectionlimit_value, 
+#                     censorcode = "LE5")
+# censorcode<-LE5
+# 
+# LE6<-epi_export %>% 
+#     filter(!sample_id %in% censorcode$sample_id) %>% 
+#     filter(parameter_value == 0 & is.na(parameter_detectionlimit_value) & is.na(source_detectionlimit_condition)) 
+# LE6<-LE6 %>% mutate(censorcode = "LE6")
+# censorcode<-rbind(censorcode, LE6)
+# 
+# NC1<-epi_export %>% 
+#     filter(!sample_id %in% censorcode$sample_id) %>% 
+#     filter(parameter_value >= parameter_detectionlimit_value & !is.na(source_detectionlimit_condition))
+# NC1<-NC1 %>% mutate(censorcode = "NC1")
+# censorcode<-rbind(censorcode, NC1)
+# 
+# NC2<-epi_export %>% 
+#     filter(!sample_id %in% censorcode$sample_id) %>% 
+#     filter(parameter_value >= parameter_detectionlimit_value & is.na(source_detectionlimit_condition))
+# NC2<-NC2 %>% mutate(censorcode = "NC2")
+# censorcode<-rbind(censorcode, NC2)
+# 
+# NC3<-epi_export %>% 
+#     filter(!sample_id %in% censorcode$sample_id) %>% 
+#     filter(is.na(parameter_detectionlimit_value) & !is.na(source_detectionlimit_condition))
+# NC3<-NC3 %>% mutate(censorcode = "NC3")
+# censorcode<-rbind(censorcode, NC3)
+# 
+# NC4<-epi_export %>% 
+#     filter(!sample_id %in% censorcode$sample_id) %>% 
+#     filter(is.na(parameter_detectionlimit_value) & is.na(source_detectionlimit_condition))
+# NC4<-NC4 %>% mutate(censorcode = "NC4")
+# censorcode<-rbind(censorcode, NC4)
+# 
+# 
+# 
+# 
+# #have detectionlimit, datavalue < detectionlimit, with qualifier or comments
+# 
+# LE1<-epi_export %>% 
+#     filter(!sample_id %in% censorcode$sample_id) %>% 
+#     filter(parameter_detectionlimit_value > parameter_value & !is.na(source_detectionlimit_condition))
+# LE1<-LE1 %>% mutate(censorcode = "LE1")
+# censorcode<-rbind(censorcode, LE1)
+# 
+# #have detectionlimit, datavalue < detectionlimit, no qualifier or comments
+# 
+# LE2<-epi_export %>% 
+#     filter(!sample_id %in% censorcode$sample_id) %>% 
+#     filter(parameter_detectionlimit_value > parameter_value & is.na(source_detectionlimit_condition))
+# LE2<-LE2 %>% mutate(censorcode = "LE2")
+# censorcode<-rbind(censorcode, LE2)
+# 
+# gc()
+# 
+# temp<-epi_export %>% filter(!sample_id %in% censorcode$sample_id)
+# 
+# temp<-censorcode %>% 
+#     filter(variableshortname == "secchi_m") %>% 
+#     select(censorcode) %>% 
+#     distinct()
+# 
+# censorcode<-censorcode %>% 
+#     mutate(censorcode = if_else(variableshortname == "secchi_m" & censorcode == "LE6", "NC4", censorcode))
+# 
+# epi_export<-censorcode
+
+#eventID 
+
+eventidb_table <- epi_export %>%
+    distinct(lagoslakeid, sample_date)
+
+eventidb_table$eventidb_beta <- seq.int(nrow(eventidb_table))
+
+epi_export<-epi_export %>% left_join(eventidb_table)
+
+
+names(epi_export)
+#rename vars
+epi_export<-epi_export %>% rename(eventid_epi = eventidb_beta)
+epi_export<-epi_export %>% rename(parameter_name = variableshortname)
+epi_export<-epi_export %>% rename(cluster_id = cl_name)
+epi_export<-epi_export %>% rename(cluster_lat_dd = clus_lat)
+epi_export<-epi_export %>% rename(cluster_lon_dd = clus_lon)
+epi_export<-epi_export %>% rename(source_samplesite_lat_dd = Lat)
+epi_export<-epi_export %>% rename(source_samplesite_lon_dd = Lon)
+
+#rename params
+
+param_names_short<-read.csv("~/GitHub/lagos_database/LIMNO_file structure - parameter_description_limno.csv") %>% 
+    select(parameter_id, parameter_name_short)
+
+epi_export<-left_join(epi_export, param_names_short)
+epi_export<-epi_export %>% select(-parameter_name)
+epi_export<-epi_export %>% rename(parameter_name = parameter_name_short)
+
+#change integrated to INTEGRATED in source_sample_type
+
+# temp<-epi_export
+# unique(temp$source_sample_type)
+# temp<-temp %>%
+#     mutate(source_sample_type = str_replace(source_sample_type, "integrated", "INTEGRATED"))
+
+epi_export<-epi_export %>% 
+    mutate(source_sample_type = str_replace(source_sample_type, "integrated", "INTEGRATED"))
+unique(epi_export$source_sample_type)
+
 write_csv(epi_export, "epi_export.csv")
 saveRDS(epi_export, file = "epi_export.rds")
-        
-QAQC_epi_export<-epi_export %>% sample_n(100000)
-write_csv(QAQC_epi_export, "QAQC_epi_export.csv")
-        
 
+#################################################################################################################################################
+#creating custom tables 
+
+#EXPORT_LIMNO
+#chemistry_limno
+
+chemistry_limno<-epi_export %>% 
+    select(
+        eventid_epi,
+        lagoslakeid,
+        sample_date,
+        sample_id,
+        parameter_id,
+        parameter_name,
+        parameter_value,
+        parameter_detectionlimit_value,
+        censorcode,
+        sample_depth_m,
+        sample_depth_flag,
+        cluster_id,
+        cluster_lat_dd,
+        cluster_lon_dd,
+        source_id,
+        source_sample_siteid
+        
+    )
+    
+write_csv(chemistry_limno, "chemistry_limno.csv")
+saveRDS(chemistry_limno, file = "chemistry_limno.rds")
+
+
+#sourcedata_limno
+
+sourcedata_limno<-epi_export %>% 
+    select(
+        lagoslakeid,
+        sample_id,
+        parameter_id,
+        source_id,
+        source_name,
+        source_activityorg_name,
+        source_sample_siteid,
+        source_activityid,
+        source_comments,
+        source_parameter_name,
+        source_parameter_value,
+        source_parameter_unit,
+        source_value_qualifiercode,
+        parameter_conversionfactor,
+        source_detectionlimit_value,
+        source_detectionlimit_unit,
+        parameter_detectionlimit_conversionfactor,
+        source_detectionlimit_condition,
+        source_detectionlimit_type,
+        source_labmethod_usgspcode,
+        source_labmethod_description,
+        source_labmethod_id,
+        source_labmethod_name,
+        source_labmethod_qualifier,
+        source_samplesite_lat_dd,
+        source_samplesite_lon_dd
+    )
+
+write_csv(sourcedata_limno, "sourcedata_limno.csv")
+saveRDS(sourcedata_limno, file = "sourcedata_limno.rds")
+
+
+
+
+
+#cluster_information_limno
+# FILES NEEDE: epi_export, clustersites, LOCUS_for_LIMNO_clusterinfotable
+
+clustersites<-read.csv("~/GitHub/lagos_database/siteclusters_7DEC22.csv")
+epi_export<-epi_export %>% left_join(clustersites)
+epi_export<-epi_export %>% left_join(LOCUS_for_LIMNO_clusterinfotable_14FEB23)
+
+epi_export<-epi_export %>% rename(cluster_meandistance_m = cl_mndis)
+epi_export<-epi_export %>% rename(cluster_maxdistance_m = max_dist)
+epi_export<-epi_export %>% rename(cluster_sitedistance_m = site_cldis)
+
+
+cluster_information_limno<-epi_export %>% 
+    select(
+        lagoslakeid,
+        cluster_id,
+        cluster_lat_dd,
+        cluster_lon_dd,
+        source_sample_siteid,
+        source_samplesite_lat_dd,
+        source_samplesite_lon_dd,
+        lake_waterarea_ha,
+        lake_states,
+        lake_namelagos,
+        cluster_meandistance_m,
+        cluster_maxdistance_m,
+        cluster_sitedistance_m
+)
+
+write_csv(cluster_information_limno, "cluster_information_limno.csv")
+saveRDS(cluster_information_limno, file = "cluster_information_limno.rds")
+
+
+#EXPORT:allsites_alldepths_limno
+
+#rename vars
+US_final<-US_final %>% rename(cluster_id = cl_name)
+US_final<-US_final %>% rename(cluster_lat_dd = clus_lat)
+US_final<-US_final %>% rename(cluster_lon_dd = clus_lon)
+US_final<-US_final %>% rename(source_samplesite_lat_dd = Lat)
+US_final<-US_final %>% rename(source_samplesite_lon_dd = Lon)
+
+#rename params
+
+param_names_short<-read.csv("~/GitHub/lagos_database/LIMNO_file structure - parameter_description_limno.csv") %>% 
+    select(parameter_id, parameter_name_short)
+
+US_final<-left_join(US_final, param_names_short)
+US_final<-US_final %>% select(-parameter_name)
+US_final<-US_final %>% rename(parameter_name = parameter_name_short)
+
+#change integrated to INTEGRATED
+US_final<-US_final %>% 
+    mutate(source_sample_type = str_replace(source_sample_type, "integrated", "INTEGRATED"))
+unique(US_final$source_sample_type)
+
+write_csv(US_final, "US_final.csv")
+saveRDS(US_final, file = "US_final.rds")
+
+#fixed naming and oaram issues - now creating allsites_alldepths_limno
+
+allsites_alldepths_limno<-US_final %>% 
+    select(
+        lagoslakeid,
+        sample_date,
+        sample_id,
+        parameter_id,
+        parameter_name,
+        parameter_value,
+        parameter_detectionlimit_value,
+        censorcode,
+        sample_depth_m,
+        sample_depth_flag,
+        cluster_id,
+        cluster_lat_dd,
+        cluster_lon_dd,
+        source_id,
+        source_sample_siteid,
+        source_name,
+        source_activityorg_name,
+        source_activityid,
+        source_comments,
+        source_parameter_name,
+        source_parameter_value,
+        source_parameter_unit,
+        source_value_qualifiercode,
+        parameter_conversionfactor,
+        source_detectionlimit_value,
+        source_detectionlimit_unit,
+        parameter_detectionlimit_conversionfactor,
+        source_detectionlimit_condition,
+        source_detectionlimit_type,
+        source_labmethod_usgspcode,
+        source_labmethod_description,
+        source_labmethod_id,
+        source_labmethod_name,
+        source_labmethod_qualifier,
+        source_samplesite_lat_dd,
+        source_samplesite_lon_dd,
+        lagos_epi_assignment
+    )
+
+write_csv(allsites_alldepths_limno, "allsites_alldepths_limno.csv")
+saveRDS(allsites_alldepths_limno, "allsites_alldepths_limno.rds")
+
+temp<-US_final %>% 
+    select(which(!(colnames(US_final) %in% colnames(allsites_alldepths_limno)))) #missing source_sample_type - deleted var
+
+#################################################################################################################################################
+common_names<-intersect(names(allsites_alldepths_limno), names(atrazine_data))
+select(atrazine_data, common_names)
+
+
+atrazine_dat<-atrazine_data %>% 
+    select(
+        lagoslakeid,
+        sample_date,
+        sample_id,
+        parameter_id,
+        parameter_name,
+        parameter_value,
+        parameter_detectionlimit_value,
+        censorcode,
+        sample_depth_m,
+        sample_depth_flag,
+        cluster_id,
+        cluster_lat_dd,
+        cluster_lon_dd,
+        source_id,
+        source_sample_siteid,
+        source_name,
+        source_activityorg_name,
+        source_activityid,
+        source_comments,
+        source_parameter_name,
+        source_parameter_value,
+        source_parameter_unit,
+        source_value_qualifiercode,
+        parameter_conversionfactor,
+        source_detectionlimit_value,
+        source_detectionlimit_unit,
+        parameter_detectionlimit_conversionfactor,
+        source_detectionlimit_condition,
+        source_detectionlimit_type,
+        source_labmethod_usgspcode,
+        source_labmethod_description,
+        source_labmethod_id,
+        source_labmethod_name,
+        source_labmethod_qualifier,
+        source_samplesite_lat_dd,
+        source_samplesite_lon_dd,
+        lagos_epi_assignment
+    )
+
+
+           
+           
+common_names<-intersect(names(US_final), names(atrazine_data))
+select(atrazine_data, common_names)
+#################################################################################################################################################
+#preliminary viz
+#2023/04/12
+#boxplots for all vars from all data (6.5 mil) for LE5's
+
+temp<-allsites_alldepths_limno %>% 
+    filter(censorcode == "LE5") %>% 
+    group_by(parameter_name) %>% 
+    mutate(upper = boxplot.stats(temp$parameter_detectionlimit_value, coef = 4)$stats[5]) %>% 
+    ungroup() %>% 
+    filter(parameter_detectionlimit_value <= upper)
+
+    
+
+unique(temp$parameter_name)
+
+
+p2 <- ggplot(temp, aes(x=parameter_name, y= log10(parameter_detectionlimit_value +1))) +
+    geom_boxplot() +
+    facet_wrap(~parameter_name, scale="free")
+p2
+
+temp2<-temp %>% filter(parameter_name == "al_diss_ugl") %>% 
+    mutate(upper = boxplot.stats(temp$parameter_detectionlimit_value, coef = 4)$stats[5]) %>% 
+    filter(parameter_detectionlimit_value <= upper)
+
+stats<-boxplot.stats(temp$parameter_detectionlimit_value, coef = 4)
+    
+unique(temp$parameter_name)
+p3<- temp %>% filter(parameter_name == "spcond_uscm") 
+
+# %>% 
+#     ggplot(temp, aes(x=parameter_name, y=parameter_detectionlimit_value)) +
+#     geom_boxplot()
+
+p4 <- ggplot(p3, aes(x=parameter_name, y=parameter_detectionlimit_value)) + 
+    geom_boxplot() + coord_cartesian(ylim = c(3,10))
+
+p4
+
+
+
+
+p5<-temp %>% filter(parameter_name == "spcond_uscm")
+summary(p5)
+p6 <- ggplot(p5, aes(x=parameter_name, y=parameter_detectionlimit_value)) + 
+    geom_boxplot() + coord_cartesian(ylim = c(10,1000))
+p6
+
+str(temp)
+##########################################################################################################################
+
+
+names(allsites_alldepths_limno)
+
+
+readRDS("epi_export.RDS")
+
+library(sf)
+install.packages("mapview")
+library(mapview)
+mapdata<- epi_export %>% select(lagoslakeid, Lat, Lon, clus_lat, clus_lon)
+unique_mapdata<-mapdata %>% distinct(lagoslakeid, .keep_all = TRUE)
+
+mapview(unique_mapdata, xcol = "Lon", ycol = "Lat", crs = 4326, grid = FALSE) #didn't work cuz NA's
+
+temp<-unique_mapdata %>% summarise_all(~ sum(is.na(.))) #check for NA's
+temp<-unique_mapdata %>% na.omit(unique_mapdata) #remove na's
+
+unique_mapdata<-unique_mapdata %>% na.omit(unique_mapdata) #remove na's
+mapview(unique_mapdata, xcol = "Lon", ycol = "Lat", crs = 4326, grid = FALSE) 
+
+
+
+
+
+#############################################################################################################################################################
+#install.packages("rgeos")
+library(rgeos)
+install.packages("maptools")
+library(maptools)
+library(sf)
+install.packages("scales")
+library(scales)
+library(grid)
+#install.packages("ggpubr")
+library(ggpubr)
+#install.packages("LAGOSUS")
+#library(LAGOSUS)
+library(viridis)
+library(tidyverse)
+
+install.packages("rlang")
+library(rlang)
+install.packages("tidyverse")
+library(tidyverse)
+
+install.packages("pillar")
+library(pillar)
+
+lake_info<-read.csv("~/GitHub/lagos_database/lake_information (1).csv") %>% 
+    select(lagoslakeid, lake_lat_decdeg, lake_lon_decdeg, state_zoneid)
+
+
+#statezoneids for lakes
+
+
+
+state_id <- lake_info %>% 
+    select(lagoslakeid, state_zoneid) %>% 
+    distinct()
+summary(state_id)
+
+file_gdb <- file.path("C:/Users/Arnab/Documents/gis_geo_v1.0.gdb")
+
+state <- st_read(file_gdb, 'simple_state') %>% 
+    st_zm(drop = TRUE) %>% 
+    st_cast('POLYGON') %>%
+    as("Spatial") %>% 
+    fortify(region = 'state_zoneid') 
+
+
+# 1. Calculate the total number of LAGOS lakes in each state.
+#overall pct and n in each state
+state_n <- lake_info %>% 
+    group_by(state_zoneid) %>% 
+    summarise(n_state = n()) %>% 
+    ungroup()
+
+
+
+# 2. Calculate the pct of lakes with values for each param by state
+# calculate percent of lakes by cluster in each neon zone
+
+
+epi_export1<-left_join(epi_export, lake_info)
+epi_export1<-left_join(epi_export1, state_n)
+
+cl_pct <- epi_export1 %>%   #neon_mdat would be your chemistry data file -- you want summaries by wq param
+    group_by(lagoslakeid, state_zoneid, parameter_id) %>%   # cl16 replaced by parameter_id?
+    summarise(n_state_cl=n()) 
+
+#%>% 
+    #mutate(pct_state_cl = n_state_cl * 100/n_state)
+
+
+
+
+(p_neon_clusters_all <- neon %>%   # This is the shapefile for neon == replace with state
+        mutate(neon_zoneid = id) %>% 
+        right_join(cl_pct, by="neon_zoneid") %>%  # This would be the data with pct of lakes in a state with data
+        ggplot()+
+        geom_polygon(mapping=aes(x=long, y=lat, group=group, fill=pct_neon_cl),
+                     color="black", size=0.6) + 
+        labs(x= "", y="")+  
+        facet_wrap(vars(cl16), ncol=3) +
+        scale_fill_viridis("TITLE", option ='plasma', direction = -1, limits=c(0, 80), breaks = c(0, 20, 40, 60, 80)) + 
+        ggtitle("TITLE") +
+        coord_equal() +
+        theme_bw() +
+        thmap2 +
+        theme (
+            #legend.key.height= unit(1, 'cm'),
+            #legend.key.width= unit(1, 'cm'),
+            #legend.text = element_text(size=16),
+            legend.title = element_text(size=18)
+        )
+)
+
+
+
+
+
+
+#read in lakeinfo to get state data
+#state zoneids for lakes
+state_id<-read.csv("~/GitHub/lagos_database/lake_information (1).csv") %>% 
+    select(lagoslakeid, state_zoneid) %>% 
+    distinct()
+summary(state_id)
+
+
+unique_mapdata<-unique_mapdata %>% left_join(lake_info)
+
+#Calculate the total number of LAGOS lakes in each state.
+#overall pct and n in each neon
+states_n <- unique_mapdata %>% 
+    group_by(state_zoneid) %>% 
+    mutate(n_states = n()) %>% 
+    ungroup()
+
+# Calculate the pct of lakes with values for each param by state
+
+cl_pct <- epi_export %>%   #neon_mdat would be your chemistry data file -- you want summaries by wq param
+    group_by(lagoslakeid, parameter_id) %>%   # cl16 replaced by parameter_id?
+    summarise(n_params=n()) %>% 
+    left_join(states_n) %>% 
+    mutate(pct_states_cl = n_params * 100/n_states)
+
+
+# temp<-epi_export %>% select(source_id) %>% 
+#     filter(str_detect(source_id,"nla"))
+# 
+# unique(temp$source_id)
+
+names(epi_export_daily)
+names(US_final)
+unique(epi_export_daily$source_parameter_name)
+unique(US_final$parameter_name)

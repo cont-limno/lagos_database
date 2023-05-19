@@ -1372,6 +1372,26 @@ unique(data_temp$ResultSampleFractionText)
 ###create dataset to check for non numeric objects in dataset
 temp <- non_numerics()
 
+temp2 <- temp %>% filter(grepl("*<",temp$ResultMeasureValue,fixed=TRUE)==TRUE) %>%  
+  filter(is.na(DetectionQuantitationLimitMeasure.MeasureValue)) #grab values with "<" from result measure value and NA in detection limit
+
+vals <- gsub("[^0-9.-]", "", temp2$ResultMeasureValue) #extract only values from result measure value
+
+data_temp$DetectionQuantitationLimitMeasure.MeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- vals #place values in the detectionlim col
+
+data_temp$ResultDetectionConditionText[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- "Less Than"
+
+data_temp$ResultMeasureValue[which(data_temp$Obs_Id %in% temp2$Obs_Id)] <- NA
+
+temp <- non_numerics()
+
+source("unit_conversions.R")
+data_temp_temp_notes
+rm(data_temp_temp_notes)
+
+
+
+
 #0 non numerics
 
 source("unit_conversions.R")
@@ -1766,7 +1786,7 @@ source("unit_conversions.R")
 abbrev <- "tdCarbon"
 lagos_name <- "Carbon, dissolved organic"
 lagos_unit <- "mg/l"
-dataset_name <-"TOC"
+dataset_name <-"DOC"
 
 vars2process
 params<-c("Carbon", "Organic carbon", "Total carbon")
@@ -2503,7 +2523,10 @@ gc()
 # 
 # rm(list = setdiff(ls(), "data_all"))
 # saveRDS(data_all, "limnoUS.rds")
-saveRDS(data_all, "temperature_data.rds")
+
+#saveRDS(data_all, "atrazine_data.rds") #use as templates
+#write_csv(data_all, "atrazine_data.csv")
+
 # write_csv(data_all, file = "all_data_june30.csv")
 
 # vals<-unique(data_all$MonitoringLocationIdentifier)
