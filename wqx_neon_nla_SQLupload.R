@@ -519,7 +519,6 @@ Us_final_lat_lon<-rbind(wqx, nla, neon)
 write_csv(Us_final_lat_lon, "US_final_lat_lon.csv")
 
 
-
 ####################################################################################################################################################
 #modifying austins scripts to create lagos US epi export _ DEC 12
 setwd("C:/Users/Arnab/Documents/GitHub/lagos_database")
@@ -596,7 +595,7 @@ US_final<-US_final %>%
 #check for duplicates
 US_final<-US_final %>% 
     group_by(sample_date, source_sample_siteid, sample_depth_m, parameter_name, source_id) %>% 
-    slice_sample(n=1) %>%  ungroup() #randomly selecting value to keep. EG. might have 4 duplicates - will keep 1 at random - demoves duplicates
+    slice_sample(n=1) %>% ungroup() #randomly selecting value to keep. EG. might have 4 duplicates - will keep 1 at random - demoves duplicates
 
 gc()
 
@@ -607,6 +606,9 @@ clustersites<-read.csv("~/GitHub/lagos_database/siteclusters_7DEC22.csv") %>%
 US_final<-US_final %>% left_join(clustersites)
 
 #censorcodes of US_FINAL
+#2023/05/24
+
+
 
 #Censorcodes - 
 str(US_final)
@@ -622,11 +624,28 @@ LE5<-US_final %>% filter(is.na(parameter_value) & !is.na(parameter_detectionlimi
 
 LE5<-LE5 %>% mutate(parameter_value = parameter_detectionlimit_value, censorcode = "LE5") %>% 
     group_by(parameter_name) %>% 
-    mutate(upper = boxplot.stats(temp$parameter_detectionlimit_value, coef = 4)$stats[5]) %>% 
-    ungroup() %>% 
-    filter(parameter_detectionlimit_value <= upper)
+    mutate(upper = boxplot.stats(LE5$parameter_detectionlimit_value, coef = 4)$stats[5]) %>% 
+    ungroup() 
 
+LE5.discard<-LE5 %>% filter(parameter_detectionlimit_value > upper)
+LE5<-LE5 %>% filter(!sample_id %in% LE5.discard$sample_id)
+LE5<-LE5 %>% select(-upper)
+
+lagos_variable<-read.csv("~/GitHub/lagos_database/lagos_variable.csv") %>% 
+    select(variableid_lagos, limit_high) %>% 
+    rename(parameter_id = variableid_lagos)
+
+LE5<-LE5 %>% left_join(lagos_variable)
+
+LE5.discard2<-LE5 %>% filter(parameter_value >= limit_high)
+LE5<-LE5 %>% filter(!sample_id %in% LE5.discard2$sample_id)
+
+discards<-c(LE5.discard$sample_id, LE5.discard2$sample_id)
+    
+US_final<-US_final %>% filter(!sample_id %in% discards)    
+    
 censorcode<-LE5
+censorcode<-censorcode %>% select(-limit_high)
 
 LE6<-US_final %>% 
     filter(!sample_id %in% censorcode$sample_id) %>% 
@@ -696,22 +715,30 @@ US_final<-censorcode
 
 names(US_final)
 #rename vars
-US_final<-US_final %>% rename(parameter_name = variableshortname)
+#US_final<-US_final %>% rename(parameter_name = variableshortname)
 US_final<-US_final %>% rename(cluster_id = cl_name)
 US_final<-US_final %>% rename(cluster_lat_dd = clus_lat)
 US_final<-US_final %>% rename(cluster_lon_dd = clus_lon)
 US_final<-US_final %>% rename(source_samplesite_lat_dd = Lat)
 US_final<-US_final %>% rename(source_samplesite_lon_dd = Lon)
 
-saveRDS(US_final, "US_final_2023_03_13.rds")
+US_final<-US_final %>% select(-sample_depth_flag)
+
+US_final<-rbind(US_final, temp5)
+temp<-US_final %>% group_by(sample_id) %>% 
+    summarise(n=n()) %>% 
+    filter(n>1) %>% 
+    ungroup()
+
+saveRDS(US_final, "US_final_2023_05_24.rds")
 
 ###############
 
 #US_epi checks
 
 US_epi<-US_final %>% filter(lagos_epi_assignment == 1)
-temp<-US_epi %>% filter(is.na(cl_name))
-US_epi<-US_epi %>% drop_na(cl_name)
+temp<-US_epi %>% filter(is.na(cluster_id))
+US_epi<-US_epi %>% drop_na(cluster_id)
 
 
 ##select the shallowest event for a given parameter, location, date
@@ -777,16 +804,16 @@ US_epi <- US_epi %>% filter(!str_detect(sample_id, "NEON"))
 
 gc()
 ##identify primary site within each lake
-US_epi<-US_epi %>% group_by(lagoslakeid, sample_date, cl_name, parameter_name) %>% 
+US_epi<-US_epi %>% group_by(lagoslakeid, sample_date, cluster_id, parameter_name) %>% 
     slice_sample(n = 1) %>% 
     ungroup() #on a given day, cluster, and lake, we want to ensure that we only take 1 sample per parameter
 saveRDS(US_epi, "US_epi_before_bestcluster_selection.rds")
 
-samples<-US_epi %>% group_by(sample_date, lagoslakeid, cl_name) %>% 
+samples<-US_epi %>% group_by(sample_date, lagoslakeid, cluster_id) %>% 
     summarise(total_samples_count = n(), 
               primary_samples_count = sum(parameter_id == 6 | parameter_id == 27 | parameter_id == 9)) # in approx 20k lakes - they were sampled 1,536402 times for these 3 vars
 
-temp<-samples %>% group_by(lagoslakeid, sample_date, cl_name) %>% 
+temp<-samples %>% group_by(lagoslakeid, sample_date, cluster_id) %>% 
     summarise(n=n()) %>% 
     filter(n>1) %>% 
     ungroup() # should return 0. It did
@@ -902,9 +929,16 @@ lagos_variable<-read.csv("~/GitHub/lagos_database/lagos_variable.csv") %>%
     select(variableid_lagos, variableshortname) %>% 
     rename(parameter_id = variableid_lagos)
 
+str(epi_export)
+unique(epi_export$parameter_id)
+epi_export<-epi_export %>% mutate_at(c("parameter_id"), as.numeric)
+str(epi_export)
+
 
 epi_export<-epi_export %>% left_join(lagos_variable) %>% 
     select(-parameter_name)
+
+
 #write_csv(epi_export, "epi_export.csv")
 #saveRDS(epi_export, file = "epi_export.rds")
         
@@ -1004,11 +1038,10 @@ names(epi_export)
 #rename vars
 epi_export<-epi_export %>% rename(eventid_epi = eventidb_beta)
 epi_export<-epi_export %>% rename(parameter_name = variableshortname)
-epi_export<-epi_export %>% rename(cluster_id = cl_name)
-epi_export<-epi_export %>% rename(cluster_lat_dd = clus_lat)
-epi_export<-epi_export %>% rename(cluster_lon_dd = clus_lon)
-epi_export<-epi_export %>% rename(source_samplesite_lat_dd = Lat)
-epi_export<-epi_export %>% rename(source_samplesite_lon_dd = Lon)
+# epi_export<-epi_export %>% rename(cluster_lat_dd = clus_lat)
+# epi_export<-epi_export %>% rename(cluster_lon_dd = clus_lon)
+# epi_export<-epi_export %>% rename(source_samplesite_lat_dd = Lat)
+# epi_export<-epi_export %>% rename(source_samplesite_lon_dd = Lon)
 
 #rename params
 
@@ -1029,6 +1062,8 @@ epi_export<-epi_export %>% rename(parameter_name = parameter_name_short)
 epi_export<-epi_export %>% 
     mutate(source_sample_type = str_replace(source_sample_type, "integrated", "INTEGRATED"))
 unique(epi_export$source_sample_type)
+
+gc()
 
 write_csv(epi_export, "epi_export.csv")
 saveRDS(epi_export, file = "epi_export.rds")
@@ -1051,7 +1086,7 @@ chemistry_limno<-epi_export %>%
         parameter_detectionlimit_value,
         censorcode,
         sample_depth_m,
-        sample_depth_flag,
+        source_sample_type,
         cluster_id,
         cluster_lat_dd,
         cluster_lon_dd,
@@ -1138,31 +1173,31 @@ saveRDS(cluster_information_limno, file = "cluster_information_limno.rds")
 
 #EXPORT:allsites_alldepths_limno
 
-#rename vars
-US_final<-US_final %>% rename(cluster_id = cl_name)
-US_final<-US_final %>% rename(cluster_lat_dd = clus_lat)
-US_final<-US_final %>% rename(cluster_lon_dd = clus_lon)
-US_final<-US_final %>% rename(source_samplesite_lat_dd = Lat)
-US_final<-US_final %>% rename(source_samplesite_lon_dd = Lon)
+# #rename vars
+# US_final<-US_final %>% rename(cluster_id = cl_name)
+# US_final<-US_final %>% rename(cluster_lat_dd = clus_lat)
+# US_final<-US_final %>% rename(cluster_lon_dd = clus_lon)
+# US_final<-US_final %>% rename(source_samplesite_lat_dd = Lat)
+# US_final<-US_final %>% rename(source_samplesite_lon_dd = Lon)
 
-#rename params
+# #rename params
+# 
+# param_names_short<-read.csv("~/GitHub/lagos_database/LIMNO_file structure - parameter_description_limno.csv") %>% 
+#     select(parameter_id, parameter_name_short)
+# 
+# US_final<-left_join(US_final, param_names_short)
+# US_final<-US_final %>% select(-parameter_name)
+# US_final<-US_final %>% rename(parameter_name = parameter_name_short)
+# 
+# #change integrated to INTEGRATED
+# US_final<-US_final %>% 
+#     mutate(source_sample_type = str_replace(source_sample_type, "integrated", "INTEGRATED"))
+# unique(US_final$source_sample_type)
+# 
+# write_csv(US_final, "US_final.csv")
+# saveRDS(US_final, file = "US_final.rds")
 
-param_names_short<-read.csv("~/GitHub/lagos_database/LIMNO_file structure - parameter_description_limno.csv") %>% 
-    select(parameter_id, parameter_name_short)
-
-US_final<-left_join(US_final, param_names_short)
-US_final<-US_final %>% select(-parameter_name)
-US_final<-US_final %>% rename(parameter_name = parameter_name_short)
-
-#change integrated to INTEGRATED
-US_final<-US_final %>% 
-    mutate(source_sample_type = str_replace(source_sample_type, "integrated", "INTEGRATED"))
-unique(US_final$source_sample_type)
-
-write_csv(US_final, "US_final.csv")
-saveRDS(US_final, file = "US_final.rds")
-
-#fixed naming and oaram issues - now creating allsites_alldepths_limno
+#fixed naming and param issues - now creating allsites_alldepths_limno
 
 allsites_alldepths_limno<-US_final %>% 
     select(
@@ -1175,7 +1210,7 @@ allsites_alldepths_limno<-US_final %>%
         parameter_detectionlimit_value,
         censorcode,
         sample_depth_m,
-        sample_depth_flag,
+        source_sample_type,
         cluster_id,
         cluster_lat_dd,
         cluster_lon_dd,
@@ -1204,64 +1239,56 @@ allsites_alldepths_limno<-US_final %>%
         source_samplesite_lon_dd,
         lagos_epi_assignment
     )
+
+#make parameterid numeric
+str(allsites_alldepths_limno) 
+allsites_alldepths_limno<-allsites_alldepths_limno %>% mutate_at(c("parameter_id"), as.numeric)
+str(allsites_alldepths_limno) 
+
+
+#change parameter names to short names
+
+param_names_short<-read.csv("~/GitHub/lagos_database/LIMNO_file structure - parameter_description_limno.csv") %>% 
+    select(parameter_id, parameter_name_short)
+
+allsites_alldepths_limno<-left_join(allsites_alldepths_limno, param_names_short)
+allsites_alldepths_limno<-allsites_alldepths_limno %>% select(-parameter_name)
+allsites_alldepths_limno<-allsites_alldepths_limno %>% rename(parameter_name = parameter_name_short)
 
 write_csv(allsites_alldepths_limno, "allsites_alldepths_limno.csv")
 saveRDS(allsites_alldepths_limno, "allsites_alldepths_limno.rds")
 
-temp<-US_final %>% 
-    select(which(!(colnames(US_final) %in% colnames(allsites_alldepths_limno)))) #missing source_sample_type - deleted var
 
-#################################################################################################################################################
-common_names<-intersect(names(allsites_alldepths_limno), names(atrazine_data))
-select(atrazine_data, common_names)
+#temp<-US_final %>% 
+    #select(which(!(colnames(US_final) %in% colnames(allsites_alldepths_limno)))) #missing source_sample_type - deleted var
 
 
-atrazine_dat<-atrazine_data %>% 
-    select(
-        lagoslakeid,
-        sample_date,
-        sample_id,
-        parameter_id,
-        parameter_name,
-        parameter_value,
-        parameter_detectionlimit_value,
-        censorcode,
-        sample_depth_m,
-        sample_depth_flag,
-        cluster_id,
-        cluster_lat_dd,
-        cluster_lon_dd,
-        source_id,
-        source_sample_siteid,
-        source_name,
-        source_activityorg_name,
-        source_activityid,
-        source_comments,
-        source_parameter_name,
-        source_parameter_value,
-        source_parameter_unit,
-        source_value_qualifiercode,
-        parameter_conversionfactor,
-        source_detectionlimit_value,
-        source_detectionlimit_unit,
-        parameter_detectionlimit_conversionfactor,
-        source_detectionlimit_condition,
-        source_detectionlimit_type,
-        source_labmethod_usgspcode,
-        source_labmethod_description,
-        source_labmethod_id,
-        source_labmethod_name,
-        source_labmethod_qualifier,
-        source_samplesite_lat_dd,
-        source_samplesite_lon_dd,
-        lagos_epi_assignment
-    )
+#clean epi export - neon data has seconds and minutes in the sample date column - june 12th 2023
+
+temp<-epi_export %>% filter(source_id == "NEON")
+epi_export<-epi_export %>% mutate(across(c(sample_date), ~str_split(., " ", simplify=T)[,1]))
+temp<-epi_export %>% filter(source_id == "NEON")
 
 
-           
-           
-common_names<-intersect(names(US_final), names(atrazine_data))
-select(atrazine_data, common_names)
+write_csv(epi_export, "epi_export.csv")
+saveRDS(epi_export, file = "epi_export.rds")
+
+temp<-allsites_alldepths_limno %>% filter(source_id == "NEON")
+allsites_alldepths_limno<-allsites_alldepths_limno %>% mutate(across(c(sample_date), ~str_split(., " ", simplify=T)[,1]))
+temp<-allsites_alldepths_limno %>% filter(source_id == "NEON")
+
+write_csv(allsites_alldepths_limno, "allsites_alldepths_limno.csv")
+saveRDS(allsites_alldepths_limno, "allsites_alldepths_limno.rds")
+
+temp<-chemistry_limno %>% filter(source_id == "NEON")
+chemistry_limno<-chemistry_limno %>% mutate(across(c(sample_date), ~str_split(., " ", simplify=T)[,1]))
+temp<-chemistry_limno %>% filter(source_id == "NEON")
+
+write_csv(chemistry_limno, "chemistry_limno.csv")
+saveRDS(chemistry_limno, file = "chemistry_limno.rds")
+
+#fixed
+
 #################################################################################################################################################
 #preliminary viz
 #2023/04/12
